@@ -1,0 +1,5531 @@
+{
+  "status": "complete",
+  "cells": [
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 7.984065171410054e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 7.984065171410054e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 9.795603665280367e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 9.795603665280367e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0016391150874932303,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0016391150874932303,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.04462746141402691,
+            "accuracy": 0.99609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.04462746141402691,
+            "accuracy": 0.99609375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 186,
+          "accuracy": 0.96875
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.9878813073139266,
+            "accuracy": 0.97265625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.9878813073139266,
+            "accuracy": 0.97265625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 126,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 4.067976842218783,
+            "accuracy": 0.8665364583333334
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 4.067976842218783,
+            "accuracy": 0.8665364583333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.7265666621883796,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.7265666621883796,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 270,
+          "accuracy": 0.703125
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 4.221165101195813,
+            "accuracy": 0.8740234375
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 4.221165101195813,
+            "accuracy": 0.8740234375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0005093098952970676,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.0005093098952970676,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.006483035329840574,
+            "accuracy": 0.9983723958333334
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.006483035329840574,
+            "accuracy": 0.9983723958333334
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 748,
+          "accuracy": 0.9739583333333334
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.03892576478127372,
+            "accuracy": 0.9947509765625
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.03892576478127372,
+            "accuracy": 0.9947509765625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 639,
+          "accuracy": 0.83203125
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.011983521581433544,
+            "accuracy": 0.99609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.011983521581433544,
+            "accuracy": 0.99609375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 186,
+          "accuracy": 0.96875
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.24660148446130212,
+            "accuracy": 0.97265625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.24660148446130212,
+            "accuracy": 0.97265625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 126,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.9738854933795008,
+            "accuracy": 0.8681640625
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.9738854933795008,
+            "accuracy": 0.8681640625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 1.8565173458818937e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 1.8565173458818937e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.16714564679149033,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.16714564679149033,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 270,
+          "accuracy": 0.703125
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.9978203149511713,
+            "accuracy": 0.8753255208333334
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.9978203149511713,
+            "accuracy": 0.8753255208333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3473,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3473_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.0318690368258739e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.0318690368258739e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 3.0439010743317275e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 3.0439010743317275e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.030296932864468756,
+            "accuracy": 0.9909261067708334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.030296932864468756,
+            "accuracy": 0.9909261067708334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 575,
+          "accuracy": 0.7486979166666666
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 1.1935873711198695e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 1.1935873711198695e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 1.0328268257211375,
+            "accuracy": 0.974609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 1.0328268257211375,
+            "accuracy": 0.974609375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 126,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 4.46509243697787,
+            "accuracy": 0.8720703125
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 4.46509243697787,
+            "accuracy": 0.8720703125
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.9621736202387265,
+            "accuracy": 0.9713541666666666
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.9621736202387265,
+            "accuracy": 0.9713541666666666
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 250,
+          "accuracy": 0.6510416666666666
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 4.261415843808289,
+            "accuracy": 0.88427734375
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 4.261415843808289,
+            "accuracy": 0.88427734375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 18,
+          "accuracy": 0.046875
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.3500261262833175e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.3500261262833175e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.00148097592897527,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.00148097592897527,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.030708719906489757,
+            "accuracy": 0.9950358072916666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.030708719906489757,
+            "accuracy": 0.9950358072916666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 652,
+          "accuracy": 0.8489583333333334
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 6.713703674762012e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 6.713703674762012e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.25134760731325745,
+            "accuracy": 0.97265625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.25134760731325745,
+            "accuracy": 0.97265625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 126,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.0518005774195898,
+            "accuracy": 0.873046875
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 1.0518005774195898,
+            "accuracy": 0.873046875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 6.996983625695445e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 6.996983625695445e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.22443031840501795,
+            "accuracy": 0.970703125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.22443031840501795,
+            "accuracy": 0.970703125
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 252,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 1.0054940036760118,
+            "accuracy": 0.88671875
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 1.0054940036760118,
+            "accuracy": 0.88671875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 18,
+          "accuracy": 0.046875
+        }
+      },
+      "seed": 3473,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3473_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 7.648269743122106e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 7.648269743122106e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.00032032468160079786,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.00032032468160079786,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.007988188917961445,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.007988188917961445,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 9.425764566895157e-14,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 9.425764566895157e-14,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.39914323670005186,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.39914323670005186,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 132,
+          "accuracy": 0.6875
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.9363782529762954,
+            "accuracy": 0.8702799479166666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 2.9363782529762954,
+            "accuracy": 0.8702799479166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0852186854626593,
+            "accuracy": 0.998046875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0852186854626593,
+            "accuracy": 0.998046875
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 378,
+          "accuracy": 0.984375
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.6053827072525365,
+            "accuracy": 0.9754231770833334
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.6053827072525365,
+            "accuracy": 0.9754231770833334
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 269,
+          "accuracy": 0.7005208333333334
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 2.6226617214754597,
+            "accuracy": 0.8866373697916666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 2.6226617214754597,
+            "accuracy": 0.8866373697916666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 12,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 8.94407361963672e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 8.94407361963672e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.005148039485027168,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.005148039485027168,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04027598029782472,
+            "accuracy": 0.9994303385416666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04027598029782472,
+            "accuracy": 0.9994303385416666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 754,
+          "accuracy": 0.9817708333333334
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 1.811646259295644e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 1.811646259295644e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.13339282843495545,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.13339282843495545,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 132,
+          "accuracy": 0.6875
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.9847012900781528,
+            "accuracy": 0.8701171875
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.9847012900781528,
+            "accuracy": 0.8701171875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.02859665963739454,
+            "accuracy": 0.998046875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.02859665963739454,
+            "accuracy": 0.998046875
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 378,
+          "accuracy": 0.984375
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.20048924473170862,
+            "accuracy": 0.9736328125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.20048924473170862,
+            "accuracy": 0.9736328125
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 258,
+          "accuracy": 0.671875
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.8849381669726496,
+            "accuracy": 0.88623046875
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.8849381669726496,
+            "accuracy": 0.88623046875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 12,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3479_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 7.53924905800511e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 7.53924905800511e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 3.7962983023683484e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 3.7962983023683484e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.03780511646793028,
+            "accuracy": 0.9918212890625
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.03780511646793028,
+            "accuracy": 0.9918212890625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 585,
+          "accuracy": 0.76171875
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.4554426164840985,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.4554426164840985,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 138,
+          "accuracy": 0.71875
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.991767342971894,
+            "accuracy": 0.8772786458333334
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 2.991767342971894,
+            "accuracy": 0.8772786458333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 9.636093030694296e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 9.636093030694296e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.6886053561713256,
+            "accuracy": 0.9775390625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.6886053561713256,
+            "accuracy": 0.9775390625
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 270,
+          "accuracy": 0.703125
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 2.6214191946624603,
+            "accuracy": 0.88720703125
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 2.6214191946624603,
+            "accuracy": 0.88720703125
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 12,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.3654448872087392e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 2.3654448872087392e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0017309072622354827,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0017309072622354827,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.038453666633932355,
+            "accuracy": 0.9928385416666666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.038453666633932355,
+            "accuracy": 0.9928385416666666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 605,
+          "accuracy": 0.7877604166666666
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 7.89167561588933e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 7.89167561588933e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.15049571789173802,
+            "accuracy": 0.978515625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.15049571789173802,
+            "accuracy": 0.978515625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 138,
+          "accuracy": 0.71875
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.0015167631532844,
+            "accuracy": 0.8766276041666666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 1.0015167631532844,
+            "accuracy": 0.8766276041666666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.00012085402642340138,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.00012085402642340138,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.22321148174067781,
+            "accuracy": 0.9765625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.22321148174067781,
+            "accuracy": 0.9765625
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 264,
+          "accuracy": 0.6875
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.8837646541418397,
+            "accuracy": 0.88671875
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.8837646541418397,
+            "accuracy": 0.88671875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 12,
+          "accuracy": 0.03125
+        }
+      },
+      "seed": 3479,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3479_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.2003497250622839e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.2003497250622839e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0004295856258403378,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0004295856258403378,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.013710825909091546,
+            "accuracy": 0.999755859375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.013710825909091546,
+            "accuracy": 0.999755859375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 762,
+          "accuracy": 0.9921875
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.8036324254208633,
+            "accuracy": 0.966796875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.8036324254208633,
+            "accuracy": 0.966796875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 108,
+          "accuracy": 0.5625
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.3910523621675797,
+            "accuracy": 0.8623046875
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 2.3910523621675797,
+            "accuracy": 0.8623046875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 4.0031092023486276e-09,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 4.0031092023486276e-09,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.3370098255142096,
+            "accuracy": 0.9775390625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.3370098255142096,
+            "accuracy": 0.9775390625
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 270,
+          "accuracy": 0.703125
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 2.229893334104021,
+            "accuracy": 0.8758951822916666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 2.229893334104021,
+            "accuracy": 0.8758951822916666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00018553477436053682,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00018553477436053682,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0037623305129793707,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0037623305129793707,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04540568623111285,
+            "accuracy": 0.9911295572916666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04540568623111285,
+            "accuracy": 0.9911295572916666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 576,
+          "accuracy": 0.75
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 2.896030885145338e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 2.896030885145338e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.3273320553668848,
+            "accuracy": 0.9658203125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.3273320553668848,
+            "accuracy": 0.9658203125
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 105,
+          "accuracy": 0.546875
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.9929383336295965,
+            "accuracy": 0.8681640625
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.9929383336295965,
+            "accuracy": 0.8681640625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 4.813763449683231e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 4.813763449683231e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.14363505492929166,
+            "accuracy": 0.9777018229166666
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.14363505492929166,
+            "accuracy": 0.9777018229166666
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 270,
+          "accuracy": 0.703125
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.916290430436966,
+            "accuracy": 0.8779296875
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.916290430436966,
+            "accuracy": 0.8779296875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "seed": 3481,
+      "routing": "lbfgs",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3481_lbfgs_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.4628659483915917e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.4628659483915917e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 5.7902864966049844e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 5.7902864966049844e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04195867466146747,
+            "accuracy": 0.9895833333333334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04195867466146747,
+            "accuracy": 0.9895833333333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 564,
+          "accuracy": 0.734375
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 4.3687421094646095e-07,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 4.3687421094646095e-07,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.607910431912792,
+            "accuracy": 0.97265625
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.607910431912792,
+            "accuracy": 0.97265625
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 120,
+          "accuracy": 0.625
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.3486296617384244,
+            "accuracy": 0.8800455729166666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 2.3486296617384244,
+            "accuracy": 0.8800455729166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.7168456093961361,
+            "accuracy": 0.974609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.7168456093961361,
+            "accuracy": 0.974609375
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 252,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 2.3897255447843526,
+            "accuracy": 0.87353515625
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 2.3897255447843526,
+            "accuracy": 0.87353515625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "lbfgs",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_lbfgs.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.9273367333866997e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 2.9273367333866997e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0010691395085751095,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0010691395085751095,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04084895346312061,
+            "accuracy": 0.99169921875
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04084895346312061,
+            "accuracy": 0.99169921875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 588,
+          "accuracy": 0.765625
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "train_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 7.24302642924518e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 7.24302642924518e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.24593274419497532,
+            "accuracy": 0.974609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.24593274419497532,
+            "accuracy": 0.974609375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 126,
+          "accuracy": 0.65625
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.9693445459841229,
+            "accuracy": 0.876953125
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.9693445459841229,
+            "accuracy": 0.876953125
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "validation_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_2",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 7.523192393205413e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 7.523192393205413e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_8",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.2910251505135675,
+            "accuracy": 0.9755859375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.2910251505135675,
+            "accuracy": 0.9755859375
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 264,
+          "accuracy": 0.6875
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_16",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.9787150476421123,
+            "accuracy": 0.874267578125
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.9787150476421123,
+            "accuracy": 0.874267578125
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "seed": 3481,
+      "routing": "negative_gradient",
+      "decoder": "negative_gradient",
+      "pool": "test_32",
+      "checkpoint": "results/fitting_representation/3481_negative_gradient_negative_gradient.pt"
+    }
+  ],
+  "summary": {
+    "seeds": [
+      {
+        "seed": 3473,
+        "native_lbfgs": {
+          "objective": 0.000436263797329361,
+          "errors": 0
+        },
+        "native_negative_gradient": {
+          "objective": 0.008050799024181965,
+          "errors": 122
+        },
+        "routing_only": {
+          "objective": 0.01147952750160284,
+          "errors": 149
+        },
+        "decoder_only": {
+          "objective": 0.0075818429713826905,
+          "errors": 223
+        },
+        "routing_sufficient": false,
+        "decoder_sufficient": false
+      },
+      {
+        "seed": 3479,
+        "native_lbfgs": {
+          "objective": 0.002077128419011235,
+          "errors": 0
+        },
+        "native_negative_gradient": {
+          "objective": 0.010052057086259981,
+          "errors": 176
+        },
+        "routing_only": {
+          "objective": 0.011358240964117881,
+          "errors": 14
+        },
+        "decoder_only": {
+          "objective": 0.009460788710861135,
+          "errors": 201
+        },
+        "routing_sufficient": false,
+        "decoder_sufficient": false
+      },
+      {
+        "seed": 3481,
+        "native_lbfgs": {
+          "objective": 0.0035381037580456266,
+          "errors": 6
+        },
+        "native_negative_gradient": {
+          "objective": 0.010486841584757397,
+          "errors": 204
+        },
+        "routing_only": {
+          "objective": 0.01233838787961319,
+          "errors": 218
+        },
+        "decoder_only": {
+          "objective": 0.010504148038773252,
+          "errors": 256
+        },
+        "routing_sufficient": false,
+        "decoder_sufficient": false
+      }
+    ],
+    "all_seed_routing_sufficient": false,
+    "all_seed_decoder_sufficient": false,
+    "contrasts": [
+      {
+        "seed": 3473,
+        "pool": "train_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "train_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0004958096340342345,
+          "routing_lbfgs_decoder": 7.984054852719685e-06,
+          "decoder_negative_routing": -1.3500250944142806e-05,
+          "decoder_lbfgs_routing": -0.0005013258301256575,
+          "interaction": -0.0004878255791815147
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "train_16",
+        "accuracy": {
+          "routing_negative_decoder": -0.0016276041666666297,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0016276041666666297,
+          "interaction": 0.0016276041666666297
+        },
+        "ce": {
+          "routing_negative_decoder": 0.005002059400865304,
+          "routing_lbfgs_decoder": 6.75170259094864e-05,
+          "decoder_negative_routing": -0.0014505369182319528,
+          "decoder_lbfgs_routing": -0.00638507929318777,
+          "interaction": -0.004934542374955817
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "train_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.00028483072916662966,
+          "routing_lbfgs_decoder": 0.00907389322916663,
+          "decoder_negative_routing": -0.004109700520833259,
+          "decoder_lbfgs_routing": 0.0052490234375,
+          "interaction": 0.00935872395833326
+        },
+        "ce": {
+          "routing_negative_decoder": 0.008217044874783964,
+          "routing_lbfgs_decoder": -0.028657817776975524,
+          "decoder_negative_routing": -0.0004117870420210015,
+          "decoder_lbfgs_routing": -0.03728664969378049,
+          "interaction": -0.03687486265175949
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "validation_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "validation_8",
+        "accuracy": {
+          "routing_negative_decoder": -0.00390625,
+          "routing_lbfgs_decoder": -0.00390625,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.011916384544685923,
+          "routing_lbfgs_decoder": 0.044627461402091034,
+          "decoder_negative_routing": -6.71370248117464e-05,
+          "decoder_lbfgs_routing": 0.032643939832593366,
+          "interaction": 0.03271107685740511
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "validation_16",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": -0.001953125,
+          "decoder_negative_routing": 0.001953125,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": -0.001953125
+        },
+        "ce": {
+          "routing_negative_decoder": -0.004746122851955331,
+          "routing_lbfgs_decoder": -0.04494551840721084,
+          "decoder_negative_routing": 0.78147921840788,
+          "decoder_lbfgs_routing": 0.7412798228526245,
+          "interaction": -0.040199395555255535
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "validation_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.0048828125,
+          "routing_lbfgs_decoder": -0.00553385416666663,
+          "decoder_negative_routing": -0.0009765625,
+          "decoder_lbfgs_routing": -0.0016276041666666297,
+          "interaction": -0.0006510416666666297
+        },
+        "ce": {
+          "routing_negative_decoder": -0.07791508404008896,
+          "routing_lbfgs_decoder": -0.39711559475908675,
+          "decoder_negative_routing": 3.4132918595582806,
+          "decoder_lbfgs_routing": 3.0940913488392825,
+          "interaction": -0.3192005107189979
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "test_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "test_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 1.7865475096249393e-08,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": -6.996983625695445e-10,
+          "decoder_lbfgs_routing": -1.8565173458818937e-08,
+          "interaction": -1.7865475096249393e-08
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "test_16",
+        "accuracy": {
+          "routing_negative_decoder": 0.005859375,
+          "routing_lbfgs_decoder": 0.00520833333333337,
+          "decoder_negative_routing": 0.0006510416666666297,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": -0.0006510416666666297
+        },
+        "ce": {
+          "routing_negative_decoder": -0.05728467161352763,
+          "routing_lbfgs_decoder": -0.23560695805034693,
+          "decoder_negative_routing": 0.7377433018337086,
+          "decoder_lbfgs_routing": 0.5594210153968893,
+          "interaction": -0.17832228643681933
+        }
+      },
+      {
+        "seed": 3473,
+        "pool": "test_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.01139322916666663,
+          "routing_lbfgs_decoder": -0.01025390625,
+          "decoder_negative_routing": -0.00244140625,
+          "decoder_lbfgs_routing": -0.0013020833333333703,
+          "interaction": 0.0011393229166666297
+        },
+        "ce": {
+          "routing_negative_decoder": -0.007673688724840533,
+          "routing_lbfgs_decoder": -0.04025074261247674,
+          "decoder_negative_routing": 3.2559218401322774,
+          "decoder_lbfgs_routing": 3.2233447862446414,
+          "interaction": -0.03257705388763621
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "train_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "train_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": -1.4710375252450673e-05,
+          "routing_lbfgs_decoder": -7.531600788261987e-08,
+          "decoder_negative_routing": -2.357905638150734e-05,
+          "decoder_lbfgs_routing": -8.943997136939288e-06,
+          "interaction": 1.4635059244568054e-05
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "train_16",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.003417132222791685,
+          "routing_lbfgs_decoder": 0.00028236169857711436,
+          "decoder_negative_routing": -0.0016929442792117993,
+          "decoder_lbfgs_routing": -0.00482771480342637,
+          "interaction": -0.0031347705242145705
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "train_32",
+        "accuracy": {
+          "routing_negative_decoder": 0.006591796875,
+          "routing_lbfgs_decoder": 0.0081787109375,
+          "decoder_negative_routing": -0.0010172526041666297,
+          "decoder_lbfgs_routing": 0.0005696614583333703,
+          "interaction": 0.0015869140625
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0018223136638923637,
+          "routing_lbfgs_decoder": -0.029816927549968834,
+          "decoder_negative_routing": -0.0006485501660020779,
+          "decoder_lbfgs_routing": -0.032287791379863276,
+          "interaction": -0.0316392412138612
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "validation_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "validation_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 1.810857091734055e-06,
+          "routing_lbfgs_decoder": 9.425764566895157e-14,
+          "decoder_negative_routing": -7.89167561588933e-10,
+          "decoder_lbfgs_routing": -1.8116461650379983e-06,
+          "interaction": -1.8108569974764093e-06
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "validation_16",
+        "accuracy": {
+          "routing_negative_decoder": -0.001953125,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": -0.001953125,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.001953125
+        },
+        "ce": {
+          "routing_negative_decoder": -0.017102889456782566,
+          "routing_lbfgs_decoder": -0.056299379784046644,
+          "decoder_negative_routing": 0.30494689859236046,
+          "decoder_lbfgs_routing": 0.26575040826509644,
+          "interaction": -0.03919649032726405
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "validation_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.00651041666666663,
+          "routing_lbfgs_decoder": -0.006998697916666741,
+          "decoder_negative_routing": 0.0006510416666667407,
+          "decoder_lbfgs_routing": 0.00016276041666662966,
+          "interaction": -0.000488281250000111
+        },
+        "ce": {
+          "routing_negative_decoder": -0.01681547307513165,
+          "routing_lbfgs_decoder": -0.05538908999559844,
+          "decoder_negative_routing": 1.9902505798186094,
+          "decoder_lbfgs_routing": 1.9516769628981425,
+          "interaction": -0.0385736169204669
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "test_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "test_8",
+        "accuracy": {
+          "routing_negative_decoder": -0.001953125,
+          "routing_lbfgs_decoder": -0.001953125,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.028475805610971138,
+          "routing_lbfgs_decoder": 0.085218589101729,
+          "decoder_negative_routing": -0.00012075766549309444,
+          "decoder_lbfgs_routing": 0.056622025825264766,
+          "interaction": 0.05674278349075786
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "test_16",
+        "accuracy": {
+          "routing_negative_decoder": -0.0029296875,
+          "routing_lbfgs_decoder": -0.0021158854166666297,
+          "decoder_negative_routing": 0.0009765625,
+          "decoder_lbfgs_routing": 0.0017903645833333703,
+          "interaction": 0.0008138020833333703
+        },
+        "ce": {
+          "routing_negative_decoder": -0.022722237008969193,
+          "routing_lbfgs_decoder": -0.08322264891878906,
+          "decoder_negative_routing": 0.4653938744306477,
+          "decoder_lbfgs_routing": 0.4048934625208279,
+          "interaction": -0.060500411909819835
+        }
+      },
+      {
+        "seed": 3479,
+        "pool": "test_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.00048828125,
+          "routing_lbfgs_decoder": -0.0005696614583333703,
+          "decoder_negative_routing": 0.00048828125,
+          "decoder_lbfgs_routing": 0.00040690104166662966,
+          "interaction": -8.138020833337034e-05
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0011735128308099085,
+          "routing_lbfgs_decoder": 0.0012425268129994116,
+          "decoder_negative_routing": 1.7376545405206207,
+          "decoder_lbfgs_routing": 1.7377235545028102,
+          "interaction": 6.901398218961408e-05
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "train_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "train_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.00015626140702666982,
+          "routing_lbfgs_decoder": 1.1988868591138922e-05,
+          "decoder_negative_routing": -2.925873867438308e-05,
+          "decoder_lbfgs_routing": -0.000173531277109914,
+          "interaction": -0.0001442725384355309
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "train_16",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.002693191004404261,
+          "routing_lbfgs_decoder": 0.00037168276087428797,
+          "decoder_negative_routing": -0.0010112366436090597,
+          "decoder_lbfgs_routing": -0.0033327448871390327,
+          "interaction": -0.002321508243529973
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "train_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.0005696614583333703,
+          "routing_lbfgs_decoder": 0.01017252604166663,
+          "decoder_negative_routing": -0.0021158854166666297,
+          "decoder_lbfgs_routing": 0.00862630208333337,
+          "interaction": 0.0107421875
+        },
+        "ce": {
+          "routing_negative_decoder": 0.00455673276799224,
+          "routing_lbfgs_decoder": -0.028247848752375924,
+          "decoder_negative_routing": 0.0011097211983468608,
+          "decoder_lbfgs_routing": -0.031694860322021304,
+          "interaction": -0.03280458152036817
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "validation_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "validation_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": -7.242997468936329e-05,
+          "routing_lbfgs_decoder": -4.3687421094646095e-07,
+          "decoder_negative_routing": -7.199339008150533e-05,
+          "decoder_lbfgs_routing": -2.896030885145338e-10,
+          "interaction": 7.199310047841682e-05
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "validation_16",
+        "accuracy": {
+          "routing_negative_decoder": -0.0087890625,
+          "routing_lbfgs_decoder": -0.005859375,
+          "decoder_negative_routing": -0.001953125,
+          "decoder_lbfgs_routing": 0.0009765625,
+          "interaction": 0.0029296875
+        },
+        "ce": {
+          "routing_negative_decoder": 0.08139931117190949,
+          "routing_lbfgs_decoder": 0.1957219935080713,
+          "decoder_negative_routing": 0.3619776877178167,
+          "decoder_lbfgs_routing": 0.4763003700539785,
+          "interaction": 0.1143226823361618
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "validation_32",
+        "accuracy": {
+          "routing_negative_decoder": -0.0087890625,
+          "routing_lbfgs_decoder": -0.01774088541666663,
+          "decoder_negative_routing": 0.0030924479166666297,
+          "decoder_lbfgs_routing": -0.005859375,
+          "interaction": -0.00895182291666663
+        },
+        "ce": {
+          "routing_negative_decoder": 0.023593787645473596,
+          "routing_lbfgs_decoder": 0.0424227004291553,
+          "decoder_negative_routing": 1.3792851157543016,
+          "decoder_lbfgs_routing": 1.3981140285379832,
+          "interaction": 0.018828912783681706
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "test_2",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "test_8",
+        "accuracy": {
+          "routing_negative_decoder": 0.0,
+          "routing_lbfgs_decoder": 0.0,
+          "decoder_negative_routing": 0.0,
+          "decoder_lbfgs_routing": 0.0,
+          "interaction": 0.0
+        },
+        "ce": {
+          "routing_negative_decoder": 4.8137559264908374e-05,
+          "routing_lbfgs_decoder": 4.0031092023486276e-09,
+          "decoder_negative_routing": -7.523192393205413e-11,
+          "decoder_lbfgs_routing": -4.813363138762996e-05,
+          "interaction": -4.8133556155706024e-05
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "test_16",
+        "accuracy": {
+          "routing_negative_decoder": 0.0021158854166666297,
+          "routing_lbfgs_decoder": 0.0029296875,
+          "decoder_negative_routing": -0.0009765625,
+          "decoder_lbfgs_routing": -0.00016276041666662966,
+          "interaction": 0.0008138020833333703
+        },
+        "ce": {
+          "routing_negative_decoder": -0.14739009558427582,
+          "routing_lbfgs_decoder": -0.37983578388192646,
+          "decoder_negative_routing": 0.4258204588825686,
+          "decoder_lbfgs_routing": 0.19337477058491795,
+          "interaction": -0.23244568829765067
+        }
+      },
+      {
+        "seed": 3481,
+        "pool": "test_32",
+        "accuracy": {
+          "routing_negative_decoder": 0.003662109375,
+          "routing_lbfgs_decoder": 0.0023600260416666297,
+          "decoder_negative_routing": -0.000732421875,
+          "decoder_lbfgs_routing": -0.0020345052083333703,
+          "interaction": -0.0013020833333333703
+        },
+        "ce": {
+          "routing_negative_decoder": -0.06242461720514625,
+          "routing_lbfgs_decoder": -0.1598322106803316,
+          "decoder_negative_routing": 1.4110104971422404,
+          "decoder_lbfgs_routing": 1.313602903667055,
+          "interaction": -0.09740759347518546
+        }
+      }
+    ]
+  },
+  "trajectories": [
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3473_lbfgs_0.pt",
+      "beta": 0.17428416097055247,
+      "key_overlap_rms": 0.1829109182358381,
+      "decoder_norm": 397.5146512719636,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "closures": 33,
+      "checkpoint": "results/fitting_direction/3473_lbfgs_33.pt",
+      "beta": 0.17620288653320026,
+      "key_overlap_rms": 0.18316741880118137,
+      "decoder_norm": 445.4535113084303,
+      "centered_decoder_scale": 1.1216016970043856,
+      "centered_decoder_relative_residual": 0.013806392871930667
+    },
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "closures": 65,
+      "checkpoint": "results/fitting_direction/3473_lbfgs_65.pt",
+      "beta": 0.17552883390802104,
+      "key_overlap_rms": 0.18352572850904075,
+      "decoder_norm": 644.848798791413,
+      "centered_decoder_scale": 1.6267842109093125,
+      "centered_decoder_relative_residual": 0.03134763455687465
+    },
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "closures": 97,
+      "checkpoint": "results/fitting_direction/3473_lbfgs_97.pt",
+      "beta": 0.16806446333929712,
+      "key_overlap_rms": 0.18370827138726825,
+      "decoder_norm": 1047.8610720323072,
+      "centered_decoder_scale": 2.6465543325072765,
+      "centered_decoder_relative_residual": 0.04478365518625325
+    },
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "closures": 127,
+      "checkpoint": "results/fitting_direction/3473_lbfgs_127.pt",
+      "beta": 0.1631072325053013,
+      "key_overlap_rms": 0.18386663270668469,
+      "decoder_norm": 1765.764348744825,
+      "centered_decoder_scale": 4.462816188855347,
+      "centered_decoder_relative_residual": 0.04953801617138674
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3473_negative_gradient_0.pt",
+      "beta": 0.17428416097055247,
+      "key_overlap_rms": 0.1829109182358381,
+      "decoder_norm": 397.5146512719636,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "closures": 35,
+      "checkpoint": "results/fitting_direction/3473_negative_gradient_35.pt",
+      "beta": 0.17616689421340448,
+      "key_overlap_rms": 0.1828795581276837,
+      "decoder_norm": 399.75927606473095,
+      "centered_decoder_scale": 1.0056861803738149,
+      "centered_decoder_relative_residual": 0.0033806039381184595
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "closures": 65,
+      "checkpoint": "results/fitting_direction/3473_negative_gradient_65.pt",
+      "beta": 0.17655320007673114,
+      "key_overlap_rms": 0.1828939416001,
+      "decoder_norm": 402.5983082679995,
+      "centered_decoder_scale": 1.0128896991478384,
+      "centered_decoder_relative_residual": 0.004531957807131104
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "closures": 98,
+      "checkpoint": "results/fitting_direction/3473_negative_gradient_98.pt",
+      "beta": 0.176535655644345,
+      "key_overlap_rms": 0.18291073470093147,
+      "decoder_norm": 405.5378861262526,
+      "centered_decoder_scale": 1.0203508845105007,
+      "centered_decoder_relative_residual": 0.005172499564413113
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "closures": 128,
+      "checkpoint": "results/fitting_direction/3473_negative_gradient_128.pt",
+      "beta": 0.17666519160233093,
+      "key_overlap_rms": 0.1829283809524425,
+      "decoder_norm": 408.410504437642,
+      "centered_decoder_scale": 1.0276419834316795,
+      "centered_decoder_relative_residual": 0.0057422797330639
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3479_lbfgs_0.pt",
+      "beta": 0.16376614765563655,
+      "key_overlap_rms": 0.1836528149798467,
+      "decoder_norm": 406.0545603619296,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "closures": 32,
+      "checkpoint": "results/fitting_direction/3479_lbfgs_32.pt",
+      "beta": 0.16707374576074396,
+      "key_overlap_rms": 0.18380841225912253,
+      "decoder_norm": 440.75932989543475,
+      "centered_decoder_scale": 1.0860149644962227,
+      "centered_decoder_relative_residual": 0.011792001099853927
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "closures": 64,
+      "checkpoint": "results/fitting_direction/3479_lbfgs_64.pt",
+      "beta": 0.1622797806685753,
+      "key_overlap_rms": 0.18325435282188782,
+      "decoder_norm": 548.3231547924162,
+      "centered_decoder_scale": 1.3525831017080727,
+      "centered_decoder_relative_residual": 0.01930347942615816
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "closures": 96,
+      "checkpoint": "results/fitting_direction/3479_lbfgs_96.pt",
+      "beta": 0.15542261449108527,
+      "key_overlap_rms": 0.18394631843355724,
+      "decoder_norm": 828.512517464458,
+      "centered_decoder_scale": 2.047111248649725,
+      "centered_decoder_relative_residual": 0.015772622250737903
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "closures": 128,
+      "checkpoint": "results/fitting_direction/3479_lbfgs_128.pt",
+      "beta": 0.16088494540519452,
+      "key_overlap_rms": 0.1842657667586931,
+      "decoder_norm": 1269.7107503633727,
+      "centered_decoder_scale": 3.1400354044481866,
+      "centered_decoder_relative_residual": 0.020027527602762076
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3479_negative_gradient_0.pt",
+      "beta": 0.16376614765563655,
+      "key_overlap_rms": 0.1836528149798467,
+      "decoder_norm": 406.0545603619296,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "closures": 35,
+      "checkpoint": "results/fitting_direction/3479_negative_gradient_35.pt",
+      "beta": 0.16592175272416484,
+      "key_overlap_rms": 0.18376722736779125,
+      "decoder_norm": 407.9486667071577,
+      "centered_decoder_scale": 1.0046958678785942,
+      "centered_decoder_relative_residual": 0.0036928466805395232
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "closures": 65,
+      "checkpoint": "results/fitting_direction/3479_negative_gradient_65.pt",
+      "beta": 0.1665262932228918,
+      "key_overlap_rms": 0.1838028114415306,
+      "decoder_norm": 410.41089311768235,
+      "centered_decoder_scale": 1.0107999342172502,
+      "centered_decoder_relative_residual": 0.0047764358192164385
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "closures": 98,
+      "checkpoint": "results/fitting_direction/3479_negative_gradient_98.pt",
+      "beta": 0.16655956871270497,
+      "key_overlap_rms": 0.18380858488814472,
+      "decoder_norm": 412.9731991403885,
+      "centered_decoder_scale": 1.0171543675073673,
+      "centered_decoder_relative_residual": 0.005208742098318092
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "closures": 128,
+      "checkpoint": "results/fitting_direction/3479_negative_gradient_128.pt",
+      "beta": 0.16666424187495682,
+      "key_overlap_rms": 0.18381442039414062,
+      "decoder_norm": 415.4893982395149,
+      "centered_decoder_scale": 1.0233948902091263,
+      "centered_decoder_relative_residual": 0.005537589990826036
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3481_lbfgs_0.pt",
+      "beta": 0.16842269897786133,
+      "key_overlap_rms": 0.184068974651474,
+      "decoder_norm": 378.4164044505258,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "closures": 33,
+      "checkpoint": "results/fitting_direction/3481_lbfgs_33.pt",
+      "beta": 0.18443980706556273,
+      "key_overlap_rms": 0.18463438268764137,
+      "decoder_norm": 412.8086398253755,
+      "centered_decoder_scale": 1.0909169614574015,
+      "centered_decoder_relative_residual": 0.007211768863814889
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "closures": 65,
+      "checkpoint": "results/fitting_direction/3481_lbfgs_65.pt",
+      "beta": 0.18042441270016718,
+      "key_overlap_rms": 0.18395640424681206,
+      "decoder_norm": 505.49150065777775,
+      "centered_decoder_scale": 1.3357028725454996,
+      "centered_decoder_relative_residual": 0.021769640113709705
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "closures": 97,
+      "checkpoint": "results/fitting_direction/3481_lbfgs_97.pt",
+      "beta": 0.17152122032481748,
+      "key_overlap_rms": 0.18380163239326905,
+      "decoder_norm": 681.1433838629191,
+      "centered_decoder_scale": 1.7996394607321275,
+      "centered_decoder_relative_residual": 0.03019514918304843
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "closures": 127,
+      "checkpoint": "results/fitting_direction/3481_lbfgs_127.pt",
+      "beta": 0.1692349132467879,
+      "key_overlap_rms": 0.18332061505555142,
+      "decoder_norm": 966.0909654323202,
+      "centered_decoder_scale": 2.552503140990452,
+      "centered_decoder_relative_residual": 0.03262079444980597
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "closures": 0,
+      "checkpoint": "results/fitting_direction/3481_negative_gradient_0.pt",
+      "beta": 0.16842269897786133,
+      "key_overlap_rms": 0.184068974651474,
+      "decoder_norm": 378.4164044505258,
+      "centered_decoder_scale": 1.0,
+      "centered_decoder_relative_residual": 0.0
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "closures": 32,
+      "checkpoint": "results/fitting_direction/3481_negative_gradient_32.pt",
+      "beta": 0.1718331781571865,
+      "key_overlap_rms": 0.18412177075305045,
+      "decoder_norm": 380.3330132282344,
+      "centered_decoder_scale": 1.0050592094846755,
+      "centered_decoder_relative_residual": 0.004220078209102243
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "closures": 65,
+      "checkpoint": "results/fitting_direction/3481_negative_gradient_65.pt",
+      "beta": 0.1738912739479561,
+      "key_overlap_rms": 0.18420045392942178,
+      "decoder_norm": 382.89479217902766,
+      "centered_decoder_scale": 1.0118304982682471,
+      "centered_decoder_relative_residual": 0.004880767508213815
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "closures": 98,
+      "checkpoint": "results/fitting_direction/3481_negative_gradient_98.pt",
+      "beta": 0.17495423500286278,
+      "key_overlap_rms": 0.18427208697654668,
+      "decoder_norm": 385.46854383746586,
+      "centered_decoder_scale": 1.0186352706344663,
+      "centered_decoder_relative_residual": 0.005110177006612126
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "closures": 128,
+      "checkpoint": "results/fitting_direction/3481_negative_gradient_128.pt",
+      "beta": 0.17641871357213026,
+      "key_overlap_rms": 0.18434038361975383,
+      "decoder_norm": 387.98137214771447,
+      "centered_decoder_scale": 1.025279376786161,
+      "centered_decoder_relative_residual": 0.005241453973557843
+    }
+  ],
+  "evaluation_targets": 935424,
+  "hybrids": 12,
+  "optimizer_calls": 0,
+  "gradient_calls": 0,
+  "solver_calls": 0,
+  "seconds": 4.051554200006649,
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "lock_sha256": "52dfb134284762484e35382c9ecb9db160e2cde92fb5749a1115a3bd63535ae0",
+  "scores_sha256": "dcac7107f705eb02ee8db8029207b885c74ea7cb2ae88d75e4419e63049a9c0e"
+}

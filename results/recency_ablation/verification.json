@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "report_sha256": "401cb8f8b6acf60137d28c9fe3bc0aeab6985162a2ee3a48e718f36ce258e067",
+  "metrics_sha256": "e9bee999e792079ad7121bb11215fbe87d732c469de1e2cea187a250823393d8",
+  "preflight_methods": 3,
+  "evaluation_cells": 48,
+  "predictions": 20736,
+  "training_updates": 0,
+  "preserved_files_unchanged": 117,
+  "means": {
+    "test_4": {
+      "native": {
+        "unique": 1.0,
+        "repeat": 1.0,
+        "all": 1.0
+      },
+      "no_recency": {
+        "unique": 1.0,
+        "repeat": 0.3645833333333333,
+        "all": 0.6822916666666666
+      }
+    },
+    "test_8": {
+      "native": {
+        "unique": 1.0,
+        "repeat": 1.0,
+        "all": 1.0
+      },
+      "no_recency": {
+        "unique": 1.0,
+        "repeat": 0.2586805555555556,
+        "all": 0.6293402777777778
+      }
+    },
+    "test_16": {
+      "native": {
+        "unique": 0.8645833333333334,
+        "repeat": 0.9583333333333334,
+        "all": 0.9114583333333334
+      },
+      "no_recency": {
+        "unique": 1.0,
+        "repeat": 0.4565972222222222,
+        "all": 0.7282986111111112
+      }
+    },
+    "test_32": {
+      "native": {
+        "unique": 0.5833333333333334,
+        "repeat": 0.90625,
+        "all": 0.7447916666666666
+      },
+      "no_recency": {
+        "unique": 1.0,
+        "repeat": 0.390625,
+        "all": 0.6953125
+      }
+    }
+  },
+  "paired": {
+    "unique": {
+      "count": 5184,
+      "rescued": 318,
+      "harmed": 0,
+      "both_correct": 4866,
+      "both_wrong": 0
+    },
+    "repeat": {
+      "count": 5184,
+      "rescued": 40,
+      "harmed": 3107,
+      "both_correct": 1999,
+      "both_wrong": 38
+    }
+  },
+  "max_logit_error": 4.39648317751562e-14,
+  "native_metrics_match_archive": true,
+  "decision": {
+    "long_unique_recovery": true,
+    "short_unique_preservation": true,
+    "repeat_cost_detected": true
+  },
+  "local_file_links_checked": 2208,
+  "missing_targets": [],
+  "document_sha256": {
+    "docs/topics/attention/recency-ablation-results.md": "ed99ca758f427a71f859ea386156590f0a42eece927abb66ec736bbd6f2e8415",
+    "docs/assessments/research-checkpoint.md": "200f213576607903319dc4a85ee8a08a190aa8c2276315a6555a934bac9dc0eb",
+    "docs/assessments/failure-register.md": "3f03d3c74b01e88f9d17b0766f323fc5ed99b63f21a2e7a881132816d91b1f75",
+    "tests/README.md": "71f68e88839d024a62e6f914eb264bde2f571abef134b293dfabdba03bfb2bc2"
+  },
+  "scope": "No new evaluation or training here; verifies recorded metrics, counts, provenance and file targets. Anchors/external URLs not checked."
+}

@@ -1,0 +1,9 @@
+# Evaluation-only recovery for the EOS training comparison
+
+2026-10-03, frozen before recovered evaluation. All six saved checkpoints reached 6,000 updates. The producer then failed in ordinary length10 evaluation because `encoder_decoder_copy.metrics` asserts that every group is nonempty. Ten distinct symbols are impossible in the eight-symbol vocabulary. No training loss, sampling, checkpoint or declared threshold is affected.
+
+Preserve the original producer, protocol, report, pretest snapshot and checkpoints unchanged. Create a separate `results/copy_eos_training/evaluation_recovery/` folder. Load the original pretest/checkpoints, rerun only final evaluation, and replace the ordinary-control evaluator with the existing `copy_length_exposure.evaluate`, which omits empty groups. Shared oracle evaluation remains the original EOS-study implementation. No retraining, new data, replacement seeds, added budget or metric/threshold changes. An extra content-exact field from the reused ordinary evaluator is descriptive.
+
+Use a supplied-logit length10 fixture: the original metric helper must fail on the absent group, and the existing group-aware helper must pass with only all/repeated groups. Copy the original pretest bytes into the recovery folder for the unchanged audit contract. Hash all original sources/reports/checkpoints and new recovery dependencies before/after.
+
+Run the original independent EOS audit against the recovered folder through an explicit directory binding in the recovery runner. Its model equations, oracle controller, scalar metrics, ordinary controller, sampling reconstruction and criteria remain unchanged. Report this evaluation defect separately from failed empirical criteria. Save the failure/control manifest and links in the final report. Stop after evaluation, audit and documentation.

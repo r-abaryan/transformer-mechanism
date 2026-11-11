@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "mha_previous_forward_error": 4.440892098500626e-16,
+  "checks": {
+    "mha": {
+      "max_logit_error": 5.551115123125783e-16,
+      "max_gradient_error": 2.7755575615628914e-16,
+      "causal_prefix_error": 0.0,
+      "changed_query_logit_difference": 1.813553964464206,
+      "parameters": 5088,
+      "cache_bytes": 8192
+    },
+    "mqa": {
+      "max_logit_error": 4.440892098500626e-16,
+      "max_gradient_error": 2.220446049250313e-16,
+      "causal_prefix_error": 0.0,
+      "changed_query_logit_difference": 1.916295956438553,
+      "parameters": 4544,
+      "cache_bytes": 4096
+    }
+  },
+  "source_sha256": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+  "auditor_sha256": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+  "verification_source_sha256": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018"
+}

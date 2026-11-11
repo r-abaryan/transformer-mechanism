@@ -1,0 +1,13 @@
+# Initial-bit effect through the last block
+
+Frozen before evaluation, 2026-10-03. Saved independent-exposure seeds 3011/3019/3023 only, complete train/test length-12 long-tail grids. Pair each input with the same reset/suffix and opposite initial bit, in BOTH directions. Labels agree. No training, model selection or fresh confirmation.
+
+At block 2's final query, separate the incoming residual R and projected attention output A. Replace R, A, or both with values from the paired donor. Downstream FFN and normalization remain active. These are last-block paths: R can already contain information delivered by block-1 attention. Do not equate residual transport with attention being unnecessary.
+
+Also substitute block-2 query Q alone, shared K/V at initial position 0, shared K/V at all other positions 1..N-1 (including the query), or all query Q/K/V. Preserve RoPE positions, weights and every unpatched component. Donors come from the SAME model and matched input; never swap activations across seeds.
+
+Eight fixed conditions: sham, residual, attention, both, Q_only, KV_initial, KV_other, QKV_all. Record all output logits. Report original-label accuracy, rescued/harmed inputs, donor-class agreement on baseline class-changing pairs, mean absolute donor-gap error, and aggregate recovery `1 - sum(abs(g_patch-g_donor))/sum(abs(g_original-g_donor))`. Here g=logit1-logit0. Recovery can be negative and is not an additive causal contribution; no unstable per-example division. Report denominator and class-changing counts. Inspect mean per-head attention on initial/reset/suffix/query positions descriptively, not as proof of a mechanism.
+
+Native traced baseline must match original forward, independent equations and archived scores. All substitutions must match a separate implementation using explicit normalization/rotation and SDPA. The final query sees every prefix key; reference query-only SDPA uses no causal flag that would truncate this one-query/full-prefix case. Tolerance 1e-10 and zero argmax changes. Compare captured residual/attention tensors as well as logits. Sham reproduces recipient. Both reproduces full donor final logits. QKV_all reproduces the attention-only substitution. An intentionally omitted attention component must break the both-equals-donor control. Scalar metrics must agree with Python reductions within 1e-10.
+
+Preserve targeted sources, input/report/checkpoint hashes. Stop after these conditions, checks and one short educational report with a path diagram. Effects localize sensitivity in this intervention setting; artificial activation combinations can be outside learned distributions. They do not prove an exclusive circuit, repair training, establish generalization or authorize tuning.

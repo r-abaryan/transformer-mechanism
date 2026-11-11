@@ -1,0 +1,88 @@
+{
+  "scope": "Review bindings and implementation constraint, not a rerun of research audits",
+  "bindings": {
+    "copy_marker_training": {
+      "report_sha256": "ea5da784be1e84b6b0f90d165e686bb2a106a92a4d6c73fa805e677b0b026de6",
+      "audit_sha256": "69baeccad1301fc4a93dad1c328574eeca2bce77e53b1996fbd18b54d7cc84b7"
+    },
+    "copy_marker_alignment": {
+      "report_sha256": "27175de1fa83f3cb13218674764c42ea8f85f4183dfdf5846f505110efbd8b46",
+      "audit_sha256": "9807afb9556b66e87cb9103035af544ea2d837d4dc40c160936844e8d4fcc49f"
+    },
+    "fitting_trajectory": {
+      "report_sha256": "fad4407802968f077323bfae7f07a2f9f19209d5312a7b1c742f70d76522c34f",
+      "audit_sha256": "71fc953d351db8efbc1aabb03b5fa98380bcb693123fab01a58f038aba4d98fa"
+    },
+    "map_exposure": {
+      "report_sha256": "fc88f979d2fca5280797dc421a0f94c5d18d14616c93d0247d096eb696c8cba1",
+      "audit_sha256": "75a90001a7087a35140de23e2ff3f472957d8bb4aab8b1afb0dc41065ec1157d"
+    },
+    "shared_readout_recovery": {
+      "report_sha256": "2ce66864b094a894902c530a64aa9968cffdfaaf8463ad51f9bcbc20a599e549",
+      "audit_sha256": "2fe8e293a131d34a64dc6feed1131764108527663f5d8c14a4fd71995063cc29"
+    }
+  },
+  "copy_summary": [
+    {
+      "length": 6,
+      "native_full_mean": 1.0,
+      "aligned_full_min": 1.0,
+      "first_token_errors": 0,
+      "sequences": 384
+    },
+    {
+      "length": 8,
+      "native_full_mean": 0.10416666666666667,
+      "aligned_full_min": 1.0,
+      "first_token_errors": 177,
+      "sequences": 384
+    },
+    {
+      "length": 10,
+      "native_full_mean": 0.0234375,
+      "aligned_full_min": 1.0,
+      "first_token_errors": 174,
+      "sequences": 384
+    }
+  ],
+  "first_query_checks": [
+    {
+      "seed": 3163,
+      "forward_calls": 6,
+      "max_first_query_difference": 2.220446049250313e-16
+    },
+    {
+      "seed": 3167,
+      "forward_calls": 6,
+      "max_first_query_difference": 8.881784197001252e-16
+    },
+    {
+      "seed": 3169,
+      "forward_calls": 6,
+      "max_first_query_difference": 4.440892098500626e-16
+    }
+  ],
+  "training_updates": 0,
+  "forward_calls": 18,
+  "protected_hashes": {
+    "results\\copy_marker_training\\report.json": "ea5da784be1e84b6b0f90d165e686bb2a106a92a4d6c73fa805e677b0b026de6",
+    "results\\copy_marker_training\\audit.json": "69baeccad1301fc4a93dad1c328574eeca2bce77e53b1996fbd18b54d7cc84b7",
+    "results\\copy_marker_alignment\\report.json": "27175de1fa83f3cb13218674764c42ea8f85f4183dfdf5846f505110efbd8b46",
+    "results\\copy_marker_alignment\\audit.json": "9807afb9556b66e87cb9103035af544ea2d837d4dc40c160936844e8d4fcc49f",
+    "results\\fitting_trajectory\\report.json": "fad4407802968f077323bfae7f07a2f9f19209d5312a7b1c742f70d76522c34f",
+    "results\\fitting_trajectory\\audit.json": "71fc953d351db8efbc1aabb03b5fa98380bcb693123fab01a58f038aba4d98fa",
+    "results\\map_exposure\\report.json": "fc88f979d2fca5280797dc421a0f94c5d18d14616c93d0247d096eb696c8cba1",
+    "results\\map_exposure\\audit.json": "75a90001a7087a35140de23e2ff3f472957d8bb4aab8b1afb0dc41065ec1157d",
+    "results\\shared_readout_recovery\\report.json": "2ce66864b094a894902c530a64aa9968cffdfaaf8463ad51f9bcbc20a599e549",
+    "results\\shared_readout_recovery\\audit.json": "2fe8e293a131d34a64dc6feed1131764108527663f5d8c14a4fd71995063cc29",
+    "results/copy_marker_training/3163_rope.pt": "9f7064e8cfac12d6ac8eaa10bc230a4103aa184a42d6db703aec7ad511a9640e",
+    "results/copy_marker_training/3167_rope.pt": "a26c35a8e34bd73d6f13f02cff7a79f6b7b346469b98099e154e97f0dfa4ca96",
+    "results/copy_marker_training/3169_rope.pt": "260a8f86403cea82edc35f795809dc50c53722b5ff4906abc5dcda503a1f9366",
+    "experiments\\copy_marker_model.py": "f0cb5ef62153085d66fd0ec5b1522c10bee3190e44fab78a2f4a6cb15febcab4",
+    "experiments\\copy_rope_model.py": "243c2ccaa1123015fde18a368866ad7452c4ab8460cb30609ca8118f5488653b",
+    "experiments\\encoder_decoder_copy.py": "c5284b32587f5ca9a178980e73611f6689a7e2569402d75c5c679e3cbf390673",
+    "experiments\\encoder_decoder_contract.py": "01a2852b3892d24cf09d91f3ee6d8796b892bef3da5111dca919f213088f0be1"
+  },
+  "script_sha256": "e25e5541ebb9c07a1c9f7f3fd6910d716471e7a4ae5850f206690e7921553b01",
+  "passed": true
+}

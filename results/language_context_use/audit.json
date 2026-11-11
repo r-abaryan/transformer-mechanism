@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "report_sha256": "aa2d80e88e79469cd23bcd4cd163cdd1aadc55c9f344df42aab15a57dfd664e6",
+  "cells": 12,
+  "predictions": 40800,
+  "protected_files": 180,
+  "checks": [
+    {
+      "seed": 2183,
+      "max_token_ce_error": 1.204687931100068e-05,
+      "max_fixture_logit_error": 2.4296962104486397e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 2203,
+      "max_token_ce_error": 7.15898666303616e-06,
+      "max_fixture_logit_error": 2.7933122606071947e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 2213,
+      "max_token_ce_error": 7.793193200100745e-06,
+      "max_fixture_logit_error": 2.5502429110701996e-06,
+      "argmax_differences": 0
+    }
+  ]
+}

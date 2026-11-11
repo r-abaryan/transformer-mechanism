@@ -1,0 +1,3 @@
+# Isolated Parquet decoder, not installed into the CPU or GPU research environments.
+# uv pip install --python .venv/Scripts/python.exe --target .parquet-reader --no-deps --only-binary :all: --cache-dir .uv-cache -r requirements-data.txt
+pyarrow==25.0.1

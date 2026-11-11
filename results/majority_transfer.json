@@ -1,0 +1,3741 @@
+{
+  "phase": "complete",
+  "provenance": {
+    "mqa_training.py": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+    "audit_mqa_training.py": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+    "verify_mqa_training.py": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018",
+    "audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "query_exposure.py": "17333e05e77a91a5c99b283f3d64eea5798bdbf2abd80192473f03e941428be2",
+    "ffn_width.py": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+    "verify_ffn_width.py": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95",
+    "audit_ffn_width.py": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14",
+    "audit_gelu_comparison.py": "6a8b40fef74e32f6f64038aeccc63fc36a948df4bd23c466214199c8276e9ad3",
+    "repeated_key.py": "dfcb40dd4bee1ebcccc91033259bdccc8a245e39066f086a0552659c2d7f5559",
+    "audit_repeated_key.py": "d828a61ca98199a7ebe463d8a210d00767f3d1d74016a4113ef2637dcb84ef5a",
+    "audit_positional_comparison.py": "7ee8d56084ce92bc8f1ee0613dc74eb6acae43e7d294c87e2ed9c2882aefa166",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "positional_comparison.py": "b4587182a2eec507cc252014f493717c58285798c85469a8a669f670c3e6aa52",
+    "reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "majority_transfer.py": "305035e7cd8d0c2cea79f3cd2ca2fd31e72468026a00e76822f1911b1204f519",
+    "verify_majority_transfer.py": "965baaa11fa2034639adcbf24bf71f42dc89679f8ace2d071a761def91aa45de",
+    "audit_majority_transfer.py": "43153cafb707ba346d811e900bb47abb2dce84b868d9b7c7233bfc826f6eeb6e",
+    "protocol": "a17761e393dff28ddcc99e469fa57c2e69d008e6e5944319f0ffb5ffc3c08987"
+  },
+  "input_sha256": "b23430db1fb67c8129f98391d7854a22a072b836db1f00d651937c3b1ef38576",
+  "torch": "2.14.0+cpu",
+  "runs": [
+    {
+      "seed": 1613,
+      "initial_sha256": "e3b86b8f9d6fdbcdb8a7ecc25ffaaa60d398ed656d16a896bb91ed4a081cae6a",
+      "parameters": 4016,
+      "status": "trained",
+      "step": 6000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 5,
+              "accuracy": 0.06756756756756757,
+              "loss": 0.7486501006757696,
+              "boundary_accuracy": 0.1388888888888889,
+              "class_accuracy": {
+                "0": 0.13513513513513514,
+                "1": 0.0
+              },
+              "family_count": 20,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 0.1388888888888889
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 0.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 0.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 41,
+              "accuracy": 0.211340206185567,
+              "loss": 0.7424169643113366,
+              "boundary_accuracy": 0.47674418604651164,
+              "class_accuracy": {
+                "0": 0.422680412371134,
+                "1": 0.0
+              },
+              "family_count": 50,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 0.47674418604651164
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 0.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 0.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 0.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "training_window_mean_loss": 0.024322478899374174,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.0002896008324729034,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.0002901121506829582,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "training_window_mean_loss": 0.00013928592560492455,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 6.211664033830412e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 6.222619015337919e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "training_window_mean_loss": 3.768023767823924e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.1664960416053677e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.1700295730477605e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "training_window_mean_loss": 1.447403816447438e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 9.233498818295096e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 9.250990893428233e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 5000,
+          "training_window_mean_loss": 6.485385697136542e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 4.367779862563658e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 4.376169320358788e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 6000,
+          "training_window_mean_loss": 3.1585715520434535e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.1946643590195804e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.199248593645959e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "tokens": 4224000,
+      "attention_entries": 46848000,
+      "elapsed_seconds": 40.82885739975609,
+      "stream9_sha256": "fb493993e4e35ebcaaa184fdce8689cf961c944f4b877ddc82506051cad6266d",
+      "stream11_sha256": "1bedac00bd1454daaf4479599b139934de99d060f97520b19630f460b2f4b9b5",
+      "checkpoint": "results\\majority_transfer_checkpoints\\1613.pt",
+      "checkpoint_sha256": "51fdd05331516a3d43492e890ca0c7e6bfb154b1a5dd6239f083737968d43099",
+      "test": {
+        "9": {
+          "count": 136,
+          "correct": 136,
+          "accuracy": 1.0,
+          "loss": 2.2264670193667323e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 36,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 62,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 54,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 10,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 2,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6323529411764706,
+            "last": 0.6323529411764706,
+            "exact_count": 1.0
+          }
+        },
+        "11": {
+          "count": 490,
+          "correct": 490,
+          "accuracy": 1.0,
+          "loss": 2.2108594827407177e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 128,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 216,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 174,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 58,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 36,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 6,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.5918367346938775,
+            "last": 0.5918367346938775,
+            "exact_count": 1.0
+          }
+        },
+        "15": {
+          "count": 798,
+          "correct": 798,
+          "accuracy": 1.0,
+          "loss": 2.4041019970446284e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 288,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 224,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 160,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 110,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 4,
+              "accuracy": 1.0
+            },
+            "13": {
+              "count": 4,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6215538847117794,
+            "last": 0.6215538847117794,
+            "exact_count": 1.0
+          }
+        },
+        "21": {
+          "count": 800,
+          "correct": 797,
+          "accuracy": 0.99625,
+          "loss": 0.021525132791351403,
+          "boundary_accuracy": 0.9898648648648649,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 0.9925
+          },
+          "family_count": 200,
+          "family_all_correct": 0.985,
+          "strata": {
+            "1": {
+              "count": 296,
+              "accuracy": 0.9898648648648649
+            },
+            "3": {
+              "count": 244,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 124,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 104,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 16,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 16,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6125,
+            "last": 0.6125,
+            "exact_count": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 1627,
+      "initial_sha256": "9879673af9eb76cbed599d8cd2538406b6f9a3ab591a810e39124a1c7902e0e9",
+      "parameters": 4016,
+      "status": "trained",
+      "step": 6000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 37,
+              "accuracy": 0.5,
+              "loss": 1.2331665421773872,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 20,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 97,
+              "accuracy": 0.5,
+              "loss": 1.232018642104137,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 50,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 0.5
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "training_window_mean_loss": 0.048387865280387396,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.0005171838573885272,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.0005162569110589391,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "training_window_mean_loss": 0.0002691465762699263,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.00013464816733907003,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.000134400858737132,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "training_window_mean_loss": 8.640019673148585e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 5.360939824354695e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 5.353915181234008e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "training_window_mean_loss": 3.739767443836998e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.535556673190934e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.533159569715946e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 5000,
+          "training_window_mean_loss": 1.8430136290512243e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 1.3029613634037866e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 1.3017865386107213e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 6000,
+          "training_window_mean_loss": 9.687592948261262e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 7.006976604439751e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 7.00188652612414e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "tokens": 4224000,
+      "attention_entries": 46848000,
+      "elapsed_seconds": 41.226279200054705,
+      "stream9_sha256": "36ebd56f491e93fc19a64eb331a890d4d208746afd865410f27c0a861681875c",
+      "stream11_sha256": "23f7bb8fa5fc638e680ff2d4e9cbe5391e7af1992c970810c9669b946ba845f5",
+      "checkpoint": "results\\majority_transfer_checkpoints\\1627.pt",
+      "checkpoint_sha256": "32c24243b6af461eeaeecc10cb7e5ff0ea3d57e2fec813167c0bcea5ad4b851d",
+      "test": {
+        "9": {
+          "count": 136,
+          "correct": 136,
+          "accuracy": 1.0,
+          "loss": 7.038786435270284e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 36,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 62,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 54,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 10,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 2,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6323529411764706,
+            "last": 0.6323529411764706,
+            "exact_count": 1.0
+          }
+        },
+        "11": {
+          "count": 490,
+          "correct": 490,
+          "accuracy": 1.0,
+          "loss": 7.018114687865599e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 128,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 216,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 174,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 58,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 36,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 6,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.5918367346938775,
+            "last": 0.5918367346938775,
+            "exact_count": 1.0
+          }
+        },
+        "15": {
+          "count": 798,
+          "correct": 798,
+          "accuracy": 1.0,
+          "loss": 7.270162201060161e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 288,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 224,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 160,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 110,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 4,
+              "accuracy": 1.0
+            },
+            "13": {
+              "count": 4,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6215538847117794,
+            "last": 0.6215538847117794,
+            "exact_count": 1.0
+          }
+        },
+        "21": {
+          "count": 800,
+          "correct": 690,
+          "accuracy": 0.8625,
+          "loss": 1.055563899935511,
+          "boundary_accuracy": 0.6283783783783784,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 0.725
+          },
+          "family_count": 200,
+          "family_all_correct": 0.645,
+          "strata": {
+            "1": {
+              "count": 296,
+              "accuracy": 0.6283783783783784
+            },
+            "3": {
+              "count": 244,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 124,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 104,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 16,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 16,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6125,
+            "last": 0.6125,
+            "exact_count": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 1657,
+      "initial_sha256": "5fdb9bd0e0126473fde663b975e4d9fb834657c9e872ba47724868739c8227c2",
+      "parameters": 4016,
+      "status": "trained",
+      "step": 6000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 37,
+              "accuracy": 0.5,
+              "loss": 0.8026347747775563,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 20,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 97,
+              "accuracy": 0.5,
+              "loss": 0.8045233358102798,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 50,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 0.5
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "training_window_mean_loss": 0.021026257580520336,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.0002976829925443139,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.0002980968949479979,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "training_window_mean_loss": 0.00014060458384753947,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 6.185300485488909e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 6.192807507658156e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "training_window_mean_loss": 3.758410881276817e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.1659070855571885e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.168083392880025e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "training_window_mean_loss": 1.4535551668085751e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 9.313074581130018e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 9.322343130900997e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 5000,
+          "training_window_mean_loss": 6.573114269610492e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 4.440222665384626e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 4.4450515518044205e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 6000,
+          "training_window_mean_loss": 3.2251101840522716e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.2452949836231147e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.247591226818088e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "tokens": 4224000,
+      "attention_entries": 46848000,
+      "elapsed_seconds": 40.62243099999614,
+      "stream9_sha256": "e289fa5a85ab4bd176b90ed9ea826b0d4f5a5937e587164b970465dd70894660",
+      "stream11_sha256": "46ea81f44396b2368262068436a9bbbd4e254f6fcafc2f89ba7891ba38b0c782",
+      "checkpoint": "results\\majority_transfer_checkpoints\\1657.pt",
+      "checkpoint_sha256": "e8bfb0b0f337ed4144a7202fc5a5365f8ab19ab4632dcb8e91996ac9e5d859b8",
+      "test": {
+        "9": {
+          "count": 136,
+          "correct": 136,
+          "accuracy": 1.0,
+          "loss": 2.279119370998776e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 36,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 62,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 54,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 10,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 2,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6323529411764706,
+            "last": 0.6323529411764706,
+            "exact_count": 1.0
+          }
+        },
+        "11": {
+          "count": 490,
+          "correct": 490,
+          "accuracy": 1.0,
+          "loss": 2.258797586506567e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 128,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 216,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 174,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 58,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 36,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 6,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.5918367346938775,
+            "last": 0.5918367346938775,
+            "exact_count": 1.0
+          }
+        },
+        "15": {
+          "count": 798,
+          "correct": 798,
+          "accuracy": 1.0,
+          "loss": 2.2838297999392374e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 288,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 224,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 160,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 110,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 4,
+              "accuracy": 1.0
+            },
+            "13": {
+              "count": 4,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6215538847117794,
+            "last": 0.6215538847117794,
+            "exact_count": 1.0
+          }
+        },
+        "21": {
+          "count": 800,
+          "correct": 800,
+          "accuracy": 1.0,
+          "loss": 2.4702628293110043e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 296,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 244,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 124,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 104,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 16,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 16,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6125,
+            "last": 0.6125,
+            "exact_count": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 1669,
+      "initial_sha256": "20e53914e93925cb08bb2ddb7fc596aef1f84b8901b53f2ce17a9550c8b86b12",
+      "parameters": 4016,
+      "status": "trained",
+      "step": 6000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 37,
+              "accuracy": 0.5,
+              "loss": 0.7345480639823789,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 20,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 97,
+              "accuracy": 0.5,
+              "loss": 0.7313070355154309,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 0.0
+              },
+              "family_count": 50,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 0.5
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "training_window_mean_loss": 0.02432178358587374,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.0003082550406429049,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.0003083580397864619,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "training_window_mean_loss": 0.00014111903953451584,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 5.5631716227995616e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 5.556775088681087e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "training_window_mean_loss": 3.0161810748515244e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 1.4722522669843884e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 1.4691246238616266e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "training_window_mean_loss": 8.862805009152182e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 4.9825074881729305e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 4.969643548713139e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 5000,
+          "training_window_mean_loss": 3.241583223108158e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.001136745596008e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 1.995495204053515e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 6000,
+          "training_window_mean_loss": 1.3713487537545613e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 8.976817817817212e-07,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 8.950340537159503e-07,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "tokens": 4224000,
+      "attention_entries": 46848000,
+      "elapsed_seconds": 40.797334500122815,
+      "stream9_sha256": "a492433d75ff59112af90f2973d95dc87b44d4689e3c32b12d0cc414a877822d",
+      "stream11_sha256": "27c24ade6cd3902e7133dee44777c92844f2c34af247ff79cde25fd434e75dd0",
+      "checkpoint": "results\\majority_transfer_checkpoints\\1669.pt",
+      "checkpoint_sha256": "8bda7c167a938694f5f2f054feab0e86fd6b72014b127b63aeabe50601f6d6bf",
+      "test": {
+        "9": {
+          "count": 136,
+          "correct": 136,
+          "accuracy": 1.0,
+          "loss": 9.07919083702281e-07,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 36,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 62,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 54,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 10,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 2,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6323529411764706,
+            "last": 0.6323529411764706,
+            "exact_count": 1.0
+          }
+        },
+        "11": {
+          "count": 490,
+          "correct": 490,
+          "accuracy": 1.0,
+          "loss": 9.008449620872141e-07,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 128,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 216,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 174,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 58,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 36,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 6,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.5918367346938775,
+            "last": 0.5918367346938775,
+            "exact_count": 1.0
+          }
+        },
+        "15": {
+          "count": 798,
+          "correct": 798,
+          "accuracy": 1.0,
+          "loss": 9.312807822845577e-07,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 288,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 224,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 160,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 110,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 4,
+              "accuracy": 1.0
+            },
+            "13": {
+              "count": 4,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6215538847117794,
+            "last": 0.6215538847117794,
+            "exact_count": 1.0
+          }
+        },
+        "21": {
+          "count": 800,
+          "correct": 800,
+          "accuracy": 1.0,
+          "loss": 2.8448244497815636e-05,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 296,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 244,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 124,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 104,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 16,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 16,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6125,
+            "last": 0.6125,
+            "exact_count": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 1693,
+      "initial_sha256": "7c1295f8bdd2213996355f9fa8fbd2498cbbf157d6205d521cbedb43344785ce",
+      "parameters": 4016,
+      "status": "trained",
+      "step": 6000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 37,
+              "accuracy": 0.5,
+              "loss": 0.7408878458337702,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 0.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 97,
+              "accuracy": 0.5,
+              "loss": 0.7410367957569024,
+              "boundary_accuracy": 0.5,
+              "class_accuracy": {
+                "0": 0.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 0.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 0.5
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 0.5
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 0.5
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 0.5
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "training_window_mean_loss": 0.025442393882438536,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 0.00031172424703206867,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 0.00031066684815957087,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "training_window_mean_loss": 0.00014944732831605106,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 6.709586117014647e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 6.688765512773178e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 3000,
+          "training_window_mean_loss": 4.072335189221981e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.353442985080305e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.347165656864203e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 4000,
+          "training_window_mean_loss": 1.5705711331922008e-05,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 1.0045495299150692e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 1.0020426023267705e-05,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 5000,
+          "training_window_mean_loss": 7.039523891667863e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 4.743508354100136e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 4.732737688537492e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        },
+        {
+          "step": 6000,
+          "training_window_mean_loss": 3.4198267050058086e-06,
+          "finite_training": true,
+          "validation": {
+            "9": {
+              "count": 74,
+              "correct": 74,
+              "accuracy": 1.0,
+              "loss": 2.3755941319928863e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 20,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 36,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 28,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 10,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.6756756756756757,
+                "last": 0.6756756756756757,
+                "exact_count": 1.0
+              }
+            },
+            "11": {
+              "count": 194,
+              "correct": 194,
+              "accuracy": 1.0,
+              "loss": 2.370615228489806e-06,
+              "boundary_accuracy": 1.0,
+              "class_accuracy": {
+                "0": 1.0,
+                "1": 1.0
+              },
+              "family_count": 50,
+              "family_all_correct": 1.0,
+              "strata": {
+                "1": {
+                  "count": 86,
+                  "accuracy": 1.0
+                },
+                "3": {
+                  "count": 70,
+                  "accuracy": 1.0
+                },
+                "5": {
+                  "count": 32,
+                  "accuracy": 1.0
+                },
+                "7": {
+                  "count": 6,
+                  "accuracy": 1.0
+                }
+              },
+              "baselines": {
+                "constant": 0.5,
+                "first": 0.7010309278350515,
+                "last": 0.7010309278350515,
+                "exact_count": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "tokens": 4224000,
+      "attention_entries": 46848000,
+      "elapsed_seconds": 41.32907019974664,
+      "stream9_sha256": "01d8e9d72abea23d0ed873237dcafc7c1054be6208cadba76c804a78bd564c8f",
+      "stream11_sha256": "388229a08927b55c1ee8b0439eea9de70aa8693ee5d64c96c0bbd6db248f217a",
+      "checkpoint": "results\\majority_transfer_checkpoints\\1693.pt",
+      "checkpoint_sha256": "feb01493efc8722a74f18a46afe5c99c17f6d51f6d066ec802836173783840a3",
+      "test": {
+        "9": {
+          "count": 136,
+          "correct": 136,
+          "accuracy": 1.0,
+          "loss": 2.4046957492854477e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 36,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 62,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 54,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 10,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 2,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6323529411764706,
+            "last": 0.6323529411764706,
+            "exact_count": 1.0
+          }
+        },
+        "11": {
+          "count": 490,
+          "correct": 490,
+          "accuracy": 1.0,
+          "loss": 2.384869247838707e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 128,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 216,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 174,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 58,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 36,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 6,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.5918367346938775,
+            "last": 0.5918367346938775,
+            "exact_count": 1.0
+          }
+        },
+        "15": {
+          "count": 798,
+          "correct": 798,
+          "accuracy": 1.0,
+          "loss": 2.4872328880966045e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 288,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 224,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 160,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 110,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 8,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 4,
+              "accuracy": 1.0
+            },
+            "13": {
+              "count": 4,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6215538847117794,
+            "last": 0.6215538847117794,
+            "exact_count": 1.0
+          }
+        },
+        "21": {
+          "count": 800,
+          "correct": 800,
+          "accuracy": 1.0,
+          "loss": 5.759576862853727e-06,
+          "boundary_accuracy": 1.0,
+          "class_accuracy": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "family_count": 200,
+          "family_all_correct": 1.0,
+          "strata": {
+            "1": {
+              "count": 296,
+              "accuracy": 1.0
+            },
+            "3": {
+              "count": 244,
+              "accuracy": 1.0
+            },
+            "5": {
+              "count": 124,
+              "accuracy": 1.0
+            },
+            "7": {
+              "count": 104,
+              "accuracy": 1.0
+            },
+            "9": {
+              "count": 16,
+              "accuracy": 1.0
+            },
+            "11": {
+              "count": 16,
+              "accuracy": 1.0
+            }
+          },
+          "baselines": {
+            "constant": 0.5,
+            "first": 0.6125,
+            "last": 0.6125,
+            "exact_count": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "input_checks": {
+    "train_9": {
+      "families": 80,
+      "rows": 302,
+      "boundary": 154
+    },
+    "validation_9": {
+      "families": 20,
+      "rows": 74,
+      "boundary": 36
+    },
+    "test_9": {
+      "families": 36,
+      "rows": 136,
+      "boundary": 62
+    },
+    "train_11": {
+      "families": 350,
+      "rows": 1364,
+      "boundary": 622
+    },
+    "validation_11": {
+      "families": 50,
+      "rows": 194,
+      "boundary": 86
+    },
+    "test_11": {
+      "families": 128,
+      "rows": 490,
+      "boundary": 216
+    },
+    "test_15": {
+      "families": 200,
+      "rows": 798,
+      "boundary": 288
+    },
+    "test_21": {
+      "families": 200,
+      "rows": 800,
+      "boundary": 296
+    }
+  },
+  "scores_sha256": "0120f231ac972443507b30f7292d06d8dae56ecd87655c4bcde87e05d54d0233",
+  "decision": {
+    "pass_transfer": false,
+    "checks": {
+      "completed": true,
+      "9_overall": true,
+      "11_overall": true,
+      "15_overall": true,
+      "15_boundary": true,
+      "21_overall": false,
+      "21_boundary": false
+    }
+  }
+}

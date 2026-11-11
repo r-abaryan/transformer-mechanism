@@ -1,0 +1,354 @@
+{
+  "source_sha256": "28b1b26c9e6de596db3d6fd78ba120f1e0286b1fff5b02291440b57ad9fc9ec0",
+  "protocol_sha256": "2b3bd5c743a3fe6f31fceeca932464529940764d8fcf113e3cffb7afdcc83001",
+  "prior_sha256": "d2dd49ba53850ff6919f1dc741969a1c4d33236435cab4a9c60af7a05883acc3",
+  "input_sha256": "471c762375e2debdbc6b6c6e728baf380dcc1f34fbdb3eb963d8fe9f82ed69d9",
+  "overlap": {
+    "changed": {
+      "unique_mappings": 1179,
+      "training_overlap": 56
+    },
+    "control": {
+      "unique_mappings": 1179,
+      "training_overlap": 56
+    }
+  },
+  "runs": [
+    {
+      "seed": 601,
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_601.pt",
+      "checkpoint_sha256": "a6ec898f5e1232d0a636143e88f27616a2c1640fdf47c1a8b6cc4359c920009f",
+      "conditions": {
+        "recipient": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00017773156798392412,
+          "changed_loss": 10.850442787368353,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "changed_donor": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 10.893569274012155,
+          "changed_loss": 0.0001948338237382376,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "control_donor": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00019421053463297954,
+          "changed_loss": 10.843653251505675,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "self": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00017773156798392417,
+          "changed_loss": 10.850442787368353,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "forward": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 0.9998611111111111,
+          "original_loss": 10.834733923979718,
+          "changed_loss": 0.0011553386372330765,
+          "eligible_count": 7200,
+          "eligible_changed": 0.9998611111111111
+        },
+        "reverse": {
+          "original_accuracy": 0.9916666666666667,
+          "changed_accuracy": 0.0011111111111111111,
+          "original_loss": 0.02943305758057281,
+          "changed_loss": 10.719765872679298,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0011111111111111111
+        },
+        "control": {
+          "original_accuracy": 0.9998611111111111,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0003919657595636767,
+          "changed_loss": 10.872984420801366,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        }
+      },
+      "verification": {
+        "library_error": 4.085620730620576e-14,
+        "self_error": 1.687538997430238e-14
+      }
+    },
+    {
+      "seed": 631,
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_631.pt",
+      "checkpoint_sha256": "076530ee1200c2a1ccef3c363e88b39f823e79ef155e4a49d133f152c1008dee",
+      "conditions": {
+        "recipient": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 9.600294671116886e-05,
+          "changed_loss": 11.512322731390174,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "changed_donor": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.645890711365285,
+          "changed_loss": 9.648365696997216e-05,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "control_donor": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 9.58402416379861e-05,
+          "changed_loss": 11.527422163934908,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "self": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 9.600294671116883e-05,
+          "changed_loss": 11.51232273139017,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "forward": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.627067627757993,
+          "changed_loss": 9.184375520707005e-05,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "reverse": {
+          "original_accuracy": 0.9997222222222222,
+          "changed_accuracy": 0.0001388888888888889,
+          "original_loss": 0.001115649443824959,
+          "changed_loss": 11.492029124458542,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0001388888888888889
+        },
+        "control": {
+          "original_accuracy": 0.9998611111111111,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00022872212129991916,
+          "changed_loss": 11.545538188131681,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        }
+      },
+      "verification": {
+        "library_error": 3.9745984281580604e-14,
+        "self_error": 2.4868995751603507e-14
+      }
+    },
+    {
+      "seed": 659,
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_659.pt",
+      "checkpoint_sha256": "cf42043e7f3450d480c424a302804808448eaf587779be22d4c443184e2187f9",
+      "conditions": {
+        "recipient": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00013970188778248828,
+          "changed_loss": 11.254511821369908,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "changed_donor": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.264154213978003,
+          "changed_loss": 0.00016055138835306093,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "control_donor": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00013947814004387277,
+          "changed_loss": 11.257199555767999,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "self": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0001397018877824883,
+          "changed_loss": 11.254511821369906,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "forward": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.242356515825437,
+          "changed_loss": 0.00018140507808407186,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "reverse": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00015842490432483724,
+          "changed_loss": 11.223132520287123,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "control": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00014053708442805115,
+          "changed_loss": 11.264963691015453,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        }
+      },
+      "verification": {
+        "library_error": 2.3092638912203256e-14,
+        "self_error": 2.4868995751603507e-14
+      }
+    },
+    {
+      "seed": 683,
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_683.pt",
+      "checkpoint_sha256": "c9957c1188e933615f37e8c9584540eeffffc394a166faf870c3db235f68ea88",
+      "conditions": {
+        "recipient": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00013447452692927068,
+          "changed_loss": 11.227726784737055,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "changed_donor": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.269541727287411,
+          "changed_loss": 0.0001214353875246167,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "control_donor": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00011841064538773467,
+          "changed_loss": 11.228316291221681,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "self": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00013447452692927068,
+          "changed_loss": 11.227726784737055,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "forward": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.255064060057066,
+          "changed_loss": 0.0001240025622471343,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "reverse": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0003177354175120608,
+          "changed_loss": 11.217039630782777,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "control": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00011742081594604734,
+          "changed_loss": 11.237390970181862,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        }
+      },
+      "verification": {
+        "library_error": 3.552713678800501e-14,
+        "self_error": 2.353672812205332e-14
+      }
+    },
+    {
+      "seed": 719,
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_719.pt",
+      "checkpoint_sha256": "bdf1ea1bc9bf36bb1ad414ee20e2de74b1ad17f3e3b582cde060d4ef43f9b9bf",
+      "conditions": {
+        "recipient": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0001296355110839416,
+          "changed_loss": 11.094954132600318,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "changed_donor": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.217203085632589,
+          "changed_loss": 0.00012617406587463336,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "control_donor": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00013527685530229428,
+          "changed_loss": 11.090184264523419,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "self": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0001296355110839417,
+          "changed_loss": 11.094954132600318,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "forward": {
+          "original_accuracy": 0.0,
+          "changed_accuracy": 1.0,
+          "original_loss": 11.192974593631929,
+          "changed_loss": 0.00014333761662002438,
+          "eligible_count": 7200,
+          "eligible_changed": 1.0
+        },
+        "reverse": {
+          "original_accuracy": 1.0,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.00014950383249264082,
+          "changed_loss": 11.07700537065263,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        },
+        "control": {
+          "original_accuracy": 0.9998611111111111,
+          "changed_accuracy": 0.0,
+          "original_loss": 0.0003389603653916781,
+          "changed_loss": 11.098571880700062,
+          "eligible_count": 7200,
+          "eligible_changed": 0.0
+        }
+      },
+      "verification": {
+        "library_error": 1.865174681370263e-14,
+        "self_error": 1.9761969838327786e-14
+      }
+    }
+  ],
+  "scores_sha256": "d6b38fc4d9bbd2a5c215e564091a65d04a306a5a4bbf50c7cec1b1d6d96bf8a9"
+}

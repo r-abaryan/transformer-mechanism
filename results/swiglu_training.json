@@ -1,0 +1,689 @@
+{
+  "phase": "complete",
+  "provenance": {
+    "experiments/mqa_training.py": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+    "experiments/audit_mqa_training.py": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+    "experiments/verify_mqa_training.py": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018",
+    "experiments/audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "experiments/query_exposure.py": "17333e05e77a91a5c99b283f3d64eea5798bdbf2abd80192473f03e941428be2",
+    "experiments/ffn_width.py": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+    "experiments/verify_ffn_width.py": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95",
+    "experiments/audit_ffn_width.py": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14",
+    "experiments/audit_gelu_comparison.py": "6a8b40fef74e32f6f64038aeccc63fc36a948df4bd23c466214199c8276e9ad3",
+    "experiments/repeated_key.py": "dfcb40dd4bee1ebcccc91033259bdccc8a245e39066f086a0552659c2d7f5559",
+    "experiments/audit_repeated_key.py": "d828a61ca98199a7ebe463d8a210d00767f3d1d74016a4113ef2637dcb84ef5a",
+    "experiments/audit_positional_comparison.py": "7ee8d56084ce92bc8f1ee0613dc74eb6acae43e7d294c87e2ed9c2882aefa166",
+    "experiments/activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "experiments/positional_comparison.py": "b4587182a2eec507cc252014f493717c58285798c85469a8a669f670c3e6aa52",
+    "experiments/reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "experiments/compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "experiments/position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "experiments/position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments/verify_wikitext2_baseline.py": "5cb2a0a7ac8e7a962731010286ef5fd1fef929a227b865c43ad3a119e83e5de1",
+    "experiments/wikitext2_training.py": "a39c9f6563bbff33582fc2bf6f648610a89c89d3791608acb04d306c0091bbcd",
+    "experiments/verify_wikitext2_gpu.py": "b36c65b4d76190e845d27d714427b1f9bd017fd0a0136444a769c253a03184c1",
+    "experiments/audit_wikitext2_training.py": "d803b96fa6a26580dcfa32d4706bb30b6542b0f5e7914b37ce905b08b0cc9d40",
+    "experiments/prepare_wikitext2.py": "73e3465e0c497be591d55c88a85f56ca5ca51542d07340b6b563db4f84f723c0",
+    "experiments/audit_wikitext2_data.py": "a749ce7bec9e546395e9eae80713d1057ba7d5aaa0a9e35e2ebd87460fc724e3",
+    "experiments/mqa_decoding.py": "be4e316d331e10fe2d9346411e7ee1707cba1e684caa05209f0e547880fad156",
+    "docs/wikitext2-execution-protocol.md": "fb411a802b17f0f5f028e5a9f4d9f4358dcb7bc5a300710cdfd1517c130cc1c9",
+    "docs/decisions/0003-wikitext2-matched-baseline.md": "87402f714e8ed7eb90eeaa840b04dfa15ee639cffd3c92761a139fe829b913c7",
+    "docs/decisions/0004-swiglu-matched-ffn.md": "774f1cdaeae7f35fb2ee6fdbc9757cc0aec7b3aff27d24a43bdbbd34ee560462",
+    "experiments/swiglu_math.py": "2a79532a32091c0412c352ec0ed3237c55b870f053ae849d4f7e9901140ce6a6",
+    "experiments/swiglu_training.py": "22766b5a7b53662784e28fa8aba96aa3f55550455e00909e33d6731f8a1ee448",
+    "experiments/verify_swiglu_training.py": "392acd14a0c0a404dfa8f123cda6f17ec397d548ad44b48ac4f30318c90cc438",
+    "experiments/audit_swiglu_training.py": "bddfbb40f79ec0d5402d7dda0a81b95648d60a0c714fe425aee899f01a551d58"
+  },
+  "encoding_sha256": "e917a3c3d8118aebf329063b35c8811915589461e9bb7b4c3bdc955d4d689323",
+  "verification_sha256": "0b16cae74cacde93b70f6cd60b8480e321f99ea791f8fc9715b4ccc8f02d0882",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "runs": [
+    {
+      "seed": 1783,
+      "arm": "relu",
+      "parameters": 1068800,
+      "initial_sha256": "56606fac848ea5f35b25c31085188341187e0f40e6882ac1f4405318ea5d9592",
+      "common_initial_sha256": "a49fa58e2f354a883445dc5b0ab4b4d2d6b60fafe6e692de061de13c45b886b4",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.575368893595375,
+            "perplexity": 39158.34736347174,
+            "accuracy": 4.594638057387029e-06
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.3421478271484375,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.606095786194789,
+            "perplexity": 739.589857699416,
+            "accuracy": 0.11395161846125572
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.642190456390381,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.348107754140692,
+            "perplexity": 571.4104363414787,
+            "accuracy": 0.14077511544028118
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.429039478302002,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.196704923358373,
+            "perplexity": 491.1280673208204,
+            "accuracy": 0.1551884950263043
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.274326324462891,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.088744378029005,
+            "perplexity": 440.8675005476007,
+            "accuracy": 0.16240207677640195
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.169279098510742,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.012611977668508,
+            "perplexity": 408.54904883043685,
+            "accuracy": 0.16679914539732132
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.085405349731445,
+          "validation": {
+            "targets": 217645,
+            "loss": 5.964901555551834,
+            "perplexity": 389.51468062553806,
+            "accuracy": 0.17152702795837257
+          }
+        }
+      ],
+      "elapsed_seconds": 212.00175440008752,
+      "stream_sha256": "f33925c91e9478c8ba378f512ffa9b239f89aa76542aa343673104b7ab9626fe",
+      "checkpoint": "results\\swiglu_training_checkpoints\\relu_1783.pt",
+      "checkpoint_sha256": "c31b7a4fdce0b1cce9381dddf16d65399ac3ce2e222ef9075a85fa213d4eb681",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 5.964901555551834,
+        "perplexity": 389.51468062553806,
+        "accuracy": 0.17152702795837257
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.893700298429836,
+        "perplexity": 362.7450690514384,
+        "accuracy": 0.1716306684910086
+      }
+    },
+    {
+      "seed": 1783,
+      "arm": "swiglu",
+      "parameters": 1068800,
+      "initial_sha256": "88204984ad7d72ae0360fa232af2fe3531d8f203c46218a82a5949b6bc5709f2",
+      "common_initial_sha256": "a49fa58e2f354a883445dc5b0ab4b4d2d6b60fafe6e692de061de13c45b886b4",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.57931331051393,
+            "perplexity": 39313.1092333296,
+            "accuracy": 3.216246640170921e-05
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.358736038208008,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.595581227443338,
+            "perplexity": 731.8541368036105,
+            "accuracy": 0.10950400882170507
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.630095958709717,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.338907310960705,
+            "perplexity": 566.177317510134,
+            "accuracy": 0.1347837074134485
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.4251909255981445,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.199566610689226,
+            "perplexity": 492.53553519488133,
+            "accuracy": 0.15060304624503204
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.2829203605651855,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.102402258977753,
+            "perplexity": 446.93012343303127,
+            "accuracy": 0.1590525856325668
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.183349132537842,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.034894185845229,
+            "perplexity": 417.7546029493116,
+            "accuracy": 0.164575340577546
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.101550579071045,
+          "validation": {
+            "targets": 217645,
+            "loss": 5.981662532305767,
+            "perplexity": 396.0983473466622,
+            "accuracy": 0.16986376898159847
+          }
+        }
+      ],
+      "elapsed_seconds": 211.01257829973474,
+      "stream_sha256": "f33925c91e9478c8ba378f512ffa9b239f89aa76542aa343673104b7ab9626fe",
+      "checkpoint": "results\\swiglu_training_checkpoints\\swiglu_1783.pt",
+      "checkpoint_sha256": "94f95445ff63c020ce3da2ace5f4e3f1a55b07e424df36b2b58bafdbaa8c75ad",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 5.981662532305767,
+        "perplexity": 396.0983473466622,
+        "accuracy": 0.16986376898159847
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.902977402975295,
+        "perplexity": 366.1259511307913,
+        "accuracy": 0.1702868451915559
+      }
+    },
+    {
+      "seed": 1801,
+      "arm": "swiglu",
+      "parameters": 1068800,
+      "initial_sha256": "32336213df92d5bef0404803714cacdbe98b236552554509cd4c70b8f2b39b45",
+      "common_initial_sha256": "6931473fcc893772ec67f7d73fba97b26ddceacde22de18281bc468e62ce75ee",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.576147045587787,
+            "perplexity": 39188.830368159426,
+            "accuracy": 4.594638057387029e-05
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.354551315307617,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.588834137673814,
+            "perplexity": 726.9328720213359,
+            "accuracy": 0.11423648602081371
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.632742404937744,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.3657476124327586,
+            "perplexity": 581.5794618643837,
+            "accuracy": 0.13372694066024948
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.452875137329102,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.241253047338416,
+            "perplexity": 513.5015497298325,
+            "accuracy": 0.14831491649245332
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.333947658538818,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.151203849092244,
+            "perplexity": 469.2819915643031,
+            "accuracy": 0.154163890739507
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.24241828918457,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.07977555648657,
+            "perplexity": 436.931117357283,
+            "accuracy": 0.16123963334788302
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.153327465057373,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.015381651337775,
+            "perplexity": 409.682164830008,
+            "accuracy": 0.16649130464747638
+          }
+        }
+      ],
+      "elapsed_seconds": 228.17382639972493,
+      "stream_sha256": "1001896b9b3b26bf3c6ad073fa1a4c219ff81c44eb738dad933114e14ac842dc",
+      "checkpoint": "results\\swiglu_training_checkpoints\\swiglu_1801.pt",
+      "checkpoint_sha256": "2a459c7ddcc29477992cc93489127ead37b3954f3639d9b7b0dfd029a5268cf8",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 6.015381651337775,
+        "perplexity": 409.682164830008,
+        "accuracy": 0.16649130464747638
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.945324672966094,
+        "perplexity": 381.9633543431765,
+        "accuracy": 0.16661372817305187
+      }
+    },
+    {
+      "seed": 1801,
+      "arm": "relu",
+      "parameters": 1068800,
+      "initial_sha256": "f4157464c417e58d700d540ac197797fdb7f34eedc5d71081d8e8327ada98899",
+      "common_initial_sha256": "6931473fcc893772ec67f7d73fba97b26ddceacde22de18281bc468e62ce75ee",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.576444801586112,
+            "perplexity": 39200.50081485541,
+            "accuracy": 2.2973190286935147e-05
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.3532023429870605,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.626443188401991,
+            "perplexity": 754.7927350152164,
+            "accuracy": 0.11305566404006524
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.659510135650635,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.38524630472734,
+            "perplexity": 593.0307808965068,
+            "accuracy": 0.13303774495164145
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.463388442993164,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.244199107591343,
+            "perplexity": 515.0165868348216,
+            "accuracy": 0.14649543982172805
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.327356815338135,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.143586738943885,
+            "perplexity": 465.72099839999555,
+            "accuracy": 0.1547657883250247
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.223383903503418,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.061508519398239,
+            "perplexity": 429.0221371728646,
+            "accuracy": 0.16245721243309058
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.128412246704102,
+          "validation": {
+            "targets": 217645,
+            "loss": 5.995646587998646,
+            "perplexity": 401.67631913068095,
+            "accuracy": 0.16782374968411864
+          }
+        }
+      ],
+      "elapsed_seconds": 211.40378059982322,
+      "stream_sha256": "1001896b9b3b26bf3c6ad073fa1a4c219ff81c44eb738dad933114e14ac842dc",
+      "checkpoint": "results\\swiglu_training_checkpoints\\relu_1801.pt",
+      "checkpoint_sha256": "e70123f24a60a6513185a4affad8c5250255917ece059f9a7736c9f00130c401",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 5.995646587998646,
+        "perplexity": 401.67631913068095,
+        "accuracy": 0.16782374968411864
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.925424017141543,
+        "perplexity": 374.4371694831908,
+        "accuracy": 0.16613728173051864
+      }
+    },
+    {
+      "seed": 1823,
+      "arm": "relu",
+      "parameters": 1068800,
+      "initial_sha256": "db43aae4c781e90bb834ccdd2c522083f74e13baf1b53d00159ec285d3a56f99",
+      "common_initial_sha256": "37ce4fdf1c96192bc32a94b7361a48c0f03a70c833311ff9e207b90f10fc46b8",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.571323343412068,
+            "perplexity": 39000.2503145144,
+            "accuracy": 2.7567828344322177e-05
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.350090026855469,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.5784170749947215,
+            "perplexity": 719.3996717617375,
+            "accuracy": 0.11616623400491627
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.627689838409424,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.352305634107574,
+            "perplexity": 573.8141905709753,
+            "accuracy": 0.13358910151852788
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.4301652908325195,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.203508477712857,
+            "perplexity": 494.4808763982589,
+            "accuracy": 0.1488478945071102
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.290405750274658,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.098452213607475,
+            "perplexity": 445.16821127551214,
+            "accuracy": 0.15836798456201612
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.182423114776611,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.0228212215897425,
+            "perplexity": 412.74138962518,
+            "accuracy": 0.1655677823979416
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.089104175567627,
+          "validation": {
+            "targets": 217645,
+            "loss": 5.9551423404359705,
+            "perplexity": 385.7318120048768,
+            "accuracy": 0.17054837005214915
+          }
+        }
+      ],
+      "elapsed_seconds": 218.7136426998768,
+      "stream_sha256": "88ff3213498d6045d885bd633d24c8f61bf80ad35c69bcf309be2cbadaf580ce",
+      "checkpoint": "results\\swiglu_training_checkpoints\\relu_1823.pt",
+      "checkpoint_sha256": "5b320a0e8879363827bd3768225d0be60d416c17a0bb211e22fa333755b7f275",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 5.9551423404359705,
+        "perplexity": 385.7318120048768,
+        "accuracy": 0.17054837005214915
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.88340660663858,
+        "perplexity": 359.030235589133,
+        "accuracy": 0.1705841151941621
+      }
+    },
+    {
+      "seed": 1823,
+      "arm": "swiglu",
+      "parameters": 1068800,
+      "initial_sha256": "bbefb8f8842862a38b9e40e953e967badbb7c033081379ef7683ea4a1b5074cf",
+      "common_initial_sha256": "37ce4fdf1c96192bc32a94b7361a48c0f03a70c833311ff9e207b90f10fc46b8",
+      "status": "trained",
+      "step": 6000,
+      "targets": 3072000,
+      "curve": [
+        {
+          "step": 0,
+          "validation": {
+            "targets": 217645,
+            "loss": 10.581344886000178,
+            "perplexity": 39393.05796578102,
+            "accuracy": 2.2973190286935147e-05
+          }
+        },
+        {
+          "step": 1000,
+          "finite_training": true,
+          "training_window_mean_loss": 7.36533260345459,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.585703405875698,
+            "perplexity": 724.6605989585388,
+            "accuracy": 0.11639137126972823
+          }
+        },
+        {
+          "step": 2000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.633284568786621,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.3584959204699905,
+            "perplexity": 577.3772816283933,
+            "accuracy": 0.13024879965080752
+          }
+        },
+        {
+          "step": 3000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.43682861328125,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.207694543976807,
+            "perplexity": 496.5551445962055,
+            "accuracy": 0.1458705690459234
+          }
+        },
+        {
+          "step": 4000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.298335075378418,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.110923215941321,
+            "perplexity": 450.75466702560686,
+            "accuracy": 0.15446254221323716
+          }
+        },
+        {
+          "step": 5000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.198572635650635,
+          "validation": {
+            "targets": 217645,
+            "loss": 6.041068660858236,
+            "perplexity": 420.3419979896238,
+            "accuracy": 0.1611385513106205
+          }
+        },
+        {
+          "step": 6000,
+          "finite_training": true,
+          "training_window_mean_loss": 6.108430862426758,
+          "validation": {
+            "targets": 217645,
+            "loss": 5.978102256235373,
+            "perplexity": 394.6906352878219,
+            "accuracy": 0.16678995612120656
+          }
+        }
+      ],
+      "elapsed_seconds": 234.13548050029203,
+      "stream_sha256": "88ff3213498d6045d885bd633d24c8f61bf80ad35c69bcf309be2cbadaf580ce",
+      "checkpoint": "results\\swiglu_training_checkpoints\\swiglu_1823.pt",
+      "checkpoint_sha256": "a1d5e592f0ed05a187dcbb954529dc62cb1a418f43b2e4abfa920f3c7d608481",
+      "final_validation": {
+        "targets": 217645,
+        "loss": 5.978102256235373,
+        "perplexity": 394.6906352878219,
+        "accuracy": 0.16678995612120656
+      },
+      "test": {
+        "targets": 245568,
+        "loss": 5.908653639801545,
+        "perplexity": 368.21007814106923,
+        "accuracy": 0.16556310268438884
+      }
+    }
+  ],
+  "unigram_validation": {
+    "loss": 6.874836645513412,
+    "perplexity": 967.6172880483878
+  },
+  "decision": {
+    "adopt_swiglu": false,
+    "checks": {
+      "completed": true,
+      "learning_sanity": true,
+      "mean_improvement2": false,
+      "no_worse_seed": false
+    },
+    "geometric_mean_ratio": 1.0200163452922981,
+    "paired_ratios": [
+      1.0169022300020916,
+      1.0199310870918492,
+      1.023225523548034
+    ],
+    "metric": "final_validation"
+  },
+  "unigram_test": {
+    "loss": 6.818261573957812,
+    "perplexity": 914.3940211943078
+  },
+  "scores_sha256": "ab5b0244dee666bc1cccadd488b1c68c5f78210524f6c29a4aa404e72a5d68e0",
+  "validation_decision_sha256": "489a58d4a28d3819346ca5166020389cf55f52b9d8753dba91ae5eafec5a6676"
+}

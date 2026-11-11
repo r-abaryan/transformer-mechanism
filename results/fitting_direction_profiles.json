@@ -1,0 +1,60 @@
+{
+  "records": [
+    {
+      "arm": "lbfgs",
+      "step": 1,
+      "seconds": 3.3801263000059407,
+      "gradient_evaluations": 3,
+      "histories": 9216,
+      "input_events": 294912,
+      "answer_targets": 133632,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "lbfgs",
+      "step": 2,
+      "seconds": 1.123613400006434,
+      "gradient_evaluations": 2,
+      "histories": 6144,
+      "input_events": 196608,
+      "answer_targets": 89088,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "negative_gradient",
+      "step": 1,
+      "seconds": 1.7126370999903884,
+      "gradient_evaluations": 3,
+      "histories": 9216,
+      "input_events": 294912,
+      "answer_targets": 133632,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "negative_gradient",
+      "step": 2,
+      "seconds": 1.7654913000005763,
+      "gradient_evaluations": 3,
+      "histories": 9216,
+      "input_events": 294912,
+      "answer_targets": 133632,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    }
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "sources": {
+    "experiments/fitting_direction.py": "e80c68a335089dcd43730d47b47f1b4e60f111c4fc1cd13937fdf315e23841f9",
+    "experiments/audit_fitting_direction.py": "c7c787e4f4435aae84d0206fa46599cb510277eb92ee724ea37cce17cc371e19",
+    "tests/test_fitting_direction.py": "a7ec0e332842321ecfb82eabbc61033c086493bced5d15bb80d0d9beebd9ba85"
+  }
+}

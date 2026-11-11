@@ -1,0 +1,72 @@
+[
+  {
+    "study": "state_recipe_development",
+    "audit_passed": true,
+    "report_hash_matches": true,
+    "dependency_count": 24,
+    "dependency_mismatches": [],
+    "runs": 8,
+    "decision": {
+      "candidates": [
+        {
+          "recipe": "constant_001",
+          "passes_fit": false,
+          "worst_accuracy": 0.529296875,
+          "worst_loss": 0.7080418831616775
+        },
+        {
+          "recipe": "constant_003",
+          "passes_fit": false,
+          "worst_accuracy": 0.533203125,
+          "worst_loss": 0.6890565255526234
+        },
+        {
+          "recipe": "cosine_001",
+          "passes_fit": false,
+          "worst_accuracy": 0.939453125,
+          "worst_loss": 0.17243013383844866
+        },
+        {
+          "recipe": "cosine_003",
+          "passes_fit": false,
+          "worst_accuracy": 0.49609375,
+          "worst_loss": 0.6973411737227053
+        }
+      ],
+      "selected_recipe": null,
+      "rule": "final full-training >=99% every group/length/seed; lowest worst-cell CE; fixed order breaks ties"
+    }
+  },
+  {
+    "study": "state_reset_exposure",
+    "audit_passed": true,
+    "report_hash_matches": true,
+    "dependency_count": 23,
+    "dependency_mismatches": [],
+    "runs": 6
+  },
+  {
+    "study": "state_momentum_training",
+    "audit_passed": true,
+    "report_hash_matches": true,
+    "dependency_count": 35,
+    "dependency_mismatches": [],
+    "runs": 6
+  },
+  {
+    "study": "copy_marker_training",
+    "audit_passed": true,
+    "report_hash_matches": true,
+    "dependency_count": 23,
+    "dependency_mismatches": [],
+    "runs": 6
+  },
+  {
+    "study": "copy_marker_alignment",
+    "audit_passed": true,
+    "report_hash_matches": true,
+    "dependency_count": 27,
+    "dependency_mismatches": [],
+    "runs": 0
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "previous_verification_sha256": "520c766624e5d0583ef02c0f5644f6fb8a345381ee8d3bb7f0156a73d8cd3936",
+  "changes": "Source-entry chronology clarification and correctly rounded audit discrepancy; measured tables unchanged",
+  "updated_document_hashes": {
+    "docs/topics/attention/full-pool-fitting-results.md": "ad027f8979687640412ac28834073d46511a41a29484b0765106b6e6fe902bc4",
+    "docs/reference/sources.md": "40012e4e5e5a883293664792338679ffb091c8f18c83ae416f10fb326fdb362c"
+  },
+  "rechecked_local_links": 141,
+  "protected_files": 31,
+  "formal_report_and_audit_unchanged": true,
+  "maintenance_note": "Initial inline check compared native Windows paths to slash-normalized strings and stopped before writing; final check normalizes metadata paths. No training/evaluation defect or evidence modification."
+}

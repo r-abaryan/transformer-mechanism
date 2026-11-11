@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "prior_evaluator_checks": {
+    "passed": true,
+    "initialized_saved_continuation_evaluator_audit": true,
+    "gradient_decomposition": true,
+    "unchanged_content_coefficients": true,
+    "wrong_denominator_rejected": true,
+    "missing_group_rejected": true,
+    "fixture_training_updates": 2,
+    "complete_step_profiles": [
+      {
+        "checkpoint": "results\\test_runs\\eos_window_86466f7bf65d4926ada8a9a5f01fd389\\native.pt",
+        "stream": "960ca427fe62396040dd53af3d0531a0c88f83b69e1b69043204b68b56211aa3",
+        "position_stream": "dbcbafd598f90ba3e0f3eec5b49779b91972d43174291e75a1da7c682044ec9f",
+        "updates": 1,
+        "examples": 210,
+        "computed_targets": 840,
+        "active_targets": 840,
+        "seconds": 0.02501270000357181,
+        "optimizer_bytes": 30340
+      },
+      {
+        "checkpoint": "results\\test_runs\\eos_window_86466f7bf65d4926ada8a9a5f01fd389\\no_terminal.pt",
+        "stream": "960ca427fe62396040dd53af3d0531a0c88f83b69e1b69043204b68b56211aa3",
+        "position_stream": "dbcbafd598f90ba3e0f3eec5b49779b91972d43174291e75a1da7c682044ec9f",
+        "updates": 1,
+        "examples": 210,
+        "computed_targets": 840,
+        "active_targets": 630,
+        "seconds": 0.04542129999026656,
+        "optimizer_bytes": 30340
+      }
+    ]
+  },
+  "parameter_gradient_scope": true,
+  "missing_detach_rejected": true,
+  "unchanged_logits": true,
+  "saved_routed_evaluator": true,
+  "complete_step_profiles": [
+    {
+      "checkpoint": "results\\test_runs\\terminal_route_02a99059c4334b708e8303e7dfc6a243\\native.pt",
+      "checkpoint_sha256": "4c41f2652b3eecc41db0c46926a039cafbaba52c9f058c38f071ee7f812b3d87",
+      "stream": "1c81fd3ff8045b7a3a32da34624a94e9821b40b691722038dce1e4a89ca9228e",
+      "position_stream": "c2f3d406bd8d1ef97cbd2f92e3603eec5c3e582dbcafc2c3b24c8e16e613ddd1",
+      "updates": 1,
+      "examples": 210,
+      "targets": 840,
+      "seconds": 0.02965869999025017,
+      "optimizer_bytes": 30340
+    },
+    {
+      "checkpoint": "results\\test_runs\\terminal_route_02a99059c4334b708e8303e7dfc6a243\\classifier_only.pt",
+      "checkpoint_sha256": "83306e3786f6ec8147d404df04a39f25b8a242a2ba5abaab4a13aff88d7316e1",
+      "stream": "1c81fd3ff8045b7a3a32da34624a94e9821b40b691722038dce1e4a89ca9228e",
+      "position_stream": "c2f3d406bd8d1ef97cbd2f92e3603eec5c3e582dbcafc2c3b24c8e16e613ddd1",
+      "updates": 1,
+      "examples": 210,
+      "targets": 840,
+      "seconds": 0.0265843000379391,
+      "optimizer_bytes": 30340
+    }
+  ],
+  "total_fixture_updates": 4
+}

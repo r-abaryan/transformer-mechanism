@@ -1,0 +1,13 @@
+# How block 1 transports the initial cue
+
+Frozen before evaluation, 2026-10-03. Saved independent-exposure checkpoints 3011/3019/3023. Reuse complete train/test length-12 long-tail grids and both directions of each initial-bit-flip pair. Donor has identical reset/suffix/label. No training, checkpoint selection or untouched confirmation.
+
+Substitute the initial token's block-1 K, V, or both from the matched same-model donor. In the noninitial query rows, Q and incoming residual are unchanged by the input flip. Keep row 0's attention/output at the recipient value. Recompute block-1 FFN, full block 2 and final normalization/logits. Also target K/V substitutions to reset row 1, suffix rows 2..N-2, final query row N-1, or head 0/1 across all noninitial rows. MQA's source K/V are shared; head-specific interventions use a synthetic per-head expansion, not learned separate source projections.
+
+Eleven fixed conditions: sham, K_noninitial, V_noninitial, KV_noninitial, KV_reset, KV_suffix, KV_query, KV_head0, KV_head1, initial_state, both. initial_state replaces only block-1 outgoing row 0 with donor. both combines KV_noninitial and initial_state. Preserve original input activations at every unpatched site. No source deletion or arbitrary zero ablation.
+
+Report label accuracy, rescued/harmed counts, donor-class agreement on baseline class-changing pairs and aggregate donor-gap recovery, reusing the earlier definitions. Denominators and directional pairing must remain visible. Class agreement and continuous recovery are not additive responsibility. Matched donor behavior is not necessarily correct behavior.
+
+Controls: sham equals original; KV_noninitial must reproduce donor block-1 outgoing states at every noninitial position, because all their input embeddings and Q match; both equals donor final logits; dropping initial_state must change that donor equality. Verify intermediate noninitial state equality for sham and all patches in native versus independent arithmetic. Use separate normalization/RoPE/causal SDPA reference, every final logit/argmax within 1e-10 and zero argmax changes, baseline matches archived/native logits. Independent scalar metrics agree within 1e-10. Check paired inputs and labels with recurrent and parity/reset equations. Hash targeted prior reports/sources/data/checkpoints before/after.
+
+Stop after these eleven conditions, controls and one short educational report. This localizes transport in the frozen model under activation mixtures, not why training learned it, a minimal circuit, a task repair or an architecture change. Do not automatically subdivide every token or neuron next.

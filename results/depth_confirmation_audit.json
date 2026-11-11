@@ -1,0 +1,100 @@
+{
+  "report_sha256": "8d6c877e53c6efd05e414ec673a8010d4b1be9aa31f90960e0c78c190bf0aa27",
+  "audit_source_sha256": "ec84abcb76a5cf1f8a15f5fba678c8c728c5e10939bdab6cdf49c1ec1b1e88bb",
+  "canonical_splits_disjoint": true,
+  "labels_verified": true,
+  "test_mapping_overlap_with_train": 906,
+  "test_distinct_mappings": 943,
+  "checkpoint_rechecks": [
+    {
+      "model": "deep",
+      "seed": 137,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "wide",
+      "seed": 137,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "deep",
+      "seed": 163,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "wide",
+      "seed": 163,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "deep",
+      "seed": 191,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "wide",
+      "seed": 191,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "deep",
+      "seed": 223,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "wide",
+      "seed": 223,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "deep",
+      "seed": 257,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    },
+    {
+      "model": "wide",
+      "seed": 257,
+      "max_metric_errors": {
+        "test": 0.0,
+        "four_pairs": 0.0,
+        "six_pairs": 0.0
+      }
+    }
+  ]
+}

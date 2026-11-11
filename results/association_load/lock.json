@@ -1,0 +1,20 @@
+{
+  "source_dependencies": {
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/audit_association_load.py": "8bc08cf1d5226f6bdd4da7259c4572122a07e4ab007d23473a8090be5146e338",
+    "tests/test_association_load.py": "5335028a8e97438502694a63a0f9ca2862549ee3a5cab40d6d00838a7ffafd50",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_delta_retrieval.py": "9f1175b6ee8afb43e1306d15f4b9cb0c3020d75778b3dcd9d2bd3c21e9b062d7",
+    "docs/protocols/association-load.md": "21430d363ea10f80fb60cf855daf57aeb89fd28853471da418ddb974c44a9db7"
+  },
+  "preflight_sha256": "61c3673baeea1f987b537548e3e86881c057e3a8c38e61f4f426a03dd5d74170",
+  "loads": [
+    2,
+    8,
+    16,
+    32
+  ],
+  "length": 32,
+  "updates": 3000,
+  "batch": 64
+}

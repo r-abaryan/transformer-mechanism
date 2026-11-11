@@ -1,0 +1,57 @@
+{
+  "records": [
+    {
+      "device": "cpu",
+      "arm": "exhaustive",
+      "histories": 64,
+      "events": 32,
+      "answer_targets": 2048,
+      "dtype": "float64",
+      "complete_step_seconds": 0.03920589998597279,
+      "optimizer_state_allocated": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "device": "cpu",
+      "arm": "sampled_m",
+      "histories": 64,
+      "events": 32,
+      "answer_targets": 2048,
+      "dtype": "float64",
+      "complete_step_seconds": 0.0343441000150051,
+      "optimizer_state_allocated": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "device": "cuda",
+      "arm": "exhaustive",
+      "histories": 64,
+      "events": 32,
+      "answer_targets": 2048,
+      "dtype": "float64",
+      "complete_step_seconds": 0.39956949997576885,
+      "optimizer_state_allocated": true,
+      "peak_allocated_bytes": 72318464,
+      "peak_reserved_bytes": 73400320
+    },
+    {
+      "device": "cuda",
+      "arm": "sampled_m",
+      "histories": 64,
+      "events": 32,
+      "answer_targets": 2048,
+      "dtype": "float64",
+      "complete_step_seconds": 0.0853511999885086,
+      "optimizer_state_allocated": true,
+      "peak_allocated_bytes": 72326656,
+      "peak_reserved_bytes": 73400320
+    }
+  ],
+  "sources": {
+    "experiments/query_feedback_training.py": "89c5a1da91d396cbd7a399dce7fa1a94590331695b1ecc425209b4c14f241cd9",
+    "experiments/audit_query_feedback_training.py": "b01afec7015d66fc08a678ea0812a569ac97cd540994c94f4babf64629bc2c9a",
+    "tests/test_query_feedback_training.py": "2fc36f52583532ce9678be5187a1dd3ee759144445e49319a919df5b7453f5b6"
+  }
+}

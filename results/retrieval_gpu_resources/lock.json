@@ -1,0 +1,51 @@
+{
+  "source_dependencies": {
+    "experiments/retrieval_gpu_resources.py": "58edf1c40481a1439976b250d5564e11e86c5842213641c7c5da94e24f1f4317",
+    "experiments/audit_retrieval_gpu_resources.py": "12c37f2db2d53cd1e796d75cc4688e44b455833368405232caccfa19b3f0e6c2",
+    "tests/test_retrieval_gpu_resources.py": "9c6a9ff7fa7284fb5cfcf68935737e88f14e6755010a64e51cb3dc49f088ea9b",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "docs/protocols/retrieval-gpu-resources.md": "efb6ff33f0e4cd8596d95dffd7d2c9abc9722c01129a92c3726dfcbd9655bb36"
+  },
+  "shapes": [
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      32
+    ],
+    [
+      1,
+      128
+    ],
+    [
+      32,
+      8
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      32,
+      128
+    ]
+  ],
+  "workers": [
+    0,
+    1,
+    2
+  ],
+  "train_lengths": [
+    8,
+    32,
+    128
+  ],
+  "warmups": 3,
+  "samples": 10,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "preflight_sha256": "3a6fa9bb560365a81f1c30205f52874b55a1c711774415235402e33ceaa2b7bc",
+  "parent_report_sha256": "a1c15f399cbfa71a69fc60210d33eaad64c8f14619b77a8989de7a900ad44265"
+}

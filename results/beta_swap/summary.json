@@ -1,0 +1,532 @@
+{
+  "means": {
+    "fixed_native": {
+      "train": {
+        "2": 1.0,
+        "8": 0.998291015625,
+        "16": 0.896728515625,
+        "32": 0.6376953125
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 0.99609375,
+        "16": 0.9104817708333333,
+        "32": 0.6139322916666666
+      }
+    },
+    "fixed_donor_beta": {
+      "train": {
+        "2": 1.0,
+        "8": 0.9981282552083333,
+        "16": 0.9571126302083334,
+        "32": 0.8020426432291666
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 0.9993489583333333,
+        "16": 0.9609375,
+        "32": 0.7950032552083333
+      }
+    },
+    "resampled_native": {
+      "train": {
+        "2": 1.0,
+        "8": 1.0,
+        "16": 0.9967041015625,
+        "32": 0.89892578125
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 1.0,
+        "16": 0.9820963541666667,
+        "32": 0.8590494791666666
+      }
+    },
+    "resampled_donor_beta": {
+      "train": {
+        "2": 1.0,
+        "8": 0.9998372395833333,
+        "16": 0.9438883463541667,
+        "32": 0.6991373697916667
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 1.0,
+        "16": 0.9305013020833333,
+        "32": 0.6744791666666667
+      }
+    }
+  },
+  "validation_32_cells": [
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "pool": "validation_32",
+      "variant": "native",
+      "beta": 0.9475711570594577,
+      "checkpoint": "results/delta_query_coverage/development_3461_fixed.pt",
+      "checkpoint_sha256": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+      "donor_checkpoint": "results/delta_query_coverage/development_3461_resampled.pt",
+      "donor_sha256": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6144,
+          "accuracy": 1.0,
+          "loss": 3.450692202314462e-05
+        },
+        "final": {
+          "count": 6144,
+          "correct": 3721,
+          "accuracy": 0.6056315104166666,
+          "loss": 1.9422518228988672
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 2423,
+          "both_correct": 3721,
+          "both_wrong": 0
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 6144,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 3721,
+          "both_wrong": 2423
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "pool": "validation_32",
+      "variant": "donor_beta",
+      "beta": 0.3223553250075936,
+      "checkpoint": "results/delta_query_coverage/development_3461_fixed.pt",
+      "checkpoint_sha256": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+      "donor_checkpoint": "results/delta_query_coverage/development_3461_resampled.pt",
+      "donor_sha256": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6107,
+          "accuracy": 0.9939778645833334,
+          "loss": 0.15524702098146217
+        },
+        "final": {
+          "count": 6144,
+          "correct": 4855,
+          "accuracy": 0.7902018229166666,
+          "loss": 0.6290409774191869
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 8,
+          "harmed": 1260,
+          "both_correct": 4847,
+          "both_wrong": 29
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 37,
+          "both_correct": 6107,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 1248,
+          "harmed": 114,
+          "both_correct": 3607,
+          "both_wrong": 1175
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "pool": "validation_32",
+      "variant": "native",
+      "beta": 0.3223553250075936,
+      "checkpoint": "results/delta_query_coverage/development_3461_resampled.pt",
+      "checkpoint_sha256": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+      "donor_checkpoint": "results/delta_query_coverage/development_3461_fixed.pt",
+      "donor_sha256": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6122,
+          "accuracy": 0.9964192708333334,
+          "loss": 0.04327300975778261
+        },
+        "final": {
+          "count": 6144,
+          "correct": 5305,
+          "accuracy": 0.8634440104166666,
+          "loss": 0.396574909692643
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 817,
+          "both_correct": 5305,
+          "both_wrong": 22
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 6122,
+          "both_wrong": 22
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 5305,
+          "both_wrong": 839
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "pool": "validation_32",
+      "variant": "donor_beta",
+      "beta": 0.9475711570594577,
+      "checkpoint": "results/delta_query_coverage/development_3461_resampled.pt",
+      "checkpoint_sha256": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+      "donor_checkpoint": "results/delta_query_coverage/development_3461_fixed.pt",
+      "donor_sha256": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6144,
+          "accuracy": 1.0,
+          "loss": 7.388033153470673e-08
+        },
+        "final": {
+          "count": 6144,
+          "correct": 4209,
+          "accuracy": 0.68505859375,
+          "loss": 2.192305279271322
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 1935,
+          "both_correct": 4209,
+          "both_wrong": 0
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 22,
+          "harmed": 0,
+          "both_correct": 6122,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 100,
+          "harmed": 1196,
+          "both_correct": 4109,
+          "both_wrong": 739
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "pool": "validation_32",
+      "variant": "native",
+      "beta": 0.9620374265151257,
+      "checkpoint": "results/delta_query_coverage/development_3463_fixed.pt",
+      "checkpoint_sha256": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+      "donor_checkpoint": "results/delta_query_coverage/development_3463_resampled.pt",
+      "donor_sha256": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6144,
+          "accuracy": 1.0,
+          "loss": 2.462083174361184e-05
+        },
+        "final": {
+          "count": 6144,
+          "correct": 3823,
+          "accuracy": 0.6222330729166666,
+          "loss": 1.9976977670572929
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 2321,
+          "both_correct": 3823,
+          "both_wrong": 0
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 6144,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 3823,
+          "both_wrong": 2321
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "pool": "validation_32",
+      "variant": "donor_beta",
+      "beta": 0.318701604672731,
+      "checkpoint": "results/delta_query_coverage/development_3463_fixed.pt",
+      "checkpoint_sha256": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+      "donor_checkpoint": "results/delta_query_coverage/development_3463_resampled.pt",
+      "donor_sha256": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6093,
+          "accuracy": 0.99169921875,
+          "loss": 0.1495727612633321
+        },
+        "final": {
+          "count": 6144,
+          "correct": 4914,
+          "accuracy": 0.7998046875,
+          "loss": 0.6085454604219652
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 2,
+          "accuracy": 0.010416666666666666
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 9,
+          "harmed": 1188,
+          "both_correct": 4905,
+          "both_wrong": 42
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 51,
+          "both_correct": 6093,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 1198,
+          "harmed": 107,
+          "both_correct": 3716,
+          "both_wrong": 1123
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "pool": "validation_32",
+      "variant": "native",
+      "beta": 0.318701604672731,
+      "checkpoint": "results/delta_query_coverage/development_3463_resampled.pt",
+      "checkpoint_sha256": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+      "donor_checkpoint": "results/delta_query_coverage/development_3463_fixed.pt",
+      "donor_sha256": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6137,
+          "accuracy": 0.9988606770833334,
+          "loss": 0.03910413820306071
+        },
+        "final": {
+          "count": 6144,
+          "correct": 5251,
+          "accuracy": 0.8546549479166666,
+          "loss": 0.4640747165081856
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 886,
+          "both_correct": 5251,
+          "both_wrong": 7
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 6137,
+          "both_wrong": 7
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 0,
+          "both_correct": 5251,
+          "both_wrong": 893
+        }
+      },
+      "non_beta_weights_unchanged": true
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "pool": "validation_32",
+      "variant": "donor_beta",
+      "beta": 0.9620374265151257,
+      "checkpoint": "results/delta_query_coverage/development_3463_resampled.pt",
+      "checkpoint_sha256": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+      "donor_checkpoint": "results/delta_query_coverage/development_3463_fixed.pt",
+      "donor_sha256": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+      "metrics": {
+        "immediate": {
+          "count": 6144,
+          "correct": 6144,
+          "accuracy": 1.0,
+          "loss": 2.539602318439888e-08
+        },
+        "final": {
+          "count": 6144,
+          "correct": 4079,
+          "accuracy": 0.6638997395833334,
+          "loss": 2.5739722737671222
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "immediate_to_final": {
+          "count": 6144,
+          "rescued": 0,
+          "harmed": 2065,
+          "both_correct": 4079,
+          "both_wrong": 0
+        }
+      },
+      "vs_native": {
+        "immediate": {
+          "count": 6144,
+          "rescued": 7,
+          "harmed": 0,
+          "both_correct": 6137,
+          "both_wrong": 0
+        },
+        "final": {
+          "count": 6144,
+          "rescued": 86,
+          "harmed": 1258,
+          "both_correct": 3993,
+          "both_wrong": 807
+        }
+      },
+      "non_beta_weights_unchanged": true
+    }
+  ],
+  "decision": {
+    "validation_32_gains": {
+      "fixed": [
+        0.1845703125,
+        0.17757161458333337
+      ],
+      "resampled": [
+        -0.17838541666666663,
+        -0.19075520833333326
+      ]
+    },
+    "lower_beta_improves_fixed": true,
+    "higher_beta_harms_resampled": true,
+    "bidirectional_write_strength_evidence": true,
+    "swapped_complete_map_95": {
+      "fixed": false,
+      "resampled": false
+    }
+  },
+  "table_rows": [
+    "| 3461 | fixed | native | 0.94757 | 100.00 | 60.56 | 1.94225 | 0/192 | 0 / 0 |",
+    "| 3461 | fixed | donor_beta | 0.32236 | 99.40 | 79.02 | 0.62904 | 0/192 | 1248 / 114 |",
+    "| 3461 | resampled | native | 0.32236 | 99.64 | 86.34 | 0.39657 | 0/192 | 0 / 0 |",
+    "| 3461 | resampled | donor_beta | 0.94757 | 100.00 | 68.51 | 2.19231 | 0/192 | 100 / 1196 |",
+    "| 3463 | fixed | native | 0.96204 | 100.00 | 62.22 | 1.99770 | 0/192 | 0 / 0 |",
+    "| 3463 | fixed | donor_beta | 0.31870 | 99.17 | 79.98 | 0.60855 | 2/192 | 1198 / 107 |",
+    "| 3463 | resampled | native | 0.31870 | 99.89 | 85.47 | 0.46407 | 0/192 | 0 / 0 |",
+    "| 3463 | resampled | donor_beta | 0.96204 | 100.00 | 66.39 | 2.57397 | 0/192 | 86 / 1258 |",
+    "| 3461 | fixed | native | 100 / 99.90 / 89.82 / 64.06 | 100 / 99.61 / 90.82 / 60.56 |",
+    "| 3461 | fixed | donor_beta | 100 / 100 / 95.59 / 79.65 | 100 / 99.87 / 96.06 / 79.02 |",
+    "| 3461 | resampled | native | 100 / 100 / 99.72 / 89.75 | 100 / 100 / 97.59 / 86.34 |",
+    "| 3461 | resampled | donor_beta | 100 / 99.97 / 94.44 / 70.43 | 100 / 100 / 92.48 / 68.51 |",
+    "| 3463 | fixed | native | 100 / 99.76 / 89.53 / 63.48 | 100 / 99.61 / 91.28 / 62.22 |",
+    "| 3463 | fixed | donor_beta | 100 / 99.63 / 95.83 / 80.75 | 100 / 100 / 96.13 / 79.98 |",
+    "| 3463 | resampled | native | 100 / 100 / 99.62 / 90.03 | 100 / 100 / 98.83 / 85.47 |",
+    "| 3463 | resampled | donor_beta | 100 / 100 / 94.34 / 69.40 | 100 / 100 / 93.62 / 66.39 |"
+  ],
+  "remaining_low_beta_mean_gap": 0.06404622395833337
+}

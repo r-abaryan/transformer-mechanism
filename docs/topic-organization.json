@@ -1,0 +1,581 @@
+{
+  "status": "complete",
+  "date": "2026-10-01",
+  "previous_manifest_sha256": "81efdc9d604b3ae7a1c26c372900b7800a15fe0abc4381cb357e838a610dbed4",
+  "plan": {
+    "moves": 78,
+    "sections": {
+      "ffn": 9,
+      "attention": 24,
+      "normalization": 6,
+      "positions": 9,
+      "retrieval": 16,
+      "training": 11,
+      "benchmarks": 3,
+      "foundations": 6
+    },
+    "bare_move_broken_links": 880,
+    "frozen_files": 84
+  },
+  "moved_documents": [
+    {
+      "original": "docs/guides/architecture.md",
+      "current": "docs/topics/foundations/architecture.md",
+      "before_sha256": "63ad2e7a2db54a4d845f84a84b2ca04228ef9b9a39f77e8e8f817f9d4f315bcb",
+      "after_sha256": "63ad2e7a2db54a4d845f84a84b2ca04228ef9b9a39f77e8e8f817f9d4f315bcb"
+    },
+    {
+      "original": "docs/guides/ffn-investigation.md",
+      "current": "docs/topics/ffn/ffn-investigation.md",
+      "before_sha256": "ac099c18e8766349a6777cdfd8de22cd8bdecc3e220c39c2191945456f05f509",
+      "after_sha256": "5c0d6d2538feba8a6e13f6b1cc0aa918b2e55fb347b90e000742eac2207dcaf9"
+    },
+    {
+      "original": "docs/guides/interpretability.md",
+      "current": "docs/topics/foundations/interpretability.md",
+      "before_sha256": "47cb9271ad8efbce597b50501f80696d7ef139c8ddc60ef7d1fbda6b53ae92c8",
+      "after_sha256": "47cb9271ad8efbce597b50501f80696d7ef139c8ddc60ef7d1fbda6b53ae92c8"
+    },
+    {
+      "original": "docs/guides/mqa-training-guide.md",
+      "current": "docs/topics/attention/mqa-training-guide.md",
+      "before_sha256": "77631be84fe445ccddddc4bd3a54b0edff0750a46bba2bb000d7dfd9ac550efb",
+      "after_sha256": "f66d04d70ea0977210ff895fa0a23ecd2e044e8c8fe987027d43c497482ea135"
+    },
+    {
+      "original": "docs/guides/numerical-walkthrough.md",
+      "current": "docs/topics/foundations/numerical-walkthrough.md",
+      "before_sha256": "9add117401717bc33bca1131e87870eae4142ae19b967fe75c123441f7a7d3c3",
+      "after_sha256": "237f705567d2fb8b5b2049b8757bcabc18916f91477b3946b549e64febf1864f"
+    },
+    {
+      "original": "docs/guides/query-exposure-guide.md",
+      "current": "docs/topics/training/query-exposure-guide.md",
+      "before_sha256": "d49038af3a67b047b23c119405d3094f6427d62176097f54cca11221f645733a",
+      "after_sha256": "ff042593bd7cd409f67accb56c999d75fab8c1297f9f23ec93afc288a60eb8e5"
+    },
+    {
+      "original": "docs/guides/swiglu-guide.md",
+      "current": "docs/topics/ffn/swiglu-guide.md",
+      "before_sha256": "7ef74ea3b2c4947d3f38d88fc1307e8cd38622e38ad7ed9101be1c78a41191e3",
+      "after_sha256": "fa31a5de78f621d94a38d8f2c3cff1ef6b5083cc6e48a85a9457d197d63dda44"
+    },
+    {
+      "original": "docs/guides/test-clarifications.md",
+      "current": "docs/topics/foundations/test-clarifications.md",
+      "before_sha256": "80915778af1c905bd61c42c138d887278ddac86f6f54debd6164a4d4839d11a1",
+      "after_sha256": "509471f0712d1a8f3c5c4132117b16a198f657316577bf1be5ef511909f3624b"
+    },
+    {
+      "original": "docs/guides/trained-recall-walkthrough.md",
+      "current": "docs/topics/retrieval/trained-recall-walkthrough.md",
+      "before_sha256": "30a5112643a697afc60105b6c15c7c4ab155382785215b1cc76a545c69bbee2d",
+      "after_sha256": "09347ab1e7545b339056e88758541cc2ce76227f886f9d7f9f1b15571a0b1dd3"
+    },
+    {
+      "original": "docs/guides/wikitext2-comparison-guide.md",
+      "current": "docs/topics/benchmarks/wikitext2-comparison-guide.md",
+      "before_sha256": "682f8f28f6e9ee25e2f4cad0c8225d5177bb3ad956b8e2c28f2968b11f21fb24",
+      "after_sha256": "ef1aa462636c0b1a66f64dfd547049aa1e5265c1197d32bd8760d7a9923ec53a"
+    },
+    {
+      "original": "docs/results/activation-results.md",
+      "current": "docs/topics/retrieval/activation-results.md",
+      "before_sha256": "c5a4c501949a08e4dbd57ce6f944d8c548958384173056edf6886d33a725dafb",
+      "after_sha256": "c2be1ebea6d95e56f08d5bf00cbc51a151f3e27d0d4e3cca7a9cd962031829f2"
+    },
+    {
+      "original": "docs/results/associative-recall-results.md",
+      "current": "docs/topics/retrieval/associative-recall-results.md",
+      "before_sha256": "07382f591949b210543a1b569a00a83ef030a6bf381aaf62ec70215f74a38a8f",
+      "after_sha256": "3d11aa3e437f00b44fc24480f3896d24cc633032e3ea8c0e4fc8354a7438af1f"
+    },
+    {
+      "original": "docs/results/attention-competition-results.md",
+      "current": "docs/topics/attention/attention-competition-results.md",
+      "before_sha256": "e56a331fe337dce93d531f685615102b65c36a657848321f88a82dd195aac3cf",
+      "after_sha256": "1b3194d79c6de43863461db6534885a3d14ed4bd098b40e3fffec4695008e1a6"
+    },
+    {
+      "original": "docs/results/attention-cost-results.md",
+      "current": "docs/topics/attention/attention-cost-results.md",
+      "before_sha256": "ee4caef038ec01a99b2b03836422d626473f7d3b167e6419741b26474e696f79",
+      "after_sha256": "9b7cad03fa1d07fa71daeb56c1f51af1003766c46794cf1a51298de522aeb7fa"
+    },
+    {
+      "original": "docs/results/block1-key-results.md",
+      "current": "docs/topics/attention/block1-key-results.md",
+      "before_sha256": "6d9a8e33d88de1282d7c8aae7e16f1256b07053c22f7d56b3d5eee2ae0105306",
+      "after_sha256": "dcb4fd81344a6b752964dbfa94a1ac0f6beeb4f5f1ebc2a068d6fa5ac90c40e6"
+    },
+    {
+      "original": "docs/results/block1-source-results.md",
+      "current": "docs/topics/attention/block1-source-results.md",
+      "before_sha256": "4fce1bbe0544a253f68edc8952c7bc6d1ad9f9a2730f7a08cdc0e735e0946685",
+      "after_sha256": "376ca354803a225d306a4b7eef733286ed0e7d55ba6ab2ca60d954060b44167f"
+    },
+    {
+      "original": "docs/results/cache-precision-results.md",
+      "current": "docs/topics/attention/cache-precision-results.md",
+      "before_sha256": "32dcc146f7f92829ba4ff4264715cc079403bceb03b289b8fe77ee8b181e0b26",
+      "after_sha256": "c5f8f2c1a59f5113f6cecd919185b40e2426ab35b0432ae4bd4fad0a69412826"
+    },
+    {
+      "original": "docs/results/canonical-position-results.md",
+      "current": "docs/topics/positions/canonical-position-results.md",
+      "before_sha256": "64c536fb629397d436186ee356f7403a5bdb6d6adfc9f24622e5a8e387547f9b",
+      "after_sha256": "42858da275dc244a0ef9cc53024c978e15e4e94e207a5d5576e209cb10d381e9"
+    },
+    {
+      "original": "docs/results/causal-width-results.md",
+      "current": "docs/topics/attention/causal-width-results.md",
+      "before_sha256": "2093ba47776726e2c94c35af246145c03bf25ca79df7a7d446a55462de813c40",
+      "after_sha256": "41d15a921a13c0ede233d74bbeecbc0971ac0634ad0db8574f186b6f96be6641"
+    },
+    {
+      "original": "docs/results/decoder-verification.md",
+      "current": "docs/topics/foundations/decoder-verification.md",
+      "before_sha256": "96ee0716e59209f9eb9364f1bfc03056aca88ac3140e813ea1e1a68a33425a79",
+      "after_sha256": "bf453141fba8ca906583c9c2af7359170a670a214e7f604d47a153e8d7aa93ea"
+    },
+    {
+      "original": "docs/results/depth-comparison-results.md",
+      "current": "docs/topics/training/depth-comparison-results.md",
+      "before_sha256": "3fea7a63b21f149e054ec7170349c5934aa75fd0d573b62194984b9658516c2b",
+      "after_sha256": "0d9c9279182d27f87f2523025a25a83bd699560023284ff9f6e32ef802312810"
+    },
+    {
+      "original": "docs/results/depth-confirmation-results.md",
+      "current": "docs/topics/training/depth-confirmation-results.md",
+      "before_sha256": "bee7a6bb9e3476c5e6f607561d61c949027db79b2db42902105e8634a07aece7",
+      "after_sha256": "166d835ca4e1d574ef3e40b73a5a9ba7573a45d3c5ce60f05ba572b369320fb0"
+    },
+    {
+      "original": "docs/results/direct-pair-results.md",
+      "current": "docs/topics/retrieval/direct-pair-results.md",
+      "before_sha256": "9ff55403bbc3c61d0ad893457a0d4b903c8524a05a49dfd5f7905cc9b025c66e",
+      "after_sha256": "958615c0e8e4035107e8af5953f98f3860950702a1e41c1248ba56eadd0b5ddd"
+    },
+    {
+      "original": "docs/results/donor-controls-results.md",
+      "current": "docs/topics/retrieval/donor-controls-results.md",
+      "before_sha256": "eb2d640c9b105e286f441bbd91af91eff9ee4712785bde3ba7d8fcacaca1724a",
+      "after_sha256": "b81ff544633f0525d5cb2198aad587b9ccb49c175c1e7c6ba997e7baf2646873"
+    },
+    {
+      "original": "docs/results/donor-slot-results.md",
+      "current": "docs/topics/attention/donor-slot-results.md",
+      "before_sha256": "48cbc73163652065c2cab28a25edd77ba1276369af41121641d68dd1fc812901",
+      "after_sha256": "10a63251d98cbc53d028421d1518e95545fc9a0a17f05ad3a4560b282ed23c1d"
+    },
+    {
+      "original": "docs/results/error-strata-results.md",
+      "current": "docs/topics/retrieval/error-strata-results.md",
+      "before_sha256": "c7d2c73a9291555316ca7de805509df09dfa5e29d2626c8d5a484fdce712b3c5",
+      "after_sha256": "2320d0efa19e9118d4bdc653d79d6272240e2b117e004dfdfaaf1a1976c2d432"
+    },
+    {
+      "original": "docs/results/ffn-branch-results.md",
+      "current": "docs/topics/ffn/ffn-branch-results.md",
+      "before_sha256": "a23f1e69c5af7782b560d888e8cefb3c0b7b9eb8b835386e376e43b8ae2fcf2f",
+      "after_sha256": "6fefde8d1f7c69f28589b7c18c9e2529fd9663a44fbcda1cdd31cb0903dc1616"
+    },
+    {
+      "original": "docs/results/ffn-normalization-results.md",
+      "current": "docs/topics/ffn/ffn-normalization-results.md",
+      "before_sha256": "09feb34be3505d3d63880d351367e1b567ad1dfa14b1f2077c06d6a8e2b14e5b",
+      "after_sha256": "b0d1b52039d6b90440983cc7a998559e1e3ea166e8c69579b1ce64e30b63ad53"
+    },
+    {
+      "original": "docs/results/ffn-width-results.md",
+      "current": "docs/topics/ffn/ffn-width-results.md",
+      "before_sha256": "cfc01b3c4220b6ffa90e0ea385434979d0dd581d1c780c7e3414c65bc80852f8",
+      "after_sha256": "c0377aa9237e5e902aedd3a8538300ac7b42fddecaf143cb209343dd37f1486b"
+    },
+    {
+      "original": "docs/results/final-length-results.md",
+      "current": "docs/topics/training/final-length-results.md",
+      "before_sha256": "a224b97273b1232d28c11972b74f26dd7e65f03fce9c145650ff739d947fb63b",
+      "after_sha256": "1f3adfbc42e82d9032723bdc9ecb5ba4897558b7cfbb4c8b8a54f25c2bb7c476"
+    },
+    {
+      "original": "docs/results/first-token-interventions.md",
+      "current": "docs/topics/retrieval/first-token-interventions.md",
+      "before_sha256": "d0210bd937b06e883e4e0e26026123db124dcf59d87865adedb7c83c17713370",
+      "after_sha256": "f48eae39c849e7e2a23e0aa1b6b64760c254efbd1440e382ce111adef68ff33a"
+    },
+    {
+      "original": "docs/results/first-token-results.md",
+      "current": "docs/topics/retrieval/first-token-results.md",
+      "before_sha256": "5e51d9866b5648d71300fd17aa647d6de6cccfe512075994963348da96c33a7c",
+      "after_sha256": "21e39e013e0cbfb2f3f483ba5f9fb730285a8986a29b3cde60303a410ba47cee"
+    },
+    {
+      "original": "docs/results/first-value-results.md",
+      "current": "docs/topics/retrieval/first-value-results.md",
+      "before_sha256": "d4ec53d17108b91c1bd06f3f4922bf1237c8d2eb63f6c2845d82924f51aa6c26",
+      "after_sha256": "231160055f8d4d75039ead36af81665ac01f793d1914477c5b40da6c21c3adc9"
+    },
+    {
+      "original": "docs/results/gelu-comparison-results.md",
+      "current": "docs/topics/ffn/gelu-comparison-results.md",
+      "before_sha256": "a282a824845cf1472b9a8a7e3424094a1613b38ca1cb5064ff510782f5aa72a8",
+      "after_sha256": "669d5e4fabfac1262d82fb32988b5cfb7e737e2147304edcdcd6cf87d4826fb1"
+    },
+    {
+      "original": "docs/results/gpu-attention-results.md",
+      "current": "docs/topics/attention/gpu-attention-results.md",
+      "before_sha256": "fe67447b9e8dbe981248b8e4a4e60001f756c2378cfeb8db66e4c46618101fad",
+      "after_sha256": "f0de7151f4bf2b45d70a2b7bd2fd0565f48516344d960475fe1620a530d6627d"
+    },
+    {
+      "original": "docs/results/gradient-flow-results.md",
+      "current": "docs/topics/normalization/gradient-flow-results.md",
+      "before_sha256": "09e9468544623af539d7d98a4d43339a7e667b27e64f3d5c84d79501b4590135",
+      "after_sha256": "c7042a3e683a67bfeffacea95e1d23b322fa5fe36b9342d30a0d01404e04cfcd"
+    },
+    {
+      "original": "docs/results/head-ablation-results.md",
+      "current": "docs/topics/attention/head-ablation-results.md",
+      "before_sha256": "7ee5bb0b07ba1548a2b83a65f559370c8702f191858e1d211077ba37ae60c264",
+      "after_sha256": "6c9d078a8c0a37004387753b1b35b2225fb4ed57055f4d3582421d97514bc38c"
+    },
+    {
+      "original": "docs/results/head-row-results.md",
+      "current": "docs/topics/attention/head-row-results.md",
+      "before_sha256": "db16eeddd7f666f546cb7a0444c0d3485a1d7004aae95ac85c919f6096fe3289",
+      "after_sha256": "0333c4631529d52edd1ba63ff77047bbcdf9583c5e01d00b0622a1f140f26802"
+    },
+    {
+      "original": "docs/results/head-token-results.md",
+      "current": "docs/topics/attention/head-token-results.md",
+      "before_sha256": "cfcd40f1fe08c4986921c2634f35a360bea2d74b53d68b6f7989fccee8f340e1",
+      "after_sha256": "9890893d64a22b2e59c5e91dae396d63a5d83e91a574f0772a608cf95a375e1b"
+    },
+    {
+      "original": "docs/results/head-width-results.md",
+      "current": "docs/topics/attention/head-width-results.md",
+      "before_sha256": "d6b38724b416d00ebb20e179d96f931e0bfa21dfcb1be8cde41f07f0343d14df",
+      "after_sha256": "e338b10640a4f25e0c25c29099273ebae2e39e8ee67de8ff50d4e53381485df6"
+    },
+    {
+      "original": "docs/results/joint-routing-confirmation-results.md",
+      "current": "docs/topics/retrieval/joint-routing-confirmation-results.md",
+      "before_sha256": "fb55a972acc8de4d4a71fb8f3a88caf59cceef1a3397e60af7d4a7ca24f2b5f1",
+      "after_sha256": "986fd4027f465a84db702aeeea59c05a971cf7c860c90865b315c1e6f08455b0"
+    },
+    {
+      "original": "docs/results/key-content-results.md",
+      "current": "docs/topics/retrieval/key-content-results.md",
+      "before_sha256": "bc5c6057cde0320e95a722948714272dc8c02c189a2096997a17989307431689",
+      "after_sha256": "68ee7e272dfed1df826ac8df6af9420ed58b8daaa5c2ea1cc12e338c59bc32ba"
+    },
+    {
+      "original": "docs/results/kv-cache-results.md",
+      "current": "docs/topics/attention/kv-cache-results.md",
+      "before_sha256": "f78978b8721b1258eb7894afd68968c902ff4c5f919de5d7a91fbae426103bf3",
+      "after_sha256": "0b456ec58871611f0f658c8ae7196df2fa92d8a0472f76e8e1342af2ea94c3b5"
+    },
+    {
+      "original": "docs/results/layout-results.md",
+      "current": "docs/topics/positions/layout-results.md",
+      "before_sha256": "4a5a1421a00f6a4d3300a9e1bad05ef624c28f0c6441f62fdd4dc25d805254e1",
+      "after_sha256": "278baba88cb70ae39a399e108330480d2012f92005bab859ecd46fc2f9cec946"
+    },
+    {
+      "original": "docs/results/length-exposure-results.md",
+      "current": "docs/topics/training/length-exposure-results.md",
+      "before_sha256": "5607029a947ba28e491700451c203f67d43c7c651603ad51aee33687bf8d9170",
+      "after_sha256": "089024894e27e8d39bcd9e7e92ebb975d421c05a9af9c8558ef44025dc565732"
+    },
+    {
+      "original": "docs/results/majority-transfer-results.md",
+      "current": "docs/topics/benchmarks/majority-transfer-results.md",
+      "before_sha256": "cd3dde88aded45d72ea6d17ef04b80d3add3e48137d3e0a139f1d3e65161abb3",
+      "after_sha256": "0e8524ad49faa57e698ece82686cd98d321161b86a80ed26f2af5bffe2499cb5"
+    },
+    {
+      "original": "docs/results/mqa-decoding-results.md",
+      "current": "docs/topics/attention/mqa-decoding-results.md",
+      "before_sha256": "57dc4fed7d35f003c458b20497bf29dd02cb3574bc3b3992147c499c7367aa4a",
+      "after_sha256": "ba7c24350ec25f316d767f5daa713771bedb7ff7a6acbac09b5094a1f4e152f7"
+    },
+    {
+      "original": "docs/results/native-attention-results.md",
+      "current": "docs/topics/attention/native-attention-results.md",
+      "before_sha256": "68cf779d9d9c75b24fca4dd0f58b7482e55c4c4e73b0e9b0443a840b44aa7ba8",
+      "after_sha256": "53f2e25a27d8ebb9b622d4354f4b2d3f47ccfcff36a82d794cefd9c39e5546ab"
+    },
+    {
+      "original": "docs/results/native-backward-results.md",
+      "current": "docs/topics/attention/native-backward-results.md",
+      "before_sha256": "c524c60301165d4621b82b0c9aea34f8010a6f2a4a6411df6b9ee7e286eeffa7",
+      "after_sha256": "6fc9734146be8508ac9d26e8b7c726bc3b7156e57c0877a744c2162222055bb9"
+    },
+    {
+      "original": "docs/results/norm-extension-results.md",
+      "current": "docs/topics/normalization/norm-extension-results.md",
+      "before_sha256": "c80a5b5731395eebf9237a04419046dd0e8c58e8bb99fc7b67b24b22077ddfb9",
+      "after_sha256": "3305230e8d0d48fada6f3467543349fb772e648dcda4f3e9d3137a35b22dae48"
+    },
+    {
+      "original": "docs/results/norm-placement-results.md",
+      "current": "docs/topics/normalization/norm-placement-results.md",
+      "before_sha256": "64d79dfedd17d2794e9f164993886fcbd002b60adea59a7682042fe5cbd897e2",
+      "after_sha256": "ff9c5032b89d78f40c664e0c4d02dc9e8bfeb04902622760a927cf7d8780b35c"
+    },
+    {
+      "original": "docs/results/optimizer-comparison-results.md",
+      "current": "docs/topics/training/optimizer-comparison-results.md",
+      "before_sha256": "56e92c9d8514011903106596b978fdde9bcbf4affd5f354f32c492419450fdba",
+      "after_sha256": "80f1d7fe16eeacdef0b59d3677a372dd1af36104608952b89a05c5d24d50675d"
+    },
+    {
+      "original": "docs/results/output-capacity-results.md",
+      "current": "docs/topics/attention/output-capacity-results.md",
+      "before_sha256": "b03b0ffe2240a5c12893de765476d1692f203493f7fa427cd5f6fd913f0adf33",
+      "after_sha256": "912c90779b41b3dfcd6e80b7162b442372daef2f7bc3ee6fc91d2fdd5a006e2e"
+    },
+    {
+      "original": "docs/results/pair-confirmation-results.md",
+      "current": "docs/topics/retrieval/pair-confirmation-results.md",
+      "before_sha256": "68da71f0193c403cbff88715650baaf81c8dbf3ad69aede74ba87336893a58db",
+      "after_sha256": "c8e6826864dca6cf06ab9cfd3aba2e5ecdcd896cf38e6f9ca1751dca99fffc6e"
+    },
+    {
+      "original": "docs/results/position-distractor-results.md",
+      "current": "docs/topics/positions/position-distractor-results.md",
+      "before_sha256": "966ef9fb1a1c687658ffba75ddcf3fb3e09aace3559c091691b516eb3e57feff",
+      "after_sha256": "bfdaee9bfe2accc3ffde8ba8c17144ff09f4f7a7e8f9a98c94f5e4ca5e1c3e9b"
+    },
+    {
+      "original": "docs/results/position-routing-results.md",
+      "current": "docs/topics/positions/position-routing-results.md",
+      "before_sha256": "149e0d53daeb8b43af9a65d69336e8cdafd14d856efc302926b39bb25f1515df",
+      "after_sha256": "980eca424dd94d916e38771d198c88587f9e45beace9bc6ee58c8df765552559"
+    },
+    {
+      "original": "docs/results/position-training-results.md",
+      "current": "docs/topics/positions/position-training-results.md",
+      "before_sha256": "5647d65d8141407b2394b92d131ac85c1d619e10a9d769b3e8e0c947f5091a3f",
+      "after_sha256": "6394b49fc9ae0911bc089d9ced1e4286ab723873739a8e3649d8c495d9af6cf2"
+    },
+    {
+      "original": "docs/results/positive-controls-results.md",
+      "current": "docs/topics/training/positive-controls-results.md",
+      "before_sha256": "ee61a31999031038497a6106d3cfc9038ee2d45843f04f15e62cae6e9df121a5",
+      "after_sha256": "84f8c2ca79b090c12394e4e8f653edea14b458c8496252d8e6ebee31eb4e8c87"
+    },
+    {
+      "original": "docs/results/qkv-results.md",
+      "current": "docs/topics/attention/qkv-results.md",
+      "before_sha256": "b665f07308e921464fd40464b97dc17abbf58436dd12c50972c6197427579653",
+      "after_sha256": "d516ec340c724e31672222f24f822c4efc88814f00abf32a18a4fe335ca82adb"
+    },
+    {
+      "original": "docs/results/query-exposure-results.md",
+      "current": "docs/topics/training/query-exposure-results.md",
+      "before_sha256": "78f8958fc8bcd286095e6b1ede62eddf89657a7567cf8d68cf40a65c5c4661d8",
+      "after_sha256": "0e81f872815ba607f8908658b686a3298079f6cd0089ca48e44c1a165787b9dd"
+    },
+    {
+      "original": "docs/results/query-key-results.md",
+      "current": "docs/topics/attention/query-key-results.md",
+      "before_sha256": "e95a1305d0f3febe8d6c71f74fc68a3abb1fb8fefc1d784d50dbb97379f2cc76",
+      "after_sha256": "4d96112bf2d003e5b73b00b4e48a7fc7e60d3498d31808aa50d5d899042a715f"
+    },
+    {
+      "original": "docs/results/query-position-effects-on-attention-versus-the-residual-path.md",
+      "current": "docs/topics/positions/query-position-effects-on-attention-versus-the-residual-path.md",
+      "before_sha256": "011c0726abc0bb2cabd049152fa3e2b041e547dd278432ce8e9ecb7cf431025c",
+      "after_sha256": "5223596ec3c7acab0ae35d89da7db7008d88475445c9914bf9c01c3301b50ad8"
+    },
+    {
+      "original": "docs/results/query-switch-results.md",
+      "current": "docs/topics/training/query-switch-results.md",
+      "before_sha256": "414bf48582dbc74642c1ea97271f5a60872f2b35ebd29ecb80f350ac5119b0e4",
+      "after_sha256": "1fb941c95720b9d7b7b28960c42ce991663d17b5b995bbae97338b8dc2a44e18"
+    },
+    {
+      "original": "docs/results/repeated-key-results.md",
+      "current": "docs/topics/training/repeated-key-results.md",
+      "before_sha256": "5efa36014d4492c635d1b4714b2ed6c34b7df39cab624a651210d07887c283ee",
+      "after_sha256": "7cfdd8e118402dfca5b37692f74e2361b5a9809d027b4a1719be448ca810a6d9"
+    },
+    {
+      "original": "docs/results/reserved-cycle-results.md",
+      "current": "docs/topics/training/reserved-cycle-results.md",
+      "before_sha256": "ef371f2d6184c87c2c1a24d04b555b179203ab63e0c5d18ab1bff7c6804dce95",
+      "after_sha256": "53b7244f9908798e21998cb7c2a79bc3ebf947b52ed544d8322e1a1dc50d3e79"
+    },
+    {
+      "original": "docs/results/residual-effects-through-ffn-normalization-and-logits.md",
+      "current": "docs/topics/normalization/residual-effects-through-ffn-normalization-and-logits.md",
+      "before_sha256": "6cd1747b0affec116ad5b28651b006098b2ce69ead624e88298e4823c0e2280a",
+      "after_sha256": "e0baf6bf0dfeefc67c52fc8d95f3c0322bc57e3b700de2b5a2baccc7e4c5d691"
+    },
+    {
+      "original": "docs/results/results.md",
+      "current": "docs/topics/foundations/results.md",
+      "before_sha256": "6bffd27b1b4c504b31cdb508420cb667fd559c58435bf12132374dacc67ec0c5",
+      "after_sha256": "d25e79b5196e01a68035a6a602854898b3bdc3c427a75ee8702080231163d1a2"
+    },
+    {
+      "original": "docs/results/rmsnorm-math-results.md",
+      "current": "docs/topics/normalization/rmsnorm-math-results.md",
+      "before_sha256": "5934d34b258095413a9af65543c744b4611aa5b69b681925ff118d8efa963f6d",
+      "after_sha256": "25dffd4ac257b94829c3c047e572302d831dd3267f381656ae12127895128ba7"
+    },
+    {
+      "original": "docs/results/rmsnorm-training-results.md",
+      "current": "docs/topics/normalization/rmsnorm-training-results.md",
+      "before_sha256": "9d1e01f3ce160bef2e39a31757cfc3498c5deaa68bf30fadd6783bd6aee2ffb7",
+      "after_sha256": "c6f2baa08c0ffe00f4b46b37535bdf202a41ae0a92c714bd3952a2f453135596"
+    },
+    {
+      "original": "docs/results/shift-results.md",
+      "current": "docs/topics/positions/shift-results.md",
+      "before_sha256": "fea5960e90720b6d99f72dda7633679430694ba32368a0192c738e90fd061420",
+      "after_sha256": "7cc5c97de55a0b0d2e2c73f2e31e41ffaecd76db0aca4c77089a0f2f24347551"
+    },
+    {
+      "original": "docs/results/skip-confirmation-results.md",
+      "current": "docs/topics/retrieval/skip-confirmation-results.md",
+      "before_sha256": "9218548cf5946cd803d970c2434ce3cbfedfa1cbc359b9588fa421762f7f3ad7",
+      "after_sha256": "80ede87860c061c68790ccbb6ca749148320804e8f6c10bfbc3d7d762e6442e8"
+    },
+    {
+      "original": "docs/results/strict-retrieval-results.md",
+      "current": "docs/topics/retrieval/strict-retrieval-results.md",
+      "before_sha256": "aea663d9c462d56b028f13b55df1be78925d6208cb9933e48e8ce61fa9a9b6ed",
+      "after_sha256": "68449d0e95ff8ff01b3c9c513b326d43453f64c26ad0a12fde257f66e1ee6ce6"
+    },
+    {
+      "original": "docs/results/subset-confirmation-results.md",
+      "current": "docs/topics/retrieval/subset-confirmation-results.md",
+      "before_sha256": "cb02022dfc2e631e3774288a3c0ad9df6a40b16f17d31be552d5c3359bee8953",
+      "after_sha256": "8f6bcf085ec5fba1e17fa01d426ffb35df15e4b78127d8399673087c12bb03e9"
+    },
+    {
+      "original": "docs/results/swiglu-results.md",
+      "current": "docs/topics/ffn/swiglu-results.md",
+      "before_sha256": "685ea57554a1787d22d1d87f821afdf12292f78b320c7c713f28b0196df9b7fb",
+      "after_sha256": "cb3f882978670755167d76a4543fb7c3f9021c4d37dc24212e6cc102e0e0a573"
+    },
+    {
+      "original": "docs/results/target-distractor-results.md",
+      "current": "docs/topics/attention/target-distractor-results.md",
+      "before_sha256": "93c7b5344477c3b68aed06a67c03d8fac6cef722280012339fa2aca40d18be2a",
+      "after_sha256": "3d28a9574af8dedffc7e4de6c19b1a55d2d014b430b77d8209d0fc3942cd23d2"
+    },
+    {
+      "original": "docs/results/trained-competition-results.md",
+      "current": "docs/topics/attention/trained-competition-results.md",
+      "before_sha256": "8e12a59bda73a7acfd45c768e4061d69a5334a9c7cd1a41cef38a70c6af07560",
+      "after_sha256": "491436908ee9e142ef154041275b4ae969e1a145974502470b02f0e7d1e94015"
+    },
+    {
+      "original": "docs/results/value-counterfactual-results.md",
+      "current": "docs/topics/retrieval/value-counterfactual-results.md",
+      "before_sha256": "6de803d03baf28ef8401841470d7c090658ffcfdd69a53211c27425d98048a19",
+      "after_sha256": "ea2d0b854f57ff989ab3c7797224b060374e845ad796026f0fcfce096477f0d9"
+    },
+    {
+      "original": "docs/results/wikitext2-results.md",
+      "current": "docs/topics/benchmarks/wikitext2-results.md",
+      "before_sha256": "20c197e4894ed840ffc89ea5a9fcdf9a6b14f2844832046256a137d1ecb1b333",
+      "after_sha256": "376c4d9cdd5d3ff8c3239d6c7dcc275c9f699ca3fad365f4ef6effc9e19db46d"
+    }
+  ],
+  "frozen_files": {
+    "docs/activation-protocol.md": "e2078553c8bf41d36d299f66cbee3adfabd35b9261fce724d2dead84bce4d051",
+    "docs/associative-confirmation-protocol.md": "da6ec7ee5d0a0c46def57853bcb81394c2b083d22a99dee92f4461d76ff2e944",
+    "docs/associative-diagnostic-protocol.md": "1dc84c6dada1b0c7c8d9082c75a8315adb5e8ffb4bdcf2e5fbcfa0e76a21656e",
+    "docs/associative-recall-protocol.md": "da6226efaa6a951caca692d821f5dd322a515e46ee27c7c279bc8d982fbe1d4d",
+    "docs/attention-competition-protocol.md": "44244ba3a55031569b764114620fa730cec3fa1a736fe877a3ff7286e67538f3",
+    "docs/attention-cost-protocol.md": "87718c15d844278180a9a6b5c60d5b1873f1b7158015271264569956b8b38d74",
+    "docs/block1-key-protocol.md": "14815474a1cedd2274d5c5247f26910594b497437a0eb681213146ad064ac702",
+    "docs/block1-source-protocol.md": "afcdce662dacddf9a30dbe385b9364856d0290bd23c8c34f2ee53cc34cb1c438",
+    "docs/cache-precision-protocol.md": "f5dc04e95585267dc16807fd57c8e94c3dee158b2c38920560a79a6d38bd62ab",
+    "docs/canonical-position-protocol.md": "ba08257702462c553b2a5de38982150290e0d9d973ba21cb692fe53c11025f4d",
+    "docs/causal-width-protocol.md": "4ed9a5dfec9bfa3970e066c92ea32bb11d49a3649f45a31520b40f25ff32ef6d",
+    "docs/decisions/0001-evidence-first.md": "cbc0e09aceffde3fb5730bf8a8f5c1647709f5c9b76442e3277f7db9e6afb81b",
+    "docs/decisions/0002-kv-cache-equivalence.md": "368088b5d0be8b50b0938715aa39b9ca43c0f32395a32bc2dbfceb3a9eb9dca7",
+    "docs/decisions/0003-wikitext2-matched-baseline.md": "87402f714e8ed7eb90eeaa840b04dfa15ee639cffd3c92761a139fe829b913c7",
+    "docs/decisions/0004-swiglu-matched-ffn.md": "774f1cdaeae7f35fb2ee6fdbc9757cc0aec7b3aff27d24a43bdbbd34ee560462",
+    "docs/depth-confirmation-protocol.md": "81b76b73d0019627109d390ae6122c22a5e7c6e0cdedaec0842864a350945220",
+    "docs/depth-protocol.md": "c90f36008e73823c895f4714ed4e176253b5999963cb4fdd8920744a50c7ef8c",
+    "docs/direct-pair-protocol.md": "1267091dccbf1e653d3fbd5fd4ac5651c5a5848105145097dbdbedce3c5d3028",
+    "docs/donor-controls-protocol.md": "7d87ca74027f6f4a314cf988767d885bd48344d15a8741fa21f94687f5dc7e78",
+    "docs/donor-slot-protocol.md": "2b1854ffa3fc5e844fec068c19688a9779032436c057dc8173639a3d90d6c516",
+    "docs/downstream-protocol.md": "0fcb2d4e2c85176bb07a90c958dd5a05132792636852fd7c6d7777374dca69dc",
+    "docs/error-strata-protocol.md": "74edfc69ee0c82dc5c1ad16d9c300751128685cd6e358fe502914f2523a0c5dc",
+    "docs/ffn-branch-protocol.md": "8db6de8ad9e4a90b845df90e73cf77c0037e8907cd6031a1e84f842fefd69952",
+    "docs/ffn-normalization-protocol.md": "24bd18dd5d2e0f107eab2c07163fe1b86354ba87a26c54939289574ba22e10a5",
+    "docs/ffn-width-protocol.md": "970ebfe113a2e4e87f3ccb842a3e3b608c536716eeb6e4271700fae171a39b76",
+    "docs/figures/gradient-flow-ratios.svg": "224081bf9cf282c391379482b0b7f9f8202a36e4b23e9212364ab38b41e61d52",
+    "docs/figures/gradient-flow-training.svg": "b01fdcf81c258ae84de26daf05e6903a8e71d542773876d6441c41e2ea57c10a",
+    "docs/figures/length-exposure.svg": "edc72402fd817d4164ec88eb9840cca44e25da739859826762b90819097feacc",
+    "docs/figures/majority-transfer.svg": "5d3caed7171e0634e56be1cf0b787772ff58da00ebc6ecc93e48768b711a73ac",
+    "docs/figures/norm-extension.svg": "faf923cea5a72a2cd4e6e76623c463fd5de4d7326489534b89daa9f181ee4e8b",
+    "docs/figures/norm-placement.svg": "ef8073416a112c1469cb67d6e9ab78ec3f7e81f726dcf78e6caee823fb1dec25",
+    "docs/figures/rmsnorm-training.svg": "e856c4e4891d376e09f591e3aa8f834bdfeac388b5fc9df95dfad79e98bd8484",
+    "docs/figures/swiglu-flow.svg": "81cc24e1fdfb5d15539758c153cbcf876c5dc7c15367c85b70efdfabc612d11d",
+    "docs/figures/swiglu-training.svg": "3af81f22c6a643ec1c7a68d57132fe7fd6f3fee02a0f8ff96e643871f0af0f28",
+    "docs/figures/wikitext2-training.svg": "40060ac24a7b951121f39f532b9c4f82887633257fda58cdc556f7254bddff64",
+    "docs/final-length-protocol.md": "2d8716f99604c9c5befc78aa18d20eb506e0dfc8e7bc56448fdf9a59cef71187",
+    "docs/first-token-protocol.md": "dd011ab6de3b266bc47fa6701c1a90411592e9ea2398e4ae2059be9d7e1c2754",
+    "docs/first-value-protocol.md": "3da451ae1b0477c226ed1a2dc23c905ce6abec6ac17e44288e9667e1d2f36943",
+    "docs/gelu-comparison-protocol.md": "1a9e077ad9b75235abdf1a29e6a86fecc3e5c9ad0e9e2fe2899557e52f55608f",
+    "docs/gpu-attention-protocol.md": "f97ea0c7921a72fd325b5a2b944bb2f693387f5b16a3ce3302b93e2371b6bb4a",
+    "docs/gradient-flow-protocol.md": "fa8fb50064b74c57278ac322944e98d81837ebccef729a483f906ce516fb2c07",
+    "docs/head-ablation-protocol.md": "bc7fa85d880300efed91b24a81780a5dc62a0b756eadae370a0d9e300e20c78b",
+    "docs/head-row-protocol.md": "77bf85ba31687a1788e8b0ce06619a5513b541d92fd740f9f37b9d8f98d9751d",
+    "docs/head-token-protocol.md": "413a339676cdedc52ec9babc5e433c07ca606d000b925cdb3f587ddbef7bfe43",
+    "docs/head-width-protocol.md": "6612164ff7ea9c650cc5c1f7e6df9f172d1f665f95264078798f0dfbb784163a",
+    "docs/intervention-protocol.md": "8b5e35c1ac0363cffe8800ed191dea3be7fd817a5c7a9d03edc10bffd5c922c1",
+    "docs/joint-routing-confirmation-protocol.md": "10cae2a2f820ee1bf23063ceecd7fbf15fbf162cc7bfa884621f0930b4cf0533",
+    "docs/key-content-protocol.md": "2b3bd5c743a3fe6f31fceeca932464529940764d8fcf113e3cffb7afdcc83001",
+    "docs/kv-cache-protocol.md": "746addd2e9eee9d3afac55389ec1f57fb95b1ad7e13be77b54ac12c48408b499",
+    "docs/layout-protocol.md": "4d42db7f244ec2b87bcf4e83b0f949098d5d0a1bb2670636c9cfb09bf2aebe1f",
+    "docs/length-exposure-protocol.md": "dd1b6079421bedf86dea0e98e2045095751f2bd23c42bc3172cde5bd08ea5654",
+    "docs/majority-transfer-protocol.md": "a17761e393dff28ddcc99e469fa57c2e69d008e6e5944319f0ffb5ffc3c08987",
+    "docs/mqa-decoding-protocol.md": "2bfeb4677acb597aec7a293588a94b6a8791752aac5a52358f65f5a8207a4dcc",
+    "docs/mqa-training-protocol.md": "254c4b286295f9145f007f6b7e3411c99dbd2bc7f7d8b9465b0ead1958c6dc40",
+    "docs/native-attention-protocol.md": "0132b0779c2f79206afb95d501eea2a2db628398317e54c34ea4f2e465b20608",
+    "docs/native-backward-protocol.md": "b45e2fd39b52b76c3beaf65ea66836ec7dfbfe51dd0a34819d984373f3d402c0",
+    "docs/norm-extension-protocol.md": "aaccf199fa606c7652f271f49cae0665d478e15da24b513bbf445d3e96abb682",
+    "docs/norm-placement-protocol.md": "13ee4ff22f9943ec225852721ac6053a853ce3d1debff22bc202347c82249020",
+    "docs/optimizer-comparison-protocol.md": "fbd2315fe27e562e7ac0c530cf0e117600782318ddf072dc7c6828a0afa62a7c",
+    "docs/output-capacity-protocol.md": "1a3207cb1b4144bf8e4eda5aec76c2d636f032e5a7fc8c69ef3da8a990e2dd67",
+    "docs/pair-confirmation-protocol.md": "25a505e0127f183f842279bdd5651cc83ed977b5a4f2b9d8620473232ec14cac",
+    "docs/position-distractor-protocol.md": "a2830b5f534960780f354fa276ba46b610a07ee36821eba9bbd280cca17e8c05",
+    "docs/position-routing-protocol.md": "b728c4d24fe20a75234d58111d12698ea9688e424499eda70871912ad1010c37",
+    "docs/position-training-protocol.md": "b08dd5f3997faba620965d927c34543443b4a417081856ad640fb020a0053cf1",
+    "docs/positional-comparison-protocol.md": "9436459304b9ff9203fdd0e07d20143c5f948e912a137fac54b8e631d0e4f8ae",
+    "docs/positive-controls-protocol.md": "6f1acdc1d75824235caa9af79590a78b1d6ac8bdc5e1f1e2dbac997cf1d6fa9c",
+    "docs/qkv-protocol.md": "bb4d3f71089a8b3ed0b4b12fb4c2a6cdea01ec474181ab16b34044e84d3afef6",
+    "docs/query-exposure-protocol.md": "a0d5d62395c33990b0937e6f880e8cc915534da3a1b03c005c65338155acc80e",
+    "docs/query-key-protocol.md": "b32b721716f7f8e8a405d95ee1b28582ffa62554983df6a327306cb82a749ead",
+    "docs/query-position-protocol.md": "8a93271534764cd5d26efe6e29e1b64df68b4dff6ba3c8ba8f126419406971a7",
+    "docs/query-switch-protocol.md": "8a0f8225480f8a8ad5bffea21b03032894688e79d10c89a0d5e812741689c82d",
+    "docs/repeated-key-protocol.md": "e624556661a8b0927bede203f973e7a6e0eb604e05261c9ebc6905296a9011ab",
+    "docs/reserved-cycle-protocol.md": "b54734ef9c638cd50a19ece9d15d875b3f33745907252a917ee2c259ff26e002",
+    "docs/rmsnorm-math-protocol.md": "0b7a6af14b464fbf1acb77307e541269bcb8ec96ee713c21da88b9bdc30fe1fd",
+    "docs/rmsnorm-training-protocol.md": "eb1ebfe6afc169f01568046f2e0cd48f15cc37bddaeab0e3900c5c942e59e82b",
+    "docs/shared-kv-protocol.md": "30c13c53961bce6c79b4cc9757c7f072b7145b01ee7f7a89c8377ddb879da0cb",
+    "docs/shift-protocol.md": "68c203f67c2b52811a3da8728ba2237dbe4353c814dddc5c68200c99d6a8ec56",
+    "docs/skip-confirmation-protocol.md": "6b7db3d1987736a6d88a57c225f44c5334690fe34aa49808018095d879998042",
+    "docs/strict-retrieval-protocol.md": "eca3ff986862dfeb1be699b42d35e5ff66d565be7b2729f8bc518fb2091c051e",
+    "docs/subset-confirmation-protocol.md": "df8518dd55a1d732e44bbb526b8f32ed769da682e618625c996aef9d1f86bfed",
+    "docs/target-distractor-protocol.md": "313857194a5e5eb446dee0a156abdcb8d0846561ceb70e67dd6e45e569ffbc3c",
+    "docs/trained-competition-protocol.md": "d06c5c5599f98c25d6160dcd2c3840c8626b569218ed8d64990ac06eb4d5badc",
+    "docs/value-counterfactual-protocol.md": "d0c24aa302ce657355640a1c19155d87c724a5f2ce57a07f660dce62e0034a30",
+    "docs/wikitext2-execution-protocol.md": "fb411a802b17f0f5f028e5a9f4d9f4358dcb7bc5a300710cdfd1517c130cc1c9"
+  },
+  "verification": {
+    "local_links": 1296,
+    "frozen_files_unchanged": 84,
+    "experiment_sources_result_json_and_previous_manifest_unchanged": 328
+  }
+}

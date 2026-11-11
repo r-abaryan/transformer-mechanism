@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "cells": 528,
+  "sequence_evaluations": 78336,
+  "max_logit_score_error": 2.682298827494378e-13,
+  "max_metric_error": 1.1102230246251565e-15,
+  "prediction_differences": 0,
+  "runs": [
+    {
+      "seed": 3761,
+      "arm": "ordinary",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3761,
+      "arm": "self_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3761,
+      "arm": "cross_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3761,
+      "arm": "both",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3767,
+      "arm": "ordinary",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3767,
+      "arm": "self_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3767,
+      "arm": "cross_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3767,
+      "arm": "both",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3779,
+      "arm": "ordinary",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3779,
+      "arm": "self_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3779,
+      "arm": "cross_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3779,
+      "arm": "both",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3793,
+      "arm": "ordinary",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3793,
+      "arm": "self_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3793,
+      "arm": "cross_only",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3793,
+      "arm": "both",
+      "step": 6000,
+      "begin": 0,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    }
+  ],
+  "report_sha256": "1e15432dc4aa18006134968346d1732140e349c225d4bcde700bc67d5d2e0cd0",
+  "protected_files": 26,
+  "limitation": "Reference equations, metrics, decoding, streams and counters checked; shared forward structure/projection helpers; full training gradients not replayed."
+}

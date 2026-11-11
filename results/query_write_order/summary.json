@@ -1,0 +1,183 @@
+{
+  "report_sha256": "1f2bba753ed73d6de45e49db3d5a8cd85aa81b8c86007d6ce0da31f992539978",
+  "aggregates": [
+    {
+      "arm": "softmax",
+      "variant": "native",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 0.0002794799451354895,
+      "final_accuracy": 1.0,
+      "final_ce": 0.000279493291271859,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      }
+    },
+    {
+      "arm": "softmax",
+      "variant": "first",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 0.000279471732317692,
+      "final_accuracy": 1.0,
+      "final_ce": 0.000279493291271859,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      }
+    },
+    {
+      "arm": "softmax",
+      "variant": "middle",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 0.00027948397983255295,
+      "final_accuracy": 1.0,
+      "final_ce": 0.00027949329127185864,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      }
+    },
+    {
+      "arm": "softmax",
+      "variant": "last",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 0.0002794932912718588,
+      "final_accuracy": 1.0,
+      "final_ce": 0.0002794932912718588,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      }
+    },
+    {
+      "arm": "delta",
+      "variant": "native",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 3.48551765259873e-05,
+      "final_accuracy": 0.5842013888888888,
+      "final_ce": 2.321674548495236,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 479,
+        "both_correct": 673,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 673,
+        "both_wrong": 479
+      }
+    },
+    {
+      "arm": "delta",
+      "variant": "first",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 3.3908358696817164e-05,
+      "final_accuracy": 0.2951388888888889,
+      "final_ce": 4.219372619363122,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 812,
+        "both_correct": 340,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 1,
+        "harmed": 334,
+        "both_correct": 339,
+        "both_wrong": 478
+      }
+    },
+    {
+      "arm": "delta",
+      "variant": "middle",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 3.474771371500854e-05,
+      "final_accuracy": 0.592013888888889,
+      "final_ce": 1.9744010315283294,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 470,
+        "both_correct": 682,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 117,
+        "harmed": 108,
+        "both_correct": 565,
+        "both_wrong": 362
+      }
+    },
+    {
+      "arm": "delta",
+      "variant": "last",
+      "immediate_accuracy": 1.0,
+      "immediate_ce": 3.571953366428638e-05,
+      "final_accuracy": 1.0,
+      "final_ce": 3.571953366428638e-05,
+      "immediate_to_final": {
+        "count": 1152,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 1152,
+        "both_wrong": 0
+      },
+      "final_vs_native": {
+        "count": 1152,
+        "rescued": 479,
+        "harmed": 0,
+        "both_correct": 673,
+        "both_wrong": 0
+      }
+    }
+  ],
+  "curve_rows": 492,
+  "scope": "Derived from executed report, no further model evaluation."
+}

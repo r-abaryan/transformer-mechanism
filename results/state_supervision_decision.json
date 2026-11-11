@@ -1,0 +1,51 @@
+{
+  "decision": {
+    "passed": false,
+    "checks": {
+      "completed": true,
+      "2039/validation_gain": true,
+      "2039/training_fit": true,
+      "2039/mixed_retention": true,
+      "2053/validation_gain": true,
+      "2053/training_fit": false,
+      "2053/mixed_retention": true,
+      "2063/validation_gain": false,
+      "2063/training_fit": false,
+      "2063/mixed_retention": false
+    }
+  },
+  "provenance": {
+    "experiments/mqa_training.py": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+    "experiments/audit_mqa_training.py": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+    "experiments/verify_mqa_training.py": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018",
+    "experiments/audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "experiments/query_exposure.py": "17333e05e77a91a5c99b283f3d64eea5798bdbf2abd80192473f03e941428be2",
+    "experiments/ffn_width.py": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+    "experiments/verify_ffn_width.py": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95",
+    "experiments/audit_ffn_width.py": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14",
+    "experiments/audit_gelu_comparison.py": "6a8b40fef74e32f6f64038aeccc63fc36a948df4bd23c466214199c8276e9ad3",
+    "experiments/repeated_key.py": "dfcb40dd4bee1ebcccc91033259bdccc8a245e39066f086a0552659c2d7f5559",
+    "experiments/audit_repeated_key.py": "d828a61ca98199a7ebe463d8a210d00767f3d1d74016a4113ef2637dcb84ef5a",
+    "experiments/audit_positional_comparison.py": "7ee8d56084ce92bc8f1ee0613dc74eb6acae43e7d294c87e2ed9c2882aefa166",
+    "experiments/activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "experiments/positional_comparison.py": "b4587182a2eec507cc252014f493717c58285798c85469a8a669f670c3e6aa52",
+    "experiments/reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "experiments/compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "experiments/position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "experiments/position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments/state_tracking.py": "7935dcc10baab4541477b48baba3ab0c17a5c227ad908186e4cc53d3771c4f45",
+    "experiments/audit_state_tracking.py": "6943464cc9db8fc689c0acb7f9819f5b5b12cd69e7c360724bc58bda667a8edf",
+    "docs/protocols/state-tracking.md": "b55463ed6766a8c3f4d8444d4299eefa30c4e4ab78147232944348b25c53d138",
+    "experiments/state_supervision.py": "b8aa2a9827cbcb90baee210b9f9de5793312fadf96686f047a88470594b1722c",
+    "experiments/audit_state_supervision.py": "6ca8db1aaaf32da50d8c206df4e5884e1061e45f134770bf1235bb4acb349ed6",
+    "docs/protocols/state-supervision.md": "13afb2e13204ab918d940aa4729d2c5ee591491045d85f71d72844e93a2f6821"
+  },
+  "checkpoint_hashes": [
+    "6778ba3d0d61ef2c7975a18173cc74fda3e589a91b0d3380cc6c54a412a795fd",
+    "d9c02afce5393e9a5ca1168b2eb277de131a940be582d4b4640eed9857594412",
+    "7876a9cac3d12bcb2e30ca4493e01edfe7b03a169242e017bf1bd43d4a5c9502",
+    "c40aa1a27723e229a583695fa6ef66bf2714f9202f4852460d2be9da7c0a6a31",
+    "9be51c1b1767f2b97ed4561f4968760cbd24d7b13211f3a238472ed1f2eac1b3",
+    "89b412b78ad7b20f6373eeff491ed078bb8f2e34b1058effb6570aa25b8fdac8"
+  ]
+}

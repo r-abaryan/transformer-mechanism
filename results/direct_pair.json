@@ -1,0 +1,345 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "d0c9ebe1b1e57ec476ef05e8be69a6f6558b537f7876b81dbae2a168471c9682",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "1267091dccbf1e653d3fbd5fd4ac5651c5a5848105145097dbdbedce3c5d3028",
+  "source_sha256": {
+    "direct_pair.py": "6442005d2ee0fd9bebbfa061be68af275df0bff96a911da5bd68ca8e7097fe09",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "reconstruction_error": 3.4638958368304884e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.00038985448241169666,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0004200663061010858,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.6513671875,
+          "loss": 2.5009726409382873,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 1785
+        },
+        "0_other_key": {
+          "accuracy": 0.3845703125,
+          "loss": 4.031864964326683,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 3151
+        },
+        "4_original": {
+          "accuracy": 0.657421875,
+          "loss": 1.8416926097535469,
+          "reference": "4_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.980078125,
+          "loss": 0.0762098774779513,
+          "reference": "4_original",
+          "rescued": 1684,
+          "harmed": 32
+        },
+        "4_self": {
+          "accuracy": 0.63515625,
+          "loss": 2.705233742557296,
+          "reference": "4_original",
+          "rescued": 867,
+          "harmed": 981
+        },
+        "4_other_key": {
+          "accuracy": 0.464453125,
+          "loss": 3.728572098824505,
+          "reference": "4_original",
+          "rescued": 209,
+          "harmed": 1197
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "reconstruction_error": 2.930988785010413e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.0004556847478129532,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0004441191105281336,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.62890625,
+          "loss": 2.6684283362556576,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 1900
+        },
+        "0_other_key": {
+          "accuracy": 0.3736328125,
+          "loss": 4.448464116875262,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 3207
+        },
+        "4_original": {
+          "accuracy": 0.5861328125,
+          "loss": 2.1058688178515648,
+          "reference": "4_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.993359375,
+          "loss": 0.01899978611001292,
+          "reference": "4_original",
+          "rescued": 2092,
+          "harmed": 7
+        },
+        "4_self": {
+          "accuracy": 0.6927734375,
+          "loss": 1.7970511122835764,
+          "reference": "4_original",
+          "rescued": 1329,
+          "harmed": 783
+        },
+        "4_other_key": {
+          "accuracy": 0.43515625,
+          "loss": 3.7263930505752634,
+          "reference": "4_original",
+          "rescued": 418,
+          "harmed": 1191
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "reconstruction_error": 6.261657858885883e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 0.9998046875,
+          "loss": 0.0010239658324014665,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0010135282060730992,
+          "reference": "0_original",
+          "rescued": 1,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.6140625,
+          "loss": 2.9790139428337996,
+          "reference": "0_original",
+          "rescued": 1,
+          "harmed": 1976
+        },
+        "0_other_key": {
+          "accuracy": 0.4923828125,
+          "loss": 3.8561566453845977,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 2598
+        },
+        "4_original": {
+          "accuracy": 0.6107421875,
+          "loss": 2.335619420929258,
+          "reference": "4_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.937890625,
+          "loss": 0.30628144343624897,
+          "reference": "4_original",
+          "rescued": 1750,
+          "harmed": 75
+        },
+        "4_self": {
+          "accuracy": 0.6392578125,
+          "loss": 2.572154465251371,
+          "reference": "4_original",
+          "rescued": 904,
+          "harmed": 758
+        },
+        "4_other_key": {
+          "accuracy": 0.4478515625,
+          "loss": 3.886992658922169,
+          "reference": "4_original",
+          "rescued": 369,
+          "harmed": 1203
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "reconstruction_error": 3.4638958368304884e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.0003758496096877827,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 0.9994140625,
+          "loss": 0.0018347716153442831,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 3
+        },
+        "0_self": {
+          "accuracy": 0.6380859375,
+          "loss": 2.4667576381002863,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 1853
+        },
+        "0_other_key": {
+          "accuracy": 0.5583984375,
+          "loss": 3.4518933666928304,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 2261
+        },
+        "4_original": {
+          "accuracy": 0.5498046875,
+          "loss": 2.6789114944290793,
+          "reference": "4_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.8279296875,
+          "loss": 0.9150012611842293,
+          "reference": "4_original",
+          "rescued": 1725,
+          "harmed": 301
+        },
+        "4_self": {
+          "accuracy": 0.6041015625,
+          "loss": 2.770413777716888,
+          "reference": "4_original",
+          "rescued": 867,
+          "harmed": 589
+        },
+        "4_other_key": {
+          "accuracy": 0.5408203125,
+          "loss": 3.1048866017371077,
+          "reference": "4_original",
+          "rescued": 579,
+          "harmed": 625
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "reconstruction_error": 3.5083047578154947e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.00042811222332534175,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0004246786887518581,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.5859375,
+          "loss": 3.287428182196294,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 2120
+        },
+        "0_other_key": {
+          "accuracy": 0.404296875,
+          "loss": 4.363265560315131,
+          "reference": "0_original",
+          "rescued": 0,
+          "harmed": 3050
+        },
+        "4_original": {
+          "accuracy": 0.6259765625,
+          "loss": 2.046062942478751,
+          "reference": "4_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.9345703125,
+          "loss": 0.21611973509957805,
+          "reference": "4_original",
+          "rescued": 1670,
+          "harmed": 90
+        },
+        "4_self": {
+          "accuracy": 0.5875,
+          "loss": 2.8039715630830364,
+          "reference": "4_original",
+          "rescued": 702,
+          "harmed": 899
+        },
+        "4_other_key": {
+          "accuracy": 0.478125,
+          "loss": 3.582171639092741,
+          "reference": "4_original",
+          "rescued": 370,
+          "harmed": 1127
+        }
+      }
+    }
+  ],
+  "criteria": {
+    "shifted_pair_every_seed_90": false,
+    "control_advantages": {
+      "self": 0.3030078125,
+      "other_key": 0.461484375
+    },
+    "each_control_advantage_10": true,
+    "compact_loss_at_most_one_point_every_seed": true
+  }
+}

@@ -1,0 +1,1142 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "03d4320ef5c8bcd113ddc9ec98a7261a13b12c47c001fe6ed5f04d2846d0760c",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "4d42db7f244ec2b87bcf4e83b0f949098d5d0a1bb2670636c9cfb09bf2aebe1f",
+  "source_sha256": {
+    "position_layout.py": "8ad7a540ae6bbb7dea8523c117dca9f2ee5b0fbdec9f09c8fd241ab30314f73e",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "lengths": {
+        "four_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0003941437803783176,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 1.0,
+              "loss": 0.0012107348185829909,
+              "all_subsets_correct": 1.0
+            },
+            "010": {
+              "accuracy": 0.9322916666666666,
+              "loss": 0.4122083975498679,
+              "all_subsets_correct": 0.830078125
+            },
+            "011": {
+              "accuracy": 0.9225260416666666,
+              "loss": 0.439303147105194,
+              "all_subsets_correct": 0.80859375
+            },
+            "100": {
+              "accuracy": 0.9518229166666666,
+              "loss": 0.29588637593490275,
+              "all_subsets_correct": 0.85546875
+            },
+            "101": {
+              "accuracy": 0.947265625,
+              "loss": 0.32876642357172997,
+              "all_subsets_correct": 0.841796875
+            },
+            "110": {
+              "accuracy": 0.8841145833333334,
+              "loss": 0.7077006297043925,
+              "all_subsets_correct": 0.802734375
+            },
+            "111": {
+              "accuracy": 0.8697916666666666,
+              "loss": 0.7668588358583411,
+              "all_subsets_correct": 0.775390625
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.04817708333333337,
+              "rescued": 0,
+              "harmed": 74
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.052734375,
+              "rescued": 0,
+              "harmed": 81
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.04817708333333326,
+              "rescued": 0,
+              "harmed": 74
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.052734375,
+              "rescued": 0,
+              "harmed": 81
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.06770833333333337,
+              "rescued": 0,
+              "harmed": 104
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.07747395833333337,
+              "rescued": 0,
+              "harmed": 119
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.06770833333333326,
+              "rescued": 0,
+              "harmed": 104
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.07747395833333337,
+              "rescued": 0,
+              "harmed": 119
+            },
+            "tail:000->001": {
+              "accuracy_difference": 0.0,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.009765625,
+              "rescued": 7,
+              "harmed": 22
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.00455729166666663,
+              "rescued": 7,
+              "harmed": 14
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.01432291666666674,
+              "rescued": 14,
+              "harmed": 36
+            }
+          },
+          "sham_error": 0.0
+        },
+        "six_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0003898544824116965,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9896484375,
+              "loss": 0.03097555896082066,
+              "all_subsets_correct": 0.94140625
+            },
+            "010": {
+              "accuracy": 0.9451171875,
+              "loss": 0.2948305939787407,
+              "all_subsets_correct": 0.619140625
+            },
+            "011": {
+              "accuracy": 0.9236328125,
+              "loss": 0.38019197503902735,
+              "all_subsets_correct": 0.578125
+            },
+            "100": {
+              "accuracy": 0.8947265625,
+              "loss": 0.5561576990889022,
+              "all_subsets_correct": 0.525390625
+            },
+            "101": {
+              "accuracy": 0.88046875,
+              "loss": 0.607396694953501,
+              "all_subsets_correct": 0.505859375
+            },
+            "110": {
+              "accuracy": 0.91875,
+              "loss": 0.41752286777757963,
+              "all_subsets_correct": 0.62890625
+            },
+            "111": {
+              "accuracy": 0.892578125,
+              "loss": 0.5516901233746273,
+              "all_subsets_correct": 0.57421875
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.10527343749999996,
+              "rescued": 0,
+              "harmed": 539
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.10917968749999996,
+              "rescued": 4,
+              "harmed": 563
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.0263671875,
+              "rescued": 127,
+              "harmed": 262
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.031054687499999956,
+              "rescued": 128,
+              "harmed": 287
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.054882812500000044,
+              "rescued": 0,
+              "harmed": 281
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.06601562500000002,
+              "rescued": 13,
+              "harmed": 351
+            },
+            "gaps:100->110": {
+              "accuracy_difference": 0.02402343749999991,
+              "rescued": 279,
+              "harmed": 156
+            },
+            "gaps:101->111": {
+              "accuracy_difference": 0.012109374999999978,
+              "rescued": 273,
+              "harmed": 211
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.010351562500000022,
+              "rescued": 0,
+              "harmed": 53
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.021484375,
+              "rescued": 63,
+              "harmed": 173
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.014257812500000022,
+              "rescued": 102,
+              "harmed": 175
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.026171874999999956,
+              "rescued": 76,
+              "harmed": 210
+            }
+          },
+          "sham_error": 0.0
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "lengths": {
+        "four_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0004398199364961725,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9993489583333334,
+              "loss": 0.0012526660644571195,
+              "all_subsets_correct": 0.998046875
+            },
+            "010": {
+              "accuracy": 0.91796875,
+              "loss": 0.4472674730771841,
+              "all_subsets_correct": 0.783203125
+            },
+            "011": {
+              "accuracy": 0.9166666666666666,
+              "loss": 0.42658942957397183,
+              "all_subsets_correct": 0.775390625
+            },
+            "100": {
+              "accuracy": 0.94140625,
+              "loss": 0.3532387317314958,
+              "all_subsets_correct": 0.82421875
+            },
+            "101": {
+              "accuracy": 0.9420572916666666,
+              "loss": 0.3300877740495464,
+              "all_subsets_correct": 0.826171875
+            },
+            "110": {
+              "accuracy": 0.859375,
+              "loss": 0.8000663848721837,
+              "all_subsets_correct": 0.740234375
+            },
+            "111": {
+              "accuracy": 0.859375,
+              "loss": 0.755424537559061,
+              "all_subsets_correct": 0.734375
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.05859375,
+              "rescued": 0,
+              "harmed": 90
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.05729166666666674,
+              "rescued": 0,
+              "harmed": 88
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.05859375,
+              "rescued": 0,
+              "harmed": 90
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.05729166666666663,
+              "rescued": 0,
+              "harmed": 88
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.08203125,
+              "rescued": 0,
+              "harmed": 126
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.08268229166666674,
+              "rescued": 0,
+              "harmed": 127
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.08203125,
+              "rescued": 0,
+              "harmed": 126
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.08268229166666663,
+              "rescued": 0,
+              "harmed": 127
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.0006510416666666297,
+              "rescued": 0,
+              "harmed": 1
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.0013020833333333703,
+              "rescued": 21,
+              "harmed": 23
+            },
+            "tail:100->101": {
+              "accuracy_difference": 0.0006510416666666297,
+              "rescued": 10,
+              "harmed": 9
+            },
+            "tail:110->111": {
+              "accuracy_difference": 0.0,
+              "rescued": 31,
+              "harmed": 31
+            }
+          },
+          "sham_error": 0.0
+        },
+        "six_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0004556847478129528,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9904296875,
+              "loss": 0.033748034744284235,
+              "all_subsets_correct": 0.92578125
+            },
+            "010": {
+              "accuracy": 0.9046875,
+              "loss": 0.5519252695272068,
+              "all_subsets_correct": 0.494140625
+            },
+            "011": {
+              "accuracy": 0.8927734375,
+              "loss": 0.5810237911575319,
+              "all_subsets_correct": 0.453125
+            },
+            "100": {
+              "accuracy": 0.8728515625,
+              "loss": 0.7312606372997879,
+              "all_subsets_correct": 0.501953125
+            },
+            "101": {
+              "accuracy": 0.86796875,
+              "loss": 0.7022000103088624,
+              "all_subsets_correct": 0.470703125
+            },
+            "110": {
+              "accuracy": 0.846875,
+              "loss": 0.8549183619659286,
+              "all_subsets_correct": 0.513671875
+            },
+            "111": {
+              "accuracy": 0.8404296875,
+              "loss": 0.8513713406198183,
+              "all_subsets_correct": 0.44921875
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.12714843750000004,
+              "rescued": 0,
+              "harmed": 651
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.12246093750000009,
+              "rescued": 8,
+              "harmed": 635
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.05781249999999993,
+              "rescued": 145,
+              "harmed": 441
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.05234375000000002,
+              "rescued": 159,
+              "harmed": 427
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.09531250000000002,
+              "rescued": 0,
+              "harmed": 488
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.09765625,
+              "rescued": 11,
+              "harmed": 511
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.02597656249999991,
+              "rescued": 223,
+              "harmed": 356
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.027539062499999933,
+              "rescued": 222,
+              "harmed": 363
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.009570312499999956,
+              "rescued": 0,
+              "harmed": 49
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.011914062499999933,
+              "rescued": 93,
+              "harmed": 154
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.0048828125,
+              "rescued": 116,
+              "harmed": 141
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.006445312500000022,
+              "rescued": 156,
+              "harmed": 189
+            }
+          },
+          "sham_error": 0.0
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "lengths": {
+        "four_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0007014929065610382,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9967447916666666,
+              "loss": 0.018384320990536215,
+              "all_subsets_correct": 0.9921875
+            },
+            "010": {
+              "accuracy": 0.939453125,
+              "loss": 0.30647085097978544,
+              "all_subsets_correct": 0.837890625
+            },
+            "011": {
+              "accuracy": 0.943359375,
+              "loss": 0.24489955760619866,
+              "all_subsets_correct": 0.841796875
+            },
+            "100": {
+              "accuracy": 0.9459635416666666,
+              "loss": 0.3338375805182145,
+              "all_subsets_correct": 0.837890625
+            },
+            "101": {
+              "accuracy": 0.9453125,
+              "loss": 0.28503409918478806,
+              "all_subsets_correct": 0.837890625
+            },
+            "110": {
+              "accuracy": 0.8854166666666666,
+              "loss": 0.6396069385914389,
+              "all_subsets_correct": 0.79296875
+            },
+            "111": {
+              "accuracy": 0.8919270833333334,
+              "loss": 0.5115493358004505,
+              "all_subsets_correct": 0.796875
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.05403645833333337,
+              "rescued": 0,
+              "harmed": 83
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.05143229166666663,
+              "rescued": 0,
+              "harmed": 79
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.05403645833333337,
+              "rescued": 0,
+              "harmed": 83
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.05143229166666663,
+              "rescued": 0,
+              "harmed": 79
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.060546875,
+              "rescued": 0,
+              "harmed": 93
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.05338541666666663,
+              "rescued": 1,
+              "harmed": 83
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.060546875,
+              "rescued": 0,
+              "harmed": 93
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.05338541666666663,
+              "rescued": 1,
+              "harmed": 83
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.0032552083333333703,
+              "rescued": 0,
+              "harmed": 5
+            },
+            "tail:010->011": {
+              "accuracy_difference": 0.00390625,
+              "rescued": 27,
+              "harmed": 21
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.0006510416666666297,
+              "rescued": 11,
+              "harmed": 12
+            },
+            "tail:110->111": {
+              "accuracy_difference": 0.006510416666666741,
+              "rescued": 38,
+              "harmed": 28
+            }
+          },
+          "sham_error": 0.0
+        },
+        "six_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 0.9998046875,
+              "loss": 0.0010239658324014654,
+              "all_subsets_correct": 0.998046875
+            },
+            "001": {
+              "accuracy": 0.9912109375,
+              "loss": 0.02489693560853969,
+              "all_subsets_correct": 0.9375
+            },
+            "010": {
+              "accuracy": 0.9251953125,
+              "loss": 0.43830399327625874,
+              "all_subsets_correct": 0.587890625
+            },
+            "011": {
+              "accuracy": 0.911328125,
+              "loss": 0.457601346782628,
+              "all_subsets_correct": 0.5625
+            },
+            "100": {
+              "accuracy": 0.8806640625,
+              "loss": 0.7362616250737242,
+              "all_subsets_correct": 0.54296875
+            },
+            "101": {
+              "accuracy": 0.8669921875,
+              "loss": 0.7536942697486418,
+              "all_subsets_correct": 0.505859375
+            },
+            "110": {
+              "accuracy": 0.8654296875,
+              "loss": 0.8064812841914071,
+              "all_subsets_correct": 0.6015625
+            },
+            "111": {
+              "accuracy": 0.84296875,
+              "loss": 0.861997885843406,
+              "all_subsets_correct": 0.529296875
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.119140625,
+              "rescued": 0,
+              "harmed": 610
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.12421875000000004,
+              "rescued": 12,
+              "harmed": 648
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.05976562499999993,
+              "rescued": 105,
+              "harmed": 411
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.068359375,
+              "rescued": 111,
+              "harmed": 461
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.07460937499999998,
+              "rescued": 1,
+              "harmed": 383
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.07988281249999996,
+              "rescued": 21,
+              "harmed": 430
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.015234374999999911,
+              "rescued": 181,
+              "harmed": 259
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.02402343749999991,
+              "rescued": 188,
+              "harmed": 311
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.008593749999999956,
+              "rescued": 1,
+              "harmed": 45
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.013867187499999933,
+              "rescued": 88,
+              "harmed": 159
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.013671875,
+              "rescued": 82,
+              "harmed": 152
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.0224609375,
+              "rescued": 119,
+              "harmed": 234
+            }
+          },
+          "sham_error": 0.0
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "lengths": {
+        "four_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.0003758443279857268,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.982421875,
+              "loss": 0.0680610896445313,
+              "all_subsets_correct": 0.96875
+            },
+            "010": {
+              "accuracy": 0.908203125,
+              "loss": 0.5105305181833096,
+              "all_subsets_correct": 0.76171875
+            },
+            "011": {
+              "accuracy": 0.8984375,
+              "loss": 0.5444706614269873,
+              "all_subsets_correct": 0.763671875
+            },
+            "100": {
+              "accuracy": 0.9401041666666666,
+              "loss": 0.3903187354254978,
+              "all_subsets_correct": 0.8203125
+            },
+            "101": {
+              "accuracy": 0.9212239583333334,
+              "loss": 0.4360661357198616,
+              "all_subsets_correct": 0.78515625
+            },
+            "110": {
+              "accuracy": 0.8483072916666666,
+              "loss": 0.9004734092808216,
+              "all_subsets_correct": 0.720703125
+            },
+            "111": {
+              "accuracy": 0.8372395833333334,
+              "loss": 0.9124757075023174,
+              "all_subsets_correct": 0.703125
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.05989583333333337,
+              "rescued": 0,
+              "harmed": 92
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.06119791666666663,
+              "rescued": 2,
+              "harmed": 96
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.05989583333333337,
+              "rescued": 0,
+              "harmed": 92
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.06119791666666663,
+              "rescued": 2,
+              "harmed": 96
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.091796875,
+              "rescued": 0,
+              "harmed": 141
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.083984375,
+              "rescued": 3,
+              "harmed": 132
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.091796875,
+              "rescued": 0,
+              "harmed": 141
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.083984375,
+              "rescued": 3,
+              "harmed": 132
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.017578125,
+              "rescued": 0,
+              "harmed": 27
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.009765625,
+              "rescued": 35,
+              "harmed": 50
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.01888020833333326,
+              "rescued": 12,
+              "harmed": 41
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.01106770833333326,
+              "rescued": 47,
+              "harmed": 64
+            }
+          },
+          "sham_error": 0.0
+        },
+        "six_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.00037584960968778256,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9142578125,
+              "loss": 0.4328947404474125,
+              "all_subsets_correct": 0.72265625
+            },
+            "010": {
+              "accuracy": 0.9056640625,
+              "loss": 0.5676216492888913,
+              "all_subsets_correct": 0.5078125
+            },
+            "011": {
+              "accuracy": 0.821875,
+              "loss": 1.089831677549955,
+              "all_subsets_correct": 0.392578125
+            },
+            "100": {
+              "accuracy": 0.865625,
+              "loss": 0.808747162374827,
+              "all_subsets_correct": 0.494140625
+            },
+            "101": {
+              "accuracy": 0.805078125,
+              "loss": 1.1735863200865713,
+              "all_subsets_correct": 0.388671875
+            },
+            "110": {
+              "accuracy": 0.8625,
+              "loss": 0.8212894177834809,
+              "all_subsets_correct": 0.505859375
+            },
+            "111": {
+              "accuracy": 0.783984375,
+              "loss": 1.3572095197949041,
+              "all_subsets_correct": 0.404296875
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.13437500000000002,
+              "rescued": 0,
+              "harmed": 688
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.10917968750000007,
+              "rescued": 92,
+              "harmed": 651
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.04316406249999993,
+              "rescued": 175,
+              "harmed": 396
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.03789062500000007,
+              "rescued": 229,
+              "harmed": 423
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.09433593750000002,
+              "rescued": 0,
+              "harmed": 483
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.09238281250000002,
+              "rescued": 119,
+              "harmed": 592
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.0031249999999999334,
+              "rescued": 286,
+              "harmed": 302
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.021093750000000022,
+              "rescued": 314,
+              "harmed": 422
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.08574218749999996,
+              "rescued": 0,
+              "harmed": 439
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.08378906249999996,
+              "rescued": 103,
+              "harmed": 532
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.060546875,
+              "rescued": 145,
+              "harmed": 455
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.07851562500000009,
+              "rescued": 153,
+              "harmed": 555
+            }
+          },
+          "sham_error": 0.0
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "lengths": {
+        "four_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.00046107215019806984,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.984375,
+              "loss": 0.07531541384442443,
+              "all_subsets_correct": 0.966796875
+            },
+            "010": {
+              "accuracy": 0.9375,
+              "loss": 0.3762733963156251,
+              "all_subsets_correct": 0.837890625
+            },
+            "011": {
+              "accuracy": 0.9088541666666666,
+              "loss": 0.49944434399747956,
+              "all_subsets_correct": 0.787109375
+            },
+            "100": {
+              "accuracy": 0.95703125,
+              "loss": 0.2745301333070672,
+              "all_subsets_correct": 0.87109375
+            },
+            "101": {
+              "accuracy": 0.9388020833333334,
+              "loss": 0.3702136923812655,
+              "all_subsets_correct": 0.8359375
+            },
+            "110": {
+              "accuracy": 0.89453125,
+              "loss": 0.6503424574724942,
+              "all_subsets_correct": 0.8125
+            },
+            "111": {
+              "accuracy": 0.86328125,
+              "loss": 0.7943426225343205,
+              "all_subsets_correct": 0.759765625
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.04296875,
+              "rescued": 0,
+              "harmed": 66
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.04557291666666663,
+              "rescued": 2,
+              "harmed": 72
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.04296875,
+              "rescued": 0,
+              "harmed": 66
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.04557291666666663,
+              "rescued": 2,
+              "harmed": 72
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.0625,
+              "rescued": 0,
+              "harmed": 96
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.07552083333333337,
+              "rescued": 1,
+              "harmed": 117
+            },
+            "gaps:100->110": {
+              "accuracy_difference": -0.0625,
+              "rescued": 0,
+              "harmed": 96
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.07552083333333337,
+              "rescued": 1,
+              "harmed": 117
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.015625,
+              "rescued": 0,
+              "harmed": 24
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.02864583333333337,
+              "rescued": 11,
+              "harmed": 55
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.01822916666666663,
+              "rescued": 9,
+              "harmed": 37
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.03125,
+              "rescued": 20,
+              "harmed": 68
+            }
+          },
+          "sham_error": 0.0
+        },
+        "six_pairs": {
+          "cells": {
+            "000": {
+              "accuracy": 1.0,
+              "loss": 0.00042811222332534164,
+              "all_subsets_correct": 1.0
+            },
+            "001": {
+              "accuracy": 0.9892578125,
+              "loss": 0.03159317729057926,
+              "all_subsets_correct": 0.935546875
+            },
+            "010": {
+              "accuracy": 0.9279296875,
+              "loss": 0.44392642742104726,
+              "all_subsets_correct": 0.640625
+            },
+            "011": {
+              "accuracy": 0.9005859375,
+              "loss": 0.5480272343409394,
+              "all_subsets_correct": 0.5859375
+            },
+            "100": {
+              "accuracy": 0.8865234375,
+              "loss": 0.6874913010945927,
+              "all_subsets_correct": 0.55859375
+            },
+            "101": {
+              "accuracy": 0.8744140625,
+              "loss": 0.7206188906231584,
+              "all_subsets_correct": 0.537109375
+            },
+            "110": {
+              "accuracy": 0.8896484375,
+              "loss": 0.6276095031963363,
+              "all_subsets_correct": 0.63671875
+            },
+            "111": {
+              "accuracy": 0.855859375,
+              "loss": 0.7594297129156573,
+              "all_subsets_correct": 0.572265625
+            }
+          },
+          "effects": {
+            "offset:000->100": {
+              "accuracy_difference": -0.11347656250000004,
+              "rescued": 0,
+              "harmed": 581
+            },
+            "offset:001->101": {
+              "accuracy_difference": -0.11484375000000002,
+              "rescued": 8,
+              "harmed": 596
+            },
+            "offset:010->110": {
+              "accuracy_difference": -0.038281250000000044,
+              "rescued": 121,
+              "harmed": 317
+            },
+            "offset:011->111": {
+              "accuracy_difference": -0.04472656250000007,
+              "rescued": 126,
+              "harmed": 355
+            },
+            "gaps:000->010": {
+              "accuracy_difference": -0.07207031249999996,
+              "rescued": 0,
+              "harmed": 369
+            },
+            "gaps:001->011": {
+              "accuracy_difference": -0.08867187499999996,
+              "rescued": 15,
+              "harmed": 469
+            },
+            "gaps:100->110": {
+              "accuracy_difference": 0.0031250000000000444,
+              "rescued": 229,
+              "harmed": 213
+            },
+            "gaps:101->111": {
+              "accuracy_difference": -0.0185546875,
+              "rescued": 205,
+              "harmed": 300
+            },
+            "tail:000->001": {
+              "accuracy_difference": -0.0107421875,
+              "rescued": 0,
+              "harmed": 55
+            },
+            "tail:010->011": {
+              "accuracy_difference": -0.02734375,
+              "rescued": 50,
+              "harmed": 190
+            },
+            "tail:100->101": {
+              "accuracy_difference": -0.012109374999999978,
+              "rescued": 73,
+              "harmed": 135
+            },
+            "tail:110->111": {
+              "accuracy_difference": -0.03378906250000002,
+              "rescued": 86,
+              "harmed": 259
+            }
+          },
+          "sham_error": 0.0
+        }
+      }
+    }
+  ],
+  "all_seeds_accuracy_90": {
+    "four_pairs": {
+      "000": true,
+      "001": true,
+      "010": true,
+      "011": false,
+      "100": true,
+      "101": true,
+      "110": false,
+      "111": false
+    },
+    "six_pairs": {
+      "000": true,
+      "001": true,
+      "010": true,
+      "011": false,
+      "100": false,
+      "101": false,
+      "110": false,
+      "111": false
+    }
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "status": "complete",
+  "training_updates": 0,
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "cells": [
+    {
+      "seed": 3323,
+      "variant": "native",
+      "checkpoint": "results/association_load/confirmation_3323_delta_constant.pt",
+      "checkpoint_sha256": "d64ce92eed75afed13c6dcf8fae3d955c33de5ab0e8281bd7798674cfc421264",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7725,
+          "accuracy": 0.628662109375,
+          "loss": 2.042291371549609
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          16,
+          8
+        ],
+        "state_bytes_per_history": 1024,
+        "direct_read_error": 8.78873811243373
+      },
+      "beta": 0.9091685201401032,
+      "max_logit_error": 1.4210854715202004e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7725,
+        "both_wrong": 4563
+      }
+    },
+    {
+      "seed": 3323,
+      "variant": "padded",
+      "checkpoint": "results/association_load/confirmation_3323_delta_constant.pt",
+      "checkpoint_sha256": "d64ce92eed75afed13c6dcf8fae3d955c33de5ab0e8281bd7798674cfc421264",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7725,
+          "accuracy": 0.628662109375,
+          "loss": 2.042291371549609
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 8.78873811243373
+      },
+      "beta": 0.9091685201401032,
+      "max_logit_error": 1.4210854715202004e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7725,
+        "both_wrong": 4563
+      }
+    },
+    {
+      "seed": 3323,
+      "variant": "orthogonal",
+      "checkpoint": "results/association_load/confirmation_3323_delta_constant.pt",
+      "checkpoint_sha256": "d64ce92eed75afed13c6dcf8fae3d955c33de5ab0e8281bd7798674cfc421264",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 12288,
+          "accuracy": 1.0,
+          "loss": 3.209003688348384e-05
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 0.0
+      },
+      "beta": 0.9091685201401032,
+      "max_logit_error": 0.0,
+      "native_max_logit_change": 24.30973895505079,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 4563,
+        "harmed": 0,
+        "both_correct": 7725,
+        "both_wrong": 0
+      }
+    },
+    {
+      "seed": 3329,
+      "variant": "native",
+      "checkpoint": "results/association_load/confirmation_3329_delta_constant.pt",
+      "checkpoint_sha256": "1f0155d38705a97a3e906fc20c62b06dfd7ee415d0a45b2d238aaa40b462ae65",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7564,
+          "accuracy": 0.6155598958333334,
+          "loss": 2.006634503551614
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          16,
+          8
+        ],
+        "state_bytes_per_history": 1024,
+        "direct_read_error": 9.10136945592609
+      },
+      "beta": 0.9411620620168194,
+      "max_logit_error": 1.2434497875801753e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7564,
+        "both_wrong": 4724
+      }
+    },
+    {
+      "seed": 3329,
+      "variant": "padded",
+      "checkpoint": "results/association_load/confirmation_3329_delta_constant.pt",
+      "checkpoint_sha256": "1f0155d38705a97a3e906fc20c62b06dfd7ee415d0a45b2d238aaa40b462ae65",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7564,
+          "accuracy": 0.6155598958333334,
+          "loss": 2.006634503551614
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 9.10136945592609
+      },
+      "beta": 0.9411620620168194,
+      "max_logit_error": 1.2434497875801753e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7564,
+        "both_wrong": 4724
+      }
+    },
+    {
+      "seed": 3329,
+      "variant": "orthogonal",
+      "checkpoint": "results/association_load/confirmation_3329_delta_constant.pt",
+      "checkpoint_sha256": "1f0155d38705a97a3e906fc20c62b06dfd7ee415d0a45b2d238aaa40b462ae65",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 12288,
+          "accuracy": 1.0,
+          "loss": 3.283584494766261e-05
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 0.0
+      },
+      "beta": 0.9411620620168194,
+      "max_logit_error": 0.0,
+      "native_max_logit_change": 26.517403373257707,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 4724,
+        "harmed": 0,
+        "both_correct": 7564,
+        "both_wrong": 0
+      }
+    },
+    {
+      "seed": 3331,
+      "variant": "native",
+      "checkpoint": "results/association_load/confirmation_3331_delta_constant.pt",
+      "checkpoint_sha256": "7ba2d922d0d25b2f5c0f0d0abf04f833a0f1bc27e7537f5b85b49130c61c02a9",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7739,
+          "accuracy": 0.6298014322916666,
+          "loss": 1.9950975670564077
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          16,
+          8
+        ],
+        "state_bytes_per_history": 1024,
+        "direct_read_error": 7.311884487704425
+      },
+      "beta": 0.9534601695718133,
+      "max_logit_error": 1.0658141036401503e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7739,
+        "both_wrong": 4549
+      }
+    },
+    {
+      "seed": 3331,
+      "variant": "padded",
+      "checkpoint": "results/association_load/confirmation_3331_delta_constant.pt",
+      "checkpoint_sha256": "7ba2d922d0d25b2f5c0f0d0abf04f833a0f1bc27e7537f5b85b49130c61c02a9",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 7739,
+          "accuracy": 0.6298014322916666,
+          "loss": 1.9950975670564077
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 7.311884487704425
+      },
+      "beta": 0.9534601695718133,
+      "max_logit_error": 1.0658141036401503e-14,
+      "native_max_logit_change": 0.0,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 0,
+        "harmed": 0,
+        "both_correct": 7739,
+        "both_wrong": 4549
+      }
+    },
+    {
+      "seed": 3331,
+      "variant": "orthogonal",
+      "checkpoint": "results/association_load/confirmation_3331_delta_constant.pt",
+      "checkpoint_sha256": "7ba2d922d0d25b2f5c0f0d0abf04f833a0f1bc27e7537f5b85b49130c61c02a9",
+      "metrics": {
+        "all_queries": {
+          "count": 12288,
+          "correct": 12288,
+          "accuracy": 1.0,
+          "loss": 3.679919425930504e-05
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "state": {
+        "state_shape": [
+          32,
+          8
+        ],
+        "state_bytes_per_history": 2048,
+        "direct_read_error": 0.0
+      },
+      "beta": 0.9534601695718133,
+      "max_logit_error": 0.0,
+      "native_max_logit_change": 24.9284418798049,
+      "vs_native": {
+        "count": 12288,
+        "rescued": 4549,
+        "harmed": 0,
+        "both_correct": 7739,
+        "both_wrong": 0
+      }
+    }
+  ],
+  "predictions": 110592,
+  "source_dependencies": {
+    "experiments/key_geometry_retention.py": "0ecd7e3388c921faeb5d0493a88effb5867d6e2b7bbefb8244217652b8949b87",
+    "tests/test_key_geometry_retention.py": "f9072abb8d5e29a417de6a7ae83f556c518585e91862d44fcbda267a8e265dd4",
+    "docs/protocols/key-geometry-retention.md": "abc82a8c8ffba3760a485a10a7c8f7595e5a96bd579e8c74cd41992502ef93cc",
+    "experiments/query_write_order.py": "35c269caf9c25fdda7f6e7e68eea2adc766337a42e420622fb1bd7986e09ad06",
+    "tests/test_query_write_order.py": "32222a844f031d145a17ac7b666bcb58cd95421c23712706c04cb3dfad652c20",
+    "docs/protocols/query-write-order.md": "4ba73fc462f8b39660dd0aad8e6bb40c8d103f771a02cae1b8c0fb80219af6df",
+    "experiments/history_repetition.py": "711b569af6b6bdd65d57f5a1196797b5b0a824193a352c04cd5d7258d1c2f78d",
+    "tests/test_history_repetition.py": "00f7045ce86e2f3d202077c34ef6a8d4dfe4bd1f37e9058119fc73225268c03d",
+    "docs/protocols/history-repetition.md": "d5d109fad841799c0c0fc339c5e933c6f002d4f99a0b9a675a3925be03a0cc57",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_delta_retrieval.py": "9f1175b6ee8afb43e1306d15f4b9cb0c3020d75778b3dcd9d2bd3c21e9b062d7"
+  },
+  "scores_sha256": "8e7cf30b4dc62d8a3e3545c08c16f565cf96b71e1282f086007f642045efd8ba",
+  "protected_files_unchanged": 210,
+  "criteria": {
+    "padding_invariant": true,
+    "orthogonal_all_maps_correct": true
+  },
+  "scope": "Fixed known-symbol geometry intervention, all 32 queries share one final state, no reordering or training. Orthogonal state doubles width."
+}

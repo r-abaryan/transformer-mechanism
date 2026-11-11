@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "arm": "adam",
+      "seconds": 1.8324522999755573,
+      "gradient_evaluations": 1,
+      "optimizer_state_present": true,
+      "histories_per_gradient": 64,
+      "answer_targets": 2048,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "lbfgs",
+      "seconds": 2.69666060002055,
+      "gradient_evaluations": 3,
+      "optimizer_state_present": true,
+      "histories_per_gradient": 3072,
+      "answer_targets": 133632,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    }
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "cpu_peak_memory": "unmeasured",
+  "sources": {
+    "experiments/confirm_full_pool_fitting.py": "94cc999839e7a109f65a5aad1054b3bd35a54a2417ec8a975592e2b1dcc7f55b",
+    "experiments/audit_full_pool_fitting_confirmation.py": "2121e4b8fb645099c1f8ff593410ccff921bb40b537ede05772bad36137632e7",
+    "tests/test_full_pool_fitting_confirmation.py": "a0e7bee7c628a0d4e0379b5c39f04bb86fa2c99d3d09ad0dd6ff42bef3fef801"
+  }
+}

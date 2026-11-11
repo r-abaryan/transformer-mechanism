@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350">
+<rect width="900" height="350" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#172554">
+<text x="35" y="28" font-size="19">Test load 32: lower loss, identical answers</text>
+<text x="45" y="59" font-size="15">Seed 3461; accuracy 86.44% in both final arms</text>
+<rect data-seed="3461" data-metric="old_ce" data-value="0.44260056399180026" x="45" y="190.331898" width="87" height="79.668102" fill="#64748b"/>
+<text x="45" y="180.331898" font-size="14">0.443</text><text x="45" y="291" font-size="12">Step 3000</text>
+<rect data-seed="3461" data-metric="final_ce" data-value="0.9769722437187894" x="164" y="94.144996" width="87" height="175.855004" fill="#b45309"/>
+<text x="164" y="84.144996" font-size="14">0.977</text><text x="164" y="291" font-size="12">Step 12000</text>
+<rect data-seed="3461" data-metric="control_ce" data-value="0.4283496049406039" x="283" y="192.897071" width="87" height="77.102929" fill="#0369a1"/>
+<text x="283" y="182.897071" font-size="14">0.428</text><text x="283" y="291" font-size="12">Scale control</text>
+<text x="490" y="59" font-size="15">Seed 3463; accuracy 86.98% in both final arms</text>
+<rect data-seed="3463" data-metric="old_ce" data-value="0.4761524943645801" x="490" y="184.292551" width="87" height="85.707449" fill="#64748b"/>
+<text x="490" y="174.292551" font-size="14">0.476</text><text x="490" y="291" font-size="12">Step 3000</text>
+<rect data-seed="3463" data-metric="final_ce" data-value="0.8791488378427305" x="609" y="111.753209" width="87" height="158.246791" fill="#b45309"/>
+<text x="609" y="101.753209" font-size="14">0.879</text><text x="609" y="291" font-size="12">Step 12000</text>
+<rect data-seed="3463" data-metric="control_ce" data-value="0.4170743473410507" x="728" y="194.926617" width="87" height="75.073383" fill="#0369a1"/>
+<text x="728" y="184.926617" font-size="14">0.417</text><text x="728" y="291" font-size="12">Scale control</text>
+<text x="35" y="326" font-size="13">CE is mean negative log true-class probability. Fixed final memory; no training or label-fitted temperature.</text>
+</g></svg>

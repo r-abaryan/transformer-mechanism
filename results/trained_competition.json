@@ -1,0 +1,342 @@
+{
+  "hashes": {
+    "experiments/trained_competition.py": "188516b1dbe833028c103112f72ebef153e7b043e1ace31614b63681150508af",
+    "experiments/activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "experiments/compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "experiments/position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments/qkv_paths.py": "249803306e5c494e5ae1edb2d5d6dc147c8a697b23b4d1ef3afa99ac8b2f5bd3",
+    "docs/trained-competition-protocol.md": "d06c5c5599f98c25d6160dcd2c3840c8626b569218ed8d64990ac06eb4d5badc"
+  },
+  "prior_sha256": "8d6c877e53c6efd05e414ec673a8010d4b1be9aa31f90960e0c78c190bf0aa27",
+  "split_file": "results\\depth_confirmation_splits.json",
+  "split_sha256": "37eb7c428bece9afd01946d7918148183c10770f905f803d12f825eb1fdc7950",
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "control_same_answer": 260,
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "max_control_error": 2.930988785010413e-14,
+      "conditions": {
+        "ordinary": {
+          "accuracy": 0.6875,
+          "loss": 1.9687851018087024,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "sharpen2": {
+          "accuracy": 0.6884765625,
+          "loss": 2.2371616674378316,
+          "rescued": 27,
+          "harmed": 26
+        },
+        "target_floor": {
+          "accuracy": 1.0,
+          "loss": 0.0007546068837535288,
+          "rescued": 320,
+          "harmed": 0
+        },
+        "wrong_slot_floor": {
+          "accuracy": 0.2548828125,
+          "loss": 6.628947898695535,
+          "rescued": 44,
+          "harmed": 487
+        }
+      },
+      "target_mass_by_head": [
+        0.4582906449785339,
+        0.3324905421349034
+      ],
+      "target_top_by_head": [
+        0.560546875,
+        0.46484375
+      ],
+      "strata": [
+        {
+          "name": "both_heads_target_top",
+          "count": 398,
+          "original_errors": 22,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 16,
+            "target_floor": 22,
+            "wrong_slot_floor": 2
+          }
+        },
+        {
+          "name": "other",
+          "count": 626,
+          "original_errors": 298,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 11,
+            "target_floor": 298,
+            "wrong_slot_floor": 42
+          }
+        }
+      ]
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "max_control_error": 1.4876988529977098e-14,
+      "conditions": {
+        "ordinary": {
+          "accuracy": 0.62890625,
+          "loss": 2.1939735479385414,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "sharpen2": {
+          "accuracy": 0.6298828125,
+          "loss": 2.529221572744374,
+          "rescued": 42,
+          "harmed": 41
+        },
+        "target_floor": {
+          "accuracy": 1.0,
+          "loss": 0.0015633306084799517,
+          "rescued": 380,
+          "harmed": 0
+        },
+        "wrong_slot_floor": {
+          "accuracy": 0.25390625,
+          "loss": 6.6724468253950295,
+          "rescued": 58,
+          "harmed": 442
+        }
+      },
+      "target_mass_by_head": [
+        0.34478126092786837,
+        0.3462009994027178
+      ],
+      "target_top_by_head": [
+        0.443359375,
+        0.4384765625
+      ],
+      "strata": [
+        {
+          "name": "both_heads_target_top",
+          "count": 339,
+          "original_errors": 21,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 15,
+            "target_floor": 21,
+            "wrong_slot_floor": 2
+          }
+        },
+        {
+          "name": "other",
+          "count": 685,
+          "original_errors": 359,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 27,
+            "target_floor": 359,
+            "wrong_slot_floor": 56
+          }
+        }
+      ]
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "max_control_error": 1.509903313490213e-14,
+      "conditions": {
+        "ordinary": {
+          "accuracy": 0.6435546875,
+          "loss": 2.2450942123536044,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "sharpen2": {
+          "accuracy": 0.6337890625,
+          "loss": 2.544037563645765,
+          "rescued": 33,
+          "harmed": 43
+        },
+        "target_floor": {
+          "accuracy": 0.9990234375,
+          "loss": 0.004884405161826236,
+          "rescued": 364,
+          "harmed": 0
+        },
+        "wrong_slot_floor": {
+          "accuracy": 0.255859375,
+          "loss": 6.625488236908117,
+          "rescued": 64,
+          "harmed": 461
+        }
+      },
+      "target_mass_by_head": [
+        0.4010349497936857,
+        0.24382528570246537
+      ],
+      "target_top_by_head": [
+        0.5009765625,
+        0.353515625
+      ],
+      "strata": [
+        {
+          "name": "both_heads_target_top",
+          "count": 326,
+          "original_errors": 14,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 10,
+            "target_floor": 14,
+            "wrong_slot_floor": 0
+          }
+        },
+        {
+          "name": "other",
+          "count": 698,
+          "original_errors": 351,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 23,
+            "target_floor": 350,
+            "wrong_slot_floor": 64
+          }
+        }
+      ]
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "max_control_error": 2.0872192862952943e-14,
+      "conditions": {
+        "ordinary": {
+          "accuracy": 0.548828125,
+          "loss": 3.221501396086617,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "sharpen2": {
+          "accuracy": 0.513671875,
+          "loss": 3.7311244317569296,
+          "rescued": 25,
+          "harmed": 61
+        },
+        "target_floor": {
+          "accuracy": 1.0,
+          "loss": 0.0010687602937769732,
+          "rescued": 462,
+          "harmed": 0
+        },
+        "wrong_slot_floor": {
+          "accuracy": 0.25390625,
+          "loss": 7.00285144831987,
+          "rescued": 90,
+          "harmed": 392
+        }
+      },
+      "target_mass_by_head": [
+        0.31380049515682373,
+        0.25178221933992706
+      ],
+      "target_top_by_head": [
+        0.35546875,
+        0.337890625
+      ],
+      "strata": [
+        {
+          "name": "both_heads_target_top",
+          "count": 286,
+          "original_errors": 13,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 11,
+            "target_floor": 13,
+            "wrong_slot_floor": 1
+          }
+        },
+        {
+          "name": "other",
+          "count": 738,
+          "original_errors": 449,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 14,
+            "target_floor": 449,
+            "wrong_slot_floor": 89
+          }
+        }
+      ]
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "max_control_error": 1.021405182655144e-14,
+      "conditions": {
+        "ordinary": {
+          "accuracy": 0.703125,
+          "loss": 1.790884457602853,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "sharpen2": {
+          "accuracy": 0.6845703125,
+          "loss": 2.033154724764486,
+          "rescued": 32,
+          "harmed": 51
+        },
+        "target_floor": {
+          "accuracy": 0.98828125,
+          "loss": 0.03437945091462343,
+          "rescued": 294,
+          "harmed": 2
+        },
+        "wrong_slot_floor": {
+          "accuracy": 0.2568359375,
+          "loss": 6.649967071626086,
+          "rescued": 59,
+          "harmed": 516
+        }
+      },
+      "target_mass_by_head": [
+        0.362094631761212,
+        0.32098047338424757
+      ],
+      "target_top_by_head": [
+        0.50390625,
+        0.4072265625
+      ],
+      "strata": [
+        {
+          "name": "both_heads_target_top",
+          "count": 323,
+          "original_errors": 17,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 9,
+            "target_floor": 15,
+            "wrong_slot_floor": 1
+          }
+        },
+        {
+          "name": "other",
+          "count": 701,
+          "original_errors": 287,
+          "rescued": {
+            "ordinary": 0,
+            "sharpen2": 23,
+            "target_floor": 279,
+            "wrong_slot_floor": 58
+          }
+        }
+      ]
+    }
+  ],
+  "sharpen2_keep": false,
+  "complete": true,
+  "tensors_sha256": "1360cacc8124e045a071a506e6d1eb1f8547d64237b72b97d57b84fdc6e757ea"
+}

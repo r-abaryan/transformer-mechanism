@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="760" viewBox="0 0 1050 760" role="img">
+<title>Untied and tied word matrices: final paired perplexity</title>
+<desc>Two panels show final validation and reused test perplexity. Lower is better. Tying shares input and output word weights; training budget is equal. Validation determines adoption; test is descriptive.</desc>
+<rect width="1050" height="760" fill="white"/>
+<text x="30" y="32" font-family="Arial,sans-serif" font-size="23" fill="#243449">Word matrices: independent versus shared weights</text>
+<text x="30" y="59" font-family="Arial,sans-serif" font-size="14" fill="#243449">MQA; width16; two blocks; LayerNorm; ReLU/FFN32; three paired seeds; 6,000 updates; context64.</text>
+<text x="30" y="87" font-family="Arial,sans-serif" font-size="14" fill="#0072b2">Untied</text>
+<text x="160" y="87" font-family="Arial,sans-serif" font-size="14" fill="#d55e00">Tied</text>
+<text x="30" y="124" font-family="Arial,sans-serif" font-size="17" fill="#243449">Final validation: primary decision metric</text>
+<path d="M85 358.0h900" stroke="#dce2e8"/>
+<text x="28" y="362.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">0</text>
+<path d="M85 315.0h900" stroke="#dce2e8"/>
+<text x="28" y="319.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">200</text>
+<path d="M85 272.0h900" stroke="#dce2e8"/>
+<text x="28" y="276.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">400</text>
+<path d="M85 229.0h900" stroke="#dce2e8"/>
+<text x="28" y="233.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">600</text>
+<path d="M85 186.0h900" stroke="#dce2e8"/>
+<text x="28" y="190.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">800</text>
+<path d="M85 143.0h900" stroke="#dce2e8"/>
+<text x="28" y="147.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">1000</text>
+<path d="M85 149.96228306959662h900" stroke="#777" stroke-dasharray="5 4"/>
+<text x="735" y="141.96228306959662" font-family="Arial,sans-serif" font-size="12" fill="#243449">Unigram 967.62</text>
+<rect x="179.0" y="286.96920749979586" width="48" height="71.03079250020414" fill="#0072b2"/>
+<text x="178.0" y="276.96920749979586" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">330.38</text>
+<rect x="243.0" y="283.65549469905875" width="48" height="74.34450530094125" fill="#d55e00"/>
+<text x="242.0" y="273.65549469905875" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">345.79</text>
+<text x="215.0" y="383" font-family="Arial,sans-serif" font-size="12" fill="#243449">1931</text>
+<rect x="479.0" y="289.2035385949052" width="48" height="68.79646140509482" fill="#0072b2"/>
+<text x="478.0" y="279.2035385949052" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">319.98</text>
+<rect x="543.0" y="283.0233408709254" width="48" height="74.97665912907462" fill="#d55e00"/>
+<text x="542.0" y="273.0233408709254" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">348.73</text>
+<text x="515.0" y="383" font-family="Arial,sans-serif" font-size="12" fill="#243449">1949</text>
+<rect x="779.0" y="287.134894554983" width="48" height="70.86510544501698" fill="#0072b2"/>
+<text x="778.0" y="277.134894554983" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">329.61</text>
+<rect x="843.0" y="283.1426086013224" width="48" height="74.85739139867758" fill="#d55e00"/>
+<text x="842.0" y="273.1426086013224" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">348.17</text>
+<text x="815.0" y="383" font-family="Arial,sans-serif" font-size="12" fill="#243449">1973</text>
+<text x="30" y="438" font-family="Arial,sans-serif" font-size="17" fill="#243449">Reused test: descriptive, cannot change adoption</text>
+<path d="M85 672.0h900" stroke="#dce2e8"/>
+<text x="28" y="676.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">0</text>
+<path d="M85 629.0h900" stroke="#dce2e8"/>
+<text x="28" y="633.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">200</text>
+<path d="M85 586.0h900" stroke="#dce2e8"/>
+<text x="28" y="590.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">400</text>
+<path d="M85 543.0h900" stroke="#dce2e8"/>
+<text x="28" y="547.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">600</text>
+<path d="M85 500.0h900" stroke="#dce2e8"/>
+<text x="28" y="504.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">800</text>
+<path d="M85 457.0h900" stroke="#dce2e8"/>
+<text x="28" y="461.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">1000</text>
+<path d="M85 475.4052854432238h900" stroke="#777" stroke-dasharray="5 4"/>
+<text x="735" y="467.4052854432238" font-family="Arial,sans-serif" font-size="12" fill="#243449">Unigram 914.39</text>
+<rect x="179.0" y="606.1691752526307" width="48" height="65.83082474736932" fill="#0072b2"/>
+<text x="178.0" y="596.1691752526307" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">306.19</text>
+<rect x="243.0" y="603.068418376532" width="48" height="68.93158162346799" fill="#d55e00"/>
+<text x="242.0" y="593.068418376532" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">320.61</text>
+<text x="215.0" y="697" font-family="Arial,sans-serif" font-size="12" fill="#243449">1931</text>
+<rect x="479.0" y="608.0628609866632" width="48" height="63.93713901333683" fill="#0072b2"/>
+<text x="478.0" y="598.0628609866632" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">297.38</text>
+<rect x="543.0" y="601.6292049167319" width="48" height="70.37079508326815" fill="#d55e00"/>
+<text x="542.0" y="591.6292049167319" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">327.31</text>
+<text x="515.0" y="697" font-family="Arial,sans-serif" font-size="12" fill="#243449">1949</text>
+<rect x="779.0" y="606.1655213439129" width="48" height="65.83447865608707" fill="#0072b2"/>
+<text x="778.0" y="596.1655213439129" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">306.21</text>
+<rect x="843.0" y="601.7935570048119" width="48" height="70.20644299518813" fill="#d55e00"/>
+<text x="842.0" y="591.7935570048119" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">326.54</text>
+<text x="815.0" y="697" font-family="Arial,sans-serif" font-size="12" fill="#243449">1973</text>
+<text x="270" y="719" font-family="Arial,sans-serif" font-size="14" fill="#243449">Seed; perplexity = exp(mean next-word loss); lower is better</text>
+<text x="30" y="747" font-family="Arial,sans-serif" font-size="13" fill="#243449">All validation/test token losses independently audited. Parameter savings do not establish runtime savings.</text>
+</svg>

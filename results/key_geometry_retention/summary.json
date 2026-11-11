@@ -1,0 +1,45 @@
+{
+  "report_sha256": "afd8adb5a1635c280b25ea9b444d8072e681e89be9a65307120bfba08882ddee",
+  "aggregates": [
+    {
+      "variant": "native",
+      "mean_accuracy": 0.6246744791666666,
+      "mean_ce": 2.0146744807192105,
+      "predictions": 36864,
+      "complete_maps": 0,
+      "context_evaluations": 1152,
+      "state_bytes_per_history": 1024,
+      "rescued": 0,
+      "harmed": 0,
+      "native_max_logit_change": 0.0,
+      "direct_read_max_error": 9.10136945592609
+    },
+    {
+      "variant": "padded",
+      "mean_accuracy": 0.6246744791666666,
+      "mean_ce": 2.0146744807192105,
+      "predictions": 36864,
+      "complete_maps": 0,
+      "context_evaluations": 1152,
+      "state_bytes_per_history": 2048,
+      "rescued": 0,
+      "harmed": 0,
+      "native_max_logit_change": 0.0,
+      "direct_read_max_error": 9.10136945592609
+    },
+    {
+      "variant": "orthogonal",
+      "mean_accuracy": 1.0,
+      "mean_ce": 3.3908358696817164e-05,
+      "predictions": 36864,
+      "complete_maps": 1152,
+      "context_evaluations": 1152,
+      "state_bytes_per_history": 2048,
+      "rescued": 13836,
+      "harmed": 0,
+      "native_max_logit_change": 26.517403373257707,
+      "direct_read_max_error": 0.0
+    }
+  ],
+  "scope": "Derived from executed nine-cell report; no further evaluation."
+}

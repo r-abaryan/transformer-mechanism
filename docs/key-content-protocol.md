@@ -1,0 +1,9 @@
+# Key-binding counterfactual at value-row head outputs
+
+Fixed before execution. Same five frozen pre-norm constant-rate models at 6,000 updates and opened 7,200 examples. No training, head selection or fresh confirmation. For each example swap the queried key token with the next pair's key cyclically; values, positions, query token and marker stay fixed. The correct donor answer changes to the partner's value. Control donor swaps the two unqueried keys, preserving the answer. Derived mappings may overlap earlier training; report overlap, never call them held out.
+
+Transfer both heads' summed projected block-1 contributions from donor into recipient at the two swapped pairs' value rows. Keep all other recipient activations and shared bias. Also test reverse transfer into the changed donor with recipient contributions at the same rows. Controls: ordinary recipient, ordinary changed donor, self transfer, ordinary answer-preserving donor, and its matched two-value-row transfer. Seven conditions per seed, 35 total.
+
+Report original-answer and changed-answer agreement, losses against both labels, fraction following changed answer among pairs where both ordinary endpoints are correct, and per-seed results. This is descriptive causal evidence from activation replacement, not a claim that pure key identity is encoded or the full binding mechanism is isolated. Query-aware row selection is explicit. No threshold or architecture claim.
+
+Verify changed labels from actual mappings; unchanged values/query/positions; ordinary logits against prior results; self transfer; explicit summed contributions against direct library attention-output replacement at the same rows (<1e-10); reverse direction; finite scores and unchanged checkpoint hashes. Independently audit saved metrics. Stop after this comparison.

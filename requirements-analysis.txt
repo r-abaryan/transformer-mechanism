@@ -1,0 +1,4 @@
+# Additional solver packages for the existing native Windows GPU environment.
+# uv pip install --python .venv-gpu/Scripts/python.exe --index-url https://pypi.org/simple -r requirements-analysis.txt
+numpy==2.5.3
+scipy==1.18.1

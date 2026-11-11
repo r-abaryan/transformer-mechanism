@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "report_sha256": "923ff63b4beed32fe75fc83733250ac71ac2600d58df088df6b760addce7f1f4",
+  "cells": 192,
+  "evaluation_targets": 1804032,
+  "families": 896,
+  "counts": {
+    "warmup": {
+      "optimizer_calls": 36000,
+      "histories": 2304000,
+      "input_events": 73728000,
+      "answer_targets": 33408000,
+      "gradient_evaluations": 36000
+    },
+    "fitting": {
+      "optimizer_calls": 18525,
+      "histories": 2347008,
+      "input_events": 75104256,
+      "answer_targets": 34031616,
+      "gradient_evaluations": 18718
+    }
+  },
+  "protected_files": 45,
+  "max_gradient_error": 6.703838872912371e-15,
+  "max_adam_error": 1.7763568394002505e-15,
+  "max_direction_error": 2.8449465006019636e-16,
+  "max_logit_error": 4.547473508864641e-13
+}

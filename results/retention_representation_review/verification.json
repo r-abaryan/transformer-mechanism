@@ -1,0 +1,108 @@
+{
+  "kind": "documentation_and_evidence_review",
+  "report_audit_bindings": {
+    "target_only_history": {
+      "report_sha256": "1cac877aa06c5ff468c05d66da5690648549f22b643484c70d063f59dc942a48",
+      "audit_sha256": "9b0db49a2da994786aa4db18ffaf8fd9f399f93a19186ff1b51760da76383827",
+      "audit_passed": true
+    },
+    "key_geometry_retention": {
+      "report_sha256": "afd8adb5a1635c280b25ea9b444d8072e681e89be9a65307120bfba08882ddee",
+      "audit_sha256": "4f2541a25bd612d20d2f72986d881315d664cb6cb9de15c2be432212534d6dcf",
+      "audit_passed": true
+    },
+    "overlap_regularization": {
+      "report_sha256": "9458a40e926c12a89648ab6932f453207c063799b2097d7d30737bd947a5200f",
+      "audit_sha256": "8ca6768000b0cf0c31f1caef28aead3e8410a8949ec2601334b69a7580cf7982",
+      "audit_passed": true
+    },
+    "query_feedback_continuation": {
+      "report_sha256": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+      "audit_sha256": "63131bc1585bb65be2af7ee6568f2450fc816ef5cd52cbd324740628ba437628",
+      "audit_passed": true
+    },
+    "memory_gradient_competition": {
+      "report_sha256": "ea1562a01eb63c3281cc4ef508e6c27ffd98b81c4b49ec79e95efece0f24a474",
+      "audit_sha256": "e6096037d2e085729b22894071de74596faf417df743d3150941de0fa1952e95",
+      "audit_passed": true
+    },
+    "memory_first_moment_reset": {
+      "report_sha256": "ec1d72c795281e69d997489058e39ffa5eef679b54d3ba307c88434b7025229e",
+      "audit_sha256": "4b996fae9bbe714261578d403839cda335f5a3a301938462c2b2dfadccc50307",
+      "audit_passed": true
+    }
+  },
+  "endpoint_shapes": {
+    "3461": {
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "sha256": "3d9822a61836819b171391765a2b98e119d638a900c10c116942e1a667531a7b",
+      "shapes": {
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      }
+    },
+    "3463": {
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "sha256": "f549e30d08eec53ac1f53e04fd84db89fff04462ebca34aa48706131c221d19a",
+      "shapes": {
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      }
+    }
+  },
+  "checks": {
+    "clean_reads": true,
+    "overlap_test_means": {
+      "baseline": 62.18532986111111,
+      "penalty": 65.7931857638889
+    },
+    "orthogonal_shared_maps": true,
+    "endpoint_train_accuracy_percent": {
+      "3461": 98.999,
+      "3463": 98.5636
+    },
+    "joint_gradient_directions": true,
+    "reset_criteria": true,
+    "reset_audit_recovery_binding": true,
+    "proposed_state_variables": 128,
+    "proposed_inequalities_per_history": 160
+  },
+  "training_updates": 0,
+  "new_predictions": 0,
+  "feasibility_diagnostic_executed": false,
+  "files": {
+    "docs/assessments/retention-representation-review.md": "f046a7792f7dde69ec885d9c5ca8b0311da5609e266d168e19d8c446cb90d524",
+    "docs/assessments/research-checkpoint.md": "5b2ac8c44ed027e64346439f6db722d74714dba739cfec146283cdee656f77e1",
+    "docs/assessments/learning-mechanism-agenda.md": "1ac9c46d473743ab2cee7eed06ba10ea6adc50695a37aa15cfed25323dc50320",
+    "docs/assessments/README.md": "a0c1ae040003bf99a23c81950b66d48cd5dfb989c89fac67df0aa7204c12ac61",
+    "docs/reference/sources.md": "c070713e986c8a87587c19c2b5e4b11443fb8056f2887e21afe32bc627dd2f5b"
+  },
+  "scope": "Selected report bindings, cited metrics, saved endpoint shapes and changed Markdown links; no full audit rerun or repository-wide certification.",
+  "local_markdown_links_checked": 201
+}

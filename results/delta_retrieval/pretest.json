@@ -1,0 +1,1694 @@
+{
+  "status": "development",
+  "source_dependencies": {
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "tests/test_delta_retrieval.py": "264be2fefc706f0e29243845a71fbb971301db5bb9957a252e3e41d13a3ffda5",
+    "docs/protocols/delta-retrieval.md": "d052a1a15eb351eb12295e7e722d2d7eb0e682c8e0546bb6645a3617c79de1d4"
+  },
+  "preflight_sha256": "98fa6a3e66db8838a426ecde75ce6278bff93288cc6cd9eab45a75fcdb842adc",
+  "data_sha256": {
+    "development": "cea13b22badd6078949d51b8f3e8c425a2b62f8b44aad48ff7bf1c83a685e9fc",
+    "confirmation": "e66169cb5fc5a423ec4bc546b2e369c4ca6be1816e4026bb2165ac45687a033b"
+  },
+  "runs": [
+    {
+      "phase": "development",
+      "seed": 3271,
+      "arm": "softmax",
+      "recipe": "constant",
+      "parameters": 232,
+      "initial_sha256": "0f44cdbd2cdda858a5dced2263527120a2b85960a0dc6200bddddb613f83a728",
+      "shared_sha256": "e41984534f7185d08be9b89775b1fd961769ac6b4d2225bb9cf5f053a7400e68",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0031590215191486014,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0006823204212822463,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.0002624451708671868,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002833057891646226
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00018630111813529987
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0003803104601939453
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002627921460659016
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00018630731662412398
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00033927697550767915
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00031064360499373007
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00018630111420523968
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0004349860957822205
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00028715560589047954
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00018677242223307967
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003875387895478793
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 8.554871000000276,
+      "stream_sha256": "9b20aee02a97ffc65cf5691a9c671c4b05da318e429f942d4a6908e75def649c",
+      "checkpoint": "results/delta_retrieval/development_3271_softmax_constant.pt",
+      "checkpoint_sha256": "acf021d0ee0ce382865b764614fd4fc9d92192acdc46da9d6d7ba5fa3a470cca"
+    },
+    {
+      "phase": "development",
+      "seed": 3271,
+      "arm": "delta",
+      "recipe": "constant",
+      "parameters": 231,
+      "initial_sha256": "556c187fb842f7287720b2da6d96b57f2fd139187d157e67c56980ae10d889f2",
+      "shared_sha256": "e41984534f7185d08be9b89775b1fd961769ac6b4d2225bb9cf5f053a7400e68",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0036584355924951404,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0008144957864233447,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00031525424627138984,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.000313748471060321
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00030008708626164164
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00032740985585900034
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0003067176196538319
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00029763777771818885
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00031579746158947485
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.000314808685881435
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00029442699484585227
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003351903769170178
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00035342007882537707
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003620364684031137
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00034480368924764043
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 14.016838099996676,
+      "stream_sha256": "9b20aee02a97ffc65cf5691a9c671c4b05da318e429f942d4a6908e75def649c",
+      "checkpoint": "results/delta_retrieval/development_3271_delta_constant.pt",
+      "checkpoint_sha256": "8d79b005094f439faf7f505de458b007bb7ad483db2a8a9c9707e28b6d2a9e5a"
+    },
+    {
+      "phase": "development",
+      "seed": 3277,
+      "arm": "delta",
+      "recipe": "constant",
+      "parameters": 231,
+      "initial_sha256": "7ec98f4f12d8c3f085164cc61ac9827eb18a4eea0fea3c432f203282c134b589",
+      "shared_sha256": "10e87988dc1dea5aeb33cf8bb07a2bb2e1421b6f22cc7a9c9a243060c53ab1f5",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0035093083310332616,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0007368242778359835,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00031311991687227824,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0003187897484496134
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00030303587225127246
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0003345436246479543
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0003115090251421818
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00030260292032103776
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0003204151299633258
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0003200502408468838
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00029966875689971793
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003404317247940496
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0003642823879784923
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003767294778783522
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003518352980786325
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 14.130979199995636,
+      "stream_sha256": "83b0aaf9fc6934ce763e7f17b6bd1c075cfc8be4c83dcd6d149dccfdf81a300f",
+      "checkpoint": "results/delta_retrieval/development_3277_delta_constant.pt",
+      "checkpoint_sha256": "e6680715ca03d1be0dd99ca5930ca341560eaa54bd90cf86a283cecfbeae33d9"
+    },
+    {
+      "phase": "development",
+      "seed": 3277,
+      "arm": "softmax",
+      "recipe": "constant",
+      "parameters": 232,
+      "initial_sha256": "02c06ed6a8ba418df7b654012daf658bffd5158f3275da7bdeeeadb8592e26d0",
+      "shared_sha256": "10e87988dc1dea5aeb33cf8bb07a2bb2e1421b6f22cc7a9c9a243060c53ab1f5",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0035956948691287013,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.000707022735091599,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00029511039067721634,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00030131425374200653
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00019683348024216252
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00040579502724185057
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002796070012871042
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0001968863042940503
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00036232769828015805
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0003287085222451011
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0001968333749453691
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0004605836695448331
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0003082933075763831
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00019705451671413003
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00041953209843863617
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.507344600002398,
+      "stream_sha256": "83b0aaf9fc6934ce763e7f17b6bd1c075cfc8be4c83dcd6d149dccfdf81a300f",
+      "checkpoint": "results/delta_retrieval/development_3277_softmax_constant.pt",
+      "checkpoint_sha256": "f532a7fe5ac1c121d5028ea54aa11465fb7db8db57b5c3ed295dbac784f84344"
+    },
+    {
+      "phase": "development",
+      "seed": 3271,
+      "arm": "softmax",
+      "recipe": "cosine",
+      "parameters": 232,
+      "initial_sha256": "0f44cdbd2cdda858a5dced2263527120a2b85960a0dc6200bddddb613f83a728",
+      "shared_sha256": "e41984534f7185d08be9b89775b1fd961769ac6b4d2225bb9cf5f053a7400e68",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.003686501959962788,
+          "lr": 0.0023258163172050453
+        },
+        {
+          "step": 2000,
+          "loss": 0.0012042526486027354,
+          "lr": 0.0009754082820797501
+        },
+        {
+          "step": 3000,
+          "loss": 0.0008482882981736184,
+          "lr": 0.00030000000000000003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0009280247066743245
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0005792295257646283
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0012768198875840206
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00085439214978254
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0005792500372352477
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0011295342623298325
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0010255441070802617
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0005792295123345684
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0014718587018259554
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0009405488148421594
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0005797958554964268
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0013013017741878921
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.619792500001495,
+      "stream_sha256": "9b20aee02a97ffc65cf5691a9c671c4b05da318e429f942d4a6908e75def649c",
+      "checkpoint": "results/delta_retrieval/development_3271_softmax_cosine.pt",
+      "checkpoint_sha256": "91107ea1f70a50dce79fd2a379801496f97c5fdb352d372d764c5e23847e444b"
+    },
+    {
+      "phase": "development",
+      "seed": 3271,
+      "arm": "delta",
+      "recipe": "cosine",
+      "parameters": 231,
+      "initial_sha256": "556c187fb842f7287720b2da6d96b57f2fd139187d157e67c56980ae10d889f2",
+      "shared_sha256": "e41984534f7185d08be9b89775b1fd961769ac6b4d2225bb9cf5f053a7400e68",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.004246072846999269,
+          "lr": 0.0023258163172050453
+        },
+        {
+          "step": 2000,
+          "loss": 0.001435857788524092,
+          "lr": 0.0009754082820797501
+        },
+        {
+          "step": 3000,
+          "loss": 0.001017765752328976,
+          "lr": 0.00030000000000000003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0010193549629174644
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0009781070911136676
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0010606028347212612
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.000997578055967275
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.000969244828443125
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0010259112834914248
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0010213263310493352
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0009571030868364954
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0010855495752621752
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0011386753241428762
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0011643409357254446
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0011130097125603077
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 14.115239499995369,
+      "stream_sha256": "9b20aee02a97ffc65cf5691a9c671c4b05da318e429f942d4a6908e75def649c",
+      "checkpoint": "results/delta_retrieval/development_3271_delta_cosine.pt",
+      "checkpoint_sha256": "0fe07cc137f65100eafe93d1ab15f834fe081427857a8c8ba681b954498cb21a"
+    },
+    {
+      "phase": "development",
+      "seed": 3277,
+      "arm": "delta",
+      "recipe": "cosine",
+      "parameters": 231,
+      "initial_sha256": "7ec98f4f12d8c3f085164cc61ac9827eb18a4eea0fea3c432f203282c134b589",
+      "shared_sha256": "10e87988dc1dea5aeb33cf8bb07a2bb2e1421b6f22cc7a9c9a243060c53ab1f5",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.004054846630966407,
+          "lr": 0.0023258163172050453
+        },
+        {
+          "step": 2000,
+          "loss": 0.0012824170747120424,
+          "lr": 0.0009754082820797501
+        },
+        {
+          "step": 3000,
+          "loss": 0.0010121246811956323,
+          "lr": 0.00030000000000000003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.001024568294635228
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0009754628322932165
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.001073673756977239
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0010018505945650162
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0009746831868942548
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0010290180022357778
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0010283585918261064
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0009662820970744446
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0010904350865777685
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0011692179771046164
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0012105437829361481
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0011278921712730846
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 14.049663300000248,
+      "stream_sha256": "83b0aaf9fc6934ce763e7f17b6bd1c075cfc8be4c83dcd6d149dccfdf81a300f",
+      "checkpoint": "results/delta_retrieval/development_3277_delta_cosine.pt",
+      "checkpoint_sha256": "e49d9d2a97f124d0a25641ed332aacd37df1fe41b04868062c75c7c46f55ee90"
+    },
+    {
+      "phase": "development",
+      "seed": 3277,
+      "arm": "softmax",
+      "recipe": "cosine",
+      "parameters": 232,
+      "initial_sha256": "02c06ed6a8ba418df7b654012daf658bffd5158f3275da7bdeeeadb8592e26d0",
+      "shared_sha256": "10e87988dc1dea5aeb33cf8bb07a2bb2e1421b6f22cc7a9c9a243060c53ab1f5",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.004188441663869428,
+          "lr": 0.0023258163172050453
+        },
+        {
+          "step": 2000,
+          "loss": 0.001233645669196526,
+          "lr": 0.0009754082820797501
+        },
+        {
+          "step": 3000,
+          "loss": 0.0009536206994721656,
+          "lr": 0.00030000000000000003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0009732255748964724
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0005955266653907922
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0013509244844021526
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.000894247066562165
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0005957017403897096
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0011927923927346207
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0010705217277537935
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0005955260466133883
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0015455174088941988
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0009977148203463018
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0005960737793757944
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0013993558613168092
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.382240799997817,
+      "stream_sha256": "83b0aaf9fc6934ce763e7f17b6bd1c075cfc8be4c83dcd6d149dccfdf81a300f",
+      "checkpoint": "results/delta_retrieval/development_3277_softmax_cosine.pt",
+      "checkpoint_sha256": "ed49e96bd4bafb37cb0a85da0635c049a9c828e76882c89475a83176ae97d313"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3299,
+      "arm": "softmax",
+      "recipe": "constant",
+      "parameters": 232,
+      "initial_sha256": "cfb7c8cc439c7c118a2cfc3787817fd378fc5298e9d2e9fb58d297488e36ffee",
+      "shared_sha256": "a5872f520ace9180a99592c50f81cd4aa0842122dedd5b175751eec20e3b9720",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.002947297680018835,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0005724021479801859,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.0002638200402670509,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002821458448756512
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00015754945336776566
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0004067422363835368
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00022766377408437095
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00015798222469597765
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0002973453234727642
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0002556725526306318
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00015754999452706852
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003537951107341951
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00022863089313425014
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00015757633821207516
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0002996854480564251
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.701182399992831,
+      "stream_sha256": "28ada1fdf83cbc489a5fd38818936cc1e6c1dac295a89c6d2dec3093adc84c9f",
+      "checkpoint": "results/delta_retrieval/confirmation_3299_softmax_constant.pt",
+      "checkpoint_sha256": "e9003f24a6c9c51ad4aba68b619a1f657e82d64f31695fbbb83812f8c6c659f0"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3299,
+      "arm": "delta",
+      "recipe": "constant",
+      "parameters": 231,
+      "initial_sha256": "1a744cb59c3f929cfd048a50ffdf0cc87ae6dd7c3fc921e77ed3858b4bdcff49",
+      "shared_sha256": "a5872f520ace9180a99592c50f81cd4aa0842122dedd5b175751eec20e3b9720",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0030079604752737995,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0007159709303226792,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00028259368996248643,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.000275481349758659
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.000265811284999978
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00028515141451734
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00026793092357997003
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0002602726751293569
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0002755891720305832
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0002712194095400417
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0002789766036345661
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00026346221544551717
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0002660596681343474
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.000256160347651973
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00027595898861672183
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 14.152843600008055,
+      "stream_sha256": "28ada1fdf83cbc489a5fd38818936cc1e6c1dac295a89c6d2dec3093adc84c9f",
+      "checkpoint": "results/delta_retrieval/confirmation_3299_delta_constant.pt",
+      "checkpoint_sha256": "e77436abad02e991a36123339a76af390766f11b1a4c1f80daced263ee15f746"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3301,
+      "arm": "delta",
+      "recipe": "constant",
+      "parameters": 231,
+      "initial_sha256": "217d9b4a1bde8ab698c9332d3b9e788c610893a0747247427f8fd4ec2738e911",
+      "shared_sha256": "d3c3aa1d9ca65c9ba94b1975c0a05c868d692984b90a7e5b5f3952a2fa755795",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.00385512979610065,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0008688338106112107,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00032345971032694007,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0003345010664917564
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0003246164659600036
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0003443856670235092
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00032781441287637534
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00032088615756207677
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00033474266819067387
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0003306823000304518
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003388433789804847
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00032252122108041893
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00032655484403688466
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00031655739068047346
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00033655229739329586
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 13.996248299998115,
+      "stream_sha256": "632664305cd1cea02375bcf79aba78157ccc7eb8987459b563c31c933fd37d4c",
+      "checkpoint": "results/delta_retrieval/confirmation_3301_delta_constant.pt",
+      "checkpoint_sha256": "c2f3df8bd39f8faf9f35adb6505fc3026d599cdc5f27d73a74008abd99686fe2"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3301,
+      "arm": "softmax",
+      "recipe": "constant",
+      "parameters": 232,
+      "initial_sha256": "3d75a6af4d710964d6aceda086f965305ceab2e9ac8939560934138d2cbc6cde",
+      "shared_sha256": "d3c3aa1d9ca65c9ba94b1975c0a05c868d692984b90a7e5b5f3952a2fa755795",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0031607265120099973,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0007121067128016196,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.0002684122995128322,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.000333154439261382
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00020163479000674875
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00046467408851601525
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002783436017130491
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00020171039986730923
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00035497680355878886
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00031073912579576116
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00020163468579453793
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00041984356579698444
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0002790753097824989
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00020169550259417255
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00035645511697082527
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.790800800008583,
+      "stream_sha256": "632664305cd1cea02375bcf79aba78157ccc7eb8987459b563c31c933fd37d4c",
+      "checkpoint": "results/delta_retrieval/confirmation_3301_softmax_constant.pt",
+      "checkpoint_sha256": "5a6e84267dd92a47adace20bc5bb3c4a08c7662dcce5997ef9c4c5e2410b8e4a"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3307,
+      "arm": "softmax",
+      "recipe": "constant",
+      "parameters": 232,
+      "initial_sha256": "d00191cf114f301400f9e295dac4517d7e7f9c4ae0b960f54fc2f00a5dc65bbd",
+      "shared_sha256": "604864072075562f3d90bf54ccaf76f1d0d45a33ec6d37b772484349e6532e51",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0023952735493661336,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0005959152471928993,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00024413303932929476,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002882864066996057
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00016143089189340581
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0004151419215058056
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00023371841131745812
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00016180961038856042
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00030562721224635585
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00026256176567086067
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00016143070131946363
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003636928300222578
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00023401601060553078
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00016145624296350425
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0003065757782475574
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 6.635528700004215,
+      "stream_sha256": "ecdf1f1cef3ca8a2d8b2c1181f63ca4f9754143f7a84e88878c5749d523e0a81",
+      "checkpoint": "results/delta_retrieval/confirmation_3307_softmax_constant.pt",
+      "checkpoint_sha256": "fd1378c247cb0c3e2743fb623fd3b1a54f4645036bf61554660febe07a80041f"
+    },
+    {
+      "phase": "confirmation",
+      "seed": 3307,
+      "arm": "delta",
+      "recipe": "constant",
+      "parameters": 231,
+      "initial_sha256": "9f20e58fe9e72806e5dc0e8fcc0f5eb1a6d86d14cc901e464ec50ac0f4025d6e",
+      "shared_sha256": "604864072075562f3d90bf54ccaf76f1d0d45a33ec6d37b772484349e6532e51",
+      "status": "complete",
+      "curve": [
+        {
+          "step": 1000,
+          "loss": 0.0030048574616207257,
+          "lr": 0.003
+        },
+        {
+          "step": 2000,
+          "loss": 0.0007097540282334391,
+          "lr": 0.003
+        },
+        {
+          "step": 3000,
+          "loss": 0.00026295000856739264,
+          "lr": 0.003
+        }
+      ],
+      "metrics": {
+        "train_4": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.0002771092716137607
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.0002680182252534188
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00028620031797410263
+          }
+        },
+        "train_8": {
+          "all": {
+            "count": 768,
+            "correct": 768,
+            "accuracy": 1.0,
+            "loss": 0.00026931289007121835
+          },
+          "unique": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00026329235913889884
+          },
+          "repeat": {
+            "count": 384,
+            "correct": 384,
+            "accuracy": 1.0,
+            "loss": 0.00027533342100353775
+          }
+        },
+        "validation_4": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.0002723586852857038
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00028132754338880406
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00026338982718260344
+          }
+        },
+        "validation_8": {
+          "all": {
+            "count": 192,
+            "correct": 192,
+            "accuracy": 1.0,
+            "loss": 0.00026743537005916783
+          },
+          "unique": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.0002590235636409477
+          },
+          "repeat": {
+            "count": 96,
+            "correct": 96,
+            "accuracy": 1.0,
+            "loss": 0.00027584717647738806
+          }
+        }
+      },
+      "last_started_step": 3000,
+      "updates": 3000,
+      "examples": 192000,
+      "input_events": 1152000,
+      "elapsed_seconds": 8.845862399990438,
+      "stream_sha256": "ecdf1f1cef3ca8a2d8b2c1181f63ca4f9754143f7a84e88878c5749d523e0a81",
+      "checkpoint": "results/delta_retrieval/confirmation_3307_delta_constant.pt",
+      "checkpoint_sha256": "a295a19f86aee1638af432cdc568901334102dfa50927c815ecb9ba975404961"
+    }
+  ],
+  "training_device": "cpu",
+  "dtype": "float64",
+  "python": "3.14.7 (main, Aug 14 2026, 15:39:58) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.11.0+cu128",
+  "development_selection_uses_training_only": true,
+  "selection": {
+    "softmax": {
+      "selected_recipe": "constant",
+      "candidates": [
+        {
+          "recipe": "constant",
+          "fit": true,
+          "worst_accuracy": 1.0,
+          "worst_loss": 0.00040579502724185057
+        },
+        {
+          "recipe": "cosine",
+          "fit": true,
+          "worst_accuracy": 1.0,
+          "worst_loss": 0.0013509244844021526
+        }
+      ]
+    },
+    "delta": {
+      "selected_recipe": "constant",
+      "candidates": [
+        {
+          "recipe": "constant",
+          "fit": true,
+          "worst_accuracy": 1.0,
+          "worst_loss": 0.0003345436246479543
+        },
+        {
+          "recipe": "cosine",
+          "fit": true,
+          "worst_accuracy": 1.0,
+          "worst_loss": 0.001073673756977239
+        }
+      ]
+    }
+  }
+}

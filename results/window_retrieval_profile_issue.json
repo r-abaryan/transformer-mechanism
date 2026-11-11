@@ -1,0 +1,8 @@
+{
+  "stage": "Profile report serialization after complete synthetic optimizer steps",
+  "error": "AttributeError: str object has no attribute read_bytes",
+  "cause": "digest expects pathlib.Path; __file__ was passed as str",
+  "training_started": false,
+  "correction": "Pass ROOT / experiments / window_retrieval.py; rerun the profile only",
+  "source_sha256": "b6eb5a4c42bdf4b1f16fe6c3bc66ab3dbd2bb897d0da996e7f90e02c3bd4286c"
+}

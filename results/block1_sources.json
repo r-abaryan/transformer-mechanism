@@ -1,0 +1,872 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "cbceb97d7c10f187bbfdc8dc8c20f7ac18535cc024bfa8eb2dfdb1178f9b7766",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "afcdce662dacddf9a30dbe385b9364856d0290bd23c8c34f2ee53cc34cb1c438",
+  "source_sha256": {
+    "block1_sources.py": "d8406fd2edbef7d30acec27919aac60a80cbcb645b13df6526467c678150393d",
+    "qkv_paths.py": "249803306e5c494e5ae1edb2d5d6dc147c8a697b23b4d1ef3afa99ac8b2f5bd3",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "reconstruction_error": 1.3322676295501878e-15,
+      "conditions": {
+        "compact_original": {
+          "accuracy": 0.965625,
+          "loss": 0.14869310436241853,
+          "reference": "compact_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "compact_force_pair": {
+          "accuracy": 0.9892578125,
+          "loss": 0.043979879779459746,
+          "reference": "compact_original",
+          "rescued": 131,
+          "harmed": 10
+        },
+        "compact_force_self": {
+          "accuracy": 0.637109375,
+          "loss": 2.4667923964288763,
+          "reference": "compact_original",
+          "rescued": 32,
+          "harmed": 1714
+        },
+        "compact_force_other_key": {
+          "accuracy": 0.38828125,
+          "loss": 4.377399538567436,
+          "reference": "compact_original",
+          "rescued": 8,
+          "harmed": 2964
+        },
+        "compact_remove_pair": {
+          "accuracy": 0.608984375,
+          "loss": 2.9745481388726835,
+          "reference": "compact_original",
+          "rescued": 8,
+          "harmed": 1834
+        },
+        "compact_remove_self": {
+          "accuracy": 0.9736328125,
+          "loss": 0.11113710700715966,
+          "reference": "compact_original",
+          "rescued": 48,
+          "harmed": 7
+        },
+        "shifted_original": {
+          "accuracy": 0.70234375,
+          "loss": 1.5035754454679027,
+          "reference": "shifted_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "shifted_force_pair": {
+          "accuracy": 0.9966796875,
+          "loss": 0.011300858269826002,
+          "reference": "shifted_original",
+          "rescued": 1509,
+          "harmed": 2
+        },
+        "shifted_force_self": {
+          "accuracy": 0.6689453125,
+          "loss": 2.33871500185628,
+          "reference": "shifted_original",
+          "rescued": 854,
+          "harmed": 1025
+        },
+        "shifted_force_other_key": {
+          "accuracy": 0.500390625,
+          "loss": 3.4985245213937177,
+          "reference": "shifted_original",
+          "rescued": 204,
+          "harmed": 1238
+        },
+        "shifted_remove_pair": {
+          "accuracy": 0.5451171875,
+          "loss": 2.5741641044656474,
+          "reference": "shifted_original",
+          "rescued": 51,
+          "harmed": 856
+        },
+        "shifted_remove_self": {
+          "accuracy": 0.696875,
+          "loss": 1.585778349071202,
+          "reference": "shifted_original",
+          "rescued": 77,
+          "harmed": 105
+        }
+      },
+      "attention_observations": {
+        "compact": [
+          [
+            [
+              0.5679150920221874,
+              0.43208490797781274,
+              0.0
+            ],
+            [
+              0.4587793365097281,
+              0.2728289937729357,
+              0.13007890927922514
+            ],
+            [
+              0.34146361349166676,
+              0.09911794155715245,
+              0.2971306677231367
+            ]
+          ],
+          [
+            [
+              0.8755616222943301,
+              0.12443837770566983,
+              0.0
+            ],
+            [
+              0.7449766683238721,
+              0.17972710032037972,
+              0.06546745482314803
+            ],
+            [
+              0.852636434047494,
+              0.016948381443219047,
+              0.09699739524089161
+            ]
+          ]
+        ],
+        "shifted": [
+          [
+            [
+              0.7598906258348878,
+              0.24010937416511235,
+              0.0
+            ],
+            [
+              0.22595746565885877,
+              0.13772980784210642,
+              0.4574233725513824
+            ],
+            [
+              0.2706901856920418,
+              0.17299123555601695,
+              0.36986084227671884
+            ]
+          ],
+          [
+            [
+              0.9807578645016577,
+              0.01924213549834234,
+              0.0
+            ],
+            [
+              0.10817543503208146,
+              0.009410824015254234,
+              0.8404075790479352
+            ],
+            [
+              0.17926430939168886,
+              0.05131387700407852,
+              0.7422047391546984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "reconstruction_error": 1.4432899320127035e-15,
+      "conditions": {
+        "compact_original": {
+          "accuracy": 0.955078125,
+          "loss": 0.1825448191092432,
+          "reference": "compact_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "compact_force_pair": {
+          "accuracy": 0.9703125,
+          "loss": 0.12818654849520666,
+          "reference": "compact_original",
+          "rescued": 81,
+          "harmed": 3
+        },
+        "compact_force_self": {
+          "accuracy": 0.6224609375,
+          "loss": 2.4031057194492353,
+          "reference": "compact_original",
+          "rescued": 21,
+          "harmed": 1724
+        },
+        "compact_force_other_key": {
+          "accuracy": 0.3908203125,
+          "loss": 4.289565121374288,
+          "reference": "compact_original",
+          "rescued": 50,
+          "harmed": 2939
+        },
+        "compact_remove_pair": {
+          "accuracy": 0.5341796875,
+          "loss": 3.1802578153729626,
+          "reference": "compact_original",
+          "rescued": 20,
+          "harmed": 2175
+        },
+        "compact_remove_self": {
+          "accuracy": 0.9591796875,
+          "loss": 0.16473188529324592,
+          "reference": "compact_original",
+          "rescued": 33,
+          "harmed": 12
+        },
+        "shifted_original": {
+          "accuracy": 0.5931640625,
+          "loss": 2.083816994084648,
+          "reference": "shifted_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "shifted_force_pair": {
+          "accuracy": 0.9833984375,
+          "loss": 0.045720121456952374,
+          "reference": "shifted_original",
+          "rescued": 2021,
+          "harmed": 23
+        },
+        "shifted_force_self": {
+          "accuracy": 0.6419921875,
+          "loss": 2.1277066582782074,
+          "reference": "shifted_original",
+          "rescued": 1100,
+          "harmed": 850
+        },
+        "shifted_force_other_key": {
+          "accuracy": 0.4123046875,
+          "loss": 3.9940057086858296,
+          "reference": "shifted_original",
+          "rescued": 355,
+          "harmed": 1281
+        },
+        "shifted_remove_pair": {
+          "accuracy": 0.437109375,
+          "loss": 3.221336710563534,
+          "reference": "shifted_original",
+          "rescued": 18,
+          "harmed": 817
+        },
+        "shifted_remove_self": {
+          "accuracy": 0.5884765625,
+          "loss": 2.111689358222958,
+          "reference": "shifted_original",
+          "rescued": 18,
+          "harmed": 42
+        }
+      },
+      "attention_observations": {
+        "compact": [
+          [
+            [
+              0.8169763527841797,
+              0.18302364721582043,
+              0.0
+            ],
+            [
+              0.645313721171644,
+              0.15537158591171177,
+              0.15958396904862995
+            ],
+            [
+              0.5459901593167173,
+              0.05001120884138353,
+              0.3000418333448964
+            ]
+          ],
+          [
+            [
+              0.8589912740504027,
+              0.1410087259495973,
+              0.0
+            ],
+            [
+              0.7252934265854751,
+              0.1527373012041116,
+              0.09615727007433188
+            ],
+            [
+              0.6789312226056625,
+              0.03877484722347398,
+              0.18172776195999885
+            ]
+          ]
+        ],
+        "shifted": [
+          [
+            [
+              0.9116932573766257,
+              0.08830674262337443,
+              0.0
+            ],
+            [
+              0.20942636206599138,
+              0.026168539510357847,
+              0.6921426559458453
+            ],
+            [
+              0.16308360270644454,
+              0.02762129430947679,
+              0.7531454333072694
+            ]
+          ],
+          [
+            [
+              0.9340798343087732,
+              0.06592016569122675,
+              0.0
+            ],
+            [
+              0.1194466543398424,
+              0.015449422905913451,
+              0.78569903320185
+            ],
+            [
+              0.12095414426592718,
+              0.026521121963410353,
+              0.8062231024680656
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "reconstruction_error": 2.220446049250313e-15,
+      "conditions": {
+        "compact_original": {
+          "accuracy": 0.934375,
+          "loss": 0.3404835322830896,
+          "reference": "compact_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "compact_force_pair": {
+          "accuracy": 0.9572265625,
+          "loss": 0.22420272493629262,
+          "reference": "compact_original",
+          "rescued": 153,
+          "harmed": 36
+        },
+        "compact_force_self": {
+          "accuracy": 0.620703125,
+          "loss": 2.8729060968627866,
+          "reference": "compact_original",
+          "rescued": 51,
+          "harmed": 1657
+        },
+        "compact_force_other_key": {
+          "accuracy": 0.4421875,
+          "loss": 4.105007534828506,
+          "reference": "compact_original",
+          "rescued": 57,
+          "harmed": 2577
+        },
+        "compact_remove_pair": {
+          "accuracy": 0.5203125,
+          "loss": 3.5415028893120466,
+          "reference": "compact_original",
+          "rescued": 35,
+          "harmed": 2155
+        },
+        "compact_remove_self": {
+          "accuracy": 0.930078125,
+          "loss": 0.3644162357686105,
+          "reference": "compact_original",
+          "rescued": 44,
+          "harmed": 66
+        },
+        "shifted_original": {
+          "accuracy": 0.651953125,
+          "loss": 2.0122859808241396,
+          "reference": "shifted_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "shifted_force_pair": {
+          "accuracy": 0.9912109375,
+          "loss": 0.03208119828075217,
+          "reference": "shifted_original",
+          "rescued": 1744,
+          "harmed": 7
+        },
+        "shifted_force_self": {
+          "accuracy": 0.6431640625,
+          "loss": 2.5580321714424654,
+          "reference": "shifted_original",
+          "rescued": 835,
+          "harmed": 880
+        },
+        "shifted_force_other_key": {
+          "accuracy": 0.466015625,
+          "loss": 3.817557162628632,
+          "reference": "shifted_original",
+          "rescued": 334,
+          "harmed": 1286
+        },
+        "shifted_remove_pair": {
+          "accuracy": 0.454296875,
+          "loss": 3.500726178275952,
+          "reference": "shifted_original",
+          "rescued": 48,
+          "harmed": 1060
+        },
+        "shifted_remove_self": {
+          "accuracy": 0.6484375,
+          "loss": 2.0564738827934397,
+          "reference": "shifted_original",
+          "rescued": 99,
+          "harmed": 117
+        }
+      },
+      "attention_observations": {
+        "compact": [
+          [
+            [
+              0.9307435082083911,
+              0.0692564917916089,
+              0.0
+            ],
+            [
+              0.7224485619101206,
+              0.16347862349301023,
+              0.10341234693652109
+            ],
+            [
+              0.7528753435942777,
+              0.03296070267090281,
+              0.16332269705184815
+            ]
+          ],
+          [
+            [
+              0.6890195293037372,
+              0.31098047069626283,
+              0.0
+            ],
+            [
+              0.461315380755281,
+              0.2436893040174306,
+              0.2166438358080573
+            ],
+            [
+              0.40129348820193167,
+              0.18008580853907735,
+              0.26147886882970084
+            ]
+          ]
+        ],
+        "shifted": [
+          [
+            [
+              0.9591077624402293,
+              0.0408922375597705,
+              0.0
+            ],
+            [
+              0.19373348037575733,
+              0.014504866907438569,
+              0.7449535939026793
+            ],
+            [
+              0.2033411840565887,
+              0.03809794671041459,
+              0.7192221129744542
+            ]
+          ],
+          [
+            [
+              0.6752642511873509,
+              0.324735748812649,
+              0.0
+            ],
+            [
+              0.2994003079237714,
+              0.18288680526445655,
+              0.3564975200944181
+            ],
+            [
+              0.258165007575674,
+              0.1385417049623558,
+              0.4522550588127892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "reconstruction_error": 2.4424906541753444e-15,
+      "conditions": {
+        "compact_original": {
+          "accuracy": 0.952734375,
+          "loss": 0.2080875887576598,
+          "reference": "compact_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "compact_force_pair": {
+          "accuracy": 0.9646484375,
+          "loss": 0.13542793227324562,
+          "reference": "compact_original",
+          "rescued": 105,
+          "harmed": 44
+        },
+        "compact_force_self": {
+          "accuracy": 0.6302734375,
+          "loss": 2.658393414427544,
+          "reference": "compact_original",
+          "rescued": 103,
+          "harmed": 1754
+        },
+        "compact_force_other_key": {
+          "accuracy": 0.4162109375,
+          "loss": 4.103168752565178,
+          "reference": "compact_original",
+          "rescued": 18,
+          "harmed": 2765
+        },
+        "compact_remove_pair": {
+          "accuracy": 0.4873046875,
+          "loss": 3.7132079168411303,
+          "reference": "compact_original",
+          "rescued": 25,
+          "harmed": 2408
+        },
+        "compact_remove_self": {
+          "accuracy": 0.9498046875,
+          "loss": 0.21004035334781063,
+          "reference": "compact_original",
+          "rescued": 20,
+          "harmed": 35
+        },
+        "shifted_original": {
+          "accuracy": 0.5525390625,
+          "loss": 2.574095508594797,
+          "reference": "shifted_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "shifted_force_pair": {
+          "accuracy": 0.958984375,
+          "loss": 0.17620922113538112,
+          "reference": "shifted_original",
+          "rescued": 2129,
+          "harmed": 48
+        },
+        "shifted_force_self": {
+          "accuracy": 0.6337890625,
+          "loss": 2.5969046807565017,
+          "reference": "shifted_original",
+          "rescued": 1077,
+          "harmed": 661
+        },
+        "shifted_force_other_key": {
+          "accuracy": 0.4869140625,
+          "loss": 3.568971900542345,
+          "reference": "shifted_original",
+          "rescued": 567,
+          "harmed": 903
+        },
+        "shifted_remove_pair": {
+          "accuracy": 0.462890625,
+          "loss": 3.2962677575753987,
+          "reference": "shifted_original",
+          "rescued": 60,
+          "harmed": 519
+        },
+        "shifted_remove_self": {
+          "accuracy": 0.5591796875,
+          "loss": 2.526245202325779,
+          "reference": "shifted_original",
+          "rescued": 124,
+          "harmed": 90
+        }
+      },
+      "attention_observations": {
+        "compact": [
+          [
+            [
+              0.9800611754431996,
+              0.019938824556800645,
+              0.0
+            ],
+            [
+              0.8731003112626761,
+              0.04781728637590221,
+              0.07773894200420998
+            ],
+            [
+              0.9219529679675112,
+              0.002643660596044929,
+              0.07107539772758223
+            ]
+          ],
+          [
+            [
+              0.3641808524408555,
+              0.6358191475591447,
+              0.0
+            ],
+            [
+              0.17499545012837997,
+              0.34659388738825353,
+              0.18629859150026795
+            ],
+            [
+              0.11607802264970432,
+              0.2604841521270058,
+              0.20045725102035467
+            ]
+          ]
+        ],
+        "shifted": [
+          [
+            [
+              0.9969006065579492,
+              0.003099393442050744,
+              0.0
+            ],
+            [
+              0.08163520496469494,
+              0.0007584273531151828,
+              0.9111123883969224
+            ],
+            [
+              0.14320064682837882,
+              0.010983857514270265,
+              0.8359122303770807
+            ]
+          ],
+          [
+            [
+              0.31842367928483045,
+              0.6815763207151695,
+              0.0
+            ],
+            [
+              0.15147618132468785,
+              0.3125726400516008,
+              0.18601925870656244
+            ],
+            [
+              0.09245724279661072,
+              0.2081857198482803,
+              0.25741161483873276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "reconstruction_error": 1.5543122344752192e-15,
+      "conditions": {
+        "compact_original": {
+          "accuracy": 0.9296875,
+          "loss": 0.32398710969394867,
+          "reference": "compact_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "compact_force_pair": {
+          "accuracy": 0.94921875,
+          "loss": 0.23167093377027345,
+          "reference": "compact_original",
+          "rescued": 112,
+          "harmed": 12
+        },
+        "compact_force_self": {
+          "accuracy": 0.583203125,
+          "loss": 2.802616284087205,
+          "reference": "compact_original",
+          "rescued": 18,
+          "harmed": 1792
+        },
+        "compact_force_other_key": {
+          "accuracy": 0.4482421875,
+          "loss": 3.9910930210696236,
+          "reference": "compact_original",
+          "rescued": 50,
+          "harmed": 2515
+        },
+        "compact_remove_pair": {
+          "accuracy": 0.5466796875,
+          "loss": 3.167266179468433,
+          "reference": "compact_original",
+          "rescued": 24,
+          "harmed": 1985
+        },
+        "compact_remove_self": {
+          "accuracy": 0.935546875,
+          "loss": 0.2982208487431536,
+          "reference": "compact_original",
+          "rescued": 44,
+          "harmed": 14
+        },
+        "shifted_original": {
+          "accuracy": 0.6783203125,
+          "loss": 1.842723027112061,
+          "reference": "shifted_original",
+          "rescued": 0,
+          "harmed": 0
+        },
+        "shifted_force_pair": {
+          "accuracy": 0.9537109375,
+          "loss": 0.19207734988587163,
+          "reference": "shifted_original",
+          "rescued": 1440,
+          "harmed": 30
+        },
+        "shifted_force_self": {
+          "accuracy": 0.6037109375,
+          "loss": 2.624638488897315,
+          "reference": "shifted_original",
+          "rescued": 552,
+          "harmed": 934
+        },
+        "shifted_force_other_key": {
+          "accuracy": 0.471875,
+          "loss": 3.6800801337107503,
+          "reference": "shifted_original",
+          "rescued": 268,
+          "harmed": 1325
+        },
+        "shifted_remove_pair": {
+          "accuracy": 0.479296875,
+          "loss": 3.203703890049693,
+          "reference": "shifted_original",
+          "rescued": 32,
+          "harmed": 1051
+        },
+        "shifted_remove_self": {
+          "accuracy": 0.68359375,
+          "loss": 1.8331325907556715,
+          "reference": "shifted_original",
+          "rescued": 85,
+          "harmed": 58
+        }
+      },
+      "attention_observations": {
+        "compact": [
+          [
+            [
+              0.856655294197396,
+              0.1433447058026039,
+              0.0
+            ],
+            [
+              0.8303114025155421,
+              0.1102870846164679,
+              0.04843864116110028
+            ],
+            [
+              0.8429187507169253,
+              0.014738970085864275,
+              0.08038350351315175
+            ]
+          ],
+          [
+            [
+              0.4765658483547714,
+              0.5234341516452286,
+              0.0
+            ],
+            [
+              0.22480295818697985,
+              0.3874563087429444,
+              0.21061783234169879
+            ],
+            [
+              0.20189722927318185,
+              0.37062320103597585,
+              0.18380527723101467
+            ]
+          ]
+        ],
+        "shifted": [
+          [
+            [
+              0.9821292372773721,
+              0.017870762722627897,
+              0.0
+            ],
+            [
+              0.15717241522672487,
+              0.01958110320974238,
+              0.7265640193728643
+            ],
+            [
+              0.27820111999773517,
+              0.04611303498748444,
+              0.6367202161531323
+            ]
+          ],
+          [
+            [
+              0.36912978662698875,
+              0.6308702133730113,
+              0.0
+            ],
+            [
+              0.21002687759437255,
+              0.2664986302004627,
+              0.22331272372480626
+            ],
+            [
+              0.13620406969775203,
+              0.22557641302585849,
+              0.3144757307488055
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "observation_axes": [
+    "head",
+    "value_slot_1_3_5",
+    "paired_key_self_other_keys"
+  ],
+  "all_seeds_accuracy_90": {
+    "compact_original": true,
+    "compact_force_pair": true,
+    "compact_force_self": false,
+    "compact_force_other_key": false,
+    "compact_remove_pair": false,
+    "compact_remove_self": true,
+    "shifted_original": false,
+    "shifted_force_pair": true,
+    "shifted_force_self": false,
+    "shifted_force_other_key": false,
+    "shifted_remove_pair": false,
+    "shifted_remove_self": false
+  },
+  "removal_drop_10_every_seed": {
+    "compact_remove_pair": true,
+    "compact_remove_self": false,
+    "shifted_remove_pair": false,
+    "shifted_remove_self": false
+  }
+}

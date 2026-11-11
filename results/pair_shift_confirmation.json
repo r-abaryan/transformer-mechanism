@@ -1,0 +1,1073 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "97f2dd0efb6f734d277e2c70340f35235cb182e8e8711feabe5eedc3a0af6258",
+  "split_sha256": "cb65e0e85495e11adbc7e0db317d734bc88aff1bec1d1abc161328cfa27c9b17",
+  "previous_split_hashes": {
+    "results\\depth_confirmation_splits.json": "37eb7c428bece9afd01946d7918148183c10770f905f803d12f825eb1fdc7950",
+    "results\\subset_confirmation_splits.json": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2"
+  },
+  "overlap": {
+    "excluded_parent_count": 2560,
+    "parent_overlap": 0,
+    "distinct_crops": 4056,
+    "crop_instances_in_previous_diagnostic": 1956,
+    "crop_instances_in_confirmation_train": 3890
+  },
+  "protocol_sha256": "25a505e0127f183f842279bdd5651cc83ed977b5a4f2b9d8620473232ec14cac",
+  "source_sha256": {
+    "confirm_pair_shifts.py": "bcf440e203dfd4db80db7c9a304b4c01fd1fa12bcd06d2ee25486bd7e63a5d17",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "train_associative_recall.py": "bd0e38f36f78fece074d3194946363a67dd46e47cc93ed3023eb0392310056c3",
+    "confirm_depth.py": "5fb5d4762029a87c2072083d45b459649c981c57be16c7b84644ac29e6b95e71"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "reconstruction_error": 6.927791673660977e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.000388867967688485,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0004279196307921685,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.624609375,
+          "loss": 2.7344716773684175,
+          "reference": "0_original",
+          "every_crop_correct": 0.328125,
+          "rescued": 0,
+          "harmed": 1922
+        },
+        "0_other_key": {
+          "accuracy": 0.3720703125,
+          "loss": 4.177514230155683,
+          "reference": "0_original",
+          "every_crop_correct": 0.01953125,
+          "rescued": 0,
+          "harmed": 3215
+        },
+        "1_original": {
+          "accuracy": 0.91015625,
+          "loss": 0.5652237364219135,
+          "reference": "1_original",
+          "every_crop_correct": 0.5703125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "1_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0009994039032896701,
+          "reference": "1_original",
+          "every_crop_correct": 1.0,
+          "rescued": 460,
+          "harmed": 0
+        },
+        "1_self": {
+          "accuracy": 0.6111328125,
+          "loss": 2.8787857421160217,
+          "reference": "1_original",
+          "every_crop_correct": 0.3125,
+          "rescued": 165,
+          "harmed": 1696
+        },
+        "1_other_key": {
+          "accuracy": 0.3814453125,
+          "loss": 4.181319321754045,
+          "reference": "1_original",
+          "every_crop_correct": 0.017578125,
+          "rescued": 52,
+          "harmed": 2759
+        },
+        "2_original": {
+          "accuracy": 0.77421875,
+          "loss": 1.2846239357307465,
+          "reference": "2_original",
+          "every_crop_correct": 0.3359375,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "2_pair": {
+          "accuracy": 0.9984375,
+          "loss": 0.0042753560139408295,
+          "reference": "2_original",
+          "every_crop_correct": 0.986328125,
+          "rescued": 1152,
+          "harmed": 4
+        },
+        "2_self": {
+          "accuracy": 0.601171875,
+          "loss": 2.9188039799614214,
+          "reference": "2_original",
+          "every_crop_correct": 0.322265625,
+          "rescued": 373,
+          "harmed": 1259
+        },
+        "2_other_key": {
+          "accuracy": 0.528515625,
+          "loss": 3.5712361718831516,
+          "reference": "2_original",
+          "every_crop_correct": 0.115234375,
+          "rescued": 151,
+          "harmed": 1409
+        },
+        "4_original": {
+          "accuracy": 0.6505859375,
+          "loss": 1.812626968456535,
+          "reference": "4_original",
+          "every_crop_correct": 0.1953125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.9748046875,
+          "loss": 0.0837160001142288,
+          "reference": "4_original",
+          "every_crop_correct": 0.865234375,
+          "rescued": 1706,
+          "harmed": 46
+        },
+        "4_self": {
+          "accuracy": 0.6236328125,
+          "loss": 2.761275532915979,
+          "reference": "4_original",
+          "every_crop_correct": 0.3125,
+          "rescued": 826,
+          "harmed": 964
+        },
+        "4_other_key": {
+          "accuracy": 0.4626953125,
+          "loss": 3.745982220656741,
+          "reference": "4_original",
+          "every_crop_correct": 0.05078125,
+          "rescued": 216,
+          "harmed": 1178
+        },
+        "6_original": {
+          "accuracy": 0.9208984375,
+          "loss": 0.35976315507770695,
+          "reference": "6_original",
+          "every_crop_correct": 0.6484375,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "6_pair": {
+          "accuracy": 0.9638671875,
+          "loss": 0.1588914394348807,
+          "reference": "6_original",
+          "every_crop_correct": 0.85546875,
+          "rescued": 242,
+          "harmed": 22
+        },
+        "6_self": {
+          "accuracy": 0.616015625,
+          "loss": 2.699923213939553,
+          "reference": "6_original",
+          "every_crop_correct": 0.30859375,
+          "rescued": 104,
+          "harmed": 1665
+        },
+        "6_other_key": {
+          "accuracy": 0.4314453125,
+          "loss": 3.7389732875995088,
+          "reference": "6_original",
+          "every_crop_correct": 0.0546875,
+          "rescued": 57,
+          "harmed": 2563
+        },
+        "8_original": {
+          "accuracy": 0.7130859375,
+          "loss": 1.6181176607714758,
+          "reference": "8_original",
+          "every_crop_correct": 0.26953125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "8_pair": {
+          "accuracy": 0.9384765625,
+          "loss": 0.2343154613931388,
+          "reference": "8_original",
+          "every_crop_correct": 0.75,
+          "rescued": 1292,
+          "harmed": 138
+        },
+        "8_self": {
+          "accuracy": 0.609765625,
+          "loss": 2.6387928933218063,
+          "reference": "8_original",
+          "every_crop_correct": 0.3046875,
+          "rescued": 561,
+          "harmed": 1090
+        },
+        "8_other_key": {
+          "accuracy": 0.3876953125,
+          "loss": 3.94931201270724,
+          "reference": "8_original",
+          "every_crop_correct": 0.037109375,
+          "rescued": 248,
+          "harmed": 1914
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "reconstruction_error": 4.884981308350689e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.0004614663164375474,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.00044030361417714736,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.610546875,
+          "loss": 2.7801948405492944,
+          "reference": "0_original",
+          "every_crop_correct": 0.306640625,
+          "rescued": 0,
+          "harmed": 1994
+        },
+        "0_other_key": {
+          "accuracy": 0.36484375,
+          "loss": 4.375946456374654,
+          "reference": "0_original",
+          "every_crop_correct": 0.0390625,
+          "rescued": 0,
+          "harmed": 3252
+        },
+        "1_original": {
+          "accuracy": 0.9298828125,
+          "loss": 0.35425056585302533,
+          "reference": "1_original",
+          "every_crop_correct": 0.65625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "1_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0005660423440435505,
+          "reference": "1_original",
+          "every_crop_correct": 1.0,
+          "rescued": 359,
+          "harmed": 0
+        },
+        "1_self": {
+          "accuracy": 0.615234375,
+          "loss": 2.7039964724953327,
+          "reference": "1_original",
+          "every_crop_correct": 0.29296875,
+          "rescued": 132,
+          "harmed": 1743
+        },
+        "1_other_key": {
+          "accuracy": 0.3671875,
+          "loss": 4.24438718951616,
+          "reference": "1_original",
+          "every_crop_correct": 0.046875,
+          "rescued": 11,
+          "harmed": 2892
+        },
+        "2_original": {
+          "accuracy": 0.767578125,
+          "loss": 1.2605859225616445,
+          "reference": "2_original",
+          "every_crop_correct": 0.306640625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "2_pair": {
+          "accuracy": 0.9986328125,
+          "loss": 0.004666267561023405,
+          "reference": "2_original",
+          "every_crop_correct": 0.98828125,
+          "rescued": 1186,
+          "harmed": 3
+        },
+        "2_self": {
+          "accuracy": 0.6455078125,
+          "loss": 2.4191312868804715,
+          "reference": "2_original",
+          "every_crop_correct": 0.294921875,
+          "rescued": 463,
+          "harmed": 1088
+        },
+        "2_other_key": {
+          "accuracy": 0.4208984375,
+          "loss": 3.757968348109737,
+          "reference": "2_original",
+          "every_crop_correct": 0.046875,
+          "rescued": 52,
+          "harmed": 1827
+        },
+        "4_original": {
+          "accuracy": 0.581640625,
+          "loss": 2.128966999328937,
+          "reference": "4_original",
+          "every_crop_correct": 0.09765625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.995703125,
+          "loss": 0.014709423962519933,
+          "reference": "4_original",
+          "every_crop_correct": 0.96875,
+          "rescued": 2124,
+          "harmed": 4
+        },
+        "4_self": {
+          "accuracy": 0.6791015625,
+          "loss": 1.9121897489190107,
+          "reference": "4_original",
+          "every_crop_correct": 0.294921875,
+          "rescued": 1286,
+          "harmed": 787
+        },
+        "4_other_key": {
+          "accuracy": 0.4302734375,
+          "loss": 3.7483054448170563,
+          "reference": "4_original",
+          "every_crop_correct": 0.041015625,
+          "rescued": 423,
+          "harmed": 1198
+        },
+        "6_original": {
+          "accuracy": 0.9359375,
+          "loss": 0.2610943663687978,
+          "reference": "6_original",
+          "every_crop_correct": 0.642578125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "6_pair": {
+          "accuracy": 0.9908203125,
+          "loss": 0.03651206869299485,
+          "reference": "6_original",
+          "every_crop_correct": 0.939453125,
+          "rescued": 290,
+          "harmed": 9
+        },
+        "6_self": {
+          "accuracy": 0.6408203125,
+          "loss": 2.1669662315955893,
+          "reference": "6_original",
+          "every_crop_correct": 0.255859375,
+          "rescued": 117,
+          "harmed": 1628
+        },
+        "6_other_key": {
+          "accuracy": 0.4857421875,
+          "loss": 3.4902664919298254,
+          "reference": "6_original",
+          "every_crop_correct": 0.09765625,
+          "rescued": 29,
+          "harmed": 2334
+        },
+        "8_original": {
+          "accuracy": 0.7259765625,
+          "loss": 1.2322056942177533,
+          "reference": "8_original",
+          "every_crop_correct": 0.28515625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "8_pair": {
+          "accuracy": 0.95546875,
+          "loss": 0.12731790220549194,
+          "reference": "8_original",
+          "every_crop_correct": 0.8046875,
+          "rescued": 1210,
+          "harmed": 35
+        },
+        "8_self": {
+          "accuracy": 0.6046875,
+          "loss": 2.163348892700573,
+          "reference": "8_original",
+          "every_crop_correct": 0.25390625,
+          "rescued": 440,
+          "harmed": 1061
+        },
+        "8_other_key": {
+          "accuracy": 0.4451171875,
+          "loss": 3.3541070217078057,
+          "reference": "8_original",
+          "every_crop_correct": 0.0625,
+          "rescued": 162,
+          "harmed": 1600
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "reconstruction_error": 4.529709940470639e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.0005730017329171717,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0007997703629975626,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.612890625,
+          "loss": 3.0982143876220216,
+          "reference": "0_original",
+          "every_crop_correct": 0.361328125,
+          "rescued": 0,
+          "harmed": 1982
+        },
+        "0_other_key": {
+          "accuracy": 0.473046875,
+          "loss": 3.916693442419954,
+          "reference": "0_original",
+          "every_crop_correct": 0.103515625,
+          "rescued": 0,
+          "harmed": 2698
+        },
+        "1_original": {
+          "accuracy": 0.921875,
+          "loss": 0.40781925126759216,
+          "reference": "1_original",
+          "every_crop_correct": 0.626953125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "1_pair": {
+          "accuracy": 0.9947265625,
+          "loss": 0.01449454703577647,
+          "reference": "1_original",
+          "every_crop_correct": 0.9609375,
+          "rescued": 389,
+          "harmed": 16
+        },
+        "1_self": {
+          "accuracy": 0.598046875,
+          "loss": 3.1033396898816314,
+          "reference": "1_original",
+          "every_crop_correct": 0.333984375,
+          "rescued": 152,
+          "harmed": 1810
+        },
+        "1_other_key": {
+          "accuracy": 0.469921875,
+          "loss": 3.7546509640331864,
+          "reference": "1_original",
+          "every_crop_correct": 0.076171875,
+          "rescued": 28,
+          "harmed": 2342
+        },
+        "2_original": {
+          "accuracy": 0.7859375,
+          "loss": 1.1901947247449647,
+          "reference": "2_original",
+          "every_crop_correct": 0.337890625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "2_pair": {
+          "accuracy": 0.9939453125,
+          "loss": 0.022003573681031417,
+          "reference": "2_original",
+          "every_crop_correct": 0.95703125,
+          "rescued": 1071,
+          "harmed": 6
+        },
+        "2_self": {
+          "accuracy": 0.6080078125,
+          "loss": 2.962318053041098,
+          "reference": "2_original",
+          "every_crop_correct": 0.318359375,
+          "rescued": 433,
+          "harmed": 1344
+        },
+        "2_other_key": {
+          "accuracy": 0.4814453125,
+          "loss": 3.455370809210909,
+          "reference": "2_original",
+          "every_crop_correct": 0.076171875,
+          "rescued": 115,
+          "harmed": 1674
+        },
+        "4_original": {
+          "accuracy": 0.59375,
+          "loss": 2.41978246135739,
+          "reference": "4_original",
+          "every_crop_correct": 0.16796875,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.9416015625,
+          "loss": 0.2983643192983683,
+          "reference": "4_original",
+          "every_crop_correct": 0.783203125,
+          "rescued": 1856,
+          "harmed": 75
+        },
+        "4_self": {
+          "accuracy": 0.6162109375,
+          "loss": 2.800064867843943,
+          "reference": "4_original",
+          "every_crop_correct": 0.29296875,
+          "rescued": 876,
+          "harmed": 761
+        },
+        "4_other_key": {
+          "accuracy": 0.4279296875,
+          "loss": 3.996969198594782,
+          "reference": "4_original",
+          "every_crop_correct": 0.05859375,
+          "rescued": 381,
+          "harmed": 1230
+        },
+        "6_original": {
+          "accuracy": 0.8572265625,
+          "loss": 0.7368302184296759,
+          "reference": "6_original",
+          "every_crop_correct": 0.515625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "6_pair": {
+          "accuracy": 0.9576171875,
+          "loss": 0.17548158062149222,
+          "reference": "6_original",
+          "every_crop_correct": 0.837890625,
+          "rescued": 548,
+          "harmed": 34
+        },
+        "6_self": {
+          "accuracy": 0.584765625,
+          "loss": 3.1530254355799725,
+          "reference": "6_original",
+          "every_crop_correct": 0.34765625,
+          "rescued": 138,
+          "harmed": 1533
+        },
+        "6_other_key": {
+          "accuracy": 0.508984375,
+          "loss": 3.595626703816779,
+          "reference": "6_original",
+          "every_crop_correct": 0.140625,
+          "rescued": 82,
+          "harmed": 1865
+        },
+        "8_original": {
+          "accuracy": 0.69140625,
+          "loss": 1.696543119946406,
+          "reference": "8_original",
+          "every_crop_correct": 0.236328125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "8_pair": {
+          "accuracy": 0.943359375,
+          "loss": 0.23435348204048068,
+          "reference": "8_original",
+          "every_crop_correct": 0.755859375,
+          "rescued": 1339,
+          "harmed": 49
+        },
+        "8_self": {
+          "accuracy": 0.5705078125,
+          "loss": 3.156544903432398,
+          "reference": "8_original",
+          "every_crop_correct": 0.302734375,
+          "rescued": 375,
+          "harmed": 994
+        },
+        "8_other_key": {
+          "accuracy": 0.4490234375,
+          "loss": 3.592078602315346,
+          "reference": "8_original",
+          "every_crop_correct": 0.0546875,
+          "rescued": 252,
+          "harmed": 1493
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "reconstruction_error": 9.85878045867139e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.0003764160102086423,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 0.99921875,
+          "loss": 0.001990345181993302,
+          "reference": "0_original",
+          "every_crop_correct": 0.994140625,
+          "rescued": 0,
+          "harmed": 4
+        },
+        "0_self": {
+          "accuracy": 0.609765625,
+          "loss": 2.687652779895319,
+          "reference": "0_original",
+          "every_crop_correct": 0.30859375,
+          "rescued": 0,
+          "harmed": 1998
+        },
+        "0_other_key": {
+          "accuracy": 0.54921875,
+          "loss": 3.568501075453181,
+          "reference": "0_original",
+          "every_crop_correct": 0.162109375,
+          "rescued": 0,
+          "harmed": 2308
+        },
+        "1_original": {
+          "accuracy": 0.9048828125,
+          "loss": 0.5203705278774171,
+          "reference": "1_original",
+          "every_crop_correct": 0.564453125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "1_pair": {
+          "accuracy": 0.994140625,
+          "loss": 0.01889674689849601,
+          "reference": "1_original",
+          "every_crop_correct": 0.958984375,
+          "rescued": 473,
+          "harmed": 16
+        },
+        "1_self": {
+          "accuracy": 0.6345703125,
+          "loss": 2.4798177086236555,
+          "reference": "1_original",
+          "every_crop_correct": 0.31640625,
+          "rescued": 113,
+          "harmed": 1497
+        },
+        "1_other_key": {
+          "accuracy": 0.559765625,
+          "loss": 3.462326172908534,
+          "reference": "1_original",
+          "every_crop_correct": 0.140625,
+          "rescued": 34,
+          "harmed": 1801
+        },
+        "2_original": {
+          "accuracy": 0.7552734375,
+          "loss": 1.4497246090609806,
+          "reference": "2_original",
+          "every_crop_correct": 0.26953125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "2_pair": {
+          "accuracy": 0.9376953125,
+          "loss": 0.26306926007400444,
+          "reference": "2_original",
+          "every_crop_correct": 0.763671875,
+          "rescued": 1076,
+          "harmed": 142
+        },
+        "2_self": {
+          "accuracy": 0.6376953125,
+          "loss": 2.431742940352926,
+          "reference": "2_original",
+          "every_crop_correct": 0.27734375,
+          "rescued": 438,
+          "harmed": 1040
+        },
+        "2_other_key": {
+          "accuracy": 0.53984375,
+          "loss": 3.26224953431932,
+          "reference": "2_original",
+          "every_crop_correct": 0.091796875,
+          "rescued": 160,
+          "harmed": 1263
+        },
+        "4_original": {
+          "accuracy": 0.5689453125,
+          "loss": 2.5625071549655214,
+          "reference": "4_original",
+          "every_crop_correct": 0.150390625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.787109375,
+          "loss": 1.193845981829377,
+          "reference": "4_original",
+          "every_crop_correct": 0.43359375,
+          "rescued": 1513,
+          "harmed": 396
+        },
+        "4_self": {
+          "accuracy": 0.60234375,
+          "loss": 2.7449020260446853,
+          "reference": "4_original",
+          "every_crop_correct": 0.25390625,
+          "rescued": 845,
+          "harmed": 674
+        },
+        "4_other_key": {
+          "accuracy": 0.531640625,
+          "loss": 3.0931746809640552,
+          "reference": "4_original",
+          "every_crop_correct": 0.1015625,
+          "rescued": 558,
+          "harmed": 749
+        },
+        "6_original": {
+          "accuracy": 0.705078125,
+          "loss": 1.766681358445836,
+          "reference": "6_original",
+          "every_crop_correct": 0.2890625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "6_pair": {
+          "accuracy": 0.762109375,
+          "loss": 1.5385455931516094,
+          "reference": "6_original",
+          "every_crop_correct": 0.4140625,
+          "rescued": 402,
+          "harmed": 110
+        },
+        "6_self": {
+          "accuracy": 0.5037109375,
+          "loss": 3.4439280349039167,
+          "reference": "6_original",
+          "every_crop_correct": 0.171875,
+          "rescued": 402,
+          "harmed": 1433
+        },
+        "6_other_key": {
+          "accuracy": 0.4111328125,
+          "loss": 4.043225952531875,
+          "reference": "6_original",
+          "every_crop_correct": 0.052734375,
+          "rescued": 319,
+          "harmed": 1824
+        },
+        "8_original": {
+          "accuracy": 0.6474609375,
+          "loss": 2.159580473602811,
+          "reference": "8_original",
+          "every_crop_correct": 0.1875,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "8_pair": {
+          "accuracy": 0.7056640625,
+          "loss": 1.81949143927442,
+          "reference": "8_original",
+          "every_crop_correct": 0.35546875,
+          "rescued": 757,
+          "harmed": 459
+        },
+        "8_self": {
+          "accuracy": 0.514453125,
+          "loss": 3.23153691466894,
+          "reference": "8_original",
+          "every_crop_correct": 0.173828125,
+          "rescued": 441,
+          "harmed": 1122
+        },
+        "8_other_key": {
+          "accuracy": 0.4595703125,
+          "loss": 3.534615912402394,
+          "reference": "8_original",
+          "every_crop_correct": 0.048828125,
+          "rescued": 282,
+          "harmed": 1244
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "reconstruction_error": 4.796163466380676e-14,
+      "conditions": {
+        "0_original": {
+          "accuracy": 1.0,
+          "loss": 0.00043605930970461247,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_pair": {
+          "accuracy": 1.0,
+          "loss": 0.0004323243330068608,
+          "reference": "0_original",
+          "every_crop_correct": 1.0,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "0_self": {
+          "accuracy": 0.6013671875,
+          "loss": 3.0270646874830396,
+          "reference": "0_original",
+          "every_crop_correct": 0.322265625,
+          "rescued": 0,
+          "harmed": 2041
+        },
+        "0_other_key": {
+          "accuracy": 0.4033203125,
+          "loss": 4.389658335229578,
+          "reference": "0_original",
+          "every_crop_correct": 0.06640625,
+          "rescued": 0,
+          "harmed": 3055
+        },
+        "1_original": {
+          "accuracy": 0.9009765625,
+          "loss": 0.5665442896423903,
+          "reference": "1_original",
+          "every_crop_correct": 0.5625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "1_pair": {
+          "accuracy": 0.9943359375,
+          "loss": 0.01476368572616572,
+          "reference": "1_original",
+          "every_crop_correct": 0.95703125,
+          "rescued": 484,
+          "harmed": 6
+        },
+        "1_self": {
+          "accuracy": 0.6109375,
+          "loss": 2.975219698896938,
+          "reference": "1_original",
+          "every_crop_correct": 0.3125,
+          "rescued": 234,
+          "harmed": 1719
+        },
+        "1_other_key": {
+          "accuracy": 0.4318359375,
+          "loss": 4.0860445821210245,
+          "reference": "1_original",
+          "every_crop_correct": 0.0703125,
+          "rescued": 34,
+          "harmed": 2436
+        },
+        "2_original": {
+          "accuracy": 0.7751953125,
+          "loss": 1.3622059630256085,
+          "reference": "2_original",
+          "every_crop_correct": 0.361328125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "2_pair": {
+          "accuracy": 0.9548828125,
+          "loss": 0.1927204183706793,
+          "reference": "2_original",
+          "every_crop_correct": 0.78515625,
+          "rescued": 969,
+          "harmed": 49
+        },
+        "2_self": {
+          "accuracy": 0.6208984375,
+          "loss": 2.804279616268602,
+          "reference": "2_original",
+          "every_crop_correct": 0.298828125,
+          "rescued": 485,
+          "harmed": 1275
+        },
+        "2_other_key": {
+          "accuracy": 0.45,
+          "loss": 3.9353623074177877,
+          "reference": "2_original",
+          "every_crop_correct": 0.07421875,
+          "rescued": 76,
+          "harmed": 1741
+        },
+        "4_original": {
+          "accuracy": 0.627734375,
+          "loss": 2.124350824583987,
+          "reference": "4_original",
+          "every_crop_correct": 0.22265625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "4_pair": {
+          "accuracy": 0.924609375,
+          "loss": 0.25652693344617183,
+          "reference": "4_original",
+          "every_crop_correct": 0.767578125,
+          "rescued": 1607,
+          "harmed": 87
+        },
+        "4_self": {
+          "accuracy": 0.6001953125,
+          "loss": 2.7113780365654163,
+          "reference": "4_original",
+          "every_crop_correct": 0.283203125,
+          "rescued": 784,
+          "harmed": 925
+        },
+        "4_other_key": {
+          "accuracy": 0.464453125,
+          "loss": 3.7398545346778134,
+          "reference": "4_original",
+          "every_crop_correct": 0.10546875,
+          "rescued": 291,
+          "harmed": 1127
+        },
+        "6_original": {
+          "accuracy": 0.8669921875,
+          "loss": 0.5974905977582502,
+          "reference": "6_original",
+          "every_crop_correct": 0.603515625,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "6_pair": {
+          "accuracy": 0.87578125,
+          "loss": 0.5216216107773384,
+          "reference": "6_original",
+          "every_crop_correct": 0.708984375,
+          "rescued": 224,
+          "harmed": 179
+        },
+        "6_self": {
+          "accuracy": 0.5771484375,
+          "loss": 2.929327438296576,
+          "reference": "6_original",
+          "every_crop_correct": 0.302734375,
+          "rescued": 108,
+          "harmed": 1592
+        },
+        "6_other_key": {
+          "accuracy": 0.4548828125,
+          "loss": 3.5901891104383203,
+          "reference": "6_original",
+          "every_crop_correct": 0.099609375,
+          "rescued": 54,
+          "harmed": 2164
+        },
+        "8_original": {
+          "accuracy": 0.6494140625,
+          "loss": 1.7912882759681477,
+          "reference": "8_original",
+          "every_crop_correct": 0.220703125,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "8_pair": {
+          "accuracy": 0.75546875,
+          "loss": 1.0942537140684012,
+          "reference": "8_original",
+          "every_crop_correct": 0.505859375,
+          "rescued": 749,
+          "harmed": 206
+        },
+        "8_self": {
+          "accuracy": 0.533203125,
+          "loss": 3.067845114932648,
+          "reference": "8_original",
+          "every_crop_correct": 0.21484375,
+          "rescued": 415,
+          "harmed": 1010
+        },
+        "8_other_key": {
+          "accuracy": 0.39921875,
+          "loss": 3.8886033191211213,
+          "reference": "8_original",
+          "every_crop_correct": 0.0390625,
+          "rescued": 236,
+          "harmed": 1517
+        }
+      }
+    }
+  ],
+  "criteria": {
+    "1": {
+      "every_seed_90": true,
+      "control_gains": {
+        "self": 0.38265625000000003,
+        "other_key": 0.554609375
+      },
+      "each_control_gain_10": true
+    },
+    "2": {
+      "every_seed_90": true,
+      "control_gains": {
+        "self": 0.3540625,
+        "other_key": 0.492578125
+      },
+      "each_control_gain_10": true
+    },
+    "4": {
+      "every_seed_90": false,
+      "control_gains": {
+        "self": 0.30046875,
+        "other_key": 0.4613671875
+      },
+      "each_control_gain_10": true
+    },
+    "6": {
+      "every_seed_90": false,
+      "control_gains": {
+        "self": 0.325546875,
+        "other_key": 0.4516015625
+      },
+      "each_control_gain_10": true
+    },
+    "8": {
+      "every_seed_90": false,
+      "control_gains": {
+        "self": 0.2931640625,
+        "other_key": 0.43156249999999996
+      },
+      "each_control_gain_10": true
+    }
+  },
+  "every_seed_every_positive_shift_90": false,
+  "compact_preserved": true
+}

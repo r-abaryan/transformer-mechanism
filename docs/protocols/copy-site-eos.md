@@ -1,0 +1,11 @@
+# One EOS intervention after failure localization
+
+2026-10-07. Selected after [saved-output localization](../../results/copy_site_failure/report.json): weak cross-only seed 3767 first emits premature EOS in all 128 test10 failures, at positions 4 or 5. Its nine test8 failures instead miss terminal EOS. No wrong content precedes these errors.
+
+Use the same four checkpoints and seven pools as [localization](copy-site-failure.md), 28 cells. Block only EOS logits during the first n content decisions; afterwards allow all tokens normally. Generate from the model's own prefix, stopping at EOS or n+3 outputs. Reuse the frozen `copy_stopping.intervene` controller without invoking its historical executable. This is one operator, not a temperature or head sweep. It uses known source content length; it is not a learned stopping repair.
+
+Primary question: does the weak seed produce every correct content token on test10 when premature stopping is prevented? Report content exact and full exact separately, rescues and harms, all groups and every control. Full recovery means 128/128, partial means any smaller improvement. Test8 terminal failures should not be concealed by forcing EOS. No additional intervention follows a failure.
+
+Before evaluation, check known logits, EOS boundary/off-by-one control, saved initialized checkpoint reload and producer/reference decoding. Reference decoding enumerates allowed classes and uses explicit rotation/normalization/softmax equations. Recompute native teacher logits and generation against archived tensors/answers. Independently count group metrics with padded tensors, require numerical error <=1e-9 and identical generated answers. Preserve source/protocol/checkpoint hashes. CPU float64 one thread, zero training. Shared forward structure and projection helpers limit audit independence.
+
+[Newman et al. (2020), sections 1 and 3](https://arxiv.org/html/2010.07174v1#S3), inspected, distinguish content from termination using length-oracle evaluation. Our intervention releases EOS after n content decisions rather than forcing correct stopping. Its effect on these opened checkpoints is measured locally; no new confirmation or causal account of training is claimed.

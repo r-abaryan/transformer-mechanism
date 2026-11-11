@@ -1,0 +1,214 @@
+{
+  "files": {
+    "experiments/beta_key_transport.py": "e82acdfb94156ec83bfd6405050d29748e21448f6107fbdb44b8afcd78a20785",
+    "experiments/audit_beta_key_transport.py": "b603dfc8142b6a5fb6b167a6ba6de3bd69e0f97c179c24157fe9e051950456ce",
+    "tests/test_beta_key_transport.py": "eb90469ec0ed5723d00e9dd0ed5374711a116204cde3387bfde35422da2fda1c",
+    "docs/protocols/beta-key-transport.md": "144c0d919a3c9ca3aa7861a6f48c43d2596978f2a9e82054b88bfffe7993fd3d",
+    "experiments/write_interference_stages.py": "0e436d95dbe42e69be01d0bcf0cb139bf5f4eae3b51db2676d2566035864b525",
+    "experiments/audit_write_interference_stages.py": "f0646dcbbf1124d03040f014468016498a40206961eca75805c254ca88fe3c4d",
+    "tests/test_write_interference_stages.py": "5b9603d47647f2d52eea47230e8f57ad2018648944063a5e49baf572e79385a6",
+    "experiments/shared_state_preservation.py": "d4c8056f1726a1b4e2a1308aaa6a6b651e8146aceaf9e31dbee33b5787a88fba",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/query_gradient_variability.py": "f8e5c8fb1ff161808a07ce3c842014e7bcf1a9f3ace0e21be4a5a7edf404a493",
+    "experiments/audit_shared_readout_feasibility.py": "a4350357265e697ba79d05419cea080dacf2e998db0fe98dec45ca486e1ba6b8",
+    "results/query_feedback_training/3461_exhaustive_3000.pt": "29a6dd90503cde3e7585300f047c183af737af68a28f837616ff87e58d1a7c7f",
+    "results/query_feedback_continuation/3461_exhaustive_12000.pt": "3d9822a61836819b171391765a2b98e119d638a900c10c116942e1a667531a7b",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_training/3463_exhaustive_3000.pt": "cacd15cd2dedb622662c16527f4c4514587ef60676994f6a8c74a031cd5830a2",
+    "results/query_feedback_continuation/3463_exhaustive_12000.pt": "f549e30d08eec53ac1f53e04fd84db89fff04462ebca34aa48706131c221d19a",
+    "results/write_interference_stages/lock.json": "e4589e8377708467428079d167731c0c73ee14366fb9de4e31a4d9de887a9fa4",
+    "results/write_interference_stages/report.json": "f9d2a6b38fb2898a968e0e5930156ce034c684c0b3665d4982829995fae924af",
+    "results/write_interference_stages/audit.json": "84a5036307175529568345421997c5e92b093da7be0a2b1283de8beee5f9fdbb",
+    "results/write_interference_stages/traces.pt": "2e69e92fa40a0af74d386d6d9da6154b389922ed91db207bb0dc66337e15374a",
+    "results/beta_key_transport_preflight.json": "1772ff64ca6adb6307880521a197cd543b950827d78adddd9f724d3e7a646c3d"
+  },
+  "cases": [
+    {
+      "seed": 3461,
+      "anchor": 3000,
+      "keys": 3000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 3000,
+      "keys": 3000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 3000,
+      "keys": 12000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 3000,
+      "keys": 12000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 12000,
+      "keys": 3000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 12000,
+      "keys": 3000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 12000,
+      "keys": 12000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3461,
+      "anchor": 12000,
+      "keys": 12000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3461_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3461_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 3000,
+      "keys": 3000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 3000,
+      "keys": 3000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 3000,
+      "keys": 12000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 3000,
+      "keys": 12000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 12000,
+      "keys": 3000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 12000,
+      "keys": 3000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 12000,
+      "keys": 12000,
+      "beta": 3000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    },
+    {
+      "seed": 3463,
+      "anchor": 12000,
+      "keys": 12000,
+      "beta": 12000,
+      "checkpoints": {
+        "3000": "results/query_feedback_training/3463_exhaustive_3000.pt",
+        "12000": "results/query_feedback_continuation/3463_exhaustive_12000.pt"
+      },
+      "data": "results/delta_query_coverage/development_data.json"
+    }
+  ],
+  "fixture": false,
+  "steps": [
+    3000,
+    12000
+  ],
+  "guard": 1e-09,
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128"
+  }
+}

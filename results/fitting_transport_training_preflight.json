@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "methods": 2,
+  "test_seconds": 9.651,
+  "command": ".venv-gpu/Scripts/python.exe -m unittest discover -s tests -p test_fitting_transport_training.py -v",
+  "sources": {
+    "experiments/train_fitting_transport.py": "ea04ca35cdf456be329e43478d0cff09d532fd52cd3a55c984e447692e3be301",
+    "experiments/audit_fitting_transport_training.py": "16831d1f030d1f8b4fe7e8bf3bf901ddb36fda0042f4d0b226a93e78398613b7",
+    "tests/test_fitting_transport_training.py": "3cbdf9fe0d413e78f32735857cb0b78df9a8bee1e7a599e67b9d3be3bc63108c"
+  },
+  "scope": "Initialized saved model through both training/evaluator/audit paths; native quadratic control, independent dense block directions, supplied tied logits/absent groups, deliberate gradient/direction/counter/loss/label/logit/missing-group/decision faults"
+}

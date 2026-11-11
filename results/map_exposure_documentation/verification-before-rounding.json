@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "utc": "2026-10-05T22:32:11.824712+00:00",
+  "scope": "Supplemental presentation/count/data/group/cohort/link checks; formal gradient and forward audit bound, not rerun.",
+  "formal_report_sha256": "fc88f979d2fca5280797dc421a0f94c5d18d14616c93d0247d096eb696c8cba1",
+  "formal_audit_sha256": "75a90001a7087a35140de23e2ff3f472957d8bb4aab8b1afb0dc41065ec1157d",
+  "protected_files": 39,
+  "native_controls": 3,
+  "primary_table_rows": 6,
+  "group_csv_rows": 1080,
+  "cells": 360,
+  "independent_counts": {
+    "optimizer_calls": 36672,
+    "gradient_evaluations": 36672,
+    "histories": 2347008,
+    "input_events": 75104256,
+    "answer_targets": 34031616,
+    "evaluation_targets": 2672640
+  },
+  "local_links": 1129,
+  "link_scope": "File existence, not anchor validity",
+  "documentation_sha256": {
+    "docs/protocols/map-exposure.md": "01de34ef527667281cf04803110b1b2de4821a64144382f0cdb96312b522cefd",
+    "docs/topics/attention/map-exposure-guide.md": "97669ceec91cd28e32d90182d392bf579f498a81649a954554e274b64f9ea2ed",
+    "docs/topics/attention/map-exposure-results.md": "387cb8f9fae98808a1f4b2557d729948be92d5e74320da88cd7375ce3c54986f",
+    "docs/assessments/research-checkpoint.md": "cf5833558b8301aafabb2cde139958081ebed556e07647675c17bbf26ab83216",
+    "docs/assessments/learning-mechanism-agenda.md": "fc68f34b6122517d0e5c0259afc7c267358838a1134a8c73705b31edc9f5c663",
+    "docs/assessments/retention-learning-strategy.md": "dd06a481ad8f24bc8619bda9915a050911fc7e3dcc42daab2c013c5594d1f4c8",
+    "docs/assessments/failure-register.md": "d0444fce240fdf6076c44b380bd942b64a09a4ff093b7221545f93b9f94bac50",
+    "docs/assessments/research-history.md": "ba0c21aabf219235c84f2ddc11add0f3ef99f8d7170acc0a25735acb0af984f0",
+    "docs/assessments/README.md": "889c4937cc5eb903cf278b6669582cd25f41e1a98d811a962dc29d959fd9d22a",
+    "docs/topics/attention/README.md": "e78d36f5ade114292a7e72ac3b8cafb8555be646cdf163646dc411e50267b255",
+    "docs/guides/README.md": "d915e83778133833e5aebd65f7a5fa8c88f4b201c2413eedeea00842f6dedc8a",
+    "docs/results/README.md": "f3d6b00474fc7619db5e8f7a3cf02b1e470635c304070b636d5d9ba3e4239b43",
+    "docs/protocols/README.md": "58add4049dc26ca34ce46eaa4e1978132b412c2e35b413c6409fdce8fd2fb067",
+    "docs/reference/sources.md": "e720304f2bd550fd041177dbb56c7b5b10d317f9bd31c87291005742fee7d96b",
+    "tests/README.md": "5217486f8c0649a7985eddeeff41c66eb916618eca5b975504d86e0b25448c60"
+  },
+  "group_csv_sha256": "8b036c07443ad1e7d9a8564272787c2b660bfebd51a7c850f488231a2945ed7d",
+  "cohorts_sha256": "8ed2ae8f2c691f2b2ec17c60954265d4342af1f3cd3804439aacc6cf42ae18a4",
+  "preflight_sources": {
+    "experiments/map_exposure.py": "23c3f0bd2344d4185db1baff1040aff6b541d474c16db66fc1a37cf74e243154",
+    "experiments/audit_map_exposure.py": "e15627aabc534d27d577bb288b46582a255a0da2a0ef00af04272d132d1da887",
+    "tests/test_map_exposure.py": "f327c472040c13062b949e9e92be38736fdd65e43ff224168a337b4228cb7420"
+  }
+}

@@ -1,0 +1,1192 @@
+{
+  "phase": "complete",
+  "provenance": {
+    "original_sha256": "de8b63b5430107bcc5000a32d368adfd431a4a9b003e39ce82675d838c8f2bc8",
+    "source_sha256": "9f078ad972f108c73e560980e57d4365ae8910e463d464dca3395d4267c4a9c4",
+    "protocol_sha256": "aaccf199fa606c7652f271f49cae0665d478e15da24b513bbf445d3e96abb682"
+  },
+  "input_sha256": "12e5aeba2a74c430a7d99e8014304acbcef85f06645d271f9badec15f4b7a582",
+  "runs": [
+    {
+      "seed": 601,
+      "placement": "pre",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0016620869606892206
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.001044489472627715
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.000702508850932923
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00047329081694483564
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.0003453112250090507
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.0002536015246735534
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0001897526381637104
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "006d5533c7b327e88efd9ed4566c486a5e748dad3adcdf7d5ba4bce613be041e",
+      "offset_sha256": "646a70124d764ad49c49b1736b0fa7949ec1556a5131ccf14d2ec43ff4ed5685",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_601.pt",
+      "checkpoint_sha256": "a6ec898f5e1232d0a636143e88f27616a2c1640fdf47c1a8b6cc4359c920009f",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0015975541920097529,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00017773156798392412,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 601,
+      "placement": "pre",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0021183090323126526
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.001231298325884456
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0008474552446241119
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0005699084569563917
+        },
+        {
+          "step": 5000,
+          "accuracy": 0.9993055555555556,
+          "loss": 0.0030001202782357003
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00048933829476591
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0002811059347700801
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "006d5533c7b327e88efd9ed4566c486a5e748dad3adcdf7d5ba4bce613be041e",
+      "offset_sha256": "646a70124d764ad49c49b1736b0fa7949ec1556a5131ccf14d2ec43ff4ed5685",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_warmup_601.pt",
+      "checkpoint_sha256": "6f9e532ad085626bbaf7f81f37c9f2a3e84420cf6d8753eee479a710cf0b1ebc",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9997222222222222,
+        "loss": 0.0029113401852511973,
+        "every_order_query_correct": 0.9975
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0002595900596333996,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 601,
+      "placement": "post",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0016782807723976557
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0010938262368229543
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0006753123705103547
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00046467399170366637
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00034590916053321523
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00024168114385596283
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0001774432600431297
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "006d5533c7b327e88efd9ed4566c486a5e748dad3adcdf7d5ba4bce613be041e",
+      "offset_sha256": "646a70124d764ad49c49b1736b0fa7949ec1556a5131ccf14d2ec43ff4ed5685",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_constant_601.pt",
+      "checkpoint_sha256": "8c4dcec38acf5ff54da010740d747376268bd356a8a2395377bea0c16435bd45",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9998611111111111,
+        "loss": 0.0018786064543866597,
+        "every_order_query_correct": 0.9975
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00018982369364415352,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 601,
+      "placement": "post",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.002502512710971248
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.9997222222222222,
+          "loss": 0.0018393400432700378
+        },
+        {
+          "step": 4000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0011261514139471022
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0006276197061825501
+        },
+        {
+          "step": 5000,
+          "accuracy": 0.9986111111111111,
+          "loss": 0.004473016814323224
+        },
+        {
+          "step": 5500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0013358673199634452
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0004408577683894167
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "006d5533c7b327e88efd9ed4566c486a5e748dad3adcdf7d5ba4bce613be041e",
+      "offset_sha256": "646a70124d764ad49c49b1736b0fa7949ec1556a5131ccf14d2ec43ff4ed5685",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_warmup_601.pt",
+      "checkpoint_sha256": "808b847cb9c2bc953f18b06e5fde90b599b3799544783eb5096ab508fbe71198",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0026597760896849743,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0004310921986128615,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 631,
+      "placement": "pre",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0008326039298275107
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0004948782023970586
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.000343337927670557
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00024031344781961367
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00017573148708033303
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00012852910985353404
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 9.689073349503838e-05
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "26ed9f323954fa1ff63f9ec06d910ff3c0a2e7a5885e6cf96f19b04371311b72",
+      "offset_sha256": "440d2833dc9cfc5912b06c848aefc37dc23fe4f9736260f2e311c7f877eaf067",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_631.pt",
+      "checkpoint_sha256": "076530ee1200c2a1ccef3c363e88b39f823e79ef155e4a49d133f152c1008dee",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0007515102884698653,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 9.600294671116886e-05,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 631,
+      "placement": "pre",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9990277777777777,
+          "loss": 0.003726963271205632
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0016260092749219865
+        },
+        {
+          "step": 4000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0009436111908855031
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0003325802150901155
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00021303998677939639
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00014555191913927422
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00010673790180354299
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "26ed9f323954fa1ff63f9ec06d910ff3c0a2e7a5885e6cf96f19b04371311b72",
+      "offset_sha256": "440d2833dc9cfc5912b06c848aefc37dc23fe4f9736260f2e311c7f877eaf067",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_warmup_631.pt",
+      "checkpoint_sha256": "21cfaa93ba59b201d26a14a489e405c4d2170c75494f20fe8053d44756f395cc",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9990277777777777,
+        "loss": 0.004179785084615953,
+        "every_order_query_correct": 0.99
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00010661462820884033,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 631,
+      "placement": "post",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0008666303419227368
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0005881472053336947
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.000400194649602244
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00027608989312376335
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00018277281864052092
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00013107779962391865
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 9.330918620607619e-05
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "26ed9f323954fa1ff63f9ec06d910ff3c0a2e7a5885e6cf96f19b04371311b72",
+      "offset_sha256": "440d2833dc9cfc5912b06c848aefc37dc23fe4f9736260f2e311c7f877eaf067",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_constant_631.pt",
+      "checkpoint_sha256": "d1bc38d62196e0119255c524d7e5fead73779ef2f1cc4e0a203a42b07c8af785",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0007155644841697076,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 9.517345227049547e-05,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 631,
+      "placement": "post",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0011826107890585196
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0006184567077855362
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.00042625457535011005
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0002963561343836251
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00023387436721032854
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00015565206738407065
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0001216184891243892
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "26ed9f323954fa1ff63f9ec06d910ff3c0a2e7a5885e6cf96f19b04371311b72",
+      "offset_sha256": "440d2833dc9cfc5912b06c848aefc37dc23fe4f9736260f2e311c7f877eaf067",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_warmup_631.pt",
+      "checkpoint_sha256": "8044098903ad0edbf1714332a69a601e9e3a94961bf5e9a6211f76259f229de7",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0008632138309385581,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0001055568258442605,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 659,
+      "placement": "pre",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9991666666666666,
+          "loss": 0.005513496310954845
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.9993055555555556,
+          "loss": 0.002837733231624022
+        },
+        {
+          "step": 4000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.000822872186558683
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0005130119859819766
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00041311847157516555
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.000266978242030408
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00022213642200864128
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "c3b6d3c6aa3ac63b621efb76e7c05f68a0fd2f8edfd6f0b8b26ebbde8e380477",
+      "offset_sha256": "656705efdc37d5aa2c4c2fa05965fe5b06e7446b8ff99a051e6ebc836e742824",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_659.pt",
+      "checkpoint_sha256": "cf42043e7f3450d480c424a302804808448eaf587779be22d4c443184e2187f9",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9988888888888889,
+        "loss": 0.004584754774539755,
+        "every_order_query_correct": 0.985
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00013970188778248828,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 659,
+      "placement": "pre",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.001624994553322276
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0009546371315887523
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0005699126223575528
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00038503270686216775
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00027999966790562324
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.0002005418016639179
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00014890178386150072
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "c3b6d3c6aa3ac63b621efb76e7c05f68a0fd2f8edfd6f0b8b26ebbde8e380477",
+      "offset_sha256": "656705efdc37d5aa2c4c2fa05965fe5b06e7446b8ff99a051e6ebc836e742824",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_warmup_659.pt",
+      "checkpoint_sha256": "1d36ceec90e9bb670423bd1c98ae3b1c5e61c4961529337bf9828e95cb182b6c",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.001483302134122014,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00014363222961686923,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 659,
+      "placement": "post",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.004337188780056539
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0019916563401842433
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.000993870937349685
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0006311413942563078
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00043028144396122534
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.0002970130370967045
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.000217991214142859
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "c3b6d3c6aa3ac63b621efb76e7c05f68a0fd2f8edfd6f0b8b26ebbde8e380477",
+      "offset_sha256": "656705efdc37d5aa2c4c2fa05965fe5b06e7446b8ff99a051e6ebc836e742824",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_constant_659.pt",
+      "checkpoint_sha256": "b6de4ac3bf383420460829e79ac5ee6169a7089f200466fb138f35b9d46bd961",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9993055555555556,
+        "loss": 0.005467673228453441,
+        "every_order_query_correct": 0.9875
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0002543089422747005,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 659,
+      "placement": "post",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9768055555555556,
+          "loss": 0.0810422506106816
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.98875,
+          "loss": 0.033698829533482286
+        },
+        {
+          "step": 4000,
+          "accuracy": 0.9895833333333334,
+          "loss": 0.030086037988393197
+        },
+        {
+          "step": 4500,
+          "accuracy": 0.99375,
+          "loss": 0.01632305781196247
+        },
+        {
+          "step": 5000,
+          "accuracy": 0.9972222222222222,
+          "loss": 0.008870385619374114
+        },
+        {
+          "step": 5500,
+          "accuracy": 0.9958333333333333,
+          "loss": 0.01513824671164055
+        },
+        {
+          "step": 6000,
+          "accuracy": 0.9995833333333334,
+          "loss": 0.0018333544871324385
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "c3b6d3c6aa3ac63b621efb76e7c05f68a0fd2f8edfd6f0b8b26ebbde8e380477",
+      "offset_sha256": "656705efdc37d5aa2c4c2fa05965fe5b06e7446b8ff99a051e6ebc836e742824",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_warmup_659.pt",
+      "checkpoint_sha256": "a163af3aa1bb07ff61c79300098bf47fa3a20035d39a35395403d42683a29f11",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.97875,
+        "loss": 0.07213883086729012,
+        "every_order_query_correct": 0.8275
+      },
+      "test_6000": {
+        "accuracy": 0.9988888888888889,
+        "loss": 0.003353964920811761,
+        "every_order_query_correct": 0.985
+      }
+    },
+    {
+      "seed": 683,
+      "placement": "pre",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9997222222222222,
+          "loss": 0.0018714923859308662
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0006605376939329759
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0004769654045460239
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00033934888464573677
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.000255278692573519
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00017620272871200567
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00014358738148257037
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "f879366d41996cea8fbe3a7523fea9b471685b0f5117d47eed608d72a3a3da3e",
+      "offset_sha256": "b6e5769eeed5ada8e6f223c553fd821bf439c7fbb2da7c594bbb04fad0eca36a",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_683.pt",
+      "checkpoint_sha256": "c9957c1188e933615f37e8c9584540eeffffc394a166faf870c3db235f68ea88",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9995833333333334,
+        "loss": 0.0018649638648833783,
+        "every_order_query_correct": 0.9925
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.00013447452692927068,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 683,
+      "placement": "pre",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0014891440963192512
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0008998459022051745
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0006603732443660802
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.0005541978675881633
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00031372920362299114
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00022176324281902063
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0001667793634391511
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "f879366d41996cea8fbe3a7523fea9b471685b0f5117d47eed608d72a3a3da3e",
+      "offset_sha256": "b6e5769eeed5ada8e6f223c553fd821bf439c7fbb2da7c594bbb04fad0eca36a",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_warmup_683.pt",
+      "checkpoint_sha256": "9e3b1ffcce8e3820acdcd51440d76fdb9b37d9dd98b4895c03f0b2b126105dd3",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0012257249793379509,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0001541824502872464,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 683,
+      "placement": "post",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9970833333333333,
+          "loss": 0.017693670035590043
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.00383480643918852
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.001972404076887489
+        },
+        {
+          "step": 4500,
+          "accuracy": 0.9973611111111111,
+          "loss": 0.010210933097655103
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.0007658338829977205
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.0005065230105518133
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00036594066277783715
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "f879366d41996cea8fbe3a7523fea9b471685b0f5117d47eed608d72a3a3da3e",
+      "offset_sha256": "b6e5769eeed5ada8e6f223c553fd821bf439c7fbb2da7c594bbb04fad0eca36a",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_constant_683.pt",
+      "checkpoint_sha256": "64b201d42b0f574b990042ec15d985a0d08964274347cd45be16e1041a62963c",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9976388888888889,
+        "loss": 0.015469923337691198,
+        "every_order_query_correct": 0.97
+      },
+      "test_6000": {
+        "accuracy": 0.9998611111111111,
+        "loss": 0.0004902580972415977,
+        "every_order_query_correct": 0.9975
+      }
+    },
+    {
+      "seed": 683,
+      "placement": "post",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.5116666666666667,
+          "loss": 0.9725923091849069
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.7190277777777778,
+          "loss": 0.6496510621950178
+        },
+        {
+          "step": 4000,
+          "accuracy": 0.9890277777777777,
+          "loss": 0.037378254950064894
+        },
+        {
+          "step": 4500,
+          "accuracy": 0.9986111111111111,
+          "loss": 0.007495035086557602
+        },
+        {
+          "step": 5000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0026601855067257068
+        },
+        {
+          "step": 5500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0013884484452517376
+        },
+        {
+          "step": 6000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0009401813442093639
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "f879366d41996cea8fbe3a7523fea9b471685b0f5117d47eed608d72a3a3da3e",
+      "offset_sha256": "b6e5769eeed5ada8e6f223c553fd821bf439c7fbb2da7c594bbb04fad0eca36a",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_warmup_683.pt",
+      "checkpoint_sha256": "084286d225eaf022da67624726107ead78f430a2aee8e29397ec898c1c68287a",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.5091666666666667,
+        "loss": 0.9686695606283727,
+        "every_order_query_correct": 0.01
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.000965754856403504,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 719,
+      "placement": "pre",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.001224848195685545
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0007814016700741929
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.00044870837637124697
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00028774303371441215
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00022202572362793358
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00015813265144098585
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00011872250149948062
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "e870e6a73ccaf5082406ccbb790c42369293f6a3f76e04141072bd8c223894e3",
+      "offset_sha256": "3585971e7123dca0affdd2dfcfa60173b14f50587e234c951841fc9a051f6082",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_constant_719.pt",
+      "checkpoint_sha256": "bdf1ea1bc9bf36bb1ad414ee20e2de74b1ad17f3e3b582cde060d4ef43f9b9bf",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.001239834924266013,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0001296355110839416,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 719,
+      "placement": "pre",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 0.9991666666666666,
+          "loss": 0.005794024182141786
+        },
+        {
+          "step": 3500,
+          "accuracy": 0.9995833333333334,
+          "loss": 0.002682007692459149
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0006894326304563443
+        },
+        {
+          "step": 4500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0012038302902034521
+        },
+        {
+          "step": 5000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0006902400067873019
+        },
+        {
+          "step": 5500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0006490637297120208
+        },
+        {
+          "step": 6000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0005599333881143777
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "e870e6a73ccaf5082406ccbb790c42369293f6a3f76e04141072bd8c223894e3",
+      "offset_sha256": "3585971e7123dca0affdd2dfcfa60173b14f50587e234c951841fc9a051f6082",
+      "checkpoint": "results\\norm_extension_checkpoints\\pre_warmup_719.pt",
+      "checkpoint_sha256": "b1c38a951f844d06bd4d2e92e76c87322287fc7e21b048c0a6d7f3bcc1fb9695",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9995833333333334,
+        "loss": 0.003508473316654873,
+        "every_order_query_correct": 0.9925
+      },
+      "test_6000": {
+        "accuracy": 0.9998611111111111,
+        "loss": 0.000755401205041014,
+        "every_order_query_correct": 0.9975
+      }
+    },
+    {
+      "seed": 719,
+      "placement": "post",
+      "schedule": "constant",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.001995659670518089
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.0010581712776003911
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0007279215854119805
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.00048431315678718664
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.00036832653028136145
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.00025159808303490714
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.00018223319535367452
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "e870e6a73ccaf5082406ccbb790c42369293f6a3f76e04141072bd8c223894e3",
+      "offset_sha256": "3585971e7123dca0affdd2dfcfa60173b14f50587e234c951841fc9a051f6082",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_constant_719.pt",
+      "checkpoint_sha256": "fa131811a84db79ce6fb0d99357c541de136e08503c197ec67461f3a21e5520d",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 0.9998611111111111,
+        "loss": 0.0021448524287106716,
+        "every_order_query_correct": 0.9975
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0001910958985867719,
+        "every_order_query_correct": 1.0
+      }
+    },
+    {
+      "seed": 719,
+      "placement": "post",
+      "schedule": "warmup",
+      "status": "trained",
+      "curve": [
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.002012312059003137
+        },
+        {
+          "step": 3500,
+          "accuracy": 1.0,
+          "loss": 0.001166987244171134
+        },
+        {
+          "step": 4000,
+          "accuracy": 1.0,
+          "loss": 0.0007704513168451063
+        },
+        {
+          "step": 4500,
+          "accuracy": 1.0,
+          "loss": 0.000559483994975506
+        },
+        {
+          "step": 5000,
+          "accuracy": 1.0,
+          "loss": 0.000376729854100301
+        },
+        {
+          "step": 5500,
+          "accuracy": 1.0,
+          "loss": 0.0002696446408516107
+        },
+        {
+          "step": 6000,
+          "accuracy": 1.0,
+          "loss": 0.0002085189434235929
+        }
+      ],
+      "step": 6000,
+      "minibatch_sha256": "e870e6a73ccaf5082406ccbb790c42369293f6a3f76e04141072bd8c223894e3",
+      "offset_sha256": "3585971e7123dca0affdd2dfcfa60173b14f50587e234c951841fc9a051f6082",
+      "checkpoint": "results\\norm_extension_checkpoints\\post_warmup_719.pt",
+      "checkpoint_sha256": "a639ffd893c66a939f889b3bc07b9a164f0e599f57fab01863398d54b6f8ae97",
+      "replay_exact": true,
+      "test_3000": {
+        "accuracy": 1.0,
+        "loss": 0.0018223473140173618,
+        "every_order_query_correct": 1.0
+      },
+      "test_6000": {
+        "accuracy": 1.0,
+        "loss": 0.0001717803802354498,
+        "every_order_query_correct": 1.0
+      }
+    }
+  ],
+  "scores_sha256": "4181ad9d091d20caf5334240fe383441fe3e5fbce04465fed089f221dc1459ec"
+}

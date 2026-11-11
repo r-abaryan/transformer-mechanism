@@ -1,0 +1,21 @@
+{
+  "question": "Is source position zero outranked in either head on native first-token failures?",
+  "scope": "All eight frozen pools, all three seeds, native E1M1 only; all/distinct/repeated; correct and wrong cohorts",
+  "gap": "score(position 0) minus maximum score at any other source position, per head",
+  "categories": [
+    "neither_outranked",
+    "one_outranked",
+    "both_outranked",
+    "near_tie"
+  ],
+  "tolerance": 1e-10,
+  "interpretation": "Association only; attention rank is not output rank. No head attribution or sharpening intervention.",
+  "stop": "One reduction; no selected-example reruns or temperature search",
+  "input_hashes": {
+    "results\\copy_source_visibility\\lock.json": "75c744f87797e880749b9172445e4dd5f78ba4d38cef32a48505f80bdd0400ba",
+    "results\\copy_source_visibility\\report.json": "de1e2ab35ea569a81eaef0f248468cfba6bc1a2ee69515ef20d20d0a72901138",
+    "results\\copy_source_visibility\\audit.json": "b7affb8e96fa066c609fcef4268653fc4f4385e17414afa47070bf3af3ae1a87",
+    "results\\copy_source_visibility\\evidence.pt": "b1ddf9507ac4de532e7fb57271ee5c65a96e14b6b8342b7ee90ce664af9b42c2"
+  },
+  "script_sha256": "3d3b8b39a9187f265da8bee25407fd15e2b088a2ca571350d31d74f1e616c0f5"
+}

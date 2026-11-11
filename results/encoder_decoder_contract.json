@@ -1,0 +1,559 @@
+{
+  "phase": "complete",
+  "torch": "2.11.0+cu128",
+  "python": "3.14.7",
+  "device": "cpu",
+  "dtype": "float64",
+  "provenance": {
+    "experiments\\encoder_decoder_contract.py": "01a2852b3892d24cf09d91f3ee6d8796b892bef3da5111dca919f213088f0be1",
+    "docs\\protocols\\encoder-decoder-contract.md": "65619d8439e94e8a9147224e5924cbb08a154ad124535d48008a3277513be340",
+    "experiments\\position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments\\audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "experiments\\recurrent_retrieval.py": "90cb2b02420e5dd193e45367d68aae737c7fc23708109dd931d19d49ff4fa088"
+  },
+  "cases": [
+    {
+      "seed": 2341,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": false,
+      "valid_targets": 6,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 0.0,
+        "gradient_error": 1.942890293094024e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 5.551115123125783e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 9.824756546511493e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.043682716547450484,
+        "missing_memory_mask_effect": 0.09913516962420188,
+        "missing_causal_mask_leakage": 0.9010278427870706
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2341,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": true,
+      "valid_targets": 5,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.6653345369377348e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 1.4503731202153425e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.04310029149344763,
+        "missing_memory_mask_effect": 0.0915822079953221,
+        "missing_causal_mask_leakage": 0.8993220853702504,
+        "unmasked_loss_gradient": 0.1615651906967625
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2341,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": false,
+      "valid_targets": 10,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.996003610813204e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.5265566588595902e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.996003610813204e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 4.081019654156304e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.11139890251755374,
+        "missing_memory_mask_effect": 0.33910500869343774,
+        "missing_causal_mask_leakage": 0.7573343522417277
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2341,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": true,
+      "valid_targets": 9,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.996003610813204e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.6653345369377348e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.996003610813204e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 6.295600707417748e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.10887603186082284,
+        "missing_memory_mask_effect": 0.33910500869343774,
+        "missing_causal_mask_leakage": 0.7602943479320357,
+        "unmasked_loss_gradient": 0.09734876983497728
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2341,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": false,
+      "valid_targets": 8,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 5.551115123125783e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 8.326672684688674e-17,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.885780586188048e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 1.3497220702207713e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.03664631549501035,
+        "missing_memory_mask_effect": 0.14997097984827232,
+        "missing_causal_mask_leakage": 0.9144687956897035
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2341,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": true,
+      "valid_targets": 7,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 5.551115123125783e-16,
+        "loss_error": 0.0,
+        "gradient_error": 1.5959455978986625e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.885780586188048e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 1.3832084089226981e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.03664631549501035,
+        "missing_memory_mask_effect": 0.14997097984827232,
+        "missing_causal_mask_leakage": 0.9131626207739971,
+        "unmasked_loss_gradient": 0.12230179846712631
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": false,
+      "valid_targets": 6,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 0.0,
+        "gradient_error": 1.1102230246251565e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 5.446332967951051e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.05264710695981867,
+        "missing_memory_mask_effect": 0.1116397886902678,
+        "missing_causal_mask_leakage": 0.8874081122836923
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": true,
+      "valid_targets": 5,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.1102230246251565e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 3.5729167541243e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.05264710695981867,
+        "missing_memory_mask_effect": 0.1116397886902678,
+        "missing_causal_mask_leakage": 0.8874081122836923,
+        "unmasked_loss_gradient": 0.1590751327899632
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": false,
+      "valid_targets": 10,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 9.71445146547012e-17,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 3.4076189786569344e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.052035012887255094,
+        "missing_memory_mask_effect": 0.2547155658611538,
+        "missing_causal_mask_leakage": 0.7066458200174567
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": true,
+      "valid_targets": 9,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 0.0,
+        "gradient_error": 8.326672684688674e-17,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 3.4939883278295447e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.052035012887255094,
+        "missing_memory_mask_effect": 0.2547155658611538,
+        "missing_causal_mask_leakage": 0.7066458200174567,
+        "unmasked_loss_gradient": 0.09404706711092503
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": false,
+      "valid_targets": 8,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 8.326672684688674e-17,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.3306690738754696e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 2.880496952073486e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.1284603670872803,
+        "missing_memory_mask_effect": 0.1511112307793107,
+        "missing_causal_mask_leakage": 0.621703201337699
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2347,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": true,
+      "valid_targets": 7,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.3877787807814457e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.3306690738754696e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 1.41151257349037e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.1284603670872803,
+        "missing_memory_mask_effect": 0.1511112307793107,
+        "missing_causal_mask_leakage": 0.621703201337699,
+        "unmasked_loss_gradient": 0.11901772499992314
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": false,
+      "valid_targets": 6,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 0.0,
+        "gradient_error": 1.6653345369377348e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 3.320921801441834e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.07585313736921384,
+        "missing_memory_mask_effect": 0.04370228197875575,
+        "missing_causal_mask_leakage": 0.21880322104256006
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 3,
+      "source_length": 5,
+      "target_padded": true,
+      "valid_targets": 5,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 4.440892098500626e-16,
+        "loss_error": 0.0,
+        "gradient_error": 2.220446049250313e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 7.041443816913073e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.07585313736921384,
+        "missing_memory_mask_effect": 0.042925040009470616,
+        "missing_causal_mask_leakage": 0.21880322104256006,
+        "unmasked_loss_gradient": 0.15536263185679122
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": false,
+      "valid_targets": 10,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 5.551115123125783e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.1102230246251565e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.3306690738754696e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 7.47651940358196e-12,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.023640800921319427,
+        "missing_memory_mask_effect": 0.17579254556949586,
+        "missing_causal_mask_leakage": 0.46521029465283414
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 5,
+      "source_length": 3,
+      "target_padded": true,
+      "valid_targets": 9,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 5.551115123125783e-16,
+        "loss_error": 4.440892098500626e-16,
+        "gradient_error": 1.1102230246251565e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 3.3306690738754696e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 1.6615160636224147e-10,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.023640800921319427,
+        "missing_memory_mask_effect": 0.17579254556949586,
+        "missing_causal_mask_leakage": 0.46521029465283414,
+        "unmasked_loss_gradient": 0.09364995979817624
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": false,
+      "valid_targets": 8,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 3.3306690738754696e-16,
+        "loss_error": 0.0,
+        "gradient_error": 1.1102230246251565e-16,
+        "source_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0
+      },
+      "directional_derivative_error": 5.817608894620463e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.10612020641889963,
+        "missing_memory_mask_effect": 0.10025919002484565,
+        "missing_causal_mask_leakage": 0.2318888778499907
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    },
+    {
+      "seed": 2351,
+      "target_length": 4,
+      "source_length": 4,
+      "target_padded": true,
+      "valid_targets": 7,
+      "parameters": 1888,
+      "errors": {
+        "logit_error": 3.3306690738754696e-16,
+        "loss_error": 8.881784197001252e-16,
+        "gradient_error": 1.1796119636642288e-16,
+        "source_padding_gradient": 0.0,
+        "target_padding_gradient": 0.0,
+        "prefix_decoding_error": 4.440892098500626e-16,
+        "raw_source_padding_error": 0.0,
+        "source_padding_loss_error": 0.0,
+        "future_target_error": 0.0,
+        "padded_logits_loss_error": 0.0,
+        "padded_logits_gradient": 0.0
+      },
+      "directional_derivative_error": 9.141748469332356e-11,
+      "intentional_errors": {
+        "missing_encoder_mask_effect": 0.10612020641889963,
+        "missing_memory_mask_effect": 0.10025919002484565,
+        "missing_causal_mask_leakage": 0.2318888778499907,
+        "unmasked_loss_gradient": 0.11800072303644701
+      },
+      "unshifted_targets_rejected": true,
+      "empty_source_rejected": true,
+      "empty_loss_rejected": true
+    }
+  ],
+  "passed": true,
+  "maxima": {
+    "future_target_error": 0.0,
+    "gradient_error": 2.220446049250313e-16,
+    "logit_error": 5.551115123125783e-16,
+    "loss_error": 8.881784197001252e-16,
+    "padded_logits_gradient": 0.0,
+    "padded_logits_loss_error": 0.0,
+    "prefix_decoding_error": 5.551115123125783e-16,
+    "raw_source_padding_error": 0.0,
+    "source_padding_gradient": 0.0,
+    "source_padding_loss_error": 0.0,
+    "target_padding_gradient": 0.0
+  },
+  "directional_derivative_max": 6.295600707417748e-10,
+  "negative_minima": {
+    "missing_causal_mask_leakage": 0.21880322104256006,
+    "missing_encoder_mask_effect": 0.023640800921319427,
+    "missing_memory_mask_effect": 0.042925040009470616,
+    "unmasked_loss_gradient": 0.09364995979817624
+  }
+}

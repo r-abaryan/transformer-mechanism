@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "report_sha256": "651bbffb3fc9f5f2a7e84a22aa8530fa1352a6d7de7c001d80fe708fcb3ead12",
+  "corrections_sha256": "edd0917ad2da73e9fae9e2f72aaf9fa7d92b77ded174f287ca909405190be65f",
+  "raw_count_audit_passed": false,
+  "recovered_count_fields": 2,
+  "cells": 24,
+  "answers": 155904,
+  "training_updates": 0,
+  "changed_winners": 0,
+  "max_scalar_error": 8.526512829121202e-13,
+  "max_matrix_logit_error": 3.552713678800501e-14,
+  "protected_files": 141,
+  "original_forward_audits_reused_by_hash": true,
+  "recovery_sources": {
+    "experiments/recover_readout_scale_audit.py": "b1c194ad95dad8709a1c6e571b0c4924a5dd694eab2f1ddaa3fd564b1bd440f9",
+    "docs/protocols/readout-scale-threshold-recovery.md": "55f998da3ff89d6688ffa194fdc8358ca869bf97a8d9e721048e83ffb014ca61",
+    "tests/test_readout_scale_threshold.py": "8373268312336140259917b6a3c30836f96b615043accad3e9d7d3e52434dffe"
+  }
+}

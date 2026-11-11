@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "gpu_peak_allocated_bytes": null,
+  "gpu_peak_reserved_bytes": null,
+  "reason": "Tiny existing double-precision model; CPU chosen for arithmetic comparability, not throughput. GPU unused.",
+  "cells": [
+    {
+      "arm": "full",
+      "length": 17,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 1.6588754998520017,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    },
+    {
+      "arm": "full",
+      "length": 21,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 0.01143769989721477,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    },
+    {
+      "arm": "local",
+      "length": 17,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 0.009146299911662936,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    },
+    {
+      "arm": "local",
+      "length": 21,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 0.010472499998286366,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    },
+    {
+      "arm": "global",
+      "length": 17,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 0.008788400096818805,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    },
+    {
+      "arm": "global",
+      "length": 21,
+      "batch": 60,
+      "parameters": 4544,
+      "complete_step_seconds": 0.011483700014650822,
+      "optimizer_state_tensors": 108,
+      "optimizer_tensor_bytes": 72848
+    }
+  ],
+  "source_sha256": "a0c54499f8e36d5851812566bbf6f5933bb8b13e19f81dfd66d2d6eccdda3756"
+}

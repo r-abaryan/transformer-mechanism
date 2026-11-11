@@ -1,0 +1,3032 @@
+{
+  "passed": true,
+  "report_sha256": "e358c4fdaaeb5dc02df2749d7ba18699f5033eaac226f328df9c771593327974",
+  "protected_files": 49,
+  "cells": 168,
+  "evaluation_targets": 1536768,
+  "checks": [
+    {
+      "max_gradient_error": 1.2447183041219834e-15,
+      "max_direction_error": 2.8449465006019636e-16,
+      "seed": 3473,
+      "arm": "lbfgs",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008935074895123718,
+          "objective_after": 0.008710838876483164
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008710838876483164,
+          "objective_after": 0.008467438389111202
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008467438389111202,
+          "objective_after": 0.0084318182324917
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0084318182324917,
+          "objective_after": 0.008406183741641086
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008406183741641086,
+          "objective_after": 0.008370176734742845
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008370176734742845,
+          "objective_after": 0.008340676186784501
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008340676186784501,
+          "objective_after": 0.008295978400492423
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008295978400492423,
+          "objective_after": 0.008214887105645755
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008214887105645755,
+          "objective_after": 0.008135352917832494
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008135352917832494,
+          "objective_after": 0.008043277733112593
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008043277733112593,
+          "objective_after": 0.007892940607591145
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007892940607591145,
+          "objective_after": 0.007803080965390452
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007803080965390452,
+          "objective_after": 0.00769759166890709
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00769759166890709,
+          "objective_after": 0.007568009543375611
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007568009543375611,
+          "objective_after": 0.007482344667761057
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007482344667761057,
+          "objective_after": 0.007356484875163535
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007356484875163535,
+          "objective_after": 0.007206179279544955
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007206179279544955,
+          "objective_after": 0.007064289006918473
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007064289006918473,
+          "objective_after": 0.00692168038744105
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00692168038744105,
+          "objective_after": 0.006765685611447933
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006765685611447933,
+          "objective_after": 0.006611238874454941
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006611238874454941,
+          "objective_after": 0.006448583581395793
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006448583581395793,
+          "objective_after": 0.00627991760888523
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00627991760888523,
+          "objective_after": 0.006110794019565512
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006110794019565512,
+          "objective_after": 0.005927259508359585
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005927259508359585,
+          "objective_after": 0.0057570329880260954
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0057570329880260954,
+          "objective_after": 0.005525276056630769
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005525276056630769,
+          "objective_after": 0.0053223793448625755
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0053223793448625755,
+          "objective_after": 0.005115637950136608
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005115637950136608,
+          "objective_after": 0.004934953526305112
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004934953526305112,
+          "objective_after": 0.004781220417715941
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004781220417715941,
+          "objective_after": 0.004585729174957127
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004585729174957127,
+          "objective_after": 0.0044110949140528525
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0044110949140528525,
+          "objective_after": 0.00415677040766542
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00415677040766542,
+          "objective_after": 0.003983340607113475
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003983340607113475,
+          "objective_after": 0.003791262594349247
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003791262594349247,
+          "objective_after": 0.0036151888332167713
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0036151888332167713,
+          "objective_after": 0.0034106331054383253
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0034106331054383253,
+          "objective_after": 0.003339248733066168
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003339248733066168,
+          "objective_after": 0.0030157500733026294
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0030157500733026294,
+          "objective_after": 0.0028440486099645538
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0028440486099645538,
+          "objective_after": 0.002689232589121367
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002689232589121367,
+          "objective_after": 0.002561884994227716
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002561884994227716,
+          "objective_after": 0.0023486911944804196
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0023486911944804196,
+          "objective_after": 0.002229227645480676
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002229227645480676,
+          "objective_after": 0.0021192543692631722
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0021192543692631722,
+          "objective_after": 0.002036878387184418
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002036878387184418,
+          "objective_after": 0.0019456970514504398
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0019456970514504398,
+          "objective_after": 0.0018122390076179458
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0018122390076179458,
+          "objective_after": 0.001704127875614961
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.001704127875614961,
+          "objective_after": 0.0015768041203300688
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0015768041203300688,
+          "objective_after": 0.0014433892663526786
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0014433892663526786,
+          "objective_after": 0.0013440310773455589
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0013440310773455589,
+          "objective_after": 0.0012488585950491443
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0012488585950491443,
+          "objective_after": 0.0011180458967772033
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0011180458967772033,
+          "objective_after": 0.0010341177507232659
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0010341177507232659,
+          "objective_after": 0.0009316695390772522
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0009316695390772522,
+          "objective_after": 0.0008610098844393797
+        },
+        {
+          "call": 59,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0008610098844393797,
+          "objective_after": 0.0007777080040042507
+        },
+        {
+          "call": 60,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0007777080040042507,
+          "objective_after": 0.0006833770708332901
+        },
+        {
+          "call": 61,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0006833770708332901,
+          "objective_after": 0.0005888351706085151
+        },
+        {
+          "call": 62,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0005888351706085151,
+          "objective_after": 0.0005203207059759012
+        },
+        {
+          "call": 63,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0005203207059759012,
+          "objective_after": 0.00043626379732936106
+        }
+      ]
+    },
+    {
+      "max_gradient_error": 8.014957783835513e-15,
+      "max_direction_error": 6.73683331342545e-13,
+      "seed": 3473,
+      "arm": "block_diagonal",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008935074895123718,
+          "objective_after": 0.008710838876483164
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008710838876483164,
+          "objective_after": 0.008473439954640439
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008473439954640439,
+          "objective_after": 0.008437960540520872
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008437960540520872,
+          "objective_after": 0.008415298247926016
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008415298247926016,
+          "objective_after": 0.00838903950822414
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00838903950822414,
+          "objective_after": 0.008363594881650916
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008363594881650916,
+          "objective_after": 0.008306428960804337
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008306428960804337,
+          "objective_after": 0.008211876642525694
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008211876642525694,
+          "objective_after": 0.008081251461692838
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008081251461692838,
+          "objective_after": 0.007913896970176588
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007913896970176588,
+          "objective_after": 0.007620526163543819
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007620526163543819,
+          "objective_after": 0.00695024083006272
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00695024083006272,
+          "objective_after": 0.0064826471910997595
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0064826471910997595,
+          "objective_after": 0.005672620949781246
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005672620949781246,
+          "objective_after": 0.005311665780286646
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005311665780286646,
+          "objective_after": 0.0045975006012762
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0045975006012762,
+          "objective_after": 0.003957002843314735
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003957002843314735,
+          "objective_after": 0.002989202310456092
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002989202310456092,
+          "objective_after": 0.0025682075761314133
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0025682075761314133,
+          "objective_after": 0.002047160417132475
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002047160417132475,
+          "objective_after": 0.0018120829560567414
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0018120829560567414,
+          "objective_after": 0.0016226384469386892
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0016226384469386892,
+          "objective_after": 0.0014317442488280718
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0014317442488280718,
+          "objective_after": 0.001185714174425409
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.001185714174425409,
+          "objective_after": 0.0008332569562449866
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0008332569562449866,
+          "objective_after": 0.0006271901593139064
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0006271901593139064,
+          "objective_after": 0.0004712088955886737
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0004712088955886737,
+          "objective_after": 0.0003839799488875707
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0003839799488875707,
+          "objective_after": 0.0003093240788654967
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0003093240788654967,
+          "objective_after": 0.0002489633241695465
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0002489633241695465,
+          "objective_after": 0.00021268956215629502
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00021268956215629502,
+          "objective_after": 0.0001881705047160447
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0001881705047160447,
+          "objective_after": 0.00016666601407420786
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00016666601407420786,
+          "objective_after": 0.00014472121181001712
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00014472121181001712,
+          "objective_after": 0.00012651385088363265
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00012651385088363265,
+          "objective_after": 0.00011472572964048654
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00011472572964048654,
+          "objective_after": 0.00010059419022606128
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00010059419022606128,
+          "objective_after": 8.964701563247617e-05
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.964701563247617e-05,
+          "objective_after": 8.021810883612117e-05
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.021810883612117e-05,
+          "objective_after": 7.038302818779527e-05
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 7.038302818779527e-05,
+          "objective_after": 6.111831878526988e-05
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 6.111831878526988e-05,
+          "objective_after": 5.359453985965568e-05
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 5.359453985965568e-05,
+          "objective_after": 4.715932558199569e-05
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.715932558199569e-05,
+          "objective_after": 4.200104004959161e-05
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.200104004959161e-05,
+          "objective_after": 3.645837986957182e-05
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 3.645837986957182e-05,
+          "objective_after": 3.482420454888818e-05
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 3.482420454888818e-05,
+          "objective_after": 2.9025894938330884e-05
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.9025894938330884e-05,
+          "objective_after": 2.6071293083671063e-05
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.6071293083671063e-05,
+          "objective_after": 2.328444844728969e-05
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.328444844728969e-05,
+          "objective_after": 2.1255694829170643e-05
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.1255694829170643e-05,
+          "objective_after": 1.918641681383477e-05
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.918641681383477e-05,
+          "objective_after": 1.7443815714055356e-05
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.7443815714055356e-05,
+          "objective_after": 1.5325733761412995e-05
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.5325733761412995e-05,
+          "objective_after": 1.3821368063287033e-05
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.3821368063287033e-05,
+          "objective_after": 1.2037056665759887e-05
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.2037056665759887e-05,
+          "objective_after": 1.0768321690101221e-05
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.0768321690101221e-05,
+          "objective_after": 1.0058884454717275e-05
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.0058884454717275e-05,
+          "objective_after": 8.901406978201738e-06
+        },
+        {
+          "call": 59,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.901406978201738e-06,
+          "objective_after": 8.235022235379108e-06
+        },
+        {
+          "call": 60,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.235022235379108e-06,
+          "objective_after": 8.026807140107364e-06
+        }
+      ]
+    },
+    {
+      "max_gradient_error": 1.263746052249104e-15,
+      "max_direction_error": 1.8041124150158794e-16,
+      "seed": 3479,
+      "arm": "lbfgs",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011045193677475985,
+          "objective_after": 0.010788156126938809
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010788156126938809,
+          "objective_after": 0.010469427370823216
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010469427370823216,
+          "objective_after": 0.01041029781163907
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01041029781163907,
+          "objective_after": 0.010371238117497988
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010371238117497988,
+          "objective_after": 0.010335171232955803
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010335171232955803,
+          "objective_after": 0.010312292129345054
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010312292129345054,
+          "objective_after": 0.010266796331683016
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010266796331683016,
+          "objective_after": 0.010254151676639556
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010254151676639556,
+          "objective_after": 0.010198849317028092
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010198849317028092,
+          "objective_after": 0.010167556852420894
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010167556852420894,
+          "objective_after": 0.01010425295618292
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01010425295618292,
+          "objective_after": 0.00999319625546615
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00999319625546615,
+          "objective_after": 0.009896986115670855
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009896986115670855,
+          "objective_after": 0.00975383401903091
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00975383401903091,
+          "objective_after": 0.009580751751181633
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009580751751181633,
+          "objective_after": 0.009427904042907909
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009427904042907909,
+          "objective_after": 0.009251994461249649
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009251994461249649,
+          "objective_after": 0.009096769929000055
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009096769929000055,
+          "objective_after": 0.008974919561826958
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008974919561826958,
+          "objective_after": 0.008814475098952132
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008814475098952132,
+          "objective_after": 0.008732239467443007
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008732239467443007,
+          "objective_after": 0.008558383590657474
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008558383590657474,
+          "objective_after": 0.008459676624291479
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008459676624291479,
+          "objective_after": 0.008364327690091806
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008364327690091806,
+          "objective_after": 0.008241688691762656
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008241688691762656,
+          "objective_after": 0.00811592200608493
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00811592200608493,
+          "objective_after": 0.00796946482011914
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00796946482011914,
+          "objective_after": 0.007815723699551186
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007815723699551186,
+          "objective_after": 0.007671585581279381
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007671585581279381,
+          "objective_after": 0.007551156548719004
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007551156548719004,
+          "objective_after": 0.007453145526374511
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007453145526374511,
+          "objective_after": 0.007306627689828215
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007306627689828215,
+          "objective_after": 0.007168367589736257
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007168367589736257,
+          "objective_after": 0.007022387528454492
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007022387528454492,
+          "objective_after": 0.00681008454410795
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00681008454410795,
+          "objective_after": 0.006661354340216528
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006661354340216528,
+          "objective_after": 0.006491172940606604
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006491172940606604,
+          "objective_after": 0.00631721319389581
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00631721319389581,
+          "objective_after": 0.006200509274438663
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006200509274438663,
+          "objective_after": 0.006045677929536659
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006045677929536659,
+          "objective_after": 0.005884801441624817
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005884801441624817,
+          "objective_after": 0.005736057383681955
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005736057383681955,
+          "objective_after": 0.005569847731051822
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005569847731051822,
+          "objective_after": 0.00539323646539114
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00539323646539114,
+          "objective_after": 0.0052108432557264935
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0052108432557264935,
+          "objective_after": 0.004979808690085078
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004979808690085078,
+          "objective_after": 0.004760175503218166
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004760175503218166,
+          "objective_after": 0.004562715654408623
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004562715654408623,
+          "objective_after": 0.004399815833432253
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004399815833432253,
+          "objective_after": 0.004221745627792878
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004221745627792878,
+          "objective_after": 0.00396935640460366
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00396935640460366,
+          "objective_after": 0.0037614214122988193
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0037614214122988193,
+          "objective_after": 0.0035764642059801094
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0035764642059801094,
+          "objective_after": 0.003387207248276648
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003387207248276648,
+          "objective_after": 0.0032020808634313455
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0032020808634313455,
+          "objective_after": 0.0030283863879502094
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0030283863879502094,
+          "objective_after": 0.0028995463132495303
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0028995463132495303,
+          "objective_after": 0.0027500138037703974
+        },
+        {
+          "call": 59,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0027500138037703974,
+          "objective_after": 0.0025796535983869415
+        },
+        {
+          "call": 60,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0025796535983869415,
+          "objective_after": 0.002464990640533226
+        },
+        {
+          "call": 61,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002464990640533226,
+          "objective_after": 0.00229943509589804
+        },
+        {
+          "call": 62,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00229943509589804,
+          "objective_after": 0.002220646778152295
+        },
+        {
+          "call": 63,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002220646778152295,
+          "objective_after": 0.002077128419011235
+        }
+      ]
+    },
+    {
+      "max_gradient_error": 1.3502862226239497e-14,
+      "max_direction_error": 5.360156762890256e-13,
+      "seed": 3479,
+      "arm": "block_diagonal",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011045193677475985,
+          "objective_after": 0.010788156126938809
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010788156126938809,
+          "objective_after": 0.010476425006185446
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010476425006185446,
+          "objective_after": 0.010417193837126217
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010417193837126217,
+          "objective_after": 0.010379840462397951
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010379840462397951,
+          "objective_after": 0.010350944465169412
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010350944465169412,
+          "objective_after": 0.010330141741094844
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010330141741094844,
+          "objective_after": 0.010291127839312924
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010291127839312924,
+          "objective_after": 0.010263382136782306
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010263382136782306,
+          "objective_after": 0.010223035884982752
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010223035884982752,
+          "objective_after": 0.010186918594745584
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010186918594745584,
+          "objective_after": 0.010049421703122044
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010049421703122044,
+          "objective_after": 0.009768585983354639
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009768585983354639,
+          "objective_after": 0.009301484426157844
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009301484426157844,
+          "objective_after": 0.008680429044654965
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008680429044654965,
+          "objective_after": 0.008199736050618387
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008199736050618387,
+          "objective_after": 0.007641597778496043
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007641597778496043,
+          "objective_after": 0.007225747978386264
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007225747978386264,
+          "objective_after": 0.006289340281456276
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006289340281456276,
+          "objective_after": 0.00569279223547601
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00569279223547601,
+          "objective_after": 0.005206252548788548
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005206252548788548,
+          "objective_after": 0.00472954037420835
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00472954037420835,
+          "objective_after": 0.004289110252926427
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004289110252926427,
+          "objective_after": 0.0038937854971186395
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0038937854971186395,
+          "objective_after": 0.003167614261025779
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003167614261025779,
+          "objective_after": 0.0026279906125565144
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0026279906125565144,
+          "objective_after": 0.0024523448823857296
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0024523448823857296,
+          "objective_after": 0.002224885265535269
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002224885265535269,
+          "objective_after": 0.0020435934247651456
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0020435934247651456,
+          "objective_after": 0.001955368716909912
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.001955368716909912,
+          "objective_after": 0.001830469049339005
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.001830469049339005,
+          "objective_after": 0.0017513608512805035
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0017513608512805035,
+          "objective_after": 0.0016323198872727905
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0016323198872727905,
+          "objective_after": 0.0015390975499767786
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0015390975499767786,
+          "objective_after": 0.0014523710292280334
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0014523710292280334,
+          "objective_after": 0.0013375648078344754
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0013375648078344754,
+          "objective_after": 0.0011077104606663885
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0011077104606663885,
+          "objective_after": 0.0007557994334080949
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0007557994334080949,
+          "objective_after": 0.00044586509518042055
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00044586509518042055,
+          "objective_after": 0.00026617261728669817
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00026617261728669817,
+          "objective_after": 0.00016442548491559032
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00016442548491559032,
+          "objective_after": 9.73624343965724e-05
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 9.73624343965724e-05,
+          "objective_after": 6.220428568474316e-05
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 6.220428568474316e-05,
+          "objective_after": 4.3269349519518615e-05
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.3269349519518615e-05,
+          "objective_after": 3.2298092007785445e-05
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 3.2298092007785445e-05,
+          "objective_after": 2.1504680782845112e-05
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.1504680782845112e-05,
+          "objective_after": 1.3646836363445969e-05
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.3646836363445969e-05,
+          "objective_after": 9.04465727949135e-06
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 9.04465727949135e-06,
+          "objective_after": 6.485485913040136e-06
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 6.485485913040136e-06,
+          "objective_after": 4.1529280251400425e-06
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.1529280251400425e-06,
+          "objective_after": 2.5940357306105366e-06
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.5940357306105366e-06,
+          "objective_after": 1.841426807725569e-06
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.841426807725569e-06,
+          "objective_after": 1.3146221833700253e-06
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.3146221833700253e-06,
+          "objective_after": 8.619983689776316e-07
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.619983689776316e-07,
+          "objective_after": 5.784523039209511e-07
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 5.784523039209511e-07,
+          "objective_after": 4.172586556563617e-07
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.172586556563617e-07,
+          "objective_after": 2.6643175637481176e-07
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 2.6643175637481176e-07,
+          "objective_after": 1.687251938881867e-07
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.687251938881867e-07,
+          "objective_after": 1.1082078813664127e-07
+        },
+        {
+          "call": 59,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 1.1082078813664127e-07,
+          "objective_after": 8.24690405188717e-08
+        },
+        {
+          "call": 60,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 8.24690405188717e-08,
+          "objective_after": 5.638262789641827e-08
+        },
+        {
+          "call": 61,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 5.638262789641827e-08,
+          "objective_after": 4.101553781759137e-08
+        },
+        {
+          "call": 62,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 4.101553781759137e-08,
+          "objective_after": 2.725050574972533e-08
+        }
+      ]
+    },
+    {
+      "max_gradient_error": 1.2164206274201117e-15,
+      "max_direction_error": 1.1535911115245767e-16,
+      "seed": 3481,
+      "arm": "lbfgs",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011517522331174746,
+          "objective_after": 0.011352706575535665
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011352706575535665,
+          "objective_after": 0.011118780730201209
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011118780730201209,
+          "objective_after": 0.01106949479996027
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01106949479996027,
+          "objective_after": 0.011026240614829402
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011026240614829402,
+          "objective_after": 0.010955445399794312
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010955445399794312,
+          "objective_after": 0.010900592876079475
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010900592876079475,
+          "objective_after": 0.0108100412631506
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0108100412631506,
+          "objective_after": 0.01066105565262177
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01066105565262177,
+          "objective_after": 0.010503333671544074
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010503333671544074,
+          "objective_after": 0.010314920213413684
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010314920213413684,
+          "objective_after": 0.01020294097596844
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01020294097596844,
+          "objective_after": 0.010087428739676852
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010087428739676852,
+          "objective_after": 0.010002999099943703
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010002999099943703,
+          "objective_after": 0.009916290230142477
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009916290230142477,
+          "objective_after": 0.009830803379919447
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009830803379919447,
+          "objective_after": 0.009764444900786436
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009764444900786436,
+          "objective_after": 0.009668273974766986
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009668273974766986,
+          "objective_after": 0.009558135946097506
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009558135946097506,
+          "objective_after": 0.009465714963632039
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009465714963632039,
+          "objective_after": 0.009355929872022429
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009355929872022429,
+          "objective_after": 0.009239827104096482
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009239827104096482,
+          "objective_after": 0.00911886004300987
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00911886004300987,
+          "objective_after": 0.009019476731746042
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009019476731746042,
+          "objective_after": 0.008892729681934324
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008892729681934324,
+          "objective_after": 0.00881591122162561
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00881591122162561,
+          "objective_after": 0.008631765071455948
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008631765071455948,
+          "objective_after": 0.00850700062963202
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00850700062963202,
+          "objective_after": 0.008394526424155536
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008394526424155536,
+          "objective_after": 0.008250124959468932
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008250124959468932,
+          "objective_after": 0.00815472422745341
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00815472422745341,
+          "objective_after": 0.008015984414381724
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008015984414381724,
+          "objective_after": 0.007943978544225941
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007943978544225941,
+          "objective_after": 0.007843131529528964
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007843131529528964,
+          "objective_after": 0.0077193082632726305
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0077193082632726305,
+          "objective_after": 0.00759081361551455
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00759081361551455,
+          "objective_after": 0.007479132992658162
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007479132992658162,
+          "objective_after": 0.007337626163873369
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007337626163873369,
+          "objective_after": 0.007185027408854938
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007185027408854938,
+          "objective_after": 0.007056380891334361
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007056380891334361,
+          "objective_after": 0.006945843966787907
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006945843966787907,
+          "objective_after": 0.006794942340653875
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006794942340653875,
+          "objective_after": 0.006640020778199404
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006640020778199404,
+          "objective_after": 0.006492627334728374
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006492627334728374,
+          "objective_after": 0.006389544457594369
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006389544457594369,
+          "objective_after": 0.0062067674295399325
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0062067674295399325,
+          "objective_after": 0.006101064850821999
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006101064850821999,
+          "objective_after": 0.005962338316964064
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005962338316964064,
+          "objective_after": 0.005826935981163563
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005826935981163563,
+          "objective_after": 0.0056845000248128994
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0056845000248128994,
+          "objective_after": 0.005540304245667914
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005540304245667914,
+          "objective_after": 0.005429835694097955
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005429835694097955,
+          "objective_after": 0.005260284045418359
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005260284045418359,
+          "objective_after": 0.005093421821193692
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005093421821193692,
+          "objective_after": 0.004943341344708875
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004943341344708875,
+          "objective_after": 0.004791142327366091
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004791142327366091,
+          "objective_after": 0.0046419029271839015
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0046419029271839015,
+          "objective_after": 0.004509629556388876
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004509629556388876,
+          "objective_after": 0.00436250555669469
+        },
+        {
+          "call": 59,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00436250555669469,
+          "objective_after": 0.0042211745190638295
+        },
+        {
+          "call": 60,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0042211745190638295,
+          "objective_after": 0.004086383980334963
+        },
+        {
+          "call": 61,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004086383980334963,
+          "objective_after": 0.0039393796342181995
+        },
+        {
+          "call": 62,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0039393796342181995,
+          "objective_after": 0.0037145994675358714
+        },
+        {
+          "call": 63,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0037145994675358714,
+          "objective_after": 0.003538103758045627
+        }
+      ]
+    },
+    {
+      "max_gradient_error": 1.2962721174236691e-15,
+      "max_direction_error": 2.353672812205332e-14,
+      "seed": 3481,
+      "arm": "block_diagonal",
+      "steps": [
+        {
+          "call": 1,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011517522331174746,
+          "objective_after": 0.011352706575535665
+        },
+        {
+          "call": 2,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011352706575535665,
+          "objective_after": 0.011129595919807356
+        },
+        {
+          "call": 3,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011129595919807356,
+          "objective_after": 0.011079643408997015
+        },
+        {
+          "call": 4,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011079643408997015,
+          "objective_after": 0.011040727684026733
+        },
+        {
+          "call": 5,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.011040727684026733,
+          "objective_after": 0.010984180820996016
+        },
+        {
+          "call": 6,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010984180820996016,
+          "objective_after": 0.010937897817312076
+        },
+        {
+          "call": 7,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010937897817312076,
+          "objective_after": 0.010863033087810593
+        },
+        {
+          "call": 8,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010863033087810593,
+          "objective_after": 0.010781377141175155
+        },
+        {
+          "call": 9,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010781377141175155,
+          "objective_after": 0.010689736502590776
+        },
+        {
+          "call": 10,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010689736502590776,
+          "objective_after": 0.010573718682607737
+        },
+        {
+          "call": 11,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010573718682607737,
+          "objective_after": 0.010497971278646732
+        },
+        {
+          "call": 12,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010497971278646732,
+          "objective_after": 0.010427451478751099
+        },
+        {
+          "call": 13,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010427451478751099,
+          "objective_after": 0.010364161271057368
+        },
+        {
+          "call": 14,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010364161271057368,
+          "objective_after": 0.010316695936219644
+        },
+        {
+          "call": 15,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010316695936219644,
+          "objective_after": 0.010240616367163278
+        },
+        {
+          "call": 16,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010240616367163278,
+          "objective_after": 0.01016336475449287
+        },
+        {
+          "call": 17,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.01016336475449287,
+          "objective_after": 0.010038309544002708
+        },
+        {
+          "call": 18,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.010038309544002708,
+          "objective_after": 0.009485347437676156
+        },
+        {
+          "call": 19,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.009485347437676156,
+          "objective_after": 0.008501360916502266
+        },
+        {
+          "call": 20,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008501360916502266,
+          "objective_after": 0.008316041735105808
+        },
+        {
+          "call": 21,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.008316041735105808,
+          "objective_after": 0.007721841671593974
+        },
+        {
+          "call": 22,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007721841671593974,
+          "objective_after": 0.007595161050739981
+        },
+        {
+          "call": 23,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.007595161050739981,
+          "objective_after": 0.0071723267448802145
+        },
+        {
+          "call": 24,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0071723267448802145,
+          "objective_after": 0.006645469647291174
+        },
+        {
+          "call": 25,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006645469647291174,
+          "objective_after": 0.006162913763724012
+        },
+        {
+          "call": 26,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.006162913763724012,
+          "objective_after": 0.0059016907124456
+        },
+        {
+          "call": 27,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0059016907124456,
+          "objective_after": 0.0057521737360405325
+        },
+        {
+          "call": 28,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0057521737360405325,
+          "objective_after": 0.005414236895594067
+        },
+        {
+          "call": 29,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005414236895594067,
+          "objective_after": 0.005300231771824471
+        },
+        {
+          "call": 30,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005300231771824471,
+          "objective_after": 0.005146265735173577
+        },
+        {
+          "call": 31,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005146265735173577,
+          "objective_after": 0.005061054278656818
+        },
+        {
+          "call": 32,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.005061054278656818,
+          "objective_after": 0.004971780132006708
+        },
+        {
+          "call": 33,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004971780132006708,
+          "objective_after": 0.0048463442308193955
+        },
+        {
+          "call": 34,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0048463442308193955,
+          "objective_after": 0.00476922548423967
+        },
+        {
+          "call": 35,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.00476922548423967,
+          "objective_after": 0.004692875322143837
+        },
+        {
+          "call": 36,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004692875322143837,
+          "objective_after": 0.004574374001153412
+        },
+        {
+          "call": 37,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004574374001153412,
+          "objective_after": 0.0044661820964071
+        },
+        {
+          "call": 38,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0044661820964071,
+          "objective_after": 0.004358890860378207
+        },
+        {
+          "call": 39,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004358890860378207,
+          "objective_after": 0.004188586601161359
+        },
+        {
+          "call": 40,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004188586601161359,
+          "objective_after": 0.004085681903507499
+        },
+        {
+          "call": 41,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.004085681903507499,
+          "objective_after": 0.0039711021283224375
+        },
+        {
+          "call": 42,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0039711021283224375,
+          "objective_after": 0.003946030994658496
+        },
+        {
+          "call": 43,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003946030994658496,
+          "objective_after": 0.0037090091470878637
+        },
+        {
+          "call": 44,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0037090091470878637,
+          "objective_after": 0.0036548811704088732
+        },
+        {
+          "call": 45,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0036548811704088732,
+          "objective_after": 0.003543770274367846
+        },
+        {
+          "call": 46,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003543770274367846,
+          "objective_after": 0.0034146538245767456
+        },
+        {
+          "call": 47,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0034146538245767456,
+          "objective_after": 0.003259049847002948
+        },
+        {
+          "call": 48,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.003259049847002948,
+          "objective_after": 0.0030543314878357063
+        },
+        {
+          "call": 49,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0030543314878357063,
+          "objective_after": 0.002900792107636193
+        },
+        {
+          "call": 50,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002900792107636193,
+          "objective_after": 0.0028252227723200535
+        },
+        {
+          "call": 51,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0028252227723200535,
+          "objective_after": 0.0025930430422064525
+        },
+        {
+          "call": 52,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0025930430422064525,
+          "objective_after": 0.0025276478051676266
+        },
+        {
+          "call": 53,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0025276478051676266,
+          "objective_after": 0.0023491008319450743
+        },
+        {
+          "call": 54,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0023491008319450743,
+          "objective_after": 0.002126891206092225
+        },
+        {
+          "call": 55,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.002126891206092225,
+          "objective_after": 0.0020112943464801326
+        },
+        {
+          "call": 56,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0020112943464801326,
+          "objective_after": 0.001984834654761043
+        },
+        {
+          "call": 57,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.001984834654761043,
+          "objective_after": 0.0017384736550348204
+        },
+        {
+          "call": 58,
+          "moved": true,
+          "strong_wolfe": true,
+          "descent": true,
+          "objective_before": 0.0017384736550348204,
+          "objective_after": 0.0016338122794940597
+        }
+      ]
+    }
+  ],
+  "pair_controls": [
+    {
+      "seed": 3473,
+      "first_step_identical": true,
+      "later_directions_differ": true,
+      "historical_native_exact": true
+    },
+    {
+      "seed": 3479,
+      "first_step_identical": true,
+      "later_directions_differ": true,
+      "historical_native_exact": true
+    },
+    {
+      "seed": 3481,
+      "first_step_identical": true,
+      "later_directions_differ": true,
+      "historical_native_exact": true
+    }
+  ],
+  "max_logit_error": 5.4569682106375694e-12,
+  "max_gradient_error": 1.3502862226239497e-14,
+  "max_direction_error": 6.73683331342545e-13
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "methods": 2,
+  "sources": {
+    "experiments/memory_first_moment_reset.py": "82ab8d14fd749f68efbf57c076ebe84123a95225d7d61757eb83838ebc760092",
+    "experiments/audit_memory_first_moment_reset.py": "7a11e3c9a380bfa2b2ce81860eb820035cb01a7018e8392deb802af05cf2d64b",
+    "tests/test_memory_first_moment_reset.py": "cbbc03b5868eb66e6db96649cfb92433e0df0a798b04e6b0fa4ecb3e81d2a461"
+  },
+  "profile": {
+    "device": "cpu",
+    "dtype": "float64",
+    "batch": 64,
+    "context_writes": 32,
+    "profiled_targets": 2048,
+    "full_training_step_seconds": 0.01742680001189001,
+    "model_tensor_bytes": 4920,
+    "optimizer_tensor_bytes": 9860,
+    "gpu_peak_allocated_bytes": 0,
+    "gpu_peak_reserved_bytes": 0,
+    "scope": "One complete synthetic CPU forward/backward/Adam step; tensor payloads, not measured CPU peak memory or a throughput benchmark"
+  }
+}

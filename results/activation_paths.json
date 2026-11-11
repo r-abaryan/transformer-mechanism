@@ -1,0 +1,421 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "d0c9ebe1b1e57ec476ef05e8be69a6f6558b537f7876b81dbae2a168471c9682",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "e2078553c8bf41d36d299f66cbee3adfabd35b9261fce724d2dead84bce4d051",
+  "source_sha256": {
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "errors": {
+        "compact": 0.0,
+        "shifted": 5.81756864903582e-14,
+        "sham": 0.0,
+        "full_donor": 0.0
+      },
+      "conditions": {
+        "compact": {
+          "accuracy": 1.0,
+          "loss": 0.0003898544824116965,
+          "rescued": 1754,
+          "harmed": 0
+        },
+        "shifted": {
+          "accuracy": 0.657421875,
+          "loss": 1.8416926097535469,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "r0": {
+          "accuracy": 0.621875,
+          "loss": 1.9908723458750806,
+          "rescued": 582,
+          "harmed": 764
+        },
+        "a0": {
+          "accuracy": 0.9095703125,
+          "loss": 0.45397161110170414,
+          "rescued": 1462,
+          "harmed": 171
+        },
+        "f0": {
+          "accuracy": 0.725,
+          "loss": 1.5047281425228336,
+          "rescued": 555,
+          "harmed": 209
+        },
+        "r1": {
+          "accuracy": 0.6625,
+          "loss": 1.78032225824207,
+          "rescued": 243,
+          "harmed": 217
+        },
+        "a1": {
+          "accuracy": 1.0,
+          "loss": 0.0005817170878570403,
+          "rescued": 1754,
+          "harmed": 0
+        },
+        "f1": {
+          "accuracy": 0.959375,
+          "loss": 0.11455565902926876,
+          "rescued": 1546,
+          "harmed": 0
+        },
+        "both_residual": {
+          "accuracy": 0.6228515625,
+          "loss": 2.0292625308709433,
+          "rescued": 576,
+          "harmed": 753
+        },
+        "both_attention": {
+          "accuracy": 1.0,
+          "loss": 0.0006834744429301142,
+          "rescued": 1754,
+          "harmed": 0
+        },
+        "both_ffn": {
+          "accuracy": 0.9681640625,
+          "loss": 0.0930021391328049,
+          "rescued": 1591,
+          "harmed": 0
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "errors": {
+        "compact": 0.0,
+        "shifted": 3.108624468950438e-14,
+        "sham": 0.0,
+        "full_donor": 0.0
+      },
+      "conditions": {
+        "compact": {
+          "accuracy": 1.0,
+          "loss": 0.0004556847478129528,
+          "rescued": 2119,
+          "harmed": 0
+        },
+        "shifted": {
+          "accuracy": 0.5861328125,
+          "loss": 2.1058688178515643,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "r0": {
+          "accuracy": 0.575,
+          "loss": 2.4410916234034223,
+          "rescued": 560,
+          "harmed": 617
+        },
+        "a0": {
+          "accuracy": 0.980859375,
+          "loss": 0.07005841166350729,
+          "rescued": 2062,
+          "harmed": 41
+        },
+        "f0": {
+          "accuracy": 0.6119140625,
+          "loss": 1.9327790773974503,
+          "rescued": 463,
+          "harmed": 331
+        },
+        "r1": {
+          "accuracy": 0.5833984375,
+          "loss": 2.3470918529397014,
+          "rescued": 188,
+          "harmed": 202
+        },
+        "a1": {
+          "accuracy": 1.0,
+          "loss": 0.000692594991764275,
+          "rescued": 2119,
+          "harmed": 0
+        },
+        "f1": {
+          "accuracy": 0.8982421875,
+          "loss": 0.30873695211128227,
+          "rescued": 1598,
+          "harmed": 0
+        },
+        "both_residual": {
+          "accuracy": 0.5791015625,
+          "loss": 2.455216977299416,
+          "rescued": 546,
+          "harmed": 582
+        },
+        "both_attention": {
+          "accuracy": 1.0,
+          "loss": 0.0006990588305939602,
+          "rescued": 2119,
+          "harmed": 0
+        },
+        "both_ffn": {
+          "accuracy": 0.901953125,
+          "loss": 0.30022916139010103,
+          "rescued": 1647,
+          "harmed": 30
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "errors": {
+        "compact": 0.0,
+        "shifted": 5.639932965095795e-14,
+        "sham": 0.0,
+        "full_donor": 0.0
+      },
+      "conditions": {
+        "compact": {
+          "accuracy": 0.9998046875,
+          "loss": 0.0010239658324014654,
+          "rescued": 1993,
+          "harmed": 1
+        },
+        "shifted": {
+          "accuracy": 0.6107421875,
+          "loss": 2.335619420929258,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "r0": {
+          "accuracy": 0.63515625,
+          "loss": 2.3921350428081087,
+          "rescued": 706,
+          "harmed": 581
+        },
+        "a0": {
+          "accuracy": 0.90625,
+          "loss": 0.4192010504256734,
+          "rescued": 1645,
+          "harmed": 132
+        },
+        "f0": {
+          "accuracy": 0.6357421875,
+          "loss": 2.129578927195655,
+          "rescued": 329,
+          "harmed": 201
+        },
+        "r1": {
+          "accuracy": 0.591015625,
+          "loss": 2.444737186231392,
+          "rescued": 129,
+          "harmed": 230
+        },
+        "a1": {
+          "accuracy": 0.9994140625,
+          "loss": 0.0036108181658132685,
+          "rescued": 1993,
+          "harmed": 3
+        },
+        "f1": {
+          "accuracy": 0.823828125,
+          "loss": 0.5840033945855427,
+          "rescued": 1091,
+          "harmed": 0
+        },
+        "both_residual": {
+          "accuracy": 0.6326171875,
+          "loss": 2.3577386631850574,
+          "rescued": 700,
+          "harmed": 588
+        },
+        "both_attention": {
+          "accuracy": 0.999609375,
+          "loss": 0.0029839749236693627,
+          "rescued": 1993,
+          "harmed": 2
+        },
+        "both_ffn": {
+          "accuracy": 0.8388671875,
+          "loss": 0.5314724150753445,
+          "rescued": 1173,
+          "harmed": 5
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "errors": {
+        "compact": 0.0,
+        "shifted": 3.8191672047105385e-14,
+        "sham": 0.0,
+        "full_donor": 0.0
+      },
+      "conditions": {
+        "compact": {
+          "accuracy": 1.0,
+          "loss": 0.00037584960968778256,
+          "rescued": 2305,
+          "harmed": 0
+        },
+        "shifted": {
+          "accuracy": 0.5498046875,
+          "loss": 2.6789114944290793,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "r0": {
+          "accuracy": 0.539453125,
+          "loss": 2.643565359972736,
+          "rescued": 775,
+          "harmed": 828
+        },
+        "a0": {
+          "accuracy": 0.8626953125,
+          "loss": 0.6742283097439267,
+          "rescued": 1826,
+          "harmed": 224
+        },
+        "f0": {
+          "accuracy": 0.5837890625,
+          "loss": 2.3232734747158483,
+          "rescued": 540,
+          "harmed": 366
+        },
+        "r1": {
+          "accuracy": 0.5546875,
+          "loss": 2.640657376483559,
+          "rescued": 239,
+          "harmed": 214
+        },
+        "a1": {
+          "accuracy": 1.0,
+          "loss": 0.0006243194673840474,
+          "rescued": 2305,
+          "harmed": 0
+        },
+        "f1": {
+          "accuracy": 0.9533203125,
+          "loss": 0.11021768467825255,
+          "rescued": 2066,
+          "harmed": 0
+        },
+        "both_residual": {
+          "accuracy": 0.5373046875,
+          "loss": 2.634159239718076,
+          "rescued": 800,
+          "harmed": 864
+        },
+        "both_attention": {
+          "accuracy": 1.0,
+          "loss": 0.0006560390975521536,
+          "rescued": 2305,
+          "harmed": 0
+        },
+        "both_ffn": {
+          "accuracy": 0.96484375,
+          "loss": 0.08348084083712755,
+          "rescued": 2126,
+          "harmed": 1
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "errors": {
+        "compact": 0.0,
+        "shifted": 2.930988785010413e-14,
+        "sham": 0.0,
+        "full_donor": 0.0
+      },
+      "conditions": {
+        "compact": {
+          "accuracy": 1.0,
+          "loss": 0.00042811222332534164,
+          "rescued": 1915,
+          "harmed": 0
+        },
+        "shifted": {
+          "accuracy": 0.6259765625,
+          "loss": 2.046062942478751,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "r0": {
+          "accuracy": 0.6771484375,
+          "loss": 1.7936452777174505,
+          "rescued": 704,
+          "harmed": 442
+        },
+        "a0": {
+          "accuracy": 0.9466796875,
+          "loss": 0.22930934918133347,
+          "rescued": 1715,
+          "harmed": 73
+        },
+        "f0": {
+          "accuracy": 0.6939453125,
+          "loss": 1.7008688805495495,
+          "rescued": 585,
+          "harmed": 237
+        },
+        "r1": {
+          "accuracy": 0.54375,
+          "loss": 2.5536643831324657,
+          "rescued": 149,
+          "harmed": 570
+        },
+        "a1": {
+          "accuracy": 0.9998046875,
+          "loss": 0.0017618234512465692,
+          "rescued": 1915,
+          "harmed": 1
+        },
+        "f1": {
+          "accuracy": 0.9033203125,
+          "loss": 0.3139625135650471,
+          "rescued": 1420,
+          "harmed": 0
+        },
+        "both_residual": {
+          "accuracy": 0.6771484375,
+          "loss": 1.7542076242794213,
+          "rescued": 757,
+          "harmed": 495
+        },
+        "both_attention": {
+          "accuracy": 1.0,
+          "loss": 0.0012335510620723586,
+          "rescued": 1915,
+          "harmed": 0
+        },
+        "both_ffn": {
+          "accuracy": 0.91953125,
+          "loss": 0.2631705439251421,
+          "rescued": 1508,
+          "harmed": 5
+        }
+      }
+    }
+  ],
+  "all_seeds_at_least_90": {
+    "r0": false,
+    "a0": false,
+    "f0": false,
+    "r1": false,
+    "a1": true,
+    "f1": false,
+    "both_residual": false,
+    "both_attention": true,
+    "both_ffn": false
+  }
+}

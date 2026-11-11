@@ -1,0 +1,4722 @@
+{
+  "status": "complete",
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "training_updates": 0,
+  "parameter": "write_logit",
+  "batch": 64,
+  "cells": [
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 0,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_0.pt",
+      "statistics": {
+        "mean": 6.742705747140739e-06,
+        "population_variance": 4.624592068662333e-09,
+        "history_variance": 3.5569948922998332e-09,
+        "query_variance": 1.0675971763625001e-09,
+        "query_variance_fraction": 0.23085218339512992,
+        "one_query_batch_se": 8.500544163337366e-06,
+        "all_query_batch_se": 7.455068423038443e-06,
+        "all_to_one_se_ratio": 0.8770107277592847,
+        "one_query_snr": 0.7932087190631701,
+        "all_query_snr": 0.9044458567682243,
+        "mean_pressure": "lower",
+        "assigned_mean": 7.672181727302767e-06,
+        "assigned_variance": 6.7327263931457625e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 2.3422595420623797,
+          "accuracy": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 2.3422595420623797,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 0,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_0.pt",
+      "statistics": {
+        "mean": 0.009509014621825745,
+        "population_variance": 0.0004706787903522351,
+        "history_variance": 5.959560302996633e-05,
+        "query_variance": 0.0004110831873222688,
+        "query_variance_fraction": 0.8733837082708409,
+        "one_query_batch_se": 0.0027118916090532958,
+        "all_query_batch_se": 0.0009649773558707084,
+        "all_to_one_se_ratio": 0.35583183068573154,
+        "one_query_snr": 3.5064139695263417,
+        "all_query_snr": 9.854132393858785,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.011248739797375494,
+        "assigned_variance": 0.0005798277310214651,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 2.2891197815014652,
+          "accuracy": 0.010904947916666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 2.2891197815014652,
+          "accuracy": 0.010904947916666666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 0,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_0.pt",
+      "statistics": {
+        "mean": 0.018356980008968828,
+        "population_variance": 0.002251796203191486,
+        "history_variance": 0.0001512571765062767,
+        "query_variance": 0.0021005390266852094,
+        "query_variance_fraction": 0.9328282122991863,
+        "one_query_batch_se": 0.00593163684617214,
+        "all_query_batch_se": 0.0015373332049073076,
+        "all_to_one_se_ratio": 0.259175206570408,
+        "one_query_snr": 3.0947579032615806,
+        "all_query_snr": 11.940794585306344,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.017673681461749635,
+        "assigned_variance": 0.002178181144822096,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 2.1827677625158888,
+          "accuracy": 0.06266276041666667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 2.1827677625158888,
+          "accuracy": 0.06266276041666667
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 0,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_0.pt",
+      "statistics": {
+        "mean": 0.02813141077748446,
+        "population_variance": 0.004896230999637712,
+        "history_variance": 0.00017296263354391462,
+        "query_variance": 0.004723268366093798,
+        "query_variance_fraction": 0.9646743314282533,
+        "one_query_batch_se": 0.008746634173745878,
+        "all_query_batch_se": 0.0016439407377164378,
+        "all_to_one_se_ratio": 0.18795123987818452,
+        "one_query_snr": 3.216255558272281,
+        "all_query_snr": 17.112180586607515,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.032446208482746014,
+        "assigned_variance": 0.0050616015922425334,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 2.0820972807603924,
+          "accuracy": 0.10624186197916667
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 2.0820972807603924,
+          "accuracy": 0.10624186197916667
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 10,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_10.pt",
+      "statistics": {
+        "mean": 4.408069580034356e-06,
+        "population_variance": 3.0430386646336814e-09,
+        "history_variance": 2.3768622029387315e-09,
+        "query_variance": 6.6617646169495e-10,
+        "query_variance_fraction": 0.21891817196977476,
+        "one_query_batch_se": 6.895468014203334e-06,
+        "all_query_batch_se": 6.094134222423861e-06,
+        "all_to_one_se_ratio": 0.8837883389308919,
+        "one_query_snr": 0.6392705427615041,
+        "all_query_snr": 0.7233299135116694,
+        "mean_pressure": "lower",
+        "assigned_mean": 5.065985940173721e-06,
+        "assigned_variance": 4.534764212361789e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 2.0857682095347285,
+          "accuracy": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 2.0857682095347285,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 10,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_10.pt",
+      "statistics": {
+        "mean": 0.005405243795592834,
+        "population_variance": 0.0003115510508924487,
+        "history_variance": 3.962817151204464e-05,
+        "query_variance": 0.0002719228793804041,
+        "query_variance_fraction": 0.8728036018542441,
+        "one_query_batch_se": 0.0022063510985775837,
+        "all_query_batch_se": 0.0007868863830793474,
+        "all_to_one_se_ratio": 0.3566460404178857,
+        "one_query_snr": 2.4498565976546303,
+        "all_query_snr": 6.8691540631829495,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.006644118666508204,
+        "assigned_variance": 0.00037494700129860173,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 2.0569250891867727,
+          "accuracy": 0.028645833333333332
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 2.0569250891867727,
+          "accuracy": 0.028645833333333332
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 10,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_10.pt",
+      "statistics": {
+        "mean": 0.011461465482461306,
+        "population_variance": 0.0015020119979076256,
+        "history_variance": 0.00010288490558583713,
+        "query_variance": 0.0013991270923217885,
+        "query_variance_fraction": 0.9315019415762585,
+        "one_query_batch_se": 0.004844474942375763,
+        "all_query_batch_se": 0.0012679024606722337,
+        "all_to_one_se_ratio": 0.2617213373489854,
+        "one_query_snr": 2.3658839438315944,
+        "all_query_snr": 9.039706001031428,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.011504267346086358,
+        "assigned_variance": 0.0014293852975572534,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 2.006741579497858,
+          "accuracy": 0.10270182291666667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 2.006741579497858,
+          "accuracy": 0.10270182291666667
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 10,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_10.pt",
+      "statistics": {
+        "mean": 0.019124291050237666,
+        "population_variance": 0.0033702573958307967,
+        "history_variance": 0.00011786810267570628,
+        "query_variance": 0.00325238929315509,
+        "query_variance_fraction": 0.9650269730669484,
+        "one_query_batch_se": 0.007256739750732156,
+        "all_query_batch_se": 0.0013570884659107197,
+        "all_to_one_se_ratio": 0.18701076689070995,
+        "one_query_snr": 2.635383341163386,
+        "all_query_snr": 14.092147660693342,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.021804692196687018,
+        "assigned_variance": 0.0034814058725233152,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.9598788222692936,
+          "accuracy": 0.13330078125
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.9598788222692936,
+          "accuracy": 0.13330078125
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 100,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_100.pt",
+      "statistics": {
+        "mean": -4.991313657117629e-06,
+        "population_variance": 1.5230967516679882e-09,
+        "history_variance": 1.230708038578759e-09,
+        "query_variance": 2.923887130892292e-10,
+        "query_variance_fraction": 0.1919698881696292,
+        "one_query_batch_se": 4.878359021721578e-06,
+        "all_query_batch_se": 4.385181079817926e-06,
+        "all_to_one_se_ratio": 0.8989049514995292,
+        "one_query_snr": 1.0231542276599783,
+        "all_query_snr": 1.1382229299696034,
+        "mean_pressure": "higher",
+        "assigned_mean": -6.4115722681106085e-06,
+        "assigned_variance": 2.536283440394539e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.6570721484596934,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.6570721484596934,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 100,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_100.pt",
+      "statistics": {
+        "mean": -0.012816462093609772,
+        "population_variance": 0.00037995813101434646,
+        "history_variance": 3.2327602856953184e-05,
+        "query_variance": 0.0003476305281573933,
+        "query_variance_fraction": 0.9149179864353724,
+        "one_query_batch_se": 0.0024365643429015297,
+        "all_query_batch_se": 0.000710717098879641,
+        "all_to_one_se_ratio": 0.29168821293399505,
+        "one_query_snr": 5.260054851803161,
+        "all_query_snr": 18.03314161684496,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.014203203361341196,
+        "assigned_variance": 0.0003955885695376645,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.7394458838798129,
+          "accuracy": 0.9847005208333334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.7394458838798129,
+          "accuracy": 0.9847005208333334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 100,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_100.pt",
+      "statistics": {
+        "mean": -0.008257770405682966,
+        "population_variance": 0.003392453003036005,
+        "history_variance": 0.00012150365308690543,
+        "query_variance": 0.003270949349949099,
+        "query_variance_fraction": 0.9641841307814231,
+        "one_query_batch_se": 0.007280596003929732,
+        "all_query_batch_se": 0.0013778586935832343,
+        "all_to_one_se_ratio": 0.18925081035117583,
+        "one_query_snr": 1.1342162648807597,
+        "all_query_snr": 5.993191060984605,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.007071696874417062,
+        "assigned_variance": 0.0030136703156761224,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.0318915367172643,
+          "accuracy": 0.8047688802083334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.0318915367172643,
+          "accuracy": 0.8047688802083334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 100,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_100.pt",
+      "statistics": {
+        "mean": 0.01850235215045649,
+        "population_variance": 0.010812146861965277,
+        "history_variance": 0.0002865026060034545,
+        "query_variance": 0.010525644255961822,
+        "query_variance_fraction": 0.9735017837196323,
+        "one_query_batch_se": 0.012997684205973288,
+        "all_query_batch_se": 0.002115798482560184,
+        "all_to_one_se_ratio": 0.162782727217502,
+        "one_query_snr": 1.4235114392111057,
+        "all_query_snr": 8.744855572477796,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.000704941525519802,
+        "assigned_variance": 0.009709370809007823,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.3769519687403475,
+          "accuracy": 0.536865234375
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.3769519687403475,
+          "accuracy": 0.536865234375
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 300,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_300.pt",
+      "statistics": {
+        "mean": -2.45557831015609e-07,
+        "population_variance": 1.4025717603221806e-12,
+        "history_variance": 8.480654074206636e-13,
+        "query_variance": 5.545063529015172e-13,
+        "query_variance_fraction": 0.395349720127078,
+        "one_query_batch_se": 1.4803777813461694e-07,
+        "all_query_batch_se": 1.151130834916165e-07,
+        "all_to_one_se_ratio": 0.7775926181960078,
+        "one_query_snr": 1.6587511249480724,
+        "all_query_snr": 2.133187849437572,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.961219060359699e-07,
+        "assigned_variance": 1.7329349240900436e-12,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.044417132142592665,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.044417132142592665,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 300,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_300.pt",
+      "statistics": {
+        "mean": -0.005191242198416333,
+        "population_variance": 0.000307946347557628,
+        "history_variance": 2.552135230929665e-05,
+        "query_variance": 0.0002824249952483313,
+        "query_variance_fraction": 0.9171240298457487,
+        "one_query_batch_se": 0.002193550017799443,
+        "all_query_batch_se": 0.0006314832775559145,
+        "all_to_one_se_ratio": 0.2878818684013483,
+        "one_query_snr": 2.3665939487553413,
+        "all_query_snr": 8.220712064630526,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.004665556641551869,
+        "assigned_variance": 7.700900256516467e-05,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.07982179362651355,
+          "accuracy": 0.9972330729166666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.07982179362651355,
+          "accuracy": 0.9972330729166666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 300,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_300.pt",
+      "statistics": {
+        "mean": 0.020459659973688673,
+        "population_variance": 0.010074764187584746,
+        "history_variance": 0.0004984884363694748,
+        "query_variance": 0.009576275751215271,
+        "query_variance_fraction": 0.950521081477642,
+        "one_query_batch_se": 0.012546640603405027,
+        "all_query_batch_se": 0.002790856825111787,
+        "all_to_one_se_ratio": 0.2224385724696998,
+        "one_query_snr": 1.6306882950115058,
+        "all_query_snr": 7.330960079927843,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.0004383618368365158,
+        "assigned_variance": 0.0016316672186924355,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.4158668324001476,
+          "accuracy": 0.8912760416666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.4158668324001476,
+          "accuracy": 0.8912760416666666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 300,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_300.pt",
+      "statistics": {
+        "mean": 0.12253104415835399,
+        "population_variance": 0.05535194774417265,
+        "history_variance": 0.0016458280883659946,
+        "query_variance": 0.05370611965580666,
+        "query_variance_fraction": 0.9702661215107962,
+        "one_query_batch_se": 0.029408743317297623,
+        "all_query_batch_se": 0.005071100854914904,
+        "all_to_one_se_ratio": 0.17243514284856185,
+        "one_query_snr": 4.166483512618634,
+        "all_query_snr": 24.162612352621043,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.001772862376330375,
+        "assigned_variance": 0.012281269366197833,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.1305075779283855,
+          "accuracy": 0.6282145182291666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.1305075779283855,
+          "accuracy": 0.6282145182291666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_1000.pt",
+      "statistics": {
+        "mean": -7.2366472682274325e-09,
+        "population_variance": 3.128536371535544e-15,
+        "history_variance": 2.1776942636331404e-15,
+        "query_variance": 9.50842107902403e-16,
+        "query_variance_fraction": 0.30392554056698146,
+        "one_query_batch_se": 6.991665095329071e-09,
+        "all_query_batch_se": 5.833221482960151e-09,
+        "all_to_one_se_ratio": 0.8343107690980732,
+        "one_query_snr": 1.0350391744395804,
+        "all_query_snr": 1.240591890667435,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -3.971404561647612e-09,
+        "assigned_variance": 5.891756011285767e-16,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.0006448276644709835,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.0006448276644709835,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_1000.pt",
+      "statistics": {
+        "mean": -0.0006797331343459783,
+        "population_variance": 6.64866239854467e-05,
+        "history_variance": 8.942291580614886e-06,
+        "query_variance": 5.7544332404831826e-05,
+        "query_variance_fraction": 0.8655023966539156,
+        "one_query_batch_se": 0.0010192416297289885,
+        "all_query_batch_se": 0.0003737958078244158,
+        "all_to_one_se_ratio": 0.36673914891389037,
+        "one_query_snr": 0.666900874650024,
+        "all_query_snr": 1.818461095918099,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0002000973645631128,
+        "assigned_variance": 9.924156271336214e-07,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.006638158548165508,
+          "accuracy": 0.9998372395833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.006638158548165508,
+          "accuracy": 0.9998372395833334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_1000.pt",
+      "statistics": {
+        "mean": 0.03878044988805888,
+        "population_variance": 0.017504796333262403,
+        "history_variance": 0.001218586142215227,
+        "query_variance": 0.016286210191047177,
+        "query_variance_fraction": 0.9303855858122906,
+        "one_query_batch_se": 0.01653821159337445,
+        "all_query_batch_se": 0.004363531651324752,
+        "all_to_one_se_ratio": 0.26384543616994677,
+        "one_query_snr": 2.344899850210837,
+        "all_query_snr": 8.887399699801714,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.00024846332628174986,
+        "assigned_variance": 2.125110210157104e-05,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.3391622593178841,
+          "accuracy": 0.8994140625
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.3391622593178841,
+          "accuracy": 0.8994140625
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_1000.pt",
+      "statistics": {
+        "mean": 0.20491531318694545,
+        "population_variance": 0.10776725213828854,
+        "history_variance": 0.003109961018429065,
+        "query_variance": 0.10465729111985948,
+        "query_variance_fraction": 0.971141873280407,
+        "one_query_batch_se": 0.04103490361461518,
+        "all_query_batch_se": 0.0069708780589646056,
+        "all_to_one_se_ratio": 0.16987679865006006,
+        "one_query_snr": 4.993683307055749,
+        "all_query_snr": 29.395911311835775,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.004070588693818719,
+        "assigned_variance": 0.00010651551867921932,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.4524962789173685,
+          "accuracy": 0.639404296875
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.4524962789173685,
+          "accuracy": 0.639404296875
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_2000.pt",
+      "statistics": {
+        "mean": -5.563600335683897e-10,
+        "population_variance": 1.658780100702668e-17,
+        "history_variance": 1.162624994437567e-17,
+        "query_variance": 4.9615510626510125e-18,
+        "query_variance_fraction": 0.29910842676188804,
+        "one_query_batch_se": 5.091015524772949e-10,
+        "all_query_batch_se": 4.2621609000701724e-10,
+        "all_to_one_se_ratio": 0.8371926739037509,
+        "one_query_snr": 1.09282721857974,
+        "all_query_snr": 1.3053473264212756,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -2.9459786609693796e-10,
+        "assigned_variance": 2.6210287957168984e-18,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 6.593207016345995e-05,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 6.593207016345995e-05,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_2000.pt",
+      "statistics": {
+        "mean": -6.751845070555054e-05,
+        "population_variance": 6.340722782797186e-05,
+        "history_variance": 8.033639468839013e-06,
+        "query_variance": 5.5373588359132823e-05,
+        "query_variance_fraction": 0.873300887863528,
+        "one_query_batch_se": 0.0009953581942256065,
+        "all_query_batch_se": 0.0003542959450806763,
+        "all_to_one_se_ratio": 0.3559481874324853,
+        "one_query_snr": 0.06783331980109956,
+        "all_query_snr": 0.19057076899419778,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.1587653994350393e-05,
+        "assigned_variance": 2.1983830577197088e-08,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.0030644531822911773,
+          "accuracy": 0.9990234375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.0030644531822911773,
+          "accuracy": 0.9990234375
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_2000.pt",
+      "statistics": {
+        "mean": 0.039030078899138475,
+        "population_variance": 0.018005031807069773,
+        "history_variance": 0.001268753758004441,
+        "query_variance": 0.016736278049065332,
+        "query_variance_fraction": 0.9295333786910469,
+        "one_query_batch_se": 0.016772853722174567,
+        "all_query_batch_se": 0.004452446234242407,
+        "all_to_one_se_ratio": 0.265455497793798,
+        "one_query_snr": 2.326979030857386,
+        "all_query_snr": 8.76598544839689,
+        "mean_pressure": "lower",
+        "assigned_mean": 6.226769121288503e-05,
+        "assigned_variance": 7.75495285530751e-07,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.3808019699299336,
+          "accuracy": 0.8992513020833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.3808019699299336,
+          "accuracy": 0.8992513020833334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_2000.pt",
+      "statistics": {
+        "mean": 0.20995762673564677,
+        "population_variance": 0.11017163191962599,
+        "history_variance": 0.0032732663566039113,
+        "query_variance": 0.10689836556302208,
+        "query_variance_fraction": 0.9702893902943013,
+        "one_query_batch_se": 0.041490140379904186,
+        "all_query_batch_se": 0.007151558349194678,
+        "all_to_one_se_ratio": 0.17236765852589273,
+        "one_query_snr": 5.060422182551594,
+        "all_query_snr": 29.358304370024424,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.000872230586192769,
+        "assigned_variance": 3.20532801309543e-06,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.764027108820681,
+          "accuracy": 0.6400960286458334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.764027108820681,
+          "accuracy": 0.6400960286458334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_3000.pt",
+      "statistics": {
+        "mean": -1.312664618048849e-10,
+        "population_variance": 1.0043130676501083e-18,
+        "history_variance": 6.930571433736097e-19,
+        "query_variance": 3.1125592427649843e-19,
+        "query_variance_fraction": 0.30991922170720637,
+        "one_query_batch_se": 1.2526927668839213e-10,
+        "all_query_batch_se": 1.040625670700692e-10,
+        "all_to_one_se_ratio": 0.8307110076872662,
+        "one_query_snr": 1.0478743493619014,
+        "all_query_snr": 1.2614186397736884,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -6.491400132443296e-11,
+        "assigned_variance": 1.1611108786150798e-19,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.7286639144412566e-05,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.7286639144412566e-05,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.00011073688377483896,
+        "population_variance": 8.830755182109585e-05,
+        "history_variance": 1.1043068734850542e-05,
+        "query_variance": 7.726448308624531e-05,
+        "query_variance_fraction": 0.8749476289726281,
+        "one_query_batch_se": 0.001174651223642415,
+        "all_query_batch_se": 0.00041538891292623557,
+        "all_to_one_se_ratio": 0.35362744665448664,
+        "one_query_snr": 0.09427213929208766,
+        "all_query_snr": 0.26658603619134996,
+        "mean_pressure": "lower",
+        "assigned_mean": -6.579035338774343e-06,
+        "assigned_variance": 2.2912904500137957e-09,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.002777151376793087,
+          "accuracy": 0.9990234375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.002777151376793087,
+          "accuracy": 0.9990234375
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.03875983254657037,
+        "population_variance": 0.01797069453675419,
+        "history_variance": 0.0012677362396937082,
+        "query_variance": 0.016702958297060477,
+        "query_variance_fraction": 0.929455356491598,
+        "one_query_batch_se": 0.01675685239347725,
+        "all_query_batch_se": 0.00445066048415448,
+        "all_to_one_se_ratio": 0.26560241623223574,
+        "one_query_snr": 2.313073579478326,
+        "all_query_snr": 8.708782142463024,
+        "mean_pressure": "lower",
+        "assigned_mean": 2.321141217159952e-05,
+        "assigned_variance": 9.72033280358772e-08,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.4120416442829223,
+          "accuracy": 0.898193359375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.4120416442829223,
+          "accuracy": 0.898193359375
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.21042069151284193,
+        "population_variance": 0.11012258754683012,
+        "history_variance": 0.003349632536439176,
+        "query_variance": 0.10677295501039093,
+        "query_variance_fraction": 0.9695826931508057,
+        "one_query_batch_se": 0.0414809044069584,
+        "all_query_batch_se": 0.007234501253152295,
+        "all_to_one_se_ratio": 0.17440558147374222,
+        "one_query_snr": 5.072712240033609,
+        "all_query_snr": 29.085721897021603,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.0003322984551347383,
+        "assigned_variance": 4.5161714213941773e-07,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.9558124702067765,
+          "accuracy": 0.640625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.9558124702067765,
+          "accuracy": 0.640625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 0,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_0.pt",
+      "statistics": {
+        "mean": 6.742705747140739e-06,
+        "population_variance": 4.624592068662333e-09,
+        "history_variance": 3.5569948922998332e-09,
+        "query_variance": 1.0675971763625001e-09,
+        "query_variance_fraction": 0.23085218339512992,
+        "one_query_batch_se": 8.500544163337366e-06,
+        "all_query_batch_se": 7.455068423038443e-06,
+        "all_to_one_se_ratio": 0.8770107277592847,
+        "one_query_snr": 0.7932087190631701,
+        "all_query_snr": 0.9044458567682243,
+        "mean_pressure": "lower",
+        "assigned_mean": 7.672181727302767e-06,
+        "assigned_variance": 6.7327263931457625e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 2.3422595420623797,
+          "accuracy": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 2.3422595420623797,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 0,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_0.pt",
+      "statistics": {
+        "mean": 0.009509014621825745,
+        "population_variance": 0.0004706787903522351,
+        "history_variance": 5.959560302996633e-05,
+        "query_variance": 0.0004110831873222688,
+        "query_variance_fraction": 0.8733837082708409,
+        "one_query_batch_se": 0.0027118916090532958,
+        "all_query_batch_se": 0.0009649773558707084,
+        "all_to_one_se_ratio": 0.35583183068573154,
+        "one_query_snr": 3.5064139695263417,
+        "all_query_snr": 9.854132393858785,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.011248739797375494,
+        "assigned_variance": 0.0005798277310214651,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 2.2891197815014652,
+          "accuracy": 0.010904947916666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 2.2891197815014652,
+          "accuracy": 0.010904947916666666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 0,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_0.pt",
+      "statistics": {
+        "mean": 0.018356980008968828,
+        "population_variance": 0.002251796203191486,
+        "history_variance": 0.0001512571765062767,
+        "query_variance": 0.0021005390266852094,
+        "query_variance_fraction": 0.9328282122991863,
+        "one_query_batch_se": 0.00593163684617214,
+        "all_query_batch_se": 0.0015373332049073076,
+        "all_to_one_se_ratio": 0.259175206570408,
+        "one_query_snr": 3.0947579032615806,
+        "all_query_snr": 11.940794585306344,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.017673681461749635,
+        "assigned_variance": 0.002178181144822096,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 2.1827677625158888,
+          "accuracy": 0.06266276041666667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 2.1827677625158888,
+          "accuracy": 0.06266276041666667
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 0,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_0.pt",
+      "statistics": {
+        "mean": 0.02813141077748446,
+        "population_variance": 0.004896230999637712,
+        "history_variance": 0.00017296263354391462,
+        "query_variance": 0.004723268366093798,
+        "query_variance_fraction": 0.9646743314282533,
+        "one_query_batch_se": 0.008746634173745878,
+        "all_query_batch_se": 0.0016439407377164378,
+        "all_to_one_se_ratio": 0.18795123987818452,
+        "one_query_snr": 3.216255558272281,
+        "all_query_snr": 17.112180586607515,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.032446208482746014,
+        "assigned_variance": 0.0050616015922425334,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 2.0820972807603924,
+          "accuracy": 0.10624186197916667
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 2.0820972807603924,
+          "accuracy": 0.10624186197916667
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 10,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_10.pt",
+      "statistics": {
+        "mean": 4.115258982546271e-06,
+        "population_variance": 2.7196932179517184e-09,
+        "history_variance": 2.1047927013250616e-09,
+        "query_variance": 6.149005166266565e-10,
+        "query_variance_fraction": 0.22609186674729304,
+        "one_query_batch_se": 6.518834752507199e-06,
+        "all_query_batch_se": 5.7347524757572655e-06,
+        "all_to_one_se_ratio": 0.879720485866225,
+        "one_query_snr": 0.6312875136102365,
+        "all_query_snr": 0.7176001056615537,
+        "mean_pressure": "lower",
+        "assigned_mean": 4.676346749351388e-06,
+        "assigned_variance": 3.953764818367285e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 2.082497969878473,
+          "accuracy": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 2.082497969878473,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 10,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_10.pt",
+      "statistics": {
+        "mean": 0.005315384875456005,
+        "population_variance": 0.0003101590290089623,
+        "history_variance": 3.94997612324243e-05,
+        "query_variance": 0.000270659267776538,
+        "query_variance_fraction": 0.8726467471908325,
+        "one_query_batch_se": 0.0022014165503750163,
+        "all_query_batch_se": 0.0007856104437038943,
+        "all_to_one_se_ratio": 0.3568658750975883,
+        "one_query_snr": 2.4145293513626567,
+        "all_query_snr": 6.765929498589297,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.006539906888880414,
+        "assigned_variance": 0.0003726430606314568,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 2.054227568861276,
+          "accuracy": 0.029296875
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 2.054227568861276,
+          "accuracy": 0.029296875
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 10,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_10.pt",
+      "statistics": {
+        "mean": 0.011339442989293213,
+        "population_variance": 0.0014973159042279106,
+        "history_variance": 0.00010255573233455266,
+        "query_variance": 0.001394760171893358,
+        "query_variance_fraction": 0.9315069505072576,
+        "one_query_batch_se": 0.004836895802429602,
+        "all_query_batch_se": 0.001265872551929058,
+        "all_to_one_se_ratio": 0.2617117679676297,
+        "one_query_snr": 2.3443637102121038,
+        "all_query_snr": 8.95780777615652,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.011586147267155145,
+        "assigned_variance": 0.0014092429979979564,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 2.0052612326731993,
+          "accuracy": 0.10408528645833333
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 2.0052612326731993,
+          "accuracy": 0.10408528645833333
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 10,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_10.pt",
+      "statistics": {
+        "mean": 0.018960182800417613,
+        "population_variance": 0.0033679114447600377,
+        "history_variance": 0.00011765055552885461,
+        "query_variance": 0.0032502608892311835,
+        "query_variance_fraction": 0.965067206350719,
+        "one_query_batch_se": 0.007254213694424475,
+        "all_query_batch_se": 0.0013558355099857627,
+        "all_to_one_se_ratio": 0.18690316650415825,
+        "one_query_snr": 2.6136785596749434,
+        "all_query_snr": 13.984132043139,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.021758420663373235,
+        "assigned_variance": 0.0034709868492789468,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.9594078761504068,
+          "accuracy": 0.13431803385416666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.9594078761504068,
+          "accuracy": 0.13431803385416666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 100,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_100.pt",
+      "statistics": {
+        "mean": -6.042251074022077e-06,
+        "population_variance": 3.048922495625e-09,
+        "history_variance": 2.5141983221037277e-09,
+        "query_variance": 5.347241735212732e-10,
+        "query_variance_fraction": 0.17538135990290557,
+        "one_query_batch_se": 6.902131119744149e-06,
+        "all_query_batch_se": 6.267722774889677e-06,
+        "all_to_one_se_ratio": 0.9080851502458869,
+        "one_query_snr": 0.8754181816015766,
+        "all_query_snr": 0.9640265357984713,
+        "mean_pressure": "higher",
+        "assigned_mean": -7.994821877171207e-06,
+        "assigned_variance": 5.192934191976402e-09,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.6580043938943532,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.6580043938943532,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 100,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_100.pt",
+      "statistics": {
+        "mean": -0.012864094861947986,
+        "population_variance": 0.00037232805266738993,
+        "history_variance": 3.229089881481789e-05,
+        "query_variance": 0.000340037153852572,
+        "query_variance_fraction": 0.9132729898177611,
+        "one_query_batch_se": 0.002411975502140925,
+        "all_query_batch_se": 0.0007103135180900963,
+        "all_to_one_se_ratio": 0.29449449940913813,
+        "one_query_snr": 5.333426832291423,
+        "all_query_snr": 18.110446351263587,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.014298784189031305,
+        "assigned_variance": 0.00039456179597924983,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.7388760206090424,
+          "accuracy": 0.9847005208333334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.7388760206090424,
+          "accuracy": 0.9847005208333334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 100,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_100.pt",
+      "statistics": {
+        "mean": -0.008705726773549019,
+        "population_variance": 0.0034639007573710537,
+        "history_variance": 0.00011965235820561968,
+        "query_variance": 0.003344248399165433,
+        "query_variance_fraction": 0.9654573365154863,
+        "one_query_batch_se": 0.007356864096469549,
+        "all_query_batch_se": 0.0013673215046077522,
+        "all_to_one_se_ratio": 0.1858565669663396,
+        "one_query_snr": 1.1833475050499804,
+        "all_query_snr": 6.366993237663191,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0024530609373440036,
+        "assigned_variance": 0.003789509517482415,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.0297275126808054,
+          "accuracy": 0.8023274739583334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.0297275126808054,
+          "accuracy": 0.8023274739583334
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 100,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_100.pt",
+      "statistics": {
+        "mean": 0.018162409536768787,
+        "population_variance": 0.011050261781902751,
+        "history_variance": 0.00029414183564505303,
+        "query_variance": 0.010756119946257697,
+        "query_variance_fraction": 0.9733814599644348,
+        "one_query_batch_se": 0.013140028171287552,
+        "all_query_batch_se": 0.002143820464020706,
+        "all_to_one_se_ratio": 0.16315189252829732,
+        "one_query_snr": 1.3822199846158403,
+        "all_query_snr": 8.47198253845634,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.010316240987430983,
+        "assigned_variance": 0.011728573775957088,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.3741334933737044,
+          "accuracy": 0.53515625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.3741334933737044,
+          "accuracy": 0.53515625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 300,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_300.pt",
+      "statistics": {
+        "mean": -8.939663334654603e-07,
+        "population_variance": 3.815403677503775e-11,
+        "history_variance": 3.463474897207429e-11,
+        "query_variance": 3.5192878029634537e-12,
+        "query_variance_fraction": 0.09223893722474853,
+        "one_query_batch_se": 7.721119249240778e-07,
+        "all_query_batch_se": 7.356411847420322e-07,
+        "all_to_one_se_ratio": 0.952764956731329,
+        "one_query_snr": 1.1578196173480475,
+        "all_query_snr": 1.215220615712194,
+        "mean_pressure": "higher",
+        "assigned_mean": -1.1488267584645552e-06,
+        "assigned_variance": 5.813647336840925e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.055632167851728774,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.055632167851728774,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 300,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_300.pt",
+      "statistics": {
+        "mean": -0.007559249202850431,
+        "population_variance": 0.0002492876504329741,
+        "history_variance": 2.3209713299343312e-05,
+        "query_variance": 0.0002260779371336308,
+        "query_variance_fraction": 0.9068958560160056,
+        "one_query_batch_se": 0.0019736057199996205,
+        "all_query_batch_se": 0.0006022057541258131,
+        "all_to_one_se_ratio": 0.3051297166517783,
+        "one_query_snr": 3.8301719164311527,
+        "all_query_snr": 12.552602081698392,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.009242624493467244,
+        "assigned_variance": 0.0002129827068909172,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.08763829253485124,
+          "accuracy": 0.99951171875
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.08763829253485124,
+          "accuracy": 0.99951171875
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 300,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_300.pt",
+      "statistics": {
+        "mean": 0.013107549112299841,
+        "population_variance": 0.013164130949738284,
+        "history_variance": 0.00047768879894055606,
+        "query_variance": 0.012686442150797726,
+        "query_variance_fraction": 0.9637128496545337,
+        "one_query_batch_se": 0.014341880842123208,
+        "all_query_batch_se": 0.002732011618468375,
+        "all_to_one_se_ratio": 0.1904918642500673,
+        "one_query_snr": 0.9139351565243773,
+        "all_query_snr": 4.797764776581813,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.026546791893462863,
+        "assigned_variance": 0.01290761716125067,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.39040732656870486,
+          "accuracy": 0.912353515625
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.39040732656870486,
+          "accuracy": 0.912353515625
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 300,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_300.pt",
+      "statistics": {
+        "mean": 0.12004293315278391,
+        "population_variance": 0.07385044417628323,
+        "history_variance": 0.00208182062829583,
+        "query_variance": 0.0717686235479874,
+        "query_variance_fraction": 0.9718103167622599,
+        "one_query_batch_se": 0.033969297759218184,
+        "all_query_batch_se": 0.0057033715745269786,
+        "all_to_one_se_ratio": 0.16789783571487774,
+        "one_query_snr": 3.533865610165818,
+        "all_query_snr": 21.04771389767638,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.09941913603983547,
+        "assigned_variance": 0.07378207047562187,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.0140796064816102,
+          "accuracy": 0.6576741536458334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.0140796064816102,
+          "accuracy": 0.6576741536458334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_1000.pt",
+      "statistics": {
+        "mean": -2.2403518787971075e-06,
+        "population_variance": 3.263535888667529e-11,
+        "history_variance": 2.9512987265357513e-11,
+        "query_variance": 3.1223716213177755e-12,
+        "query_variance_fraction": 0.09567449931100988,
+        "one_query_batch_se": 7.140920687168438e-07,
+        "all_query_batch_se": 6.790732110908301e-07,
+        "all_to_one_se_ratio": 0.950960304475949,
+        "one_query_snr": 3.137343175961622,
+        "all_query_snr": 3.299131584352025,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.3576759040602297e-06,
+        "assigned_variance": 3.369202837380237e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.0011182964055007185,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.0011182964055007185,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_1000.pt",
+      "statistics": {
+        "mean": -0.0043278359269519305,
+        "population_variance": 0.00011309630824276211,
+        "history_variance": 1.5188491352264014e-05,
+        "query_variance": 9.790781689049807e-05,
+        "query_variance_fraction": 0.8657030314405858,
+        "one_query_batch_se": 0.0013293343508286987,
+        "all_query_batch_se": 0.00048715518818865636,
+        "all_to_one_se_ratio": 0.3664655080077987,
+        "one_query_snr": 3.2556413849186887,
+        "all_query_snr": 8.883895793132613,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0044049561835099935,
+        "assigned_variance": 6.24798927647206e-05,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.006272141357717499,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.006272141357717499,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_1000.pt",
+      "statistics": {
+        "mean": 0.0020160112623500283,
+        "population_variance": 0.035057273840568025,
+        "history_variance": 0.001515779402289105,
+        "query_variance": 0.03354149443827892,
+        "query_variance_fraction": 0.9567627702832084,
+        "one_query_batch_se": 0.023404484693299175,
+        "all_query_batch_se": 0.004866626466122839,
+        "all_to_one_se_ratio": 0.20793563839994217,
+        "one_query_snr": 0.08613781883124402,
+        "all_query_snr": 0.41425231140785523,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.012485558804110813,
+        "assigned_variance": 0.031780466336440744,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.12366946212619079,
+          "accuracy": 0.974609375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.12366946212619079,
+          "accuracy": 0.974609375
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_1000.pt",
+      "statistics": {
+        "mean": 0.14059271304636925,
+        "population_variance": 0.29426584387970006,
+        "history_variance": 0.0062116613841314665,
+        "query_variance": 0.28805418249556863,
+        "query_variance_fraction": 0.9788909874750165,
+        "one_query_batch_se": 0.06780784475722786,
+        "all_query_batch_se": 0.009851761727074715,
+        "all_to_one_se_ratio": 0.14528940954172687,
+        "one_query_snr": 2.073398934145935,
+        "all_query_snr": 14.2708194677497,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.07906093908225321,
+        "assigned_variance": 0.19471053938880653,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.6043883446658496,
+          "accuracy": 0.8028157552083334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.6043883446658496,
+          "accuracy": 0.8028157552083334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_2000.pt",
+      "statistics": {
+        "mean": -3.277917777262526e-07,
+        "population_variance": 1.7517490774034236e-13,
+        "history_variance": 1.614468907717356e-13,
+        "query_variance": 1.3728016968606767e-14,
+        "query_variance_fraction": 0.07836748507928706,
+        "one_query_batch_se": 5.231737697403081e-08,
+        "all_query_batch_se": 5.022556787442397e-08,
+        "all_to_one_se_ratio": 0.9600169347051712,
+        "one_query_snr": 6.265447480078391,
+        "all_query_snr": 6.5263926641070755,
+        "mean_pressure": "higher",
+        "assigned_mean": -3.300133139299494e-07,
+        "assigned_variance": 1.7235347855457821e-13,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 5.372887585449764e-06,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 5.372887585449764e-06,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_2000.pt",
+      "statistics": {
+        "mean": -0.0020411355478056276,
+        "population_variance": 0.0002531011210599727,
+        "history_variance": 3.1825357851676955e-05,
+        "query_variance": 0.0002212757632082957,
+        "query_variance_fraction": 0.8742583291674321,
+        "one_query_batch_se": 0.0019886440145390713,
+        "all_query_batch_se": 0.000705174599962628,
+        "all_to_one_se_ratio": 0.3546007202933571,
+        "one_query_snr": 1.0263956408903696,
+        "all_query_snr": 2.8945108742059076,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.003581903314877616,
+        "assigned_variance": 0.0009249812890117921,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.001400779945871426,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.001400779945871426,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_2000.pt",
+      "statistics": {
+        "mean": -0.011991898753234689,
+        "population_variance": 0.033649610737288733,
+        "history_variance": 0.0016056610297332597,
+        "query_variance": 0.03204394970755548,
+        "query_variance_fraction": 0.9522829240947521,
+        "one_query_batch_se": 0.022929787782928486,
+        "all_query_batch_se": 0.00500883754873146,
+        "all_to_one_se_ratio": 0.21844238577997666,
+        "one_query_snr": 0.5229834164519747,
+        "all_query_snr": 2.3941480705980895,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.02389111255183779,
+        "assigned_variance": 0.005379810264675694,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.056427864397129525,
+          "accuracy": 0.9886881510416666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.056427864397129525,
+          "accuracy": 0.9886881510416666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_2000.pt",
+      "statistics": {
+        "mean": 0.062471693144241315,
+        "population_variance": 0.3299759283859303,
+        "history_variance": 0.006791862980320945,
+        "query_variance": 0.3231840654056094,
+        "query_variance_fraction": 0.9794170956240864,
+        "one_query_batch_se": 0.07180441407761894,
+        "all_query_batch_se": 0.010301594976872016,
+        "all_to_one_se_ratio": 0.14346743315440505,
+        "one_query_snr": 0.8700258047744925,
+        "all_query_snr": 6.064273860940538,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.00737402143600258,
+        "assigned_variance": 0.17147909610293313,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.42673785352758786,
+          "accuracy": 0.866455078125
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.42673785352758786,
+          "accuracy": 0.866455078125
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_3000.pt",
+      "statistics": {
+        "mean": -8.666384374736248e-09,
+        "population_variance": 1.1444339634009962e-16,
+        "history_variance": 1.0187737829930387e-16,
+        "query_variance": 1.2566018040795749e-17,
+        "query_variance_fraction": 0.1098011632182989,
+        "one_query_batch_se": 1.3372277546529075e-09,
+        "all_query_batch_se": 1.2616790542474037e-09,
+        "all_to_one_se_ratio": 0.9435034906038775,
+        "one_query_snr": 6.480858884794614,
+        "all_query_snr": 6.8689294203316855,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -8.800838400017517e-09,
+        "assigned_variance": 1.1442342166511926e-16,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 2.778824318139089e-08,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 2.778824318139089e-08,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_3000.pt",
+      "statistics": {
+        "mean": -0.0011844633466995703,
+        "population_variance": 0.00013636730200222827,
+        "history_variance": 1.8270789695739874e-05,
+        "query_variance": 0.0001180965123064884,
+        "query_variance_fraction": 0.8660178105199932,
+        "one_query_batch_se": 0.0014597051393294526,
+        "all_query_batch_se": 0.0005343043037407949,
+        "all_to_one_se_ratio": 0.36603577622960154,
+        "one_query_snr": 0.8114401427973866,
+        "all_query_snr": 2.2168328767087466,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.001630384757846439,
+        "assigned_variance": 0.00024463400014398826,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.0006211077657731064,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.0006211077657731064,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_3000.pt",
+      "statistics": {
+        "mean": -0.014123702283735065,
+        "population_variance": 0.025984001395761746,
+        "history_variance": 0.0014293456038429377,
+        "query_variance": 0.024554655791918806,
+        "query_variance_fraction": 0.944991320540951,
+        "one_query_batch_se": 0.020149442220785598,
+        "all_query_batch_se": 0.004725835911248496,
+        "all_to_one_se_ratio": 0.23453929193004938,
+        "one_query_snr": 0.7009475562140103,
+        "all_query_snr": 2.988614617388142,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.02559925485211685,
+        "assigned_variance": 0.00940014541241938,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.034622845934044987,
+          "accuracy": 0.9972330729166666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.034622845934044987,
+          "accuracy": 0.9972330729166666
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3461_resampled_3000.pt",
+      "statistics": {
+        "mean": 0.03394068026539296,
+        "population_variance": 0.32030311350631935,
+        "history_variance": 0.007048005476705507,
+        "query_variance": 0.3132551080296138,
+        "query_variance_fraction": 0.9779958258926931,
+        "one_query_batch_se": 0.07074415981928289,
+        "all_query_batch_se": 0.010494050008148596,
+        "all_to_one_se_ratio": 0.1483380399874112,
+        "one_query_snr": 0.47976653270170966,
+        "all_query_snr": 3.2342784948650074,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.03258187853117466,
+        "assigned_variance": 0.17678776585705402,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.33718090636017745,
+          "accuracy": 0.8975423177083334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.33718090636017745,
+          "accuracy": 0.8975423177083334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 0,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_0.pt",
+      "statistics": {
+        "mean": -4.770149271114363e-07,
+        "population_variance": 9.095165582926191e-11,
+        "history_variance": 4.6032717767958745e-11,
+        "query_variance": 4.491893806130317e-11,
+        "query_variance_fraction": 0.4938770784517304,
+        "one_query_batch_se": 1.192107219310502e-06,
+        "all_query_batch_se": 8.480926925309258e-07,
+        "all_to_one_se_ratio": 0.7114231662999664,
+        "one_query_snr": 0.4001443153639611,
+        "all_query_snr": 0.5624561222051113,
+        "mean_pressure": "higher",
+        "assigned_mean": -6.052536377708012e-07,
+        "assigned_variance": 1.36495590356642e-10,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.6204633953366017,
+          "accuracy": 0.5
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.6204633953366017,
+          "accuracy": 0.5
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 0,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_0.pt",
+      "statistics": {
+        "mean": -0.0024703104650821597,
+        "population_variance": 0.00014703259148706054,
+        "history_variance": 1.6991576055514698e-05,
+        "query_variance": 0.00013004101543154584,
+        "query_variance_fraction": 0.8844366688795658,
+        "one_query_batch_se": 0.0015157124535957738,
+        "all_query_batch_se": 0.0005152604932142742,
+        "all_to_one_se_ratio": 0.3399460709001269,
+        "one_query_snr": 1.629801522855976,
+        "all_query_snr": 4.794294337747463,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0030428271186464036,
+        "assigned_variance": 0.00015081025152156334,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 1.637662583406564,
+          "accuracy": 0.4698893229166667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 1.637662583406564,
+          "accuracy": 0.4698893229166667
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 0,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_0.pt",
+      "statistics": {
+        "mean": -0.0009964568102167738,
+        "population_variance": 0.0006390774322517335,
+        "history_variance": 3.647895068366468e-05,
+        "query_variance": 0.0006025984815680688,
+        "query_variance_fraction": 0.9429193571190048,
+        "one_query_batch_se": 0.003159997607425255,
+        "all_query_batch_se": 0.0007549725852190002,
+        "all_to_one_se_ratio": 0.2389155559627613,
+        "one_query_snr": 0.3153346723666289,
+        "all_query_snr": 1.319858269989664,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.00024862107140739934,
+        "assigned_variance": 0.0005932344295470445,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.687083471600344,
+          "accuracy": 0.3773600260416667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.687083471600344,
+          "accuracy": 0.3773600260416667
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 0,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_0.pt",
+      "statistics": {
+        "mean": 0.0034900930365751055,
+        "population_variance": 0.0015584175238452954,
+        "history_variance": 4.4105941788832215e-05,
+        "query_variance": 0.001514311582056463,
+        "query_variance_fraction": 0.9716982508769514,
+        "one_query_batch_se": 0.004934599660568499,
+        "all_query_batch_se": 0.0008301538052978517,
+        "all_to_one_se_ratio": 0.16823123706092347,
+        "one_query_snr": 0.707269743574907,
+        "all_query_snr": 4.204152308044763,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.005019007032060216,
+        "assigned_variance": 0.0016353281725339705,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.7408463931259746,
+          "accuracy": 0.2904052734375
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.7408463931259746,
+          "accuracy": 0.2904052734375
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 10,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_10.pt",
+      "statistics": {
+        "mean": -1.106597530199883e-06,
+        "population_variance": 8.646755517951823e-11,
+        "history_variance": 4.556494190972057e-11,
+        "query_variance": 4.0902613269797667e-11,
+        "query_variance_fraction": 0.47304001119123074,
+        "one_query_batch_se": 1.162349151365446e-06,
+        "all_query_batch_se": 8.437726099722507e-07,
+        "all_to_one_se_ratio": 0.7259200980884668,
+        "one_query_snr": 0.9520353922054574,
+        "all_query_snr": 1.31148785480993,
+        "mean_pressure": "higher",
+        "assigned_mean": -1.5320875167976418e-06,
+        "assigned_variance": 1.310202180770612e-10,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.4619740432485255,
+          "accuracy": 0.6666666666666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.4619740432485255,
+          "accuracy": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 10,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_10.pt",
+      "statistics": {
+        "mean": -0.004796232131740394,
+        "population_variance": 0.00014850608334616226,
+        "history_variance": 1.6617002461862688e-05,
+        "query_variance": 0.00013188908088429955,
+        "query_variance_fraction": 0.8881055773107349,
+        "one_query_batch_se": 0.0015232884008892686,
+        "all_query_batch_se": 0.0005095494710689086,
+        "all_to_one_se_ratio": 0.33450623714553507,
+        "one_query_snr": 3.1486041178679223,
+        "all_query_snr": 9.412691807292209,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.005601880209685001,
+        "assigned_variance": 0.00015899215425450313,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 1.4949714310345275,
+          "accuracy": 0.6375325520833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 1.4949714310345275,
+          "accuracy": 0.6375325520833334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 10,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_10.pt",
+      "statistics": {
+        "mean": -0.0035382312879578518,
+        "population_variance": 0.0007081973748274758,
+        "history_variance": 3.382445945418941e-05,
+        "query_variance": 0.0006743729153732863,
+        "query_variance_fraction": 0.9522386545665613,
+        "one_query_batch_se": 0.003326497254121715,
+        "all_query_batch_se": 0.0007269849922603007,
+        "all_to_one_se_ratio": 0.2185436922755688,
+        "one_query_snr": 1.0636507466145617,
+        "all_query_snr": 4.866993577070942,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0025787510911791174,
+        "assigned_variance": 0.0006422800060112339,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.5817500339009036,
+          "accuracy": 0.489501953125
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.5817500339009036,
+          "accuracy": 0.489501953125
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 10,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_10.pt",
+      "statistics": {
+        "mean": 0.0022441701006487512,
+        "population_variance": 0.0018683426763208405,
+        "history_variance": 4.591479254240918e-05,
+        "query_variance": 0.001822427883778431,
+        "query_variance_fraction": 0.9754248548061721,
+        "one_query_batch_se": 0.005403041210051348,
+        "all_query_batch_se": 0.0008470056868021273,
+        "all_to_one_se_ratio": 0.15676461716161474,
+        "one_query_snr": 0.41535313417078745,
+        "all_query_snr": 2.6495336874556568,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.003066803877838345,
+        "assigned_variance": 0.0019498103516316161,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.6777265649120576,
+          "accuracy": 0.3536783854166667
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.6777265649120576,
+          "accuracy": 0.3536783854166667
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 100,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_100.pt",
+      "statistics": {
+        "mean": -1.390474608035144e-06,
+        "population_variance": 5.257392473027438e-11,
+        "history_variance": 2.9758774977849014e-11,
+        "query_variance": 2.281514975242536e-11,
+        "query_variance_fraction": 0.433963221682162,
+        "one_query_batch_se": 9.063484837028952e-07,
+        "all_query_batch_se": 6.818950498639002e-07,
+        "all_to_one_se_ratio": 0.7523541575068472,
+        "one_query_snr": 1.5341500902107177,
+        "all_query_snr": 2.039132867019154,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.0338697493859836e-06,
+        "assigned_variance": 8.787593512728762e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.47310148694623094,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.47310148694623094,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 100,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_100.pt",
+      "statistics": {
+        "mean": -0.011953135224588041,
+        "population_variance": 0.00039181401102149436,
+        "history_variance": 3.765721482399098e-05,
+        "query_variance": 0.0003541567961975035,
+        "query_variance_fraction": 0.9038900759934155,
+        "one_query_batch_se": 0.0024742865481206596,
+        "all_query_batch_se": 0.0007670684334691782,
+        "all_to_one_se_ratio": 0.31001600604901797,
+        "one_query_snr": 4.8309421694375,
+        "all_query_snr": 15.582879835803247,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.014051203436456036,
+        "assigned_variance": 0.0004066170848117988,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.5615228487954439,
+          "accuracy": 0.990234375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.5615228487954439,
+          "accuracy": 0.990234375
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 100,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_100.pt",
+      "statistics": {
+        "mean": -0.005243941921626882,
+        "population_variance": 0.003327546465556624,
+        "history_variance": 0.00014073448327879125,
+        "query_variance": 0.0031868119822778328,
+        "query_variance_fraction": 0.9577062304807668,
+        "one_query_batch_se": 0.0072106111755053225,
+        "all_query_batch_se": 0.0014828945684812233,
+        "all_to_one_se_ratio": 0.20565449063716867,
+        "one_query_snr": 0.7272534593795212,
+        "all_query_snr": 3.536287766565706,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.003165251344499675,
+        "assigned_variance": 0.0029917637756209804,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.8676728106696189,
+          "accuracy": 0.8395182291666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.8676728106696189,
+          "accuracy": 0.8395182291666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 100,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_100.pt",
+      "statistics": {
+        "mean": 0.02847626910797003,
+        "population_variance": 0.012971039904984119,
+        "history_variance": 0.0003010810301782389,
+        "query_variance": 0.01266995887480588,
+        "query_variance_fraction": 0.9767882118639888,
+        "one_query_batch_se": 0.01423630916057167,
+        "all_query_batch_se": 0.0021689608333335534,
+        "all_to_one_se_ratio": 0.15235415365526223,
+        "one_query_snr": 2.000256441946119,
+        "all_query_snr": 13.128991851920091,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.02543255809187711,
+        "assigned_variance": 0.01298174904813753,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.2963960213194032,
+          "accuracy": 0.5667317708333334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.2963960213194032,
+          "accuracy": 0.5667317708333334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 300,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_300.pt",
+      "statistics": {
+        "mean": -6.650484940882621e-07,
+        "population_variance": 1.3216226202420277e-11,
+        "history_variance": 7.337484999158091e-12,
+        "query_variance": 5.8787412032621874e-12,
+        "query_variance_fraction": 0.44481239297989755,
+        "one_query_batch_se": 4.544265995876747e-07,
+        "all_query_batch_se": 3.3859740564842663e-07,
+        "all_to_one_se_ratio": 0.745109124236244,
+        "one_query_snr": 1.463489361519981,
+        "all_query_snr": 1.9641275538265555,
+        "mean_pressure": "higher",
+        "assigned_mean": -1.0249580651932412e-06,
+        "assigned_variance": 2.470988023946879e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.04215085903705518,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.04215085903705518,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 300,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_300.pt",
+      "statistics": {
+        "mean": -0.006039840259371397,
+        "population_variance": 0.00044546906362068797,
+        "history_variance": 4.957108221719295e-05,
+        "query_variance": 0.000395897981403495,
+        "query_variance_fraction": 0.8887216054594486,
+        "one_query_batch_se": 0.0026382672569459768,
+        "all_query_batch_se": 0.0008800841775896439,
+        "all_to_one_se_ratio": 0.3335841641033811,
+        "one_query_snr": 2.2893208576461794,
+        "all_query_snr": 6.862798369939095,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.008443158287810617,
+        "assigned_variance": 0.0003319784954024516,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.07768777016157566,
+          "accuracy": 0.9962565104166666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.07768777016157566,
+          "accuracy": 0.9962565104166666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 300,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_300.pt",
+      "statistics": {
+        "mean": 0.0154025764349323,
+        "population_variance": 0.011819117564037232,
+        "history_variance": 0.0006896916471617088,
+        "query_variance": 0.011129425916875524,
+        "query_variance_fraction": 0.9416460963836863,
+        "one_query_batch_se": 0.013589470627588175,
+        "all_query_batch_se": 0.003282747627659138,
+        "all_to_one_se_ratio": 0.24156552654779548,
+        "one_query_snr": 1.1334198996437221,
+        "all_query_snr": 4.691977021064994,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.015434284855364815,
+        "assigned_variance": 0.008627284380952878,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.3506013350711506,
+          "accuracy": 0.9119466145833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.3506013350711506,
+          "accuracy": 0.9119466145833334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 300,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_300.pt",
+      "statistics": {
+        "mean": 0.13119321980573626,
+        "population_variance": 0.08086472780483737,
+        "history_variance": 0.001690583026139083,
+        "query_variance": 0.07917414477869829,
+        "query_variance_fraction": 0.979093690512145,
+        "one_query_batch_se": 0.035545905136183886,
+        "all_query_batch_se": 0.0051395875110190675,
+        "all_to_one_se_ratio": 0.1445901431213587,
+        "one_query_snr": 3.690811059758002,
+        "all_query_snr": 25.526021207823256,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.12350266639887779,
+        "assigned_variance": 0.07832285458751986,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.0088714212923517,
+          "accuracy": 0.6610514322916666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.0088714212923517,
+          "accuracy": 0.6610514322916666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_1000.pt",
+      "statistics": {
+        "mean": -2.2985193121355476e-06,
+        "population_variance": 9.416266165692126e-11,
+        "history_variance": 6.349338200278963e-11,
+        "query_variance": 3.066927965413163e-11,
+        "query_variance_fraction": 0.32570531795154856,
+        "one_query_batch_se": 1.212968090425051e-06,
+        "all_query_batch_se": 9.960341830447327e-07,
+        "all_to_one_se_ratio": 0.8211544812326433,
+        "one_query_snr": 1.89495447595006,
+        "all_query_snr": 2.3076711133641075,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.895808560180442e-06,
+        "assigned_variance": 1.7001541155152313e-10,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.0009848794454491879,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.0009848794454491879,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_1000.pt",
+      "statistics": {
+        "mean": -0.004525714921222057,
+        "population_variance": 0.00043498933292029587,
+        "history_variance": 5.277931621592156e-05,
+        "query_variance": 0.00038221001670437417,
+        "query_variance_fraction": 0.8786652632109657,
+        "one_query_batch_se": 0.0026070497361729834,
+        "all_query_batch_se": 0.0009081171817963662,
+        "all_to_one_se_ratio": 0.3483313606166318,
+        "one_query_snr": 1.735952658834034,
+        "all_query_snr": 4.983624373530344,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.004988520869820869,
+        "assigned_variance": 0.00020245203362066983,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.008276705173966184,
+          "accuracy": 0.99853515625
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.008276705173966184,
+          "accuracy": 0.99853515625
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_1000.pt",
+      "statistics": {
+        "mean": -0.00029190906214477774,
+        "population_variance": 0.025679857647208103,
+        "history_variance": 0.0013544623154801549,
+        "query_variance": 0.02432539533172795,
+        "query_variance_fraction": 0.947255847984523,
+        "one_query_batch_se": 0.020031170104055994,
+        "all_query_batch_se": 0.004600377558350773,
+        "all_to_one_se_ratio": 0.22966095013187818,
+        "one_query_snr": 0.014572741413926229,
+        "all_query_snr": 0.06345328365818449,
+        "mean_pressure": "higher",
+        "assigned_mean": 0.0008144804840497564,
+        "assigned_variance": 0.02315934838190356,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.11201822089204598,
+          "accuracy": 0.9781901041666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.11201822089204598,
+          "accuracy": 0.9781901041666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 1000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_1000.pt",
+      "statistics": {
+        "mean": 0.15331438766507385,
+        "population_variance": 0.32677046128437975,
+        "history_variance": 0.0043928904270935844,
+        "query_variance": 0.32237757085728613,
+        "query_variance_fraction": 0.9865566477158699,
+        "one_query_batch_se": 0.0714548001016617,
+        "all_query_batch_se": 0.00828486046492862,
+        "all_to_one_se_ratio": 0.11594547116696717,
+        "one_query_snr": 2.1456135549598785,
+        "all_query_snr": 18.505367509094768,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.13848865930132434,
+        "assigned_variance": 0.2802704213981733,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.616990170677186,
+          "accuracy": 0.7997233072916666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.616990170677186,
+          "accuracy": 0.7997233072916666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_2000.pt",
+      "statistics": {
+        "mean": -3.099374919125827e-07,
+        "population_variance": 1.3553689719645692e-12,
+        "history_variance": 9.56791870233661e-13,
+        "query_variance": 3.9857710173090784e-13,
+        "query_variance_fraction": 0.2940727654058522,
+        "one_query_batch_se": 1.4552539361550064e-07,
+        "all_query_batch_se": 1.2226967315078973e-07,
+        "all_to_one_se_ratio": 0.8401947599182866,
+        "one_query_snr": 2.1297828798971183,
+        "all_query_snr": 2.534868082376818,
+        "mean_pressure": "higher",
+        "assigned_mean": -3.748748119086292e-07,
+        "assigned_variance": 2.5391169088272054e-12,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 3.518491898272986e-06,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 3.518491898272986e-06,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_2000.pt",
+      "statistics": {
+        "mean": -0.0014287509609422413,
+        "population_variance": 0.00012470260844917822,
+        "history_variance": 1.3463571018262203e-05,
+        "query_variance": 0.000111239037430916,
+        "query_variance_fraction": 0.8920345677953544,
+        "one_query_batch_se": 0.0013958790266417824,
+        "all_query_batch_se": 0.00045865923860786555,
+        "all_to_one_se_ratio": 0.32858093706824426,
+        "one_query_snr": 1.0235492715866235,
+        "all_query_snr": 3.1150598105879723,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.00131324322869265,
+        "assigned_variance": 8.27640541532568e-05,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.001587956673232861,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.001587956673232861,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_2000.pt",
+      "statistics": {
+        "mean": -0.016625049693314936,
+        "population_variance": 0.013695206820248357,
+        "history_variance": 0.000871923978260688,
+        "query_variance": 0.01282328284198767,
+        "query_variance_fraction": 0.9363336392283214,
+        "one_query_batch_se": 0.014628315233354132,
+        "all_query_batch_se": 0.0036910448602425912,
+        "all_to_one_se_ratio": 0.2523219387442931,
+        "one_query_snr": 1.136497910258868,
+        "all_query_snr": 4.504158124001307,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0056563766057258985,
+        "assigned_variance": 0.02403377399382259,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.046230082844899434,
+          "accuracy": 0.9918619791666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.046230082844899434,
+          "accuracy": 0.9918619791666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 2000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_2000.pt",
+      "statistics": {
+        "mean": 0.06232140874413644,
+        "population_variance": 0.3249628291461976,
+        "history_variance": 0.005292222894865029,
+        "query_variance": 0.3196706062513326,
+        "query_variance_fraction": 0.9837143746293392,
+        "one_query_batch_se": 0.07125688882774309,
+        "all_query_batch_se": 0.009093458238330788,
+        "all_to_one_se_ratio": 0.1276151455379055,
+        "one_query_snr": 0.8746018773678522,
+        "all_query_snr": 6.853433216577489,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.009712035299566735,
+        "assigned_variance": 0.24312487856317402,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.4039124025849638,
+          "accuracy": 0.8685709635416666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.4039124025849638,
+          "accuracy": 0.8685709635416666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_3000.pt",
+      "statistics": {
+        "mean": -9.540423985863097e-09,
+        "population_variance": 5.603783104685641e-15,
+        "history_variance": 3.3349357603910018e-15,
+        "query_variance": 2.2688473442946407e-15,
+        "query_variance_fraction": 0.4048777945023476,
+        "one_query_batch_se": 9.3573025499186e-09,
+        "all_query_batch_se": 7.218612834617839e-09,
+        "all_to_one_se_ratio": 0.7714416410187179,
+        "one_query_snr": 1.0195698958078565,
+        "all_query_snr": 1.3216422884062569,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -1.4082891633148844e-08,
+        "assigned_variance": 1.105236806478631e-14,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.3940785270183332e-08,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.3940785270183332e-08,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_3000.pt",
+      "statistics": {
+        "mean": -0.0008229763861141388,
+        "population_variance": 0.00020581015932173482,
+        "history_variance": 2.700370646438551e-05,
+        "query_variance": 0.00017880645285734935,
+        "query_variance_fraction": 0.8687931317220757,
+        "one_query_batch_se": 0.0017932606445807333,
+        "all_query_batch_se": 0.0006495636331461481,
+        "all_to_one_se_ratio": 0.3622248863315778,
+        "one_query_snr": 0.4589273670847507,
+        "all_query_snr": 1.2669680753647947,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0008253512499114321,
+        "assigned_variance": 1.645330104819038e-05,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.0007195335909290227,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.0007195335909290227,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_3000.pt",
+      "statistics": {
+        "mean": -0.018016356288985107,
+        "population_variance": 0.007674566004630598,
+        "history_variance": 0.0005470375515317532,
+        "query_variance": 0.007127528453098844,
+        "query_variance_fraction": 0.9287207183830737,
+        "one_query_batch_se": 0.01095057504528201,
+        "all_query_batch_se": 0.0029236042383817347,
+        "all_to_one_se_ratio": 0.2669818001604721,
+        "one_query_snr": 1.645242940620488,
+        "all_query_snr": 6.162378632669335,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.012547179454191931,
+        "assigned_variance": 0.01424210874734088,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.027117511795172095,
+          "accuracy": 0.9961751302083334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.027117511795172095,
+          "accuracy": 0.9961751302083334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "step": 3000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_resampled_3000.pt",
+      "statistics": {
+        "mean": 0.026253603162736016,
+        "population_variance": 0.28724883786321237,
+        "history_variance": 0.005503044143323349,
+        "query_variance": 0.28174579371988906,
+        "query_variance_fraction": 0.9808422405317307,
+        "one_query_batch_se": 0.06699450045796813,
+        "all_query_batch_se": 0.009272813205248304,
+        "all_to_one_se_ratio": 0.13841155829001217,
+        "one_query_snr": 0.39187698965241685,
+        "all_query_snr": 2.8312446915113942,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.037097025262685664,
+        "assigned_variance": 0.1819555160869902,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 0.30973763645638974,
+          "accuracy": 0.9003092447916666
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 0.30973763645638974,
+          "accuracy": 0.9003092447916666
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 0,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_0.pt",
+      "statistics": {
+        "mean": -4.770149271114363e-07,
+        "population_variance": 9.095165582926191e-11,
+        "history_variance": 4.6032717767958745e-11,
+        "query_variance": 4.491893806130317e-11,
+        "query_variance_fraction": 0.4938770784517304,
+        "one_query_batch_se": 1.192107219310502e-06,
+        "all_query_batch_se": 8.480926925309258e-07,
+        "all_to_one_se_ratio": 0.7114231662999664,
+        "one_query_snr": 0.4001443153639611,
+        "all_query_snr": 0.5624561222051113,
+        "mean_pressure": "higher",
+        "assigned_mean": -6.052536377708012e-07,
+        "assigned_variance": 1.36495590356642e-10,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.6204633953366017,
+          "accuracy": 0.5
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.6204633953366017,
+          "accuracy": 0.5
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 0,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_0.pt",
+      "statistics": {
+        "mean": -0.0024703104650821597,
+        "population_variance": 0.00014703259148706054,
+        "history_variance": 1.6991576055514698e-05,
+        "query_variance": 0.00013004101543154584,
+        "query_variance_fraction": 0.8844366688795658,
+        "one_query_batch_se": 0.0015157124535957738,
+        "all_query_batch_se": 0.0005152604932142742,
+        "all_to_one_se_ratio": 0.3399460709001269,
+        "one_query_snr": 1.629801522855976,
+        "all_query_snr": 4.794294337747463,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0030428271186464036,
+        "assigned_variance": 0.00015081025152156334,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 1.637662583406564,
+          "accuracy": 0.4698893229166667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 1.637662583406564,
+          "accuracy": 0.4698893229166667
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 0,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_0.pt",
+      "statistics": {
+        "mean": -0.0009964568102167738,
+        "population_variance": 0.0006390774322517335,
+        "history_variance": 3.647895068366468e-05,
+        "query_variance": 0.0006025984815680688,
+        "query_variance_fraction": 0.9429193571190048,
+        "one_query_batch_se": 0.003159997607425255,
+        "all_query_batch_se": 0.0007549725852190002,
+        "all_to_one_se_ratio": 0.2389155559627613,
+        "one_query_snr": 0.3153346723666289,
+        "all_query_snr": 1.319858269989664,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.00024862107140739934,
+        "assigned_variance": 0.0005932344295470445,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.687083471600344,
+          "accuracy": 0.3773600260416667
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.687083471600344,
+          "accuracy": 0.3773600260416667
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 0,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_0.pt",
+      "statistics": {
+        "mean": 0.0034900930365751055,
+        "population_variance": 0.0015584175238452954,
+        "history_variance": 4.4105941788832215e-05,
+        "query_variance": 0.001514311582056463,
+        "query_variance_fraction": 0.9716982508769514,
+        "one_query_batch_se": 0.004934599660568499,
+        "all_query_batch_se": 0.0008301538052978517,
+        "all_to_one_se_ratio": 0.16823123706092347,
+        "one_query_snr": 0.707269743574907,
+        "all_query_snr": 4.204152308044763,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.005019007032060216,
+        "assigned_variance": 0.0016353281725339705,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.7408463931259746,
+          "accuracy": 0.2904052734375
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.7408463931259746,
+          "accuracy": 0.2904052734375
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 10,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_10.pt",
+      "statistics": {
+        "mean": -1.1083575661710923e-06,
+        "population_variance": 7.931799026650708e-11,
+        "history_variance": 4.303585361242174e-11,
+        "query_variance": 3.628213665408536e-11,
+        "query_variance_fraction": 0.45742632323610327,
+        "one_query_batch_se": 1.1132581003137472e-06,
+        "all_query_batch_se": 8.200214708738361e-07,
+        "all_to_one_se_ratio": 0.7365960064810947,
+        "one_query_snr": 0.9955980251648079,
+        "all_query_snr": 1.3516201776887595,
+        "mean_pressure": "higher",
+        "assigned_mean": -1.4780335481407765e-06,
+        "assigned_variance": 1.1454436128455108e-10,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.4614125872603736,
+          "accuracy": 0.6666666666666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.4614125872603736,
+          "accuracy": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 10,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_10.pt",
+      "statistics": {
+        "mean": -0.0047947090608790235,
+        "population_variance": 0.00014850558579315777,
+        "history_variance": 1.657550581901047e-05,
+        "query_variance": 0.00013193007997414733,
+        "query_variance_fraction": 0.8883846305815243,
+        "one_query_batch_se": 0.0015232858490835167,
+        "all_query_batch_se": 0.0005089128397103365,
+        "all_to_one_se_ratio": 0.3340888645532441,
+        "one_query_snr": 3.147609533538144,
+        "all_query_snr": 9.421473947499695,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.005610175833076811,
+        "assigned_variance": 0.00015667483126672265,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 1.4945334821168057,
+          "accuracy": 0.6258138020833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 1.4945334821168057,
+          "accuracy": 0.6258138020833334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 10,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_10.pt",
+      "statistics": {
+        "mean": -0.003547307094600495,
+        "population_variance": 0.0007046061364825181,
+        "history_variance": 3.3606515967523776e-05,
+        "query_variance": 0.0006709996205149943,
+        "query_variance_fraction": 0.9523045369214471,
+        "one_query_batch_se": 0.0033180522724241923,
+        "all_query_batch_se": 0.0007246390908532046,
+        "all_to_one_se_ratio": 0.21839290986328502,
+        "one_query_snr": 1.0690931918347408,
+        "all_query_snr": 4.895274267392646,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.002738971931425291,
+        "assigned_variance": 0.0006312795596073057,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 1.5814827557242364,
+          "accuracy": 0.49072265625
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 1.5814827557242364,
+          "accuracy": 0.49072265625
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 10,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_10.pt",
+      "statistics": {
+        "mean": 0.0021548141110792813,
+        "population_variance": 0.0018520640977269635,
+        "history_variance": 4.537292602395636e-05,
+        "query_variance": 0.001806691171703007,
+        "query_variance_fraction": 0.9755014277963475,
+        "one_query_batch_se": 0.005379451786844437,
+        "all_query_batch_se": 0.0008419928557442266,
+        "all_to_one_se_ratio": 0.1565201974304032,
+        "one_query_snr": 0.40056388577529867,
+        "all_query_snr": 2.5591833664368435,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.0026293089913576955,
+        "assigned_variance": 0.0019176864152219825,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.6775157310522026,
+          "accuracy": 0.3521728515625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.6775157310522026,
+          "accuracy": 0.3521728515625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 100,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_100.pt",
+      "statistics": {
+        "mean": -1.5752878653219251e-06,
+        "population_variance": 5.775823027478008e-11,
+        "history_variance": 3.352525070985607e-11,
+        "query_variance": 2.4232979564924015e-11,
+        "query_variance_fraction": 0.4195589000846734,
+        "one_query_batch_se": 9.499854462271719e-07,
+        "all_query_batch_se": 7.237624212001485e-07,
+        "all_to_one_se_ratio": 0.7618668518286688,
+        "one_query_snr": 1.658223156552678,
+        "all_query_snr": 2.176526190334351,
+        "mean_pressure": "higher",
+        "assigned_mean": -2.253679626619603e-06,
+        "assigned_variance": 9.832646913312027e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.46164722991774854,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.46164722991774854,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 100,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_100.pt",
+      "statistics": {
+        "mean": -0.010991340248527359,
+        "population_variance": 0.0003563760596694292,
+        "history_variance": 3.344428484253134e-05,
+        "query_variance": 0.00032293177482689794,
+        "query_variance_fraction": 0.9061545130905991,
+        "one_query_batch_se": 0.0023597406493796793,
+        "all_query_batch_se": 0.0007228879239996696,
+        "all_to_one_se_ratio": 0.3063421076336079,
+        "one_query_snr": 4.657859435280197,
+        "all_query_snr": 15.204763952499478,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.013083632852090354,
+        "assigned_variance": 0.0003316938706121729,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.5517318516721609,
+          "accuracy": 0.9900716145833334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.5517318516721609,
+          "accuracy": 0.9900716145833334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 100,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_100.pt",
+      "statistics": {
+        "mean": -0.003858208782707415,
+        "population_variance": 0.0029371208290939117,
+        "history_variance": 0.0001211577907754732,
+        "query_variance": 0.0028159630383184386,
+        "query_variance_fraction": 0.958749470033601,
+        "one_query_batch_se": 0.006774401298608784,
+        "all_query_batch_se": 0.0013758962464033284,
+        "all_to_one_se_ratio": 0.203102264798793,
+        "one_query_snr": 0.5695276398077792,
+        "all_query_snr": 2.8041422402255938,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.008185835069802241,
+        "assigned_variance": 0.001996436609109035,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.8627646368686733,
+          "accuracy": 0.8434244791666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.8627646368686733,
+          "accuracy": 0.8434244791666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 100,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_100.pt",
+      "statistics": {
+        "mean": 0.028653445946131617,
+        "population_variance": 0.011979372873675065,
+        "history_variance": 0.0002787666069170186,
+        "query_variance": 0.011700606266758043,
+        "query_variance_fraction": 0.9767294490407242,
+        "one_query_batch_se": 0.013681290185913493,
+        "all_query_batch_se": 0.002087038148448278,
+        "all_to_one_se_ratio": 0.1525468811850165,
+        "one_query_snr": 2.094352620020715,
+        "all_query_snr": 13.729239193560302,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.006471144449264901,
+        "assigned_variance": 0.008700528195899232,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.2970144830156372,
+          "accuracy": 0.5670166015625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.2970144830156372,
+          "accuracy": 0.5670166015625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 300,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_300.pt",
+      "statistics": {
+        "mean": -5.875080231868653e-07,
+        "population_variance": 1.883177318313643e-11,
+        "history_variance": 1.053711564992277e-11,
+        "query_variance": 8.294657533213657e-12,
+        "query_variance_fraction": 0.4404607814967418,
+        "one_query_batch_se": 5.424448875107099e-07,
+        "all_query_batch_se": 4.0576154577540154e-07,
+        "all_to_one_se_ratio": 0.7480235414097994,
+        "one_query_snr": 1.0830741273697886,
+        "all_query_snr": 1.4479144938787882,
+        "mean_pressure": "higher",
+        "assigned_mean": -9.564625025279038e-07,
+        "assigned_variance": 3.576688360550514e-11,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.02863567526569798,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.02863567526569798,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 300,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_300.pt",
+      "statistics": {
+        "mean": -0.002537099457923839,
+        "population_variance": 0.00026420826278092125,
+        "history_variance": 2.8784795426182956e-05,
+        "query_variance": 0.00023542346735473834,
+        "query_variance_fraction": 0.8910526297580217,
+        "one_query_batch_se": 0.002031810548735264,
+        "all_query_batch_se": 0.0006706432945568819,
+        "all_to_one_se_ratio": 0.3300717652904871,
+        "one_query_snr": 1.2486889880078145,
+        "all_query_snr": 3.7830833149538785,
+        "mean_pressure": "higher",
+        "assigned_mean": -0.0033013684956373526,
+        "assigned_variance": 4.8060228723421365e-05,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.06591936519101008,
+          "accuracy": 0.9938151041666666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.06591936519101008,
+          "accuracy": 0.9938151041666666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 300,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_300.pt",
+      "statistics": {
+        "mean": 0.022111103256691717,
+        "population_variance": 0.007886189790123914,
+        "history_variance": 0.0005673613605254661,
+        "query_variance": 0.00731882842959845,
+        "query_variance_fraction": 0.9280563395473964,
+        "one_query_batch_se": 0.01110052771136067,
+        "all_query_batch_se": 0.002977418556100302,
+        "all_to_one_se_ratio": 0.2682231542067236,
+        "one_query_snr": 1.9918965865075438,
+        "all_query_snr": 7.426266357945963,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.0015988648277904442,
+        "assigned_variance": 0.00105113928231965,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.3870242792754306,
+          "accuracy": 0.8929036458333334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.3870242792754306,
+          "accuracy": 0.8929036458333334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 300,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_300.pt",
+      "statistics": {
+        "mean": 0.1226786029804406,
+        "population_variance": 0.04846667162615787,
+        "history_variance": 0.0012003711465161475,
+        "query_variance": 0.047266300479641726,
+        "query_variance_fraction": 0.9752330600340153,
+        "one_query_batch_se": 0.027518934284574262,
+        "all_query_batch_se": 0.0043307965969686,
+        "all_to_one_se_ratio": 0.15737515676238334,
+        "one_query_snr": 4.457970708887811,
+        "all_query_snr": 28.327029504528372,
+        "mean_pressure": "lower",
+        "assigned_mean": 0.002562555957264088,
+        "assigned_variance": 0.00799537832496455,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.1658266907532644,
+          "accuracy": 0.6250813802083334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.1658266907532644,
+          "accuracy": 0.6250813802083334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_1000.pt",
+      "statistics": {
+        "mean": -1.4869797291235937e-08,
+        "population_variance": 1.2813065413034142e-14,
+        "history_variance": 8.366884237625501e-15,
+        "query_variance": 4.44618117540864e-15,
+        "query_variance_fraction": 0.3470037053651302,
+        "one_query_batch_se": 1.4149351472016605e-08,
+        "all_query_batch_se": 1.1433834274332405e-08,
+        "all_to_one_se_ratio": 0.8080818613450432,
+        "one_query_snr": 1.0509172325420122,
+        "all_query_snr": 1.3005083801692718,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -2.1281411718241504e-08,
+        "assigned_variance": 2.108822353358467e-14,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 0.0004542993964318372,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 0.0004542993964318372,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_1000.pt",
+      "statistics": {
+        "mean": 0.00020950735193121846,
+        "population_variance": 0.00019897923295832015,
+        "history_variance": 1.974769454016735e-05,
+        "query_variance": 0.00017923153841815283,
+        "query_variance_fraction": 0.9007549971594079,
+        "one_query_batch_se": 0.0017632499865231114,
+        "all_query_batch_se": 0.0005554797270739184,
+        "all_to_one_se_ratio": 0.3150317489406302,
+        "one_query_snr": 0.11881885922729447,
+        "all_query_snr": 0.37716471316574085,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.00014909332071980704,
+        "assigned_variance": 1.832776990156991e-07,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.014834614744038197,
+          "accuracy": 0.9972330729166666
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.014834614744038197,
+          "accuracy": 0.9972330729166666
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_1000.pt",
+      "statistics": {
+        "mean": 0.03292241865502658,
+        "population_variance": 0.01241761079065988,
+        "history_variance": 0.0009487682767999128,
+        "query_variance": 0.011468842513859967,
+        "query_variance_fraction": 0.9235949416683645,
+        "one_query_batch_se": 0.01392929174811342,
+        "all_query_batch_se": 0.003850260293148846,
+        "all_to_one_se_ratio": 0.276414649271046,
+        "one_query_snr": 2.3635385955273414,
+        "all_query_snr": 8.55069947182759,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.00014477565441647433,
+        "assigned_variance": 1.123282431839548e-05,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.35890229223995423,
+          "accuracy": 0.894287109375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.35890229223995423,
+          "accuracy": 0.894287109375
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 1000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_1000.pt",
+      "statistics": {
+        "mean": 0.16982554037374253,
+        "population_variance": 0.07245315074821825,
+        "history_variance": 0.0017270333737223057,
+        "query_variance": 0.07072611737449595,
+        "query_variance_fraction": 0.9761634469186315,
+        "one_query_batch_se": 0.03364640367767274,
+        "all_query_batch_se": 0.005194698881014282,
+        "all_to_one_se_ratio": 0.15439090997001284,
+        "one_query_snr": 5.0473608413144095,
+        "all_query_snr": 32.692085578708955,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.003234641304758217,
+        "assigned_variance": 3.799943646014841e-05,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.5490690401969192,
+          "accuracy": 0.636962890625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.5490690401969192,
+          "accuracy": 0.636962890625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_2000.pt",
+      "statistics": {
+        "mean": -1.5997591393825229e-09,
+        "population_variance": 1.4151026285776704e-16,
+        "history_variance": 9.888460158349894e-17,
+        "query_variance": 4.262566127426808e-17,
+        "query_variance_fraction": 0.30121957526933174,
+        "one_query_batch_se": 1.4869760782045587e-09,
+        "all_query_batch_se": 1.2430092114470313e-09,
+        "all_to_one_se_ratio": 0.8359308731771234,
+        "one_query_snr": 1.0758472599735052,
+        "all_query_snr": 1.287005055674677,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -2.1907120195200385e-09,
+        "assigned_variance": 2.149659091590915e-16,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 5.4823687985034604e-05,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 5.4823687985034604e-05,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_2000.pt",
+      "statistics": {
+        "mean": 0.00031825991765432687,
+        "population_variance": 0.00021910263850338728,
+        "history_variance": 2.6071039530590984e-05,
+        "query_variance": 0.00019303159897279628,
+        "query_variance_fraction": 0.8810099243501901,
+        "one_query_batch_se": 0.001850264501798439,
+        "all_query_batch_se": 0.0006382475951113988,
+        "all_to_one_se_ratio": 0.34494938128631253,
+        "one_query_snr": 0.17200779528817708,
+        "all_query_snr": 0.49864648154103614,
+        "mean_pressure": "lower",
+        "assigned_mean": -2.7497542119253332e-05,
+        "assigned_variance": 8.862191861742776e-09,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.013842429643266485,
+          "accuracy": 0.998046875
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.013842429643266485,
+          "accuracy": 0.998046875
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_2000.pt",
+      "statistics": {
+        "mean": 0.030157157219601924,
+        "population_variance": 0.011025458598236582,
+        "history_variance": 0.0007812090094566055,
+        "query_variance": 0.010244249588779975,
+        "query_variance_fraction": 0.929144987258711,
+        "one_query_batch_se": 0.0131252729723022,
+        "all_query_batch_se": 0.003493764555999654,
+        "all_to_one_se_ratio": 0.26618604911093446,
+        "one_query_snr": 2.2976403830412906,
+        "all_query_snr": 8.631708501311188,
+        "mean_pressure": "lower",
+        "assigned_mean": -5.3169297292957964e-05,
+        "assigned_variance": 3.343227640529791e-07,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.4019379301599933,
+          "accuracy": 0.8948567708333334
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.4019379301599933,
+          "accuracy": 0.8948567708333334
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 2000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_2000.pt",
+      "statistics": {
+        "mean": 0.16256097040009523,
+        "population_variance": 0.06513689178310879,
+        "history_variance": 0.0016353294082167285,
+        "query_variance": 0.06350156237489206,
+        "query_variance_fraction": 0.9748939600363185,
+        "one_query_batch_se": 0.031902412669123865,
+        "all_query_batch_se": 0.00505490079065716,
+        "all_to_one_se_ratio": 0.15844885598729178,
+        "one_query_snr": 5.095569795491572,
+        "all_query_snr": 32.15908227131824,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.0006251518802812657,
+        "assigned_variance": 1.0143427243598869e-06,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 1.847132558054925,
+          "accuracy": 0.6359456380208334
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 1.847132558054925,
+          "accuracy": 0.6359456380208334
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 2,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_3000.pt",
+      "statistics": {
+        "mean": -3.9655494774851303e-10,
+        "population_variance": 8.10719024622099e-18,
+        "history_variance": 6.089960328969713e-18,
+        "query_variance": 2.017229917251276e-18,
+        "query_variance_fraction": 0.24881985694014874,
+        "one_query_batch_se": 3.559141014306724e-10,
+        "all_query_batch_se": 3.0847306226014576e-10,
+        "all_to_one_se_ratio": 0.8667064918759125,
+        "one_query_snr": 1.114187232690349,
+        "all_query_snr": 1.285541579686089,
+        "mean_pressure": "unresolved",
+        "assigned_mean": -5.208866745370471e-10,
+        "assigned_variance": 1.1141535414559547e-17,
+        "targets": 1536,
+        "histories": 768,
+        "queries_per_history": 2
+      },
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "ce": 1.5094212271689024e-05,
+          "accuracy": 1.0
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 1536,
+          "ce": 1.5094212271689024e-05,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 8,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.0003295282058218217,
+        "population_variance": 0.00022433178341491655,
+        "history_variance": 2.7490933891783905e-05,
+        "query_variance": 0.00019684084952313269,
+        "query_variance_fraction": 0.877454128553253,
+        "one_query_batch_se": 0.0018722136939617953,
+        "all_query_batch_se": 0.0006553974687616085,
+        "all_to_one_se_ratio": 0.350065524504695,
+        "one_query_snr": 0.17600993245835436,
+        "all_query_snr": 0.5027913922897419,
+        "mean_pressure": "lower",
+        "assigned_mean": -9.810608628350339e-06,
+        "assigned_variance": 1.4631708037934425e-09,
+        "targets": 6144,
+        "histories": 768,
+        "queries_per_history": 8
+      },
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "ce": 0.014424401369501039,
+          "accuracy": 0.99755859375
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 6144,
+          "ce": 0.014424401369501039,
+          "accuracy": 0.99755859375
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 16,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.028899611626562568,
+        "population_variance": 0.010337875195934107,
+        "history_variance": 0.0007100213646989861,
+        "query_variance": 0.00962785383123512,
+        "query_variance_fraction": 0.9313184429835021,
+        "one_query_batch_se": 0.01270941776543955,
+        "all_query_batch_se": 0.00333077826092066,
+        "all_to_one_se_ratio": 0.26207166389462583,
+        "one_query_snr": 2.2738737651026524,
+        "all_query_snr": 8.676534239951005,
+        "mean_pressure": "lower",
+        "assigned_mean": -1.918371549056881e-05,
+        "assigned_variance": 4.300829237256489e-08,
+        "targets": 12288,
+        "histories": 768,
+        "queries_per_history": 16
+      },
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "ce": 0.4328044721279542,
+          "accuracy": 0.895263671875
+        },
+        "unique": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        },
+        "repeat": {
+          "count": 12288,
+          "ce": 0.4328044721279542,
+          "accuracy": 0.895263671875
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "step": 3000,
+      "load": 32,
+      "checkpoint": "results/retention_learning_replay/snapshot_3463_fixed_3000.pt",
+      "statistics": {
+        "mean": 0.158621702290352,
+        "population_variance": 0.061818571536427926,
+        "history_variance": 0.0016072642472076185,
+        "query_variance": 0.060211307289220306,
+        "query_variance_fraction": 0.974000301086535,
+        "one_query_batch_se": 0.031079175990632157,
+        "all_query_batch_se": 0.005011337532298043,
+        "all_to_one_se_ratio": 0.16124422133355637,
+        "one_query_snr": 5.103793689323151,
+        "all_query_snr": 31.65256805554126,
+        "mean_pressure": "lower",
+        "assigned_mean": -0.00023064984682152459,
+        "assigned_variance": 1.2657894106899513e-07,
+        "targets": 24576,
+        "histories": 768,
+        "queries_per_history": 32
+      },
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "ce": 2.033512172828971,
+          "accuracy": 0.634765625
+        },
+        "unique": {
+          "count": 24576,
+          "ce": 2.033512172828971,
+          "accuracy": 0.634765625
+        },
+        "repeat": {
+          "count": 0,
+          "ce": null,
+          "accuracy": null
+        }
+      }
+    }
+  ],
+  "cells_count": 112,
+  "targets": 1247232,
+  "csv_rows": 336,
+  "elapsed_seconds": 14.709628299984615,
+  "targets_sha256": "ec42034da8fb77a2c238731a76ccb3c75d75b8ecc8460d54881fc50af57b84bd",
+  "lock_sha256": "49ba05b2ba685f270f85d777b58a87cd3621060e9079d5a1683881f3a3f23fb9",
+  "csv_sha256": "1a838e608c5feeb5a1a6ea49e0f9252d20d677adbb3552a6eae1ecf741859a72"
+}

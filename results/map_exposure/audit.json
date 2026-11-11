@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cells": 360,
+  "evaluation_targets": 2672640,
+  "optimizer_calls": 36672,
+  "max_gradient_error": 8.471088414063743e-15,
+  "max_adam_error": 1.7763568394002505e-15,
+  "max_logit_error": 1.7053025658242404e-13,
+  "protected_files": 39,
+  "native_controls": [
+    {
+      "seed": 3473,
+      "historical_exact": true
+    },
+    {
+      "seed": 3479,
+      "historical_exact": true
+    },
+    {
+      "seed": 3481,
+      "historical_exact": true
+    }
+  ],
+  "data": {
+    "changed_histories": 384,
+    "added_map_families": 64,
+    "heldout_semantic_map_overlap_with_original_training": {
+      "validation_2": 18,
+      "validation_8": 0,
+      "validation_16": 0,
+      "validation_32": 0,
+      "test_2": 24,
+      "test_8": 0,
+      "test_16": 0,
+      "test_32": 0
+    }
+  },
+  "report_sha256": "fc88f979d2fca5280797dc421a0f94c5d18d14616c93d0247d096eb696c8cba1"
+}

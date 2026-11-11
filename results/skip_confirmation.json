@@ -1,0 +1,770 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "runs": [
+    {
+      "seed": 11,
+      "length": 8,
+      "results": {
+        "original": {
+          "accuracy": 1.0,
+          "loss": 0.026970495415837698,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.005799885080101404,
+          "corrected": 0,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0022811060243789786,
+          "corrected": 0,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 1.0,
+          "loss": 0.04621319108095768,
+          "corrected": 0,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e"
+    },
+    {
+      "seed": 29,
+      "length": 8,
+      "results": {
+        "original": {
+          "accuracy": 0.923828125,
+          "loss": 0.1482118981589291,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.011071241864188239,
+          "corrected": 39,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0023719342106003397,
+          "corrected": 39,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.97265625,
+          "loss": 0.12695650127381847,
+          "corrected": 25,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d"
+    },
+    {
+      "seed": 47,
+      "length": 8,
+      "results": {
+        "original": {
+          "accuracy": 0.8125,
+          "loss": 0.3157395678694558,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.003154046103881341,
+          "corrected": 96,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0020229323709452887,
+          "corrected": 96,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.78125,
+          "loss": 0.3738673017935871,
+          "corrected": 0,
+          "broken": 16
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367"
+    },
+    {
+      "seed": 73,
+      "length": 8,
+      "results": {
+        "original": {
+          "accuracy": 1.0,
+          "loss": 0.03967017729260919,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.994140625,
+          "loss": 0.07299803417208546,
+          "corrected": 0,
+          "broken": 3
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0033618901182856193,
+          "corrected": 0,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 1.0,
+          "loss": 0.03917128706102825,
+          "corrected": 0,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64"
+    },
+    {
+      "seed": 101,
+      "length": 8,
+      "results": {
+        "original": {
+          "accuracy": 0.9765625,
+          "loss": 0.13899126398874959,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.994140625,
+          "loss": 0.04475721632719536,
+          "corrected": 9,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 0.990234375,
+          "loss": 0.04686610458302118,
+          "corrected": 8,
+          "broken": 1
+        },
+        "control": {
+          "accuracy": 0.994140625,
+          "loss": 0.11727508898473193,
+          "corrected": 9,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6"
+    },
+    {
+      "seed": 11,
+      "length": 10,
+      "results": {
+        "original": {
+          "accuracy": 1.0,
+          "loss": 0.07618294017628904,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.0077122163994452625,
+          "corrected": 0,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.002363642946024045,
+          "corrected": 0,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 1.0,
+          "loss": 0.058101661606864675,
+          "corrected": 0,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e"
+    },
+    {
+      "seed": 29,
+      "length": 10,
+      "results": {
+        "original": {
+          "accuracy": 0.974609375,
+          "loss": 0.092690740179296,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.004679555379677493,
+          "corrected": 13,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0019259679738484632,
+          "corrected": 13,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.767578125,
+          "loss": 0.5392474031574219,
+          "corrected": 0,
+          "broken": 106
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d"
+    },
+    {
+      "seed": 47,
+      "length": 10,
+      "results": {
+        "original": {
+          "accuracy": 0.798828125,
+          "loss": 0.38282672354143366,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.0028628903062493946,
+          "corrected": 103,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0020324682030248586,
+          "corrected": 103,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.783203125,
+          "loss": 0.3563135192145815,
+          "corrected": 0,
+          "broken": 8
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367"
+    },
+    {
+      "seed": 73,
+      "length": 10,
+      "results": {
+        "original": {
+          "accuracy": 0.998046875,
+          "loss": 0.06845669397057595,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.005116438084768292,
+          "corrected": 1,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0033092263206634435,
+          "corrected": 1,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.98046875,
+          "loss": 0.14088086719433102,
+          "corrected": 0,
+          "broken": 9
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64"
+    },
+    {
+      "seed": 101,
+      "length": 10,
+      "results": {
+        "original": {
+          "accuracy": 0.974609375,
+          "loss": 0.15658588634516302,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.990234375,
+          "loss": 0.0504561607134578,
+          "corrected": 9,
+          "broken": 1
+        },
+        "full": {
+          "accuracy": 0.986328125,
+          "loss": 0.062417941078832605,
+          "corrected": 9,
+          "broken": 3
+        },
+        "control": {
+          "accuracy": 0.990234375,
+          "loss": 0.12903872583408874,
+          "corrected": 9,
+          "broken": 1
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6"
+    },
+    {
+      "seed": 11,
+      "length": 12,
+      "results": {
+        "original": {
+          "accuracy": 0.748046875,
+          "loss": 0.6174726602278918,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.0042837641583802,
+          "corrected": 129,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.002183303775206009,
+          "corrected": 129,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.783203125,
+          "loss": 0.323294499248034,
+          "corrected": 18,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e"
+    },
+    {
+      "seed": 29,
+      "length": 12,
+      "results": {
+        "original": {
+          "accuracy": 0.337890625,
+          "loss": 3.3054172063893668,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.482421875,
+          "loss": 2.2282759001422328,
+          "corrected": 74,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 0.482421875,
+          "loss": 1.7771240434108855,
+          "corrected": 74,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.482421875,
+          "loss": 2.486183454833141,
+          "corrected": 74,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d"
+    },
+    {
+      "seed": 47,
+      "length": 12,
+      "results": {
+        "original": {
+          "accuracy": 1.0,
+          "loss": 0.010939888037370397,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.002084024870709184,
+          "corrected": 0,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0019638097342305435,
+          "corrected": 0,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 1.0,
+          "loss": 0.03637723128447593,
+          "corrected": 0,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367"
+    },
+    {
+      "seed": 73,
+      "length": 12,
+      "results": {
+        "original": {
+          "accuracy": 0.984375,
+          "loss": 0.09127326849085883,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.005696189185544181,
+          "corrected": 8,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0021488843621603406,
+          "corrected": 8,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.966796875,
+          "loss": 0.1406628179288036,
+          "corrected": 0,
+          "broken": 9
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64"
+    },
+    {
+      "seed": 101,
+      "length": 12,
+      "results": {
+        "original": {
+          "accuracy": 0.734375,
+          "loss": 0.9827864364231718,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.75390625,
+          "loss": 1.0425219253086122,
+          "corrected": 10,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 0.787109375,
+          "loss": 0.6530993833945035,
+          "corrected": 27,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.8828125,
+          "loss": 0.3032669311111385,
+          "corrected": 76,
+          "broken": 0
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6"
+    },
+    {
+      "seed": 11,
+      "length": 16,
+      "results": {
+        "original": {
+          "accuracy": 0.69140625,
+          "loss": 0.9651228543698026,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.02841530208088583,
+          "corrected": 158,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.005386825379921256,
+          "corrected": 158,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.72265625,
+          "loss": 0.7069506207269648,
+          "corrected": 20,
+          "broken": 4
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e"
+    },
+    {
+      "seed": 29,
+      "length": 16,
+      "results": {
+        "original": {
+          "accuracy": 0.50390625,
+          "loss": 2.2232457522308944,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.671875,
+          "loss": 0.7571768198491975,
+          "corrected": 86,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 0.77734375,
+          "loss": 0.47855047448868276,
+          "corrected": 140,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.490234375,
+          "loss": 2.4121789717376796,
+          "corrected": 0,
+          "broken": 7
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d"
+    },
+    {
+      "seed": 47,
+      "length": 16,
+      "results": {
+        "original": {
+          "accuracy": 0.744140625,
+          "loss": 0.7271425234032065,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 1.0,
+          "loss": 0.0056394869375209645,
+          "corrected": 131,
+          "broken": 0
+        },
+        "full": {
+          "accuracy": 1.0,
+          "loss": 0.0024529551574885874,
+          "corrected": 131,
+          "broken": 0
+        },
+        "control": {
+          "accuracy": 0.728515625,
+          "loss": 1.1949698459000253,
+          "corrected": 0,
+          "broken": 8
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367"
+    },
+    {
+      "seed": 73,
+      "length": 16,
+      "results": {
+        "original": {
+          "accuracy": 0.447265625,
+          "loss": 1.013838963942601,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.986328125,
+          "loss": 0.05733679151339249,
+          "corrected": 277,
+          "broken": 1
+        },
+        "full": {
+          "accuracy": 0.9921875,
+          "loss": 0.029487296745861553,
+          "corrected": 281,
+          "broken": 2
+        },
+        "control": {
+          "accuracy": 0.54296875,
+          "loss": 0.9384738294029651,
+          "corrected": 99,
+          "broken": 50
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64"
+    },
+    {
+      "seed": 101,
+      "length": 16,
+      "results": {
+        "original": {
+          "accuracy": 0.4140625,
+          "loss": 1.896999486649221,
+          "corrected": 0,
+          "broken": 0
+        },
+        "skip": {
+          "accuracy": 0.572265625,
+          "loss": 1.4782081517829064,
+          "corrected": 89,
+          "broken": 8
+        },
+        "full": {
+          "accuracy": 0.541015625,
+          "loss": 1.9951957993961738,
+          "corrected": 84,
+          "broken": 19
+        },
+        "control": {
+          "accuracy": 0.412109375,
+          "loss": 1.6228657646719387,
+          "corrected": 39,
+          "broken": 40
+        }
+      },
+      "reconstruction_error": 0.0,
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6"
+    }
+  ],
+  "datasets": {
+    "8": {
+      "seed": 20261018,
+      "count": 512,
+      "sha256": "ebdafe6e5d4a448b612e888b99ce2d66c941efad380fbe48e937378d0cde1bd8",
+      "delta_norm": 1.8065012457837517,
+      "control_norm": 1.8065012457837517,
+      "control_dot_delta": 1.6653345369377348e-16,
+      "control_vector": [
+        0.4674295212518536,
+        0.22700029342647554,
+        0.6662164078490743,
+        0.19166528358825669,
+        -0.1905686964078816,
+        0.18923490301739931,
+        0.7011976753784304,
+        -0.4874063402046208,
+        0.17171894155923975,
+        0.3555972664137261,
+        0.31897176844807473,
+        -0.46605166789547325,
+        0.1389694204138598,
+        -0.4511274270325838,
+        -0.23159746035390444,
+        0.9798613088526178
+      ]
+    },
+    "10": {
+      "seed": 20261020,
+      "count": 512,
+      "sha256": "679bd7ca08635829591970612d8e55ec2c616abd13a72e922114bd08f580f574",
+      "delta_norm": 2.209218502347578,
+      "control_norm": 2.209218502347578,
+      "control_dot_delta": -1.3877787807814457e-16,
+      "control_vector": [
+        -0.3358006851632589,
+        0.14919876490336134,
+        -0.09536481893737558,
+        -0.17847532666465926,
+        0.032877385963111135,
+        -0.005753524194480723,
+        -0.22292574669886128,
+        -0.3166076982270882,
+        -0.51141249777062,
+        -1.034508372982813,
+        -0.8049768838081799,
+        -0.07766842296494718,
+        -0.47563947159839176,
+        0.500714651011506,
+        1.414002184772955,
+        -0.3024980143127415
+      ]
+    },
+    "12": {
+      "seed": 20261022,
+      "count": 512,
+      "sha256": "6a6aa7d65b70039afb466e2b8143ceb335a6233fb2555f4afe7fe69f4cc45d2b",
+      "delta_norm": 1.763652956925299,
+      "control_norm": 1.763652956925299,
+      "control_dot_delta": 2.7755575615628914e-17,
+      "control_vector": [
+        -0.537209585791533,
+        0.1750892921922121,
+        0.07321070631322818,
+        -0.39414779973310043,
+        -0.43153136146492954,
+        -0.1771950419166483,
+        -0.3374934763727023,
+        1.02264243994534,
+        0.23847276181387037,
+        -0.2377591838524418,
+        -0.672819610391714,
+        0.07279121462793893,
+        -0.3091378073861785,
+        -0.280574837572233,
+        0.44431182975266925,
+        -0.556872831131012
+      ]
+    },
+    "16": {
+      "seed": 20261026,
+      "count": 512,
+      "sha256": "ab1c73bd0cf1e63405207af5f776e8a144b7314c271c2a014e17d852e18578bb",
+      "delta_norm": 2.950827276703372,
+      "control_norm": 2.950827276703372,
+      "control_dot_delta": -1.1102230246251565e-16,
+      "control_vector": [
+        0.3126172749483829,
+        0.2231267223853093,
+        -0.8257626289257375,
+        -0.15901176598859612,
+        -1.8440991269464797,
+        -0.1298737691895288,
+        -0.5611224580250788,
+        0.5716789472290341,
+        -1.129116562762647,
+        -0.05662788890365792,
+        0.04367742177143268,
+        0.5418581798988952,
+        0.47201962810583636,
+        -0.731654409842395,
+        0.5237074975223737,
+        1.0896947560619652
+      ]
+    }
+  },
+  "protocol_sha256": "6b7db3d1987736a6d88a57c225f44c5334690fe34aa49808018095d879998042",
+  "source_sha256": {
+    "confirm_skip.py": "4f03800d98e17c9a45d260ed70bcdaeef055de60c9242441d7e1a8d9d53ed55d",
+    "query_position_paths.py": "524134446113ef671690cc21488c4b52892ffdc24de47d461b4ce01501bbd0d7",
+    "inspect_first_token.py": "fbcec8be2fe113b29f72adce4230ea35efd46f2dac46928764298cd790a7f30c",
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7"
+  },
+  "criteria": {
+    "all_skip_at_least_95": false,
+    "mean_skip_minus_control_by_length": {
+      "8": 0.048046875,
+      "10": 0.09375,
+      "12": 0.02421875,
+      "16": 0.266796875
+    },
+    "specificity_pass": false
+  }
+}

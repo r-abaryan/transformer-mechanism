@@ -1,0 +1,515 @@
+{
+  "status": "complete",
+  "summary": [
+    {
+      "seed": 3461,
+      "geometry": {
+        "read_range": [
+          -8.106696749289863,
+          7.679163627933447
+        ],
+        "coordinate_sd": [
+          1.8006902701030019,
+          1.6673844204893566,
+          1.8884858507214335,
+          1.970462501641606,
+          1.9476213989438393,
+          1.7649503074874462,
+          2.2380581345125754,
+          2.001287420049167
+        ],
+        "value_singular_values": [
+          18.799298034130857,
+          16.768659805343056,
+          16.604111632941947,
+          15.557605078548862,
+          14.941720968821999,
+          2.429891088839268
+        ],
+        "max_outside_value_span": 4.993784648995933e-15
+      },
+      "outcome": "certified_infeasible",
+      "solver_calls": 1,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "iterations": 228,
+      "solver_seconds": 4.58843390000402,
+      "solver_margin": -0.0,
+      "positive_lower_margin": -2e-45,
+      "certificate_support": 46,
+      "reconstruction": {
+        "support": 46,
+        "attempted": true,
+        "reason": "verified",
+        "rank": 46
+      },
+      "candidate_queries": 44544,
+      "witness_queries": 0,
+      "native_candidate_all_correct": false,
+      "constraints": 222721,
+      "variables": 46,
+      "support_groups": {
+        "pools": {
+          "train_2": 0,
+          "train_8": 2,
+          "train_16": 8,
+          "train_32": 36
+        },
+        "labels": {
+          "0": 5,
+          "1": 4,
+          "2": 12,
+          "3": 9,
+          "4": 8,
+          "5": 8
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "geometry": {
+        "read_range": [
+          -7.149495239068073,
+          8.130083145822606
+        ],
+        "coordinate_sd": [
+          1.6426907734968235,
+          1.6658231733398454,
+          1.7033997322322498,
+          1.7787490166382978,
+          1.7416946578380452,
+          1.8446822223479702,
+          1.427254380910372,
+          1.759433269319796
+        ],
+        "value_singular_values": [
+          17.58883638662831,
+          16.211506542504655,
+          15.597360588028742,
+          15.041751484647188,
+          13.951888612698019,
+          3.391765546398223
+        ],
+        "max_outside_value_span": 4.217947229553613e-15
+      },
+      "outcome": "certified_infeasible",
+      "solver_calls": 1,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "iterations": 165,
+      "solver_seconds": 4.041696400003275,
+      "solver_margin": -0.0,
+      "positive_lower_margin": -2e-45,
+      "certificate_support": 46,
+      "reconstruction": {
+        "support": 46,
+        "attempted": true,
+        "reason": "verified",
+        "rank": 46
+      },
+      "candidate_queries": 44544,
+      "witness_queries": 0,
+      "native_candidate_all_correct": false,
+      "constraints": 222721,
+      "variables": 46,
+      "support_groups": {
+        "pools": {
+          "train_2": 0,
+          "train_8": 0,
+          "train_16": 1,
+          "train_32": 45
+        },
+        "labels": {
+          "0": 6,
+          "1": 9,
+          "2": 8,
+          "3": 8,
+          "4": 8,
+          "5": 7
+        }
+      }
+    }
+  ],
+  "cells": [
+    {
+      "seed": 3461,
+      "pool": "train_2",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 21
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_8",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_16",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_32",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_2",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 21
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_8",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_16",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "complete_maps": 0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_32",
+      "arm": "candidate",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.16666666666666666,
+          "ce": 1.7917594692280547
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 0
+      }
+    }
+  ],
+  "original_queries": 89088,
+  "histories": 6144,
+  "native_reference": [
+    {
+      "seed": 3461,
+      "pool": "train_2",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_8",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 0.00024259193911238165
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 0.00024259193911238165
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_16",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0014770307330634078
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0014770307330634078
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_32",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 561
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_2",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_8",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 5.052510341978431e-05
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 5.052510341978431e-05
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_16",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0016078027207679908
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0016078027207679908
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_32",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 510
+      }
+    }
+  ],
+  "solver_calls": 2,
+  "training_updates": 0,
+  "optimizer_calls": 0,
+  "native_prefills": 0,
+  "seconds": 17.506449700013036,
+  "lock_sha256": "72c756e06bc000e276123ccc9925090b4a35f84fa18f4d1f4147a500adaeb497",
+  "witnesses_sha256": "904f95231ac8f32ceec8c575067ac4a4643d3f40368eecb11089d25f3d7d84b2",
+  "metrics_sha256": "1547da2dd088a10420a9d81b0b5ce97a8fd25889160b0912e86b2aa63dd11e0c"
+}

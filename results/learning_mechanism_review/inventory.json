@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-04",
+  "scope": "Read-only final retention artifact inspection; no new gradients, predictions, optimizer steps or training",
+  "parent_report_sha256": "88b4726bed1af1abb331849707a34653319062f4657c9302c4f41a34027b01c2",
+  "parent_audit_sha256": "896d308fad67393d4773422f97dd0f5e53a252a4fd158580b8116f31c636fc35",
+  "source_sha256": "ecae5aecac5a0e34efc7a27cbf16a32603b737e3caf5119e08911f6f3ee86365",
+  "development_gate": {
+    "fixed_assigned_training_fit": true,
+    "resampled_all_query_training_fit": false,
+    "confirmation_eligible": false
+  },
+  "checkpoints": [
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "path": "results/delta_query_coverage/development_3461_fixed.pt",
+      "sha256": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+      "payload_fields": [
+        "model",
+        "optimizer",
+        "step"
+      ],
+      "step": 3000,
+      "beta": 0.9475711570594577,
+      "parameters": 615,
+      "parameter_shapes": {
+        "write_logit": [],
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      },
+      "dtypes": [
+        "torch.float64"
+      ],
+      "optimizer_steps": [
+        3000
+      ],
+      "logged_curve": [
+        {
+          "step": 1000,
+          "loss": 0.025479243609436923
+        },
+        {
+          "step": 2000,
+          "loss": 0.004836043931213747
+        },
+        {
+          "step": 3000,
+          "loss": 0.0019047681686720766
+        }
+      ]
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "path": "results/delta_query_coverage/development_3461_resampled.pt",
+      "sha256": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+      "payload_fields": [
+        "model",
+        "optimizer",
+        "step"
+      ],
+      "step": 3000,
+      "beta": 0.3223553250075936,
+      "parameters": 615,
+      "parameter_shapes": {
+        "write_logit": [],
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      },
+      "dtypes": [
+        "torch.float64"
+      ],
+      "optimizer_steps": [
+        3000
+      ],
+      "logged_curve": [
+        {
+          "step": 1000,
+          "loss": 0.6139131100924718
+        },
+        {
+          "step": 2000,
+          "loss": 0.4424167830362166
+        },
+        {
+          "step": 3000,
+          "loss": 0.2597039237146723
+        }
+      ]
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "path": "results/delta_query_coverage/development_3463_resampled.pt",
+      "sha256": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+      "payload_fields": [
+        "model",
+        "optimizer",
+        "step"
+      ],
+      "step": 3000,
+      "beta": 0.318701604672731,
+      "parameters": 615,
+      "parameter_shapes": {
+        "write_logit": [],
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      },
+      "dtypes": [
+        "torch.float64"
+      ],
+      "optimizer_steps": [
+        3000
+      ],
+      "logged_curve": [
+        {
+          "step": 1000,
+          "loss": 0.5183449116400499
+        },
+        {
+          "step": 2000,
+          "loss": 0.28311823483764226
+        },
+        {
+          "step": 3000,
+          "loss": 0.3050563917473151
+        }
+      ]
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "path": "results/delta_query_coverage/development_3463_fixed.pt",
+      "sha256": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+      "payload_fields": [
+        "model",
+        "optimizer",
+        "step"
+      ],
+      "step": 3000,
+      "beta": 0.9620374265151257,
+      "parameters": 615,
+      "parameter_shapes": {
+        "write_logit": [],
+        "key.weight": [
+          32,
+          16
+        ],
+        "value.weight": [
+          6,
+          8
+        ],
+        "output.weight": [
+          6,
+          8
+        ],
+        "output.bias": [
+          6
+        ]
+      },
+      "dtypes": [
+        "torch.float64"
+      ],
+      "optimizer_steps": [
+        3000
+      ],
+      "logged_curve": [
+        {
+          "step": 1000,
+          "loss": 0.02033437392519507
+        },
+        {
+          "step": 2000,
+          "loss": 0.003032186496311805
+        },
+        {
+          "step": 3000,
+          "loss": 0.001057654802298465
+        }
+      ]
+    }
+  ],
+  "checkpoint_files_present": [
+    "development_3461_fixed.pt",
+    "development_3461_fixed_exposure.pt",
+    "development_3461_resampled.pt",
+    "development_3461_resampled_exposure.pt",
+    "development_3463_fixed.pt",
+    "development_3463_fixed_exposure.pt",
+    "development_3463_resampled.pt",
+    "development_3463_resampled_exposure.pt",
+    "scores.pt"
+  ],
+  "trajectory_available": false,
+  "trajectory_limit": "Only final model and Adam states; curve has three load-32 minibatch losses, not beta/gradient history."
+}

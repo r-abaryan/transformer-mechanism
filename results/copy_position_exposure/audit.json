@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "cells": 264,
+  "sequence_evaluations": 39168,
+  "max_logit_score_error": 2.063904602778166e-13,
+  "max_metric_error": 2.858824288409778e-15,
+  "prediction_differences": 0,
+  "runs": [
+    {
+      "seed": 3711,
+      "arm": "contiguous",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3711,
+      "arm": "spaced",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3719,
+      "arm": "contiguous",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3719,
+      "arm": "spaced",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3727,
+      "arm": "contiguous",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3727,
+      "arm": "spaced",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3733,
+      "arm": "contiguous",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    },
+    {
+      "seed": 3733,
+      "arm": "spaced",
+      "step": 6000,
+      "segment_sequences": 957000,
+      "segment_targets": 5040000
+    }
+  ],
+  "report_sha256": "6d8eb30a210bff3ee43e98e59f57075d3b73961e932edb90a457a1ca72ff66b2",
+  "protected_files": 17,
+  "limitation": "Outputs, streams, initialization, optimizer counters and decisions checked; full training gradients/updates not replayed. Projection/attention utilities shared."
+}

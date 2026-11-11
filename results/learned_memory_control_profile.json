@@ -1,0 +1,26 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "batch": 64,
+  "length": 8,
+  "peak_gpu_allocated_bytes": 0,
+  "peak_gpu_reserved_bytes": 0,
+  "cpu_peak_memory_measured": false,
+  "source_sha256": "a4ee56dd2c7a89a2de848bcb0734a1940e525f9ae513bcdef42debe5648f3d52",
+  "rows": [
+    {
+      "arm": "delta",
+      "parameters": 222,
+      "optimizer_entries": 9,
+      "seconds": 1.647354799999448,
+      "loss": 1.4405443308156727
+    },
+    {
+      "arm": "gated",
+      "parameters": 231,
+      "optimizer_entries": 11,
+      "seconds": 0.004875899998296518,
+      "loss": 1.4568945452270843
+    }
+  ]
+}

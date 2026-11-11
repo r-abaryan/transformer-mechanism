@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "only_ast_literal_changes": 1,
+  "original_function_sha256": "3501b3b5ad8ae09810ab3aefe4d1c666f3ec149fb54bd9007433148054ab9636",
+  "corrected_function_sha256": "101326dd4f77462b41bc640159802e67bf7f48998b57edcf856275f808c85ff9",
+  "dependencies": {
+    "experiments/recover_copy_source_end_marker_count.py": "6d8c4050df728cea6fd9625329bbd1978ed54b8cf013e76f3d52e74c102ca0f3",
+    "experiments/check_copy_source_end_marker.py": "add3929c3b9d7376d3951237afc607ee20b4559c6e3ff692bfdcc647a4c511bb",
+    "docs/protocols/copy-source-end-marker.md": "38f1e06f597354dcf6aa2df861c23b3a8cc16c65dc5db636d7396a6941e5efaf",
+    "results/copy_source_end_marker/design.json": "786d58a0747693ccba59820870f108afa7a04a4a98b491d15e98418affb2b74d",
+    "docs/protocols/copy-source-end-marker-count-correction.md": "5687743a1a4f689838a0395c38f977d754a215d293d42f02d110bcacb1aeab2b"
+  },
+  "prior_hashes_unchanged": true,
+  "report_sha256": "703f90d3fd91552d591c4f01ef275241943a4854026ae8eacac0a368819903a7",
+  "correction": "192 -> 384; same predeclared Cartesian product",
+  "training_updates": 0
+}

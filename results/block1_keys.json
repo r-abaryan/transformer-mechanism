@@ -1,0 +1,431 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "a5c0bc00728d9d29b97c926d3195b41d0a676f4dd1a56b98cfbfc20210e2d7f7",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "14815474a1cedd2274d5c5247f26910594b497437a0eb681213146ad064ac702",
+  "source_sha256": {
+    "block1_keys.py": "20aca013a39ba4c899398ee20dc2eb6da2ad051e1179c256201567790e2823b2",
+    "qkv_paths.py": "249803306e5c494e5ae1edb2d5d6dc147c8a697b23b4d1ef3afa99ac8b2f5bd3",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "reconstruction_error": 0.0,
+      "conditions": {
+        "frozen_000": {
+          "accuracy": 0.70234375,
+          "loss": 1.5035754454679031,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "frozen_001": {
+          "accuracy": 0.7685546875,
+          "loss": 1.2336170792434418,
+          "rescued": 495,
+          "harmed": 156
+        },
+        "frozen_010": {
+          "accuracy": 0.965625,
+          "loss": 0.1486931043624185,
+          "rescued": 1382,
+          "harmed": 34
+        },
+        "frozen_011": {
+          "accuracy": 0.975390625,
+          "loss": 0.10171313085048281,
+          "rescued": 1411,
+          "harmed": 13
+        },
+        "frozen_100": {
+          "accuracy": 0.6521484375,
+          "loss": 1.84321088216732,
+          "rescued": 478,
+          "harmed": 735
+        },
+        "frozen_101": {
+          "accuracy": 0.7548828125,
+          "loss": 1.306393481520384,
+          "rescued": 724,
+          "harmed": 455
+        },
+        "frozen_110": {
+          "accuracy": 0.99296875,
+          "loss": 0.024209013967873456,
+          "rescued": 1496,
+          "harmed": 8
+        },
+        "frozen_111": {
+          "accuracy": 0.99921875,
+          "loss": 0.005820565500984563,
+          "rescued": 1520,
+          "harmed": 0
+        },
+        "live_00": {
+          "accuracy": 0.70234375,
+          "loss": 1.5035754454679031,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "live_01": {
+          "accuracy": 0.9751953125,
+          "loss": 0.10720644785989915,
+          "rescued": 1428,
+          "harmed": 31
+        },
+        "live_10": {
+          "accuracy": 0.623046875,
+          "loss": 2.1224944443625122,
+          "rescued": 398,
+          "harmed": 804
+        },
+        "live_11": {
+          "accuracy": 0.99921875,
+          "loss": 0.005820565500984563,
+          "rescued": 1520,
+          "harmed": 0
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "reconstruction_error": 0.0,
+      "conditions": {
+        "frozen_000": {
+          "accuracy": 0.5931640625,
+          "loss": 2.083816994084648,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "frozen_001": {
+          "accuracy": 0.6201171875,
+          "loss": 1.9317811971074235,
+          "rescued": 337,
+          "harmed": 199
+        },
+        "frozen_010": {
+          "accuracy": 0.955078125,
+          "loss": 0.1825448191092433,
+          "rescued": 1940,
+          "harmed": 87
+        },
+        "frozen_011": {
+          "accuracy": 0.9607421875,
+          "loss": 0.16383412765193905,
+          "rescued": 1962,
+          "harmed": 80
+        },
+        "frozen_100": {
+          "accuracy": 0.5806640625,
+          "loss": 2.267906577624915,
+          "rescued": 419,
+          "harmed": 483
+        },
+        "frozen_101": {
+          "accuracy": 0.6126953125,
+          "loss": 2.048025006578574,
+          "rescued": 561,
+          "harmed": 461
+        },
+        "frozen_110": {
+          "accuracy": 0.9689453125,
+          "loss": 0.10891379422245781,
+          "rescued": 1960,
+          "harmed": 36
+        },
+        "frozen_111": {
+          "accuracy": 0.9796875,
+          "loss": 0.060930305281349614,
+          "rescued": 2004,
+          "harmed": 25
+        },
+        "live_00": {
+          "accuracy": 0.5931640625,
+          "loss": 2.083816994084648,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "live_01": {
+          "accuracy": 0.9642578125,
+          "loss": 0.14293620348404804,
+          "rescued": 1966,
+          "harmed": 66
+        },
+        "live_10": {
+          "accuracy": 0.58203125,
+          "loss": 2.251116955812268,
+          "rescued": 442,
+          "harmed": 499
+        },
+        "live_11": {
+          "accuracy": 0.9796875,
+          "loss": 0.060930305281349614,
+          "rescued": 2004,
+          "harmed": 25
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "reconstruction_error": 0.0,
+      "conditions": {
+        "frozen_000": {
+          "accuracy": 0.651953125,
+          "loss": 2.01228598082414,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "frozen_001": {
+          "accuracy": 0.670703125,
+          "loss": 1.9451680457504046,
+          "rescued": 306,
+          "harmed": 210
+        },
+        "frozen_010": {
+          "accuracy": 0.934375,
+          "loss": 0.3404835322830895,
+          "rescued": 1576,
+          "harmed": 130
+        },
+        "frozen_011": {
+          "accuracy": 0.9431640625,
+          "loss": 0.2882686250618624,
+          "rescued": 1625,
+          "harmed": 134
+        },
+        "frozen_100": {
+          "accuracy": 0.6384765625,
+          "loss": 2.2745434245229066,
+          "rescued": 531,
+          "harmed": 600
+        },
+        "frozen_101": {
+          "accuracy": 0.651953125,
+          "loss": 2.2192970293109555,
+          "rescued": 567,
+          "harmed": 567
+        },
+        "frozen_110": {
+          "accuracy": 0.9763671875,
+          "loss": 0.08847276833008508,
+          "rescued": 1692,
+          "harmed": 31
+        },
+        "frozen_111": {
+          "accuracy": 0.9892578125,
+          "loss": 0.03822838179457312,
+          "rescued": 1748,
+          "harmed": 21
+        },
+        "live_00": {
+          "accuracy": 0.651953125,
+          "loss": 2.01228598082414,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "live_01": {
+          "accuracy": 0.9443359375,
+          "loss": 0.2796131266945837,
+          "rescued": 1621,
+          "harmed": 124
+        },
+        "live_10": {
+          "accuracy": 0.6287109375,
+          "loss": 2.3398248089928404,
+          "rescued": 506,
+          "harmed": 625
+        },
+        "live_11": {
+          "accuracy": 0.9892578125,
+          "loss": 0.03822838179457312,
+          "rescued": 1748,
+          "harmed": 21
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "reconstruction_error": 0.0,
+      "conditions": {
+        "frozen_000": {
+          "accuracy": 0.5525390625,
+          "loss": 2.5740955085947967,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "frozen_001": {
+          "accuracy": 0.6048828125,
+          "loss": 2.319279669004726,
+          "rescued": 513,
+          "harmed": 245
+        },
+        "frozen_010": {
+          "accuracy": 0.952734375,
+          "loss": 0.20808758875765979,
+          "rescued": 2107,
+          "harmed": 58
+        },
+        "frozen_011": {
+          "accuracy": 0.948828125,
+          "loss": 0.1947007434937534,
+          "rescued": 2112,
+          "harmed": 83
+        },
+        "frozen_100": {
+          "accuracy": 0.559375,
+          "loss": 2.626092351178322,
+          "rescued": 651,
+          "harmed": 616
+        },
+        "frozen_101": {
+          "accuracy": 0.612109375,
+          "loss": 2.3055965902637685,
+          "rescued": 743,
+          "harmed": 438
+        },
+        "frozen_110": {
+          "accuracy": 0.980078125,
+          "loss": 0.10028693592772983,
+          "rescued": 2210,
+          "harmed": 21
+        },
+        "frozen_111": {
+          "accuracy": 0.997265625,
+          "loss": 0.008524832131612805,
+          "rescued": 2279,
+          "harmed": 2
+        },
+        "live_00": {
+          "accuracy": 0.5525390625,
+          "loss": 2.5740955085947967,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "live_01": {
+          "accuracy": 0.9625,
+          "loss": 0.15990646456087515,
+          "rescued": 2149,
+          "harmed": 50
+        },
+        "live_10": {
+          "accuracy": 0.5421875,
+          "loss": 2.82717689992256,
+          "rescued": 579,
+          "harmed": 632
+        },
+        "live_11": {
+          "accuracy": 0.997265625,
+          "loss": 0.008524832131612805,
+          "rescued": 2279,
+          "harmed": 2
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "reconstruction_error": 0.0,
+      "conditions": {
+        "frozen_000": {
+          "accuracy": 0.6783203125,
+          "loss": 1.8427230271120614,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "frozen_001": {
+          "accuracy": 0.7501953125,
+          "loss": 1.4043811994262592,
+          "rescued": 473,
+          "harmed": 105
+        },
+        "frozen_010": {
+          "accuracy": 0.9296875,
+          "loss": 0.32398710969394867,
+          "rescued": 1333,
+          "harmed": 46
+        },
+        "frozen_011": {
+          "accuracy": 0.9376953125,
+          "loss": 0.2837435723110885,
+          "rescued": 1379,
+          "harmed": 51
+        },
+        "frozen_100": {
+          "accuracy": 0.6734375,
+          "loss": 1.8878179624449942,
+          "rescued": 466,
+          "harmed": 491
+        },
+        "frozen_101": {
+          "accuracy": 0.7673828125,
+          "loss": 1.2469545120751548,
+          "rescued": 721,
+          "harmed": 265
+        },
+        "frozen_110": {
+          "accuracy": 0.9423828125,
+          "loss": 0.24369176950739072,
+          "rescued": 1403,
+          "harmed": 51
+        },
+        "frozen_111": {
+          "accuracy": 0.9673828125,
+          "loss": 0.13757353913642653,
+          "rescued": 1497,
+          "harmed": 17
+        },
+        "live_00": {
+          "accuracy": 0.6783203125,
+          "loss": 1.8427230271120614,
+          "rescued": 0,
+          "harmed": 0
+        },
+        "live_01": {
+          "accuracy": 0.93359375,
+          "loss": 0.3308906285253395,
+          "rescued": 1383,
+          "harmed": 76
+        },
+        "live_10": {
+          "accuracy": 0.6662109375,
+          "loss": 1.9031056326257136,
+          "rescued": 444,
+          "harmed": 506
+        },
+        "live_11": {
+          "accuracy": 0.9673828125,
+          "loss": 0.13757353913642653,
+          "rescued": 1497,
+          "harmed": 17
+        }
+      }
+    }
+  ],
+  "all_seeds_accuracy_90": {
+    "frozen_000": false,
+    "frozen_001": false,
+    "frozen_010": true,
+    "frozen_011": true,
+    "frozen_100": false,
+    "frozen_101": false,
+    "frozen_110": true,
+    "frozen_111": true,
+    "live_00": false,
+    "live_01": true,
+    "live_10": false,
+    "live_11": true
+  }
+}

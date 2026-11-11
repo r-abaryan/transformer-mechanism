@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "fixture": false,
+  "training_updates": 0,
+  "optimizer_calls": 0,
+  "device": "cpu",
+  "dtype": "float64",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128"
+  },
+  "histories": 1536,
+  "native_answers": 49152,
+  "oracle_answer_outputs": 49152,
+  "summary": [
+    {
+      "seed": 3461,
+      "group": "all",
+      "histories": 768,
+      "positive": 768,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 561,
+      "native_correct": 24330,
+      "queries": 24576,
+      "oracle_scored_queries": 24576,
+      "oracle_correct": 24576
+    },
+    {
+      "seed": 3461,
+      "group": "native_complete",
+      "histories": 561,
+      "positive": 561,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 561,
+      "native_correct": 17952,
+      "queries": 17952,
+      "oracle_scored_queries": 17952,
+      "oracle_correct": 17952
+    },
+    {
+      "seed": 3461,
+      "group": "native_incomplete",
+      "histories": 207,
+      "positive": 207,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 0,
+      "native_correct": 6378,
+      "queries": 6624,
+      "oracle_scored_queries": 6624,
+      "oracle_correct": 6624
+    },
+    {
+      "seed": 3463,
+      "group": "all",
+      "histories": 768,
+      "positive": 768,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 510,
+      "native_correct": 24223,
+      "queries": 24576,
+      "oracle_scored_queries": 24576,
+      "oracle_correct": 24576
+    },
+    {
+      "seed": 3463,
+      "group": "native_complete",
+      "histories": 510,
+      "positive": 510,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 510,
+      "native_correct": 16320,
+      "queries": 16320,
+      "oracle_scored_queries": 16320,
+      "oracle_correct": 16320
+    },
+    {
+      "seed": 3463,
+      "group": "native_incomplete",
+      "histories": 258,
+      "positive": 258,
+      "certified_nonpositive": 0,
+      "unresolved": 0,
+      "native_complete": 0,
+      "native_correct": 7903,
+      "queries": 8256,
+      "oracle_scored_queries": 8256,
+      "oracle_correct": 8256
+    }
+  ],
+  "native_metrics": [
+    {
+      "seed": 3461,
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 561
+      }
+    },
+    {
+      "seed": 3463,
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 510
+      }
+    }
+  ],
+  "seconds": 46.31982780000544,
+  "lock_sha256": "d009cd9e1e0c6b4b24ee7cf1b47bc7857a5907e8b9c9765b70b82360008cdb4d",
+  "witnesses_sha256": "8d0edfc4743120df2046e2600148b6aed684f39c79410086b1032daf59ade15e",
+  "metrics_sha256": "aa40e1361b45116e67279a44d6febcbc9ea6ca17224ced4ab6e58b0d2e5ad91e"
+}

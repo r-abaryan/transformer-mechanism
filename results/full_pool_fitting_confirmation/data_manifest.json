@@ -1,0 +1,99 @@
+{
+  "seed": 2026100517,
+  "counts": {
+    "train_2": 768,
+    "train_8": 768,
+    "train_16": 768,
+    "train_32": 768,
+    "validation_2": 192,
+    "validation_8": 192,
+    "validation_16": 192,
+    "validation_32": 192,
+    "test_2": 384,
+    "test_8": 384,
+    "test_16": 384,
+    "test_32": 384
+  },
+  "excluded_families": 2432,
+  "baselines": {
+    "train_2": {
+      "count": 768,
+      "constant": 128,
+      "last_event": 384,
+      "first_match": 768
+    },
+    "train_8": {
+      "count": 768,
+      "constant": 128,
+      "last_event": 216,
+      "first_match": 768
+    },
+    "train_16": {
+      "count": 768,
+      "constant": 128,
+      "last_event": 90,
+      "first_match": 768
+    },
+    "train_32": {
+      "count": 768,
+      "constant": 128,
+      "last_event": 120,
+      "first_match": 768
+    },
+    "validation_2": {
+      "count": 192,
+      "constant": 32,
+      "last_event": 126,
+      "first_match": 192
+    },
+    "validation_8": {
+      "count": 192,
+      "constant": 32,
+      "last_event": 36,
+      "first_match": 192
+    },
+    "validation_16": {
+      "count": 192,
+      "constant": 32,
+      "last_event": 48,
+      "first_match": 192
+    },
+    "validation_32": {
+      "count": 192,
+      "constant": 32,
+      "last_event": 66,
+      "first_match": 192
+    },
+    "test_2": {
+      "count": 384,
+      "constant": 64,
+      "last_event": 234,
+      "first_match": 384
+    },
+    "test_8": {
+      "count": 384,
+      "constant": 64,
+      "last_event": 102,
+      "first_match": 384
+    },
+    "test_16": {
+      "count": 384,
+      "constant": 64,
+      "last_event": 108,
+      "first_match": 384
+    },
+    "test_32": {
+      "count": 384,
+      "constant": 64,
+      "last_event": 78,
+      "first_match": 384
+    }
+  },
+  "data_sha256": "b8e9ff346b04a05d57719525bc67c010252d64b1fadbc28afeb8f93a88840d23",
+  "source_hashes": {
+    "results/association_load/development_data.json": "b79010139465671d06e9eef8708cf94289eca4e07ff174e5caa4047922ad901c",
+    "results/association_load/confirmation_data.json": "a17578c50186be8f8ebf8c80f68461bf0009f7f665009eef76ddc4afe3bc3995",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_training/test_data.json": "ac3a8ab7d9ba379e3c8e3dc4546cde6b9c6501d419d538daa6866765cf4ccd84"
+  }
+}

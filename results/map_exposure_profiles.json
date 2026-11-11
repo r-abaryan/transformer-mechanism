@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "policy": "reuse",
+      "seconds": 1.7136591000016779,
+      "batch": 64,
+      "events": 2048,
+      "answers": 2048,
+      "optimizer_state_bytes": 9860,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null,
+      "cpu_peak_memory_measured": false
+    },
+    {
+      "policy": "half_new",
+      "seconds": 0.036109100008616224,
+      "batch": 64,
+      "events": 2048,
+      "answers": 2048,
+      "optimizer_state_bytes": 9860,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null,
+      "cpu_peak_memory_measured": false
+    }
+  ],
+  "sources": {
+    "experiments/map_exposure.py": "23c3f0bd2344d4185db1baff1040aff6b541d474c16db66fc1a37cf74e243154",
+    "experiments/audit_map_exposure.py": "e15627aabc534d27d577bb288b46582a255a0da2a0ef00af04272d132d1da887",
+    "tests/test_map_exposure.py": "f327c472040c13062b949e9e92be38736fdd65e43ff224168a337b4228cb7420"
+  },
+  "scope": "Two discarded complete CPU training steps; not formal exposure or speed measurement."
+}

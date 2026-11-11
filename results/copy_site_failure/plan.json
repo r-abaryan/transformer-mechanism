@@ -1,0 +1,47 @@
+{
+  "models": [
+    [
+      3767,
+      "cross_only"
+    ],
+    [
+      3779,
+      "cross_only"
+    ],
+    [
+      3793,
+      "cross_only"
+    ],
+    [
+      3767,
+      "both"
+    ]
+  ],
+  "pools": [
+    "train_6",
+    "validation_6",
+    "test_6",
+    "test_8",
+    "test_10",
+    "uniform_8",
+    "uniform_10"
+  ],
+  "protected": {
+    "experiments\\copy_site_failure.py": "b4cbdfa3bcca350f3d94cb461b1d31f9ecbd827fa5bc1ac7c5f261f79e03e68e",
+    "docs\\protocols\\copy-site-failure.md": "22f29a893bffdf67d84936d8cb710fc04fee041f77159c9fda1e6569998d52e5",
+    "results\\copy_position_sites\\report.json": "1e15432dc4aa18006134968346d1732140e349c225d4bcde700bc67d5d2e0cd0",
+    "results\\copy_position_sites\\audit.json": "af12ef2fedb9fd9a35c08c97ba30b250e4c9da00149e73a7fc799e291415da6d",
+    "results\\copy_position_sites\\data.json": "94a59bc8e0e080923378888a34c2ecde5b3f8c7b7985bde2de0c7e70efc66c13",
+    "results\\copy_position_sites\\3767_cross_only_6000.pt": "b0a9005852828b4a888467b2677827b6a9ef50d65b9d7cfa238034e7e0b1086c",
+    "results\\copy_position_sites\\3767_cross_only_final_scores.pt": "6ffffaaf677ddb85a9624c7c230cffa512f669b781ccf613d92f00dab8517533",
+    "results\\copy_position_sites\\3779_cross_only_6000.pt": "3f67c56fca07c577a8628733a19c34e15fdca3ddd6fb2ad270868b9edc76dd4e",
+    "results\\copy_position_sites\\3779_cross_only_final_scores.pt": "bf3a648a76ed2b6bd227080211f6e10751e52d17921f99743da63c8d23e6165e",
+    "results\\copy_position_sites\\3793_cross_only_6000.pt": "76af58a7df341c7d9cfa8e673e92ee5fe4c4c186f50ab818a29b26f96b58c38b",
+    "results\\copy_position_sites\\3793_cross_only_final_scores.pt": "478296d621e1e9da576c7777fe0de0e999dba2a28ac57130dadb4df19f3f0b67",
+    "results\\copy_position_sites\\3767_both_6000.pt": "bc755a07b4810a36178fe11ef67daccd77903d683bce7d2820f4e0d3cbcb016e",
+    "results\\copy_position_sites\\3767_both_final_scores.pt": "d3145f2840fd94d9901ed7ecd839912a99dbcc8ab2bc42c5b1acbb7e175b907d"
+  },
+  "model_forwards": 0,
+  "training_updates": 0,
+  "selection": "Inspect first error position/type and correct-prefix failures; choose at most one intervention in a separate frozen protocol. No metric-selected sweeps."
+}

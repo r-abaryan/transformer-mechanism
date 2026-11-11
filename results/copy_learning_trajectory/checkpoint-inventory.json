@@ -1,0 +1,80 @@
+{
+  "directory": "results\\copy_position_sites",
+  "pt_files": [
+    "3761_both_6000.pt",
+    "3761_both_6000_development_scores.pt",
+    "3761_cross_only_6000.pt",
+    "3761_cross_only_6000_development_scores.pt",
+    "3761_ordinary_6000.pt",
+    "3761_ordinary_6000_development_scores.pt",
+    "3761_self_only_6000.pt",
+    "3761_self_only_6000_development_scores.pt",
+    "3767_both_6000.pt",
+    "3767_both_6000_development_scores.pt",
+    "3767_both_final_scores.pt",
+    "3767_cross_only_6000.pt",
+    "3767_cross_only_6000_development_scores.pt",
+    "3767_cross_only_final_scores.pt",
+    "3767_ordinary_6000.pt",
+    "3767_ordinary_6000_development_scores.pt",
+    "3767_ordinary_final_scores.pt",
+    "3767_self_only_6000.pt",
+    "3767_self_only_6000_development_scores.pt",
+    "3767_self_only_final_scores.pt",
+    "3779_both_6000.pt",
+    "3779_both_6000_development_scores.pt",
+    "3779_both_final_scores.pt",
+    "3779_cross_only_6000.pt",
+    "3779_cross_only_6000_development_scores.pt",
+    "3779_cross_only_final_scores.pt",
+    "3779_ordinary_6000.pt",
+    "3779_ordinary_6000_development_scores.pt",
+    "3779_ordinary_final_scores.pt",
+    "3779_self_only_6000.pt",
+    "3779_self_only_6000_development_scores.pt",
+    "3779_self_only_final_scores.pt",
+    "3793_both_6000.pt",
+    "3793_both_6000_development_scores.pt",
+    "3793_both_final_scores.pt",
+    "3793_cross_only_6000.pt",
+    "3793_cross_only_6000_development_scores.pt",
+    "3793_cross_only_final_scores.pt",
+    "3793_ordinary_6000.pt",
+    "3793_ordinary_6000_development_scores.pt",
+    "3793_ordinary_final_scores.pt",
+    "3793_self_only_6000.pt",
+    "3793_self_only_6000_development_scores.pt",
+    "3793_self_only_final_scores.pt"
+  ],
+  "selected_runs": [
+    {
+      "seed": 3767,
+      "arm": "cross_only",
+      "trained_checkpoints": [
+        "3767_cross_only_6000.pt"
+      ]
+    },
+    {
+      "seed": 3779,
+      "arm": "cross_only",
+      "trained_checkpoints": [
+        "3779_cross_only_6000.pt"
+      ]
+    },
+    {
+      "seed": 3793,
+      "arm": "cross_only",
+      "trained_checkpoints": [
+        "3793_cross_only_6000.pt"
+      ]
+    },
+    {
+      "seed": 3767,
+      "arm": "both",
+      "trained_checkpoints": [
+        "3767_both_6000.pt"
+      ]
+    }
+  ],
+  "intermediate_trained_checkpoints_found": false
+}

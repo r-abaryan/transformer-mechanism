@@ -1,0 +1,1207 @@
+{
+  "scope": "Exploratory frozen-model interventions on existing test sets",
+  "runs": [
+    {
+      "seed": 11,
+      "split": "test",
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e",
+      "reconstruction_error": 3.9968028886505635e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.001751477596282371,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.3618812849621508,
+            0.864693350267517
+          ],
+          "query_attention": [
+            0.271467658043634,
+            0.053513104383145625
+          ],
+          "entropy": [
+            1.529396357949614,
+            0.5089157193823046
+          ],
+          "first_value_norm": [
+            0.5053596683342729,
+            2.7563655688671633
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 1.0,
+          "loss": 0.012831119698591504,
+          "corrected": 0,
+          "broken": 0
+        },
+        "zero_head_h1": {
+          "accuracy": 0.224609375,
+          "loss": 4.143666627653653,
+          "corrected": 0,
+          "broken": 397
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0020959492549428986,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0016585437161663991,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.927734375,
+          "loss": 0.25689344660517804,
+          "corrected": 0,
+          "broken": 37
+        },
+        "last_attention_h1": {
+          "accuracy": 0.306640625,
+          "loss": 4.316924212462421,
+          "corrected": 0,
+          "broken": 355
+        },
+        "uniform_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.005309891005436908,
+          "corrected": 0,
+          "broken": 0
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.365234375,
+          "loss": 2.870711654454768,
+          "corrected": 0,
+          "broken": 325
+        },
+        "remove_first_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.003973298640391819,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.224609375,
+          "loss": 4.12870393019857,
+          "corrected": 0,
+          "broken": 397
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0017392457122312407,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0017503576024988842,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "split": "longer",
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e",
+      "reconstruction_error": 2.6645352591003757e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.07274843324562104,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.3055826536137531,
+            0.7984190975009108
+          ],
+          "query_attention": [
+            0.04682169842594561,
+            0.001118345114623816
+          ],
+          "entropy": [
+            1.9679211665462448,
+            0.7256742558571628
+          ],
+          "first_value_norm": [
+            0.4317704603114849,
+            2.5732030655921867
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 0.958984375,
+          "loss": 0.26176411314328457,
+          "corrected": 0,
+          "broken": 21
+        },
+        "zero_head_h1": {
+          "accuracy": 0.2421875,
+          "loss": 2.7386667596146097,
+          "corrected": 0,
+          "broken": 388
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.03355553342852114,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.04247553017444433,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.8828125,
+          "loss": 0.2669352024704119,
+          "corrected": 0,
+          "broken": 60
+        },
+        "last_attention_h1": {
+          "accuracy": 0.248046875,
+          "loss": 3.28937684998974,
+          "corrected": 0,
+          "broken": 385
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.9921875,
+          "loss": 0.10983905491002327,
+          "corrected": 0,
+          "broken": 4
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.376953125,
+          "loss": 2.25566730734974,
+          "corrected": 0,
+          "broken": 319
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.98046875,
+          "loss": 0.1571594836650738,
+          "corrected": 0,
+          "broken": 10
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.234375,
+          "loss": 2.396149345982514,
+          "corrected": 0,
+          "broken": 392
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0744092381630743,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.07270242581157862,
+          "corrected": 0,
+          "broken": 0
+        },
+        "query_position_six": {
+          "accuracy": 1.0,
+          "loss": 0.0018902018924064747,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "split": "test",
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d",
+      "reconstruction_error": 3.1086244689504383e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.0016141316841763189,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.1388889474923542,
+            0.7992624665217629
+          ],
+          "query_attention": [
+            0.27599719021472097,
+            0.0892205533285573
+          ],
+          "entropy": [
+            1.8527228260791817,
+            0.7584394981672341
+          ],
+          "first_value_norm": [
+            0.21527182870748493,
+            2.1756797091430817
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 1.0,
+          "loss": 0.007912452520634525,
+          "corrected": 0,
+          "broken": 0
+        },
+        "zero_head_h1": {
+          "accuracy": 0.224609375,
+          "loss": 3.3130855315208043,
+          "corrected": 0,
+          "broken": 397
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0023400048966610554,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0015500304505302934,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.004116169836734138,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h1": {
+          "accuracy": 0.275390625,
+          "loss": 5.335012967925332,
+          "corrected": 0,
+          "broken": 371
+        },
+        "uniform_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0017013550967447623,
+          "corrected": 0,
+          "broken": 0
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.578125,
+          "loss": 1.4826234146100106,
+          "corrected": 0,
+          "broken": 216
+        },
+        "remove_first_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0016782643327321535,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.236328125,
+          "loss": 3.0977621510350724,
+          "corrected": 0,
+          "broken": 391
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.001709213928601035,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0016158853267236528,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "split": "longer",
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d",
+      "reconstruction_error": 3.552713678800501e-15,
+      "baseline": {
+        "accuracy": 0.97265625,
+        "loss": 0.10079639355700915,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 498,
+          "first_attention": [
+            0.10781415613466135,
+            0.7713239574627923
+          ],
+          "query_attention": [
+            0.1045670992179451,
+            0.06087088303803941
+          ],
+          "entropy": [
+            2.3577642685114775,
+            0.9079852321811954
+          ],
+          "first_value_norm": [
+            0.16924669366148123,
+            2.0785633175969944
+          ]
+        },
+        "incorrect": {
+          "count": 14,
+          "first_attention": [
+            0.09054351314825285,
+            0.6716335552403873
+          ],
+          "query_attention": [
+            0.10793691688959149,
+            0.06372184246201613
+          ],
+          "entropy": [
+            2.361496101834087,
+            1.1522435679053362
+          ],
+          "first_value_norm": [
+            0.1747269370989702,
+            1.9896421685353254
+          ]
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 0.9296875,
+          "loss": 0.2735006803774553,
+          "corrected": 0,
+          "broken": 22
+        },
+        "zero_head_h1": {
+          "accuracy": 0.2421875,
+          "loss": 3.8279831848288204,
+          "corrected": 0,
+          "broken": 374
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.06275094511108806,
+          "corrected": 14,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.016151777897654502,
+          "corrected": 14,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.953125,
+          "loss": 0.16835747478937685,
+          "corrected": 6,
+          "broken": 16
+        },
+        "last_attention_h1": {
+          "accuracy": 0.244140625,
+          "loss": 4.9472714163682285,
+          "corrected": 3,
+          "broken": 376
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.96875,
+          "loss": 0.10510570384331908,
+          "corrected": 0,
+          "broken": 2
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.39453125,
+          "loss": 2.3606335837364685,
+          "corrected": 0,
+          "broken": 296
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.9609375,
+          "loss": 0.1153784226252681,
+          "corrected": 0,
+          "broken": 6
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.2421875,
+          "loss": 3.7388635719956316,
+          "corrected": 0,
+          "broken": 374
+        },
+        "remove_last_value_h0": {
+          "accuracy": 0.96875,
+          "loss": 0.10464230437747174,
+          "corrected": 0,
+          "broken": 2
+        },
+        "remove_last_value_h1": {
+          "accuracy": 0.97265625,
+          "loss": 0.10180370621558706,
+          "corrected": 0,
+          "broken": 0
+        },
+        "query_position_six": {
+          "accuracy": 1.0,
+          "loss": 0.001605900409949673,
+          "corrected": 14,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "split": "test",
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367",
+      "reconstruction_error": 3.552713678800501e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.0018657419702503045,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.2669601831590691,
+            0.9410424772010576
+          ],
+          "query_attention": [
+            0.15024817920450548,
+            0.008601132795324755
+          ],
+          "entropy": [
+            1.6742468565943234,
+            0.2789342925845864
+          ],
+          "first_value_norm": [
+            0.40402221786856873,
+            3.696256916725779
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 1.0,
+          "loss": 0.004261016589951828,
+          "corrected": 0,
+          "broken": 0
+        },
+        "zero_head_h1": {
+          "accuracy": 0.224609375,
+          "loss": 2.182559580933457,
+          "corrected": 0,
+          "broken": 397
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.002417590650025337,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0017930863817724669,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0055199522223787,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h1": {
+          "accuracy": 0.275390625,
+          "loss": 5.753361550693238,
+          "corrected": 0,
+          "broken": 371
+        },
+        "uniform_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0020188161238718525,
+          "corrected": 0,
+          "broken": 0
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.482421875,
+          "loss": 2.706893120173094,
+          "corrected": 0,
+          "broken": 265
+        },
+        "remove_first_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.002238546619255043,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.25,
+          "loss": 2.0880834508219284,
+          "corrected": 0,
+          "broken": 384
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.001867004241134213,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0018606234958702308,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "split": "longer",
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367",
+      "reconstruction_error": 2.6645352591003757e-15,
+      "baseline": {
+        "accuracy": 0.8203125,
+        "loss": 0.3570767407147138,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 420,
+          "first_attention": [
+            0.21702828891348092,
+            0.9032163106671821
+          ],
+          "query_attention": [
+            0.06392759352333144,
+            0.0005211744554548662
+          ],
+          "entropy": [
+            2.0382884081544645,
+            0.4341991436582712
+          ],
+          "first_value_norm": [
+            0.2911774146141974,
+            3.7373222880381025
+          ]
+        },
+        "incorrect": {
+          "count": 92,
+          "first_attention": [
+            0.15626381409104556,
+            0.9214167072454198
+          ],
+          "query_attention": [
+            0.06226590366331974,
+            0.0004357222139625985
+          ],
+          "entropy": [
+            2.089752880702334,
+            0.37109330907970156
+          ],
+          "first_value_norm": [
+            0.3628044057189373,
+            2.324189831486228
+          ]
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 0.736328125,
+          "loss": 0.7176083728444443,
+          "corrected": 0,
+          "broken": 43
+        },
+        "zero_head_h1": {
+          "accuracy": 0.212890625,
+          "loss": 3.1384655508999395,
+          "corrected": 0,
+          "broken": 311
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.03628118753960655,
+          "corrected": 92,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 0.837890625,
+          "loss": 0.25369209890661554,
+          "corrected": 10,
+          "broken": 1
+        },
+        "last_attention_h0": {
+          "accuracy": 0.84375,
+          "loss": 0.4768270794680878,
+          "corrected": 33,
+          "broken": 21
+        },
+        "last_attention_h1": {
+          "accuracy": 0.271484375,
+          "loss": 5.482592095176634,
+          "corrected": 1,
+          "broken": 282
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.8515625,
+          "loss": 0.2702905840123865,
+          "corrected": 19,
+          "broken": 3
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.24609375,
+          "loss": 4.551288212231359,
+          "corrected": 0,
+          "broken": 294
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.75,
+          "loss": 0.5832056223044509,
+          "corrected": 0,
+          "broken": 36
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.212890625,
+          "loss": 3.2939672344699007,
+          "corrected": 0,
+          "broken": 311
+        },
+        "remove_last_value_h0": {
+          "accuracy": 0.81640625,
+          "loss": 0.3693840154733356,
+          "corrected": 0,
+          "broken": 2
+        },
+        "remove_last_value_h1": {
+          "accuracy": 0.8203125,
+          "loss": 0.35707811100257086,
+          "corrected": 0,
+          "broken": 0
+        },
+        "query_position_six": {
+          "accuracy": 1.0,
+          "loss": 0.0019449747704495968,
+          "corrected": 92,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 73,
+      "split": "test",
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64",
+      "reconstruction_error": 4.218847493575595e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.0015773438555731693,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.21158627678510583,
+            0.7992709589348129
+          ],
+          "query_attention": [
+            0.1895896266793481,
+            0.17468558032143233
+          ],
+          "entropy": [
+            1.8726292859770366,
+            0.5619715436145392
+          ],
+          "first_value_norm": [
+            0.26773511953364426,
+            1.980585595159729
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0044584801233686815,
+          "corrected": 0,
+          "broken": 0
+        },
+        "zero_head_h1": {
+          "accuracy": 0.310546875,
+          "loss": 3.150143560500393,
+          "corrected": 0,
+          "broken": 353
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0019416882115987518,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0016513984374941393,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.9296875,
+          "loss": 0.19826053511538064,
+          "corrected": 0,
+          "broken": 36
+        },
+        "last_attention_h1": {
+          "accuracy": 0.275390625,
+          "loss": 5.42373701823154,
+          "corrected": 0,
+          "broken": 371
+        },
+        "uniform_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0019013611919944547,
+          "corrected": 0,
+          "broken": 0
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.5,
+          "loss": 2.559534639398888,
+          "corrected": 0,
+          "broken": 256
+        },
+        "remove_first_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0017741140480358893,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.333984375,
+          "loss": 3.0718364489861743,
+          "corrected": 0,
+          "broken": 341
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0016219635991185787,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0015733484244326887,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 73,
+      "split": "longer",
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64",
+      "reconstruction_error": 3.774758283725532e-15,
+      "baseline": {
+        "accuracy": 0.998046875,
+        "loss": 0.06965718164170642,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 511,
+          "first_attention": [
+            0.14773556140381067,
+            0.8159919261306547
+          ],
+          "query_attention": [
+            0.07792982393069521,
+            0.0011846357905798148
+          ],
+          "entropy": [
+            2.307589970682942,
+            0.7201124200835372
+          ],
+          "first_value_norm": [
+            0.18340854798696243,
+            1.9672309783702413
+          ]
+        },
+        "incorrect": {
+          "count": 1,
+          "first_attention": [
+            0.14939444179995806,
+            0.8213843513708912
+          ],
+          "query_attention": [
+            0.07478431414859696,
+            0.0015153090219222674
+          ],
+          "entropy": [
+            2.317058786501916,
+            0.7707760795596155
+          ],
+          "first_value_norm": [
+            0.14542757575665763,
+            0.7279983160179436
+          ]
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 1.0,
+          "loss": 0.12361168580525986,
+          "corrected": 1,
+          "broken": 0
+        },
+        "zero_head_h1": {
+          "accuracy": 0.25,
+          "loss": 3.367595862704223,
+          "corrected": 0,
+          "broken": 383
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.026619083692490077,
+          "corrected": 1,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.06092397755512248,
+          "corrected": 1,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.951171875,
+          "loss": 0.14347863041437722,
+          "corrected": 0,
+          "broken": 24
+        },
+        "last_attention_h1": {
+          "accuracy": 0.28125,
+          "loss": 4.095335084746009,
+          "corrected": 0,
+          "broken": 367
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.9921875,
+          "loss": 0.08475082131406905,
+          "corrected": 0,
+          "broken": 3
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.38671875,
+          "loss": 2.344106830388829,
+          "corrected": 0,
+          "broken": 313
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.9921875,
+          "loss": 0.09033578900835308,
+          "corrected": 0,
+          "broken": 3
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.29296875,
+          "loss": 3.0510928878314876,
+          "corrected": 0,
+          "broken": 361
+        },
+        "remove_last_value_h0": {
+          "accuracy": 0.998046875,
+          "loss": 0.06966876502861644,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 0.998046875,
+          "loss": 0.0697455477595929,
+          "corrected": 0,
+          "broken": 0
+        },
+        "query_position_six": {
+          "accuracy": 1.0,
+          "loss": 0.0016277077762066018,
+          "corrected": 1,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "split": "test",
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6",
+      "reconstruction_error": 3.774758283725532e-15,
+      "baseline": {
+        "accuracy": 1.0,
+        "loss": 0.0016405032098360118,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 512,
+          "first_attention": [
+            0.5902191832208317,
+            0.5892143637879974
+          ],
+          "query_attention": [
+            0.32594430497292015,
+            0.21019063743953798
+          ],
+          "entropy": [
+            0.7880465982755496,
+            1.03464365461952
+          ],
+          "first_value_norm": [
+            1.784919797133855,
+            1.3198152031026533
+          ]
+        },
+        "incorrect": {
+          "count": 0
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 0.53125,
+          "loss": 2.9947849806903757,
+          "corrected": 0,
+          "broken": 240
+        },
+        "zero_head_h1": {
+          "accuracy": 0.7421875,
+          "loss": 0.6833925572256401,
+          "corrected": 0,
+          "broken": 132
+        },
+        "first_attention_h0": {
+          "accuracy": 1.0,
+          "loss": 0.1321128942794448,
+          "corrected": 0,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.002459698690370824,
+          "corrected": 0,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.451171875,
+          "loss": 3.2546131985717817,
+          "corrected": 0,
+          "broken": 281
+        },
+        "last_attention_h1": {
+          "accuracy": 0.732421875,
+          "loss": 1.3819872298593976,
+          "corrected": 0,
+          "broken": 137
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.55078125,
+          "loss": 2.631356701074104,
+          "corrected": 0,
+          "broken": 230
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.912109375,
+          "loss": 0.26307772184809525,
+          "corrected": 0,
+          "broken": 45
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.53125,
+          "loss": 2.1006605851294933,
+          "corrected": 0,
+          "broken": 240
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.7578125,
+          "loss": 0.9877644564512812,
+          "corrected": 0,
+          "broken": 124
+        },
+        "remove_last_value_h0": {
+          "accuracy": 1.0,
+          "loss": 0.0016017853160768705,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 1.0,
+          "loss": 0.0016486208894499895,
+          "corrected": 0,
+          "broken": 0
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "split": "longer",
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6",
+      "reconstruction_error": 3.1086244689504383e-15,
+      "baseline": {
+        "accuracy": 0.97265625,
+        "loss": 0.1460405445732168,
+        "corrected": 0,
+        "broken": 0
+      },
+      "groups": {
+        "correct": {
+          "count": 498,
+          "first_attention": [
+            0.5850617844452328,
+            0.4725205617562726
+          ],
+          "query_attention": [
+            0.014305878141243917,
+            0.03131810343700097
+          ],
+          "entropy": [
+            1.108256333580217,
+            1.4251701334098206
+          ],
+          "first_value_norm": [
+            1.7815598322583002,
+            1.066309452508359
+          ]
+        },
+        "incorrect": {
+          "count": 14,
+          "first_attention": [
+            0.8200148704326075,
+            0.3930960241319399
+          ],
+          "query_attention": [
+            0.010433576210503897,
+            0.029059992473938482
+          ],
+          "entropy": [
+            0.6213656888682237,
+            1.5892150063724932
+          ],
+          "first_value_norm": [
+            2.6098657741793594,
+            0.48908074717174255
+          ]
+        }
+      },
+      "interventions": {
+        "zero_head_h0": {
+          "accuracy": 0.412109375,
+          "loss": 2.746492159058818,
+          "corrected": 0,
+          "broken": 287
+        },
+        "zero_head_h1": {
+          "accuracy": 0.822265625,
+          "loss": 0.5013422242746992,
+          "corrected": 14,
+          "broken": 91
+        },
+        "first_attention_h0": {
+          "accuracy": 0.998046875,
+          "loss": 0.09933901894779726,
+          "corrected": 13,
+          "broken": 0
+        },
+        "first_attention_h1": {
+          "accuracy": 1.0,
+          "loss": 0.022373968731047324,
+          "corrected": 14,
+          "broken": 0
+        },
+        "last_attention_h0": {
+          "accuracy": 0.421875,
+          "loss": 3.8385949381661844,
+          "corrected": 1,
+          "broken": 283
+        },
+        "last_attention_h1": {
+          "accuracy": 0.595703125,
+          "loss": 1.4804140038661726,
+          "corrected": 10,
+          "broken": 203
+        },
+        "uniform_attention_h0": {
+          "accuracy": 0.4375,
+          "loss": 2.828685277320139,
+          "corrected": 0,
+          "broken": 274
+        },
+        "uniform_attention_h1": {
+          "accuracy": 0.771484375,
+          "loss": 0.5018603960680682,
+          "corrected": 4,
+          "broken": 107
+        },
+        "remove_first_value_h0": {
+          "accuracy": 0.365234375,
+          "loss": 2.6751605644918968,
+          "corrected": 0,
+          "broken": 311
+        },
+        "remove_first_value_h1": {
+          "accuracy": 0.771484375,
+          "loss": 0.5428335344363037,
+          "corrected": 0,
+          "broken": 103
+        },
+        "remove_last_value_h0": {
+          "accuracy": 0.97265625,
+          "loss": 0.14587492985118133,
+          "corrected": 0,
+          "broken": 0
+        },
+        "remove_last_value_h1": {
+          "accuracy": 0.97265625,
+          "loss": 0.14411665778393723,
+          "corrected": 0,
+          "broken": 0
+        },
+        "query_position_six": {
+          "accuracy": 1.0,
+          "loss": 0.003559048395822844,
+          "corrected": 14,
+          "broken": 0
+        }
+      }
+    }
+  ],
+  "torch": "2.14.0+cpu",
+  "dtype": "float64",
+  "device": "cpu",
+  "source_sha256": {
+    "inspect_first_token.py": "fbcec8be2fe113b29f72adce4230ea35efd46f2dac46928764298cd790a7f30c",
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7"
+  },
+  "protocol_sha256": "8b5e35c1ac0363cffe8800ed191dea3be7fd817a5c7a9d03edc10bffd5c922c1"
+}

@@ -1,0 +1,351 @@
+{
+  "passed": true,
+  "report_sha256": "a3133c56208ca07200f3d7b89842f530e3e03df9f8f6642a02620187ecdc9c90",
+  "final_cells": 48,
+  "final_predictions": 15360,
+  "curve_predictions_reduced": 107520,
+  "max_logit_error": 9.681144774731365e-14,
+  "max_curve_metric_error": 5.854691731421724e-17,
+  "max_pair_error": 2.7755575615628914e-17,
+  "argmax_changes": 0,
+  "stream_replays": 6,
+  "sampled_training_labels_checked": 384000,
+  "cells": [
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 1.5987211554602254e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 1.687538997430238e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 2.6201263381153694e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 1.6431300764452317e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 4.3520742565306136e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 3.375077994860476e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 3.3306690738754696e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 3.197442310920451e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 2.531308496145357e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 1.4210854715202004e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 2.353672812205332e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 1.3322676295501878e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 4.707345624410664e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 3.375077994860476e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 3.375077994860476e-14
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 3.6415315207705135e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 2.708944180085382e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 1.021405182655144e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 2.4091839634365897e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 1.887379141862766e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 4.6629367034256575e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 2.942091015256665e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 3.6415315207705135e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 2.220446049250313e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 1.6431300764452317e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 3.241851231905457e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 1.9761969838327786e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 1.7319479184152442e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 2.842170943040401e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 5.3734794391857577e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 2.886579864025407e-14
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 2.042810365310288e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 4.085620730620576e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 2.5757174171303632e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 4.7628567756419216e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 3.5083047578154947e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 6.52811138479592e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 2.6201263381153694e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 5.617728504603292e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 4.618527782440651e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/8/reset_free",
+      "count": 128,
+      "logit_error": 4.3076653355456074e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/8/mixed",
+      "count": 128,
+      "logit_error": 1.6431300764452317e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_agree",
+      "count": 128,
+      "logit_error": 5.062616992290714e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/8/long_tail_disagree",
+      "count": 128,
+      "logit_error": 4.3076653355456074e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/12/reset_free",
+      "count": 512,
+      "logit_error": 9.681144774731365e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/12/mixed",
+      "count": 512,
+      "logit_error": 2.4424906541753444e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_agree",
+      "count": 512,
+      "logit_error": 6.572520305780927e-14
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "group": "train/12/long_tail_disagree",
+      "count": 512,
+      "logit_error": 6.539213615042172e-14
+    }
+  ]
+}

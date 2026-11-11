@@ -1,0 +1,142 @@
+{
+  "phase": "complete",
+  "workers": {
+    "0": "5c9e4075ce9b6cbce00e97c5200d4c7217ea6cca6af9a3c4dd22066aea40276a",
+    "1": "883cb4e9d5badf2544233fd526e318a769d69380695145502cda9bb9afc9e58e",
+    "2": "c4c9a5f270941d47f17bfd523d39d8d0a7b8ff1bed9743e57c6994a56f63ae14"
+  },
+  "summary": [
+    {
+      "batch": 1,
+      "prefix": 14,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 0.984450315368302,
+          "wall_ratio": 0.9846144250469934
+        },
+        {
+          "worker": 1,
+          "event_ratio": 0.8946089263925061,
+          "wall_ratio": 0.8867382379522345
+        },
+        {
+          "worker": 2,
+          "event_ratio": 1.0140172024388399,
+          "wall_ratio": 1.0145370345461169
+        }
+      ],
+      "speed_claim_pass": false
+    },
+    {
+      "batch": 1,
+      "prefix": 128,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 1.0135860553358753,
+          "wall_ratio": 1.0139353577102255
+        },
+        {
+          "worker": 1,
+          "event_ratio": 1.0191240874797292,
+          "wall_ratio": 1.0189843016694233
+        },
+        {
+          "worker": 2,
+          "event_ratio": 2.363159153917626,
+          "wall_ratio": 2.362048511512414
+        }
+      ],
+      "speed_claim_pass": false
+    },
+    {
+      "batch": 1,
+      "prefix": 512,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 1.0248858049993097,
+          "wall_ratio": 1.0244233007347163
+        },
+        {
+          "worker": 1,
+          "event_ratio": 0.9592189914003677,
+          "wall_ratio": 0.9583064278419637
+        },
+        {
+          "worker": 2,
+          "event_ratio": 1.0379394293540376,
+          "wall_ratio": 1.0362575071992697
+        }
+      ],
+      "speed_claim_pass": false
+    },
+    {
+      "batch": 16,
+      "prefix": 14,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 1.0616948700309903,
+          "wall_ratio": 1.0608105601552353
+        },
+        {
+          "worker": 1,
+          "event_ratio": 1.0666997819160404,
+          "wall_ratio": 1.066460420098455
+        },
+        {
+          "worker": 2,
+          "event_ratio": 1.0530094627690043,
+          "wall_ratio": 1.0516598256689242
+        }
+      ],
+      "speed_claim_pass": false
+    },
+    {
+      "batch": 16,
+      "prefix": 128,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 1.030293733313346,
+          "wall_ratio": 1.0305191582008182
+        },
+        {
+          "worker": 1,
+          "event_ratio": 1.0166518625751322,
+          "wall_ratio": 1.0165265614223926
+        },
+        {
+          "worker": 2,
+          "event_ratio": 0.9933067883191483,
+          "wall_ratio": 0.9936819062965018
+        }
+      ],
+      "speed_claim_pass": false
+    },
+    {
+      "batch": 16,
+      "prefix": 512,
+      "process_ratios": [
+        {
+          "worker": 0,
+          "event_ratio": 1.061060081401803,
+          "wall_ratio": 1.0610000775954715
+        },
+        {
+          "worker": 1,
+          "event_ratio": 0.4716332065717297,
+          "wall_ratio": 0.4716409676020369
+        },
+        {
+          "worker": 2,
+          "event_ratio": 0.9793011796249111,
+          "wall_ratio": 0.9794254079423814
+        }
+      ],
+      "speed_claim_pass": false
+    }
+  ]
+}

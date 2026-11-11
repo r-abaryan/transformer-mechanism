@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Presentation and immutable-evidence checks after formal independent audit; no additional training.",
+  "report_sha256": "c5a88c1d1d711632c631f94ac6f905416784305a873645a039ec4f79ce4d6cf8",
+  "audit_sha256": "11e229639f59dfbf5a3057282a94efc1e927f2b563ce5b6a37fda6adf90d80ef",
+  "csv_sha256": "9b3cceee1636684d895364ddc13908c34132f91f6cfe6f0090c80c2dd6987978",
+  "csv_rows": 288,
+  "numerical_table_rows": 26,
+  "figure_sha256": "68e884e139512be4dd00645c801bb8baf3e2f8ba8bfbcb811cffca356617e115",
+  "figure_curves": 4,
+  "figure_measured_points": 16,
+  "local_links_checked": 778,
+  "unchanged_locked_files": {
+    "query_feedback_training": 93,
+    "language_context_use": 180
+  },
+  "document_sha256": {
+    "docs/topics/attention/query-feedback-training-guide.md": "083cf7511c09372728346c067ee2e9b691ce201be4d3530df67ae82d0a780708",
+    "docs/topics/attention/query-feedback-training-results.md": "fc81b34dd2b3aea3f0e472a620ecdf89a57e25784311e2f61f76a0fc2b77eccc",
+    "docs/topics/attention/README.md": "a1fc01d59f57ec0380241552f9f6375b7c424116f318840ab6d17a3cb6fcad52",
+    "docs/guides/README.md": "81c90b70f3ec44ae9ed3ca22b29feefa61372d54fa96bce8704d60b4a68f374f",
+    "docs/results/README.md": "90dfc224ca151433432ce6e2c72827fa61091f78ee7c92726dc4983c856d0411",
+    "docs/protocols/README.md": "698728cd8181ce832a8d4e921c813d5aebaff46a41235563fe2cc0598deaaa7f",
+    "docs/protocols/query-feedback-training.md": "8beb76d589cf555e7e9a4debaffa07f08549d6114ab52c3851e6502b52dc03e1",
+    "docs/reference/sources.md": "2a5a237cec37e5dfba200485d7eaf53f594c2da0970448a52288468977fa4b9c",
+    "docs/assessments/research-checkpoint.md": "88d681e14c6408775ec62909795ee36e0343d518a109a7ee221e7861b6f90ec3",
+    "docs/assessments/learning-mechanism-agenda.md": "d12bc2081d62c72c12a6c6fc0f03a3b400208319f83baabee42d59e94e44d1f5",
+    "docs/assessments/research-history.md": "b7cfcc12c14449e121443ae74d788e5f24115c35b2f6040d0afa1c64313e89e7",
+    "docs/assessments/failure-register.md": "41e35fffb65d54e8c0736c4c6384b917e0ba473c53ae7541a7bc564055e629af",
+    "tests/README.md": "34caead9ac348ba238eaa373ce67dab1807dfa3d0c9bc1e1d6f82463130868b1"
+  },
+  "checks": [
+    "CSV matches all audited groups including absent groups and complete maps.",
+    "Every numerical results-table cell and plotted coordinate recomputed from audited report.",
+    "Scoped local links resolve; new report/guide/protocol contain no em dash.",
+    "Failed criteria and complete training-pair coverage agree with report.",
+    "Report matches audit hash; current and earlier-language locked files unchanged."
+  ],
+  "presentation_check_recovery": "Initial verification read used Windows default cp1252 and failed on existing UTF-8 text; explicit UTF-8-sig reads complete. No research artifact changed."
+}

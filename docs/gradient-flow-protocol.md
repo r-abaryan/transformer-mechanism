@@ -1,0 +1,13 @@
+# Gradient-flow measurement during training
+
+Fixed before execution. Replay the five existing varied-position recipes (seeds 461/487/509/541/571), same initial weights, training split, batch stream, offset stream, Adam .001 and 3,000 updates of 64 examples, CPU float64, no dropout/clipping/warmup. This is instrumentation of known runs, not a new optimizer or architecture comparison. Verify initial/minibatch hashes and final parameters against original checkpoints. Do not change a recipe to obtain attractive curves.
+
+Probe at steps 0/500/1500/3000 on one fixed sample of 128 validation rows (randperm seed 20261227), always offset +4, mean cross-entropy. Save probe indices and provenance before training. Probe backward passes do not update parameters or consume training RNG. Save all four measured states per seed, no test evaluation. Full validation accuracy at those steps is optional; use probe accuracy/loss for plotted curves and identify it as such.
+
+Record RMS activation gradients along the residual stream and at final normalization. For each attention/FFN residual addition y=x+F(LN(x)), decompose g_x=g_y+J_branch^T g_y. Record skip/branch/total norms, cosine and total/skip norm ratio. This is a local decomposition conditional on the observed loss gradient, not an ablated training run.
+
+For each of five LayerNorm sites, check the analytical input VJP against autograd: with h=(x-mu)/sigma, w=gamma*g_out, g_in=[w-mean(w)-h*mean(w*h)]/sigma. Use population variance and actual epsilon. Record local gradient norm ratio and zero-mean input-gradient error. Independently check one last-token directional derivative per site using centered difference epsilon 1e-6, normalized deterministic direction, fixed upstream gradient. Absolute tolerance 1e-7; report errors rather than hiding scale.
+
+Check explicit/library logits and parameter gradients, residual sums and LayerNorm VJPs within 1e-10. Numerical examples must also challenge the blanket claims: F(x)=-x cancels the skip gradient; LayerNorm annihilates the constant-feature direction and can amplify another direction at small variance. These are counterexamples, not trained-model statistics.
+
+Report all seeds, snapshots, finite training losses/gradients and final replay equality. Save data for reproducible SVG plots with log gradient axis, per-seed traces and mean summaries; diagrams must distinguish forward and backward paths. No claim of deep-network stability, pre-norm superiority or causal necessity follows from a two-block observational replay. Stop after this bounded training-flow study and document remaining unknowns.

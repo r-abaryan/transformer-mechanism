@@ -1,0 +1,32 @@
+__pycache__/
+.venv/
+.venv-gpu/
+.uv-cache/
+.parquet-reader/
+results/test_runs/
+
+# Retained temporary fixtures from historical test runs.
+/results/tmp*/
+
+# Execution logs contain local paths and tracebacks.
+/results/**/*.log
+
+# Binary checkpoints, tensors and dataset copies stay on disk.
+# Reproduction from a clone requires restoring these artifacts separately.
+/results/**/*.pt
+/results/readout_norm_cap_training/pools.json
+/data/**/*.parquet
+/data/**/*.uint32
+
+# Existing large JSON score dumps. Gitignore cannot filter by file size.
+# Keep summary reports, metrics and provenance manifests versionable.
+/results/canonical_positions_scores.json
+/results/donor_slots_scores.json
+/results/ffn_branches_scores.json
+/results/ffn_normalization_scores.json
+/results/final_length_scores.json
+/results/joint_routing_confirmation_scores.json
+/results/norm_extension_scores.json
+/results/norm_placement_test_scores.json
+/results/position_routing_details.json
+/results/query_key_scores.json

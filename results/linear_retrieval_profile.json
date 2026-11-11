@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "arm": "softmax",
+      "parameters": 4544,
+      "step_seconds": 1.6854729000478983,
+      "optimizer_state_tensors": 108,
+      "loss": 3.300841799661893,
+      "device": "cpu",
+      "dtype": "float64",
+      "batch": 64,
+      "sequence_length": 10,
+      "peak_gpu_allocated_bytes": 0,
+      "peak_gpu_reserved_bytes": 0
+    },
+    {
+      "arm": "linear",
+      "parameters": 4544,
+      "step_seconds": 0.01352079981006682,
+      "optimizer_state_tensors": 108,
+      "loss": 3.313669875080013,
+      "device": "cpu",
+      "dtype": "float64",
+      "batch": 64,
+      "sequence_length": 10,
+      "peak_gpu_allocated_bytes": 0,
+      "peak_gpu_reserved_bytes": 0
+    }
+  ],
+  "source_sha256": "0a3aba7aa8f1ce37af20e11f646b229a1f445d5dc72bdabdb8000f69f031381a",
+  "note": "Complete CPU Adam step; GPU unused, CPU peak memory not measured. Profile weights discarded."
+}

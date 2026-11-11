@@ -1,0 +1,12 @@
+{
+  "error": "Bitwise full-forward comparison failed before training",
+  "max_logit_errors": [
+    6.661338147750939e-16,
+    1.1102230246251565e-15,
+    8.881784197001252e-16
+  ],
+  "cause": "Broadcast expand changed K/V tensor layout relative to original repeat_interleave",
+  "correction": "Use original repeat_interleave; retain exact check and all numerical tolerances",
+  "data_sha256": "50f289ef292860bdcc9422e314fecbdffd6c77cba0d1810f2616b7ca492f836b",
+  "training_started": false
+}

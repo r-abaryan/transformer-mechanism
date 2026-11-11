@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "cells": 360,
+  "csv_rows": 1080,
+  "evaluation_targets": 2338560,
+  "max_coefficient_error": 1.1102230246251565e-15,
+  "max_logit_error": 4.547473508864641e-13,
+  "protected_files": 65,
+  "report_sha256": "fad4407802968f077323bfae7f07a2f9f19209d5312a7b1c742f70d76522c34f",
+  "decision": {
+    "pairs": [
+      {
+        "seed": 3473,
+        "contrasts": {
+          "train": {
+            "coefficient_unit_margin": -0.003613228635657162,
+            "coefficient_accuracy": 0.006103515625,
+            "native_unit_margin": -0.003502210788193294
+          },
+          "validation": {
+            "coefficient_unit_margin": -0.0055192869825405055,
+            "coefficient_accuracy": -0.0029296875,
+            "native_unit_margin": -0.005091798142127069
+          },
+          "test": {
+            "coefficient_unit_margin": -0.00013277541587014552,
+            "coefficient_accuracy": -0.01171875,
+            "native_unit_margin": -0.0002909429790418083
+          }
+        }
+      },
+      {
+        "seed": 3479,
+        "contrasts": {
+          "train": {
+            "coefficient_unit_margin": -0.0024208038938583476,
+            "coefficient_accuracy": 0.004150390625,
+            "native_unit_margin": -0.002751339771478234
+          },
+          "validation": {
+            "coefficient_unit_margin": 0.00915414530396852,
+            "coefficient_accuracy": -0.0087890625,
+            "native_unit_margin": 0.009104753758893913
+          },
+          "test": {
+            "coefficient_unit_margin": -0.0009415268861219794,
+            "coefficient_accuracy": -0.0029296875,
+            "native_unit_margin": -0.001143163139118053
+          }
+        }
+      },
+      {
+        "seed": 3481,
+        "contrasts": {
+          "train": {
+            "coefficient_unit_margin": -0.0021996616523835555,
+            "coefficient_accuracy": 0.001220703125,
+            "native_unit_margin": -0.002272187534609893
+          },
+          "validation": {
+            "coefficient_unit_margin": -0.0003584989939390826,
+            "coefficient_accuracy": -0.01171875,
+            "native_unit_margin": 0.0011091782926263005
+          },
+          "test": {
+            "coefficient_unit_margin": 0.009526580353281633,
+            "coefficient_accuracy": 0.0029296875,
+            "native_unit_margin": 0.009576837146391792
+          }
+        }
+      }
+    ],
+    "broad_target_margin_signature": false,
+    "training_only_target_margin_signature": false,
+    "verdict": "mixed_or_unresolved"
+  }
+}

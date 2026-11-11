@@ -1,0 +1,9 @@
+# Dense versus tiled online attention: fixed CPU benchmark
+
+Freeze before execution. Reuse S06/S08 in attention-spikes as prior arithmetic evidence. New measurement: causal softmax attention, one head, batch1, d_k=d_v=64, CPUfloat64, one PyTorch thread, no autograd/dropout. Lengths256/512/1024/2048, input seeds901/907. Compare materialized dense attention against query/key tiles128 with online softmax accumulation. No fused SDPA/GPU/FlashAttention performance claim.
+
+Each length/seed/method runs in a fresh child process, sequentially. Reverse method order for the second seed. Identical seeded Gaussian Q/K/V; store input hashes and outputs. After input allocation record Windows current/peak working set, run one warmup, then three timed forwards. Release each output before the next forward. Record peak working set after the timed runs and its increase over the pre-operation peak. Exclude output serialization from timing/memory endpoint. Process peaks include runtime, inputs, warmup, allocator caching and libraries; their difference is not exact attention allocation. No dense reference in streaming measurement processes.
+
+After all sixteen workers, compare saved paired outputs, finite values and max absolute error <1e-10. Test non-multiple tile boundary at n129 separately, outside measured processes. Retain three timings per worker; summarize median and range of all six per length/method, not statistical significance. Save baseline and final memory counters, not only differences. Compare analytical single-score storage8*n^2 versus single tile8*min(n,128)^2, explicitly not total peak memory. Both perform quadratic attention arithmetic; tiling changes workspace and execution order.
+
+Stop after this matrix and artifact audit. No tile search, additional lengths, optimized kernel comparison or architecture proposal.

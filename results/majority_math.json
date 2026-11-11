@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "strings_checked": 2730,
+  "neighbor_checks": 28218,
+  "cases": [
+    {
+      "n": 1,
+      "strings": 2,
+      "mean_flips": "1",
+      "boundary_flips": [
+        1
+      ],
+      "mean_flips_float": 1.0,
+      "single_bit_accuracy": "1",
+      "uniform_attention_errors": 0
+    },
+    {
+      "n": 3,
+      "strings": 8,
+      "mean_flips": "3/2",
+      "boundary_flips": [
+        2
+      ],
+      "mean_flips_float": 1.5,
+      "single_bit_accuracy": "3/4",
+      "uniform_attention_errors": 0
+    },
+    {
+      "n": 5,
+      "strings": 32,
+      "mean_flips": "15/8",
+      "boundary_flips": [
+        3
+      ],
+      "mean_flips_float": 1.875,
+      "single_bit_accuracy": "11/16",
+      "uniform_attention_errors": 0
+    },
+    {
+      "n": 7,
+      "strings": 128,
+      "mean_flips": "35/16",
+      "boundary_flips": [
+        4
+      ],
+      "mean_flips_float": 2.1875,
+      "single_bit_accuracy": "21/32",
+      "uniform_attention_errors": 0
+    },
+    {
+      "n": 9,
+      "strings": 512,
+      "mean_flips": "315/128",
+      "boundary_flips": [
+        5
+      ],
+      "mean_flips_float": 2.4609375,
+      "single_bit_accuracy": "163/256",
+      "uniform_attention_errors": 0
+    },
+    {
+      "n": 11,
+      "strings": 2048,
+      "mean_flips": "693/256",
+      "boundary_flips": [
+        6
+      ],
+      "mean_flips_float": 2.70703125,
+      "single_bit_accuracy": "319/512",
+      "uniform_attention_errors": 0
+    }
+  ],
+  "source_sha256": "b2e5553bcbd08dbb8d905ecded57d78545f8b64a99a40838dca70bc2509ce2c4",
+  "scope": "Integer/rational majority identities and an abstract uniform-attention head, not a trained network mechanism"
+}

@@ -1,0 +1,17 @@
+# Final query-wise write-gradient decomposition
+
+Frozen before formal evaluation, 2026-10-04. Question: does the within-history opposition measured earlier persist for individual queries, or arise only when query losses combine?
+
+Use seeds 3461/3463, step 12000, all 768 existing train-32 histories and their 32 queries. Load unchanged checkpoint weights and audited saved logits/masks/gradients. Preserve masked CE weighting / (4 H m), native correctness and labels. No held-out selection, recurrent prefill, autograd, optimizer call or training in the formal diagnostic. CPU float64, one thread. Preflight synthetic forwards/autograd are separately disclosed.
+
+For A_t=I-beta k_t k_t^T in our transposed-state convention, define a_(h,q,t)=beta q^T A_T ... A_(t+1) k_t. Then final read r_(h,q)=sum_t a_(h,q,t) v_t and the individual event gradient is g_(h,q,t)=a_(h,q,t) d_(h,q), where d=W^T(softmax(z)-onehot(y))/(4 H m). Check reconstructed logits against saved native logits and each masked query sum against every saved event-gradient cohort.
+
+Map event gradients into their actual shared value-embedding row. For each query, E=sum_t ||g_t||^2, J=||sum_t embedded(g_t)||^2 and W_single=J-E. Report weighted sign counts at absolute guard 1e-14. Also report coefficient-only geometry K=sum_value(sum_(t:value) a_t)^2-sum_t a_t^2 at guard 1e-12. K separates signed routing geometry from loss scale; small weighted gradients must not be called zero or convergence. Record whether opposite coefficient signs occur within any shared value row. Different value rows are orthogonal.
+
+For each correct/error/total cohort, reconcile W_mixed (earlier within-history term) = sum W_single + W_cross_query. Report signed terms, not causal percentages. Each history's queries are correlated. Six cohort summaries, 49,152 distinct query rows and 1,572,864 query-event sensitivities, not additional independent seeds. Store compact coefficients/read gradients instead of all event-gradient tensors. A deterministic first wrong query with negative W_single per seed may illustrate an opposing same-value pair; it is not a representative sample or independent replication.
+
+Independent audit: forward propagation of write basis effects for coefficients, explicit reverse state-gradient transport per query for gradients, chronological prefix products for W_single and cross-query terms, independent labels and CSV/summary/example reductions. Check saved aggregate gradients, previous history report, shapes, masks, source hashes and exact counts. Continuous guards: logits 1e-9, gradients/statistics absolute+relative 1e-12; discrete signs exact. No tolerance changes after formal evaluation.
+
+Preflight: initialized saved primary evaluator and actual new evaluator/auditor entries; supplied ties/absent cohorts, zero gradients, different value rows, single-query autograd checks and deliberate coefficient/label/mask/summary/CSV defects. Stop after one formal run and audit. Close this decomposition chain; do not automatically add gradient partitions, optimizer variants or training. Historical learning cause and repair remain separate questions.
+
+Primary source inspected: [Yang et al., sections 3.1/3.2](https://arxiv.org/html/2406.06484v2#S3.SS2), affine delta recurrence and unrolled write contributions. Our orientation, CE-gradient factorization and query energy decomposition are local derivations. This toy scalar-beta reader is not the paper's full trained architecture.

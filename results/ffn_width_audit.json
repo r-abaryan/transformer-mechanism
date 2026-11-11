@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "evaluations": 30,
+  "max_logit_error": 8.970602038971265e-14,
+  "input_checks": {
+    "family_counts": {
+      "train_3": 160,
+      "validation_3": 20,
+      "test_3": 40,
+      "train_4": 800,
+      "validation_4": 100,
+      "test_4": 200,
+      "test_6": 200
+    },
+    "last_pair_heuristic": {
+      "train_3": 0.6666666666666666,
+      "validation_3": 0.6666666666666666,
+      "test_3": 0.6666666666666666,
+      "train_4": 0.5060416666666666,
+      "validation_4": 0.4816666666666667,
+      "test_4": 0.505,
+      "test_6": 0.33166666666666667
+    },
+    "first_match_accuracy": 0.0,
+    "excluded_prior_families": 3920,
+    "fresh_four_six_overlap": 0,
+    "three_pair_reused": true
+  },
+  "report_sha256": "a3d525ccb5802882aa375f81f92f40235cb54c422a15e2e828ba314073fd76cc",
+  "source_sha256": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14"
+}

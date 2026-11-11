@@ -1,0 +1,246 @@
+{
+  "status": "complete",
+  "fixture": false,
+  "cells": [
+    {
+      "seed": 3461,
+      "pool": "train_2",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_8",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 0.00024259193911238165
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 0.00024259193911238165
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_16",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0014770307330634078
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0014770307330634078
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_32",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 561
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_2",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "ce": 0.0
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_8",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 5.052510341978431e-05
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "ce": 5.052510341978431e-05
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_16",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0016078027207679908
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "ce": 0.0016078027207679908
+        },
+        "complete_maps": 768
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_32",
+      "arm": "native",
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.04935083218587619
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 510
+      }
+    }
+  ],
+  "summary": [
+    {
+      "seed": 3461,
+      "outcome": "unresolved",
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "iterations": 218,
+      "solver_seconds": 5.43165919999592,
+      "solver_margin": -0.0,
+      "positive_lower_margin": -2e-45,
+      "approximate_dual_residual": 4.440892098500626e-16,
+      "certificate_support": 0,
+      "reconstruction": {
+        "support": 36,
+        "attempted": true,
+        "reason": "inconsistent_exact_system",
+        "rank": 36
+      },
+      "constraints": 222721,
+      "variables": 46,
+      "witness_weight_norm": null,
+      "witness_bias_norm": null
+    },
+    {
+      "seed": 3463,
+      "outcome": "unresolved",
+      "solver_status": 4,
+      "solver_message": "(HiGHS Status 0: Not Set)",
+      "iterations": 0,
+      "solver_seconds": 2.8217889000079595,
+      "solver_margin": null,
+      "positive_lower_margin": null,
+      "approximate_dual_residual": null,
+      "certificate_support": 0,
+      "reconstruction": {
+        "attempted": false,
+        "reason": "not_needed"
+      },
+      "constraints": 222721,
+      "variables": 46,
+      "witness_weight_norm": null,
+      "witness_bias_norm": null
+    }
+  ],
+  "histories": 6144,
+  "native_queries": 89088,
+  "witness_queries": 0,
+  "primal_solver_calls": 2,
+  "training_updates": 0,
+  "optimizer_calls": 0,
+  "device": "cpu",
+  "dtype": "float64",
+  "seconds": 11.830217100010486,
+  "lock_sha256": "d1f0d38440bd820b0f6859fd6ec55b0f6aaccabfdd667d55b68908b82b6484fe",
+  "witnesses_sha256": "a1a96b07541aa4c5a6b849462244e10274ce9a756741508ee2b878977078c341",
+  "metrics_sha256": "04995958f5237d46644879ea3ff758b7cd82e0142f509681867928b6ef5cd747"
+}

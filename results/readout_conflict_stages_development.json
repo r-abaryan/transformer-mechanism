@@ -1,0 +1,12 @@
+{
+  "failures": [
+    {
+      "path": "results/readout_conflict_stages_preflight_failed_1791193878328810800.json",
+      "sha256": "c654335eb5c3232f3f6f11bb79af99e14f583a23c00e62685cdaca7ff73d208e"
+    }
+  ],
+  "cause": "Checkpoint reload constructs a randomly initialized Reader before replacing its weights; global RNG preservation assertion failed.",
+  "fix": "Isolate both diagnostic model reloads with torch.random.fork_rng(devices=[]); preserve the RNG equality check.",
+  "formal_evaluation_started_before_fix": false,
+  "passed_preflight": "results/readout_conflict_stages_preflight.json"
+}

@@ -1,0 +1,11 @@
+{
+  "failed_preflight": "results/readout_norm_cap_training_preflight_failed_1791206167942313000.json",
+  "failed_preflight_sha256": "29a8d38ebd8a43a480d23c795868804ffadc9284963e7fece7e53216fd35edf7",
+  "failed_auditor_sha256": "7a402c0bae06f8bd39dd165fec519245c65777e4a8429a91beec511a94d313de",
+  "cause": "Reused dictionary-only comparator rejected the ordered seed list in decision, after arithmetic checks passed.",
+  "fix": "Reuse existing audit_shared_state_feasibility.compare which checks dictionaries, ordered lists, scalars and nulls; retain all checks.",
+  "formal_training_started": false,
+  "preflight_initial_fixture_updates": 8,
+  "preflight_successful_fixture_updates": 8,
+  "profile_optimizer_calls": 2
+}

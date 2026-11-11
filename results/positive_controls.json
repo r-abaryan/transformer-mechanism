@@ -1,0 +1,1349 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "steps": 3000,
+  "lr": 0.1,
+  "batch": 32,
+  "runs": [
+    {
+      "control": "single_pair",
+      "seed": 11,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.0002518338092016329,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09375,
+          "loss": 2.531636870425649,
+          "invalid_prediction_rate": 0.6875
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.002225177232518194,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009278926141169531,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.000568758502194384,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00040446204687489385,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0003113679254727436,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0002518338092016329,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 3.3396356999874115,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 384000,
+      "checkpoint": "results\\positive_control_checkpoints\\single_pair_11.pt",
+      "checkpoint_sha256": "37a7cf13f9aaa3661214025f9c3aa6a33e888d8c92276c654d6d9042a8aec452"
+    },
+    {
+      "control": "single_pair",
+      "seed": 29,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.0002619753192107304,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09375,
+          "loss": 2.687744567140336,
+          "invalid_prediction_rate": 0.625
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.002291096814526142,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009479991784426086,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.000583599123990933,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.0004171091227963522,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0003225807529965298,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0002619753192107304,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 3.3443878000834957,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 384000,
+      "checkpoint": "results\\positive_control_checkpoints\\single_pair_29.pt",
+      "checkpoint_sha256": "0672b6e9867576d81d90a4780beeb84de2a2ac487e3122479dd33d0a6869750d"
+    },
+    {
+      "control": "single_pair",
+      "seed": 47,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.00026687669729346503,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.03125,
+          "loss": 2.897943287553836,
+          "invalid_prediction_rate": 0.90625
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0023245777269204414,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009725688773749774,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005982732341874175,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00042670507288986985,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.00032929359168966426,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.00026687669729346503,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 3.3209229999920353,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 384000,
+      "checkpoint": "results\\positive_control_checkpoints\\single_pair_47.pt",
+      "checkpoint_sha256": "056ab15edf226513841ac3f6d9c6806b16d5f24ef4a283d52270c39953cc93fd"
+    },
+    {
+      "control": "single_pair",
+      "seed": 73,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.00026104534589612815,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09375,
+          "loss": 2.47163746546286,
+          "invalid_prediction_rate": 0.625
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0023027321112450436,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009506721962847694,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005839557964438988,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.0004166646222469187,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0003218056168868595,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.00026104534589612815,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 3.2871732000494376,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 384000,
+      "checkpoint": "results\\positive_control_checkpoints\\single_pair_73.pt",
+      "checkpoint_sha256": "b4965e3d65c0f439a079cca26b017abe6c24ca8c6b751445351a6ebbe59436a0"
+    },
+    {
+      "control": "single_pair",
+      "seed": 101,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.00023479280020064473,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09375,
+          "loss": 2.689036393050657,
+          "invalid_prediction_rate": 0.46875
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.001929928424449591,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0008291208826650584,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005166500598306247,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00037151279252908257,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0002883783942514176,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.00023479280020064473,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 3.32317280001007,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 384000,
+      "checkpoint": "results\\positive_control_checkpoints\\single_pair_101.pt",
+      "checkpoint_sha256": "4ff4709175ca992a2d8ed67bd6234522677e064cea81347635ead55a7d004ecb"
+    },
+    {
+      "control": "small_three_pair",
+      "seed": 11,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.00023146579462665507,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.125,
+          "loss": 2.4688768521246236,
+          "invalid_prediction_rate": 0.5625
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.002487715648667537,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009060425426071659,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005361174571295156,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00037573592050449384,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0002872377767801495,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.00023146579462665507,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 4.093341099913232,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 768000,
+      "held_out_three_pair": {
+        "accuracy": 0.4404296875,
+        "loss": 4.704279893264243,
+        "invalid_prediction_rate": 0.0
+      },
+      "checkpoint": "results\\positive_control_checkpoints\\small_three_pair_11.pt",
+      "checkpoint_sha256": "1c70cec5abaca318558b9adc5086a053608ee509f17a8e54bce25ef9a31b3b9e"
+    },
+    {
+      "control": "small_three_pair",
+      "seed": 29,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.0002499140371262096,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.0625,
+          "loss": 2.998597383064176,
+          "invalid_prediction_rate": 0.75
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0024084574956338175,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0009334186139199858,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005650089254447976,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.0004008082180730724,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0003086006853557059,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0002499140371262096,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 4.074832399957813,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 768000,
+      "held_out_three_pair": {
+        "accuracy": 0.4130859375,
+        "loss": 4.984381540514744,
+        "invalid_prediction_rate": 0.0
+      },
+      "checkpoint": "results\\positive_control_checkpoints\\small_three_pair_29.pt",
+      "checkpoint_sha256": "946c7d4d9f8c5946f5d6b44bacc5d1bfe4c1539bc2a150772fd5029f4bb1d226"
+    },
+    {
+      "control": "small_three_pair",
+      "seed": 47,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.0002741243880066916,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.0625,
+          "loss": 2.8211722734838682,
+          "invalid_prediction_rate": 0.6875
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0028083776507599302,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0010326018985268935,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0006200114828299985,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00043904710224651526,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0003381919497324551,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0002741243880066916,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 4.075468600029126,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 768000,
+      "held_out_three_pair": {
+        "accuracy": 0.4091796875,
+        "loss": 5.2657963832113905,
+        "invalid_prediction_rate": 0.0
+      },
+      "checkpoint": "results\\positive_control_checkpoints\\small_three_pair_47.pt",
+      "checkpoint_sha256": "d39d574a883df88a41e7decd42411ed8c39257f21e2cf9b269efc164f39f242d"
+    },
+    {
+      "control": "small_three_pair",
+      "seed": 73,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.0002071548161147701,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.03125,
+          "loss": 2.6181216036146306,
+          "invalid_prediction_rate": 0.78125
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.001925454987311053,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0007601735480939913,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.00046350779615989565,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.0003302755424107325,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.00025517425091799655,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0002071548161147701,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 4.148497999995016,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 768000,
+      "held_out_three_pair": {
+        "accuracy": 0.4189453125,
+        "loss": 5.105432736247651,
+        "invalid_prediction_rate": 0.0
+      },
+      "checkpoint": "results\\positive_control_checkpoints\\small_three_pair_73.pt",
+      "checkpoint_sha256": "355988a0fb5278489cbbcaafa81d324e35201e03843a2d4736f2972a64ad739b"
+    },
+    {
+      "control": "small_three_pair",
+      "seed": 101,
+      "fit": {
+        "accuracy": 1.0,
+        "loss": 0.00023066135572117515,
+        "invalid_prediction_rate": 0.0
+      },
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09375,
+          "loss": 2.787563842672728,
+          "invalid_prediction_rate": 0.4375
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.002268407511234187,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1000,
+          "accuracy": 1.0,
+          "loss": 0.0008582188838468647,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 1500,
+          "accuracy": 1.0,
+          "loss": 0.0005186592630596059,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.0003682398093307647,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0002841860019673952,
+          "invalid_prediction_rate": 0.0
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.00023066135572117515,
+          "invalid_prediction_rate": 0.0
+        }
+      ],
+      "seconds_including_evaluation": 4.085610199952498,
+      "parameters": 2672,
+      "examples_processed": 96000,
+      "tokens_processed": 768000,
+      "held_out_three_pair": {
+        "accuracy": 0.42578125,
+        "loss": 4.906979136637802,
+        "invalid_prediction_rate": 0.0
+      },
+      "checkpoint": "results\\positive_control_checkpoints\\small_three_pair_101.pt",
+      "checkpoint_sha256": "b08892e5f10551f8f68ed49f5af5a56785b83e6bf0094a35a129ec623f2b7f89"
+    }
+  ],
+  "datasets": {
+    "single_pair": [
+      [
+        [
+          0,
+          8,
+          12,
+          0
+        ],
+        8
+      ],
+      [
+        [
+          0,
+          9,
+          12,
+          0
+        ],
+        9
+      ],
+      [
+        [
+          0,
+          10,
+          12,
+          0
+        ],
+        10
+      ],
+      [
+        [
+          0,
+          11,
+          12,
+          0
+        ],
+        11
+      ],
+      [
+        [
+          1,
+          8,
+          12,
+          1
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          9,
+          12,
+          1
+        ],
+        9
+      ],
+      [
+        [
+          1,
+          10,
+          12,
+          1
+        ],
+        10
+      ],
+      [
+        [
+          1,
+          11,
+          12,
+          1
+        ],
+        11
+      ],
+      [
+        [
+          2,
+          8,
+          12,
+          2
+        ],
+        8
+      ],
+      [
+        [
+          2,
+          9,
+          12,
+          2
+        ],
+        9
+      ],
+      [
+        [
+          2,
+          10,
+          12,
+          2
+        ],
+        10
+      ],
+      [
+        [
+          2,
+          11,
+          12,
+          2
+        ],
+        11
+      ],
+      [
+        [
+          3,
+          8,
+          12,
+          3
+        ],
+        8
+      ],
+      [
+        [
+          3,
+          9,
+          12,
+          3
+        ],
+        9
+      ],
+      [
+        [
+          3,
+          10,
+          12,
+          3
+        ],
+        10
+      ],
+      [
+        [
+          3,
+          11,
+          12,
+          3
+        ],
+        11
+      ],
+      [
+        [
+          4,
+          8,
+          12,
+          4
+        ],
+        8
+      ],
+      [
+        [
+          4,
+          9,
+          12,
+          4
+        ],
+        9
+      ],
+      [
+        [
+          4,
+          10,
+          12,
+          4
+        ],
+        10
+      ],
+      [
+        [
+          4,
+          11,
+          12,
+          4
+        ],
+        11
+      ],
+      [
+        [
+          5,
+          8,
+          12,
+          5
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          9,
+          12,
+          5
+        ],
+        9
+      ],
+      [
+        [
+          5,
+          10,
+          12,
+          5
+        ],
+        10
+      ],
+      [
+        [
+          5,
+          11,
+          12,
+          5
+        ],
+        11
+      ],
+      [
+        [
+          6,
+          8,
+          12,
+          6
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          9,
+          12,
+          6
+        ],
+        9
+      ],
+      [
+        [
+          6,
+          10,
+          12,
+          6
+        ],
+        10
+      ],
+      [
+        [
+          6,
+          11,
+          12,
+          6
+        ],
+        11
+      ],
+      [
+        [
+          7,
+          8,
+          12,
+          7
+        ],
+        8
+      ],
+      [
+        [
+          7,
+          9,
+          12,
+          7
+        ],
+        9
+      ],
+      [
+        [
+          7,
+          10,
+          12,
+          7
+        ],
+        10
+      ],
+      [
+        [
+          7,
+          11,
+          12,
+          7
+        ],
+        11
+      ]
+    ],
+    "small_three_pair": [
+      [
+        [
+          6,
+          8,
+          5,
+          8,
+          2,
+          10,
+          12,
+          5
+        ],
+        8
+      ],
+      [
+        [
+          2,
+          11,
+          6,
+          8,
+          5,
+          9,
+          12,
+          6
+        ],
+        8
+      ],
+      [
+        [
+          1,
+          11,
+          6,
+          8,
+          4,
+          10,
+          12,
+          6
+        ],
+        8
+      ],
+      [
+        [
+          2,
+          8,
+          3,
+          11,
+          6,
+          8,
+          12,
+          6
+        ],
+        8
+      ],
+      [
+        [
+          3,
+          8,
+          6,
+          9,
+          4,
+          8,
+          12,
+          3
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          8,
+          2,
+          10,
+          4,
+          10,
+          12,
+          6
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          11,
+          4,
+          8,
+          3,
+          10,
+          12,
+          4
+        ],
+        8
+      ],
+      [
+        [
+          0,
+          10,
+          4,
+          10,
+          1,
+          8,
+          12,
+          1
+        ],
+        8
+      ],
+      [
+        [
+          3,
+          9,
+          4,
+          9,
+          1,
+          11,
+          12,
+          4
+        ],
+        9
+      ],
+      [
+        [
+          1,
+          9,
+          6,
+          11,
+          7,
+          9,
+          12,
+          7
+        ],
+        9
+      ],
+      [
+        [
+          4,
+          9,
+          3,
+          9,
+          1,
+          9,
+          12,
+          3
+        ],
+        9
+      ],
+      [
+        [
+          2,
+          9,
+          6,
+          11,
+          3,
+          10,
+          12,
+          2
+        ],
+        9
+      ],
+      [
+        [
+          2,
+          11,
+          4,
+          11,
+          5,
+          9,
+          12,
+          5
+        ],
+        9
+      ],
+      [
+        [
+          7,
+          10,
+          4,
+          9,
+          2,
+          11,
+          12,
+          4
+        ],
+        9
+      ],
+      [
+        [
+          1,
+          10,
+          0,
+          10,
+          5,
+          9,
+          12,
+          5
+        ],
+        9
+      ],
+      [
+        [
+          1,
+          9,
+          6,
+          9,
+          0,
+          9,
+          12,
+          6
+        ],
+        9
+      ],
+      [
+        [
+          1,
+          10,
+          4,
+          8,
+          3,
+          10,
+          12,
+          3
+        ],
+        10
+      ],
+      [
+        [
+          6,
+          9,
+          1,
+          10,
+          4,
+          10,
+          12,
+          4
+        ],
+        10
+      ],
+      [
+        [
+          1,
+          9,
+          3,
+          8,
+          7,
+          10,
+          12,
+          7
+        ],
+        10
+      ],
+      [
+        [
+          7,
+          9,
+          1,
+          11,
+          0,
+          10,
+          12,
+          0
+        ],
+        10
+      ],
+      [
+        [
+          6,
+          9,
+          5,
+          8,
+          0,
+          10,
+          12,
+          0
+        ],
+        10
+      ],
+      [
+        [
+          7,
+          10,
+          1,
+          11,
+          6,
+          8,
+          12,
+          7
+        ],
+        10
+      ],
+      [
+        [
+          7,
+          11,
+          0,
+          11,
+          6,
+          10,
+          12,
+          6
+        ],
+        10
+      ],
+      [
+        [
+          4,
+          9,
+          0,
+          10,
+          5,
+          11,
+          12,
+          0
+        ],
+        10
+      ],
+      [
+        [
+          3,
+          11,
+          7,
+          11,
+          5,
+          11,
+          12,
+          7
+        ],
+        11
+      ],
+      [
+        [
+          2,
+          11,
+          5,
+          11,
+          0,
+          11,
+          12,
+          0
+        ],
+        11
+      ],
+      [
+        [
+          0,
+          10,
+          1,
+          11,
+          5,
+          10,
+          12,
+          1
+        ],
+        11
+      ],
+      [
+        [
+          4,
+          11,
+          0,
+          8,
+          5,
+          8,
+          12,
+          4
+        ],
+        11
+      ],
+      [
+        [
+          1,
+          11,
+          6,
+          11,
+          7,
+          10,
+          12,
+          6
+        ],
+        11
+      ],
+      [
+        [
+          2,
+          11,
+          3,
+          8,
+          6,
+          10,
+          12,
+          2
+        ],
+        11
+      ],
+      [
+        [
+          2,
+          11,
+          4,
+          8,
+          6,
+          11,
+          12,
+          2
+        ],
+        11
+      ],
+      [
+        [
+          6,
+          10,
+          5,
+          11,
+          3,
+          9,
+          12,
+          5
+        ],
+        11
+      ]
+    ]
+  },
+  "data_sha256": {
+    "single_pair": "f3be6d7a650801a3c5730990d0000036308b226394fdc975b7e37ce3e40ecc05",
+    "small_three_pair": "41950f8ff33845897c780bf572451f9bc02874ead0b2a50a74ff044af54a9cbb"
+  },
+  "protocol_sha256": "6f1acdc1d75824235caa9af79590a78b1d6ac8bdc5e1f1e2dbac997cf1d6fa9c",
+  "source_sha256": {
+    "positive_controls.py": "9f9f1885597f496c83d6acf6e73c221353773e7c9c66634c7e115c4f5a05a404",
+    "train_associative_recall.py": "bd0e38f36f78fece074d3194946363a67dd46e47cc93ed3023eb0392310056c3",
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7"
+  },
+  "criteria": {
+    "single_pair": true,
+    "small_three_pair": true
+  }
+}

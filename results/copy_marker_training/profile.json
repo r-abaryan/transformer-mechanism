@@ -1,0 +1,108 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "torch": "2.11.0+cu128",
+  "gpu_used": false,
+  "peak_gpu_allocated_bytes": null,
+  "peak_gpu_reserved_bytes": null,
+  "profile_updates_discarded": true,
+  "cases": [
+    {
+      "arm": "sinusoidal",
+      "content_length": 3,
+      "source_length": 4,
+      "batch": 210,
+      "complete_step_seconds": [
+        0.15094089999911375,
+        0.008639699997729622,
+        0.0074025999929290265
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "sinusoidal",
+      "content_length": 4,
+      "source_length": 5,
+      "batch": 168,
+      "complete_step_seconds": [
+        0.008201999997254461,
+        0.013092499997583218,
+        0.007997599997906946
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "sinusoidal",
+      "content_length": 5,
+      "source_length": 6,
+      "batch": 140,
+      "complete_step_seconds": [
+        0.007953399996040389,
+        0.0071453999989898875,
+        0.00782440000330098
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "sinusoidal",
+      "content_length": 6,
+      "source_length": 7,
+      "batch": 120,
+      "complete_step_seconds": [
+        0.00762209999084007,
+        0.007253299991134554,
+        0.007336499998928048
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "rope",
+      "content_length": 3,
+      "source_length": 4,
+      "batch": 210,
+      "complete_step_seconds": [
+        0.010129300004336983,
+        0.010361900000134483,
+        0.010115599987329915
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "rope",
+      "content_length": 4,
+      "source_length": 5,
+      "batch": 168,
+      "complete_step_seconds": [
+        0.010460100005730055,
+        0.010304100011126138,
+        0.009424099989701062
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "rope",
+      "content_length": 5,
+      "source_length": 6,
+      "batch": 140,
+      "complete_step_seconds": [
+        0.009432799997739494,
+        0.009496700004092418,
+        0.009440199995879084
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "rope",
+      "content_length": 6,
+      "source_length": 7,
+      "batch": 120,
+      "complete_step_seconds": [
+        0.017365799998515286,
+        0.018181399995228276,
+        0.01688809999905061
+      ],
+      "optimizer_state_bytes": 30340
+    }
+  ]
+}

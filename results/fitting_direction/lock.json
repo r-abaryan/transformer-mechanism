@@ -1,0 +1,59 @@
+{
+  "files": {
+    "experiments/fitting_direction.py": "e80c68a335089dcd43730d47b47f1b4e60f111c4fc1cd13937fdf315e23841f9",
+    "experiments/retention_learning_replay.py": "81ec717b74ef8c147197bb5635409ebd92f591069129b9edc8a83f270c37a16c",
+    "tests/test_full_pool_fitting.py": "b5c8089de0832efa0064c94b22249e7beae87dee1046b16ac5576c5ac70789ed",
+    "experiments/query_gradient_variability.py": "f8e5c8fb1ff161808a07ce3c842014e7bcf1a9f3ace0e21be4a5a7edf404a493",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_full_pool_fitting.py": "f988122469b0e21311050669a9354cf24a8e972f47a51168a0984267d7598b10",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/feedback_loss_decomposition.py": "82c061482581decb77ec71b27ab5516e92a64a90243747f78e5fea6cd4683e1b",
+    "experiments/query_feedback_training.py": "89c5a1da91d396cbd7a399dce7fa1a94590331695b1ecc425209b4c14f241cd9",
+    "experiments/audit_query_feedback_training.py": "b01afec7015d66fc08a678ea0812a569ac97cd540994c94f4babf64629bc2c9a",
+    "experiments/objective_beta_pressure.py": "eb8c88c3752d71ba32086835d618aed4f343ab052c053af61d21fa04bc08fceb",
+    "experiments/query_write_order.py": "35c269caf9c25fdda7f6e7e68eea2adc766337a42e420622fb1bd7986e09ad06",
+    "experiments/delta_query_coverage.py": "ecae5aecac5a0e34efc7a27cbf16a32603b737e3caf5119e08911f6f3ee86365",
+    "experiments/history_repetition.py": "711b569af6b6bdd65d57f5a1196797b5b0a824193a352c04cd5d7258d1c2f78d",
+    "experiments/key_geometry_retention.py": "0ecd7e3388c921faeb5d0493a88effb5867d6e2b7bbefb8244217652b8949b87",
+    "experiments/audit_objective_beta_pressure.py": "6093978c7eb4820e8a3dc8cbe55fa40b9d5e0eb02e91017b6fbd4dfcd78cc86f",
+    "experiments/query_feedback_continuation.py": "6ef532aac559010e72e0da160c05e7914f74cdc2d85d4c205626d4313cc4ac83",
+    "experiments/audit_shared_state_feasibility.py": "ff2e047f4ffbc80f2d2bd21310295cb75c6838c72fff64d06c442d560685193c",
+    "experiments/readout_scale_control.py": "3df3a3d855b7f1e3f6e324cffe7c567538566bc571857a5267752012f7c55f41",
+    "tests/test_fitting_direction.py": "a7ec0e332842321ecfb82eabbc61033c086493bced5d15bb80d0d9beebd9ba85",
+    "experiments/full_pool_fitting.py": "972eb4ddb7023ad02d8ba6d240e973ea5c0c3d7274b909bad1519f82a97486ec",
+    "experiments/audit_delta_retrieval.py": "9f1175b6ee8afb43e1306d15f4b9cb0c3020d75778b3dcd9d2bd3c21e9b062d7",
+    "experiments/overlap_regularization.py": "70641efd625f821fa72d712b6615a147abd509cfb8600e958b08eb810eee69b7",
+    "experiments/readout_norm_cap_training.py": "d015bf7b4324f3d77d4018e27c8b78aa14ddd914746f1c1a0c1a11259a7efa8d",
+    "experiments/audit_fitting_direction.py": "c7c787e4f4435aae84d0206fa46599cb510277eb92ee724ea37cce17cc371e19",
+    "results/full_pool_fitting_confirmation/study/warmup/3473_adam_12000.pt": "c1a2509b8bf5495e30c25d165c832056249ef934b917bdf7b978ce712180a7dd",
+    "results/full_pool_fitting_confirmation/study/warmup/3479_adam_12000.pt": "0daaad4df5fb8ed5038335f207d5795b836118c01089965636f90e77b4d3529a",
+    "results/full_pool_fitting_confirmation/study/warmup/3481_adam_12000.pt": "b7d3f589f3d3c3cd26ef7fb8834cca207ad540b226a777244d59d34986e9456f",
+    "docs/protocols/fitting-direction.md": "ddd40f16130a809850195fe8adce715dc7b54982109520894e2fbc23418aff8d",
+    "results/fitting_direction_preflight.json": "0eb6eede22ffe82617937a98d91e526b8a6c87cfb8a9f941cabd0ef0800310c0",
+    "results/fitting_direction_profiles.json": "88636fc133448cf047375d5b0be25f51aecc330e373aba8d5ea04458e1494002",
+    "results/full_pool_fitting_confirmation/study/report.json": "923ff63b4beed32fe75fc83733250ac71ac2600d58df088df6b760addce7f1f4",
+    "results/full_pool_fitting_confirmation/study/audit.json": "9bf53c8d427ef7523ca8e78a8a0cb8754cf4d14c015cc77eee4265c5524f9df6",
+    "results/full_pool_fitting_confirmation/study/pools.pt": "4e18c1cdbf2b1133145f8f7a2427b6bda3b84eef9d6cf9a252ca9d4389490c22"
+  },
+  "cases": [
+    {
+      "seed": 3473,
+      "checkpoint": "results/full_pool_fitting_confirmation/study/warmup/3473_adam_12000.pt"
+    },
+    {
+      "seed": 3479,
+      "checkpoint": "results/full_pool_fitting_confirmation/study/warmup/3479_adam_12000.pt"
+    },
+    {
+      "seed": 3481,
+      "checkpoint": "results/full_pool_fitting_confirmation/study/warmup/3481_adam_12000.pt"
+    }
+  ],
+  "budget": 128,
+  "interval": 32,
+  "fixture": false,
+  "pools_sha256": "4e18c1cdbf2b1133145f8f7a2427b6bda3b84eef9d6cf9a252ca9d4389490c22",
+  "torch": "2.11.0+cu128",
+  "native_hash": "5cf9789d4fdd6f5e34173e23a3115bd687717f1f329d36708108537f1fa3e4f0",
+  "adapted_hash": "606ce33e47b3ecdd8d5e89eeaab0ab19ebd678a06103fc56bd188ee4807d35d9"
+}

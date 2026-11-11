@@ -1,0 +1,62 @@
+{
+  "seeds": [
+    3119,
+    3121,
+    3137
+  ],
+  "arms": [
+    "sinusoidal",
+    "rope"
+  ],
+  "symbols": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "source_length_pairs": [
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "formats": [
+    "original",
+    "visible_end",
+    "masked_end",
+    "same_symbol_end"
+  ],
+  "marker_id": 2,
+  "training_updates": 0,
+  "checkpoint_step": 6000,
+  "collision_tolerance": 1e-09,
+  "distinction_threshold": 1e-06,
+  "source_dependencies": {
+    "experiments/check_copy_source_end_marker.py": "add3929c3b9d7376d3951237afc607ee20b4559c6e3ff692bfdcc647a4c511bb",
+    "docs/protocols/copy-source-end-marker.md": "38f1e06f597354dcf6aa2df861c23b3a8cc16c65dc5db636d7396a6941e5efaf",
+    "results/copy_rope_training/report.json": "8d52ec87c2d0d5edb4c7efacfc1998606fee7d347f95592ee624e3a839f88f20",
+    "results/copy_rope_training/audit.json": "395a4d8d2e8e9d2acde9ebcd6524a4f7c39645e93792a4f8f63ff7c38fc69487",
+    "results/copy_rope_training/uniform_source_witness.json": "46d236c6d0d158ed18d8364b4c0cad3b4bad633154f071dbe8847bb9e3f4cfa4",
+    "results/copy_rope_training/3119_sinusoidal.pt": "774729a5a69b4c48fa825acb1ad77bdc6d5a5d0782b7755bc310223231bcb711",
+    "results/copy_rope_training/3119_rope.pt": "55c21d20032861d95ccdc1a1c6bbd101250c2ce51617bd921c0fbda6a1d5ff94",
+    "results/copy_rope_training/3121_sinusoidal.pt": "e7465bbc1056b0cc08142ad74d20814516cc5c1475c40f21fd5a6250eda8ef98",
+    "results/copy_rope_training/3121_rope.pt": "8013b7dee35c0d4933dfe8c41581d19a473dd3b27f37f9585794831958c880e8",
+    "results/copy_rope_training/3137_sinusoidal.pt": "4fdb63cce0e63a8c2b5b081e3630fdd76afca1c107d045ef030adad7f6315ced",
+    "results/copy_rope_training/3137_rope.pt": "848d368d232912e2deadfe3716a18813d51738f000910c460bf7d8476b659de4",
+    "experiments/copy_rope_model.py": "243c2ccaa1123015fde18a368866ad7452c4ab8460cb30609ca8118f5488653b",
+    "experiments/encoder_decoder_contract.py": "01a2852b3892d24cf09d91f3ee6d8796b892bef3da5111dca919f213088f0be1",
+    "experiments/encoder_decoder_copy.py": "c5284b32587f5ca9a178980e73611f6689a7e2569402d75c5c679e3cbf390673",
+    "experiments/copy_rope_training.py": "6be7bfd5fde52e82f0d461668df741f0bb4f325df671489500fc0683b0b70ecf",
+    "experiments/audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "experiments/position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments/recurrent_retrieval.py": "90cb2b02420e5dd193e45367d68aae737c7fc23708109dd931d19d49ff4fa088"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "files": {
+    "experiments/write_interference_stages.py": "0e436d95dbe42e69be01d0bcf0cb139bf5f4eae3b51db2676d2566035864b525",
+    "experiments/audit_write_interference_stages.py": "f0646dcbbf1124d03040f014468016498a40206961eca75805c254ca88fe3c4d",
+    "tests/test_write_interference_stages.py": "5b9603d47647f2d52eea47230e8f57ad2018648944063a5e49baf572e79385a6",
+    "docs/protocols/write-interference-training-stages.md": "9d96f48a9fe04b3cc0cdd10c834386d7842f273bf349a659e86788728f3bf7e7",
+    "experiments/readout_conflict_stages.py": "96c2742da6d886e5f55d8a31533c61a5618e2523f2a5cc9077cfb0e836bc1cd6",
+    "experiments/shared_state_preservation.py": "d4c8056f1726a1b4e2a1308aaa6a6b651e8146aceaf9e31dbee33b5787a88fba",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/query_gradient_variability.py": "f8e5c8fb1ff161808a07ce3c842014e7bcf1a9f3ace0e21be4a5a7edf404a493",
+    "results/query_feedback_training/3461_exhaustive_0.pt": "a8f779e3970e40b83e1a3f887f5d3be7db063a98339e3881cce1777727e6d044",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_training/3461_exhaustive_3000.pt": "29a6dd90503cde3e7585300f047c183af737af68a28f837616ff87e58d1a7c7f",
+    "results/query_feedback_continuation/3461_exhaustive_12000.pt": "3d9822a61836819b171391765a2b98e119d638a900c10c116942e1a667531a7b",
+    "results/query_feedback_training/3463_exhaustive_0.pt": "a6798227ebaa2574dd521e0274ef5169fade12e751f771b57b0b7f7e97bc0892",
+    "results/query_feedback_training/3463_exhaustive_3000.pt": "cacd15cd2dedb622662c16527f4c4514587ef60676994f6a8c74a031cd5830a2",
+    "results/query_feedback_continuation/3463_exhaustive_12000.pt": "f549e30d08eec53ac1f53e04fd84db89fff04462ebca34aa48706131c221d19a",
+    "results/readout_conflict_stages/report.json": "cae4dd406720c9dac9a408272f242809fa2cd79c8ff35fe78fb043822215ef45",
+    "results/readout_conflict_stages/audit.json": "9479024f0bc3743115e82d81f7d224d19346e53be18b76cd60c22e5e1777ba43",
+    "results/readout_conflict_stages/lock.json": "12a7e3ac6a5f0596ba6ff897bd1f30f8e777c98477d541d456a30b25a4826ba3",
+    "results/readout_conflict_stages/stages.pt": "d54a96753244785208580bd616f39bf9f194a4e482509be98005df42d9100f4a",
+    "results/write_interference_stages_preflight.json": "b31d1c6c4aaa410ea542a5809a6a056138ef50229eaa38cb33501669eb7a0872"
+  },
+  "cases": [
+    {
+      "seed": 3461,
+      "step": 0,
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_0.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": true
+    },
+    {
+      "seed": 3463,
+      "step": 0,
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_0.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": true
+    }
+  ],
+  "fixture": false,
+  "guard": 1e-09,
+  "groups": [
+    "all",
+    "endpoint_wrong",
+    "correct_in_incomplete",
+    "correct_in_complete"
+  ],
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128"
+  }
+}

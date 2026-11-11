@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "report_sha256": "a1c15f399cbfa71a69fc60210d33eaad64c8f14619b77a8989de7a900ad44265",
+  "independent_audit_sha256": "232de8430131f0a99ae2939c95d8515039b668029875a2d2ef60f974bedbaa1f",
+  "formal_runs": 14,
+  "formal_updates": 42000,
+  "examples": 2688000,
+  "prior_files_unchanged": 88,
+  "predictions_audited": 36096,
+  "metric_cells": 240,
+  "confirmation_means": {
+    "test_4": {
+      "softmax": 1.0,
+      "delta": 1.0
+    },
+    "test_8": {
+      "softmax": 1.0,
+      "delta": 1.0
+    },
+    "test_16": {
+      "softmax": 0.9114583333333334,
+      "delta": 1.0
+    },
+    "test_32": {
+      "softmax": 0.7447916666666666,
+      "delta": 1.0
+    }
+  },
+  "failed_softmax_reliability_cells": [
+    [
+      3299,
+      "test_16",
+      "unique"
+    ],
+    [
+      3299,
+      "test_16",
+      "repeat"
+    ],
+    [
+      3299,
+      "test_32",
+      "unique"
+    ],
+    [
+      3299,
+      "test_32",
+      "repeat"
+    ],
+    [
+      3301,
+      "test_16",
+      "unique"
+    ],
+    [
+      3301,
+      "test_32",
+      "unique"
+    ],
+    [
+      3301,
+      "test_32",
+      "repeat"
+    ],
+    [
+      3307,
+      "test_16",
+      "unique"
+    ],
+    [
+      3307,
+      "test_32",
+      "unique"
+    ],
+    [
+      3307,
+      "test_32",
+      "repeat"
+    ]
+  ],
+  "gpu_benchmark_executed": false,
+  "local_file_links_checked": 2194,
+  "missing_targets": [],
+  "document_sha256": {
+    "docs/topics/attention/delta-retrieval-guide.md": "912716181fd7d4cb585e39a213b557405a9762ee0f72f0ba237dd4c962a0aea8",
+    "docs/topics/attention/delta-retrieval-results.md": "b30b6399878474eb53b4dc3026b6932fc60b147905e37fe82865547fdfc352ab",
+    "docs/assessments/research-checkpoint.md": "0af53aecac5183ba8ae2f34b1c113426fd30158f64c319af3c9c836816c3252f",
+    "docs/assessments/failure-register.md": "c4e368dea144f8242b65cf2def43863778b6385cf9875e89119b134a3b6393ad",
+    "docs/topics/attention/README.md": "88a299df7e71ee9e9a65a187185defa623a68d8ac9d934b38189f2f53b8d3dee",
+    "docs/protocols/README.md": "12aaecf3dd2315a0397a0e906867a0362e91c670c28e42a142f8f9517227690e",
+    "docs/guides/README.md": "fa047d2fc1c6316be6d364827344b7d249c111eb0f11665881fa8107bbd2cc07",
+    "docs/results/README.md": "3f29959204d3ed1b81ec584b334c85e6ffb2d2c791cef25e8d9fe18ba4e26a7b",
+    "docs/reference/sources.md": "3c18ccaaaf0cbe97982576994c6278146bc38a6859ac3de48c8ebd5eb68bb6f5",
+    "tests/README.md": "78b8ae26e8841969c356fafc0109097d524443e22aad85de4a2e65f7fc485ff4"
+  },
+  "scope": "File targets, not anchors or external URLs. No new training in this verification."
+}

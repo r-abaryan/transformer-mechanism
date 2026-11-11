@@ -1,0 +1,421 @@
+{
+  "protocol_sha256": "dd011ab6de3b266bc47fa6701c1a90411592e9ea2398e4ae2059be9d7e1c2754",
+  "source_sha256": {
+    "train_first_token.py": "9ac31c8cf907dfef40cf2f1ba590b8a080af7901ee465f5970550c080f37cc6c",
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7"
+  },
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "steps": 600,
+  "learning_rate": 0.1,
+  "batch_size": 32,
+  "split_hashes": {
+    "train": "8c19ed65149ff0d48a5de319f7266002c1276c339b6ce6945e9ecf98783fbe4e",
+    "validation": "4f8421138b749dfc42da1b40c8cce18ca0ce0ea39addf064cb7f985f64725774",
+    "test": "76870c3df21117eaa03d659fd9e5e00190e9dfa6ee0e8513f85b2ec3dc327208",
+    "longer": "1052d0faf2d52fc329a5ab27c935937dfc6d3f2a40ebc78cbd431e1490b09dd2"
+  },
+  "baselines": {
+    "train": {
+      "majority_accuracy": 0.25341796875,
+      "last_symbol_accuracy": 0.2529296875,
+      "oracle_accuracy": 1.0,
+      "uniform_expected_accuracy": 0.25,
+      "uniform_loss": 1.3862943611198906,
+      "target_counts": [
+        506,
+        519,
+        512,
+        511
+      ]
+    },
+    "validation": {
+      "majority_accuracy": 0.25,
+      "last_symbol_accuracy": 0.265625,
+      "oracle_accuracy": 1.0,
+      "uniform_expected_accuracy": 0.25,
+      "uniform_loss": 1.3862943611198906,
+      "target_counts": [
+        119,
+        128,
+        135,
+        130
+      ]
+    },
+    "test": {
+      "majority_accuracy": 0.2578125,
+      "last_symbol_accuracy": 0.275390625,
+      "oracle_accuracy": 1.0,
+      "uniform_expected_accuracy": 0.25,
+      "uniform_loss": 1.3862943611198906,
+      "target_counts": [
+        140,
+        132,
+        125,
+        115
+      ]
+    },
+    "longer": {
+      "majority_accuracy": 0.212890625,
+      "last_symbol_accuracy": 0.244140625,
+      "oracle_accuracy": 1.0,
+      "uniform_expected_accuracy": 0.25,
+      "uniform_loss": 1.3862943611198906,
+      "target_counts": [
+        144,
+        109,
+        135,
+        124
+      ]
+    }
+  },
+  "runs": [
+    {
+      "seed": 11,
+      "parameters": 2416,
+      "training_seconds_including_validation": 1.2156898999819532,
+      "examples_processed": 19200,
+      "tokens_processed": 134400,
+      "validation_curve": [
+        {
+          "step": 0,
+          "accuracy": 0.25390625,
+          "loss": 1.6783457645504223
+        },
+        {
+          "step": 100,
+          "accuracy": 0.994140625,
+          "loss": 0.624570619002049
+        },
+        {
+          "step": 200,
+          "accuracy": 1.0,
+          "loss": 0.009781379310982859
+        },
+        {
+          "step": 300,
+          "accuracy": 1.0,
+          "loss": 0.004707857911502785
+        },
+        {
+          "step": 400,
+          "accuracy": 1.0,
+          "loss": 0.0030447999652033083
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0022328557709023976
+        },
+        {
+          "step": 600,
+          "accuracy": 1.0,
+          "loss": 0.0017473959323511818
+        }
+      ],
+      "metrics": {
+        "train": {
+          "accuracy": 1.0,
+          "loss": 0.0017504715330741443
+        },
+        "validation": {
+          "accuracy": 1.0,
+          "loss": 0.0017473959323511818
+        },
+        "test": {
+          "accuracy": 1.0,
+          "loss": 0.0017514775962823713
+        },
+        "longer": {
+          "accuracy": 1.0,
+          "loss": 0.07274843324562107
+        }
+      },
+      "checkpoint": "results\\first_token_checkpoints\\seed_11.pt",
+      "checkpoint_sha256": "6f6e9e85dc9a75b837af8dd1e71994b9842f78e02448db4a751da7bde5b8be0e"
+    },
+    {
+      "seed": 29,
+      "parameters": 2416,
+      "training_seconds_including_validation": 1.1604091000044718,
+      "examples_processed": 19200,
+      "tokens_processed": 134400,
+      "validation_curve": [
+        {
+          "step": 0,
+          "accuracy": 0.25,
+          "loss": 1.7487188021419195
+        },
+        {
+          "step": 100,
+          "accuracy": 1.0,
+          "loss": 0.01962753994427139
+        },
+        {
+          "step": 200,
+          "accuracy": 1.0,
+          "loss": 0.0065384859696572825
+        },
+        {
+          "step": 300,
+          "accuracy": 1.0,
+          "loss": 0.00380038645611806
+        },
+        {
+          "step": 400,
+          "accuracy": 1.0,
+          "loss": 0.002639098427991673
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0020069969158030875
+        },
+        {
+          "step": 600,
+          "accuracy": 1.0,
+          "loss": 0.0016110695594786998
+        }
+      ],
+      "metrics": {
+        "train": {
+          "accuracy": 1.0,
+          "loss": 0.0016167885314941923
+        },
+        "validation": {
+          "accuracy": 1.0,
+          "loss": 0.0016110695594786998
+        },
+        "test": {
+          "accuracy": 1.0,
+          "loss": 0.0016141316841763167
+        },
+        "longer": {
+          "accuracy": 0.97265625,
+          "loss": 0.10079639355700919
+        }
+      },
+      "checkpoint": "results\\first_token_checkpoints\\seed_29.pt",
+      "checkpoint_sha256": "21db1f5171879988974f5e9f72d4bcba5db619fb1a2586871d2bb50938fd0c3d"
+    },
+    {
+      "seed": 47,
+      "parameters": 2416,
+      "training_seconds_including_validation": 1.1243856999790296,
+      "examples_processed": 19200,
+      "tokens_processed": 134400,
+      "validation_curve": [
+        {
+          "step": 0,
+          "accuracy": 0.25390625,
+          "loss": 1.7784576272018273
+        },
+        {
+          "step": 100,
+          "accuracy": 1.0,
+          "loss": 0.03300131270513331
+        },
+        {
+          "step": 200,
+          "accuracy": 1.0,
+          "loss": 0.008230075113479474
+        },
+        {
+          "step": 300,
+          "accuracy": 1.0,
+          "loss": 0.004611903300032652
+        },
+        {
+          "step": 400,
+          "accuracy": 1.0,
+          "loss": 0.0031437684547085663
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0023595761786558782
+        },
+        {
+          "step": 600,
+          "accuracy": 1.0,
+          "loss": 0.0018726588443884584
+        }
+      ],
+      "metrics": {
+        "train": {
+          "accuracy": 1.0,
+          "loss": 0.0018834273408868242
+        },
+        "validation": {
+          "accuracy": 1.0,
+          "loss": 0.0018726588443884584
+        },
+        "test": {
+          "accuracy": 1.0,
+          "loss": 0.0018657419702503054
+        },
+        "longer": {
+          "accuracy": 0.8203125,
+          "loss": 0.3570767407147138
+        }
+      },
+      "checkpoint": "results\\first_token_checkpoints\\seed_47.pt",
+      "checkpoint_sha256": "8be00421dcff3030d101a29c403d8de095cd2935c0d8196ed9ed281ebf8d7367"
+    },
+    {
+      "seed": 73,
+      "parameters": 2416,
+      "training_seconds_including_validation": 1.1127659999765456,
+      "examples_processed": 19200,
+      "tokens_processed": 134400,
+      "validation_curve": [
+        {
+          "step": 0,
+          "accuracy": 0.072265625,
+          "loss": 1.755418206524088
+        },
+        {
+          "step": 100,
+          "accuracy": 1.0,
+          "loss": 0.020819162488870772
+        },
+        {
+          "step": 200,
+          "accuracy": 1.0,
+          "loss": 0.006429457632745414
+        },
+        {
+          "step": 300,
+          "accuracy": 1.0,
+          "loss": 0.0037132874646154355
+        },
+        {
+          "step": 400,
+          "accuracy": 1.0,
+          "loss": 0.0025737308588757012
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0019524481749914092
+        },
+        {
+          "step": 600,
+          "accuracy": 1.0,
+          "loss": 0.0015643530999462345
+        }
+      ],
+      "metrics": {
+        "train": {
+          "accuracy": 1.0,
+          "loss": 0.0015791329305635908
+        },
+        "validation": {
+          "accuracy": 1.0,
+          "loss": 0.0015643530999462345
+        },
+        "test": {
+          "accuracy": 1.0,
+          "loss": 0.0015773438555731693
+        },
+        "longer": {
+          "accuracy": 0.998046875,
+          "loss": 0.06965718164170642
+        }
+      },
+      "checkpoint": "results\\first_token_checkpoints\\seed_73.pt",
+      "checkpoint_sha256": "cd5f5c247b33e0527762f2edf88e24c4d0049cc54b3e325b5655a91210a95d64"
+    },
+    {
+      "seed": 101,
+      "parameters": 2416,
+      "training_seconds_including_validation": 1.1562409999314696,
+      "examples_processed": 19200,
+      "tokens_processed": 134400,
+      "validation_curve": [
+        {
+          "step": 0,
+          "accuracy": 0.2265625,
+          "loss": 1.7517131663488654
+        },
+        {
+          "step": 100,
+          "accuracy": 0.958984375,
+          "loss": 0.2281046014161562
+        },
+        {
+          "step": 200,
+          "accuracy": 1.0,
+          "loss": 0.008615162137583258
+        },
+        {
+          "step": 300,
+          "accuracy": 1.0,
+          "loss": 0.004345189902163718
+        },
+        {
+          "step": 400,
+          "accuracy": 1.0,
+          "loss": 0.002862547816555845
+        },
+        {
+          "step": 500,
+          "accuracy": 1.0,
+          "loss": 0.0021140624275787934
+        },
+        {
+          "step": 600,
+          "accuracy": 1.0,
+          "loss": 0.0016682018020331576
+        }
+      ],
+      "metrics": {
+        "train": {
+          "accuracy": 1.0,
+          "loss": 0.00165947054289941
+        },
+        "validation": {
+          "accuracy": 1.0,
+          "loss": 0.0016682018020331576
+        },
+        "test": {
+          "accuracy": 1.0,
+          "loss": 0.0016405032098360118
+        },
+        "longer": {
+          "accuracy": 0.97265625,
+          "loss": 0.1460405445732169
+        }
+      },
+      "checkpoint": "results\\first_token_checkpoints\\seed_101.pt",
+      "checkpoint_sha256": "7dae2f543c820457b37f896a6c3adb551499db7db4bcddd5b39b481d60e73fb6"
+    }
+  ],
+  "summary": {
+    "train": {
+      "mean_accuracy": 1.0,
+      "sd_accuracy": 0.0,
+      "mean_loss": 0.0016978581757836322,
+      "all_seeds_above_95": true
+    },
+    "validation": {
+      "mean_accuracy": 1.0,
+      "sd_accuracy": 0.0,
+      "mean_loss": 0.0016927358476395463,
+      "all_seeds_above_95": true
+    },
+    "test": {
+      "mean_accuracy": 1.0,
+      "sd_accuracy": 0.0,
+      "mean_loss": 0.001689839663223635,
+      "all_seeds_above_95": true
+    },
+    "longer": {
+      "mean_accuracy": 0.952734375,
+      "sd_accuracy": 0.07519404422631738,
+      "mean_loss": 0.14926385874645348,
+      "all_seeds_above_95": false
+    }
+  }
+}

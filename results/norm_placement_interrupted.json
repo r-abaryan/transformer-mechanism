@@ -1,0 +1,718 @@
+{
+  "phase": "training",
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "split_sha256": "ec634427f4db22894161222a2a6c5422e3cc55d0c20218873bba191b211882b8",
+  "exclusion_hashes": {
+    "reserved_cycle_splits.json": "7b4361ffbb7b0333d5931b1fd641467af23f6e479cd4a77f65bb1d0c5a1d232f",
+    "position_training_splits.json": "66a9c8edcda04827a431fb80f0ea5eef46c82410dc24c6ca4f1101dee365ccc5",
+    "joint_routing_confirmation_inputs.json": "a30eb3d33e07e983b7ad861a2ed634b88aeb55a330541a6c81a43d6029255478",
+    "canonical_positions_inputs.json": "81bdeabb879b916c83f983e2a07f855439ca91a8b7b701849ab1b07a61a322cb",
+    "final_length_inputs.json": "360c9c75daa0d309bcc41073a9d5756e0698b8951748a03a6ea9e582b7eb18be"
+  },
+  "probe_indices": [
+    3560,
+    1953,
+    3486,
+    5121,
+    4584,
+    586,
+    4603,
+    6697,
+    2174,
+    1485,
+    4070,
+    721,
+    134,
+    1201,
+    4455,
+    4159,
+    6067,
+    4298,
+    2284,
+    1937,
+    5835,
+    2357,
+    812,
+    2923,
+    2872,
+    6163,
+    3028,
+    5125,
+    6183,
+    1484,
+    1202,
+    337,
+    3777,
+    4972,
+    24,
+    6076,
+    674,
+    1724,
+    5276,
+    457,
+    6256,
+    5393,
+    4208,
+    2901,
+    3391,
+    1428,
+    1215,
+    3365,
+    1536,
+    5404,
+    935,
+    3799,
+    4599,
+    2172,
+    3936,
+    3334,
+    1903,
+    2163,
+    1613,
+    1273,
+    690,
+    1481,
+    6881,
+    606,
+    2118,
+    3386,
+    2956,
+    6729,
+    1959,
+    611,
+    2025,
+    5952,
+    5161,
+    3441,
+    855,
+    3004,
+    6155,
+    5632,
+    4199,
+    4366,
+    4483,
+    3751,
+    2832,
+    956,
+    775,
+    2959,
+    1456,
+    914,
+    3830,
+    4908,
+    3344,
+    1589,
+    7155,
+    5067,
+    3105,
+    3544,
+    3185,
+    4226,
+    11,
+    5542,
+    1265,
+    1990,
+    2254,
+    2642,
+    6596,
+    7038,
+    4759,
+    5415,
+    3030,
+    3884,
+    4260,
+    6412,
+    2616,
+    3018,
+    824,
+    3416,
+    269,
+    5866,
+    2242,
+    6532,
+    6113,
+    3333,
+    5045,
+    3125,
+    2245,
+    1566,
+    762,
+    1617
+  ],
+  "protocol_sha256": "13ee4ff22f9943ec225852721ac6053a853ce3d1debff22bc202347c82249020",
+  "source_sha256": {
+    "norm_placement.py": "372a12ff173a00a56a0c4ec9bc65b85515836c96135ef75fac1a46cfa7efae6f",
+    "reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390"
+  },
+  "verification": {
+    "pre": {
+      "forward_error": 0.0,
+      "gradient_error": 0.0
+    },
+    "post": {
+      "forward_error": 0.0,
+      "gradient_error": 0.0
+    }
+  },
+  "runs": [
+    {
+      "seed": 601,
+      "placement": "pre",
+      "schedule": "constant",
+      "initial_sha256": "671bf9c9042c76da4b3c3e2b6b5a49ba40f6bf4e091c3d9e6d7c79e855cfc3c8",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09652777777777778,
+          "loss": 3.035130360971541
+        },
+        {
+          "step": 500,
+          "accuracy": 0.3545833333333333,
+          "loss": 1.3054132102863458
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.5408333333333334,
+          "loss": 0.9905629430368307
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.9594444444444444,
+          "loss": 0.13338978624167777
+        },
+        {
+          "step": 2000,
+          "accuracy": 0.9983333333333333,
+          "loss": 0.010937986893608465
+        },
+        {
+          "step": 2500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.0033475329799500086
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0016620869606892206
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.071480898836795,
+          "parameter_gradient_rms": {
+            "embedding": 0.0034626521330333396,
+            "blocks.0": 0.006863430870679866,
+            "blocks.1": 0.008514822038104492,
+            "final_norm": 0.028663134667866935,
+            "output": 0.04215595051966317
+          }
+        },
+        {
+          "step": 500,
+          "loss": 1.3135761069742422,
+          "parameter_gradient_rms": {
+            "embedding": 0.00801740916081278,
+            "blocks.0": 0.012394590968804029,
+            "blocks.1": 0.008077500473741202,
+            "final_norm": 0.014322592337334836,
+            "output": 0.0232018762711229
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.06120062708000159,
+          "parameter_gradient_rms": {
+            "embedding": 0.00791318973318877,
+            "blocks.0": 0.011457734189158342,
+            "blocks.1": 0.010713257225284246,
+            "final_norm": 0.005699441322998109,
+            "output": 0.0069145961316261755
+          }
+        },
+        {
+          "step": 3000,
+          "loss": 0.0012591815411918453,
+          "parameter_gradient_rms": {
+            "embedding": 8.240026135997547e-05,
+            "blocks.0": 0.0001709448512238856,
+            "blocks.1": 9.140358152063119e-05,
+            "final_norm": 0.0002835700975448366,
+            "output": 0.00021136811512477308
+          }
+        }
+      ],
+      "status": "trained",
+      "minibatch_sha256": "116d5bf17063721eba7c56e7a08ba02f498d5daf590cbf6b375f0ba7d60d2dcb",
+      "offset_sha256": "9f8dcb0e26408ef3eda8724a6d2e783fe6d08b0a94c64fb0ea94bebc3a2c9e6d",
+      "max_training_gradient": 1.1473809791701288,
+      "learning_rate_sum": 2.9999999999997806,
+      "checkpoint": "results\\norm_placement_checkpoints\\pre_constant_601.pt",
+      "checkpoint_sha256": "6d84f34683eb62f1df8e661fdc3e7702da1ccd82c9db5d4f1319d8837614be12",
+      "steps": 3000,
+      "first_observed_validation_99": 2000
+    },
+    {
+      "seed": 601,
+      "placement": "pre",
+      "schedule": "warmup",
+      "initial_sha256": "671bf9c9042c76da4b3c3e2b6b5a49ba40f6bf4e091c3d9e6d7c79e855cfc3c8",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.09652777777777778,
+          "loss": 3.035130360971541
+        },
+        {
+          "step": 500,
+          "accuracy": 0.3363888888888889,
+          "loss": 1.4429403600992914
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.39861111111111114,
+          "loss": 1.1685785890978144
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.66875,
+          "loss": 0.768064820246648
+        },
+        {
+          "step": 2000,
+          "accuracy": 0.9877777777777778,
+          "loss": 0.04532625615035416
+        },
+        {
+          "step": 2500,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.006384286501290351
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0021183090323126526
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.071480898836795,
+          "parameter_gradient_rms": {
+            "embedding": 0.0034626521330333396,
+            "blocks.0": 0.006863430870679866,
+            "blocks.1": 0.008514822038104492,
+            "final_norm": 0.028663134667866935,
+            "output": 0.04215595051966317
+          }
+        },
+        {
+          "step": 500,
+          "loss": 1.4207903030134819,
+          "parameter_gradient_rms": {
+            "embedding": 0.00546984481012046,
+            "blocks.0": 0.008517625686787959,
+            "blocks.1": 0.004825966886061884,
+            "final_norm": 0.01322127692425962,
+            "output": 0.019311096012625196
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.8056102607665764,
+          "parameter_gradient_rms": {
+            "embedding": 0.023063790744039695,
+            "blocks.0": 0.03811046093954096,
+            "blocks.1": 0.022590969502631727,
+            "final_norm": 0.02552413642837615,
+            "output": 0.031846859425270706
+          }
+        },
+        {
+          "step": 3000,
+          "loss": 0.0016967238542178484,
+          "parameter_gradient_rms": {
+            "embedding": 8.015437243874971e-05,
+            "blocks.0": 0.00020861490354327124,
+            "blocks.1": 0.00011147846783349602,
+            "final_norm": 0.00037406465615797866,
+            "output": 0.0002773454637003679
+          }
+        }
+      ],
+      "status": "trained",
+      "minibatch_sha256": "116d5bf17063721eba7c56e7a08ba02f498d5daf590cbf6b375f0ba7d60d2dcb",
+      "offset_sha256": "9f8dcb0e26408ef3eda8724a6d2e783fe6d08b0a94c64fb0ea94bebc3a2c9e6d",
+      "max_training_gradient": 2.09530933380147,
+      "learning_rate_sum": 2.850499999999797,
+      "checkpoint": "results\\norm_placement_checkpoints\\pre_warmup_601.pt",
+      "checkpoint_sha256": "905cedb45b0bf3e1ba1d3e8b8f665e144e3b2698cd5af97d783676a0fd777f64",
+      "steps": 3000,
+      "first_observed_validation_99": 2500
+    },
+    {
+      "seed": 601,
+      "placement": "post",
+      "schedule": "constant",
+      "initial_sha256": "671bf9c9042c76da4b3c3e2b6b5a49ba40f6bf4e091c3d9e6d7c79e855cfc3c8",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.12583333333333332,
+          "loss": 3.014412961876657
+        },
+        {
+          "step": 500,
+          "accuracy": 0.34097222222222223,
+          "loss": 1.3362571437360584
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.48583333333333334,
+          "loss": 1.074517153553699
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.97125,
+          "loss": 0.09377259906936435
+        },
+        {
+          "step": 2000,
+          "accuracy": 0.9994444444444445,
+          "loss": 0.00852866110748722
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.00298993391553153
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0016782807723976557
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.0630935801187857,
+          "parameter_gradient_rms": {
+            "embedding": 0.0032787521321934973,
+            "blocks.0": 0.009146302426605309,
+            "blocks.1": 0.01020349397487974,
+            "final_norm": 0.028541885824725752,
+            "output": 0.044284425656104756
+          }
+        },
+        {
+          "step": 500,
+          "loss": 1.326811793896112,
+          "parameter_gradient_rms": {
+            "embedding": 0.004531471428242892,
+            "blocks.0": 0.007136440906486943,
+            "blocks.1": 0.007709903406788265,
+            "final_norm": 0.013929523975029903,
+            "output": 0.02235574938425471
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.07767552783152715,
+          "parameter_gradient_rms": {
+            "embedding": 0.019801696907053103,
+            "blocks.0": 0.022450190065133678,
+            "blocks.1": 0.010207761616815756,
+            "final_norm": 0.005688818369832137,
+            "output": 0.00730263020926602
+          }
+        },
+        {
+          "step": 3000,
+          "loss": 0.0012626403558297517,
+          "parameter_gradient_rms": {
+            "embedding": 0.0001427387690407581,
+            "blocks.0": 0.0002410464441901807,
+            "blocks.1": 0.00014593172133595524,
+            "final_norm": 0.00028126272922072754,
+            "output": 0.0002047618354159248
+          }
+        }
+      ],
+      "status": "trained",
+      "minibatch_sha256": "116d5bf17063721eba7c56e7a08ba02f498d5daf590cbf6b375f0ba7d60d2dcb",
+      "offset_sha256": "9f8dcb0e26408ef3eda8724a6d2e783fe6d08b0a94c64fb0ea94bebc3a2c9e6d",
+      "max_training_gradient": 1.7274580479141797,
+      "learning_rate_sum": 2.9999999999997806,
+      "checkpoint": "results\\norm_placement_checkpoints\\post_constant_601.pt",
+      "checkpoint_sha256": "39e1edaa76493263d838d3a08eafd5a406d140c0a4cafb2d5de45f8de532dd1d",
+      "steps": 3000,
+      "first_observed_validation_99": 2000
+    },
+    {
+      "seed": 601,
+      "placement": "post",
+      "schedule": "warmup",
+      "initial_sha256": "671bf9c9042c76da4b3c3e2b6b5a49ba40f6bf4e091c3d9e6d7c79e855cfc3c8",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.12583333333333332,
+          "loss": 3.014412961876657
+        },
+        {
+          "step": 500,
+          "accuracy": 0.3397222222222222,
+          "loss": 1.4581609359342045
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.3963888888888889,
+          "loss": 1.2129524595486356
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.5770833333333333,
+          "loss": 0.9057165316093883
+        },
+        {
+          "step": 2000,
+          "accuracy": 0.9845833333333334,
+          "loss": 0.06223544254512257
+        },
+        {
+          "step": 2500,
+          "accuracy": 0.9976388888888889,
+          "loss": 0.01083351036987485
+        },
+        {
+          "step": 3000,
+          "accuracy": 0.9998611111111111,
+          "loss": 0.002502512710971248
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.0630935801187857,
+          "parameter_gradient_rms": {
+            "embedding": 0.0032787521321934973,
+            "blocks.0": 0.009146302426605309,
+            "blocks.1": 0.01020349397487974,
+            "final_norm": 0.028541885824725752,
+            "output": 0.044284425656104756
+          }
+        },
+        {
+          "step": 500,
+          "loss": 1.418077565455977,
+          "parameter_gradient_rms": {
+            "embedding": 0.0034323452531959432,
+            "blocks.0": 0.006656162067799124,
+            "blocks.1": 0.005787669589809899,
+            "final_norm": 0.013946469483949942,
+            "output": 0.02141594207941453
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.926337969544283,
+          "parameter_gradient_rms": {
+            "embedding": 0.013603396555144026,
+            "blocks.0": 0.02525887023188517,
+            "blocks.1": 0.017558577713235515,
+            "final_norm": 0.02245559964456288,
+            "output": 0.029765198887903993
+          }
+        },
+        {
+          "step": 3000,
+          "loss": 0.0017378813029607508,
+          "parameter_gradient_rms": {
+            "embedding": 0.00011875662526480304,
+            "blocks.0": 0.00024944098523283696,
+            "blocks.1": 0.0001347229119074597,
+            "final_norm": 0.0003706440628329279,
+            "output": 0.00026925819825286934
+          }
+        }
+      ],
+      "status": "trained",
+      "minibatch_sha256": "116d5bf17063721eba7c56e7a08ba02f498d5daf590cbf6b375f0ba7d60d2dcb",
+      "offset_sha256": "9f8dcb0e26408ef3eda8724a6d2e783fe6d08b0a94c64fb0ea94bebc3a2c9e6d",
+      "max_training_gradient": 4.656759899409453,
+      "learning_rate_sum": 2.850499999999797,
+      "checkpoint": "results\\norm_placement_checkpoints\\post_warmup_601.pt",
+      "checkpoint_sha256": "654322e2a8280fd9d49ea89999a41d14523d0e08ce11f58c427371a11bed7f56",
+      "steps": 3000,
+      "first_observed_validation_99": 2500
+    },
+    {
+      "seed": 631,
+      "placement": "pre",
+      "schedule": "constant",
+      "initial_sha256": "8d19a0dd52ca0f235aa05eed4879f924e0238769b967f8a6b2ce480fb7502dd9",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.012222222222222223,
+          "loss": 3.0904764714945667
+        },
+        {
+          "step": 500,
+          "accuracy": 0.5925,
+          "loss": 0.9598354065508847
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.9944444444444445,
+          "loss": 0.02978143972282356
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.9991666666666666,
+          "loss": 0.005649259929193406
+        },
+        {
+          "step": 2000,
+          "accuracy": 1.0,
+          "loss": 0.00222833919508623
+        },
+        {
+          "step": 2500,
+          "accuracy": 1.0,
+          "loss": 0.0012759869197832563
+        },
+        {
+          "step": 3000,
+          "accuracy": 1.0,
+          "loss": 0.0008326039298275107
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.065649117289071,
+          "parameter_gradient_rms": {
+            "embedding": 0.004301853018369765,
+            "blocks.0": 0.010780726082270427,
+            "blocks.1": 0.008260952663184285,
+            "final_norm": 0.03439220412384908,
+            "output": 0.04701978462231726
+          }
+        },
+        {
+          "step": 500,
+          "loss": 0.9199370741886106,
+          "parameter_gradient_rms": {
+            "embedding": 0.00888537015792792,
+            "blocks.0": 0.017230173557343072,
+            "blocks.1": 0.014702341693285525,
+            "final_norm": 0.018801267851165065,
+            "output": 0.02552784088948669
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.0038067802625367845,
+          "parameter_gradient_rms": {
+            "embedding": 0.001174177102809327,
+            "blocks.0": 0.0019273769952675242,
+            "blocks.1": 0.0010729272935678282,
+            "final_norm": 0.0007735775389945842,
+            "output": 0.0005511877059486619
+          }
+        },
+        {
+          "step": 3000,
+          "loss": 0.0006195510886336268,
+          "parameter_gradient_rms": {
+            "embedding": 1.9817959527496626e-05,
+            "blocks.0": 4.559427113323414e-05,
+            "blocks.1": 2.3467824693120452e-05,
+            "final_norm": 0.00016636891612017643,
+            "output": 0.00010063500937492362
+          }
+        }
+      ],
+      "status": "trained",
+      "minibatch_sha256": "5664a80bb2eb9ce6c9e34d859fd07f6228f57e98281bcb2f002f61bb4e37f52b",
+      "offset_sha256": "6b885a88dda363cce64da0b49f2642e471e534dd2e4e8a0e353f4d4002139ddb",
+      "max_training_gradient": 1.6316414191880169,
+      "learning_rate_sum": 2.9999999999997806,
+      "checkpoint": "results\\norm_placement_checkpoints\\pre_constant_631.pt",
+      "checkpoint_sha256": "3fda9f79343150d9d5e60da73d07b9c8609cf9d331da0774ee5c1fc0c2b2e424",
+      "steps": 3000,
+      "first_observed_validation_99": 1000
+    },
+    {
+      "seed": 631,
+      "placement": "pre",
+      "schedule": "warmup",
+      "initial_sha256": "8d19a0dd52ca0f235aa05eed4879f924e0238769b967f8a6b2ce480fb7502dd9",
+      "curve": [
+        {
+          "step": 0,
+          "accuracy": 0.012222222222222223,
+          "loss": 3.0904764714945667
+        },
+        {
+          "step": 500,
+          "accuracy": 0.35791666666666666,
+          "loss": 1.3231671842003403
+        },
+        {
+          "step": 1000,
+          "accuracy": 0.9895833333333334,
+          "loss": 0.0513802360288532
+        },
+        {
+          "step": 1500,
+          "accuracy": 0.99875,
+          "loss": 0.008049570847318674
+        }
+      ],
+      "probes": [
+        {
+          "step": 0,
+          "loss": 3.065649117289071,
+          "parameter_gradient_rms": {
+            "embedding": 0.004301853018369765,
+            "blocks.0": 0.010780726082270427,
+            "blocks.1": 0.008260952663184285,
+            "final_norm": 0.03439220412384908,
+            "output": 0.04701978462231726
+          }
+        },
+        {
+          "step": 500,
+          "loss": 1.3070100064358394,
+          "parameter_gradient_rms": {
+            "embedding": 0.006500833883120926,
+            "blocks.0": 0.012890061173892615,
+            "blocks.1": 0.008465352260677829,
+            "final_norm": 0.02052023162062881,
+            "output": 0.02954392232321045
+          }
+        },
+        {
+          "step": 1500,
+          "loss": 0.005074864203869574,
+          "parameter_gradient_rms": {
+            "embedding": 0.0004512400084362954,
+            "blocks.0": 0.0008697860744795348,
+            "blocks.1": 0.00044937529149337687,
+            "final_norm": 0.0010356442271076782,
+            "output": 0.0006923534192592952
+          }
+        }
+      ],
+      "status": "running"
+    }
+  ]
+}

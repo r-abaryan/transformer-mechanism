@@ -1,0 +1,141 @@
+{
+  "status": "complete",
+  "fixture": false,
+  "training_updates": 0,
+  "optimizer_calls": 0,
+  "device": "cpu",
+  "dtype": "float64",
+  "unique_answers": 49152,
+  "diagnostic_writes": 49152,
+  "native_fidelity_writes": 98304,
+  "state_rows": 198,
+  "event_positions": 192,
+  "metrics": [
+    {
+      "seed": 3461,
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "ce": 0.0403549412752113
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 561
+      }
+    },
+    {
+      "seed": 3463,
+      "metrics": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.049350832185876194
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "ce": 0.049350832185876194
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "ce": null
+        },
+        "complete_maps": 510
+      }
+    }
+  ],
+  "summary": [
+    {
+      "seed": 3461,
+      "group": "correct",
+      "queries": 24330,
+      "state_initial_fraction": 0.6928728879591302,
+      "state_first_fraction": 0.7003215609488107,
+      "final_state_norm": 0.0015773646094142944,
+      "embedding_norm": 0.0002986687374271745,
+      "position_norm_sum": 0.0020877294880245426,
+      "temporal_sum_ratio": 0.14305911716071112,
+      "first_event_norm": 4.8349414941223004e-05,
+      "last_event_norm": 5.890347939483149e-05
+    },
+    {
+      "seed": 3461,
+      "group": "error",
+      "queries": 246,
+      "state_initial_fraction": 0.6940821258406038,
+      "state_first_fraction": 0.7058142595987784,
+      "final_state_norm": 0.001560281204669025,
+      "embedding_norm": 0.00021478538235180538,
+      "position_norm_sum": 0.0016320777046505905,
+      "temporal_sum_ratio": 0.13160242416140874,
+      "first_event_norm": 6.016627643120554e-05,
+      "last_event_norm": 7.517817966159659e-05
+    },
+    {
+      "seed": 3461,
+      "group": "total",
+      "queries": 24576,
+      "state_initial_fraction": 0.6934808458650884,
+      "state_first_fraction": 0.7028446813276503,
+      "final_state_norm": 0.002147694134472878,
+      "embedding_norm": 0.0003015966172694347,
+      "position_norm_sum": 0.0028089851556165548,
+      "temporal_sum_ratio": 0.10736853367359149,
+      "first_event_norm": 7.389353879809931e-05,
+      "last_event_norm": 9.55162542977733e-05
+    },
+    {
+      "seed": 3463,
+      "group": "correct",
+      "queries": 24223,
+      "state_initial_fraction": 0.7199879433477159,
+      "state_first_fraction": 0.7312961710217493,
+      "final_state_norm": 0.0018052346447387899,
+      "embedding_norm": 0.00028737318160611686,
+      "position_norm_sum": 0.002405173593152572,
+      "temporal_sum_ratio": 0.1194812642315117,
+      "first_event_norm": 6.596023135353652e-05,
+      "last_event_norm": 6.037366845160032e-05
+    },
+    {
+      "seed": 3463,
+      "group": "error",
+      "queries": 353,
+      "state_initial_fraction": 0.7198458020615707,
+      "state_first_fraction": 0.7305446569091638,
+      "final_state_norm": 0.0020365705834849345,
+      "embedding_norm": 0.000253082412961624,
+      "position_norm_sum": 0.0022740639906079305,
+      "temporal_sum_ratio": 0.11129080536294272,
+      "first_event_norm": 7.235784088566538e-05,
+      "last_event_norm": 6.433126523241233e-05
+    },
+    {
+      "seed": 3463,
+      "group": "total",
+      "queries": 24576,
+      "state_initial_fraction": 0.7201210744901363,
+      "state_first_fraction": 0.7312956536884225,
+      "final_state_norm": 0.0026279419022056955,
+      "embedding_norm": 0.0003357953615224185,
+      "position_norm_sum": 0.0033471461382745885,
+      "temporal_sum_ratio": 0.1003228863187661,
+      "first_event_norm": 9.545582352434405e-05,
+      "last_event_norm": 8.02929207783042e-05
+    }
+  ],
+  "seconds": 0.7833313000155613,
+  "lock_sha256": "8bd0bbd6dc1586a4bc521f3b8ced764746553980d52397fd1ae4b63c4e9e7624",
+  "gradients_sha256": "6ae8ecf335559a5cd967c34bf410c4d7accef738d5a15c5678b843a800a81249",
+  "metrics_sha256": "a35dad9dbd57810f409bcec1a6ddaf90abbc114ad936f3636a292e32e479fa7d"
+}

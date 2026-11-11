@@ -1,0 +1,4191 @@
+{
+  "phase": "complete",
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "compute_dtype": "float64",
+  "threads": 1,
+  "prior_sha256": "962abda0464828b25d2cd1bb160f99d7027a194ab518b0b364367da0e113280e",
+  "prior_audit_sha256": "e8b5df99b46508dcc956fc004d9365cf568c6421c07abb56e356f43b0b423290",
+  "input_sha256": "ee612c2f4a0f2cc6f7a0782437c382796500e035d26bb6a275aa9ec856c50902",
+  "provenance": {
+    "experiments/cache_precision.py": "e4e78b999d9d115401a42a6b8b1952d548434a980819d4509d791a9d972dcad0",
+    "experiments/audit_cache_precision.py": "175adf5262384206c386a61cd20b10de6dbc44e32a9f2dffc7eafab2851c5d92",
+    "docs/cache-precision-protocol.md": "f5dc04e95585267dc16807fd57c8e94c3dee158b2c38920560a79a6d38bd62ab"
+  },
+  "witnesses": {
+    "codec_input": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        127.0,
+        0.5,
+        1.5,
+        2.5,
+        -0.5,
+        -1.5,
+        -2.5,
+        -127.0
+      ],
+      [
+        1.0,
+        0.001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "codecs": [
+      {
+        "mode": "float64",
+        "encoded": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              127.0,
+              0.5,
+              1.5,
+              2.5,
+              -0.5,
+              -1.5,
+              -2.5,
+              -127.0
+            ],
+            [
+              1.0,
+              0.001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "decoded": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            127.0,
+            0.5,
+            1.5,
+            2.5,
+            -0.5,
+            -1.5,
+            -2.5,
+            -127.0
+          ],
+          [
+            1.0,
+            0.001,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "bytes": 192
+      },
+      {
+        "mode": "fp32",
+        "encoded": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              127.0,
+              0.5,
+              1.5,
+              2.5,
+              -0.5,
+              -1.5,
+              -2.5,
+              -127.0
+            ],
+            [
+              1.0,
+              0.0010000000474974513,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "decoded": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            127.0,
+            0.5,
+            1.5,
+            2.5,
+            -0.5,
+            -1.5,
+            -2.5,
+            -127.0
+          ],
+          [
+            1.0,
+            0.0010000000474974513,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "bytes": 96
+      },
+      {
+        "mode": "fp16",
+        "encoded": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              127.0,
+              0.5,
+              1.5,
+              2.5,
+              -0.5,
+              -1.5,
+              -2.5,
+              -127.0
+            ],
+            [
+              1.0,
+              0.0010004043579101562,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "decoded": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            127.0,
+            0.5,
+            1.5,
+            2.5,
+            -0.5,
+            -1.5,
+            -2.5,
+            -127.0
+          ],
+          [
+            1.0,
+            0.0010004043579101562,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "bytes": 48
+      },
+      {
+        "mode": "int8",
+        "encoded": [
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              127,
+              0,
+              2,
+              2,
+              0,
+              -2,
+              -2,
+              -127
+            ],
+            [
+              127,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1.0
+            ],
+            [
+              1.0
+            ],
+            [
+              0.007874015718698502
+            ]
+          ]
+        ],
+        "decoded": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            127.0,
+            0.0,
+            2.0,
+            2.0,
+            0.0,
+            -2.0,
+            -2.0,
+            -127.0
+          ],
+          [
+            0.9999999962747097,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "bytes": 36
+      }
+    ],
+    "attention": {
+      "q": [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "k": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "v": [
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "reference_output": 0.5088379141679515,
+      "quantized_output": 0.5,
+      "reference_logits": [
+        -0.008837914167951544,
+        0.008837914167951544
+      ],
+      "quantized_logits": [
+        0.0,
+        0.0
+      ],
+      "reference_argmax": 1,
+      "quantized_argmax": 0
+    }
+  },
+  "cases": [
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 1179648,
+      "metrics": {
+        "max_all_token_error": 3.2862601528904634e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.2862601528904634e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 3.2722339446955573e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.2722339446955573e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 0.03450574933560402,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03450574933560402,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 221184,
+      "metrics": {
+        "max_all_token_error": 0.2741470351758508,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.24092701880014156,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.24419616927470145,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.24419616927470145,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.14952346187937593,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.0552988762668932,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 2211840,
+      "metrics": {
+        "max_all_token_error": 3.241851231905457e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.241851231905457e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 1.890592135289637e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 1.890592135289637e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 0.02836420991516647,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.017443693863839815,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 414720,
+      "metrics": {
+        "max_all_token_error": 0.39231949397823884,
+        "all_token_argmax_changes": 9,
+        "max_final_error": 0.23615654192485014,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.36329217804997427,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.26361426029534085,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.33200014164481295,
+        "all_token_argmax_changes": 18,
+        "max_final_error": 0.0465281993182165,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 5160960,
+      "metrics": {
+        "max_all_token_error": 5.062616992290714e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.019806626980426e-14,
+        "final_changes": 0,
+        "reference_correct": 681,
+        "candidate_correct": 681,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 3.723824609558335e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.630148017741419e-06,
+        "final_changes": 0,
+        "reference_correct": 681,
+        "candidate_correct": 681,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 0.04177425411182728,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03892536926997714,
+        "final_changes": 0,
+        "reference_correct": 681,
+        "candidate_correct": 681,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 967680,
+      "metrics": {
+        "max_all_token_error": 0.6174379268144525,
+        "all_token_argmax_changes": 56,
+        "max_final_error": 0.4664530043141486,
+        "final_changes": 1,
+        "reference_correct": 681,
+        "candidate_correct": 682,
+        "damaged": 0,
+        "repaired": 1,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.6451120630402891,
+        "all_token_argmax_changes": 16,
+        "max_final_error": 0.4450258604793591,
+        "final_changes": 1,
+        "reference_correct": 681,
+        "candidate_correct": 682,
+        "damaged": 0,
+        "repaired": 1,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1411.pt",
+      "checkpoint_sha256": "53dc5051534155513b50018867a5229e98b1be717f53b2c57ad02709c951fb08",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.5171994853439132,
+        "all_token_argmax_changes": 45,
+        "max_final_error": 0.17325543190895143,
+        "final_changes": 0,
+        "reference_correct": 681,
+        "candidate_correct": 681,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 4.3298697960381105e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.3298697960381105e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 5.037765339110933e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.037765339110933e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 147456,
+      "metrics": {
+        "max_all_token_error": 0.04754003907768567,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.04754003907768567,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 110592,
+      "metrics": {
+        "max_all_token_error": 0.5004247018389735,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.5004247018389735,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.8016647865765683,
+        "all_token_argmax_changes": 14,
+        "max_final_error": 0.47744790064379616,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.14319437450578132,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.07045951151293428,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 4.618527782440651e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.8191672047105385e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 5.122359063136628e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.0110532659731746e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 276480,
+      "metrics": {
+        "max_all_token_error": 0.02777805850904791,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.027749622561525578,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 207360,
+      "metrics": {
+        "max_all_token_error": 1.0036157661479086,
+        "all_token_argmax_changes": 9,
+        "max_final_error": 0.48443536479765914,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.8016647865765683,
+        "all_token_argmax_changes": 12,
+        "max_final_error": 0.36610530795769014,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.8125260781082622,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.06979255447506594,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 4.440892098500626e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.697042672001771e-14,
+        "final_changes": 0,
+        "reference_correct": 667,
+        "candidate_correct": 667,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 8.788001681470092e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 8.788001681470092e-06,
+        "final_changes": 0,
+        "reference_correct": 667,
+        "candidate_correct": 667,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 645120,
+      "metrics": {
+        "max_all_token_error": 0.06654463509529451,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03912290531587481,
+        "final_changes": 0,
+        "reference_correct": 667,
+        "candidate_correct": 667,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 483840,
+      "metrics": {
+        "max_all_token_error": 1.2142878146592961,
+        "all_token_argmax_changes": 58,
+        "max_final_error": 0.9082475946059008,
+        "final_changes": 3,
+        "reference_correct": 667,
+        "candidate_correct": 666,
+        "damaged": 2,
+        "repaired": 1,
+        "certified_rows": 717,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.9348611380654068,
+        "all_token_argmax_changes": 31,
+        "max_final_error": 0.9348611380654068,
+        "final_changes": 1,
+        "reference_correct": 667,
+        "candidate_correct": 668,
+        "damaged": 0,
+        "repaired": 1,
+        "certified_rows": 717,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1411,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1411.pt",
+      "checkpoint_sha256": "99f464ab4a9507a7ce52b77e9c29bd0ae15c9f9526e1c8ab09548315a988bcea",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.4923691241664674,
+        "all_token_argmax_changes": 21,
+        "max_final_error": 0.4853643242730552,
+        "final_changes": 1,
+        "reference_correct": 667,
+        "candidate_correct": 666,
+        "damaged": 1,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 1179648,
+      "metrics": {
+        "max_all_token_error": 3.8191672047105385e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.8191672047105385e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 2.8010301087455503e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.8010301087455503e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 0.04753399468613839,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.018524986636785146,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 221184,
+      "metrics": {
+        "max_all_token_error": 0.6850556874930795,
+        "all_token_argmax_changes": 12,
+        "max_final_error": 0.21181479168552286,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.5077819440995395,
+        "all_token_argmax_changes": 10,
+        "max_final_error": 0.23867148376212555,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.26417190065249896,
+        "all_token_argmax_changes": 8,
+        "max_final_error": 0.055433002207073034,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 2211840,
+      "metrics": {
+        "max_all_token_error": 4.3520742565306136e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.3520742565306136e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 2.517910406396595e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.517910406396595e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 0.02855200759080212,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.017661457998873864,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 414720,
+      "metrics": {
+        "max_all_token_error": 0.5371326749305503,
+        "all_token_argmax_changes": 9,
+        "max_final_error": 0.38756376271637905,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.4476867437716061,
+        "all_token_argmax_changes": 12,
+        "max_final_error": 0.4372499896984574,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.22313634659101655,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.20038072130119122,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 5160960,
+      "metrics": {
+        "max_all_token_error": 6.217248937900877e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.217248937900877e-14,
+        "final_changes": 0,
+        "reference_correct": 686,
+        "candidate_correct": 686,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 4.633401634812628e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.633401634812628e-06,
+        "final_changes": 0,
+        "reference_correct": 686,
+        "candidate_correct": 686,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 0.029441290753410287,
+        "all_token_argmax_changes": 1,
+        "max_final_error": 0.02588605133711752,
+        "final_changes": 1,
+        "reference_correct": 686,
+        "candidate_correct": 685,
+        "damaged": 1,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 967680,
+      "metrics": {
+        "max_all_token_error": 0.6558529748898763,
+        "all_token_argmax_changes": 47,
+        "max_final_error": 0.45894968644656386,
+        "final_changes": 2,
+        "reference_correct": 686,
+        "candidate_correct": 686,
+        "damaged": 1,
+        "repaired": 1,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.46365825174438413,
+        "all_token_argmax_changes": 26,
+        "max_final_error": 0.3833203816560671,
+        "final_changes": 1,
+        "reference_correct": 686,
+        "candidate_correct": 687,
+        "damaged": 0,
+        "repaired": 1,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1423.pt",
+      "checkpoint_sha256": "2e65f141a7d0a9e1c0adebc939366399d3fd259e9b3a51716229fb9f93c227d4",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.3394455304517443,
+        "all_token_argmax_changes": 17,
+        "max_final_error": 0.3026351633544264,
+        "final_changes": 2,
+        "reference_correct": 686,
+        "candidate_correct": 686,
+        "damaged": 1,
+        "repaired": 1,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 4.1300296516055823e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.1300296516055823e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 3.1227361805274967e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.9504798417789857e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 147456,
+      "metrics": {
+        "max_all_token_error": 0.02366343059548104,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.02366343059548104,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 110592,
+      "metrics": {
+        "max_all_token_error": 0.4750886047199798,
+        "all_token_argmax_changes": 10,
+        "max_final_error": 0.4750886047199798,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.48541933098697365,
+        "all_token_argmax_changes": 8,
+        "max_final_error": 0.48541933098697365,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.14054666818724537,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.11313017581118645,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 5.484501741648273e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.484501741648273e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 5.651054688193824e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.6088590986693703e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 276480,
+      "metrics": {
+        "max_all_token_error": 0.03314479028621342,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.03314479028621342,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 207360,
+      "metrics": {
+        "max_all_token_error": 0.6234375662470724,
+        "all_token_argmax_changes": 18,
+        "max_final_error": 0.5461126992727872,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.5586432790425091,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.5586432790425091,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.2760209696267135,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.09192298831479184,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 8.526512829121202e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.929390229335695e-14,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 6.202734418536693e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.806484692920776e-06,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 645120,
+      "metrics": {
+        "max_all_token_error": 0.06137756575859088,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.04745626966111427,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 483840,
+      "metrics": {
+        "max_all_token_error": 0.7092107905611877,
+        "all_token_argmax_changes": 21,
+        "max_final_error": 0.7092107905611877,
+        "final_changes": 1,
+        "reference_correct": 706,
+        "candidate_correct": 705,
+        "damaged": 1,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.49226232877749965,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.49226232877749965,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1423,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1423.pt",
+      "checkpoint_sha256": "27b20ed90ecbf89f0c7d0cc8e5c36477d3feae6ce97820a4279807fc991088b2",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.3273774654643111,
+        "all_token_argmax_changes": 20,
+        "max_final_error": 0.3093573743685476,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 1179648,
+      "metrics": {
+        "max_all_token_error": 3.8191672047105385e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.8191672047105385e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 5.494842074682538e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.974191331439613e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 0.02740404987136058,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.02740404987136058,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 221184,
+      "metrics": {
+        "max_all_token_error": 0.2971306221638921,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.27873098799371787,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.36196297669616584,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.32095864433485977,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.21247059525714374,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.05416836523116064,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 2211840,
+      "metrics": {
+        "max_all_token_error": 5.240252676230739e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.240252676230739e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 3.895295806799481e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 1.8766929166247337e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 0.028665662621518706,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.02646167664678023,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 414720,
+      "metrics": {
+        "max_all_token_error": 0.53063105003812,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.2089520660450188,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.5433210064929419,
+        "all_token_argmax_changes": 9,
+        "max_final_error": 0.5012654409299913,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.234311557677926,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.06599167959345875,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 5160960,
+      "metrics": {
+        "max_all_token_error": 5.861977570020827e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.241851231905457e-14,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 6.719155939194366e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.9590008835688195e-06,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 0.060916164527927474,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03569099542080245,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 967680,
+      "metrics": {
+        "max_all_token_error": 0.5525584576894578,
+        "all_token_argmax_changes": 25,
+        "max_final_error": 0.5525584576894578,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.5076105941894697,
+        "all_token_argmax_changes": 25,
+        "max_final_error": 0.4039030436581754,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1451.pt",
+      "checkpoint_sha256": "a856d0febde093ecc1778175ae211266b75abbeefca98e524a851ac73c4739a9",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.5315598590129369,
+        "all_token_argmax_changes": 10,
+        "max_final_error": 0.3219288081695977,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 3.2862601528904634e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.2862601528904634e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 4.8769376492785455e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.8769376492785455e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 147456,
+      "metrics": {
+        "max_all_token_error": 0.037934863002363706,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.037934863002363706,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 110592,
+      "metrics": {
+        "max_all_token_error": 0.5955767507728904,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.5955767507728904,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.660836209185224,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.4723946742240881,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.17220965903000796,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.07563000713521273,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 4.440892098500626e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.440892098500626e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 5.109734718899972e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.109734718899972e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 276480,
+      "metrics": {
+        "max_all_token_error": 0.03156702930475319,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03156702930475319,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 207360,
+      "metrics": {
+        "max_all_token_error": 0.4653862951800747,
+        "all_token_argmax_changes": 12,
+        "max_final_error": 0.25815432403469796,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.3257969159298254,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.26520928288254364,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.1962532811176132,
+        "all_token_argmax_changes": 15,
+        "max_final_error": 0.07869806634634058,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 7.194245199571014e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 7.194245199571014e-14,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 6.536600213991051e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.078689480380149e-06,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 645120,
+      "metrics": {
+        "max_all_token_error": 0.05145604121369818,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.05145604121369818,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 483840,
+      "metrics": {
+        "max_all_token_error": 0.7621201115018907,
+        "all_token_argmax_changes": 30,
+        "max_final_error": 0.3954714979283338,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.5721883542640605,
+        "all_token_argmax_changes": 35,
+        "max_final_error": 0.3528364706655811,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1451,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1451.pt",
+      "checkpoint_sha256": "984c1d07bde2c3e21d4fea77100a4c445fd418bdc4ca2093a11725b431cc3746",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.4650293556236438,
+        "all_token_argmax_changes": 35,
+        "max_final_error": 0.24408176399428383,
+        "final_changes": 0,
+        "reference_correct": 683,
+        "candidate_correct": 683,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 1179648,
+      "metrics": {
+        "max_all_token_error": 3.108624468950438e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.108624468950438e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 3.346663576486719e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.346663576486719e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 0.03760791960447607,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.03760791960447607,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 221184,
+      "metrics": {
+        "max_all_token_error": 0.37833765223757343,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.37833765223757343,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.36838202850149493,
+        "all_token_argmax_changes": 2,
+        "max_final_error": 0.25754995391396296,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.11541086016978785,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.045431534818610064,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 2211840,
+      "metrics": {
+        "max_all_token_error": 3.730349362740526e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.730349362740526e-14,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 3.608036071689469e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.608036071689469e-06,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 0.03269008191365064,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.02458055026856032,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 414720,
+      "metrics": {
+        "max_all_token_error": 0.6682635278770519,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.4923121610013128,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.5734241552585448,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.27732341447434283,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.12975808842367798,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.08186687033639117,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 5160960,
+      "metrics": {
+        "max_all_token_error": 4.3520742565306136e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.398081733190338e-14,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 6.774328626946158e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.774328626946158e-06,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 0.05082202375110767,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.033577831903143895,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 967680,
+      "metrics": {
+        "max_all_token_error": 0.8356941971778387,
+        "all_token_argmax_changes": 41,
+        "max_final_error": 0.45363656190613977,
+        "final_changes": 1,
+        "reference_correct": 706,
+        "candidate_correct": 705,
+        "damaged": 1,
+        "repaired": 0,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.4970756921491617,
+        "all_token_argmax_changes": 35,
+        "max_final_error": 0.34401390640947227,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1481.pt",
+      "checkpoint_sha256": "5b768d189ca68daed2fea74ba2eb802d6a17d35c70c9a2ed6980638d32355f26",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.5066138342639555,
+        "all_token_argmax_changes": 15,
+        "max_final_error": 0.225133403349993,
+        "final_changes": 0,
+        "reference_correct": 706,
+        "candidate_correct": 706,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 3.730349362740526e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.6645352591003757e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 3.760076524805811e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.8251722641314814e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 147456,
+      "metrics": {
+        "max_all_token_error": 0.035446838371751,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.026985509056165036,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 110592,
+      "metrics": {
+        "max_all_token_error": 0.8223872440296874,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.33679817271346923,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.5534741515047816,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.5030070526913462,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.12430916272400516,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.06756119391749382,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 6.394884621840902e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.394884621840902e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 6.025868684034208e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.025868684034208e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 276480,
+      "metrics": {
+        "max_all_token_error": 0.04706465219168443,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.039744888874928996,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 207360,
+      "metrics": {
+        "max_all_token_error": 0.8916152295132649,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.4814445472953741,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.8700916218604748,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.4849614758857608,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.6471129794137331,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.07628007837504525,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 4.707345624410664e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.707345624410664e-14,
+        "final_changes": 0,
+        "reference_correct": 690,
+        "candidate_correct": 690,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 5.232765342144674e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.232765342144674e-06,
+        "final_changes": 0,
+        "reference_correct": 690,
+        "candidate_correct": 690,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 645120,
+      "metrics": {
+        "max_all_token_error": 0.09296221031856877,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.09296221031856877,
+        "final_changes": 0,
+        "reference_correct": 690,
+        "candidate_correct": 690,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 483840,
+      "metrics": {
+        "max_all_token_error": 0.6913768877608368,
+        "all_token_argmax_changes": 41,
+        "max_final_error": 0.6251973937189339,
+        "final_changes": 1,
+        "reference_correct": 690,
+        "candidate_correct": 691,
+        "damaged": 0,
+        "repaired": 1,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.7569741040243874,
+        "all_token_argmax_changes": 10,
+        "max_final_error": 0.701869738854743,
+        "final_changes": 0,
+        "reference_correct": 690,
+        "candidate_correct": 690,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1481,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1481.pt",
+      "checkpoint_sha256": "9099575dcf2032c2a9509ade89e58446b3051eb9309f941d9fe49b559a70bcf0",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.49334353030595723,
+        "all_token_argmax_changes": 35,
+        "max_final_error": 0.2358672173153824,
+        "final_changes": 0,
+        "reference_correct": 690,
+        "candidate_correct": 690,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 1179648,
+      "metrics": {
+        "max_all_token_error": 6.927791673660977e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.927791673660977e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 3.5900808841304865e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 2.590810494140783e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 0.04259096770711457,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.04259096770711457,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 221184,
+      "metrics": {
+        "max_all_token_error": 0.43015564607353873,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.39015041208509516,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.4807220885342147,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.38166376429430215,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 700416,
+      "metrics": {
+        "max_all_token_error": 0.14275694087470114,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.052765166324866275,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 2211840,
+      "metrics": {
+        "max_all_token_error": 4.3520742565306136e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 4.085620730620576e-14,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 3.932867102651727e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.932867102651727e-06,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 0.03293564122082415,
+        "all_token_argmax_changes": 3,
+        "max_final_error": 0.03293564122082415,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 414720,
+      "metrics": {
+        "max_all_token_error": 0.5526013387929911,
+        "all_token_argmax_changes": 15,
+        "max_final_error": 0.39080915532244376,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.6146211525906313,
+        "all_token_argmax_changes": 15,
+        "max_final_error": 0.5655305485239102,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 1313280,
+      "metrics": {
+        "max_all_token_error": 0.3828629484136439,
+        "all_token_argmax_changes": 12,
+        "max_final_error": 0.10477299479684543,
+        "final_changes": 0,
+        "reference_correct": 431,
+        "candidate_correct": 431,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 5160960,
+      "metrics": {
+        "max_all_token_error": 6.750155989720952e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.750155989720952e-14,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 5.090136395935474e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.090136395935474e-06,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 0.05499372615233966,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.05499372615233966,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 967680,
+      "metrics": {
+        "max_all_token_error": 0.9353137662087523,
+        "all_token_argmax_changes": 30,
+        "max_final_error": 0.5566757378323275,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.5434844077259817,
+        "all_token_argmax_changes": 15,
+        "max_final_error": 0.3616654706174067,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mha",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mha_1499.pt",
+      "checkpoint_sha256": "cf4adddac754664317dffd7535da82ccc2308790e97c6c06d3bba67d49550638",
+      "payload_bytes": 3064320,
+      "metrics": {
+        "max_all_token_error": 0.35435956400790225,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.18409024202250102,
+        "final_changes": 0,
+        "reference_correct": 674,
+        "candidate_correct": 674,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 589824,
+      "metrics": {
+        "max_all_token_error": 4.085620730620576e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.6415315207705135e-14,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 294912,
+      "metrics": {
+        "max_all_token_error": 3.514603634791058e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.4633488112945088e-06,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 147456,
+      "metrics": {
+        "max_all_token_error": 0.052779843730321296,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.052779843730321296,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 110592,
+      "metrics": {
+        "max_all_token_error": 0.5368292290133629,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.26325715876825084,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.820940611674744,
+        "all_token_argmax_changes": 4,
+        "max_final_error": 0.2304281427540089,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 3,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 350208,
+      "metrics": {
+        "max_all_token_error": 0.23370945870742243,
+        "all_token_argmax_changes": 6,
+        "max_final_error": 0.05924915078518733,
+        "final_changes": 0,
+        "reference_correct": 288,
+        "candidate_correct": 288,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 288,
+        "rows": 288
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 1105920,
+      "metrics": {
+        "max_all_token_error": 6.128431095930864e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.128431095930864e-14,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 552960,
+      "metrics": {
+        "max_all_token_error": 3.001222561138661e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 3.001222561138661e-06,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 276480,
+      "metrics": {
+        "max_all_token_error": 0.03738500566067504,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.023391732678198274,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 207360,
+      "metrics": {
+        "max_all_token_error": 0.557237031357495,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.5449356847503255,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.820940611674744,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.35377783112851224,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 4,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 656640,
+      "metrics": {
+        "max_all_token_error": 0.18565710541880964,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 0.06305973783075292,
+        "final_changes": 0,
+        "reference_correct": 432,
+        "candidate_correct": 432,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 432,
+        "rows": 432
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "float64",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 2580480,
+      "metrics": {
+        "max_all_token_error": 5.906386491005833e-14,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 5.3512749786932545e-14,
+        "final_changes": 0,
+        "reference_correct": 694,
+        "candidate_correct": 694,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp32",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 1290240,
+      "metrics": {
+        "max_all_token_error": 6.516194917427498e-06,
+        "all_token_argmax_changes": 0,
+        "max_final_error": 6.196494265253705e-06,
+        "final_changes": 0,
+        "reference_correct": 694,
+        "candidate_correct": 694,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "fp16",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 645120,
+      "metrics": {
+        "max_all_token_error": 0.042864889706978104,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.042864889706978104,
+        "final_changes": 0,
+        "reference_correct": 694,
+        "candidate_correct": 694,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 720,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 483840,
+      "metrics": {
+        "max_all_token_error": 0.883561942877714,
+        "all_token_argmax_changes": 20,
+        "max_final_error": 0.6428783542266983,
+        "final_changes": 0,
+        "reference_correct": 694,
+        "candidate_correct": 694,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 717,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_k",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.9184696457730279,
+        "all_token_argmax_changes": 36,
+        "max_final_error": 0.9184696457730279,
+        "final_changes": 1,
+        "reference_correct": 694,
+        "candidate_correct": 693,
+        "damaged": 1,
+        "repaired": 0,
+        "certified_rows": 718,
+        "rows": 720
+      }
+    },
+    {
+      "seed": 1499,
+      "group": "mqa",
+      "pairs": 6,
+      "mode": "int8_v",
+      "checkpoint": "results\\mqa_training_checkpoints\\mqa_1499.pt",
+      "checkpoint_sha256": "4634155d26ac86570add94bc0a31bdc61c4f276c312c13a0cfac01af2b9fe186",
+      "payload_bytes": 1532160,
+      "metrics": {
+        "max_all_token_error": 0.3792637613132017,
+        "all_token_argmax_changes": 5,
+        "max_final_error": 0.23108440994484614,
+        "final_changes": 0,
+        "reference_correct": 694,
+        "candidate_correct": 694,
+        "damaged": 0,
+        "repaired": 0,
+        "certified_rows": 719,
+        "rows": 720
+      }
+    }
+  ],
+  "tensors_sha256": "75137c31ed266b0573cf2b359ff8a1eba73c7a09ecc778d63e5ff9b5dccbbed7",
+  "decision": {
+    "control_passed": true,
+    "preservation": {
+      "fp32": true,
+      "fp16": false,
+      "int8": false,
+      "int8_k": false,
+      "int8_v": false
+    }
+  }
+}

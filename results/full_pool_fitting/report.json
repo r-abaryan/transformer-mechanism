@@ -1,0 +1,5691 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "seed": 3461,
+      "arm": "lbfgs",
+      "source_step": 12000,
+      "closure_evaluations": 127,
+      "optimizer_calls": 63,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/full_pool_fitting/3461_lbfgs_0.pt",
+          "sha256": "e651a294c3b0233354313231336903b7bbcdc0a7de442484c3aaf93fa2c82d4b",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 0.00024259193911238173,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 0.00024259193911238173,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014770307330634078,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014770307330634078,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0403549412752113,
+                  "accuracy": 0.989990234375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0403549412752113,
+                  "accuracy": 0.989990234375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 561,
+                "accuracy": 0.73046875
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.16604166598583622
+        },
+        {
+          "step": 33,
+          "checkpoint": "results/full_pool_fitting/3461_lbfgs_33.pt",
+          "sha256": "76f24e76506d7e782dfb04441cf532e812aaae5b52fba42e49a22239f84ca1af",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 0.00010527308982611406,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 0.00010527308982611406,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0013075440876466865,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0013075440876466865,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.033730315693462576,
+                  "accuracy": 0.9930419921875
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.033730315693462576,
+                  "accuracy": 0.9930419921875
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 617,
+                "accuracy": 0.8033854166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17051445437903676
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/full_pool_fitting/3461_lbfgs_65.pt",
+          "sha256": "a9d47a24ca7c8d32abccea94c014dccad5e0347da1b75cfaf7429a6ae66e097a",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 7.4185400107038e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 7.4185400107038e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011566259092432379,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011566259092432379,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.02214062148715205,
+                  "accuracy": 0.997802734375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.02214062148715205,
+                  "accuracy": 0.997802734375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 716,
+                "accuracy": 0.9322916666666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15716882507378938
+        },
+        {
+          "step": 97,
+          "checkpoint": "results/full_pool_fitting/3461_lbfgs_97.pt",
+          "sha256": "99f2e7108adfbc16e426429ffc88983dfb7f3a0d17d2673f69d08ac8249fd48b",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.055869083015613e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.055869083015613e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0005778242413382204,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0005778242413382204,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.009476047408646644,
+                  "accuracy": 0.9999593098958334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.009476047408646644,
+                  "accuracy": 0.9999593098958334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 767,
+                "accuracy": 0.9986979166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15402860448093503
+        },
+        {
+          "step": 127,
+          "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt",
+          "sha256": "b05436cfc4321d435aa2ff4b8060acabe721f8dbb8b6cd7e4a40b858a4c11415",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 6.928273608692709e-06,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 6.928273608692709e-06,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 8.82671217881083e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 8.82671217881083e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0018770989187273605,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0018770989187273605,
+                  "accuracy": 1.0
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "fit": true,
+          "perfect": true,
+          "beta": 0.14773287261925447
+        }
+      ],
+      "final_checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt",
+      "trace": "results/full_pool_fitting/3461_lbfgs_trace.pt",
+      "trace_sha256": "a1079bb312e5b80275817e6010f3f4b1ede942bd7904ce8eb4caa6444bb7ec97",
+      "seconds": 79.61218739999458,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3461,
+      "arm": "adam",
+      "source_step": 12000,
+      "closure_evaluations": 0,
+      "optimizer_calls": 6096,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/full_pool_fitting/3461_adam_0.pt",
+          "sha256": "3ded3ce6ab150800e159773f32ea66b3f6edbbe8b59e6015dc478d42c4972807",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 0.00024259193911238173,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 0.00024259193911238173,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014770307330634078,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014770307330634078,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0403549412752113,
+                  "accuracy": 0.989990234375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0403549412752113,
+                  "accuracy": 0.989990234375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 561,
+                "accuracy": 0.73046875
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.16604166598583622
+        },
+        {
+          "step": 1536,
+          "checkpoint": "results/full_pool_fitting/3461_adam_1536.pt",
+          "sha256": "9535733347c41766fb37ff38931c777d1621c7c0275a88b27a50c542d35041b1",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 0.00026249540756525044,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 0.00026249540756525044,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0012169566688799997,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0012169566688799997,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03413288832898063,
+                  "accuracy": 0.9914957682291666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03413288832898063,
+                  "accuracy": 0.9914957682291666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 581,
+                "accuracy": 0.7565104166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1619122691849825
+        },
+        {
+          "step": 3072,
+          "checkpoint": "results/full_pool_fitting/3461_adam_3072.pt",
+          "sha256": "bd7885edd02d3b7ea7b728d752293241e8a1fed2ef9344b18852de86de7e9014",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 6.279614159507475e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 6.279614159507475e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.001092244487098868,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.001092244487098868,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.029276342404343403,
+                  "accuracy": 0.9943033854166666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.029276342404343403,
+                  "accuracy": 0.9943033854166666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 646,
+                "accuracy": 0.8411458333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15972967588887418
+        },
+        {
+          "step": 4608,
+          "checkpoint": "results/full_pool_fitting/3461_adam_4608.pt",
+          "sha256": "953e688403238949cd2e1dedf55c4bb5f07c8723c0f06894a677936eb1b2fb38",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 4.0082185296056636e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 4.0082185296056636e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.001071037115439011,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.001071037115439011,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.02425716419350295,
+                  "accuracy": 0.9950764973958334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.02425716419350295,
+                  "accuracy": 0.9950764973958334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 675,
+                "accuracy": 0.87890625
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15997459673019224
+        },
+        {
+          "step": 6096,
+          "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt",
+          "sha256": "8aeabd35278d7857f05176196e6d0bbbc2d8be406d08b7e4e268fd82fb2b8dee",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 3.1032477394179544e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 3.1032477394179544e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0012553424410936742,
+                  "accuracy": 0.99951171875
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0012553424410936742,
+                  "accuracy": 0.99951171875
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 762,
+                "accuracy": 0.9921875
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.019252049567840167,
+                  "accuracy": 0.9984537760416666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.019252049567840167,
+                  "accuracy": 0.9984537760416666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 730,
+                "accuracy": 0.9505208333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16185234339900123
+        }
+      ],
+      "final_checkpoint": "results/full_pool_fitting/3461_adam_6096.pt",
+      "trace": "results/full_pool_fitting/3461_adam_trace.pt",
+      "trace_sha256": "7cf2adc5217531d5cc4ad2f7dba412331fd19e77bb3372a0680179e32e9b71b2",
+      "seconds": 131.48896650000825,
+      "stop_reason": "matched_lbfgs_gradient_target_exposure"
+    },
+    {
+      "seed": 3463,
+      "arm": "lbfgs",
+      "source_step": 12000,
+      "closure_evaluations": 127,
+      "optimizer_calls": 63,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/full_pool_fitting/3463_lbfgs_0.pt",
+          "sha256": "ef45ae9d73df30b997be39638523c47226d556089d1a17bdc37c170f45f84f56",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.052510341978431e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.052510341978431e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0016078027207679906,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0016078027207679906,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.049350832185876194,
+                  "accuracy": 0.9856363932291666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.049350832185876194,
+                  "accuracy": 0.9856363932291666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 510,
+                "accuracy": 0.6640625
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.150457663385316
+        },
+        {
+          "step": 33,
+          "checkpoint": "results/full_pool_fitting/3463_lbfgs_33.pt",
+          "sha256": "7c676deb95c982d0c407aa799434e2e9f07ec497c66de8bf2bc00707ab72180e",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 6.513733117750722e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 6.513733117750722e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014898053249487798,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014898053249487798,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04223059355824215,
+                  "accuracy": 0.9906412760416666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04223059355824215,
+                  "accuracy": 0.9906412760416666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 564,
+                "accuracy": 0.734375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15468564231254867
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/full_pool_fitting/3463_lbfgs_65.pt",
+          "sha256": "c96bc75288b86249018f62a69bab041e89d62bf25a6ce1515747bdf064c25d23",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.0758844776012215e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.0758844776012215e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0012077940520178485,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0012077940520178485,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.032663078758330154,
+                  "accuracy": 0.9932861328125
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.032663078758330154,
+                  "accuracy": 0.9932861328125
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 621,
+                "accuracy": 0.80859375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.14248813227844714
+        },
+        {
+          "step": 97,
+          "checkpoint": "results/full_pool_fitting/3463_lbfgs_97.pt",
+          "sha256": "c80e367ee070a1d04d7c609c363cbbf43bb5d5b8197fd4795f799cad9e730573",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.5421600028918727e-07,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.5421600028918727e-07,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0008956382078664946,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0008956382078664946,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.01953360493597819,
+                  "accuracy": 0.9984130859375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.01953360493597819,
+                  "accuracy": 0.9984130859375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 729,
+                "accuracy": 0.94921875
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.13487045110000284
+        },
+        {
+          "step": 127,
+          "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt",
+          "sha256": "7a6c5b3bfaca1d0bd0273a219bf7f65a680978eba7439e515b3beac3aa43da13",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 4.32656642721421e-10,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 4.32656642721421e-10,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00022671657769759586,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00022671657769759586,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.006573064906066392,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.006573064906066392,
+                  "accuracy": 1.0
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "fit": true,
+          "perfect": true,
+          "beta": 0.1270490529758013
+        }
+      ],
+      "final_checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt",
+      "trace": "results/full_pool_fitting/3463_lbfgs_trace.pt",
+      "trace_sha256": "a6b5f6f2b165822c7984df886147f532ed0ce875607e243487e2f5196a79b3df",
+      "seconds": 75.54102589999093,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3463,
+      "arm": "adam",
+      "source_step": 12000,
+      "closure_evaluations": 0,
+      "optimizer_calls": 6096,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/full_pool_fitting/3463_adam_0.pt",
+          "sha256": "e4d6c0b2764ec03ee124ab737d1ed8f87f0ffbd676a8df34e095a92ba4ffdd4f",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.052510341978431e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.052510341978431e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0016078027207679906,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0016078027207679906,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.049350832185876194,
+                  "accuracy": 0.9856363932291666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.049350832185876194,
+                  "accuracy": 0.9856363932291666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 510,
+                "accuracy": 0.6640625
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.150457663385316
+        },
+        {
+          "step": 1536,
+          "checkpoint": "results/full_pool_fitting/3463_adam_1536.pt",
+          "sha256": "3f4336d892fd9175a2d4d491533b4d6c9437ebc9040885d850b272a7e28b3618",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 4.000745373054903e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 4.000745373054903e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0016525673877389065,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0016525673877389065,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04178761010215038,
+                  "accuracy": 0.9886474609375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04178761010215038,
+                  "accuracy": 0.9886474609375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 547,
+                "accuracy": 0.7122395833333334
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.14724015447083896
+        },
+        {
+          "step": 3072,
+          "checkpoint": "results/full_pool_fitting/3463_adam_3072.pt",
+          "sha256": "b27a0b60f8b202ffedf0df5d64c58bf466ce4141f9a6515fe13238570cd92cc0",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.860623989939077e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.860623989939077e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0010830132962733217,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0010830132962733217,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03805709730450225,
+                  "accuracy": 0.9906819661458334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03805709730450225,
+                  "accuracy": 0.9906819661458334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 558,
+                "accuracy": 0.7265625
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.14670309592127204
+        },
+        {
+          "step": 4608,
+          "checkpoint": "results/full_pool_fitting/3463_adam_4608.pt",
+          "sha256": "b3168a7089659bb09e747bbffc28be893f568ab6d17d45ed268a81dac97db16c",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.380942089528714e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.380942089528714e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0009739212257538421,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0009739212257538421,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.033442490507729204,
+                  "accuracy": 0.992431640625
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.033442490507729204,
+                  "accuracy": 0.992431640625
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 598,
+                "accuracy": 0.7786458333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1428957765254826
+        },
+        {
+          "step": 6096,
+          "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt",
+          "sha256": "2e96cf19256b7284a072f7c0f099de0783795b751bd225d49b88ce386bc7cebc",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.3872721355191326e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.3872721355191326e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0007338801657882369,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0007338801657882369,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.030051127996135546,
+                  "accuracy": 0.9934895833333334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.030051127996135546,
+                  "accuracy": 0.9934895833333334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 621,
+                "accuracy": 0.80859375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.14340839621127913
+        }
+      ],
+      "final_checkpoint": "results/full_pool_fitting/3463_adam_6096.pt",
+      "trace": "results/full_pool_fitting/3463_adam_trace.pt",
+      "trace_sha256": "afa43abd3ac1bcd1dc4e6939cfa4560eac3e3333294935afe0fe0124fbab1489",
+      "seconds": 131.4416874999879,
+      "stop_reason": "matched_lbfgs_gradient_target_exposure"
+    }
+  ],
+  "decision": {
+    "lbfgs": {
+      "all_seed_fit": true,
+      "all_seed_perfect": true
+    },
+    "adam": {
+      "all_seed_fit": true,
+      "all_seed_perfect": false
+    }
+  },
+  "cells": [
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 561,
+          "accuracy": 0.73046875
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00010527308982611406,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00010527308982611406,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0013075440876466865,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0013075440876466865,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.033730315693462576,
+            "accuracy": 0.9930419921875
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.033730315693462576,
+            "accuracy": 0.9930419921875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 617,
+          "accuracy": 0.8033854166666666
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 7.4185400107038e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 7.4185400107038e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0011566259092432379,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0011566259092432379,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.02214062148715205,
+            "accuracy": 0.997802734375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.02214062148715205,
+            "accuracy": 0.997802734375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 716,
+          "accuracy": 0.9322916666666666
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.055869083015613e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.055869083015613e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0005778242413382204,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0005778242413382204,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.009476047408646644,
+            "accuracy": 0.9999593098958334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.009476047408646644,
+            "accuracy": 0.9999593098958334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 767,
+          "accuracy": 0.9986979166666666
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 6.928273608692709e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 6.928273608692709e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 8.82671217881083e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 8.82671217881083e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0018770989187273605,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0018770989187273605,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 561,
+          "accuracy": 0.73046875
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00026249540756525044,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00026249540756525044,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0012169566688799997,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0012169566688799997,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.03413288832898063,
+            "accuracy": 0.9914957682291666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.03413288832898063,
+            "accuracy": 0.9914957682291666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 581,
+          "accuracy": 0.7565104166666666
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 6.279614159507475e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 6.279614159507475e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.001092244487098868,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.001092244487098868,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.029276342404343403,
+            "accuracy": 0.9943033854166666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.029276342404343403,
+            "accuracy": 0.9943033854166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 646,
+          "accuracy": 0.8411458333333334
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 4.0082185296056636e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 4.0082185296056636e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.001071037115439011,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.001071037115439011,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.02425716419350295,
+            "accuracy": 0.9950764973958334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.02425716419350295,
+            "accuracy": 0.9950764973958334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 675,
+          "accuracy": 0.87890625
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 3.1032477394179544e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 3.1032477394179544e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0012553424410936742,
+            "accuracy": 0.99951171875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0012553424410936742,
+            "accuracy": 0.99951171875
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 762,
+          "accuracy": 0.9921875
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.019252049567840167,
+            "accuracy": 0.9984537760416666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.019252049567840167,
+            "accuracy": 0.9984537760416666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 730,
+          "accuracy": 0.9505208333333334
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 510,
+          "accuracy": 0.6640625
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 0,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 6.513733117750722e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 6.513733117750722e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0014898053249487798,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0014898053249487798,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04223059355824215,
+            "accuracy": 0.9906412760416666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04223059355824215,
+            "accuracy": 0.9906412760416666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 564,
+          "accuracy": 0.734375
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 33,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_33.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.0758844776012215e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 2.0758844776012215e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0012077940520178485,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0012077940520178485,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.032663078758330154,
+            "accuracy": 0.9932861328125
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.032663078758330154,
+            "accuracy": 0.9932861328125
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 621,
+          "accuracy": 0.80859375
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 65,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_65.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.5421600028918727e-07,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 2.5421600028918727e-07,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0008956382078664946,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0008956382078664946,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.01953360493597819,
+            "accuracy": 0.9984130859375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.01953360493597819,
+            "accuracy": 0.9984130859375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 729,
+          "accuracy": 0.94921875
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 97,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_97.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 4.32656642721421e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 4.32656642721421e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.00022671657769759586,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.00022671657769759586,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.006573064906066392,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.006573064906066392,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 510,
+          "accuracy": 0.6640625
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 0,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_0.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 4.000745373054903e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 4.000745373054903e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0016525673877389065,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0016525673877389065,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.04178761010215038,
+            "accuracy": 0.9886474609375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.04178761010215038,
+            "accuracy": 0.9886474609375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 547,
+          "accuracy": 0.7122395833333334
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 1536,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_1536.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.860623989939077e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.860623989939077e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0010830132962733217,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0010830132962733217,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.03805709730450225,
+            "accuracy": 0.9906819661458334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.03805709730450225,
+            "accuracy": 0.9906819661458334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 558,
+          "accuracy": 0.7265625
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 3072,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_3072.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.380942089528714e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.380942089528714e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0009739212257538421,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0009739212257538421,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.033442490507729204,
+            "accuracy": 0.992431640625
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.033442490507729204,
+            "accuracy": 0.992431640625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 598,
+          "accuracy": 0.7786458333333334
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 4608,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_4608.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.3872721355191326e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.3872721355191326e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0007338801657882369,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0007338801657882369,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.030051127996135546,
+            "accuracy": 0.9934895833333334
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.030051127996135546,
+            "accuracy": 0.9934895833333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 621,
+          "accuracy": 0.80859375
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "train_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 7.688301365883903e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 7.688301365883903e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.37045151291555745,
+            "accuracy": 0.98828125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.37045151291555745,
+            "accuracy": 0.98828125
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 156,
+          "accuracy": 0.8125
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 3.567137962398238,
+            "accuracy": 0.8748372395833334
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 3.567137962398238,
+            "accuracy": 0.8748372395833334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 12,
+          "accuracy": 0.0625
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_2",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_8",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.39841367499425334,
+            "accuracy": 0.98828125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.39841367499425334,
+            "accuracy": 0.98828125
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 312,
+          "accuracy": 0.8125
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_16",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 3.874667311692862,
+            "accuracy": 0.8675130208333334
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 3.874667311692862,
+            "accuracy": 0.8675130208333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 13,
+          "accuracy": 0.033854166666666664
+        }
+      },
+      "seed": 3461,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_32",
+      "checkpoint": "results/full_pool_fitting/3461_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 2.0644423670004122e-13,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 2.0644423670004122e-13,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.18105141889695242,
+            "accuracy": 0.990234375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.18105141889695242,
+            "accuracy": 0.990234375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 168,
+          "accuracy": 0.875
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.3934742895358738,
+            "accuracy": 0.87890625
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 1.3934742895358738,
+            "accuracy": 0.87890625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 12,
+          "accuracy": 0.0625
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_2",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 2.9588414483883257e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 2.9588414483883257e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_8",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.17892369371261088,
+            "accuracy": 0.98828125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.17892369371261088,
+            "accuracy": 0.98828125
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 312,
+          "accuracy": 0.8125
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_16",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 1.5661136278935404,
+            "accuracy": 0.865966796875
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 1.5661136278935404,
+            "accuracy": 0.865966796875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "seed": 3461,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_32",
+      "checkpoint": "results/full_pool_fitting/3461_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.5570151445716002,
+            "accuracy": 0.982421875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.5570151445716002,
+            "accuracy": 0.982421875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 138,
+          "accuracy": 0.71875
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 3.296355140130386,
+            "accuracy": 0.8544921875
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 3.296355140130386,
+            "accuracy": 0.8544921875
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "validation_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_2",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 4.079469377910815e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 4.079469377910815e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_8",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.1846065436619106,
+            "accuracy": 0.96875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.1846065436619106,
+            "accuracy": 0.96875
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 246,
+          "accuracy": 0.640625
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_16",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 3.1861279576557444,
+            "accuracy": 0.8677571614583334
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 3.1861279576557444,
+            "accuracy": 0.8677571614583334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3463,
+      "arm": "lbfgs",
+      "step": 127,
+      "pool": "test_32",
+      "checkpoint": "results/full_pool_fitting/3463_lbfgs_127.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 3.2850892144065194e-13,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 3.2850892144065194e-13,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.26780737695959844,
+            "accuracy": 0.982421875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.26780737695959844,
+            "accuracy": 0.982421875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 144,
+          "accuracy": 0.75
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.3620374017261663,
+            "accuracy": 0.8570963541666666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 1.3620374017261663,
+            "accuracy": 0.8570963541666666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "validation_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_2",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 1.4759831398479813e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 1.4759831398479813e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_8",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.4267944613393693,
+            "accuracy": 0.970703125
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.4267944613393693,
+            "accuracy": 0.970703125
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 234,
+          "accuracy": 0.609375
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_16",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    },
+    {
+      "metrics": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 1.3516229732814615,
+            "accuracy": 0.8702799479166666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 1.3516229732814615,
+            "accuracy": 0.8702799479166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "seed": 3463,
+      "arm": "adam",
+      "step": 6096,
+      "pool": "test_32",
+      "checkpoint": "results/full_pool_fitting/3463_adam_6096.pt"
+    }
+  ],
+  "evaluation_targets": 1024512,
+  "optimizer_calls": 12318,
+  "gradient_evaluations": 12446,
+  "answer_targets": 22628352,
+  "histories": 1560576,
+  "input_events": 49938432,
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "test_is_exploratory": true,
+  "selection": "final_training_only",
+  "scores_sha256": "5611dc680735ca898b94e43d2d6449cc817d748726e529016dfb2277ed4754ed",
+  "lock_sha256": "aa1ad4e49a17ab3005759768480775579cff994da08a1ca4329348556c7a0d03",
+  "pretest_sha256": "404c270123738e6aab401dc6a1bf5c3bc049363e03072787924e875107c051aa"
+}

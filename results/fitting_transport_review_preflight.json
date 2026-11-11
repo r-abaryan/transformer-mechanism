@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "methods": 2,
+  "command": [
+    ".venv-gpu/Scripts/python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_fitting_transport.py",
+    "-v"
+  ],
+  "seconds": 2.732189499976812,
+  "sources": {
+    "experiments/review_fitting_transport.py": "421801fb81267d73586a85a87db38b18476a2ae22606f1c43d377093ff1a7ccf",
+    "tests/test_fitting_transport.py": "54eb2e070e09025c3b44fb2907bfb9b9ed7dcb9453f431467e3310557aeb3d8c"
+  },
+  "scope": "Saved synthetic trace producer/audit, separate dense inverse-BFGS, partition and first-step null, deliberate direction/partition/missing-step/metric faults; no neural training"
+}

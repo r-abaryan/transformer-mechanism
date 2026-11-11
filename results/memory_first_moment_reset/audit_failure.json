@@ -1,0 +1,9 @@
+{
+  "status": "audit_stopped",
+  "stage": "criteria list comparison",
+  "exception": "TypeError: must be real number, not list",
+  "cause": "audit_feedback_loss_decomposition.compare handles dictionaries/scalars but not lists; criteria contains a per-seed list",
+  "report_sha256": "ec1d72c795281e69d997489058e39ffa5eef679b54d3ba307c88434b7025229e",
+  "auditor_sha256": "7a11e3c9a380bfa2b2ce81860eb820035cb01a7018e8392deb802af05cf2d64b",
+  "training_rerun": false
+}

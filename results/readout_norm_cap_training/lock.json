@@ -1,0 +1,65 @@
+{
+  "files": {
+    "experiments/readout_norm_cap_training.py": "d015bf7b4324f3d77d4018e27c8b78aa14ddd914746f1c1a0c1a11259a7efa8d",
+    "experiments/audit_readout_norm_cap_training.py": "aef8315367f34c88387b730189b4591fb11ce2f4734603d1c9082d0044eb2182",
+    "tests/test_readout_norm_cap_training.py": "0fbc4e963e3f3ef47b44db6504f23d13a5e9adf12f70e81e2684b2664844b697",
+    "docs/protocols/readout-norm-cap-training.md": "fc45050c9199ee4185df67b132eb62fd9e26400b2e47b0eca567e3f26d814839",
+    "experiments/query_feedback_continuation.py": "6ef532aac559010e72e0da160c05e7914f74cdc2d85d4c205626d4313cc4ac83",
+    "experiments/query_feedback_training.py": "89c5a1da91d396cbd7a399dce7fa1a94590331695b1ecc425209b4c14f241cd9",
+    "experiments/readout_scale_control.py": "3df3a3d855b7f1e3f6e324cffe7c567538566bc571857a5267752012f7c55f41",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_objective_beta_pressure.py": "6093978c7eb4820e8a3dc8cbe55fa40b9d5e0eb02e91017b6fbd4dfcd78cc86f",
+    "experiments/audit_query_feedback_training.py": "b01afec7015d66fc08a678ea0812a569ac97cd540994c94f4babf64629bc2c9a",
+    "experiments/audit_shared_state_feasibility.py": "ff2e047f4ffbc80f2d2bd21310295cb75c6838c72fff64d06c442d560685193c",
+    "results/query_feedback_training/3461_exhaustive_3000.pt": "29a6dd90503cde3e7585300f047c183af737af68a28f837616ff87e58d1a7c7f",
+    "results/query_feedback_continuation/3461_exhaustive_4000.pt": "d98d9c3f38595cef38646ba617d372f675a565ce6d0189dcddc631b29ca55e00",
+    "results/query_feedback_training/3463_exhaustive_3000.pt": "cacd15cd2dedb622662c16527f4c4514587ef60676994f6a8c74a031cd5830a2",
+    "results/query_feedback_continuation/3463_exhaustive_4000.pt": "ea86e49b2e12069d2b399354437e4508031592279459192f5476ef64d95d9b62",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_training/test_data.json": "ac3a8ab7d9ba379e3c8e3dc4546cde6b9c6501d419d538daa6866765cf4ccd84",
+    "results/readout_norm_cap_training_preflight.json": "ab453a4fec42dc99541a06d1430219b787851798e35925a9f65924b1b0b60595",
+    "results/readout_norm_cap_training_profiles.json": "486b571e056a58f6fecd7e8b60808cc75245ac31272591c3c624600481ebe43a",
+    "results/query_feedback_continuation/lock.json": "1417dfdfd436547dd30f74ea32e0282b5f5746cc5333e7279ce3c17f742c9d50",
+    "results/query_feedback_continuation/report.json": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+    "results/query_feedback_continuation/audit.json": "63131bc1585bb65be2af7ee6568f2450fc816ef5cd52cbd324740628ba437628",
+    "results/readout_scale_pressure/lock.json": "ae16af6a56055ffc61e84f5088c32362dc470be814958383f88afa2845f5b4a6",
+    "results/readout_scale_pressure/report.json": "18871e8ce9f9e4fb8f748a6a6ea01883e27de635af93079c3a1f377f071ca02a",
+    "results/readout_scale_pressure/audit.json": "710cf8cca0ca7fdef3061ac12c2d985963100ca363abd28daa9878caac00e0e8",
+    "results/readout_adam_transport/lock.json": "49a8bc648c54596a0992cc37bbb34918c61b366bda6ceb5a8ea4d75f948c5c53",
+    "results/readout_adam_transport/report.json": "40d3c4a2066356d913a68ff1b09c0de75796ffe3503282d6548c6b5168684786",
+    "results/readout_adam_transport/audit.json": "c119f97995ca3196c66358ac107dffac1273903d396c8a0ea6b77d63496ca3a1",
+    "results/beta_key_transport/lock.json": "80f664068c002874c6cc87798363ffde00e9ef806e3b6194cdfad4921759abc0",
+    "results/beta_key_transport/report.json": "af3e4d6334111f3eff4d71fcbc7e6d62e02fe40a22009f9362200df8e0bb3750",
+    "results/beta_key_transport/audit.json": "d444aa70b16aace2f7ae37ae6272b5f2899df68cb34e1b78cbeee41fa94f6715"
+  },
+  "cases": [
+    {
+      "seed": 3461,
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "reference": "results/query_feedback_continuation/3461_exhaustive_4000.pt"
+    },
+    {
+      "seed": 3463,
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "reference": "results/query_feedback_continuation/3463_exhaustive_4000.pt"
+    }
+  ],
+  "fixture": false,
+  "updates": 1000,
+  "arms": [
+    "control",
+    "cap"
+  ],
+  "loads": [
+    2,
+    8,
+    16,
+    32
+  ],
+  "pool_sha256": "cc7e35ef75930c087968f92bdbda724a8b4189ed3061d1077e15d9015a313a00",
+  "versions": {
+    "torch": "2.11.0+cu128"
+  },
+  "decision_guard": 1e-10
+}

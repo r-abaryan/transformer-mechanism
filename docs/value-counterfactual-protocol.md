@@ -1,0 +1,9 @@
+# Matched nonqueried-value counterfactuals
+
+Fixed before execution. Deterministic seed 20261210 selects 16 distinct ordered triples of keys from 0..7. For each triple enumerate three queried ranks, four target values 8..11 and all six ordered distinct distractor-value choices from the remaining three values: 1,152 matched families. Balance query rank and target label exactly. Save exact inputs. These synthetic configurations are not claimed globally unseen.
+
+Five conditions per family: all distinct; replace first nonqueried value with target; replace second nonqueried value with target; replace both with target (all equal); replace second nonqueried value with first nonqueried value (wrong-value repetition). Hold keys, order, query, target answer and positions fixed. Evaluate shifts 0/+8, original and frozen later-two paired-key forcing, five models, no training.
+
+Measure accuracy/loss and paired rescue/harm versus distinct; block-2 final-query per-head target-slot probability, probability summed over value slots bearing the answer, and fraction where target slot has largest weight among the three value slots (ties included). Routing is a proxy, not proof of actual information selection. When all values agree, answer-compatible mass can increase by definition even if weights do not improve.
+
+Primary descriptive check at +8 with forcing: every seed's all-equal accuracy exceeds distinct by >=5 percentage points. Separately report routing deltas without a pass threshold; do not declare a cause from the accuracy criterion alone. Report every condition and seed. Verify family edits, label/rank balance, attention reconstruction (<1e-10), unchanged checkpoint hashes, finite outputs and source/protocol/input hashes. Changing values can itself change Q/K/V; this input intervention is not an isolated V replacement. Repeated families/conditions are dependent.

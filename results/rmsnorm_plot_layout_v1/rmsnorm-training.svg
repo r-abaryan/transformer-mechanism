@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="780" viewBox="0 0 1120 780" role="img">
+<title>LayerNorm versus RMSNorm: matched recall training</title>
+<desc>Top: minimum sampled validation accuracy across both query types and training lengths, individual seeds and means. Bottom: six-pair unique-query held-out accuracy by paired seed. Both plots use percent axes from zero to one hundred.</desc>
+<rect width="1120" height="780" fill="white"/>
+<text x="30" y="34" font-family="Arial,sans-serif" font-size="24" fill="#243449">LayerNorm versus RMSNorm: centering-only comparison</text>
+<text x="30" y="61" font-family="Arial,sans-serif" font-size="14" fill="#243449">Equal 4,464 parameters; gain only; epsilon 1e-5; five paired seeds. CPU float64.</text>
+<text x="55" y="88" font-family="Arial,sans-serif" font-size="14" fill="#0072b2">LayerNorm</text>
+<text x="245" y="88" font-family="Arial,sans-serif" font-size="14" fill="#d55e00">RMSNorm</text>
+<text x="30" y="115" font-family="Arial,sans-serif" font-size="16" fill="#243449">Sampled validation: minimum accuracy across 3/4 pairs and repeated/unique queries</text>
+<path d="M95 350H1045" stroke="#dce2e8"/>
+<text x="36" y="355" font-family="Arial,sans-serif" font-size="12" fill="#243449">0%</text>
+<path d="M95 295.0H1045" stroke="#dce2e8"/>
+<text x="36" y="300.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">25%</text>
+<path d="M95 240.0H1045" stroke="#dce2e8"/>
+<text x="36" y="245.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">50%</text>
+<path d="M95 185.0H1045" stroke="#dce2e8"/>
+<text x="36" y="190.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">75%</text>
+<path d="M95 130H1045" stroke="#dce2e8"/>
+<text x="36" y="135" font-family="Arial,sans-serif" font-size="12" fill="#243449">100%</text>
+<path d="M95 132.2H1045" stroke="#777" stroke-dasharray="5 4"/>
+<text x="1047" y="136.2" font-family="Arial,sans-serif" font-size="11" fill="#243449">99%</text>
+<text x="77.0" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">0</text>
+<text x="235.33333333333334" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">1000</text>
+<text x="393.6666666666667" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">2000</text>
+<text x="552.0" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">3000</text>
+<text x="710.3333333333334" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">4000</text>
+<text x="868.6666666666666" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">5000</text>
+<text x="1027.0" y="374" font-family="Arial,sans-serif" font-size="12" fill="#243449">6000</text>
+<polyline points="95.000,340.894 253.333,170.517 411.667,135.011 570.000,132.322 728.333,132.567 886.667,130.306 1045.000,130.061" fill="none" stroke="#0072b2" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,337.167 253.333,210.483 411.667,142.589 570.000,133.422 728.333,131.161 886.667,130.733 1045.000,130.856" fill="none" stroke="#0072b2" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,335.333 253.333,284.214 411.667,185.672 570.000,141.122 728.333,133.361 886.667,131.344 1045.000,133.544" fill="none" stroke="#0072b2" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,347.647 253.333,231.200 411.667,136.111 570.000,131.711 728.333,130.183 886.667,130.122 1045.000,130.092" fill="none" stroke="#0072b2" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,341.139 253.333,225.272 411.667,164.222 570.000,159.456 728.333,148.028 886.667,146.042 1045.000,143.200" fill="none" stroke="#0072b2" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,340.436 253.333,224.337 411.667,152.721 570.000,139.607 728.333,135.060 886.667,133.709 1045.000,133.551" fill="none" stroke="#0072b2" stroke-width="3"/>
+<polyline points="95.000,341.139 253.333,160.617 411.667,135.194 570.000,131.956 728.333,134.644 886.667,130.122 1045.000,130.122" fill="none" stroke="#d55e00" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,331.667 253.333,235.906 411.667,147.111 570.000,135.561 728.333,131.528 886.667,132.811 1045.000,130.244" fill="none" stroke="#d55e00" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,335.333 253.333,258.272 411.667,162.694 570.000,133.911 728.333,131.589 886.667,132.444 1045.000,130.000" fill="none" stroke="#d55e00" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,347.739 253.333,230.711 411.667,140.511 570.000,131.406 728.333,130.367 886.667,130.092 1045.000,130.061" fill="none" stroke="#d55e00" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,338.389 253.333,243.606 411.667,173.939 570.000,157.194 728.333,131.283 886.667,131.222 1045.000,132.078" fill="none" stroke="#d55e00" stroke-opacity=".25" stroke-width="1.4"/>
+<polyline points="95.000,338.853 253.333,225.822 411.667,151.890 570.000,138.006 728.333,131.882 886.667,131.338 1045.000,130.501" fill="none" stroke="#d55e00" stroke-width="3"/>
+<text x="420" y="402" font-family="Arial,sans-serif" font-size="13" fill="#243449">Optimizer updates; thin = seed, thick = arithmetic mean</text>
+<text x="30" y="445" font-family="Arial,sans-serif" font-size="16" fill="#243449">Six-pair unique-query test accuracy: paired final checkpoints</text>
+<path d="M95 680H1045" stroke="#dce2e8"/>
+<text x="36" y="685" font-family="Arial,sans-serif" font-size="12" fill="#243449">0%</text>
+<path d="M95 625.0H1045" stroke="#dce2e8"/>
+<text x="36" y="630.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">25%</text>
+<path d="M95 570.0H1045" stroke="#dce2e8"/>
+<text x="36" y="575.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">50%</text>
+<path d="M95 515.0H1045" stroke="#dce2e8"/>
+<text x="36" y="520.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">75%</text>
+<path d="M95 460H1045" stroke="#dce2e8"/>
+<text x="36" y="465" font-family="Arial,sans-serif" font-size="12" fill="#243449">100%</text>
+<path d="M170.0 466.45486111111114L210.0 479.6090277777778" stroke="#888"/>
+<circle cx="170.0" cy="466.45486111111114" r="5" fill="#0072b2"><title>ln, seed 1511: 97.06597222%</title></circle>
+<text x="142.0" y="444.45486111111114" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">97.07%</text>
+<circle cx="210.0" cy="479.6090277777778" r="5" fill="#d55e00"><title>rms, seed 1511: 91.08680556%</title></circle>
+<text x="182.0" y="472.6090277777778" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">91.09%</text>
+<text x="168.0" y="705" font-family="Arial,sans-serif" font-size="12" fill="#243449">1511</text>
+<path d="M360.0 469.47222222222223L400.0 465.9583333333333" stroke="#888"/>
+<circle cx="360.0" cy="469.47222222222223" r="5" fill="#0072b2"><title>ln, seed 1523: 95.69444444%</title></circle>
+<text x="332.0" y="447.47222222222223" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">95.69%</text>
+<circle cx="400.0" cy="465.9583333333333" r="5" fill="#d55e00"><title>rms, seed 1523: 97.29166667%</title></circle>
+<text x="372.0" y="458.9583333333333" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">97.29%</text>
+<text x="358.0" y="705" font-family="Arial,sans-serif" font-size="12" fill="#243449">1523</text>
+<path d="M550.0 495.3909722222222L590.0 483.0388888888889" stroke="#888"/>
+<circle cx="550.0" cy="495.3909722222222" r="5" fill="#0072b2"><title>ln, seed 1543: 83.91319444%</title></circle>
+<text x="522.0" y="473.3909722222222" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">83.91%</text>
+<circle cx="590.0" cy="483.0388888888889" r="5" fill="#d55e00"><title>rms, seed 1543: 89.52777778%</title></circle>
+<text x="562.0" y="476.0388888888889" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">89.53%</text>
+<text x="548.0" y="705" font-family="Arial,sans-serif" font-size="12" fill="#243449">1543</text>
+<path d="M740.0 465.66805555555555L780.0 468.2423611111111" stroke="#888"/>
+<circle cx="740.0" cy="465.66805555555555" r="5" fill="#0072b2"><title>ln, seed 1567: 97.42361111%</title></circle>
+<text x="712.0" y="443.66805555555555" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">97.42%</text>
+<circle cx="780.0" cy="468.2423611111111" r="5" fill="#d55e00"><title>rms, seed 1567: 96.25347222%</title></circle>
+<text x="752.0" y="461.2423611111111" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">96.25%</text>
+<text x="738.0" y="705" font-family="Arial,sans-serif" font-size="12" fill="#243449">1567</text>
+<path d="M930.0 494.2298611111111L970.0 468.6701388888889" stroke="#888"/>
+<circle cx="930.0" cy="494.2298611111111" r="5" fill="#0072b2"><title>ln, seed 1597: 84.44097222%</title></circle>
+<text x="902.0" y="472.2298611111111" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">84.44%</text>
+<circle cx="970.0" cy="468.6701388888889" r="5" fill="#d55e00"><title>rms, seed 1597: 96.05902778%</title></circle>
+<text x="942.0" y="461.6701388888889" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">96.06%</text>
+<text x="928.0" y="705" font-family="Arial,sans-serif" font-size="12" fill="#243449">1597</text>
+<text x="380" y="735" font-family="Arial,sans-serif" font-size="13" fill="#243449">Seed; lines connect matched arms, not confidence intervals</text>
+<text x="30" y="767" font-family="Arial,sans-serif" font-size="12" fill="#243449">Validation points are 1,000 updates apart. Six-pair test mappings were reserved before training.</text>
+</svg>

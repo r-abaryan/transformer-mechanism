@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "methods": 2,
+  "seconds": 25.621,
+  "sources": {
+    "experiments/confirm_full_pool_fitting.py": "94cc999839e7a109f65a5aad1054b3bd35a54a2417ec8a975592e2b1dcc7f55b",
+    "experiments/audit_full_pool_fitting_confirmation.py": "2121e4b8fb645099c1f8ff593410ccff921bb40b537ede05772bad36137632e7",
+    "tests/test_full_pool_fitting_confirmation.py": "a0e7bee7c628a0d4e0379b5c39f04bb86fa2c99d3d09ad0dd6ff42bef3fef801"
+  },
+  "fixture_report": "results/test_runs/full_fit_confirm_eebdbb87d6444e0b8924e69497b9a8b2/report.json",
+  "fixture_counts": {
+    "warmup": {
+      "optimizer_calls": 4,
+      "histories": 256,
+      "input_events": 8192,
+      "answer_targets": 3712,
+      "gradient_evaluations": 4
+    },
+    "fitting": {
+      "optimizer_calls": 13,
+      "histories": 912,
+      "input_events": 29184,
+      "answer_targets": 13224,
+      "gradient_evaluations": 15
+    }
+  },
+  "faults": "Wrong labels/logits/gradients, warm/fitting source steps, counts/decision, missing cells/load and family leakage rejected; tied logits/absent groups checked; full initialized saved path audits."
+}

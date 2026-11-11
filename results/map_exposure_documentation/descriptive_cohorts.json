@@ -1,0 +1,137 @@
+{
+  "scope": "Descriptive extraction from saved scores; frozen replacement membership, no new model evaluation or primary criteria.",
+  "report_sha256": "fc88f979d2fca5280797dc421a0f94c5d18d14616c93d0247d096eb696c8cba1",
+  "cohorts": [
+    {
+      "seed": 3473,
+      "policy": "reuse",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12270,
+      "accuracy": 0.99853515625
+    },
+    {
+      "seed": 3473,
+      "policy": "reuse",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12288,
+      "accuracy": 1.0
+    },
+    {
+      "seed": 3473,
+      "policy": "half_new",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12145,
+      "accuracy": 0.9883626302083334
+    },
+    {
+      "seed": 3473,
+      "policy": "half_new",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 11092,
+      "accuracy": 0.9026692708333334
+    },
+    {
+      "seed": 3479,
+      "policy": "reuse",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12215,
+      "accuracy": 0.9940592447916666
+    },
+    {
+      "seed": 3479,
+      "policy": "reuse",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12245,
+      "accuracy": 0.9965006510416666
+    },
+    {
+      "seed": 3479,
+      "policy": "half_new",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12177,
+      "accuracy": 0.990966796875
+    },
+    {
+      "seed": 3479,
+      "policy": "half_new",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 10821,
+      "accuracy": 0.880615234375
+    },
+    {
+      "seed": 3481,
+      "policy": "reuse",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12239,
+      "accuracy": 0.9960123697916666
+    },
+    {
+      "seed": 3481,
+      "policy": "reuse",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12219,
+      "accuracy": 0.994384765625
+    },
+    {
+      "seed": 3481,
+      "policy": "half_new",
+      "cohort": "original_retained",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 12184,
+      "accuracy": 0.9915364583333334
+    },
+    {
+      "seed": 3481,
+      "policy": "half_new",
+      "cohort": "original_removed",
+      "histories": 384,
+      "answers": 12288,
+      "correct": 10724,
+      "accuracy": 0.8727213541666666
+    }
+  ],
+  "fresh_test_pairs": [
+    {
+      "seed": 3473,
+      "answers": 12288,
+      "rescues": 964,
+      "harms": 871,
+      "accuracy_gain": 0.007568359375
+    },
+    {
+      "seed": 3479,
+      "answers": 12288,
+      "rescues": 909,
+      "harms": 1089,
+      "accuracy_gain": -0.0146484375
+    },
+    {
+      "seed": 3481,
+      "answers": 12288,
+      "rescues": 1088,
+      "harms": 1028,
+      "accuracy_gain": 0.0048828125
+    }
+  ]
+}

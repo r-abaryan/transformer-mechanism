@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "methods": 2,
+  "seconds": 3.504,
+  "command": ".venv-gpu/Scripts/python.exe -m unittest discover -s tests -p test_fitting_representation.py -v",
+  "sources": {
+    "experiments/fitting_representation.py": "e7917829e932fc27acc22c1a03de111896bdee45fda38472613d153d8396b85a",
+    "tests/test_fitting_representation.py": "ef972f85b83ca6cc08df1f5aea389023d980b15f114fe644a8bb22d789a49f97"
+  },
+  "scope": "Initialized saved hybrid/evaluator/audit; independent matrix logits and labels; exact value-basis factorization; private decoder-basis invariance; ties/empty groups; scope/label/logit/count/decision/missing-cell fault rejection"
+}

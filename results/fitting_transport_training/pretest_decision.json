@@ -1,0 +1,47 @@
+{
+  "pairs": [
+    {
+      "seed": 3473,
+      "full": {
+        "errors": 0,
+        "ce": 0.000436263797329361,
+        "maps32": 768
+      },
+      "block_diagonal": {
+        "errors": 0,
+        "ce": 8.026807140107364e-06,
+        "maps32": 768
+      },
+      "removal_increases_errors": false
+    },
+    {
+      "seed": 3479,
+      "full": {
+        "errors": 0,
+        "ce": 0.002077128419011235,
+        "maps32": 768
+      },
+      "block_diagonal": {
+        "errors": 0,
+        "ce": 2.725050574972533e-08,
+        "maps32": 768
+      },
+      "removal_increases_errors": false
+    },
+    {
+      "seed": 3481,
+      "full": {
+        "errors": 6,
+        "ce": 0.0035381037580456266,
+        "maps32": 762
+      },
+      "block_diagonal": {
+        "errors": 24,
+        "ce": 0.0016338122794940597,
+        "maps32": 744
+      },
+      "removal_increases_errors": true
+    }
+  ],
+  "all_seed_transport_fitting_benefit": false
+}

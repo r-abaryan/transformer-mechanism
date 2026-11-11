@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "scope": "Presentation and immutable-evidence checks following independent scalar/provenance audit; no new inference or training.",
+  "report_sha256": "d9d05a9594299a1fd33b2bd25235dace34c4514146566bb6c5e7535a5353b7be",
+  "audit_sha256": "fa764da4c755170d13849e1f56571b07afa5336643fa32357f982d8825eefc98",
+  "csv_rows": 288,
+  "csv_sha256": "6840288acc0b949bf7348af1f0adcbe60a6169e792d1e484c2d389735d3422c0",
+  "numerical_table_rows": 24,
+  "figure_bars": 8,
+  "figure_sha256": "34033cea83af1f7145835a6f2c3183ad8bd2cd8a79cfa9e93526a976e2d389f2",
+  "local_links_checked": 794,
+  "unchanged_locked_files": {
+    "feedback_loss_decomposition": 137,
+    "language_context_use": 180
+  },
+  "document_sha256": {
+    "docs/topics/attention/feedback-loss-decomposition-guide.md": "3010d9c778f4b305072edc6461a7de452995ae9068703b90e7b7ca6ac6b57b88",
+    "docs/topics/attention/feedback-loss-decomposition-results.md": "0c7ca1a6e4262d659ea29db2711613d7858504867f87bd5df58d31c9b184eb00",
+    "docs/topics/attention/README.md": "91161a65808f5961597ddfb89d1f9b34cdf11c332991795a358f83bd09029826",
+    "docs/guides/README.md": "253822ee41fceb9c8be127b962c05f33c2a8433e5e62c3b406ef269aab3e17c0",
+    "docs/results/README.md": "7315d045a546e6c17cd4901ec55a6d09ea2cd8ac39fb23dbbbcf6fb82ce922e6",
+    "docs/protocols/README.md": "de08fb97d4d0028427120bda9d3742a3447c9e61fe75deb3ff24ba4c6cc54c30",
+    "docs/protocols/feedback-loss-decomposition.md": "e555c11a31e1af0b98b0a61e0bcbaf5e2946493bec208c7ab6229bd238beae70",
+    "docs/reference/sources.md": "8980a6754910e3da74054c8e2ed6513b531f4af28a92cdaa291096c53278c839",
+    "docs/assessments/research-checkpoint.md": "d0f7190cf6498572627deb168aa6e9a124972626547588959ad03a49a7060cb0",
+    "docs/assessments/learning-mechanism-agenda.md": "a5efcd88717d6451c470ac60007ab52d096bbf5317dd0ef884d2f4f1dd34d448",
+    "docs/assessments/research-history.md": "619c84657eff2b191d2b84c65c699a2c34dbd871c49b569ffd7f73bad1f1c1a9",
+    "docs/assessments/failure-register.md": "349aa2c8f73378c5653db2fa12703f9600da93619f51f662c6bbd26411875351",
+    "tests/README.md": "48bbbafa750831f7945993e485267807dec6ea35f6e5a9cd55a05d0aa734d878"
+  },
+  "checks": [
+    "CSV and every numerical table cell match audited report.",
+    "Signed bar coordinates match whole-pool contributions.",
+    "Dominant groups, confidence/probability directions and rescue/harm counts checked for both seeds.",
+    "Scoped documentation links resolve and new docs contain no em dash.",
+    "All frozen current and earlier-language evidence preserved."
+  ]
+}

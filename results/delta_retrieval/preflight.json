@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "methods": 5,
+  "profiles": [
+    {
+      "arm": "softmax",
+      "parameters": 232,
+      "optimizer_tensors": 18,
+      "initial_step_loss": 1.8622916379724728,
+      "device": "cpu",
+      "dtype": "float64"
+    },
+    {
+      "arm": "delta",
+      "parameters": 231,
+      "optimizer_tensors": 15,
+      "initial_step_loss": 1.8172621685162136,
+      "device": "cpu",
+      "dtype": "float64"
+    }
+  ],
+  "source_dependencies": {
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "tests/test_delta_retrieval.py": "264be2fefc706f0e29243845a71fbb971301db5bb9957a252e3e41d13a3ffda5",
+    "docs/protocols/delta-retrieval.md": "d052a1a15eb351eb12295e7e722d2d7eb0e682c8e0546bb6645a3617c79de1d4"
+  },
+  "profile_optimizer_steps": 2
+}

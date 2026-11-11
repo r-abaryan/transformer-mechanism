@@ -1,0 +1,19 @@
+# Cold-start write credit assignment
+
+Frozen before formal evaluation, 2026-10-04. Question: at the saved failed-fit endpoints, does final error CE reach early writes, and do position contributions cancel when accumulated into shared value embeddings?
+
+Use seeds 3461/3463, exhaustive step 12000, all 768 existing train-32 histories per seed, 32 queries/history. Preserve checkpoints, data and prior evidence. No held-out evaluation, selection, optimization, extra training or supplied oracle states. CPU float64, one torch thread.
+
+Start memory at zero. Match the actual Reader's final state/logits. Partition queries by final native correctness into correct/error/total, with fixed masks. Each loss is the masked CE sum divided by **4 H m**, matching this load's contribution to the original equal-four-load objective. This excludes the other loads; it is not their joint gradient. Conditional error CE is descriptive only.
+
+Retain autograd derivatives for all 33 states and all 32 event value activations, plus the shared 6-by-8 value embedding gradient. For each cohort/position report global Frobenius state-gradient norm and its ratio to the final norm. Report event-value norm, position-pooled embedding norm and their ratio (within-position history aggregation). Sum position-pooled embedding gradients and divide its norm by the sum of their norms (temporal cancellation ratio). Zero denominators produce null, never fabricated zero ratios. Smaller ratios show attenuation/cancellation, not absent learning or a cause of failure.
+
+Local derivation, our transposed-state convention: A_t=I-beta k_t k_t^T; G_(t-1)=A_t^T G_t; dL/dv_t=beta G_t^T k_t. Accumulate event derivatives by value ID to compare with the actual shared embedding derivative. With unit keys and 0<beta<1, each state transport is nonexpansive. This does not imply all parameter gradients vanish. Query/key routes and optimizer history are outside this diagnostic.
+
+Independent audit: manual normalized keys, affine matrix forward, explicit softmax-minus-one-hot CE derivatives and reverse matrix recurrence; independent labels, metrics, all stored tensors/CSV/summary, counts, source hashes and parameter preservation. Guard: absolute+relative 1e-9 for continuous checks, exact discrete counts; finite differences in initialized controls at epsilon 1e-5, tolerance 1e-7. Audit must reject corrupted labels, masks, gradients, logits, missing groups and summaries. Exercise initialized saved reload/evaluator/audit and supplied ties/absent errors before formal evaluation. Known repeated-key attenuation and zero-beta controls test temporal transport.
+
+Formal counts: two cases, six cohort trajectories, 198 state rows, 192 event positions, 49,152 unique answer evaluations (autograd partitions reuse these), 49,152 diagnostic writes plus 98,304 native fidelity writes. Fidelity checks run both the actual all-query forward and a separate native prefill state check, for 147,456 total writes. These are correlated queries/positions from two reused seeds. Stop after one formal execution and independent audit. Failures require explicit records, not retries or changed thresholds. No architecture change follows automatically.
+
+Pre-freeze bookkeeping correction: the first passing preflight omitted the second native prefill from the reported write count. Preserve its original preflight record; a second preflight checks corrected counts and an added saved tie/absent-error fixture. This is not a formal rerun or empirical failure.
+
+Primary source inspected: [Yang et al., section 2.2 and section 3.1](https://arxiv.org/html/2406.06484v2#S2.SS2), published delta update and affine recurrence. Our reverse-gradient equations and cancellation statistics are local derivations. This small tied-key, scalar-beta reader is not a full DeltaNet reproduction.

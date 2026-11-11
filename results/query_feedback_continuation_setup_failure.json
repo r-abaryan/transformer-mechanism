@@ -1,0 +1,7 @@
+{
+  "phase": "preflight import",
+  "error": "ModuleNotFoundError: test_query_feedback_training",
+  "cause": "Direct preflight did not add tests directory for reused fixture import.",
+  "correction": "Test module explicitly adds its tests directory.",
+  "formal_training_started": false
+}

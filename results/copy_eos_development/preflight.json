@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "initialized_saved_continuation_evaluator_audit": true,
+  "gradient_decomposition": true,
+  "unchanged_content_coefficients": true,
+  "wrong_denominator_rejected": true,
+  "missing_group_rejected": true,
+  "fixture_training_updates": 2,
+  "complete_step_profiles": [
+    {
+      "checkpoint": "results\\test_runs\\eos_window_cfb41d9ed5154c2692e18fa894ba8e00\\native.pt",
+      "stream": "960ca427fe62396040dd53af3d0531a0c88f83b69e1b69043204b68b56211aa3",
+      "position_stream": "dbcbafd598f90ba3e0f3eec5b49779b91972d43174291e75a1da7c682044ec9f",
+      "updates": 1,
+      "examples": 210,
+      "computed_targets": 840,
+      "active_targets": 840,
+      "seconds": 0.01576879998901859,
+      "optimizer_bytes": 30340
+    },
+    {
+      "checkpoint": "results\\test_runs\\eos_window_cfb41d9ed5154c2692e18fa894ba8e00\\no_terminal.pt",
+      "stream": "960ca427fe62396040dd53af3d0531a0c88f83b69e1b69043204b68b56211aa3",
+      "position_stream": "dbcbafd598f90ba3e0f3eec5b49779b91972d43174291e75a1da7c682044ec9f",
+      "updates": 1,
+      "examples": 210,
+      "computed_targets": 840,
+      "active_targets": 630,
+      "seconds": 0.015040100028272718,
+      "optimizer_bytes": 30340
+    }
+  ]
+}

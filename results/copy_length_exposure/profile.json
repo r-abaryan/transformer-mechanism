@@ -1,0 +1,56 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "torch": "2.11.0+cu128",
+  "threads": 1,
+  "gpu_used": false,
+  "peak_gpu_allocated_bytes": null,
+  "peak_gpu_reserved_bytes": null,
+  "cases": [
+    {
+      "length": 3,
+      "batch": 210,
+      "target_tokens": 840,
+      "complete_step_seconds": [
+        1.6946183999971254,
+        0.012952799996128306,
+        0.013034099989454262
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "length": 4,
+      "batch": 168,
+      "target_tokens": 840,
+      "complete_step_seconds": [
+        0.01517240000248421,
+        0.0141390000062529,
+        0.013169599988032132
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "length": 5,
+      "batch": 140,
+      "target_tokens": 840,
+      "complete_step_seconds": [
+        0.0114847000077134,
+        0.013829699993948452,
+        0.010076499995193444
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "length": 6,
+      "batch": 120,
+      "target_tokens": 840,
+      "complete_step_seconds": [
+        0.011441199996625073,
+        0.012732800008961931,
+        0.014121000000159256
+      ],
+      "optimizer_state_bytes": 30340
+    }
+  ],
+  "note": "Includes backward and allocated Adam states; timing is a feasibility check, not a benchmark. Profile updates discarded."
+}

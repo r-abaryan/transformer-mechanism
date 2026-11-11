@@ -1,0 +1,482 @@
+{
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "prior_sha256": "409748cdb5dfc4abe063b1c5a03626721b42de3589f927479b09cd037ab0d38d",
+  "split_sha256": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+  "protocol_sha256": "413a339676cdedc52ec9babc5e433c07ca606d000b925cdb3f587ddbef7bfe43",
+  "source_sha256": {
+    "head_token_paths.py": "8060844c88dd1e07a4a56773aee9b9bc00470be2cbe5dc73408f78c88b29face",
+    "qkv_paths.py": "249803306e5c494e5ae1edb2d5d6dc147c8a697b23b4d1ef3afa99ac8b2f5bd3",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390"
+  },
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "errors": {
+        "both=QK_all": 0.0,
+        "Q_nonfinal_K_all=K_all": 0.0
+      },
+      "baseline_accuracy": 0.657421875,
+      "conditions": {
+        "head0": {
+          "accuracy": 0.99453125,
+          "loss": 0.014301292807276999,
+          "rescued": 1727,
+          "harmed": 1
+        },
+        "head1": {
+          "accuracy": 0.7609375,
+          "loss": 1.1117204469989341,
+          "rescued": 562,
+          "harmed": 32
+        },
+        "both": {
+          "accuracy": 1.0,
+          "loss": 0.001149779319249608,
+          "rescued": 1754,
+          "harmed": 0
+        },
+        "Q_final": {
+          "accuracy": 0.70234375,
+          "loss": 1.5035754454679031,
+          "rescued": 441,
+          "harmed": 211
+        },
+        "QK_all": {
+          "accuracy": 1.0,
+          "loss": 0.001149779319249608,
+          "rescued": 1754,
+          "harmed": 0
+        },
+        "Q_nonfinal_K_all": {
+          "accuracy": 0.9544921875,
+          "loss": 0.21234898336633087,
+          "rescued": 1593,
+          "harmed": 72
+        },
+        "K_all": {
+          "accuracy": 0.9544921875,
+          "loss": 0.21234898336633087,
+          "rescued": 1593,
+          "harmed": 72
+        },
+        "key_slots": {
+          "accuracy": 0.6783203125,
+          "loss": 1.6333055075821103,
+          "rescued": 474,
+          "harmed": 367
+        },
+        "value_slots": {
+          "accuracy": 0.99921875,
+          "loss": 0.005820565500984563,
+          "rescued": 1750,
+          "harmed": 0
+        },
+        "tail": {
+          "accuracy": 0.65703125,
+          "loss": 1.8325694403042323,
+          "rescued": 395,
+          "harmed": 397
+        },
+        "target_key": {
+          "accuracy": 0.6771484375,
+          "loss": 1.6267432785817164,
+          "rescued": 457,
+          "harmed": 356
+        },
+        "target_value": {
+          "accuracy": 0.907421875,
+          "loss": 0.40658596603569475,
+          "rescued": 1375,
+          "harmed": 95
+        },
+        "pairs": {
+          "accuracy": 1.0,
+          "loss": 0.001067060823152432,
+          "rescued": 1754,
+          "harmed": 0
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "errors": {
+        "both=QK_all": 0.0,
+        "Q_nonfinal_K_all=K_all": 0.0
+      },
+      "baseline_accuracy": 0.5861328125,
+      "conditions": {
+        "head0": {
+          "accuracy": 0.8833984375,
+          "loss": 0.4581087333145309,
+          "rescued": 1529,
+          "harmed": 7
+        },
+        "head1": {
+          "accuracy": 0.8650390625,
+          "loss": 0.5114640992321581,
+          "rescued": 1430,
+          "harmed": 2
+        },
+        "both": {
+          "accuracy": 0.99453125,
+          "loss": 0.013275978633326588,
+          "rescued": 2092,
+          "harmed": 1
+        },
+        "Q_final": {
+          "accuracy": 0.5931640625,
+          "loss": 2.083816994084648,
+          "rescued": 320,
+          "harmed": 284
+        },
+        "QK_all": {
+          "accuracy": 0.99453125,
+          "loss": 0.013275978633326588,
+          "rescued": 2092,
+          "harmed": 1
+        },
+        "Q_nonfinal_K_all": {
+          "accuracy": 0.9912109375,
+          "loss": 0.032246511601879,
+          "rescued": 2079,
+          "harmed": 5
+        },
+        "K_all": {
+          "accuracy": 0.9912109375,
+          "loss": 0.032246511601879,
+          "rescued": 2079,
+          "harmed": 5
+        },
+        "key_slots": {
+          "accuracy": 0.575390625,
+          "loss": 2.254125224007158,
+          "rescued": 374,
+          "harmed": 429
+        },
+        "value_slots": {
+          "accuracy": 0.9796875,
+          "loss": 0.060930305281349614,
+          "rescued": 2056,
+          "harmed": 41
+        },
+        "tail": {
+          "accuracy": 0.56796875,
+          "loss": 2.3899455469531414,
+          "rescued": 321,
+          "harmed": 414
+        },
+        "target_key": {
+          "accuracy": 0.5740234375,
+          "loss": 2.20606830707077,
+          "rescued": 342,
+          "harmed": 404
+        },
+        "target_value": {
+          "accuracy": 0.8462890625,
+          "loss": 0.7383577032595281,
+          "rescued": 1435,
+          "harmed": 103
+        },
+        "pairs": {
+          "accuracy": 0.9947265625,
+          "loss": 0.014037414502157416,
+          "rescued": 2098,
+          "harmed": 6
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "errors": {
+        "both=QK_all": 0.0,
+        "Q_nonfinal_K_all=K_all": 0.0
+      },
+      "baseline_accuracy": 0.6107421875,
+      "conditions": {
+        "head0": {
+          "accuracy": 0.91796875,
+          "loss": 0.33172151885705675,
+          "rescued": 1574,
+          "harmed": 1
+        },
+        "head1": {
+          "accuracy": 0.7919921875,
+          "loss": 0.9336749929368967,
+          "rescued": 939,
+          "harmed": 11
+        },
+        "both": {
+          "accuracy": 0.9935546875,
+          "loss": 0.02040520693732689,
+          "rescued": 1966,
+          "harmed": 6
+        },
+        "Q_final": {
+          "accuracy": 0.651953125,
+          "loss": 2.01228598082414,
+          "rescued": 465,
+          "harmed": 254
+        },
+        "QK_all": {
+          "accuracy": 0.9935546875,
+          "loss": 0.02040520693732689,
+          "rescued": 1966,
+          "harmed": 6
+        },
+        "Q_nonfinal_K_all": {
+          "accuracy": 0.91171875,
+          "loss": 0.3545483403990147,
+          "rescued": 1623,
+          "harmed": 82
+        },
+        "K_all": {
+          "accuracy": 0.91171875,
+          "loss": 0.3545483403990147,
+          "rescued": 1623,
+          "harmed": 82
+        },
+        "key_slots": {
+          "accuracy": 0.6126953125,
+          "loss": 2.4034927975024445,
+          "rescued": 470,
+          "harmed": 460
+        },
+        "value_slots": {
+          "accuracy": 0.9892578125,
+          "loss": 0.03822838179457312,
+          "rescued": 1963,
+          "harmed": 25
+        },
+        "tail": {
+          "accuracy": 0.61875,
+          "loss": 2.288563241066005,
+          "rescued": 420,
+          "harmed": 379
+        },
+        "target_key": {
+          "accuracy": 0.6138671875,
+          "loss": 2.383630834063845,
+          "rescued": 428,
+          "harmed": 412
+        },
+        "target_value": {
+          "accuracy": 0.930078125,
+          "loss": 0.26567414271311374,
+          "rescued": 1760,
+          "harmed": 125
+        },
+        "pairs": {
+          "accuracy": 0.992578125,
+          "loss": 0.030735060392927015,
+          "rescued": 1976,
+          "harmed": 21
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "errors": {
+        "both=QK_all": 0.0,
+        "Q_nonfinal_K_all=K_all": 0.0
+      },
+      "baseline_accuracy": 0.5498046875,
+      "conditions": {
+        "head0": {
+          "accuracy": 0.8498046875,
+          "loss": 0.8040467766557862,
+          "rescued": 1542,
+          "harmed": 6
+        },
+        "head1": {
+          "accuracy": 0.8380859375,
+          "loss": 0.7645339195854512,
+          "rescued": 1497,
+          "harmed": 21
+        },
+        "both": {
+          "accuracy": 0.997265625,
+          "loss": 0.010428228314028024,
+          "rescued": 2291,
+          "harmed": 0
+        },
+        "Q_final": {
+          "accuracy": 0.5525390625,
+          "loss": 2.5740955085947967,
+          "rescued": 430,
+          "harmed": 416
+        },
+        "QK_all": {
+          "accuracy": 0.997265625,
+          "loss": 0.010428228314028024,
+          "rescued": 2291,
+          "harmed": 0
+        },
+        "Q_nonfinal_K_all": {
+          "accuracy": 0.8587890625,
+          "loss": 0.6945523750778171,
+          "rescued": 1849,
+          "harmed": 267
+        },
+        "K_all": {
+          "accuracy": 0.8587890625,
+          "loss": 0.6945523750778171,
+          "rescued": 1849,
+          "harmed": 267
+        },
+        "key_slots": {
+          "accuracy": 0.53984375,
+          "loss": 2.7014252831167527,
+          "rescued": 478,
+          "harmed": 529
+        },
+        "value_slots": {
+          "accuracy": 0.997265625,
+          "loss": 0.008524832131612805,
+          "rescued": 2292,
+          "harmed": 1
+        },
+        "tail": {
+          "accuracy": 0.5265625,
+          "loss": 2.7820023272769516,
+          "rescued": 424,
+          "harmed": 543
+        },
+        "target_key": {
+          "accuracy": 0.53203125,
+          "loss": 2.7272878762851422,
+          "rescued": 438,
+          "harmed": 529
+        },
+        "target_value": {
+          "accuracy": 0.8890625,
+          "loss": 0.5266903869798947,
+          "rescued": 1894,
+          "harmed": 157
+        },
+        "pairs": {
+          "accuracy": 0.99765625,
+          "loss": 0.008822558165069553,
+          "rescued": 2293,
+          "harmed": 0
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "errors": {
+        "both=QK_all": 0.0,
+        "Q_nonfinal_K_all=K_all": 0.0
+      },
+      "baseline_accuracy": 0.6259765625,
+      "conditions": {
+        "head0": {
+          "accuracy": 0.863671875,
+          "loss": 0.580703185206205,
+          "rescued": 1227,
+          "harmed": 10
+        },
+        "head1": {
+          "accuracy": 0.8453125,
+          "loss": 0.9572730845660893,
+          "rescued": 1157,
+          "harmed": 34
+        },
+        "both": {
+          "accuracy": 0.971875,
+          "loss": 0.11957406932447134,
+          "rescued": 1777,
+          "harmed": 6
+        },
+        "Q_final": {
+          "accuracy": 0.6783203125,
+          "loss": 1.8427230271120614,
+          "rescued": 495,
+          "harmed": 227
+        },
+        "QK_all": {
+          "accuracy": 0.971875,
+          "loss": 0.11957406932447134,
+          "rescued": 1777,
+          "harmed": 6
+        },
+        "Q_nonfinal_K_all": {
+          "accuracy": 0.920703125,
+          "loss": 0.3279674653464198,
+          "rescued": 1559,
+          "harmed": 50
+        },
+        "K_all": {
+          "accuracy": 0.920703125,
+          "loss": 0.3279674653464198,
+          "rescued": 1559,
+          "harmed": 50
+        },
+        "key_slots": {
+          "accuracy": 0.63671875,
+          "loss": 2.3019234428009097,
+          "rescued": 538,
+          "harmed": 483
+        },
+        "value_slots": {
+          "accuracy": 0.9673828125,
+          "loss": 0.13757353913642653,
+          "rescued": 1767,
+          "harmed": 19
+        },
+        "tail": {
+          "accuracy": 0.63984375,
+          "loss": 2.143400847122153,
+          "rescued": 480,
+          "harmed": 409
+        },
+        "target_key": {
+          "accuracy": 0.629296875,
+          "loss": 2.327408248585291,
+          "rescued": 462,
+          "harmed": 445
+        },
+        "target_value": {
+          "accuracy": 0.9251953125,
+          "loss": 0.314401874133588,
+          "rescued": 1613,
+          "harmed": 81
+        },
+        "pairs": {
+          "accuracy": 0.9759765625,
+          "loss": 0.10814031590905893,
+          "rescued": 1796,
+          "harmed": 4
+        }
+      }
+    }
+  ],
+  "all_seeds_accuracy_90": {
+    "head0": false,
+    "head1": false,
+    "both": true,
+    "Q_final": false,
+    "QK_all": true,
+    "Q_nonfinal_K_all": false,
+    "K_all": false,
+    "key_slots": false,
+    "value_slots": true,
+    "tail": false,
+    "target_key": false,
+    "target_value": false,
+    "pairs": true
+  }
+}

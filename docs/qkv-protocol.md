@@ -1,0 +1,9 @@
+# Block-2 Q/K/V intervention protocol
+
+Fixed before execution. Five frozen deep models; all 5,120 inspected six-derived crops. Recipient is globally shifted +4. Compact donors are the matching crop or the exact same-answer/different-answer unrelated indices from donor controls. No training, donor reselection or fresh confirmation claim.
+
+For each donor source replace Q alone, K alone, Q+K, V alone, or Q+K+V at block 2, both heads and all tokens. Other components stay recipient-derived. Apply the recipient's same causal mask and unchanged output projection. Feed the resulting attention output into the shifted residual/FFN computation. Fifteen interventions, plus compact/shifted references and reconstructed shifted sham.
+
+Q=z W_Q^T+b_Q, and similarly K,V, where z=LN1(block-2 input). Split width 16 into two heads of width 8. A=softmax(QK^T/sqrt(8)+M), O=Concat(AV)W_O^T+b_O. Use explicit matrix products/softmax and verify against library attention for compact and shifted inputs (<1e-10). Verify normalization/causality, finite logits, shifted sham and full-QKV donor equivalence to previous whole-output replacements. Accuracy must reproduce exactly; losses within 1e-10 allow arithmetic-order rounding.
+
+Per seed report accuracy, loss, donor-answer agreement, rescued/harmed counts and >=90% accuracy status. Primary sufficiency checks: every seed >=90% for matched QK-only and matched V-only, independently. Different-answer donor agreement >=90% is recorded per replacement, not assumed. Retain all failures. Q/K are called routing because they determine A, but they still encode content. V contains contextual information, not necessarily literal labels. Unrelated donor token slots need not represent the same keys; hybrid Q/K/V may be off-distribution. Do not infer unique causes, additive mediation or where the upstream error originated.

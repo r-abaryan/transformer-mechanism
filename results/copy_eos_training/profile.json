@@ -1,0 +1,35 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "torch": "2.11.0+cu128",
+  "threads": 1,
+  "gpu_used": false,
+  "peak_gpu_allocated_bytes": null,
+  "peak_gpu_reserved_bytes": null,
+  "cases": [
+    {
+      "arm": "eos",
+      "length": 6,
+      "batch": 120,
+      "complete_step_seconds": [
+        1.7077087000070605,
+        0.01061420000041835,
+        0.013171999991755001
+      ],
+      "optimizer_state_bytes": 30340
+    },
+    {
+      "arm": "content_only",
+      "length": 6,
+      "batch": 120,
+      "complete_step_seconds": [
+        0.012023799994494766,
+        0.010729499990702607,
+        0.011389599996618927
+      ],
+      "optimizer_state_bytes": 30340
+    }
+  ],
+  "other_lengths_profile": "results/copy_length_exposure/profile.json",
+  "profile_updates_discarded": true
+}

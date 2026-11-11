@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "methods": 2,
+  "seconds": 97.413,
+  "sources": {
+    "experiments/confirm_full_pool_fitting.py": "34f2ef735027ab268ce3c926ce4dedc2d32a5a06887685e782928059c37b67ff",
+    "experiments/audit_full_pool_fitting_confirmation.py": "ff700464d0c11e3922666cc4e265d2a2165f6b27c733060b5bab455e86ac495d",
+    "tests/test_full_pool_fitting_confirmation.py": "5491a2a2f0655f5c34304926f2942afca8fbbcc36f04702c2188610ee513cbae"
+  },
+  "fixture_report": "results/test_runs/full_fit_confirm_02fcacedfedc438392fe0a9f9abed8e4/report.json",
+  "workers": 3,
+  "fixture_counts": {
+    "warmup": {
+      "optimizer_calls": 12,
+      "histories": 768,
+      "input_events": 24576,
+      "answer_targets": 11136,
+      "gradient_evaluations": 12
+    },
+    "fitting": {
+      "optimizer_calls": 39,
+      "histories": 2736,
+      "input_events": 87552,
+      "answer_targets": 39672,
+      "gradient_evaluations": 45
+    }
+  },
+  "verified_log": "results/full_pool_fitting_confirmation/preflight_parallel_execution.log",
+  "preparation_note": "Serial preflight passed, sources preserved in preparation_serial. Parallel sandbox preflight stopped before worker creation with WinError 5. Identical process preflight passed with native pipe permission. PowerShell reports exit 1 on unittest stderr despite verified OK log; no test failures."
+}

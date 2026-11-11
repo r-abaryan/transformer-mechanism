@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "report_sha256": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+  "runs": [
+    {
+      "seed": 3461,
+      "added_scalar_adam_steps": 9000,
+      "scalar_steps_including_parent": 12000,
+      "max_adam_error": 2.220446049250313e-16,
+      "cells": 40,
+      "targets": 445440,
+      "max_logit_error": 8.526512829121202e-14
+    },
+    {
+      "seed": 3463,
+      "added_scalar_adam_steps": 9000,
+      "scalar_steps_including_parent": 12000,
+      "max_adam_error": 4.440892098500626e-16,
+      "cells": 40,
+      "targets": 445440,
+      "max_logit_error": 8.526512829121202e-14
+    }
+  ],
+  "cells": 96,
+  "targets": 957696,
+  "added_scalar_adam_steps": 18000,
+  "scalar_steps_including_parent": 24000,
+  "max_logit_error": 1.1368683772161603e-13,
+  "protected_files": 127,
+  "training_only_stopping": true
+}

@@ -1,0 +1,11 @@
+# Position-varied training protocol
+
+Fixed before generation/training. Question: does exposure to global position offsets improve retrieval on unseen whole mappings, including offsets outside training? This is a data intervention, not an architecture proposal.
+
+Reuse the reserved-cycle task and 5,088-parameter model: twelve keys, six values, three distinct key/value pairs, marker and query. Generate with seed 20261221. Exclude every mapping in the previous reserved cycle (training, validation and test). Per value triple, shuffle remaining candidates and reserve 80/20/20 mappings for training/validation/test. Expand each mapping into six orders and three queries: 28,800/7,200/7,200 sequences. Check mapping separation, labels and balance before training.
+
+Two matched groups, five seeds 461/487/509/541/571. Fixed uses offset 0. Varied draws one uniform integer offset from 0..4 per minibatch (independent RNG seed+2000). Both use identical initial weights and minibatch streams (seed+1000), Adam .001, betas .9/.999, epsilon 1e-8, no decay, 3,000 updates, batch 64, CPU float64. No attention forcing. Final checkpoints only. Validation at offset 0 every 500 updates; no tuning or early stopping. Save all ten checkpoints before any test predictions.
+
+Evaluate offsets 0/1/2/3/4 (training range) and 6/8/12 (outside range). Primary criteria: varied accuracy >=90% in every seed at every training-range offset; offset-0 loss relative to matched fixed <=1 percentage point in every seed. Outside-range criteria, reported separately per offset: every varied seed >=90% and mean paired improvement >=5 percentage points. Report their conjunction, even where baseline headroom limits gain. Failure does not trigger retraining.
+
+Report accuracy, cross-entropy, every-order/query mapping correctness, per-seed results and paired gains. These are 400 test mapping units with 18 dependent variants, not 7,200 independent units. Verify identical initialization/minibatch hashes, finite gradients, parameter count, forward and gradient parity against the existing explicit forward, artifact hashes and checkpoint reloads. Fresh mappings share the existing task grammar; this is not independent replication. Offset transfer does not establish length transfer.

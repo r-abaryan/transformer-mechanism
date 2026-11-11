@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="405" viewBox="0 0 1000 405">
+<rect width="1000" height="405" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#172554">
+<text x="30" y="28" font-size="19">Training scale pressure: correct answers outweigh errors</text>
+<text x="65" y="54" font-size="15">Seed 3461; four loads equally weighted</text>
+<line x1="65" y1="287.22222222222223" x2="455" y2="287.22222222222223" stroke="#cbd5e1"/><text x="22" y="291.22222222222223" font-size="11">-0.04</text>
+<line x1="65" y1="236.11111111111111" x2="455" y2="236.11111111111111" stroke="#cbd5e1"/><text x="22" y="240.11111111111111" font-size="11">-0.02</text>
+<line x1="65" y1="185.0" x2="455" y2="185.0" stroke="#cbd5e1"/><text x="22" y="189.0" font-size="11">+0.00</text>
+<line x1="65" y1="133.88888888888889" x2="455" y2="133.88888888888889" stroke="#cbd5e1"/><text x="22" y="137.88888888888889" font-size="11">+0.02</text>
+<line x1="65" y1="82.77777777777777" x2="455" y2="82.77777777777777" stroke="#cbd5e1"/><text x="22" y="86.77777777777777" font-size="11">+0.04</text>
+<polyline data-seed="3461" data-metric="correct_contribution" points="65.000000,294.840923 108.333333,266.726880 151.666667,249.705453 195.000000,237.574538 238.333333,228.747995 281.666667,221.919061 325.000000,216.990681 368.333333,213.345588 411.666667,210.305644 455.000000,208.265418" fill="none" stroke="#0369a1" stroke-width="2.5"/>
+<polyline data-seed="3461" data-metric="error_contribution" points="65.000000,155.363659 108.333333,159.889247 151.666667,161.725353 195.000000,166.687144 238.333333,171.354634 281.666667,175.096286 325.000000,177.469558 368.333333,178.786257 411.666667,178.117124 455.000000,180.314168" fill="none" stroke="#b45309" stroke-width="2.5"/>
+<polyline data-seed="3461" data-metric="mean_g" points="65.000000,265.204582 108.333333,241.616127 151.666667,226.430806 195.000000,219.261682 238.333333,215.102628 281.666667,212.015347 325.000000,209.460239 368.333333,207.131844 411.666667,203.422768 455.000000,203.579586" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+<text x="51.0" y="322" font-size="11">3000</text>
+<text x="181.0" y="322" font-size="11">6000</text>
+<text x="311.0" y="322" font-size="11">9000</text>
+<text x="441.0" y="322" font-size="11">12000</text>
+<text x="555" y="54" font-size="15">Seed 3463; four loads equally weighted</text>
+<line x1="555" y1="287.22222222222223" x2="945" y2="287.22222222222223" stroke="#cbd5e1"/><text x="512" y="291.22222222222223" font-size="11">-0.04</text>
+<line x1="555" y1="236.11111111111111" x2="945" y2="236.11111111111111" stroke="#cbd5e1"/><text x="512" y="240.11111111111111" font-size="11">-0.02</text>
+<line x1="555" y1="185.0" x2="945" y2="185.0" stroke="#cbd5e1"/><text x="512" y="189.0" font-size="11">+0.00</text>
+<line x1="555" y1="133.88888888888889" x2="945" y2="133.88888888888889" stroke="#cbd5e1"/><text x="512" y="137.88888888888889" font-size="11">+0.02</text>
+<line x1="555" y1="82.77777777777777" x2="945" y2="82.77777777777777" stroke="#cbd5e1"/><text x="512" y="86.77777777777777" font-size="11">+0.04</text>
+<polyline data-seed="3463" data-metric="correct_contribution" points="555.000000,281.857517 598.333333,256.327999 641.666667,242.371948 685.000000,231.818752 728.333333,224.770682 771.666667,220.209021 815.000000,216.893082 858.333333,213.881121 901.666667,211.560687 945.000000,209.960109" fill="none" stroke="#0369a1" stroke-width="2.5"/>
+<polyline data-seed="3463" data-metric="error_contribution" points="555.000000,155.715512 598.333333,162.324057 641.666667,165.560283 685.000000,167.616167 728.333333,168.663434 771.666667,169.981361 815.000000,172.710436 858.333333,175.220385 901.666667,176.598382 945.000000,178.044359" fill="none" stroke="#b45309" stroke-width="2.5"/>
+<polyline data-seed="3463" data-metric="mean_g" points="555.000000,252.573029 598.333333,233.652055 641.666667,222.932231 685.000000,214.434919 728.333333,208.434116 771.666667,205.190382 815.000000,204.603518 858.333333,204.101506 901.666667,203.159069 945.000000,203.004468" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+<text x="541.0" y="322" font-size="11">3000</text>
+<text x="671.0" y="322" font-size="11">6000</text>
+<text x="801.0" y="322" font-size="11">9000</text>
+<text x="931.0" y="322" font-size="11">12000</text>
+<text x="80" y="349" fill="#0369a1" font-size="14">Correct contribution</text><text x="320" y="349" fill="#b45309" font-size="14">Error contribution</text><text x="550" y="349" fill="#0f172a" font-size="14">Net derivative</text>
+<text x="30" y="383" font-size="13">Negative: expansion lowers local training CE. Positive: contraction lowers it. These are gradients, not Adam updates.</text>
+</g></svg>

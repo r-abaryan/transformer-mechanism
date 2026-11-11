@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "arm": "lbfgs",
+      "call": 1,
+      "seconds": 3.5276190000004135,
+      "gradient_evaluations": 3,
+      "histories_per_gradient": 3072,
+      "answers_per_gradient": 44544,
+      "optimizer_tensor_bytes": 9840,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "lbfgs",
+      "call": 2,
+      "seconds": 1.199833899998339,
+      "gradient_evaluations": 2,
+      "histories_per_gradient": 3072,
+      "answers_per_gradient": 44544,
+      "optimizer_tensor_bytes": 19704,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "block_diagonal",
+      "call": 1,
+      "seconds": 1.8775642999971751,
+      "gradient_evaluations": 3,
+      "histories_per_gradient": 3072,
+      "answers_per_gradient": 44544,
+      "optimizer_tensor_bytes": 9840,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "block_diagonal",
+      "call": 2,
+      "seconds": 1.1767049000191037,
+      "gradient_evaluations": 2,
+      "histories_per_gradient": 3072,
+      "answers_per_gradient": 44544,
+      "optimizer_tensor_bytes": 19704,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    }
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "sources": {
+    "experiments/train_fitting_transport.py": "ea04ca35cdf456be329e43478d0cff09d532fd52cd3a55c984e447692e3be301",
+    "experiments/audit_fitting_transport_training.py": "16831d1f030d1f8b4fe7e8bf3bf901ddb36fda0042f4d0b226a93e78398613b7",
+    "tests/test_fitting_transport_training.py": "3cbdf9fe0d413e78f32735857cb0b78df9a8bee1e7a599e67b9d3be3bc63108c"
+  }
+}

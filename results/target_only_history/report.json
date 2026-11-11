@@ -1,0 +1,3855 @@
+{
+  "status": "complete",
+  "training_updates": 0,
+  "optimizer_calls": 0,
+  "device": "cpu",
+  "dtype": "float64",
+  "cells": [
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "train_2",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 1.0414831482168337e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 1.0414831482168337e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 24576,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "train_8",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00021877126131890291,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00021877126131890291,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 24576,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "train_16",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.012199741080057258,
+            "accuracy": 0.9996744791666666
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.012199741080057258,
+            "accuracy": 0.9996744791666666
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 764,
+          "accuracy": 0.9947916666666666
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 12284,
+          "wrong_both": 0,
+          "rescued": 4,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 12288,
+          "correct_both": 12284,
+          "wrong_both": 0,
+          "rescued": 4,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 24576,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "train_32",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.192270919750781,
+            "accuracy": 0.9444986979166666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.192270919750781,
+            "accuracy": 0.9444986979166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 149,
+          "accuracy": 0.19401041666666666
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 24576,
+          "correct_both": 23212,
+          "wrong_both": 0,
+          "rescued": 1364,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 24576,
+          "correct_both": 23212,
+          "wrong_both": 0,
+          "rescued": 1364,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 24576,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "validation_2",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 1.4676550651276324e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 1.4676550651276324e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 6144,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "validation_8",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.008444208532339638,
+            "accuracy": 0.9921875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.008444208532339638,
+            "accuracy": 0.9921875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 180,
+          "accuracy": 0.9375
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1524,
+          "wrong_both": 0,
+          "rescued": 12,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1524,
+          "wrong_both": 0,
+          "rescued": 12,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 6144,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "validation_16",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.06639272543686821,
+            "accuracy": 0.982421875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.06639272543686821,
+            "accuracy": 0.982421875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 144,
+          "accuracy": 0.75
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3018,
+          "wrong_both": 0,
+          "rescued": 54,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3018,
+          "wrong_both": 0,
+          "rescued": 54,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 6144,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "validation_32",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.3876687614312426,
+            "accuracy": 0.8694661458333334
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.3876687614312426,
+            "accuracy": 0.8694661458333334
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 6,
+          "accuracy": 0.03125
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5342,
+          "wrong_both": 0,
+          "rescued": 802,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 6144,
+          "correct_both": 5342,
+          "wrong_both": 0,
+          "rescued": 802,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 6144,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "test_2",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 1.0472600332621356e-10,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 1.0472600332621356e-10,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 9.717944966749908e-11,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 12288,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "test_8",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0013765957597659598,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0013765957597659598,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 1.6805587589469497e-08,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 12288,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "test_16",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.07975497914488523,
+            "accuracy": 0.9744466145833334
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.07975497914488523,
+            "accuracy": 0.9744466145833334
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 240,
+          "accuracy": 0.625
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 7.720990775577548e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5987,
+          "wrong_both": 0,
+          "rescued": 157,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 5987,
+          "wrong_both": 0,
+          "rescued": 157,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 12288,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "pool": "test_32",
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.44260056399180026,
+            "accuracy": 0.8588053385416666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.44260056399180026,
+            "accuracy": 0.8588053385416666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.0017083249049022187,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 10553,
+          "wrong_both": 0,
+          "rescued": 1735,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 12288,
+          "correct_both": 10553,
+          "wrong_both": 0,
+          "rescued": 1735,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 12288,
+      "beta": 0.3221281798358771
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "train_2",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 24576,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "train_8",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00024259193911238173,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 24576,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "train_16",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0014770307330634078,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 12288,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 12288,
+          "correct_both": 12288,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 24576,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "train_32",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0403549412752113,
+            "accuracy": 0.989990234375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 561,
+          "accuracy": 0.73046875
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 2.041959194322652e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 2.041959194322652e-12,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 24576,
+          "correct_both": 24330,
+          "wrong_both": 0,
+          "rescued": 246,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 24576,
+          "correct_both": 24330,
+          "wrong_both": 0,
+          "rescued": 246,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 24576,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "validation_2",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 6144,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "validation_8",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 2.307688932046451e-07,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 2.307688932046451e-07,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 6144,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "validation_16",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.10678805249495014,
+            "accuracy": 0.9921875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.10678805249495014,
+            "accuracy": 0.9921875
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 168,
+          "accuracy": 0.875
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3048,
+          "wrong_both": 0,
+          "rescued": 24,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3048,
+          "wrong_both": 0,
+          "rescued": 24,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 6144,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "validation_32",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.8698061915151793,
+            "accuracy": 0.87890625
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.8698061915151793,
+            "accuracy": 0.87890625
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 18,
+          "accuracy": 0.09375
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.0419591943226518e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 2.0419591943226518e-12,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5400,
+          "wrong_both": 0,
+          "rescued": 744,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 6144,
+          "correct_both": 5400,
+          "wrong_both": 0,
+          "rescued": 744,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 6144,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "test_2",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 12288,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "test_8",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.009747483729906267,
+            "accuracy": 0.99609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.009747483729906267,
+            "accuracy": 0.99609375
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 372,
+          "accuracy": 0.96875
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3060,
+          "wrong_both": 0,
+          "rescued": 12,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3060,
+          "wrong_both": 0,
+          "rescued": 12,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 12288,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "test_16",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.10605080499211618,
+            "accuracy": 0.9879557291666666
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.10605080499211618,
+            "accuracy": 0.9879557291666666
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 311,
+          "accuracy": 0.8098958333333334
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 6070,
+          "wrong_both": 0,
+          "rescued": 74,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 6070,
+          "wrong_both": 0,
+          "rescued": 74,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 12288,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "pool": "test_32",
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.9769722437187894,
+            "accuracy": 0.8644205729166666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.9769722437187894,
+            "accuracy": 0.8644205729166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 18,
+          "accuracy": 0.046875
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 2.0419591943226518e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 2.0419591943226518e-12,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 10622,
+          "wrong_both": 0,
+          "rescued": 1666,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 12288,
+          "correct_both": 10622,
+          "wrong_both": 0,
+          "rescued": 1666,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 12288,
+      "beta": 0.16604166598583622
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "train_2",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 3.986862633976612e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 3.986862633976612e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 24576,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "train_8",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.00018134537662727173,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.00018134537662727173,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 24576,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "train_16",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.009972088500966666,
+            "accuracy": 0.9999186197916666
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.009972088500966666,
+            "accuracy": 0.9999186197916666
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 767,
+          "accuracy": 0.9986979166666666
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 12287,
+          "wrong_both": 0,
+          "rescued": 1,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 12288,
+          "correct_both": 12287,
+          "wrong_both": 0,
+          "rescued": 1,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 24576,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "train_32",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.17578058945143238,
+            "accuracy": 0.9492594401041666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.17578058945143238,
+            "accuracy": 0.9492594401041666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 181,
+          "accuracy": 0.23567708333333334
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 24576,
+          "correct_both": 23329,
+          "wrong_both": 0,
+          "rescued": 1247,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 24576,
+          "correct_both": 23329,
+          "wrong_both": 0,
+          "rescued": 1247,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 24576,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "validation_2",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 3.294875367906757e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 3.294875367906757e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 6144,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "validation_8",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.01221128961245998,
+            "accuracy": 0.99609375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.01221128961245998,
+            "accuracy": 0.99609375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 186,
+          "accuracy": 0.96875
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1530,
+          "wrong_both": 0,
+          "rescued": 6,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1530,
+          "wrong_both": 0,
+          "rescued": 6,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 6144,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "validation_16",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.05929097602671254,
+            "accuracy": 0.9833984375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.05929097602671254,
+            "accuracy": 0.9833984375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 159,
+          "accuracy": 0.828125
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3021,
+          "wrong_both": 0,
+          "rescued": 51,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3021,
+          "wrong_both": 0,
+          "rescued": 51,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 6144,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "validation_32",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.42898851465714394,
+            "accuracy": 0.8707682291666666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.42898851465714394,
+            "accuracy": 0.8707682291666666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5350,
+          "wrong_both": 0,
+          "rescued": 794,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 6144,
+          "correct_both": 5350,
+          "wrong_both": 0,
+          "rescued": 794,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 6144,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "test_2",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 3.429045531311288e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 3.429045531311288e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 3.1750528132511336e-12,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 12288,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "test_8",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0002734800166489641,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0002734800166489641,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 2.6820878811636904e-09,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 12288,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "test_16",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.1003433170394642,
+            "accuracy": 0.9700520833333334
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.1003433170394642,
+            "accuracy": 0.9700520833333334
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 248,
+          "accuracy": 0.6458333333333334
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 3.0469398753794046e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5960,
+          "wrong_both": 0,
+          "rescued": 184,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 5960,
+          "wrong_both": 0,
+          "rescued": 184,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 12288,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "pool": "test_32",
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.4761524943645801,
+            "accuracy": 0.85302734375
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.4761524943645801,
+            "accuracy": 0.85302734375
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.0011086126171949422,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 10482,
+          "wrong_both": 0,
+          "rescued": 1806,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 12288,
+          "correct_both": 10482,
+          "wrong_both": 0,
+          "rescued": 1806,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 12288,
+      "beta": 0.29742681284868355
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "train_2",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 24576,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "train_8",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 5.052510341978431e-05,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 6144,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 24576,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "train_16",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0016078027207679906,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 12288,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 12288,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 12288,
+          "correct_both": 12288,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 24576,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "train_32",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 0.049350832185876194,
+            "accuracy": 0.9856363932291666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 510,
+          "accuracy": 0.6640625
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 24576,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 24576,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 768,
+          "correct": 768,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 24576,
+          "correct_both": 24223,
+          "wrong_both": 0,
+          "rescued": 353,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 24576,
+          "correct_both": 24223,
+          "wrong_both": 0,
+          "rescued": 353,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 24576,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "validation_2",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 384,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 384,
+          "correct_both": 384,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 6144,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "validation_8",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 7.435736002586476e-06,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 7.435736002586476e-06,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 1536,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 1536,
+          "correct_both": 1536,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 6144,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "validation_16",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.11665129738283762,
+            "accuracy": 0.984375
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.11665129738283762,
+            "accuracy": 0.984375
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 150,
+          "accuracy": 0.78125
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3024,
+          "wrong_both": 0,
+          "rescued": 48,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3024,
+          "wrong_both": 0,
+          "rescued": 48,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 6144,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "validation_32",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.8900537226240663,
+            "accuracy": 0.8673502604166666
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 0.8900537226240663,
+            "accuracy": 0.8673502604166666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 6144,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 192,
+          "correct": 192,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5329,
+          "wrong_both": 0,
+          "rescued": 815,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 6144,
+          "correct_both": 5329,
+          "wrong_both": 0,
+          "rescued": 815,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 6144,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "test_2",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 768,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 768,
+          "correct_both": 768,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 16,
+      "retained_events": 12288,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "test_8",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0010730363561552417,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0010730363561552417,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 3072,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 3072,
+          "correct_both": 3072,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 4,
+      "retained_events": 12288,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "test_16",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.24847497162657828,
+            "accuracy": 0.9716796875
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.24847497162657828,
+            "accuracy": 0.9716796875
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 234,
+          "accuracy": 0.609375
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          },
+          "repeat": {
+            "count": 6144,
+            "ce": 0.0,
+            "accuracy": 1.0
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 6144,
+          "correct_both": 5970,
+          "wrong_both": 0,
+          "rescued": 174,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 6144,
+          "correct_both": 5970,
+          "wrong_both": 0,
+          "rescued": 174,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 2,
+      "retained_events": 12288,
+      "beta": 0.150457663385316
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "pool": "test_32",
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "original": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 0.8791488378427305,
+            "accuracy": 0.8697916666666666
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 0.8791488378427305,
+            "accuracy": 0.8697916666666666
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      },
+      "filtered": {
+        "groups": {
+          "all": {
+            "count": 12288,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "unique": {
+            "count": 12288,
+            "ce": 1.7656542894271953e-11,
+            "accuracy": 1.0
+          },
+          "repeat": {
+            "count": 0,
+            "ce": null,
+            "accuracy": null
+          }
+        },
+        "complete_maps": {
+          "count": 384,
+          "correct": 384,
+          "accuracy": 1.0
+        }
+      },
+      "transitions": {
+        "all": {
+          "count": 12288,
+          "correct_both": 10688,
+          "wrong_both": 0,
+          "rescued": 1600,
+          "newly_wrong": 0
+        },
+        "unique": {
+          "count": 12288,
+          "correct_both": 10688,
+          "wrong_both": 0,
+          "rescued": 1600,
+          "newly_wrong": 0
+        },
+        "repeat": {
+          "count": 0,
+          "correct_both": 0,
+          "wrong_both": 0,
+          "rescued": 0,
+          "newly_wrong": 0
+        }
+      },
+      "target_writes": 1,
+      "retained_events": 12288,
+      "beta": 0.150457663385316
+    }
+  ],
+  "cells_count": 48,
+  "evaluated_answers": 311808,
+  "retained_events": 688128,
+  "original_scores_reused": true,
+  "scores_sha256": "0798f541e6c053a7e191fe27b186c26a75f3e2c9884f09988a5cf6b677fb5bb5",
+  "lock_sha256": "0e50457738711888aeceac316ff595ae4e18088294fcf5361ff98065950cb598"
+}

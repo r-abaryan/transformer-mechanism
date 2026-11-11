@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "arm": "contiguous",
+      "length": 3,
+      "batch": 210,
+      "step_seconds": [
+        1.9335072999820113,
+        0.026884499995503575,
+        0.02342719997977838
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "contiguous",
+      "length": 4,
+      "batch": 168,
+      "step_seconds": [
+        0.023479999974370003,
+        0.026145400013774633,
+        0.026511000003665686
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "contiguous",
+      "length": 5,
+      "batch": 140,
+      "step_seconds": [
+        0.025814499997068197,
+        0.028113699983805418,
+        0.022599300020374358
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "contiguous",
+      "length": 6,
+      "batch": 120,
+      "step_seconds": [
+        0.02562750002834946,
+        0.025792100001126528,
+        0.024743699992541224
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "spaced",
+      "length": 3,
+      "batch": 210,
+      "step_seconds": [
+        0.026438400032930076,
+        0.025976700009778142,
+        0.026819500024430454
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "spaced",
+      "length": 4,
+      "batch": 168,
+      "step_seconds": [
+        0.026733500009868294,
+        0.027611900004558265,
+        0.028275599994231015
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "spaced",
+      "length": 5,
+      "batch": 140,
+      "step_seconds": [
+        0.026410200051032007,
+        0.02355469996109605,
+        0.02358709997497499
+      ],
+      "optimizer_bytes": 30340
+    },
+    {
+      "arm": "spaced",
+      "length": 6,
+      "batch": 120,
+      "step_seconds": [
+        0.025533200008794665,
+        0.024636999994982034,
+        0.025841099966783077
+      ],
+      "optimizer_bytes": 30340
+    }
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 1,
+  "discarded_steps": 24,
+  "peak_allocated_bytes": null,
+  "peak_reserved_bytes": null,
+  "cpu_peak_unmeasured": true
+}

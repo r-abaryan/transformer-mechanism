@@ -1,0 +1,72 @@
+{
+  "count": 512,
+  "frequency_accuracy": 0.599609375,
+  "oracle_accuracy": 1.0,
+  "uniform_expected": 0.25,
+  "runs": [
+    {
+      "seed": 11,
+      "checkpoint_sha256": "aa59b84e779d10b2bc74802549aea592bea82ddb161e5f93edf59b7069dd744a",
+      "metrics": {
+        "accuracy": 0.576171875,
+        "loss": 0.7827522588321738,
+        "invalid_prediction_rate": 0.0
+      },
+      "accuracy_minus_frequency": -0.0234375
+    },
+    {
+      "seed": 29,
+      "checkpoint_sha256": "0b52ec15bbff24bf81bec2c0bfaf6aeaf8753500ceabb7b9e5154d5862f675c3",
+      "metrics": {
+        "accuracy": 0.5546875,
+        "loss": 0.796441131487949,
+        "invalid_prediction_rate": 0.0
+      },
+      "accuracy_minus_frequency": -0.044921875
+    },
+    {
+      "seed": 47,
+      "checkpoint_sha256": "835ff0f4341b358332794755e9b8d5642e09ddbaac3644e5c573e67e3a7b28f0",
+      "metrics": {
+        "accuracy": 0.560546875,
+        "loss": 0.783782880633558,
+        "invalid_prediction_rate": 0.0
+      },
+      "accuracy_minus_frequency": -0.0390625
+    },
+    {
+      "seed": 73,
+      "checkpoint_sha256": "a87c035fedca582eb88c34c81102ece869cf580f6f2a568c3a8394c3f81fb725",
+      "metrics": {
+        "accuracy": 0.580078125,
+        "loss": 0.7843637741059679,
+        "invalid_prediction_rate": 0.0
+      },
+      "accuracy_minus_frequency": -0.01953125
+    },
+    {
+      "seed": 101,
+      "checkpoint_sha256": "42e69feee671437ed581941645d9b5d9bf49917accfc9f4986fd1b587e393419",
+      "metrics": {
+        "accuracy": 0.5625,
+        "loss": 0.7990284055819485,
+        "invalid_prediction_rate": 0.0
+      },
+      "accuracy_minus_frequency": -0.037109375
+    }
+  ],
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "data_sha256": "d2f3d26714843f6790cd962601a965cde8e905b2494132f7de949b94bd26873e",
+  "protocol_sha256": "da6ec7ee5d0a0c46def57853bcb81394c2b083d22a99dee92f4461d76ff2e944",
+  "source_sha256": {
+    "confirm_associative_recall.py": "64646b6d7b30e1a0aeae0c75d9c26384809ed2166d22fbe1aea8c118555e4085",
+    "train_associative_recall.py": "bd0e38f36f78fece074d3194946363a67dd46e47cc93ed3023eb0392310056c3",
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7"
+  },
+  "criteria": {
+    "no_seed_at_least_90": true,
+    "no_seed_exceeds_frequency_by_5_points": true
+  }
+}

@@ -1,0 +1,17 @@
+# Paired MoE balancing training
+
+Frozen 2026-10-03 after the saved complete optimizer-step profile, before data generation or training. Six attempts, no tuning or replacement seeds.
+
+Task: two balanced synthetic groups. Input is two group indicators, u, v and two independent uniform distractors. Magnitudes of u/v are uniform [.2,1]. Group 0 label is 1 when signs agree; group 1 reverses that label. Each group/label cell balances u signs. Fresh generator seed 2026100307; shuffled pools contain 1,024 training, 512 validation and 512 test examples, with exact-input disjointness. This is interpolation over shared rules, not sequence or language transfer. Check labels independently using Boolean sign equality. Oracle 100%; constant and sign-u baselines 50% per group.
+
+Model: input 6->16 with bias and tanh; four bias-free 16->32->16 tanh experts; bias-free 16->4 router; residual h+branch; biased 16->2 output. Total 4,306 parameters. Top-one probability-weighted branch, lowest-index ties, first-arrival slots, capacity ceil(batch/4), overflow branch zero. Auxiliary loss uses pre-capacity counts. Reuse audited routing and balancing equations. The residual may support solving the task without expert use; no specialization inference is permitted.
+
+Arms: CE alone versus CE + .01 * unscaled balancing loss. Identical full initial tensors and index streams per seed 2819/2833/2837; alternating arm execution order. Adam .003, 3,000 updates, batch 128, 32 samples per group/label cell, shuffled each batch. 384,000 examples and supervised targets per arm. CPU float64, one thread, deterministic operations. Profile seed 2803 discarded: full Adam allocation completed; GPU allocated/reserved zero, CPU peak unmeasured. This small model does not require the GPU. No timing comparison is intended.
+
+Final full-pool evaluations use fixed stored order and batch 128 for every arm. Capacity is batch-dependent, so this evaluation grouping is part of the contract. Report per-group accuracy/CE/overflow/assignments and aggregate assignment fractions, overflow, auxiliary loss and mean batch total variation from uniform (sum absolute deviations / 2). Archive checkpoints, optimizer steps, predictions, data and stream hashes. Save all six attempts and train/validation results before evaluating test. Training minibatch metrics every 500 updates.
+
+Eligibility requires every group/seed to achieve >=99% training and >=95% validation accuracy in both arms. Adoption additionally requires EVERY pair on BOTH validation and test to reduce mean batch TV by >=.05 and overflow by >=.02, with no group accuracy loss >.01 or group CE increase >5%. The thresholds are local decision rules, not statistical significance or general superiority. Report failed criteria even if means improve. No claims of convergence from reaching the budget.
+
+Preflight: independent full-model equations and gradients <=1e-10 and omitted-gate negative control >1e-6. Final independent dense-all-expert reference must match every saved logit/metric <=1e-10, assignments and accepted masks exactly, with zero argmax changes. Check all labels, baseline counts, hashes and optimizer updates. Nonfinite attempts are recorded without restart. Stop after six attempts, audit and educational report.
+
+Primary mathematical source: [Switch Transformers, section 2.2](https://www.jmlr.org/papers/volume23/21-0998/21-0998.pdf). This is a small classifier objective ablation, not a complete Transformer or paper benchmark reproduction. Previous math studies remain closed.

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="720" viewBox="0 0 1080 720" role="img"><title>Local gradient norm ratios</title><desc>Five-seed means. Residual ratios compare total with skip gradients. LayerNorm ratios compare its local input gradient with output gradient. These are different quantities, not ablated training outcomes.</desc><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="35" font-family="Arial,sans-serif" font-size="24" fill="#243449" text-anchor="start">Where local gradient norms grow or shrink</text>
+<text x="35" y="65" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">Five-seed means; green &gt; 1, orange &lt; 1. Local ratios, not parameter-update sizes.</text>
+<text x="460" y="103" font-family="Arial,sans-serif" font-size="15" fill="#243449" text-anchor="middle">Step 0</text>
+<text x="610" y="103" font-family="Arial,sans-serif" font-size="15" fill="#243449" text-anchor="middle">Step 500</text>
+<text x="760" y="103" font-family="Arial,sans-serif" font-size="15" fill="#243449" text-anchor="middle">Step 1500</text>
+<text x="910" y="103" font-family="Arial,sans-serif" font-size="15" fill="#243449" text-anchor="middle">Step 3000</text>
+<text x="35" y="154" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b1 attention</text>
+<rect x="390" y="125" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="460" y="153" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.017</text>
+<rect x="540" y="125" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="610" y="153" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.278</text>
+<rect x="690" y="125" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="760" y="153" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.886</text>
+<rect x="840" y="125" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="910" y="153" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.516</text>
+<text x="35" y="207" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b1 ffn</text>
+<rect x="390" y="178" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="460" y="206" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.039</text>
+<rect x="540" y="178" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="610" y="206" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.067</text>
+<rect x="690" y="178" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="760" y="206" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.070</text>
+<rect x="840" y="178" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="910" y="206" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.047</text>
+<text x="35" y="260" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b2 attention</text>
+<rect x="390" y="231" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="460" y="259" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.008</text>
+<rect x="540" y="231" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="610" y="259" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">2.311</text>
+<rect x="690" y="231" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="760" y="259" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">4.880</text>
+<rect x="840" y="231" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="910" y="259" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">3.875</text>
+<text x="35" y="313" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b2 ffn</text>
+<rect x="390" y="284" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="460" y="312" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.017</text>
+<rect x="540" y="284" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="610" y="312" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.179</text>
+<rect x="690" y="284" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="760" y="312" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.589</text>
+<rect x="840" y="284" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="910" y="312" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.587</text>
+<text x="35" y="366" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b1 attention ln</text>
+<rect x="390" y="337" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="460" y="365" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.863</text>
+<rect x="540" y="337" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="610" y="365" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.925</text>
+<rect x="690" y="337" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="760" y="365" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.159</text>
+<rect x="840" y="337" width="140" height="43" rx="4" fill="#d4eee4"/>
+<text x="910" y="365" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">1.130</text>
+<text x="35" y="419" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b1 ffn ln</text>
+<rect x="390" y="390" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="460" y="418" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.837</text>
+<rect x="540" y="390" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="610" y="418" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.885</text>
+<rect x="690" y="390" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="760" y="418" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.920</text>
+<rect x="840" y="390" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="910" y="418" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.881</text>
+<text x="35" y="472" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b2 attention ln</text>
+<rect x="390" y="443" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="460" y="471" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.815</text>
+<rect x="540" y="443" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="610" y="471" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.833</text>
+<rect x="690" y="443" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="760" y="471" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.910</text>
+<rect x="840" y="443" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="910" y="471" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.910</text>
+<text x="35" y="525" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">b2 ffn ln</text>
+<rect x="390" y="496" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="460" y="524" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.797</text>
+<rect x="540" y="496" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="610" y="524" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.701</text>
+<rect x="690" y="496" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="760" y="524" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.879</text>
+<rect x="840" y="496" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="910" y="524" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.814</text>
+<text x="35" y="578" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="start">final ln</text>
+<rect x="390" y="549" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="460" y="577" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.755</text>
+<rect x="540" y="549" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="610" y="577" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.671</text>
+<rect x="690" y="549" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="760" y="577" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.934</text>
+<rect x="840" y="549" width="140" height="43" rx="4" fill="#fae1c9"/>
+<text x="910" y="577" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">0.804</text>
+<text x="35" y="640" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">Residual rows: ||skip + branch|| / ||skip||. LayerNorm rows: ||local input gradient|| / ||output gradient||.</text>
+<text x="35" y="672" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">Identity skips can still cancel with branch gradients. LayerNorm is not necessarily a gradient amplifier.</text>
+</svg>

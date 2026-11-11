@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "methods": 2,
+  "seconds": 4.51,
+  "command": ".venv-gpu/Scripts/python.exe -m unittest discover -s tests -p test_decoder_scale_shape.py -v",
+  "sources": {
+    "experiments/decoder_scale_shape.py": "a4200ee6e5d65d80dfa53562c6153d835039f3c88eaff825e08036f3c5138379",
+    "tests/test_decoder_scale_shape.py": "2e49f608009c51934de9e4814d5691e02ec664d49dff4d93a7f961c2324a3bef"
+  },
+  "scope": "Initialized saved source evaluator and transformed scorer/audit, independent scalar weight projection/matrix logits/metrics, actual scaled-classifier forward, ties/empty groups, negative projection rejection, projection/logit/label/count/decision/missing-group fault rejection"
+}

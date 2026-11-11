@@ -1,0 +1,44 @@
+{
+  "files": {
+    "experiments/delta_query_coverage.py": "ecae5aecac5a0e34efc7a27cbf16a32603b737e3caf5119e08911f6f3ee86365",
+    "tests/test_delta_query_coverage.py": "639cdfec3282ee9d3fb8e43791aede9350e36dc4a0abcc4524d052ea984a6149",
+    "docs/protocols/delta-query-coverage.md": "aa1fea52f12103fcd0b4e777269523b92b42bf049a92f8404e7c626fb504cda2",
+    "experiments/overlap_regularization.py": "70641efd625f821fa72d712b6615a147abd509cfb8600e958b08eb810eee69b7",
+    "tests/test_overlap_regularization.py": "eb1c5db04a414584b635ee8ae4fdfdf1cd8339d35d2fb6a76f117eac6197e944",
+    "docs/protocols/overlap-regularization.md": "137bd5ae139190a150c672678fb74cf5773f795394fd9ff01af24bac0c02f268",
+    "experiments/key_geometry_retention.py": "0ecd7e3388c921faeb5d0493a88effb5867d6e2b7bbefb8244217652b8949b87",
+    "tests/test_key_geometry_retention.py": "f9072abb8d5e29a417de6a7ae83f556c518585e91862d44fcbda267a8e265dd4",
+    "docs/protocols/key-geometry-retention.md": "abc82a8c8ffba3760a485a10a7c8f7595e5a96bd579e8c74cd41992502ef93cc",
+    "experiments/query_write_order.py": "35c269caf9c25fdda7f6e7e68eea2adc766337a42e420622fb1bd7986e09ad06",
+    "tests/test_query_write_order.py": "32222a844f031d145a17ac7b666bcb58cd95421c23712706c04cb3dfad652c20",
+    "docs/protocols/query-write-order.md": "4ba73fc462f8b39660dd0aad8e6bb40c8d103f771a02cae1b8c0fb80219af6df",
+    "experiments/history_repetition.py": "711b569af6b6bdd65d57f5a1196797b5b0a824193a352c04cd5d7258d1c2f78d",
+    "tests/test_history_repetition.py": "00f7045ce86e2f3d202077c34ef6a8d4dfe4bd1f37e9058119fc73225268c03d",
+    "docs/protocols/history-repetition.md": "d5d109fad841799c0c0fc339c5e933c6f002d4f99a0b9a675a3925be03a0cc57",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_delta_retrieval.py": "9f1175b6ee8afb43e1306d15f4b9cb0c3020d75778b3dcd9d2bd3c21e9b062d7",
+    "results/delta_query_coverage/report.json": "88b4726bed1af1abb331849707a34653319062f4657c9302c4f41a34027b01c2",
+    "results/delta_query_coverage/independent_audit.json": "896d308fad67393d4773422f97dd0f5e53a252a4fd158580b8116f31c636fc35",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/delta_query_coverage/development_3461_fixed.pt": "d6b5c00211aa6fbaec4e31c25111b89ccc2d2375d7dbe4ab381a370ba3e87870",
+    "results/delta_query_coverage/development_3461_resampled.pt": "99c94cd4b416a23fa5788a4e771029ce0105dc9f6a46fdb6ff0aa78dc1bd18ee",
+    "results/delta_query_coverage/development_3463_resampled.pt": "799bdc22f269134355891ecf41eb4020cec7d5a427b8c915a2e44568d92dbada",
+    "results/delta_query_coverage/development_3463_fixed.pt": "d9d6ef18ab82882ade41557e793d318b407bd4a1ce5636442d078e3dbda15586",
+    "experiments/objective_beta_pressure.py": "eb8c88c3752d71ba32086835d618aed4f343ab052c053af61d21fa04bc08fceb",
+    "experiments/audit_objective_beta_pressure.py": "6093978c7eb4820e8a3dc8cbe55fa40b9d5e0eb02e91017b6fbd4dfcd78cc86f",
+    "tests/test_objective_beta_pressure.py": "9bade50b34078688674aafcc007ead7a712752e0abd2a96777ffa5d1518b9fa5",
+    "docs/protocols/objective-beta-pressure.md": "6c5f9da60237db48944e7697eb7bf6c02fb8f158f437623abf500623bbd17b4a",
+    "results/objective_beta_pressure_preflight.json": "981fe995182bd1dc41500b68db170b9689d8489e8b60cde3a3e8e9f4d236be82"
+  },
+  "objectives": [
+    "assigned",
+    "all_queries"
+  ],
+  "loads": [
+    2,
+    8,
+    16,
+    32
+  ]
+}

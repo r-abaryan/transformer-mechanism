@@ -1,0 +1,9 @@
+# Strict distinct-value retrieval protocol
+
+Fixed before predictions. Enumerate all C(8,3)*P(4,3)=1,344 canonical three-key mappings with distinct values. Exclude any mapping occurring in the five confirmation models' shared training set, regardless of query or ordering. The data-only audit finds 21 eligible mappings; do not call reordered/query variants new mappings.
+
+For balanced primary evaluation, group eligible mappings by the one omitted value, sort lexicographically, and select the first four per group: 16 mappings. Enumerate all six pair orders and all three queries per mapping: 288 inputs. This balances four target labels (72 each), three query ranks (96 each), and orderings. Also report all 21 eligible mappings (378 inputs) as a supplementary unbalanced test. Selection never uses model predictions. Save rows, selected identities and all exclusions. Audit overlap with earlier validation/test and diagnostic inputs; training-held-out does not mean globally untouched.
+
+Five frozen checkpoints; shifts 0/1/2/4/6/8; unchanged forward versus the frozen rows-3/5 paired-key intervention. Full downstream computation, no donors or training. No further patches. Primary criteria per positive shift: every seed's patched accuracy >=90%, mean patched-minus-original >=5 points. Also report conjunction across positive shifts and compact loss <=1 point per seed. These descriptive thresholds do not imply significance or independence; the primary independent mapping count is only 16.
+
+Report accuracy/loss, per-mapping every-order/query correctness, paired rescue/harm, and final-query target-value attention per head, separately from correctness. Verify mapping exclusion across all queries, label uniqueness, balance, parent report/checkpoint hashes, explicit baseline versus library (<1e-10), attention reconstruction and finite outputs. No benchmark, novel architecture or unseen-distribution claim.

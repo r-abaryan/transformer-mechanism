@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "arm": "adam",
+      "seconds": 1.7437576999946032,
+      "gradient_evaluations": 1,
+      "device": "cpu",
+      "dtype": "float64",
+      "histories_per_gradient": 64,
+      "answer_targets": 2048,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "arm": "lbfgs",
+      "seconds": 1.5721640999836382,
+      "gradient_evaluations": 3,
+      "device": "cpu",
+      "dtype": "float64",
+      "histories_per_gradient": 3072,
+      "answer_targets": 133632,
+      "optimizer_state_present": true,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    }
+  ],
+  "sources": {
+    "experiments/full_pool_fitting.py": "972eb4ddb7023ad02d8ba6d240e973ea5c0c3d7274b909bad1519f82a97486ec",
+    "experiments/audit_full_pool_fitting.py": "f988122469b0e21311050669a9354cf24a8e972f47a51168a0984267d7598b10",
+    "tests/test_full_pool_fitting.py": "b5c8089de0832efa0064c94b22249e7beae87dee1046b16ac5576c5ac70789ed"
+  }
+}

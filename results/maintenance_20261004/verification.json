@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "date": "2026-10-04",
+  "training_updates": 0,
+  "frozen_files_unchanged": 82,
+  "snapshot_hashes_match": true,
+  "historical_checkpoint_text_retained": true,
+  "permitted_conclusion_table_unchanged": true,
+  "original_quality_review_hash_matches": true,
+  "recent_manifests": [
+    {
+      "study": "state_recipe_development",
+      "dependencies_checked": 24,
+      "passed": true
+    },
+    {
+      "study": "state_reset_exposure",
+      "dependencies_checked": 23,
+      "passed": true
+    },
+    {
+      "study": "state_momentum_training",
+      "dependencies_checked": 35,
+      "passed": true
+    },
+    {
+      "study": "copy_marker_training",
+      "dependencies_checked": 23,
+      "passed": true
+    },
+    {
+      "study": "copy_marker_alignment",
+      "dependencies_checked": 27,
+      "passed": true
+    }
+  ],
+  "dependency_entries_checked": 132,
+  "safe_test_runs": [
+    {
+      "path": "results/test_runs/maintenance_first/summary.json",
+      "sha256": "06fd00c1ecb40b94045b9d4f7c6bd2d9e3c1362fcaff04805f7442eda17103ff",
+      "methods": 15,
+      "equation_gradient_cases": 63,
+      "frozen_files_checked": 79
+    },
+    {
+      "path": "results/test_runs/maintenance_second/summary.json",
+      "sha256": "a14e6770fd248898109726915e5fefda4ab201724389ec0eaab4f0559053e0c1",
+      "methods": 15,
+      "equation_gradient_cases": 63,
+      "frozen_files_checked": 82
+    }
+  ],
+  "cli_rejection_checks": [
+    {
+      "run_name": "maintenance_second",
+      "exit_code": 2,
+      "test_execution": false,
+      "existing_summary_unchanged": true,
+      "error": "usage: run_tests.py [-h] [--run-name RUN_NAME]\nrun_tests.py: error: [WinError 183] Cannot create a file when that file already exists: 'D:\\\\AI-ML\\\\Transformers_RL\\\\results\\\\test_runs\\\\maintenance_second'"
+    },
+    {
+      "run_name": "../escape",
+      "exit_code": 2,
+      "test_execution": false,
+      "existing_summary_unchanged": true,
+      "error": "usage: run_tests.py [-h] [--run-name RUN_NAME]\nrun_tests.py: error: Run name must be a single alphanumeric, underscore or hyphen component."
+    }
+  ],
+  "markdown_documents_checked": 323,
+  "local_file_links_checked": 2173,
+  "missing_local_file_targets": [],
+  "link_scope": "File targets only; excludes raw snapshots, anchors and external URLs. This output is created after checks.",
+  "active_document_sizes": [
+    {
+      "path": "AGENTS.md",
+      "before_bytes": 20617,
+      "after_bytes": 6543
+    },
+    {
+      "path": "README.md",
+      "before_bytes": 8808,
+      "after_bytes": 2390
+    },
+    {
+      "path": "docs/research-plan.md",
+      "before_bytes": 29120,
+      "after_bytes": 4073
+    },
+    {
+      "path": "docs/assessments/research-checkpoint.md",
+      "before_bytes": 36292,
+      "after_bytes": 3579
+    },
+    {
+      "path": "docs/README.md",
+      "before_bytes": 2111,
+      "after_bytes": 2369
+    },
+    {
+      "path": "docs/assessments/README.md",
+      "before_bytes": 3162,
+      "after_bytes": 3737
+    },
+    {
+      "path": ".gitignore",
+      "before_bytes": 59,
+      "after_bytes": 78
+    }
+  ],
+  "changed_file_sha256": {
+    "AGENTS.md": "e169a80bfa59f240d85fd45e5be3e4899ba0d3860878de4fb470e11a3e9d9b93",
+    "README.md": "248f8935f100c7bb3151299a1c777415d0c6c7a50077b5e03e33b5771c4c9e27",
+    "docs/research-plan.md": "36c9a52e2ae3b2d5f5739287f96c47c4cbc519d52885614a1ad80d700b6962ea",
+    "docs/assessments/research-checkpoint.md": "8bc88765e21ac6b75a8d9ce85d41ecb5ec91198c62a7aa23f2b9c1bd015ba656",
+    "docs/README.md": "d35ff00cb7f059e036152ff2e1e4e8f5da44a4d147c1aef0b31021a0fbeed033",
+    "docs/assessments/README.md": "5a225f0c71791048f8f0a5b543dd1208711abef858ef20389b83f394734c25e2",
+    ".gitignore": "25af97f681a355999f2f115d88d2d92a8f353f308868498d5abe4884f5eb22ff",
+    "tests/run_tests.py": "c6aaa6a37aae9b7cdf396e763c6e8261b4e46ba46bcc2e348d4b54f4174f61dd",
+    "tests/test_runner_safety.py": "6b4403b786df6bd410f3ed8b5d13b9d8c3b8c48f2dbc3b443cec277dddc28b27",
+    "tests/README.md": "78966ece1cba528278bc25027a8dcee8671147754f221fafc1d26aa600f735a3",
+    "docs/assessments/research-history.md": "097e5ac8bc4051e69cf808a69cca7411479b778c9df3661dc101bb733bd20d2c"
+  },
+  "verification_source_sha256": "d35d1712556a2f6a86cc7f6cb050702d1808af608ecc433a9c1dc94495143178",
+  "limits": "No new training or exhaustive archived-code audit. Historical standalone test entries remain unsafe; use the current launcher."
+}

@@ -1,0 +1,3441 @@
+{
+  "status": "finished",
+  "source_dependencies": {
+    "experiments/mqa_training.py": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+    "experiments/audit_mqa_training.py": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+    "experiments/verify_mqa_training.py": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018",
+    "experiments/audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "experiments/query_exposure.py": "17333e05e77a91a5c99b283f3d64eea5798bdbf2abd80192473f03e941428be2",
+    "experiments/ffn_width.py": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+    "experiments/verify_ffn_width.py": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95",
+    "experiments/audit_ffn_width.py": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14",
+    "experiments/audit_gelu_comparison.py": "6a8b40fef74e32f6f64038aeccc63fc36a948df4bd23c466214199c8276e9ad3",
+    "experiments/repeated_key.py": "dfcb40dd4bee1ebcccc91033259bdccc8a245e39066f086a0552659c2d7f5559",
+    "experiments/audit_repeated_key.py": "d828a61ca98199a7ebe463d8a210d00767f3d1d74016a4113ef2637dcb84ef5a",
+    "experiments/audit_positional_comparison.py": "7ee8d56084ce92bc8f1ee0613dc74eb6acae43e7d294c87e2ed9c2882aefa166",
+    "experiments/activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "experiments/positional_comparison.py": "b4587182a2eec507cc252014f493717c58285798c85469a8a669f670c3e6aa52",
+    "experiments/reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "experiments/compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "experiments/position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "experiments/position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "experiments/state_tracking.py": "7935dcc10baab4541477b48baba3ab0c17a5c227ad908186e4cc53d3771c4f45",
+    "experiments/audit_state_tracking.py": "6943464cc9db8fc689c0acb7f9819f5b5b12cd69e7c360724bc58bda667a8edf",
+    "docs/protocols/state-tracking.md": "b55463ed6766a8c3f4d8444d4299eefa30c4e4ab78147232944348b25c53d138",
+    "experiments/state_reset_exposure.py": "37a5d893f6809ac6c2c892ed57562540fa4c6f842361efed39ef8466af6d24f2",
+    "experiments/state_recipe_development.py": "c96209dbe52ede990475fc80c8de980cb65614491d262273d15809e591544738",
+    "experiments/state_momentum_training.py": "a390ab776078050e1cfda2a6f1c254f9ba86430bb19991dc7a6987d9e78fc157",
+    "experiments/state_training_gradients.py": "c4421381e5b17246437e9425b4d1644d32a617243f09fc0976b965137c94a296",
+    "experiments/state_adam_momentum.py": "3c3eb099c5b6e42e8b6d7b40611c48ecfbb6568f1939cb80aa02b945a3278ee3",
+    "results/state_reset_exposure/report.json": "893df382c885022c38e7289f34a70c7000778ef4ca4c132c58c458e2c4f25823",
+    "results/state_reset_exposure/data.json": "579e40d199041f89997fd0541bef5b98e1c586364a5ab8d5f53b795ae710438a",
+    "results/state_reset_exposure/checkpoints/3011_independent.pt": "97404022fae1c45d30dfb91c6982cf057d36016451e5feb836b6d1fb667e8848",
+    "results/state_reset_exposure/checkpoints/3011_independent_scores.pt": "c19bea80af1314cd67368261612c9d7498d600d006fd0bcad2edff53e25dd789",
+    "results/state_reset_exposure/checkpoints/3019_independent.pt": "9647c01bf35b250b4765343526a8ec9987c63b516ab7e1e3e705385e0bb93d20",
+    "results/state_reset_exposure/checkpoints/3019_independent_scores.pt": "e33c4304fca100e0bd15279b8070a4db260e405328c9193f32a7a64cc74c115c",
+    "results/state_reset_exposure/checkpoints/3023_independent.pt": "d9eccda995efcdbe95f9e59513026a6d0165d0f530b51507962e6d3187b27b42",
+    "results/state_reset_exposure/checkpoints/3023_independent_scores.pt": "a91d4ba225ce433bd1b30674c35f068de3f8cd2092fce72974e4130473425dd1",
+    "docs/protocols/state-momentum-training.md": "fc6d6554f8ddf509bd44450cf9e54353ca9c9b1fa035dd8a46737dacbd34ed2c"
+  },
+  "profile_sha256": "3e2cb9b2adcbe64f282981a16cb1e89497620b03f960446986d75077044dae01",
+  "data_sha256": "fc36fe8ab63bb2c352000a250bdb1f5c45439cf5ef3486fba752dc5ce95cee9b",
+  "steps": 2000,
+  "batch": 64,
+  "observation_steps": [
+    0,
+    1,
+    50,
+    200,
+    500,
+    1000,
+    2000
+  ],
+  "seeds": [
+    3011,
+    3019,
+    3023
+  ],
+  "selection_uses_training_only": true,
+  "validation_test_evaluated": false,
+  "runs": [
+    {
+      "seed": 3011,
+      "arm": "retained",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "93ed3cd680ec1c2722f6bd6ff73bacbb3191c79c0f68a64634882aadb6ecf3ec",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.008279656726671723
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.000927291397026719
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.037212023572201464
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9765625,
+          "loss": 0.030130123682912815
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.02593743002512062
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.998046875,
+          "loss": 0.009917193920801847
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.02789538981353049
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.03629264717274817
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.0078125,
+          "both_correct": 0.986328125,
+          "mean_probability_change": 0.014757121959902938
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.03125,
+          "both_correct": 0.96875,
+          "mean_probability_change": 0.027092293341057238
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008279656726671723
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.000927291397026719
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.037212023572201464
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.030130123682912815
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02593743002512062
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.009917193920801847
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.02789538981353049
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.03629264717274817
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.986328125,
+              "mean_probability_change": 0.014757121959902938
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.027092293341057238
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008128750954608643
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009268289747555898
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.037634045336084984
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.029522544356320388
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02543012672276366
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.0098376745631827
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.027691986193203705
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.035280925540563224
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.00390625,
+              "both_correct": 0.98828125,
+              "mean_probability_change": 0.014334065087220776
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.02741297292745369
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.009906031180418077
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009331570232056705
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.03308707478276225
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.028235055784474182
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.028040633438527498
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.00861848491887983
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.982421875,
+              "loss": 0.03090150345781483
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9765625,
+              "loss": 0.03611069177087879
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.97265625,
+              "mean_probability_change": 0.012160705765007081
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.9765625,
+              "mean_probability_change": 0.023716752531521074
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008360321173071247
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009763680251975628
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.03463240216742474
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.031683741236946145
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02593886897712299
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.009338245395596653
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.029522489721709032
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.03773491426402659
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.00390625,
+              "both_correct": 0.98828125,
+              "mean_probability_change": 0.014178202398796282
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.026613440474880387
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006837984666107652
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009111328861128292
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.02234979505873775
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.027109054788423136
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02458558799991549
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.007627854903074499
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.986328125,
+              "loss": 0.02834778430742285
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.029397859492506333
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.009765625,
+              "both_correct": 0.982421875,
+              "mean_probability_change": 0.009724123233038508
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0234375,
+              "both_correct": 0.9765625,
+              "mean_probability_change": 0.02038425347362253
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006421046806859851
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.000760140413676183
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.015668177054611786
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.02241063927454088
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.02310594992114044
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 1.0,
+              "loss": 0.0064856295574872835
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.02582591582874983
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.02755665088866672
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.00390625,
+              "both_correct": 0.990234375,
+              "mean_probability_change": 0.009555053935916637
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.017071707727486753
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00573067929587768
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00044407613321761734
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.010875849925360155
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.014519987247603103
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.020254715376052855
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 1.0,
+              "loss": 0.0047063486553847785
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.025278404688189357
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.024785997460069188
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.00390625,
+              "both_correct": 0.990234375,
+              "mean_probability_change": 0.008117481208000061
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.012379143718575536
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 5.299580219109146e-16,
+        "wrong_label_gradient_effect": 3.153891053354714,
+        "adam_error": 1.1522019774910797e-16,
+        "moment_error": 6.938893903907228e-18
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3011_retained.pt",
+      "checkpoint_sha256": "d37bfc7ba4d9afec6f4a0b4854b500bd3539e6ce91352f1ad05a12f19c081b44",
+      "scores": "results/state_momentum_training/checkpoints/3011_retained_curves.pt",
+      "scores_sha256": "60436bc14d55fd42f3919902770224949557cc99db3ff09c70a3c107ed0fa52e",
+      "stream_sha256": "e0ae048406bf1be41a2723952cd77ce32020f4d734744665ac1d63f1d1646984",
+      "augmentation_sha256": "5b1c5a1997cd5711b209edec78ea0566bf864aa453e1be731542a320d2d48d6d",
+      "exposure_counts": {
+        "8/1/1": 5402,
+        "8/0/1": 5375,
+        "8/1/0": 5270,
+        "8/0/0": 5335,
+        "12/0/1": 5315,
+        "12/1/0": 5166,
+        "12/1/1": 5432,
+        "12/0/0": 5352
+      },
+      "seconds": 29.999007799997344,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.00573067929587768
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.00044407613321761734
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.010875849925360155
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.984375,
+          "loss": 0.014519987247603103
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.020254715376052855
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 1.0,
+          "loss": 0.0047063486553847785
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.025278404688189357
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.994140625,
+          "loss": 0.024785997460069188
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.00390625,
+          "both_correct": 0.990234375,
+          "mean_probability_change": 0.008117481208000061
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.015625,
+          "both_correct": 0.984375,
+          "mean_probability_change": 0.012379143718575536
+        }
+      }
+    },
+    {
+      "seed": 3011,
+      "arm": "clear_once",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "93ed3cd680ec1c2722f6bd6ff73bacbb3191c79c0f68a64634882aadb6ecf3ec",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.008279656726671723
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.000927291397026719
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.037212023572201464
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9765625,
+          "loss": 0.030130123682912815
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.02593743002512062
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.998046875,
+          "loss": 0.009917193920801847
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.02789538981353049
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.03629264717274817
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.0078125,
+          "both_correct": 0.986328125,
+          "mean_probability_change": 0.014757121959902938
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.03125,
+          "both_correct": 0.96875,
+          "mean_probability_change": 0.027092293341057238
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008279656726671723
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.000927291397026719
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.037212023572201464
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.030130123682912815
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02593743002512062
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.009917193920801847
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.02789538981353049
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.03629264717274817
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.986328125,
+              "mean_probability_change": 0.014757121959902938
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.027092293341057238
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008284421295504187
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009273044265677068
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.03720677274971652
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.030155939357461685
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025958861351947093
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.009918777606987015
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.027906200552559948
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.03632467832991707
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.986328125,
+              "mean_probability_change": 0.014773073953005526
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.027083774180062907
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.01009076549330302
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009284744643360387
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.03195313079953526
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.028874794630870393
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.028369190453839004
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.008764851058463209
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.982421875,
+              "loss": 0.031746137577727825
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9765625,
+              "loss": 0.03773651704391284
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.97265625,
+              "mean_probability_change": 0.012369305737875336
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.9765625,
+              "mean_probability_change": 0.023359241705876933
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008344719111175956
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009836330943108398
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.03446664938911813
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.03169520615754108
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025933608945314046
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.0094665527989516
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.029541549502414978
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.03768503723433943
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.001953125,
+              "both_correct": 0.990234375,
+              "mean_probability_change": 0.014115206948471817
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.026657783668258973
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006810194602246665
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0009115010135883443
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.022688434147431463
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.027216465522978548
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.024557278108003656
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.998046875,
+              "loss": 0.007613975922197641
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.986328125,
+              "loss": 0.028431496573140248
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.029466083394785805
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.009765625,
+              "both_correct": 0.982421875,
+              "mean_probability_change": 0.00976004917025905
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0234375,
+              "both_correct": 0.9765625,
+              "mean_probability_change": 0.020621326322750613
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006403555772089419
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0007839491774495576
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.015786241249066305
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.02260486919164375
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.023137895931948437
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 1.0,
+              "loss": 0.006557484646288539
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.02595166765768302
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.027614095270827463
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.00390625,
+              "both_correct": 0.990234375,
+              "mean_probability_change": 0.009645025212247851
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.017177452573035514
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005821623969857724
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00045287904261679356
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.010880005277678555
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.0143274117570373
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.020670982135471732
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 1.0,
+              "loss": 0.004736512682590276
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.024901938120450072
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.024541249017187516
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.001953125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.008050654785132996
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.012368411592303346
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 5.299580219109146e-16,
+        "wrong_label_gradient_effect": 3.153891053354714,
+        "adam_error": 1.9476866171578514e-16,
+        "moment_error": 0.0
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3011_clear_once.pt",
+      "checkpoint_sha256": "a34413134bde21ca77bccdf82a47eddaec0f51bf378e14f3d853c1b2020d9d64",
+      "scores": "results/state_momentum_training/checkpoints/3011_clear_once_curves.pt",
+      "scores_sha256": "abee3e95f2418b3c53f538e746bd65e1040461c5c03313d3953d26e72f2b3154",
+      "stream_sha256": "e0ae048406bf1be41a2723952cd77ce32020f4d734744665ac1d63f1d1646984",
+      "augmentation_sha256": "5b1c5a1997cd5711b209edec78ea0566bf864aa453e1be731542a320d2d48d6d",
+      "exposure_counts": {
+        "8/1/1": 5402,
+        "8/0/1": 5375,
+        "8/1/0": 5270,
+        "8/0/0": 5335,
+        "12/0/1": 5315,
+        "12/1/0": 5166,
+        "12/1/1": 5432,
+        "12/0/0": 5352
+      },
+      "seconds": 29.768159899991588,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005821623969857724
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.00045287904261679356
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.010880005277678555
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.984375,
+          "loss": 0.0143274117570373
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.020670982135471732
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 1.0,
+          "loss": 0.004736512682590276
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.024901938120450072
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.994140625,
+          "loss": 0.024541249017187516
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.001953125,
+          "both_correct": 0.9921875,
+          "mean_probability_change": 0.008050654785132996
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.015625,
+          "both_correct": 0.984375,
+          "mean_probability_change": 0.012368411592303346
+        }
+      }
+    },
+    {
+      "seed": 3019,
+      "arm": "clear_once",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "4d64af8e74adcacb32e97fcb4b8777fbece7e6fad640a04757cbf065cfef3f84",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.11865381049293454
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.0014625025934491241
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.14768736606863545
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.18193390329984918
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.923828125,
+          "loss": 0.22352427085040982
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.025820735406935885
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.943359375,
+          "loss": 0.1842017148252993
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.794921875,
+          "loss": 0.45043966316562023
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.17578125,
+          "both_correct": 0.78125,
+          "mean_probability_change": 0.21389045248170208
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.03125,
+          "both_correct": 0.9375,
+          "mean_probability_change": 0.09768088107059186
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.11865381049293454
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0014625025934491241
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.14768736606863545
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.18193390329984918
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.923828125,
+              "loss": 0.22352427085040982
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025820735406935885
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.1842017148252993
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.794921875,
+              "loss": 0.45043966316562023
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.17578125,
+              "both_correct": 0.78125,
+              "mean_probability_change": 0.21389045248170208
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.9375,
+              "mean_probability_change": 0.09768088107059186
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.11797267677106067
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0015107154414068097
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.14754996779068003
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9609375,
+              "loss": 0.18001176090068516
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.921875,
+              "loss": 0.22229701568969568
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.02564486472885574
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.18427465801623288
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.796875,
+              "loss": 0.4492830692875647
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.173828125,
+              "both_correct": 0.783203125,
+              "mean_probability_change": 0.21388341933663174
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0234375,
+              "both_correct": 0.9453125,
+              "mean_probability_change": 0.09763788251890744
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.11339917713034385
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0026519405271196086
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.90625,
+              "loss": 0.15213496417631678
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.16963769182061472
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.91796875,
+              "loss": 0.21340225487206924
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.026030965590294323
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.91796875,
+              "loss": 0.19520566322196575
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.759765625,
+              "loss": 0.46399311384528713
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.201171875,
+              "both_correct": 0.73828125,
+              "mean_probability_change": 0.2246829771675408
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.078125,
+              "both_correct": 0.8828125,
+              "mean_probability_change": 0.1021687892944887
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.10411932398215923
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0021442757955498753
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.13447642679080712
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.1587024831515955
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.939453125,
+              "loss": 0.189200397147589
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025809748358818496
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9375,
+              "loss": 0.18224916479799852
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.794921875,
+              "loss": 0.42955779034701047
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.169921875,
+              "both_correct": 0.78125,
+              "mean_probability_change": 0.2118014529238546
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0703125,
+              "both_correct": 0.90625,
+              "mean_probability_change": 0.09230927280159429
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.96875,
+              "loss": 0.08947245460063451
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.003701366552337302
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.11999588126842764
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.13320954473476532
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.94921875,
+              "loss": 0.1540898842938229
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.0264047956683012
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9453125,
+              "loss": 0.16799023665788893
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.8359375,
+              "loss": 0.36924180558278996
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.125,
+              "both_correct": 0.828125,
+              "mean_probability_change": 0.18304183663641221
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0390625,
+              "both_correct": 0.9296875,
+              "mean_probability_change": 0.07873665165154844
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.96875,
+              "loss": 0.07993902510436537
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005067233488561784
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9609375,
+              "loss": 0.10671290123727065
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.11397994401151522
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.955078125,
+              "loss": 0.1409714235531882
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03176592235450229
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.154271423264015
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.896484375,
+              "loss": 0.2632394747563255
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.07421875,
+              "both_correct": 0.8828125,
+              "mean_probability_change": 0.12361290380030512
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0859375,
+              "both_correct": 0.90625,
+              "mean_probability_change": 0.08041423836247402
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.055468412353054
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0049572844359424256
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.06919620641447988
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.07498142040675979
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.96484375,
+              "loss": 0.09775058394867421
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.03166831426445832
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.95703125,
+              "loss": 0.11354208603954388
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.951171875,
+              "loss": 0.15004793744295222
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.025390625,
+              "both_correct": 0.94140625,
+              "mean_probability_change": 0.062135984403022815
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0234375,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.043945261739620656
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 1.0186296250935811e-14,
+        "wrong_label_gradient_effect": 2.642570813845102,
+        "adam_error": 1.9956540929608624e-16,
+        "moment_error": 0.0
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3019_clear_once.pt",
+      "checkpoint_sha256": "b1ed13f9456aeb08c29da9e5ae5051efec22a4950b5ed2982e1198e3e766f89b",
+      "scores": "results/state_momentum_training/checkpoints/3019_clear_once_curves.pt",
+      "scores_sha256": "8807325d841d31a418c7ab76c953b15de793d4f3046774d7771770faef09cd8d",
+      "stream_sha256": "d9e12a66d5bf5568ca327876db9a37bf44908a96e35f9e0d7123fb892fefc5a4",
+      "augmentation_sha256": "2a5fe4ca52a5928e4e8b48cb5f05e846a8853b36cc32390351f5a61d5cb0e6b3",
+      "exposure_counts": {
+        "8/0/1": 5432,
+        "8/1/0": 5354,
+        "8/1/1": 5313,
+        "8/0/0": 5364,
+        "12/1/1": 5433,
+        "12/0/0": 5318,
+        "12/0/1": 5320,
+        "12/1/0": 5361
+      },
+      "seconds": 29.89862799999537,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.055468412353054
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.0049572844359424256
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.984375,
+          "loss": 0.06919620641447988
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9765625,
+          "loss": 0.07498142040675979
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.96484375,
+          "loss": 0.09775058394867421
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.03166831426445832
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.95703125,
+          "loss": 0.11354208603954388
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.951171875,
+          "loss": 0.15004793744295222
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.025390625,
+          "both_correct": 0.94140625,
+          "mean_probability_change": 0.062135984403022815
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0234375,
+          "both_correct": 0.96875,
+          "mean_probability_change": 0.043945261739620656
+        }
+      }
+    },
+    {
+      "seed": 3019,
+      "arm": "retained",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "4d64af8e74adcacb32e97fcb4b8777fbece7e6fad640a04757cbf065cfef3f84",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.11865381049293454
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.0014625025934491241
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.14768736606863545
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.953125,
+          "loss": 0.18193390329984918
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.923828125,
+          "loss": 0.22352427085040982
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.9921875,
+          "loss": 0.025820735406935885
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.943359375,
+          "loss": 0.1842017148252993
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.794921875,
+          "loss": 0.45043966316562023
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.17578125,
+          "both_correct": 0.78125,
+          "mean_probability_change": 0.21389045248170208
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.03125,
+          "both_correct": 0.9375,
+          "mean_probability_change": 0.09768088107059186
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.11865381049293454
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0014625025934491241
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.14768736606863545
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.18193390329984918
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.923828125,
+              "loss": 0.22352427085040982
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025820735406935885
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.1842017148252993
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.794921875,
+              "loss": 0.45043966316562023
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.17578125,
+              "both_correct": 0.78125,
+              "mean_probability_change": 0.21389045248170208
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.9375,
+              "mean_probability_change": 0.09768088107059186
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.96875,
+              "loss": 0.11707412974276199
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0016412330508048488
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.14924033935047043
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9609375,
+              "loss": 0.17539365894422793
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.927734375,
+              "loss": 0.21184348642886233
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.025093026585375044
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.1858723063682473
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.79296875,
+              "loss": 0.45200821284504716
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.177734375,
+              "both_correct": 0.779296875,
+              "mean_probability_change": 0.2176681781963146
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.9375,
+              "mean_probability_change": 0.09753413876529454
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.11189367293029097
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.002774465165484151
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9140625,
+              "loss": 0.1485193575419928
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.1708630483504579
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.923828125,
+              "loss": 0.2052184088537009
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.02666789033639944
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.91796875,
+              "loss": 0.1933740473010767
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.755859375,
+              "loss": 0.46789151318786903
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.205078125,
+              "both_correct": 0.734375,
+              "mean_probability_change": 0.22746724503965074
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0703125,
+              "both_correct": 0.890625,
+              "mean_probability_change": 0.10384334057262656
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.10383434521763406
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0020896869692940256
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9453125,
+              "loss": 0.13302179193820923
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.15875947034903928
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.939453125,
+              "loss": 0.1878910114077524
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.025744204242658674
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9375,
+              "loss": 0.18077460627059372
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.787109375,
+              "loss": 0.4318499197449916
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.177734375,
+              "both_correct": 0.7734375,
+              "mean_probability_change": 0.2126526794083104
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0703125,
+              "both_correct": 0.90625,
+              "mean_probability_change": 0.09330841059384448
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.96875,
+              "loss": 0.08871202764085995
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0036713502336427114
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.11916435526751129
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.953125,
+              "loss": 0.1334224244801695
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.947265625,
+              "loss": 0.1530312356448
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.026324709646528978
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9453125,
+              "loss": 0.1682166961354886
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.83203125,
+              "loss": 0.3730462935157921
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.12890625,
+              "both_correct": 0.82421875,
+              "mean_probability_change": 0.18518328362723827
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.03125,
+              "both_correct": 0.9375,
+              "mean_probability_change": 0.07926734840244236
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.96875,
+              "loss": 0.08000499810010736
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00482289436601706
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.9609375,
+              "loss": 0.1046719594546695
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9375,
+              "loss": 0.11400311268878406
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.955078125,
+              "loss": 0.14116175112735757
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03181891250625054
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.943359375,
+              "loss": 0.1543824143660758
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.90234375,
+              "loss": 0.2589743642019783
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.068359375,
+              "both_correct": 0.888671875,
+              "mean_probability_change": 0.12173642355559852
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0859375,
+              "both_correct": 0.90625,
+              "mean_probability_change": 0.07964613383043342
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.05541276470212622
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.004678851185225777
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 0.984375,
+              "loss": 0.0679017603697849
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9765625,
+              "loss": 0.07469510344487103
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.962890625,
+              "loss": 0.09829971682826329
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.03218266477838759
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.95703125,
+              "loss": 0.1152685545070679
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.94921875,
+              "loss": 0.15707835288944166
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.02734375,
+              "both_correct": 0.939453125,
+              "mean_probability_change": 0.06750192283837639
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0234375,
+              "both_correct": 0.96875,
+              "mean_probability_change": 0.04439964419310317
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 1.0186296250935811e-14,
+        "wrong_label_gradient_effect": 2.642570813845102,
+        "adam_error": 1.2217264418017126e-16,
+        "moment_error": 2.7755575615628914e-17
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3019_retained.pt",
+      "checkpoint_sha256": "54be7a8ab3464431aee5b4956ef8b9bab1c4f529cefb3974d4cfd2d7f557638e",
+      "scores": "results/state_momentum_training/checkpoints/3019_retained_curves.pt",
+      "scores_sha256": "eba0c17335020109cc32936c601bd61a7db11ef04146b15211a0ac699b124b4e",
+      "stream_sha256": "d9e12a66d5bf5568ca327876db9a37bf44908a96e35f9e0d7123fb892fefc5a4",
+      "augmentation_sha256": "2a5fe4ca52a5928e4e8b48cb5f05e846a8853b36cc32390351f5a61d5cb0e6b3",
+      "exposure_counts": {
+        "8/0/1": 5432,
+        "8/1/0": 5354,
+        "8/1/1": 5313,
+        "8/0/0": 5364,
+        "12/1/1": 5433,
+        "12/0/0": 5318,
+        "12/0/1": 5320,
+        "12/1/0": 5361
+      },
+      "seconds": 29.97458330000518,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.05541276470212622
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.004678851185225777
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 0.984375,
+          "loss": 0.0679017603697849
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9765625,
+          "loss": 0.07469510344487103
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.962890625,
+          "loss": 0.09829971682826329
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.03218266477838759
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.95703125,
+          "loss": 0.1152685545070679
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.94921875,
+          "loss": 0.15707835288944166
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.02734375,
+          "both_correct": 0.939453125,
+          "mean_probability_change": 0.06750192283837639
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0234375,
+          "both_correct": 0.96875,
+          "mean_probability_change": 0.04439964419310317
+        }
+      }
+    },
+    {
+      "seed": 3023,
+      "arm": "retained",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "d1a11d5163fb8345b67d58084d40101d9739abf24fcf5876c1822d3de5f866aa",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.012364041557240382
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.001208927894065741
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005758302468374147
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.0301115074451534
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.99609375,
+          "loss": 0.01695357753808216
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.978515625,
+          "loss": 0.0454212332131371
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.031765115315999515
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.04073665185840032
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.013671875,
+          "both_correct": 0.982421875,
+          "mean_probability_change": 0.02631080492147101
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0078125,
+          "both_correct": 0.9921875,
+          "mean_probability_change": 0.02648291418240087
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.012364041557240382
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.001208927894065741
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005758302468374147
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.0301115074451534
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01695357753808216
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.978515625,
+              "loss": 0.0454212332131371
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.031765115315999515
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.04073665185840032
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.982421875,
+              "mean_probability_change": 0.02631080492147101
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.02648291418240087
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.014385570562348507
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0012381084790571264
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0060931796897566275
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.0330457564694485
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01735461071087813
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.978515625,
+              "loss": 0.046235930557243905
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03361653248956198
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.04236560825072527
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.98046875,
+              "mean_probability_change": 0.02756332165769148
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.029297674739521613
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0074588042126464155
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.001334298892607437
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0075321301573305815
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.010256805280126895
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.016132258547558516
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03719585523844087
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.02379110863149636
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.986328125,
+              "loss": 0.036302191913350726
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.01171875,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.02113142590446325
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.012037077566977444
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008589423883091302
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0011216408142468992
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005984082653035402
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.021909518833753156
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.019232150132617934
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03439319450636827
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.025253972882537955
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.974609375,
+              "loss": 0.04885683407024441
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.01953125,
+              "both_correct": 0.974609375,
+              "mean_probability_change": 0.02129875588912393
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.011082267861769912
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0058531936045761995
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0010129052649394173
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0059567536010585315
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.011641108714137519
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01592273218953768
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.984375,
+              "loss": 0.034759292381880864
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.022523773147239454
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.982421875,
+              "loss": 0.038313150085911706
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.98046875,
+              "mean_probability_change": 0.021182184652957015
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.01125877886525858
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005734176283567321
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0008351602316985715
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.004651453646476905
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00722781632294963
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.014538732629667784
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.031645095802980375
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02062375268812289
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.023582216590314117
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.98828125,
+              "mean_probability_change": 0.01624662556604073
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.008655089145366387
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005436364095555693
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0006540600265804043
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.008354726578245361
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005083443380910848
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.014432302558328017
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.029880516886791067
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.02246298294197372
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.017750809347332842
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.01171875,
+              "both_correct": 0.984375,
+              "mean_probability_change": 0.016208505766765198
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.010492467122770976
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 3.497202527569243e-15,
+        "wrong_label_gradient_effect": 6.125055336517398,
+        "adam_error": 2.1694885471434944e-16,
+        "moment_error": 1.3877787807814457e-17
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3023_retained.pt",
+      "checkpoint_sha256": "7e8ee17d0ff2e5a71fdf8c0e9e9d1bfa2f11fc29d3aae5a1e25dcf9efcc21f34",
+      "scores": "results/state_momentum_training/checkpoints/3023_retained_curves.pt",
+      "scores_sha256": "69b1a3161c836f9c4308c9066696bcee8ba3ac38c9df3a748c038d1aa30b774c",
+      "stream_sha256": "57246658f5d8b045cf3f265695fc2f2437f24be54dd7494c9442d2f01da7f1ff",
+      "augmentation_sha256": "789b7be5d6b1d76786680326ba84048bf259c0fefbd56ebc5a3b38204aa5a1f5",
+      "exposure_counts": {
+        "8/1/0": 5439,
+        "8/0/0": 5243,
+        "8/1/1": 5383,
+        "8/0/1": 5317,
+        "12/0/1": 5333,
+        "12/0/0": 5339,
+        "12/1/0": 5311,
+        "12/1/1": 5394
+      },
+      "seconds": 29.847205400001258,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005436364095555693
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.0006540600265804043
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.008354726578245361
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005083443380910848
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.99609375,
+          "loss": 0.014432302558328017
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.029880516886791067
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.02246298294197372
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.017750809347332842
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.01171875,
+          "both_correct": 0.984375,
+          "mean_probability_change": 0.016208505766765198
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0,
+          "both_correct": 1.0,
+          "mean_probability_change": 0.010492467122770976
+        }
+      }
+    },
+    {
+      "seed": 3023,
+      "arm": "clear_once",
+      "status": "trained",
+      "step": 2000,
+      "initial_model_sha256": "d1a11d5163fb8345b67d58084d40101d9739abf24fcf5876c1822d3de5f866aa",
+      "baseline": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.012364041557240382
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.001208927894065741
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005758302468374147
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 0.9921875,
+          "loss": 0.0301115074451534
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.99609375,
+          "loss": 0.01695357753808216
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.978515625,
+          "loss": 0.0454212332131371
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.031765115315999515
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.04073665185840032
+        }
+      },
+      "baseline_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.013671875,
+          "both_correct": 0.982421875,
+          "mean_probability_change": 0.02631080492147101
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0078125,
+          "both_correct": 0.9921875,
+          "mean_probability_change": 0.02648291418240087
+        }
+      },
+      "curve": [
+        {
+          "step": 0,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.012364041557240382
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.001208927894065741
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005758302468374147
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.0301115074451534
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01695357753808216
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.978515625,
+              "loss": 0.0454212332131371
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.031765115315999515
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.04073665185840032
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.982421875,
+              "mean_probability_change": 0.02631080492147101
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.02648291418240087
+            }
+          }
+        },
+        {
+          "step": 1,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.011791079686788197
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00118429909366279
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005491744837359211
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.029230117523702984
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01680801729270314
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.978515625,
+              "loss": 0.04490380330107128
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.0308839949595558
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.04123229112700576
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.015625,
+              "both_correct": 0.98046875,
+              "mean_probability_change": 0.026125225473640594
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.025226595819599365
+            }
+          }
+        },
+        {
+          "step": 50,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.007228331876310442
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0013330297809472508
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.007099482053371346
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.010209405620796504
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.016167767935901103
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03748679128279679
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.024617311453294915
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03769989050899762
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.009765625,
+              "both_correct": 0.986328125,
+              "mean_probability_change": 0.0225652588289056
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.011299146453498294
+            }
+          }
+        },
+        {
+          "step": 200,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.00840979194214658
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0011314505555178895
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005961296354748083
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.02172238511510506
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.018717003853617246
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.034516505363492524
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.025108093601767113
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.974609375,
+              "loss": 0.04735539252855457
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.01953125,
+              "both_correct": 0.974609375,
+              "mean_probability_change": 0.02102331727214632
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.011111661834065343
+            }
+          }
+        },
+        {
+          "step": 500,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005280923124575867
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0011185496344431247
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006656984603307145
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 0.9921875,
+              "loss": 0.017193102551352722
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.015983069149973505
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.984375,
+              "loss": 0.03566349116607824
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.027808240145147517
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.978515625,
+              "loss": 0.04368111774773613
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.01953125,
+              "both_correct": 0.974609375,
+              "mean_probability_change": 0.025471500411939203
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0078125,
+              "both_correct": 0.9921875,
+              "mean_probability_change": 0.014917345584617079
+            }
+          }
+        },
+        {
+          "step": 1000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006223721353632356
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.000855718213906247
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0042586587768844615
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.007580748317896195
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.014822289200238144
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.03230115580241564
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.994140625,
+              "loss": 0.019307711251423068
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.9921875,
+              "loss": 0.02378540687028392
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.005859375,
+              "both_correct": 0.990234375,
+              "mean_probability_change": 0.0154469580003318
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.008648212998496368
+            }
+          }
+        },
+        {
+          "step": 2000,
+          "metrics": {
+            "train/8/reset_free": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.006614135967861061
+            },
+            "train/8/mixed": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.0007447645059810368
+            },
+            "train/8/long_tail_agree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.009133029130390173
+            },
+            "train/8/long_tail_disagree": {
+              "count": 128,
+              "accuracy": 1.0,
+              "loss": 0.005628280147941822
+            },
+            "train/12/reset_free": {
+              "count": 512,
+              "accuracy": 0.99609375,
+              "loss": 0.01593808286008439
+            },
+            "train/12/mixed": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.02830127070909442
+            },
+            "train/12/long_tail_agree": {
+              "count": 512,
+              "accuracy": 0.98828125,
+              "loss": 0.026013669237408457
+            },
+            "train/12/long_tail_disagree": {
+              "count": 512,
+              "accuracy": 0.990234375,
+              "loss": 0.01812182743563666
+            }
+          },
+          "reset_pairs": {
+            "train/12": {
+              "pairs": 512,
+              "prediction_changes": 0.013671875,
+              "both_correct": 0.982421875,
+              "mean_probability_change": 0.01790681887757545
+            },
+            "train/8": {
+              "pairs": 128,
+              "prediction_changes": 0.0,
+              "both_correct": 1.0,
+              "mean_probability_change": 0.011515482625315593
+            }
+          }
+        }
+      ],
+      "first_step_check": {
+        "gradient_error": 3.497202527569243e-15,
+        "wrong_label_gradient_effect": 6.125055336517398,
+        "adam_error": 1.8745770858979646e-16,
+        "moment_error": 0.0
+      },
+      "checkpoint": "results/state_momentum_training/checkpoints/3023_clear_once.pt",
+      "checkpoint_sha256": "2ea15972823cacb0ec70c01a0f797cca8f6984096cf87114eac4c6d5b146bb46",
+      "scores": "results/state_momentum_training/checkpoints/3023_clear_once_curves.pt",
+      "scores_sha256": "3d4233f3f006d7323d744ae42d65252a3a5fbaaaee8cbbf6569defa511257955",
+      "stream_sha256": "57246658f5d8b045cf3f265695fc2f2437f24be54dd7494c9442d2f01da7f1ff",
+      "augmentation_sha256": "789b7be5d6b1d76786680326ba84048bf259c0fefbd56ebc5a3b38204aa5a1f5",
+      "exposure_counts": {
+        "8/1/0": 5439,
+        "8/0/0": 5243,
+        "8/1/1": 5383,
+        "8/0/1": 5317,
+        "12/0/1": 5333,
+        "12/0/0": 5339,
+        "12/1/0": 5311,
+        "12/1/1": 5394
+      },
+      "seconds": 29.910402500012424,
+      "additional_examples": 128000,
+      "additional_supervised_targets": 128000,
+      "additional_input_tokens": 1536000,
+      "metrics": {
+        "train/8/reset_free": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.006614135967861061
+        },
+        "train/8/mixed": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.0007447645059810368
+        },
+        "train/8/long_tail_agree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.009133029130390173
+        },
+        "train/8/long_tail_disagree": {
+          "count": 128,
+          "accuracy": 1.0,
+          "loss": 0.005628280147941822
+        },
+        "train/12/reset_free": {
+          "count": 512,
+          "accuracy": 0.99609375,
+          "loss": 0.01593808286008439
+        },
+        "train/12/mixed": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.02830127070909442
+        },
+        "train/12/long_tail_agree": {
+          "count": 512,
+          "accuracy": 0.98828125,
+          "loss": 0.026013669237408457
+        },
+        "train/12/long_tail_disagree": {
+          "count": 512,
+          "accuracy": 0.990234375,
+          "loss": 0.01812182743563666
+        }
+      },
+      "reset_pairs": {
+        "train/12": {
+          "pairs": 512,
+          "prediction_changes": 0.013671875,
+          "both_correct": 0.982421875,
+          "mean_probability_change": 0.01790681887757545
+        },
+        "train/8": {
+          "pairs": 128,
+          "prediction_changes": 0.0,
+          "both_correct": 1.0,
+          "mean_probability_change": 0.011515482625315593
+        }
+      }
+    }
+  ],
+  "decision": {
+    "options": [
+      {
+        "arm": "retained",
+        "eligible": false,
+        "worst_accuracy": 0.94921875,
+        "worst_loss": 0.15707835288944166
+      },
+      {
+        "arm": "clear_once",
+        "eligible": false,
+        "worst_accuracy": 0.951171875,
+        "worst_loss": 0.15004793744295222
+      }
+    ],
+    "selected_for_confirmation": null,
+    "rule": "final >=99% accuracy in all eight training support cells in all three seeds; smallest worst-cell CE among eligible arms; retained wins exact tie"
+  },
+  "prior_hashes_unchanged": true
+}

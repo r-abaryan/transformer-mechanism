@@ -1,0 +1,62 @@
+{
+  "scope": "Post hoc background inspection of existing resampled training-32 scores. Exposure cohorts are observational and overlapping at >=3; not causal, not fresh confirmation, not a new training experiment.",
+  "parent_report_sha256": "88b4726bed1af1abb331849707a34653319062f4657c9302c4f41a34027b01c2",
+  "parent_scores_sha256": "a3932e2bbd9ce23515b2c4aaba3e07484b41e675cc1f5236934d8e53af891f9f",
+  "records": [
+    {
+      "seed": 3461,
+      "groups": {
+        "never_supervised": {
+          "count": 3407,
+          "correct": 3018,
+          "errors": 389,
+          "accuracy": 0.8858233049603756,
+          "fraction_of_all_errors": 0.1544876886417792
+        },
+        "supervised_at_least_once": {
+          "count": 21169,
+          "correct": 19040,
+          "errors": 2129,
+          "accuracy": 0.899428409466673,
+          "fraction_of_all_errors": 0.8455123113582208
+        },
+        "supervised_at_least_three_times": {
+          "count": 7681,
+          "correct": 6994,
+          "errors": 687,
+          "accuracy": 0.9105585210259081,
+          "fraction_of_all_errors": 0.272835583796664
+        }
+      },
+      "exposure_sha256": "5d7b7777a4444bbf97d4a5fcca550f29d32fb9707f2de533da85f202177d8277"
+    },
+    {
+      "seed": 3463,
+      "groups": {
+        "never_supervised": {
+          "count": 3502,
+          "correct": 3124,
+          "errors": 378,
+          "accuracy": 0.8920616790405482,
+          "fraction_of_all_errors": 0.15428571428571428
+        },
+        "supervised_at_least_once": {
+          "count": 21074,
+          "correct": 19002,
+          "errors": 2072,
+          "accuracy": 0.9016797950080668,
+          "fraction_of_all_errors": 0.8457142857142858
+        },
+        "supervised_at_least_three_times": {
+          "count": 7565,
+          "correct": 6854,
+          "errors": 711,
+          "accuracy": 0.9060145406477198,
+          "fraction_of_all_errors": 0.29020408163265304
+        }
+      },
+      "exposure_sha256": "183e0b612768575022558eedd61c82cf642d3c4e83c8e7ba2817a094085082e0"
+    }
+  ],
+  "independent_scalar_exposed_correctness_verified": true
+}

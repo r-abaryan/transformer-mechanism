@@ -1,0 +1,3337 @@
+{
+  "files": {
+    "experiments/fitting_direction.py": "e80c68a335089dcd43730d47b47f1b4e60f111c4fc1cd13937fdf315e23841f9",
+    "experiments/retention_learning_replay.py": "81ec717b74ef8c147197bb5635409ebd92f591069129b9edc8a83f270c37a16c",
+    "tests/test_full_pool_fitting.py": "b5c8089de0832efa0064c94b22249e7beae87dee1046b16ac5576c5ac70789ed",
+    "experiments/query_gradient_variability.py": "f8e5c8fb1ff161808a07ce3c842014e7bcf1a9f3ace0e21be4a5a7edf404a493",
+    "experiments/delta_retrieval.py": "93bea1c49a5b960bd643caee7588ad5d79de4bb09e9e663a7a607d25fb5b0579",
+    "experiments/audit_full_pool_fitting.py": "f988122469b0e21311050669a9354cf24a8e972f47a51168a0984267d7598b10",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "experiments/feedback_loss_decomposition.py": "82c061482581decb77ec71b27ab5516e92a64a90243747f78e5fea6cd4683e1b",
+    "experiments/query_feedback_training.py": "89c5a1da91d396cbd7a399dce7fa1a94590331695b1ecc425209b4c14f241cd9",
+    "experiments/audit_query_feedback_training.py": "b01afec7015d66fc08a678ea0812a569ac97cd540994c94f4babf64629bc2c9a",
+    "experiments/objective_beta_pressure.py": "eb8c88c3752d71ba32086835d618aed4f343ab052c053af61d21fa04bc08fceb",
+    "experiments/query_write_order.py": "35c269caf9c25fdda7f6e7e68eea2adc766337a42e420622fb1bd7986e09ad06",
+    "experiments/delta_query_coverage.py": "ecae5aecac5a0e34efc7a27cbf16a32603b737e3caf5119e08911f6f3ee86365",
+    "experiments/history_repetition.py": "711b569af6b6bdd65d57f5a1196797b5b0a824193a352c04cd5d7258d1c2f78d",
+    "experiments/key_geometry_retention.py": "0ecd7e3388c921faeb5d0493a88effb5867d6e2b7bbefb8244217652b8949b87",
+    "experiments/audit_objective_beta_pressure.py": "6093978c7eb4820e8a3dc8cbe55fa40b9d5e0eb02e91017b6fbd4dfcd78cc86f",
+    "experiments/query_feedback_continuation.py": "6ef532aac559010e72e0da160c05e7914f74cdc2d85d4c205626d4313cc4ac83",
+    "experiments/audit_shared_state_feasibility.py": "ff2e047f4ffbc80f2d2bd21310295cb75c6838c72fff64d06c442d560685193c",
+    "experiments/readout_scale_control.py": "3df3a3d855b7f1e3f6e324cffe7c567538566bc571857a5267752012f7c55f41",
+    "tests/test_fitting_direction.py": "a7ec0e332842321ecfb82eabbc61033c086493bced5d15bb80d0d9beebd9ba85",
+    "experiments/full_pool_fitting.py": "972eb4ddb7023ad02d8ba6d240e973ea5c0c3d7274b909bad1519f82a97486ec",
+    "experiments/audit_delta_retrieval.py": "9f1175b6ee8afb43e1306d15f4b9cb0c3020d75778b3dcd9d2bd3c21e9b062d7",
+    "experiments/overlap_regularization.py": "70641efd625f821fa72d712b6615a147abd509cfb8600e958b08eb810eee69b7",
+    "experiments/readout_norm_cap_training.py": "d015bf7b4324f3d77d4018e27c8b78aa14ddd914746f1c1a0c1a11259a7efa8d",
+    "experiments/audit_fitting_direction.py": "c7c787e4f4435aae84d0206fa46599cb510277eb92ee724ea37cce17cc371e19",
+    "results/full_pool_fitting_confirmation/study/warmup/3473_adam_12000.pt": "c1a2509b8bf5495e30c25d165c832056249ef934b917bdf7b978ce712180a7dd",
+    "results/full_pool_fitting_confirmation/study/warmup/3479_adam_12000.pt": "0daaad4df5fb8ed5038335f207d5795b836118c01089965636f90e77b4d3529a",
+    "results/full_pool_fitting_confirmation/study/warmup/3481_adam_12000.pt": "b7d3f589f3d3c3cd26ef7fb8834cca207ad540b226a777244d59d34986e9456f",
+    "docs/protocols/fitting-direction.md": "ddd40f16130a809850195fe8adce715dc7b54982109520894e2fbc23418aff8d",
+    "results/fitting_direction_preflight.json": "0eb6eede22ffe82617937a98d91e526b8a6c87cfb8a9f941cabd0ef0800310c0",
+    "results/fitting_direction_profiles.json": "88636fc133448cf047375d5b0be25f51aecc330e373aba8d5ea04458e1494002",
+    "results/full_pool_fitting_confirmation/study/report.json": "923ff63b4beed32fe75fc83733250ac71ac2600d58df088df6b760addce7f1f4",
+    "results/full_pool_fitting_confirmation/study/audit.json": "9bf53c8d427ef7523ca8e78a8a0cb8754cf4d14c015cc77eee4265c5524f9df6",
+    "results/full_pool_fitting_confirmation/study/pools.pt": "4e18c1cdbf2b1133145f8f7a2427b6bda3b84eef9d6cf9a252ca9d4389490c22",
+    "results/fitting_direction/3473_lbfgs_trace.pt": "c859da6a1746ac98d5b6a350054148d8fff35f0470554b612028fc8cd70c6687",
+    "results/fitting_direction/3473_negative_gradient_trace.pt": "7310deb6367aad94dd9374ae0a8128c928fb6da9e8bc8a29c07d5902a860bbcf",
+    "results/fitting_direction/3479_lbfgs_trace.pt": "ee16a3a4581c1687b913324a2c4ffea1130dfe90ba072563d737d1dc32dda67c",
+    "results/fitting_direction/3479_negative_gradient_trace.pt": "44ef4573aabefe5b93dfb6c30664a75267798887ac71ceb7adabba75ccf045b1",
+    "results/fitting_direction/3481_lbfgs_trace.pt": "8a48395bd96cf1cb4424de57846903b70198c41f1b396deb94ee3d4fb5d4a2ec",
+    "results/fitting_direction/3481_negative_gradient_trace.pt": "4f0fcbd76dbed7f46e9ad3ca4dadb80a27e33aea2076e291fbd01130cbda79be",
+    "experiments/review_fitting_transport.py": "421801fb81267d73586a85a87db38b18476a2ae22606f1c43d377093ff1a7ccf",
+    "tests/test_fitting_transport.py": "54eb2e070e09025c3b44fb2907bfb9b9ed7dcb9453f431467e3310557aeb3d8c",
+    "docs/protocols/fitting-transport-review.md": "67d3bda895858ab72ad7bb1a0cb6cc516b2aae9496e209e20e3de8e4936674f0",
+    "results/fitting_direction/report.json": "1b3801e17420feacc8d4f95826cc6e35c895e49b0a67257f08327cfb31ddb252",
+    "results/fitting_direction/audit.json": "cf12363299cb1380f85a9c688a09a50bbd5999a703c0aa9581ba5b42950f6a9b",
+    "results/fitting_direction/lock.json": "0795e27b0120c46d880aed7172356bd84235486abac36fcc255b741fcaeae284",
+    "results/fitting_transport_review_preflight.json": "4e5dfab131fc2bec8d93b3ab03a46837ec10162a18dd16cb34a07ffa13d7abf2"
+  },
+  "runs": [
+    {
+      "seed": 3473,
+      "arm": "lbfgs",
+      "source_step": 12000,
+      "closure_evaluations": 127,
+      "optimizer_calls": 63,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3473_lbfgs_0.pt",
+          "sha256": "4c8b497fdd3bae733979ad2e02fcaed4ebacab45b1b1655d589a9d233a77cf69",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 4.531672940986049e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 4.531672940986049e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00147736625877996,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00147736625877996,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03421761659230505,
+                  "accuracy": 0.9927978515625
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03421761659230505,
+                  "accuracy": 0.9927978515625
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 621,
+                "accuracy": 0.80859375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17428416097055247
+        },
+        {
+          "step": 33,
+          "checkpoint": "results/fitting_direction/3473_lbfgs_33.pt",
+          "sha256": "4d41038ae62a8391c30ba95049deb3067bacbdf8453f32074f756ca2c23e8795",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.1574403647829049e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.1574403647829049e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014566005026501018,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014566005026501018,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.02795776459435621,
+                  "accuracy": 0.9961751302083334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.02795776459435621,
+                  "accuracy": 0.9961751302083334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 686,
+                "accuracy": 0.8932291666666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17620288653320026
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/fitting_direction/3473_lbfgs_65.pt",
+          "sha256": "9ec9334ac6c67c77d968bd55a0a975fe67147887a9578d0909e1e03e7035faa6",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.803923268470203e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.803923268470203e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.000866295594959354,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.000866295594959354,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.017458581872184454,
+                  "accuracy": 0.9993489583333334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.017458581872184454,
+                  "accuracy": 0.9993489583333334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 754,
+                "accuracy": 0.9817708333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17552883390802104
+        },
+        {
+          "step": 97,
+          "checkpoint": "results/fitting_direction/3473_lbfgs_97.pt",
+          "sha256": "6e6ae9266bf6efeed06e183e16e6f55e6d9200c60688f7592fad3656932cdb06",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 9.867416732603728e-06,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 9.867416732603728e-06,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0003744916143968015,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0003744916143968015,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.007398429174672354,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.007398429174672354,
+                  "accuracy": 1.0
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "fit": true,
+          "perfect": true,
+          "beta": 0.16806446333929712
+        },
+        {
+          "step": 127,
+          "checkpoint": "results/fitting_direction/3473_lbfgs_127.pt",
+          "sha256": "23a888560611986728ce032ba4634fe612a80b74261059d7615b1a80cb11b559",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 7.984065171410054e-06,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 7.984065171410054e-06,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 9.795603665280367e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 9.795603665280367e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0016391150874932303,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0016391150874932303,
+                  "accuracy": 1.0
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "fit": true,
+          "perfect": true,
+          "beta": 0.1631072325053013
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3473_lbfgs_127.pt",
+      "trace": "results/fitting_direction/3473_lbfgs_trace.pt",
+      "trace_sha256": "c859da6a1746ac98d5b6a350054148d8fff35f0470554b612028fc8cd70c6687",
+      "seconds": 87.74047709998558,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3473,
+      "arm": "negative_gradient",
+      "source_step": 12000,
+      "closure_evaluations": 128,
+      "optimizer_calls": 39,
+      "histories": 393216,
+      "input_events": 12582912,
+      "answer_targets": 5701632,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3473_negative_gradient_0.pt",
+          "sha256": "59fd456824bcdcccd253fa054fdf77faf6b4c44575b966ddbb3e0f7f167a8ba0",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 4.531672940986049e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 4.531672940986049e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00147736625877996,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00147736625877996,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03421761659230505,
+                  "accuracy": 0.9927978515625
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03421761659230505,
+                  "accuracy": 0.9927978515625
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 621,
+                "accuracy": 0.80859375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17428416097055247
+        },
+        {
+          "step": 35,
+          "checkpoint": "results/fitting_direction/3473_negative_gradient_35.pt",
+          "sha256": "ad13355813e2cb4d6dd844c58705394df4ac71d74ba311cb09fc9594d8d2eec2",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.1273308412896e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.1273308412896e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014294012559083087,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014294012559083087,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0319383880155524,
+                  "accuracy": 0.9937337239583334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0319383880155524,
+                  "accuracy": 0.9937337239583334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 625,
+                "accuracy": 0.8138020833333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17616689421340448
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/fitting_direction/3473_negative_gradient_65.pt",
+          "sha256": "3a74292d8b95d618f9cc6cf0375eac8e4c5a29aee9dd966242dc3c9e7f84cfcc",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.5725716031203492e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.5725716031203492e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00147334489218362,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00147334489218362,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03148115147013089,
+                  "accuracy": 0.9941813151041666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03148115147013089,
+                  "accuracy": 0.9941813151041666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 631,
+                "accuracy": 0.8216145833333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17655320007673114
+        },
+        {
+          "step": 98,
+          "checkpoint": "results/fitting_direction/3473_negative_gradient_98.pt",
+          "sha256": "b9d49dc4fe1d61a680d9815b725d29ca8c472dbbb3c26fb8774f76d9f3ebdba3",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.6095610783378722e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.6095610783378722e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0014644751082543283,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0014644751082543283,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.031087723725304568,
+                  "accuracy": 0.9945068359375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.031087723725304568,
+                  "accuracy": 0.9945068359375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 640,
+                "accuracy": 0.8333333333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.176535655644345
+        },
+        {
+          "step": 128,
+          "checkpoint": "results/fitting_direction/3473_negative_gradient_128.pt",
+          "sha256": "512c2953056f8d1a5749e12f6330eeb7f5dcc021f3beb46a97dee5983c672bc0",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.3500261262833175e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.3500261262833175e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00148097592897527,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00148097592897527,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.030708719906489757,
+                  "accuracy": 0.9950358072916666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.030708719906489757,
+                  "accuracy": 0.9950358072916666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 652,
+                "accuracy": 0.8489583333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17666519160233093
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3473_negative_gradient_128.pt",
+      "trace": "results/fitting_direction/3473_negative_gradient_trace.pt",
+      "trace_sha256": "7310deb6367aad94dd9374ae0a8128c928fb6da9e8bc8a29c07d5902a860bbcf",
+      "seconds": 83.22281869998551,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3479,
+      "arm": "lbfgs",
+      "source_step": 12000,
+      "closure_evaluations": 128,
+      "optimizer_calls": 63,
+      "histories": 393216,
+      "input_events": 12582912,
+      "answer_targets": 5701632,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3479_lbfgs_0.pt",
+          "sha256": "4ace824bc446a443ca80708deaa0b1c1c7f1131fb26aa4027e368c7384cc8920",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.7862935396470826e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.7862935396470826e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.002118958510253292,
+                  "accuracy": 0.9996744791666666
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.002118958510253292,
+                  "accuracy": 0.9996744791666666
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 764,
+                "accuracy": 0.9947916666666666
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04203395326425418,
+                  "accuracy": 0.989990234375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04203395326425418,
+                  "accuracy": 0.989990234375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 570,
+                "accuracy": 0.7421875
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.16376614765563655
+        },
+        {
+          "step": 32,
+          "checkpoint": "results/fitting_direction/3479_lbfgs_32.pt",
+          "sha256": "27148222f4423b1030d6e15a490a19c529148c53d40c1e347b83863bcb3ee831",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.0550466670378006e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.0550466670378006e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0018112495250705496,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0018112495250705496,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.0365012070129856,
+                  "accuracy": 0.9920654296875
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.0365012070129856,
+                  "accuracy": 0.9920654296875
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 592,
+                "accuracy": 0.7708333333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16707374576074396
+        },
+        {
+          "step": 64,
+          "checkpoint": "results/fitting_direction/3479_lbfgs_64.pt",
+          "sha256": "dd32d3e5f77ca51996efc5dde3bd2b3c645cd7c9496e085449b1c64012036122",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.1805230578505147e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.1805230578505147e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0013468606521102194,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0013468606521102194,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.028453916222809322,
+                  "accuracy": 0.9952392578125
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.028453916222809322,
+                  "accuracy": 0.9952392578125
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 669,
+                "accuracy": 0.87109375
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1622797806685753
+        },
+        {
+          "step": 96,
+          "checkpoint": "results/fitting_direction/3479_lbfgs_96.pt",
+          "sha256": "59a0aa38d14322d55c77b38c30f158afbf53c5332cbe248c023ea4c1a7f14ef4",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.206601849930458e-06,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.206601849930458e-06,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.001066675628845382,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.001066675628845382,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.017968819782177348,
+                  "accuracy": 0.9980875651041666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.017968819782177348,
+                  "accuracy": 0.9980875651041666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 721,
+                "accuracy": 0.9388020833333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.15542261449108527
+        },
+        {
+          "step": 128,
+          "checkpoint": "results/fitting_direction/3479_lbfgs_128.pt",
+          "sha256": "6f381186dc88e17423542590e4097b697f24ca96417ddd0b50c194ca52efc6e2",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 7.648269743122106e-11,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 7.648269743122106e-11,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00032032468160079786,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00032032468160079786,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.007988188917961445,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.007988188917961445,
+                  "accuracy": 1.0
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "fit": true,
+          "perfect": true,
+          "beta": 0.16088494540519452
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3479_lbfgs_128.pt",
+      "trace": "results/fitting_direction/3479_lbfgs_trace.pt",
+      "trace_sha256": "ee16a3a4581c1687b913324a2c4ffea1130dfe90ba072563d737d1dc32dda67c",
+      "seconds": 87.50629970000591,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3479,
+      "arm": "negative_gradient",
+      "source_step": 12000,
+      "closure_evaluations": 128,
+      "optimizer_calls": 39,
+      "histories": 393216,
+      "input_events": 12582912,
+      "answer_targets": 5701632,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3479_negative_gradient_0.pt",
+          "sha256": "4cb6260576cae169600af29e5641db3038eadd56cf051e6f0a26695136fa13ca",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.7862935396470826e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.7862935396470826e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.002118958510253292,
+                  "accuracy": 0.9996744791666666
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.002118958510253292,
+                  "accuracy": 0.9996744791666666
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 764,
+                "accuracy": 0.9947916666666666
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04203395326425418,
+                  "accuracy": 0.989990234375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04203395326425418,
+                  "accuracy": 0.989990234375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 570,
+                "accuracy": 0.7421875
+              }
+            }
+          },
+          "fit": false,
+          "perfect": false,
+          "beta": 0.16376614765563655
+        },
+        {
+          "step": 35,
+          "checkpoint": "results/fitting_direction/3479_negative_gradient_35.pt",
+          "sha256": "a989f0142d4a82f620feade4bfa25426754d854721cd8c7df6b6dc49a2fcd2bd",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.3145265144127207e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.3145265144127207e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0017316634515877928,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0017316634515877928,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03945229401325681,
+                  "accuracy": 0.9927978515625
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03945229401325681,
+                  "accuracy": 0.9927978515625
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 610,
+                "accuracy": 0.7942708333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16592175272416484
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/fitting_direction/3479_negative_gradient_65.pt",
+          "sha256": "e2a3d14bb158836f1d7c73eb7c3d5b81948005afbb024f8de2e3cdf2b970c9de",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.3035687971197875e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.3035687971197875e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0017169528101540616,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0017169528101540616,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03911118919517428,
+                  "accuracy": 0.9925130208333334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03911118919517428,
+                  "accuracy": 0.9925130208333334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 599,
+                "accuracy": 0.7799479166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1665262932228918
+        },
+        {
+          "step": 98,
+          "checkpoint": "results/fitting_direction/3479_negative_gradient_98.pt",
+          "sha256": "e1bffc457f16d573fad4cf531eab2e4d707b74a2845da9f5f18312546a473167",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.2802179517364264e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.2802179517364264e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0017242832453872737,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0017242832453872737,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.038773080485593296,
+                  "accuracy": 0.9925537109375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.038773080485593296,
+                  "accuracy": 0.9925537109375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 609,
+                "accuracy": 0.79296875
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16655956871270497
+        },
+        {
+          "step": 128,
+          "checkpoint": "results/fitting_direction/3479_negative_gradient_128.pt",
+          "sha256": "bdb296f2d0fb061993eece1dd05fd4f7151f41a9946924fb33c65bb21f1fa2ed",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.3654448872087392e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.3654448872087392e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0017309072622354827,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0017309072622354827,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.038453666633932355,
+                  "accuracy": 0.9928385416666666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.038453666633932355,
+                  "accuracy": 0.9928385416666666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 605,
+                "accuracy": 0.7877604166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16666424187495682
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3479_negative_gradient_128.pt",
+      "trace": "results/fitting_direction/3479_negative_gradient_trace.pt",
+      "trace_sha256": "44ef4573aabefe5b93dfb6c30664a75267798887ac71ceb7adabba75ccf045b1",
+      "seconds": 84.4847429000074,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3481,
+      "arm": "lbfgs",
+      "source_step": 12000,
+      "closure_evaluations": 127,
+      "optimizer_calls": 63,
+      "histories": 390144,
+      "input_events": 12484608,
+      "answer_targets": 5657088,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3481_lbfgs_0.pt",
+          "sha256": "0735f12b1c334102454c2380db18d49336fb91a75cf93cb544ea6f5e19496c30",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.4009564211015083e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.4009564211015083e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011516020729474767,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011516020729474767,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.044904477687540495,
+                  "accuracy": 0.9906412760416666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.044904477687540495,
+                  "accuracy": 0.9906412760416666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 568,
+                "accuracy": 0.7395833333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16842269897786133
+        },
+        {
+          "step": 33,
+          "checkpoint": "results/fitting_direction/3481_lbfgs_33.pt",
+          "sha256": "55f41a708544423baec843bf9ecf2ac7ba53acafc40a0fb2a9fa38b6bba02a38",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 5.998086017351156e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 5.998086017351156e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0009820771015419136,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0009820771015419136,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.03801572164143033,
+                  "accuracy": 0.9923909505208334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.03801572164143033,
+                  "accuracy": 0.9923909505208334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 600,
+                "accuracy": 0.78125
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.18443980706556273
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/fitting_direction/3481_lbfgs_65.pt",
+          "sha256": "f9b4d9ae045734714f917e36b9b2f06250d4e6de00b85437e17da05510fada94",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 3.94206206810171e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 3.94206206810171e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0009384761431924863,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0009384761431924863,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.030798017413030263,
+                  "accuracy": 0.9966634114583334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.030798017413030263,
+                  "accuracy": 0.9966634114583334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 686,
+                "accuracy": 0.8932291666666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.18042441270016718
+        },
+        {
+          "step": 97,
+          "checkpoint": "results/fitting_direction/3481_lbfgs_97.pt",
+          "sha256": "07afc16d55d18c1553e7407a02e8dbda5007fbd745f0c01be01324b99ae445ce",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.551551544088106e-06,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.551551544088106e-06,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.00068919904166152,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.00068919904166152,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.022615993331448644,
+                  "accuracy": 0.9972737630208334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.022615993331448644,
+                  "accuracy": 0.9972737630208334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 713,
+                "accuracy": 0.9283854166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17152122032481748
+        },
+        {
+          "step": 127,
+          "checkpoint": "results/fitting_direction/3481_lbfgs_127.pt",
+          "sha256": "ed2b93c20d8acba9ffe80a970ef9ce79a32be2bccf26e406d5617077da8bd039",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.2003497250622839e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.2003497250622839e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0004295856258403378,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0004295856258403378,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.013710825909091546,
+                  "accuracy": 0.999755859375
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.013710825909091546,
+                  "accuracy": 0.999755859375
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 762,
+                "accuracy": 0.9921875
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1692349132467879
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3481_lbfgs_127.pt",
+      "trace": "results/fitting_direction/3481_lbfgs_trace.pt",
+      "trace_sha256": "8a48395bd96cf1cb4424de57846903b70198c41f1b396deb94ee3d4fb5d4a2ec",
+      "seconds": 87.87987069998053,
+      "stop_reason": "closure_budget_remaining_below_two"
+    },
+    {
+      "seed": 3481,
+      "arm": "negative_gradient",
+      "source_step": 12000,
+      "closure_evaluations": 128,
+      "optimizer_calls": 39,
+      "histories": 393216,
+      "input_events": 12582912,
+      "answer_targets": 5701632,
+      "snapshots": [
+        {
+          "step": 0,
+          "checkpoint": "results/fitting_direction/3481_negative_gradient_0.pt",
+          "sha256": "ec99e7ee3ad0abec71a76319d0df89d5646f830794ba7ef378f85eff486c286b",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.4009564211015083e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.4009564211015083e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011516020729474767,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011516020729474767,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.044904477687540495,
+                  "accuracy": 0.9906412760416666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.044904477687540495,
+                  "accuracy": 0.9906412760416666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 568,
+                "accuracy": 0.7395833333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.16842269897786133
+        },
+        {
+          "step": 32,
+          "checkpoint": "results/fitting_direction/3481_negative_gradient_32.pt",
+          "sha256": "8c4509c03af42c671ff0d93fc303fa96deef13e926b3d7709bb5d3e9433d63ad",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.3484589715983484e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.3484589715983484e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011495694986594842,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011495694986594842,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.042672427904036074,
+                  "accuracy": 0.9914957682291666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.042672427904036074,
+                  "accuracy": 0.9914957682291666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 580,
+                "accuracy": 0.7552083333333334
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1718331781571865
+        },
+        {
+          "step": 65,
+          "checkpoint": "results/fitting_direction/3481_negative_gradient_65.pt",
+          "sha256": "5d675fb53b95da316d38ba50300cdc1f103cf3fb7234a3921f6aa0734dd6ab82",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 1.8275596319764493e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 1.8275596319764493e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011455486525411799,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011455486525411799,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04198878247547109,
+                  "accuracy": 0.9914143880208334
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04198878247547109,
+                  "accuracy": 0.9914143880208334
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 581,
+                "accuracy": 0.7565104166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.1738912739479561
+        },
+        {
+          "step": 98,
+          "checkpoint": "results/fitting_direction/3481_negative_gradient_98.pt",
+          "sha256": "51a218f09b2cc343b2ed531ea055bfbcac5efc555a5b44a3cce3db20d8b0ed91",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.3375606379525313e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.3375606379525313e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0011067674777026258,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0011067674777026258,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04139562784511513,
+                  "accuracy": 0.9921061197916666
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04139562784511513,
+                  "accuracy": 0.9921061197916666
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 593,
+                "accuracy": 0.7721354166666666
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17495423500286278
+        },
+        {
+          "step": 128,
+          "checkpoint": "results/fitting_direction/3481_negative_gradient_128.pt",
+          "sha256": "2fbf23ee918f3976b4e3f98bd2f163910986a214752a0e82bc0e2f19ef903df2",
+          "training": {
+            "2": {
+              "groups": {
+                "all": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 1536,
+                  "ce": 0.0,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "8": {
+              "groups": {
+                "all": {
+                  "count": 6144,
+                  "ce": 2.9273367333866997e-05,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 6144,
+                  "ce": 2.9273367333866997e-05,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "16": {
+              "groups": {
+                "all": {
+                  "count": 12288,
+                  "ce": 0.0010691395085751095,
+                  "accuracy": 1.0
+                },
+                "unique": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                },
+                "repeat": {
+                  "count": 12288,
+                  "ce": 0.0010691395085751095,
+                  "accuracy": 1.0
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            },
+            "32": {
+              "groups": {
+                "all": {
+                  "count": 24576,
+                  "ce": 0.04084895346312061,
+                  "accuracy": 0.99169921875
+                },
+                "unique": {
+                  "count": 24576,
+                  "ce": 0.04084895346312061,
+                  "accuracy": 0.99169921875
+                },
+                "repeat": {
+                  "count": 0,
+                  "ce": null,
+                  "accuracy": null
+                }
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 588,
+                "accuracy": 0.765625
+              }
+            }
+          },
+          "fit": true,
+          "perfect": false,
+          "beta": 0.17641871357213026
+        }
+      ],
+      "final_checkpoint": "results/fitting_direction/3481_negative_gradient_128.pt",
+      "trace": "results/fitting_direction/3481_negative_gradient_trace.pt",
+      "trace_sha256": "4f0fcbd76dbed7f46e9ad3ca4dadb80a27e33aea2076e291fbd01130cbda79be",
+      "seconds": 83.5394392000162,
+      "stop_reason": "closure_budget_remaining_below_two"
+    }
+  ],
+  "fixture": false,
+  "torch": "2.11.0+cu128"
+}

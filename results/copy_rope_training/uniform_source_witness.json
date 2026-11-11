@@ -1,0 +1,1773 @@
+{
+  "passed": true,
+  "design": {
+    "posthoc": true,
+    "training_updates": 0,
+    "seeds": [
+      3119,
+      3121,
+      3137
+    ],
+    "symbols": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_length_pairs": [
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "prefix": "BOS followed by short_length copies of symbol",
+    "tolerance": 1e-09,
+    "labels": "EOS for short source, symbol for long source",
+    "scope": "Uniform content sources, this no-additive-position encoder-decoder variant; not aggregate-failure attribution"
+  },
+  "cells_checked": 48,
+  "max_rope_logit_difference": 4.804490139065365e-14,
+  "max_reference_error": 5.950795411990839e-14,
+  "sinusoidal_distinguishable_cells": 48,
+  "rope_both_correct_cells": 0,
+  "source_sha256": "8862a73aa0510a4cd97c105b7d213e90e2bca17b0ea028ad82283d5cd7f49e15",
+  "report_sha256": "8d52ec87c2d0d5edb4c7efacfc1998606fee7d347f95592ee624e3a839f88f20",
+  "cells": [
+    {
+      "seed": 3119,
+      "symbol": 3,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 16.69975519775231,
+          "reference_error": 7.664441997734528e-15,
+          "choices": [
+            2,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.1546319456101628e-14,
+          "reference_error": 7.105427357601002e-15,
+          "choices": [
+            3,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 3,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.41308256684947064,
+          "reference_error": 2.886579864025407e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 7.993605777301127e-15,
+          "reference_error": 1.0658141036401503e-14,
+          "choices": [
+            3,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 4,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 14.085502221455679,
+          "reference_error": 2.1316282072803006e-14,
+          "choices": [
+            2,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 7.993605777301127e-15,
+          "reference_error": 6.8833827526759706e-15,
+          "choices": [
+            4,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 4,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.7383785396807596,
+          "reference_error": 1.5987211554602254e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 5,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 15.150414484623358,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            5
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 5.495603971894525e-15,
+          "reference_error": 1.2434497875801753e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 5,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.6631843784883689,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 6,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 10.951749783654144,
+          "reference_error": 1.4432899320127035e-14,
+          "choices": [
+            2,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 7.549516567451064e-15,
+          "reference_error": 7.549516567451064e-15,
+          "choices": [
+            6,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 6,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 2.7307559936541743,
+          "reference_error": 3.197442310920451e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.0658141036401503e-14,
+          "reference_error": 9.992007221626409e-15,
+          "choices": [
+            6,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 7,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 11.966197963712006,
+          "reference_error": 1.532107773982716e-14,
+          "choices": [
+            2,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 9.769962616701378e-15,
+          "reference_error": 1.1546319456101628e-14,
+          "choices": [
+            7,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 7,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.2781106442192538,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 4.440892098500626e-15,
+          "reference_error": 1.5987211554602254e-14,
+          "choices": [
+            7,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 8,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 9.116601589306354,
+          "reference_error": 4.263256414560601e-14,
+          "choices": [
+            2,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 2.6645352591003757e-15,
+          "reference_error": 1.0658141036401503e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 8,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.9525960852743358,
+          "reference_error": 2.042810365310288e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.7763568394002505e-15,
+          "reference_error": 1.0658141036401503e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 9,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 12.546402066933162,
+          "reference_error": 8.992806499463768e-15,
+          "choices": [
+            2,
+            9
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 7.105427357601002e-15,
+          "reference_error": 1.4210854715202004e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 9,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.8367308923296952,
+          "reference_error": 5.773159728050814e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 1.3322676295501878e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 10,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 11.870303420029202,
+          "reference_error": 5.417888360170764e-14,
+          "choices": [
+            2,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.3322676295501878e-14,
+          "reference_error": 1.2795320358804929e-14,
+          "choices": [
+            10,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3119,
+      "symbol": 10,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.23641975682437577,
+          "reference_error": 4.884981308350689e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 3,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 14.25429720774261,
+          "reference_error": 1.4210854715202004e-14,
+          "choices": [
+            2,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 4.6074255521944e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            3,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 3,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.2414699042676582,
+          "reference_error": 1.509903313490213e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 2.6645352591003757e-15,
+          "reference_error": 2.6645352591003757e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 4,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 13.599047499011249,
+          "reference_error": 5.950795411990839e-14,
+          "choices": [
+            2,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.1102230246251565e-14,
+          "reference_error": 7.993605777301127e-15,
+          "choices": [
+            4,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 4,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 6.704302360787496,
+          "reference_error": 2.5757174171303632e-14,
+          "choices": [
+            4,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 5,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 13.363929571723064,
+          "reference_error": 1.6653345369377348e-14,
+          "choices": [
+            2,
+            5
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 4.804490139065365e-14,
+          "reference_error": 4.551914400963142e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 5,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.9969616713274387,
+          "reference_error": 3.552713678800501e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 6,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 9.113534911930842,
+          "reference_error": 1.509903313490213e-14,
+          "choices": [
+            2,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 3.6637359812630166e-15,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            6,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 6,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.728529401378519,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 7,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 7.470002441732159,
+          "reference_error": 7.549516567451064e-15,
+          "choices": [
+            2,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 3.552713678800501e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            7,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 7,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.3286334326836151,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 4.440892098500626e-15,
+          "reference_error": 5.773159728050814e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 8,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 11.532440038573855,
+          "reference_error": 4.707345624410664e-14,
+          "choices": [
+            2,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 3.552713678800501e-15,
+          "choices": [
+            8,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 8,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 2.824304810468777,
+          "reference_error": 7.105427357601002e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 2.6645352591003757e-15,
+          "reference_error": 2.6645352591003757e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 9,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 6.0017725596937535,
+          "reference_error": 1.2434497875801753e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.509903313490213e-14,
+          "reference_error": 1.1546319456101628e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 9,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.28660531370942177,
+          "reference_error": 6.661338147750939e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 6.661338147750939e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 10,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 4.241229353793458,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            2,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 5.773159728050814e-15,
+          "reference_error": 4.218847493575595e-15,
+          "choices": [
+            10,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3121,
+      "symbol": 10,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.788172105252683,
+          "reference_error": 8.43769498715119e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 3,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 9.56403935677835,
+          "reference_error": 1.2434497875801753e-14,
+          "choices": [
+            2,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.3322676295501878e-14,
+          "reference_error": 1.509903313490213e-14,
+          "choices": [
+            3,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 3,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 5.776593440262227,
+          "reference_error": 1.9984014443252818e-14,
+          "choices": [
+            2,
+            3
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.199040866595169e-14,
+          "reference_error": 2.9753977059954195e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            3
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 4,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 11.773968104121806,
+          "reference_error": 8.43769498715119e-15,
+          "choices": [
+            2,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 3.9968028886505635e-14,
+          "reference_error": 3.197442310920451e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 4,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 2.1690603360030707,
+          "reference_error": 8.881784197001252e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.554312234475219e-14,
+          "reference_error": 2.220446049250313e-14,
+          "choices": [
+            4,
+            4
+          ],
+          "incompatible_labels": [
+            2,
+            4
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 5,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 10.068165584707168,
+          "reference_error": 6.217248937900877e-15,
+          "choices": [
+            2,
+            5
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.9595436384634013e-14,
+          "reference_error": 2.1316282072803006e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 5,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.1960247783782716,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.1546319456101628e-14,
+          "reference_error": 1.1546319456101628e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            5
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 6,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 14.305111042756021,
+          "reference_error": 3.5083047578154947e-14,
+          "choices": [
+            2,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 5.329070518200751e-15,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            6,
+            6
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 6,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 0.2908915389677782,
+          "reference_error": 1.1546319456101628e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.3322676295501878e-14,
+          "reference_error": 9.769962616701378e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            6
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 7,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 10.395964567877508,
+          "reference_error": 4.440892098500626e-15,
+          "choices": [
+            2,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.509903313490213e-14,
+          "reference_error": 1.3322676295501878e-14,
+          "choices": [
+            7,
+            7
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 7,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 2.481123314958819,
+          "reference_error": 5.329070518200751e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 1.1546319456101628e-14,
+          "reference_error": 1.5987211554602254e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            7
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 8,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 5.340686695990572,
+          "reference_error": 9.769962616701378e-15,
+          "choices": [
+            8,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 7.105427357601002e-15,
+          "reference_error": 6.661338147750939e-15,
+          "choices": [
+            8,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 8,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.9352720027488468,
+          "reference_error": 1.687538997430238e-14,
+          "choices": [
+            8,
+            8
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 7.105427357601002e-15,
+          "reference_error": 1.1102230246251565e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            8
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 9,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 11.811125710331076,
+          "reference_error": 1.6209256159527285e-14,
+          "choices": [
+            2,
+            9
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.865174681370263e-14,
+          "reference_error": 2.4424906541753444e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 9,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 1.085201556252831,
+          "reference_error": 8.215650382226158e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        },
+        "rope": {
+          "logit_difference": 3.1086244689504383e-15,
+          "reference_error": 1.3322676295501878e-14,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            9
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 10,
+      "source_lengths": [
+        3,
+        4
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 7.654135111933281,
+          "reference_error": 7.105427357601002e-15,
+          "choices": [
+            2,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.6542323066914832e-14,
+          "reference_error": 7.993605777301127e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    },
+    {
+      "seed": 3137,
+      "symbol": 10,
+      "source_lengths": [
+        6,
+        8
+      ],
+      "results": {
+        "sinusoidal": {
+          "logit_difference": 4.980689897629391,
+          "reference_error": 2.6645352591003757e-14,
+          "choices": [
+            2,
+            10
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": true
+        },
+        "rope": {
+          "logit_difference": 1.9984014443252818e-15,
+          "reference_error": 7.993605777301127e-15,
+          "choices": [
+            2,
+            2
+          ],
+          "incompatible_labels": [
+            2,
+            10
+          ],
+          "both_correct": false
+        }
+      }
+    }
+  ]
+}

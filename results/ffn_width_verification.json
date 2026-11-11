@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "ff32": {
+      "output": 0.0,
+      "gradient": 0.0,
+      "causal": 0.0
+    },
+    "ff64": {
+      "output": 4.440892098500626e-16,
+      "gradient": 3.552713678800501e-15,
+      "causal": 0.0
+    }
+  },
+  "containment_error": 4.440892098500626e-16,
+  "parameters": [
+    5088,
+    7200
+  ],
+  "shared_initial_seeds": [
+    1201,
+    1217,
+    1237,
+    1259,
+    1277
+  ],
+  "source_sha256": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+  "verification_sha256": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95"
+}

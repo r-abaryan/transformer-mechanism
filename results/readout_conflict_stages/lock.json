@@ -1,0 +1,133 @@
+{
+  "files": {
+    "experiments/readout_conflict_stages.py": "96c2742da6d886e5f55d8a31533c61a5618e2523f2a5cc9077cfb0e836bc1cd6",
+    "experiments/audit_readout_conflict_stages.py": "080b7225af0ca240e33312fe64497bcfd1a83241f6aa66d5dba2de6aa1e50ec5",
+    "tests/test_readout_conflict_stages.py": "4403007efe653f27076da9b2fdf95717770b3c1196982c110c77649aac8875df",
+    "docs/protocols/readout-conflict-training-stages.md": "ea8308855b001714287ccb4a1fa5f1cc198a22b7da320230d7f9b2b6139cc0bd",
+    "experiments/shared_readout_feasibility.py": "2f7f637b96858ecc66b72f838de9ea9ebb6a9a7a7f88904d0223d12417158bfe",
+    "experiments/audit_shared_readout_feasibility.py": "a4350357265e697ba79d05419cea080dacf2e998db0fe98dec45ca486e1ba6b8",
+    "experiments/shared_readout_recovery.py": "2709b9fb5eb5b32817e20d14c7e81b78a0aeda54cfb457a75aaea2b29fe3d94f",
+    "experiments/audit_shared_readout_recovery.py": "0b97ec8246520f0ec598808df441bdf4be6cb6bac0c41fa7f4a62466daa69bc1",
+    "experiments/query_feedback_training.py": "89c5a1da91d396cbd7a399dce7fa1a94590331695b1ecc425209b4c14f241cd9",
+    "experiments/association_load.py": "cd19375d9262c9f7636cd4f93976f36d8f1499bdd95c2f7103426dafea1aadb0",
+    "requirements-analysis.txt": "ea3a441d51217d0d87c36ecba76fa02ab784dbcc778d70412a201527f00ae3c0",
+    "results/query_feedback_training/3461_exhaustive_0.pt": "a8f779e3970e40b83e1a3f887f5d3be7db063a98339e3881cce1777727e6d044",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_training/3461_exhaustive_3000.pt": "29a6dd90503cde3e7585300f047c183af737af68a28f837616ff87e58d1a7c7f",
+    "results/query_feedback_continuation/3461_exhaustive_12000.pt": "3d9822a61836819b171391765a2b98e119d638a900c10c116942e1a667531a7b",
+    "results/query_feedback_training/3463_exhaustive_0.pt": "a6798227ebaa2574dd521e0274ef5169fade12e751f771b57b0b7f7e97bc0892",
+    "results/query_feedback_training/3463_exhaustive_3000.pt": "cacd15cd2dedb622662c16527f4c4514587ef60676994f6a8c74a031cd5830a2",
+    "results/query_feedback_continuation/3463_exhaustive_12000.pt": "f549e30d08eec53ac1f53e04fd84db89fff04462ebca34aa48706131c221d19a",
+    "results/readout_conflict_stages_preflight.json": "7a900312e456561f9226fdfaf7a11d4757248598b5dd2f8342c86adde50714aa",
+    "results/query_feedback_training/lock.json": "c3a50494a810e4e72bcfa62fca5bf52b1beaa6a9c1bf3616cd5595906afeebec",
+    "results/query_feedback_training/report.json": "c5a88c1d1d711632c631f94ac6f905416784305a873645a039ec4f79ce4d6cf8",
+    "results/query_feedback_training/audit.json": "11e229639f59dfbf5a3057282a94efc1e927f2b563ce5b6a37fda6adf90d80ef",
+    "results/query_feedback_continuation/lock.json": "1417dfdfd436547dd30f74ea32e0282b5f5746cc5333e7279ce3c17f742c9d50",
+    "results/query_feedback_continuation/report.json": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+    "results/query_feedback_continuation/audit.json": "63131bc1585bb65be2af7ee6568f2450fc816ef5cd52cbd324740628ba437628",
+    "results/shared_readout_feasibility/lock.json": "d1f0d38440bd820b0f6859fd6ec55b0f6aaccabfdd667d55b68908b82b6484fe",
+    "results/shared_readout_feasibility/report.json": "0da4c9e66977ee34c39876dc1c351f57746dbce84e7f0bd647af38dacad850fe",
+    "results/shared_readout_feasibility/audit.json": "f2c6e55100235d2915fcfd0560ed8115397304e71f04090b715e56ed722b09d3",
+    "results/shared_readout_recovery/lock.json": "72c756e06bc000e276123ccc9925090b4a35f84fa18f4d1f4147a500adaeb497",
+    "results/shared_readout_recovery/report.json": "2ce66864b094a894902c530a64aa9968cffdfaaf8463ad51f9bcbc20a599e549",
+    "results/shared_readout_recovery/audit.json": "2fe8e293a131d34a64dc6feed1131764108527663f5d8c14a4fd71995063cc29",
+    "results/shared_readout_feasibility/witnesses.pt": "a1a96b07541aa4c5a6b849462244e10274ce9a756741508ee2b878977078c341",
+    "results/shared_readout_feasibility/metrics.csv": "04995958f5237d46644879ea3ff758b7cd82e0142f509681867928b6ef5cd747",
+    "results/shared_readout_recovery/witnesses.pt": "904f95231ac8f32ceec8c575067ac4a4643d3f40368eecb11089d25f3d7d84b2",
+    "results/shared_readout_recovery/metrics.csv": "1547da2dd088a10420a9d81b0b5ce97a8fd25889160b0912e86b2aa63dd11e0c"
+  },
+  "cases": [
+    {
+      "seed": 3461,
+      "step": 0,
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_0.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3461,
+      "step": 3000,
+      "checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3461,
+      "step": 12000,
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": true
+    },
+    {
+      "seed": 3463,
+      "step": 0,
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_0.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3463,
+      "step": 3000,
+      "checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": false
+    },
+    {
+      "seed": 3463,
+      "step": 12000,
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ],
+      "cached": true
+    }
+  ],
+  "fixture": false,
+  "options": {
+    "presolve": true,
+    "primal_feasibility_tolerance": 1e-09,
+    "dual_feasibility_tolerance": 1e-09,
+    "maxiter": 100000,
+    "time_limit": 60.0,
+    "disp": true
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128"
+  }
+}

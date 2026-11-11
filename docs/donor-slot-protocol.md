@@ -1,0 +1,9 @@
+# Donor slot versus answer control
+
+Exploratory follow-up on the opened position-training test set. Use all ten frozen checkpoints, +4 donors and +8 recipients. No training, architecture change or threshold-based success claim.
+
+Cross same/different donor target slot with same/different donor answer. For every recipient and each of four conditions, choose one donor from another whole mapping. Generator seed 20261222; sample an eligible target rank (uniformly among the two other ranks when different), then an eligible answer label (uniformly among the five other labels when different), then a row with those attributes, rejecting its own mapping. Use identical saved donor indices for every model. Do not select donors using predictions. Other donor content is uncontrolled; this is a stratified diagnostic, not an isolated intervention on one donor token.
+
+Replace block-2 Q and K (all rows, both heads) with donor +4 tensors. Keep recipient +8 V, residual and all downstream computation. Compare with unchanged +8 and same-example +4 QK references. Record recipient correctness, recipient value at donor target slot, donor-answer agreement, margin, loss, rescue/harm and donor baseline correctness. Also report slot-value agreement restricted to cases where that value differs from the donor answer. This avoids mistaking coincident labels for value transfer.
+
+Save donor indices and hash before model evaluation. Verify mapping exclusion and all four conditions, original and matched-reference metrics against prior reports, sham/reconstruction errors <1e-10, finite outputs and checkpoint/source hashes. Save example-level scores and audit summaries independently from those scores. Dataset orders/queries and repeated donors are dependent. This does not confirm generalization on fresh data or establish a complete retrieval mechanism.

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 425" role="img" aria-labelledby="title desc">
+<title id="title">Full load-32 training accuracy and loss during continued learning</title>
+<desc id="desc">Two seeds, ten measured checkpoints each. Both improve fitting but neither reaches the exact 99 percent gate by step 12000. Lines join measured values.</desc>
+<rect width="1000" height="425" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="#1f2937">
+<text x="35" y="28" font-size="19">More training improves fitting; both stop at the declared cap</text>
+<text x="35" y="51">Full load-32 training pool. Step 3000 is the preserved baseline; lines join saved observations.</text>
+<text x="70" y="77" font-size="16">Accuracy (%)</text>
+<path d="M70,325.000h390" stroke="#e5e7eb"/>
+<text x="31" y="329.000">90</text>
+<path d="M70,278.000h390" stroke="#e5e7eb"/>
+<text x="31" y="282.000">92</text>
+<path d="M70,231.000h390" stroke="#e5e7eb"/>
+<text x="31" y="235.000">94</text>
+<path d="M70,184.000h390" stroke="#e5e7eb"/>
+<text x="31" y="188.000">96</text>
+<path d="M70,137.000h390" stroke="#e5e7eb"/>
+<text x="31" y="141.000">98</text>
+<path d="M70,90.000h390" stroke="#e5e7eb"/>
+<text x="31" y="94.000">100</text>
+<text x="54.000" y="346">3000</text>
+<text x="184.000" y="346">6000</text>
+<text x="314.000" y="346">9000</text>
+<text x="444.000" y="346">12000</text>
+<text x="203" y="371">Total training updates</text>
+<path d="M70,113.500h390" stroke="#6b7280" stroke-dasharray="5 4"/>
+<text x="280" y="107.500">Exact fit gate: 99%</text>
+<polyline points="70.000,220.428 113.333,194.610 156.667,172.426 200.000,161.525 243.333,144.409 286.667,133.221 330.000,127.292 373.333,118.878 416.667,117.826 460.000,113.523" fill="none" stroke="#0369a1" stroke-width="2"/>
+<circle cx="70.000" cy="220.428" r="2.5" fill="#0369a1"/>
+<circle cx="113.333" cy="194.610" r="2.5" fill="#0369a1"/>
+<circle cx="156.667" cy="172.426" r="2.5" fill="#0369a1"/>
+<circle cx="200.000" cy="161.525" r="2.5" fill="#0369a1"/>
+<circle cx="243.333" cy="144.409" r="2.5" fill="#0369a1"/>
+<circle cx="286.667" cy="133.221" r="2.5" fill="#0369a1"/>
+<circle cx="330.000" cy="127.292" r="2.5" fill="#0369a1"/>
+<circle cx="373.333" cy="118.878" r="2.5" fill="#0369a1"/>
+<circle cx="416.667" cy="117.826" r="2.5" fill="#0369a1"/>
+<circle cx="460.000" cy="113.523" r="2.5" fill="#0369a1"/>
+<polyline points="70.000,209.240 113.333,179.884 156.667,164.202 200.000,155.979 243.333,148.329 286.667,140.871 330.000,135.325 373.333,131.117 416.667,125.667 460.000,123.754" fill="none" stroke="#b45309" stroke-width="2"/>
+<circle cx="70.000" cy="209.240" r="2.5" fill="#b45309"/>
+<circle cx="113.333" cy="179.884" r="2.5" fill="#b45309"/>
+<circle cx="156.667" cy="164.202" r="2.5" fill="#b45309"/>
+<circle cx="200.000" cy="155.979" r="2.5" fill="#b45309"/>
+<circle cx="243.333" cy="148.329" r="2.5" fill="#b45309"/>
+<circle cx="286.667" cy="140.871" r="2.5" fill="#b45309"/>
+<circle cx="330.000" cy="135.325" r="2.5" fill="#b45309"/>
+<circle cx="373.333" cy="131.117" r="2.5" fill="#b45309"/>
+<circle cx="416.667" cy="125.667" r="2.5" fill="#b45309"/>
+<circle cx="460.000" cy="123.754" r="2.5" fill="#b45309"/>
+<text x="550" y="77" font-size="16">Mean cross-entropy</text>
+<path d="M550,325.000h390" stroke="#e5e7eb"/>
+<text x="511" y="329.000">0</text>
+<path d="M550,271.591h390" stroke="#e5e7eb"/>
+<text x="511" y="275.591">0.05</text>
+<path d="M550,218.182h390" stroke="#e5e7eb"/>
+<text x="511" y="222.182">0.1</text>
+<path d="M550,164.773h390" stroke="#e5e7eb"/>
+<text x="511" y="168.773">0.15</text>
+<path d="M550,111.364h390" stroke="#e5e7eb"/>
+<text x="511" y="115.364">0.2</text>
+<text x="534.000" y="346">3000</text>
+<text x="664.000" y="346">6000</text>
+<text x="794.000" y="346">9000</text>
+<text x="924.000" y="346">12000</text>
+<text x="683" y="371">Total training updates</text>
+<polyline points="550.000,119.620 593.333,162.198 636.667,190.659 680.000,212.576 723.333,233.213 766.667,250.922 810.000,262.762 853.333,271.522 896.667,276.229 940.000,281.894" fill="none" stroke="#0369a1" stroke-width="2"/>
+<circle cx="550.000" cy="119.620" r="2.5" fill="#0369a1"/>
+<circle cx="593.333" cy="162.198" r="2.5" fill="#0369a1"/>
+<circle cx="636.667" cy="190.659" r="2.5" fill="#0369a1"/>
+<circle cx="680.000" cy="212.576" r="2.5" fill="#0369a1"/>
+<circle cx="723.333" cy="233.213" r="2.5" fill="#0369a1"/>
+<circle cx="766.667" cy="250.922" r="2.5" fill="#0369a1"/>
+<circle cx="810.000" cy="262.762" r="2.5" fill="#0369a1"/>
+<circle cx="853.333" cy="271.522" r="2.5" fill="#0369a1"/>
+<circle cx="896.667" cy="276.229" r="2.5" fill="#0369a1"/>
+<circle cx="940.000" cy="281.894" r="2.5" fill="#0369a1"/>
+<polyline points="550.000,137.234 593.333,183.011 636.667,208.813 680.000,225.078 723.333,236.401 766.667,245.371 810.000,253.597 853.333,260.739 896.667,267.868 940.000,272.284" fill="none" stroke="#b45309" stroke-width="2"/>
+<circle cx="550.000" cy="137.234" r="2.5" fill="#b45309"/>
+<circle cx="593.333" cy="183.011" r="2.5" fill="#b45309"/>
+<circle cx="636.667" cy="208.813" r="2.5" fill="#b45309"/>
+<circle cx="680.000" cy="225.078" r="2.5" fill="#b45309"/>
+<circle cx="723.333" cy="236.401" r="2.5" fill="#b45309"/>
+<circle cx="766.667" cy="245.371" r="2.5" fill="#b45309"/>
+<circle cx="810.000" cy="253.597" r="2.5" fill="#b45309"/>
+<circle cx="853.333" cy="260.739" r="2.5" fill="#b45309"/>
+<circle cx="896.667" cy="267.868" r="2.5" fill="#b45309"/>
+<circle cx="940.000" cy="272.284" r="2.5" fill="#b45309"/>
+<text x="75" y="401" fill="#0369a1">Seed 3461</text>
+<text x="220" y="401" fill="#b45309">Seed 3463</text>
+<text x="450" y="401">98.9990% is below 99%; rounding does not change the gate.</text>
+</g></svg>

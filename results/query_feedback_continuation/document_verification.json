@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Scoped presentation and preserved-evidence checks after the formal independent audit; no new training.",
+  "report_sha256": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+  "audit_sha256": "63131bc1585bb65be2af7ee6568f2450fc816ef5cd52cbd324740628ba437628",
+  "csv_rows": 288,
+  "numerical_table_rows": 14,
+  "csv_sha256": "6f68a3c5729cf8e9a157fb8bf805cdfe3913f02a49929c0f4427667ad3efd5a8",
+  "figure_curves": 4,
+  "figure_measured_points": 40,
+  "figure_sha256": "4189a4d158400a92724e414ec58d5c93ead45acbcaab16431fbe47d5c4b46fa9",
+  "local_links_checked": 787,
+  "unchanged_locked_files": {
+    "query_feedback_continuation": 127,
+    "language_context_use": 180
+  },
+  "document_sha256": {
+    "docs/topics/attention/query-feedback-continuation-guide.md": "7076049224cf64d848972b24e6d273542ba96448838172b8f284ce50cf890fd5",
+    "docs/topics/attention/query-feedback-continuation-results.md": "3cf67664b9c7bae9d578dc4b1db4e13e0a261b6eec1efe5f31ccb39708c2320e",
+    "docs/topics/attention/README.md": "be5b74bde48e5651cc8b106a90bac113aa06ad7a59be79648189c3c232bec33d",
+    "docs/guides/README.md": "29d7d879d1d53c7459f4094e780dcc3be6bc1c6270d4f3a4f717a2ee44ed2412",
+    "docs/results/README.md": "6b611435619e9e5a95e6f4fb05621e92c0ea02ddcc664b4f786b1bba5b6fe899",
+    "docs/protocols/README.md": "f0726c4d915c9304386ac2792031b8ef206d4b9d236bb292af86856a8eba2d3a",
+    "docs/protocols/query-feedback-continuation.md": "1d0f9c2ab623d3e868c489f04c818e6a18aad8678de3ec1be9679cb5c7b4d891",
+    "docs/reference/sources.md": "0baf7afc22dac610aecb36b62521a2c1920b949bc6ef6a55ec32f4796816c74e",
+    "docs/assessments/research-checkpoint.md": "87dc38f11a866b22f75f60f86eaadd4afc0b70d87ff8d92e7249463858380dfd",
+    "docs/assessments/learning-mechanism-agenda.md": "8bce5fb9863d3083e744e5aa82fc4978d5375f628f715c35dd93b87185daa2c8",
+    "docs/assessments/research-history.md": "7182268c5cc91be8be9ebf2aa3ac945f9fa954c5357cbc3349bf065e2e449480",
+    "docs/assessments/failure-register.md": "51aea0c5f684375d352f6952e46bb6784edb1f3a88e8c263f104d9df984e29a1",
+    "tests/README.md": "1522f02462f136dba96f9b92722b119d244d342afeac2dedcf29e41e404e5a78"
+  },
+  "checks": [
+    "Every CSV metric matches audited report, including missing groups.",
+    "Every numerical table cell and plotted coordinate recomputed.",
+    "Exact error-count fit gate and loss/accuracy directions checked.",
+    "Educational CE example recomputed from negative natural logarithms.",
+    "Local documentation links resolve; sources/protocol unchanged.",
+    "Current frozen files and all earlier-language locked evidence unchanged."
+  ]
+}

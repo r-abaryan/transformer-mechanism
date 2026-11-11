@@ -1,0 +1,33 @@
+{
+  "posthoc": true,
+  "training_updates": 0,
+  "seeds": [
+    3119,
+    3121,
+    3137
+  ],
+  "symbols": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "source_length_pairs": [
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "prefix": "BOS followed by short_length copies of symbol",
+  "tolerance": 1e-09,
+  "labels": "EOS for short source, symbol for long source",
+  "scope": "Uniform content sources, this no-additive-position encoder-decoder variant; not aggregate-failure attribution"
+}

@@ -1,0 +1,908 @@
+{
+  "status": "complete",
+  "development_gate": {
+    "fixed_assigned_training_fit": true,
+    "resampled_all_query_training_fit": false,
+    "confirmation_eligible": false
+  },
+  "decision": {
+    "confirmation_executed": false
+  },
+  "rows": [
+    {
+      "seed": 3461,
+      "arm": "fixed",
+      "elapsed_seconds": 34.257938099995954,
+      "beta": 0.9475711570594577,
+      "key_overlap": 0.042646214164886856,
+      "exposure": {
+        "2": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 1536,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 88
+        },
+        "8": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 6144,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 88
+        },
+        "16": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 12288,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 92
+        },
+        "32": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 24576,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 89
+        }
+      },
+      "scores": {
+        "2": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 1.7286521230240908e-05
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 1.7286639144412566e-05
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 1.7286695146306247e-05
+            },
+            "all": {
+              "all_queries": {
+                "count": 384,
+                "correct": 384,
+                "accuracy": 1.0,
+                "loss": 1.7286582413526654e-05
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "8": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.000141917853451337
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 6138,
+                "accuracy": 0.9990234375,
+                "loss": 0.002777151376793086
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 762,
+                "accuracy": 0.9921875
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 186,
+              "accuracy": 0.96875,
+              "loss": 0.10243782372149575
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1530,
+                "accuracy": 0.99609375,
+                "loss": 0.01537759611755341
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 186,
+                "accuracy": 0.96875
+              }
+            }
+          }
+        },
+        "16": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.0008308387963756026
+            },
+            "all": {
+              "all_queries": {
+                "count": 12288,
+                "correct": 11037,
+                "accuracy": 0.898193359375,
+                "loss": 0.4120416442829223
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 87,
+                "accuracy": 0.11328125
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 186,
+              "accuracy": 0.96875,
+              "loss": 0.20880669193813095
+            },
+            "all": {
+              "all_queries": {
+                "count": 3072,
+                "correct": 2790,
+                "accuracy": 0.908203125,
+                "loss": 0.40250434914258
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 36,
+                "accuracy": 0.1875
+              }
+            }
+          }
+        },
+        "32": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.001710632428864041
+            },
+            "all": {
+              "all_queries": {
+                "count": 24576,
+                "correct": 15744,
+                "accuracy": 0.640625,
+                "loss": 1.9558124702067765
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 95,
+              "accuracy": 0.4947916666666667,
+              "loss": 2.72782553726732
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 3721,
+                "accuracy": 0.6056315104166666,
+                "loss": 1.9422518228988672
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 3461,
+      "arm": "resampled",
+      "elapsed_seconds": 34.508774000016274,
+      "beta": 0.3223553250075936,
+      "key_overlap": 0.033151920784844455,
+      "exposure": {
+        "2": {
+          "targets": 48000,
+          "covered_history_key_pairs": 1536,
+          "total_history_key_pairs": 1536,
+          "min_targets_per_pair": 15,
+          "max_targets_per_pair": 58
+        },
+        "8": {
+          "targets": 48000,
+          "covered_history_key_pairs": 6142,
+          "total_history_key_pairs": 6144,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 21
+        },
+        "16": {
+          "targets": 48000,
+          "covered_history_key_pairs": 12019,
+          "total_history_key_pairs": 12288,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 13
+        },
+        "32": {
+          "targets": 48000,
+          "covered_history_key_pairs": 21169,
+          "total_history_key_pairs": 24576,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 9
+        }
+      },
+      "scores": {
+        "2": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 2.787289153763839e-08
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 2.778824318139089e-08
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 2.8351068216636464e-08
+            },
+            "all": {
+              "all_queries": {
+                "count": 384,
+                "correct": 384,
+                "accuracy": 1.0,
+                "loss": 2.8215280488381845e-08
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "8": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.0009068908569705476
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 6144,
+                "accuracy": 1.0,
+                "loss": 0.0006211077657731055
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 0.0004024040220615784
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 0.000221108099216712
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "16": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.02834746246664338
+            },
+            "all": {
+              "all_queries": {
+                "count": 12288,
+                "correct": 12254,
+                "accuracy": 0.9972330729166666,
+                "loss": 0.03462284593404497
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 737,
+                "accuracy": 0.9596354166666666
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 0.03561095292367086
+            },
+            "all": {
+              "all_queries": {
+                "count": 3072,
+                "correct": 2998,
+                "accuracy": 0.9759114583333334,
+                "loss": 0.0728967491268223
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 138,
+                "accuracy": 0.71875
+              }
+            }
+          }
+        },
+        "32": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 708,
+              "accuracy": 0.921875,
+              "loss": 0.30878682911389116
+            },
+            "all": {
+              "all_queries": {
+                "count": 24576,
+                "correct": 22058,
+                "accuracy": 0.8975423177083334,
+                "loss": 0.33718090636017745
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 27,
+                "accuracy": 0.03515625
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 152,
+              "accuracy": 0.7916666666666666,
+              "loss": 0.5769654849907334
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 5305,
+                "accuracy": 0.8634440104166666,
+                "loss": 0.396574909692643
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "fixed",
+      "elapsed_seconds": 34.03708639999968,
+      "beta": 0.9620374265151257,
+      "key_overlap": 0.04160554742138042,
+      "exposure": {
+        "2": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 1536,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 88
+        },
+        "8": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 6144,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 86
+        },
+        "16": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 12288,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 92
+        },
+        "32": {
+          "targets": 48000,
+          "covered_history_key_pairs": 768,
+          "total_history_key_pairs": 24576,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 85
+        }
+      },
+      "scores": {
+        "2": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 1.509467504871344e-05
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 1.5094212271689024e-05
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 1.5093102302091665e-05
+            },
+            "all": {
+              "all_queries": {
+                "count": 384,
+                "correct": 384,
+                "accuracy": 1.0,
+                "loss": 1.5093090241201672e-05
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "8": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.00010296283866207308
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 6129,
+                "accuracy": 0.99755859375,
+                "loss": 0.014424401369501039
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 753,
+                "accuracy": 0.98046875
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 0.014647453426377985
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1530,
+                "accuracy": 0.99609375,
+                "loss": 0.018852198874463592
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 186,
+                "accuracy": 0.96875
+              }
+            }
+          }
+        },
+        "16": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.0007019140907551969
+            },
+            "all": {
+              "all_queries": {
+                "count": 12288,
+                "correct": 11001,
+                "accuracy": 0.895263671875,
+                "loss": 0.4328044721279542
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 137,
+                "accuracy": 0.17838541666666666
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 180,
+              "accuracy": 0.9375,
+              "loss": 0.1609262698784821
+            },
+            "all": {
+              "all_queries": {
+                "count": 3072,
+                "correct": 2804,
+                "accuracy": 0.9127604166666666,
+                "loss": 0.3575667169616425
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 43,
+                "accuracy": 0.22395833333333334
+              }
+            }
+          }
+        },
+        "32": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.0012285871940647883
+            },
+            "all": {
+              "all_queries": {
+                "count": 24576,
+                "correct": 15600,
+                "accuracy": 0.634765625,
+                "loss": 2.0335121728289707
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 112,
+              "accuracy": 0.5833333333333334,
+              "loss": 2.6537211273372647
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 3823,
+                "accuracy": 0.6222330729166666,
+                "loss": 1.9976977670572929
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 3463,
+      "arm": "resampled",
+      "elapsed_seconds": 34.74933710001642,
+      "beta": 0.318701604672731,
+      "key_overlap": 0.033027576277246604,
+      "exposure": {
+        "2": {
+          "targets": 48000,
+          "covered_history_key_pairs": 1536,
+          "total_history_key_pairs": 1536,
+          "min_targets_per_pair": 13,
+          "max_targets_per_pair": 51
+        },
+        "8": {
+          "targets": 48000,
+          "covered_history_key_pairs": 6140,
+          "total_history_key_pairs": 6144,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 19
+        },
+        "16": {
+          "targets": 48000,
+          "covered_history_key_pairs": 12059,
+          "total_history_key_pairs": 12288,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 12
+        },
+        "32": {
+          "targets": 48000,
+          "covered_history_key_pairs": 21074,
+          "total_history_key_pairs": 24576,
+          "min_targets_per_pair": 0,
+          "max_targets_per_pair": 9
+        }
+      },
+      "scores": {
+        "2": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 1.5130938424518846e-08
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 1.3940785270183332e-08
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 1.2733039098463838e-08
+            },
+            "all": {
+              "all_queries": {
+                "count": 384,
+                "correct": 384,
+                "accuracy": 1.0,
+                "loss": 1.2571690982833308e-08
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "8": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.00075196164524555
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 6144,
+                "accuracy": 1.0,
+                "loss": 0.0007195335909290227
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 768,
+                "accuracy": 1.0
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 192,
+              "accuracy": 1.0,
+              "loss": 0.0011891081250841086
+            },
+            "all": {
+              "all_queries": {
+                "count": 1536,
+                "correct": 1536,
+                "accuracy": 1.0,
+                "loss": 0.00026177186906187726
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 192,
+                "accuracy": 1.0
+              }
+            }
+          }
+        },
+        "16": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 768,
+              "accuracy": 1.0,
+              "loss": 0.03533947417723338
+            },
+            "all": {
+              "all_queries": {
+                "count": 12288,
+                "correct": 12241,
+                "accuracy": 0.9961751302083334,
+                "loss": 0.027117511795172095
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 721,
+                "accuracy": 0.9388020833333334
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 186,
+              "accuracy": 0.96875,
+              "loss": 0.043765760877683156
+            },
+            "all": {
+              "all_queries": {
+                "count": 3072,
+                "correct": 3036,
+                "accuracy": 0.98828125,
+                "loss": 0.051418477818760654
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 162,
+                "accuracy": 0.84375
+              }
+            }
+          }
+        },
+        "32": {
+          "train": {
+            "assigned": {
+              "count": 768,
+              "correct": 705,
+              "accuracy": 0.91796875,
+              "loss": 0.25891303774091085
+            },
+            "all": {
+              "all_queries": {
+                "count": 24576,
+                "correct": 22126,
+                "accuracy": 0.9003092447916666,
+                "loss": 0.3097376364563897
+              },
+              "complete_maps": {
+                "count": 768,
+                "correct": 24,
+                "accuracy": 0.03125
+              }
+            }
+          },
+          "validation": {
+            "assigned": {
+              "count": 192,
+              "correct": 153,
+              "accuracy": 0.796875,
+              "loss": 0.8166734821713123
+            },
+            "all": {
+              "all_queries": {
+                "count": 6144,
+                "correct": 5251,
+                "accuracy": 0.8546549479166666,
+                "loss": 0.4640747165081856
+              },
+              "complete_maps": {
+                "count": 192,
+                "correct": 0,
+                "accuracy": 0.0
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "means": {
+    "fixed": {
+      "train": {
+        "2": 1.0,
+        "8": 0.998291015625,
+        "16": 0.896728515625,
+        "32": 0.6376953125
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 0.99609375,
+        "16": 0.9104817708333333,
+        "32": 0.6139322916666666
+      }
+    },
+    "resampled": {
+      "train": {
+        "2": 1.0,
+        "8": 1.0,
+        "16": 0.9967041015625,
+        "32": 0.89892578125
+      },
+      "validation": {
+        "2": 1.0,
+        "8": 1.0,
+        "16": 0.9820963541666667,
+        "32": 0.8590494791666666
+      }
+    }
+  },
+  "total_updates": 12000,
+  "total_targets": 768000,
+  "total_events": 24576000,
+  "summed_training_evaluation_seconds": 137.55313560002833,
+  "pre_freeze_fixture_correction": "One wrong-assignment test initially used aliased repeated event lists; corrected to independent event lists before formal freeze. First standalone preflight 4/5, second 5/5; formal preflight 5/5. No training preceded this correction."
+}

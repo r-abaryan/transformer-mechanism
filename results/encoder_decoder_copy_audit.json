@@ -1,0 +1,269 @@
+{
+  "passed": true,
+  "report_sha256": "ed086626bc15b3bb15f56eb0cf814e668c1d1b194c9873e8d8320a66bd2bef38",
+  "input_checks": {
+    "passed": true,
+    "unique_sequences": 896,
+    "reversed_label_errors": 841
+  },
+  "decision": {
+    "short_fit": false,
+    "short_held_out": false,
+    "length_transfer": {
+      "6": false,
+      "8": false
+    }
+  },
+  "pools_checked": 24,
+  "sequences_checked": 2688,
+  "teacher_forced_targets_checked": 14976,
+  "generated_tokens_checked": 12686,
+  "generated_differences": 0,
+  "max_logit_error": 1.1546319456101628e-13,
+  "max_metric_error": 3.552713678800501e-15,
+  "intentional_gate_error_detected": true,
+  "historical_artifacts_preserved": 227,
+  "frozen_files_checked": 171,
+  "cells": [
+    {
+      "seed": 2371,
+      "pool": "train_3",
+      "sequences": 128,
+      "teacher_forced_targets": 512,
+      "generated_tokens": 512,
+      "logit_error": 4.374278717023117e-14,
+      "metric_error": 8.673617379884035e-19,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "train_4",
+      "sequences": 256,
+      "teacher_forced_targets": 1280,
+      "generated_tokens": 1280,
+      "logit_error": 6.106226635438361e-14,
+      "metric_error": 7.047314121155779e-19,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "validation_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 255,
+      "logit_error": 5.3290705182007514e-14,
+      "metric_error": 5.551115123125783e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "validation_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 321,
+      "logit_error": 6.572520305780927e-14,
+      "metric_error": 5.412337245047638e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "test_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 257,
+      "logit_error": 4.574118861455645e-14,
+      "metric_error": 1.8041124150158794e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "test_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 319,
+      "logit_error": 5.81756864903582e-14,
+      "metric_error": 5.759281940243e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "test_6",
+      "sequences": 128,
+      "teacher_forced_targets": 896,
+      "generated_tokens": 645,
+      "logit_error": 1.1035616864774056e-13,
+      "metric_error": 2.6645352591003757e-15,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2371,
+      "pool": "test_8",
+      "sequences": 128,
+      "teacher_forced_targets": 1152,
+      "generated_tokens": 640,
+      "logit_error": 9.903189379656396e-14,
+      "metric_error": 1.7763568394002505e-15,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "train_3",
+      "sequences": 128,
+      "teacher_forced_targets": 512,
+      "generated_tokens": 512,
+      "logit_error": 4.263256414560601e-14,
+      "metric_error": 9.215718466126788e-19,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "train_4",
+      "sequences": 256,
+      "teacher_forced_targets": 1280,
+      "generated_tokens": 1280,
+      "logit_error": 5.906386491005833e-14,
+      "metric_error": 9.75781955236954e-19,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "validation_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 256,
+      "logit_error": 3.2862601528904634e-14,
+      "metric_error": 1.196959198423997e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "validation_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 316,
+      "logit_error": 3.375077994860476e-14,
+      "metric_error": 4.163336342344337e-17,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "test_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 255,
+      "logit_error": 3.375077994860476e-14,
+      "metric_error": 3.2612801348363973e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "test_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 318,
+      "logit_error": 4.6379566853715914e-14,
+      "metric_error": 1.3877787807814457e-17,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "test_6",
+      "sequences": 128,
+      "teacher_forced_targets": 896,
+      "generated_tokens": 644,
+      "logit_error": 5.417888360170764e-14,
+      "metric_error": 2.6645352591003757e-15,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2377,
+      "pool": "test_8",
+      "sequences": 128,
+      "teacher_forced_targets": 1152,
+      "generated_tokens": 641,
+      "logit_error": 7.116529587847253e-14,
+      "metric_error": 1.7763568394002505e-15,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "train_3",
+      "sequences": 128,
+      "teacher_forced_targets": 512,
+      "generated_tokens": 512,
+      "logit_error": 6.306066779870889e-14,
+      "metric_error": 8.673617379884035e-19,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "train_4",
+      "sequences": 256,
+      "teacher_forced_targets": 1280,
+      "generated_tokens": 1280,
+      "logit_error": 1.1546319456101628e-13,
+      "metric_error": 2.0599841277224584e-18,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "validation_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 255,
+      "logit_error": 5.706546346573305e-14,
+      "metric_error": 8.326672684688674e-17,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "validation_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 319,
+      "logit_error": 6.655787032627813e-14,
+      "metric_error": 1.1796119636642288e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "test_3",
+      "sequences": 64,
+      "teacher_forced_targets": 256,
+      "generated_tokens": 253,
+      "logit_error": 4.8183679268731794e-14,
+      "metric_error": 2.7755575615628914e-17,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "test_4",
+      "sequences": 64,
+      "teacher_forced_targets": 320,
+      "generated_tokens": 319,
+      "logit_error": 3.9968028886505635e-14,
+      "metric_error": 2.636779683484747e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "test_6",
+      "sequences": 128,
+      "teacher_forced_targets": 896,
+      "generated_tokens": 649,
+      "logit_error": 1.0114131754335176e-13,
+      "metric_error": 8.881784197001252e-16,
+      "generated_differences": 0
+    },
+    {
+      "seed": 2381,
+      "pool": "test_8",
+      "sequences": 128,
+      "teacher_forced_targets": 1152,
+      "generated_tokens": 648,
+      "logit_error": 9.14823772291129e-14,
+      "metric_error": 3.552713678800501e-15,
+      "generated_differences": 0
+    }
+  ]
+}

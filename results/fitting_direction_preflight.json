@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 2,
+  "seconds": 12.519,
+  "command": ".venv-gpu/Scripts/python.exe -m unittest discover -s tests -p test_fitting_direction.py -v",
+  "sources": {
+    "experiments/fitting_direction.py": "e80c68a335089dcd43730d47b47f1b4e60f111c4fc1cd13937fdf315e23841f9",
+    "experiments/audit_fitting_direction.py": "c7c787e4f4435aae84d0206fa46599cb510277eb92ee724ea37cce17cc371e19",
+    "tests/test_fitting_direction.py": "a7ec0e332842321ecfb82eabbc61033c086493bced5d15bb80d0d9beebd9ba85"
+  },
+  "scope": "Initialized saved producer/evaluator/audit, independent matrix gradients, native quadratic control, first-step equality, later-direction divergence, gradient/direction/counter/loss/label/logit/missing-group rejection, supplied ties and empty groups"
+}

@@ -1,0 +1,74 @@
+{
+  "files": {
+    "experiments/shared_readout_feasibility.py": "2f7f637b96858ecc66b72f838de9ea9ebb6a9a7a7f88904d0223d12417158bfe",
+    "experiments/audit_shared_readout_feasibility.py": "a4350357265e697ba79d05419cea080dacf2e998db0fe98dec45ca486e1ba6b8",
+    "tests/test_shared_readout_feasibility.py": "93bc257afe8d62fd5104088b6108df1f6ed8b78a090a0e00f1374ab372f61642",
+    "docs/protocols/shared-readout-feasibility.md": "8a52b7967a70423b02f49cb836b8b1c6e23abcdaead9237f950c00be6b8801a1",
+    "experiments/shared_state_feasibility.py": "9429ece10c4cd63ffc94e2f67dc514c59f51ff91063c5f7c9a7e6522de463335",
+    "requirements-analysis.txt": "ea3a441d51217d0d87c36ecba76fa02ab784dbcc778d70412a201527f00ae3c0",
+    "results/query_feedback_continuation/3461_exhaustive_12000.pt": "3d9822a61836819b171391765a2b98e119d638a900c10c116942e1a667531a7b",
+    "results/delta_query_coverage/development_data.json": "03ca194065f0187bdd4179172d313f3ae6ec13b04fcded7d44d1c9573208f77f",
+    "results/query_feedback_continuation/3463_exhaustive_12000.pt": "f549e30d08eec53ac1f53e04fd84db89fff04462ebca34aa48706131c221d19a",
+    "results/shared_readout_feasibility_preflight.json": "d7be5bef805eda8bc1cce7547a50476decfdf79113dbe5e8d7fee98e1eecbc07",
+    "results/query_feedback_continuation/lock.json": "1417dfdfd436547dd30f74ea32e0282b5f5746cc5333e7279ce3c17f742c9d50",
+    "results/query_feedback_continuation/report.json": "e1697733f4cac7b7450e1df1285b5360fbaf0ebf7b3d2ea39b541a1ca674f37c",
+    "results/query_feedback_continuation/audit.json": "63131bc1585bb65be2af7ee6568f2450fc816ef5cd52cbd324740628ba437628",
+    "results/shared_state_feasibility/lock.json": "d009cd9e1e0c6b4b24ee7cf1b47bc7857a5907e8b9c9765b70b82360008cdb4d",
+    "results/shared_state_feasibility/report.json": "2dc77a42057483ba55fa982592983c40e5900cb13bf4d6392941c148606c0b9c",
+    "results/shared_state_feasibility/audit.json": "b76c5715af1d73ccfe7c707d56f2018fbe59e0145a440ff97f4f2e0c135a7c4c",
+    "results/single_query_write_opposition/lock.json": "7860cd9fd43d0ce361520b5d676256e1f65d1c85dea10283068081749da8459a",
+    "results/single_query_write_opposition/report.json": "0653461a149f37c523e9c812cab6b69181297978aff82edeb78bb3f3cdf12bc2",
+    "results/single_query_write_opposition/audit.json": "62ae3af7e3b6f24111fe6bfd4261b39e40942f4b0e43d51aa884630f85f599d2",
+    "experiments/shared_readout_recovery.py": "2709b9fb5eb5b32817e20d14c7e81b78a0aeda54cfb457a75aaea2b29fe3d94f",
+    "experiments/audit_shared_readout_recovery.py": "0b97ec8246520f0ec598808df441bdf4be6cb6bac0c41fa7f4a62466daa69bc1",
+    "tests/test_shared_readout_recovery.py": "69a9e60d94ea257bb441afb8eec565f8cf95578e36a83c10d97c946dd5a01018",
+    "docs/protocols/shared-readout-numerical-recovery.md": "9df68f38f5f27645ac540e7e21c2d32210e41a8fe2434203136dd3a0a4690e4b",
+    "results/shared_readout_feasibility/lock.json": "d1f0d38440bd820b0f6859fd6ec55b0f6aaccabfdd667d55b68908b82b6484fe",
+    "results/shared_readout_feasibility/report.json": "0da4c9e66977ee34c39876dc1c351f57746dbce84e7f0bd647af38dacad850fe",
+    "results/shared_readout_feasibility/audit.json": "f2c6e55100235d2915fcfd0560ed8115397304e71f04090b715e56ed722b09d3",
+    "results/shared_readout_feasibility/witnesses.pt": "a1a96b07541aa4c5a6b849462244e10274ce9a756741508ee2b878977078c341",
+    "results/shared_readout_feasibility/metrics.csv": "04995958f5237d46644879ea3ff758b7cd82e0142f509681867928b6ef5cd747",
+    "results/shared_readout_recovery_preflight.json": "3301948da6fed77c95ca8037ee6adf6e07fa082393a257386ad59650270b04a1"
+  },
+  "origin": "results/shared_readout_feasibility",
+  "cases": [
+    {
+      "seed": 3461,
+      "checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ]
+    },
+    {
+      "seed": 3463,
+      "checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "data": "results/delta_query_coverage/development_data.json",
+      "pools": [
+        "train_2",
+        "train_8",
+        "train_16",
+        "train_32"
+      ]
+    }
+  ],
+  "fixture": false,
+  "options": {
+    "presolve": true,
+    "primal_feasibility_tolerance": 1e-09,
+    "dual_feasibility_tolerance": 1e-09,
+    "maxiter": 100000,
+    "time_limit": 60.0,
+    "disp": true
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128"
+  },
+  "torch_threads": 1,
+  "solver_threads": "HiGHS default"
+}

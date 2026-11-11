@@ -1,0 +1,1174 @@
+{
+  "phase": "all_attempts_finished_before_test",
+  "provenance": {
+    "experiments/moe_balance_training.py": "3a4b8ea97232ddf9360abdccbdd515e9e2f2bff687f9e990bc8d3a5fe2174320",
+    "experiments/moe_routing.py": "b0a7158e8bd3ba0e22c2f6255f6ccdd2488bcd0594bc6b3b9dbbd63e86425bcb",
+    "experiments/moe_balancing.py": "5fdeb911cdf11f68443adc1f1a720d0c1fe0e211981d5ee7f505030692eead31",
+    "docs/protocols/moe-balance-training.md": "7f0945b6094e61f75cbe0f0e18654556fe76e5703c64973e9c58504a1ff4a5ce",
+    "results/moe_balance_training_data.json": "1b59a1b8edc85742bddfc631555d9f0c5edb01e1735923c9afa993f50b7e7602",
+    "results/moe_balance_training_profile.json": "6a09d158019728398dce8d8d83b154c0cc1c7dba659fb093c191512eeb410953"
+  },
+  "historical": {
+    "results\\activation_paths.json": "b0fa9bf77073c4f72f02d7f893f324fd18452e8ec074a6137837076935f25494",
+    "results\\associative_recall_confirmation.json": "7477efca3d0e9e5bfa516a16d747048e32a8e124dad27a47b8d21e575d7007fe",
+    "results\\associative_recall_diagnostics.json": "eb931406fe9bda44f6ddad02ef7c0eb324361b57fbe86f07be610078d377e416",
+    "results\\associative_recall_training.json": "90483a7b74d99c20c289f9aac5bb8a6276148afbc76598bb3ab6b6b1874a3a7f",
+    "results\\attention_competition.json": "35b1f3707b4829c9e47b4558aa2477f0f9f4b7d4f43457eea55cfc149cefc2bc",
+    "results\\attention_competition_audit.json": "b3a888db3ebc74dd9e999c4ecb11556d6c54d2428ae9000e55fbb7f061615075",
+    "results\\attention_cost.json": "b096bc500eb4fcac451bcb721cdb5e54973f82f63e6ed87fc64c55e04828cdad",
+    "results\\attention_cost_audit.json": "479dfc49a8a0f9c5e8290238d0d459f5d0ce50acc06d795fd734ecb0c79a1150",
+    "results\\attention_spikes.json": "4a7b752ed3f4719422e3404ecb0e589c1a713f5e7dd6b4b165e39d64b6bc353f",
+    "results\\block1_keys.json": "cbceb97d7c10f187bbfdc8dc8c20f7ac18535cc024bfa8eb2dfdb1178f9b7766",
+    "results\\block1_sources.json": "82fc1f1792127e9fc4725e966a45a9d334e0f345d1d336b5fdc22a2b596b7031",
+    "results\\cache_precision.json": "f034a66d2789f750a696e8f6bbab1a4f5750b1881c860c4f38532bd6a40672ae",
+    "results\\cache_precision_audit.json": "f52501d7560e11c58786b2caced75542736f17506abf0284fae6c9d29604b315",
+    "results\\canonical_positions.json": "9c8aed847c123a24965d024ed3c3b524b3cfbf4ebb5ee8a138cff49fa27f2bf7",
+    "results\\canonical_positions_audit.json": "0c47ad5271b97e0030265611979499deecfdea540732e1798dc0c078ce18e54e",
+    "results\\canonical_positions_inputs.json": "81bdeabb879b916c83f983e2a07f855439ca91a8b7b701849ab1b07a61a322cb",
+    "results\\canonical_positions_scores.json": "74d43f494162badd551b74ea8721f34b9d1afc57358d1de2a5062c445e9d955d",
+    "results\\causal_width.json": "1f58bb9425006302c012e94b70f6b2a0281c3c9f50c3b1f51ed525f92d39dd9c",
+    "results\\causal_width_audit.json": "d5ca0a4dc5232f9974a6166a1b5ccb62229cbee1b88ba7af3969b0addf672673",
+    "results\\composition_learning_adequacy.json": "d1a56dca1542eda24473b940dbdada6da94d0e675b611aba916801a549e044bc",
+    "results\\composition_learning_adequacy_audit.json": "0fb5c1c8305f7fc79e540baa95d7b66b67f8592d7d887a5bdd5ad1eae22eda58",
+    "results\\composition_learning_adequacy_document_verification.json": "d28bbad4b41afec5c147f4418ea2103ef9e69373d84c093a81e4c17a6548a353",
+    "results\\composition_learning_adequacy_precision_details.json": "17f9545b2db4cea324b847d87fba002f41bb5418346dc45ae9c83bf00d7dc608",
+    "results\\composition_learning_adequacy_pretest.json": "47c78ea0638eac7c01558d8a4487b4263422c9d801f678f8230f1ed70bcccf2b",
+    "results\\composition_learning_adequacy_profile.json": "33aca8717b0fed25c7bfcfbcbb6bde635ec57d6ab7ad18cb2d9e8580fff3294c",
+    "results\\copy_stopping.json": "702d0e434defbc4db3ad64851fc5f987696a0ddeedc16bf29f6559cf40d2adf2",
+    "results\\copy_stopping_document_verification.json": "0f1a9b622773049a08100506525371243113363ed234ee4b98d91d8db45c555f",
+    "results\\cross_attention.json": "93d044943e9af88e31d5f3a7bc1692db4eedcac1ad20cb9b2016b80741acdd3a",
+    "results\\cross_attention_document_verification.json": "b852a8ad08448bd97f1e4d85a1c719a24a731fd76272b1e299b42b4921b267c8",
+    "results\\cross_attention_execution_issue.json": "ab081b3ee4e7e1f8ded5cde6ce8fec4aa87f224826ca71e91a3d40aa6748feb3",
+    "results\\cross_attention_initial_attempt.json": "86561db4134bef0bb88b887710db464e584f70e1fba6dace63e0aa9628823103",
+    "results\\decoder_verification.json": "5a4977b70b4d8de1494225a29dcfba4b6a6984038711b45fdc4d99f9a55f7c9c",
+    "results\\delta_memory.json": "a553dadac906899daad814bf2bf23eef1bf7f099d06d671d2b8ae696af22ac80",
+    "results\\delta_memory_document_verification.json": "5990c4a7b248bd8756fdc9a1d247e44c4e59325d5bbebefcf0c9d3b7523334af",
+    "results\\depth_comparison.json": "8686d042924da2398c4e339ae8acef1ede8464e56b4fee4cfe1dd49c5153d1be",
+    "results\\depth_confirmation.json": "8d6c877e53c6efd05e414ec673a8010d4b1be9aa31f90960e0c78c190bf0aa27",
+    "results\\depth_confirmation_audit.json": "be798f405936d3d8eb40a3ee24918f8060439d19901310cddd3881f5bc30e425",
+    "results\\depth_confirmation_splits.json": "37eb7c428bece9afd01946d7918148183c10770f905f803d12f825eb1fdc7950",
+    "results\\direct_pair.json": "97f2dd0efb6f734d277e2c70340f35235cb182e8e8711feabe5eedc3a0af6258",
+    "results\\donor_controls.json": "5008a53346ce8c719c3a73b6f9cd63d72fe8191cd62d1aa7bfd222f19ac1fb5c",
+    "results\\donor_slots.json": "942fd28f0722d6590d68620d9df09cdf9404b70e84467fdab31d5cac7a7a327e",
+    "results\\donor_slots_audit.json": "93da91f55d62276acedff30084dc9e51e72463dae3d3a08241c435544831ceef",
+    "results\\donor_slots_indices.json": "9143db8de6e81a0cff284b6990fe3dc77e094a1c0d746c818cad10e8f4a287ef",
+    "results\\donor_slots_scores.json": "37041e1faa49c5146626e0efca9e74a77174ea53573dab7f1c50d13426b5b653",
+    "results\\downstream_trace.json": "420a87e731266a8606c04f246e8dc06854a3aba3ce185c6394c2cd8346daba83",
+    "results\\encoder_decoder_assessment_verification.json": "345bab8f079019e5fc8a76413e5baa5383ace6eae286f92d5c6cae775508d295",
+    "results\\encoder_decoder_contract.json": "68e4f22bd5a12a4ce28675f651ea4d7866d26a0f72d2f4f5558cf9876196b2d5",
+    "results\\encoder_decoder_contract_document_verification.json": "3f067b6480e8f3a237f4b42bfaa71b251b3a0908d7d2e3346e28ab7ad6756a99",
+    "results\\encoder_decoder_copy.json": "ed086626bc15b3bb15f56eb0cf814e668c1d1b194c9873e8d8320a66bd2bef38",
+    "results\\encoder_decoder_copy_audit.json": "269c99dc6fced95ad448a54f82771b0674a7af8a01d3d4264808abcb01f6349c",
+    "results\\encoder_decoder_copy_data.json": "eca9586d93b8ebffcfdeee3ec127c1ae00a80860092f59945ee538889ca1eb8b",
+    "results\\encoder_decoder_copy_document_verification.json": "bf3510b3cdb63093bcc03877ed2c1059d9deaa970d049fb760902dda17b63a11",
+    "results\\encoder_decoder_copy_pretest.json": "4dd6394766ed968b543a4d8474b1ae6c4b414489ee883674ace830da4200efa6",
+    "results\\error_strata.json": "d516c52eb4361860c647f275474bd546c7eaecdb6e1bd0fa57b2767fec5a03c9",
+    "results\\ffn_branches.json": "188073d6bbf267baaee0a32c52872d9883b01d9a3a49611a994cb0441a494cca",
+    "results\\ffn_branches_audit.json": "871706e5afa88193f6ee8307a59e8cbb29b53752233c9e6d0bb46453dca3732f",
+    "results\\ffn_branches_permutation.json": "3cea10bd8a5394b214414b0fb453c6dbe7cbfbf2efa4dd20f4dac5bc334876c0",
+    "results\\ffn_branches_scores.json": "bf4d7ce638b14d34ccab02fd3d8102f91552c85c229edcdd33e36abe273466f8",
+    "results\\ffn_normalization.json": "ec938ea351c00b8c17f14cb0875a5904de16610d0560348ae933c767bb82a33c",
+    "results\\ffn_normalization_scores.json": "0954c1349cc6cefbee81886b7944594162cb8026250ab74885a648d846528819",
+    "results\\ffn_width.json": "a3d525ccb5802882aa375f81f92f40235cb54c422a15e2e828ba314073fd76cc",
+    "results\\ffn_width_audit.json": "2af272644677f7a485ad50fdc13874c815e97eb990cb4bb14f1d08e6cc30b20e",
+    "results\\ffn_width_data.json": "70e66c92291c315333f694de6dd8d27c5e53ac62efa8da869cc3bf53c1f02b7c",
+    "results\\ffn_width_verification.json": "a8579693bf1a2d59e79f36bd477bdb40b5200e76282932be3784692b9aa0bacc",
+    "results\\final_length.json": "e7aa3c1262cfc821fe85ac55d32ee444c3e849369c068bfdf8c683616cc6e912",
+    "results\\final_length_audit.json": "e0688deb4c32229ff9513bdd1d5c65af6a40531314a66baca6bea3c40356cc3b",
+    "results\\final_length_inputs.json": "360c9c75daa0d309bcc41073a9d5756e0698b8951748a03a6ea9e582b7eb18be",
+    "results\\final_length_scores.json": "b172e39da619248cb8841e1cd27ca7c10d8a83e0386d6da003e90ff4cccf71dc",
+    "results\\first_token_interventions.json": "df116a29ced96ca753e772d17beafbd878c40d8eaa190f3a44d3b66dbacaaed3",
+    "results\\first_token_training.json": "ca8077e5c96e4d3209c29c4bba36f7e009badbeb7196a9f5477a57841dddd86e",
+    "results\\first_value.json": "643e8ed9096f07f2cd74a9f49e6026521b6828959934cd4c420f56e9f24cd4ed",
+    "results\\gated_delta_memory.json": "28b8c47e0325a24515133f532505192f5b617c32d4bb33f2d7787eb59455050b",
+    "results\\gated_delta_memory_document_verification.json": "52a29fa5af4c2efe803769026dc9dcd87859d9ee443b0ee6cd3505549e557c8c",
+    "results\\gated_delta_memory_verified.json": "ca4d3cef38bb81a9bae5e20e08ed75e4c6b296b717ef66a6a75b60e31e329d6c",
+    "results\\gated_memory.json": "3d52b925120e3c41857b79f9eb172e4e3da965f1a6233901fd4339117e6a20d2",
+    "results\\gated_memory_document_verification.json": "8e3eb9948c6910da88cc8a6d567b3d5e9e94fcfa159ff7edc1b7e20aed35795e",
+    "results\\gelu_comparison.json": "00f537bd2451e414350c9c2300e7365df2e25376abaefdd0262a61b7765e3327",
+    "results\\gelu_comparison_audit.json": "4fc5e1ec2157e7e61c5a354515cefd1088bd2ffcbb18e3e82aeca06462531dce",
+    "results\\gelu_comparison_data.json": "d88bc18d4efd43ccae5fe9e27997e3fab54584eb22577d872404b4614bfc2193",
+    "results\\gelu_comparison_verification.json": "7163641cf69dbe14bb1415c489ec2bf2f3b3a8ef999c2880b0e90a6f5e4a4eb2",
+    "results\\global_attention.json": "07d944cc8b8cce52563df4e9cb6efc3aced0b96709e6b70f7af2eea3c8df0997",
+    "results\\global_attention_document_verification.json": "7c85f7ca7642b6950958be85a32d73cd59bfd172e30d99d75fe11e377a2389da",
+    "results\\global_retrieval.json": "4fb70797f26ff9cde4a0d114423355895eab7b2d5c01780623ba3ba7509b7095",
+    "results\\global_retrieval_audit.json": "d8af3d71d5f5893cd3a6fd9f233bfd1a79ae99770a43f95dfb61bcaeff1bc9bb",
+    "results\\global_retrieval_data.json": "542417f85b322a40820b106c0100daabcabc0883384f8403e9ca659a5ca688c9",
+    "results\\global_retrieval_dependence.json": "a16c3eaf21dc3eb900b6e4fa850d0867f4e837c3d2eb242f6914bd02782a5ef8",
+    "results\\global_retrieval_document_verification.json": "d5adf5b4fe39da6f02805e988a6c8e98eb262e40ed163efca5680f569bad16af",
+    "results\\global_retrieval_pretest.json": "95f6df2c6e8c6b6d4fb568e8435b1d4f87a091deed22a2e248bfd7160b330c9b",
+    "results\\global_retrieval_profile.json": "cd8b215d857e89ca334477b0a0a966b438326b037186c7120c7e60e44364fa36",
+    "results\\gpu_attention.json": "2abbacd23b198b4a1ae37a26130ad9a1084138e1d7574dacefa105648eb8d728",
+    "results\\gpu_attention_audit.json": "46e892526bec8485b3fb90e40ecbc21dc0e64a23c4dfc3660f1e316dc546214b",
+    "results\\gpu_attention_recheck.json": "e2fcaa704409a3772112c91b3b946bcc35e7abd7f250b330868fd56938077a00",
+    "results\\gpu_environment.json": "24c06c34e22a6099906abbb5c656474579021a3732e50e451c9272f3cad54233",
+    "results\\gradient_flow.json": "076641007b45ba9f57e0b2c16eacaaa0bac57505f4a6994f3d73ff165c0a6411",
+    "results\\gradient_flow_audit.json": "af691c86f227f2763d9151499d1ae469c2def1e234c6b1d381ff21127e4f0dcc",
+    "results\\gradient_flow_plot_manifest.json": "11d369fe7eeed21a05dec6ac0d40b8593fafd655b1434ddd44a3eb6b97955651",
+    "results\\gradient_flow_probe.json": "2b8f7ad162b228ad48ea22a9d27fa1281e5c806222f3331b4a38b2d6c8dc5239",
+    "results\\head_ablation.json": "d2dd49ba53850ff6919f1dc741969a1c4d33236435cab4a9c60af7a05883acc3",
+    "results\\head_ablation_audit.json": "cf48400196ec844a567455a622aefd820039f40c11de7ab44423805d49f4d15c",
+    "results\\head_rows.json": "ea7728ee9bd2e9d2ecd31dc5080bd5ce0d8db4c79432df0fa06a60421cbc55a9",
+    "results\\head_rows_audit.json": "8e80fa027c5dab82a996936fe3db1f4cf9044089d210b919d74a2280da8adc3a",
+    "results\\head_token_paths.json": "0fcced85d2ea370403ad4439b982dafb975255b5a80cd2dbc208865be3953335",
+    "results\\head_width.json": "8ab0103f9429648db6a4b94ec0973b9d8fdbbd2eef301e569f07ee2baa040194",
+    "results\\head_width_audit.json": "012dd48b820b1daecc3a9b6e6d3aaeca4207593a370bddb5c05b0eacc66d198d",
+    "results\\joint_routing_confirmation.json": "ead5e0b747420aa4071a1897c613ee26f931563b571fe17e2ea06afcbab78f23",
+    "results\\joint_routing_confirmation_audit.json": "a2076210a5d24e41a39f897f4ea5cead1ee8c10f5b610fa86c51e6208227a2d4",
+    "results\\joint_routing_confirmation_inputs.json": "a30eb3d33e07e983b7ad861a2ed634b88aeb55a330541a6c81a43d6029255478",
+    "results\\joint_routing_confirmation_scores.json": "b43f0985b48d976a4006690eeb3adcd36d1764bc72926ab86d7b96ce78fc41c3",
+    "results\\key_content.json": "a1b6ec427c1ca9d22c745aa6c70a66177923e5c073d970f6512eae783cdd2f5a",
+    "results\\key_content_audit.json": "b3981323391558b761a8bb1c13ecdd35f496d0683b6f7d85b79bbfa7b4b3a324",
+    "results\\key_content_inputs.json": "471c762375e2debdbc6b6c6e728baf380dcc1f34fbdb3eb963d8fe9f82ed69d9",
+    "results\\kv_cache_equivalence.json": "97030fa7fcda742a993e6093d59f18adecf7a67218104cc743112c48d87d6db7",
+    "results\\kv_cache_equivalence_audit.json": "3590cf0c1c6fc7aa420c73827a57fd7dcddb2f54247ece2226698743ecbc1995",
+    "results\\learned_memory_control.json": "20ec3a3af055b115c894643c60b2b93f4379a58f7723eb79cef8ef3210d700fc",
+    "results\\learned_memory_control_audit.json": "4bb0de9c2e0f4884176fd246f2091dcb090c51704a794101760e3d99e4f9299b",
+    "results\\learned_memory_control_data.json": "bf0067b5a339a70277af9cff0759b0a948e10ee9fb477bfbc8b43a2441da8f72",
+    "results\\learned_memory_control_document_verification.json": "4f5119868e020438f29e8fd3b5ff14bd395407179761c5b00cfa6339b0eb94f1",
+    "results\\learned_memory_control_pretest.json": "00c707ebfb56a8e7240a6ee54607663931eed34f224376a1a460d73fe1d37809",
+    "results\\learned_memory_control_profile.json": "55a50f3716514a566e2e1abf31edb01b8887f274ea8962f843581ac410a89f07",
+    "results\\length_exposure.json": "6bc8512efaa2cd6e2a64c056c589f7aae5c6ea39d383ec2723c9e697e6442b59",
+    "results\\length_exposure_audit.json": "8de7bf0f979fe3c3eb8c665d98403dcdd9bde49d544901d34f00bf028d40c15c",
+    "results\\length_exposure_inputs.json": "637999381cc533e16436650baa653b322030da47dc1c333f05541f2e46ae8415",
+    "results\\length_exposure_plot_manifest.json": "ab54f724aaee1ed3955ab9986c77702a24547c694f80db04ecf604ca210f9090",
+    "results\\linear_attention.json": "60ecdcdda708ab3e0dad6e0bff84a0dbd455c215988286427a9f2f99cdd03ace",
+    "results\\linear_attention_audit.json": "58edf960ee431dbab0581cde6b77a37212daf7063538f6cdf16cda5f8c64ef20",
+    "results\\linear_attention_document_verification.json": "4a8c21b485293661cfd0e2900bb44c4ae11dec80636f28bb1c9458b03634bc8b",
+    "results\\linear_retrieval.json": "51d61f2cc708d0fbcc2f268673a99cf866571d5a41c6099a12ffbf3b0b8e0e0e",
+    "results\\linear_retrieval_audit.json": "c98a63b6d7881ab3672e3c73cbcf3cdd908dfc0e004803ccbd0c89e500854bb8",
+    "results\\linear_retrieval_document_verification.json": "7dd73bfa706db1761f99cc26d95e5d58b46711369c1ceb7e4b024aa37cdee474",
+    "results\\linear_retrieval_pretest.json": "27d2662d222e82e4e135c6fa3cd27b4192831595c8f7f5a6d5c607ab820e2e3c",
+    "results\\linear_retrieval_profile.json": "bc457f69daab977f61bf5fa43f54b68350300196dd972d3a3d98f92e3f15568c",
+    "results\\majority_math.json": "1e2ced644fd30b55819f56232d4544bb54eebd4e041d7a903b04116b6983e1c0",
+    "results\\majority_transfer.json": "f6ca10777e9ae674957683bbbf03c4bee9a94b32ff0400bb25d96ad6f84f4769",
+    "results\\majority_transfer_audit.json": "72f694f1242e30ca04dbff3b08bd258206e0c6adeadc9353a48c29141fc4a6b2",
+    "results\\majority_transfer_data.json": "b23430db1fb67c8129f98391d7854a22a072b836db1f00d651937c3b1ef38576",
+    "results\\majority_transfer_plot_manifest.json": "17cca55fb8256a94b85499620e9b3aa435ff12e0320ea73f0322644a537d274b",
+    "results\\majority_transfer_verification.json": "2df56c8f9a2d5de6dbab437cbaf648c72f5c78ee26ee05e89a1a631534ed110b",
+    "results\\memory_reset_diagnostic.json": "0165aa76043c8be64e0f8ea8c987a781d18f904ae25885563cc77fd88db1337f",
+    "results\\memory_reset_diagnostic_document_verification.json": "12ea23af22533acdc9ffa2eae9dc50bea961ed01e0afbbf6de4070efe35cc54c",
+    "results\\moe_balance_training_profile.json": "6a09d158019728398dce8d8d83b154c0cc1c7dba659fb093c191512eeb410953",
+    "results\\moe_balancing.json": "83045f994e74679de2a4849f21bba16bedc6a1ac9bb472fa46c076b43f3334dd",
+    "results\\moe_balancing_document_verification.json": "c8ac3c59d98e783e3ed2e9c8a3f88e5d8de937e54e6551f3e9a79d82179df3d1",
+    "results\\moe_routing.json": "edcdbb8850452508a6fad06ce4c7bc7975883e98369c75579738c682665fb1fe",
+    "results\\moe_routing_document_verification.json": "d3bc21c291d087f9a0055dfc743c1f85d1e39b7c48d7dd36abbc5f29e639477f",
+    "results\\mqa_decoding.json": "24d22947895b127eaa7855911bbdb28a9a831618817af0a71e1abfc5621318cb",
+    "results\\mqa_decoding_audit.json": "a2afbc1c3ec328ad8fe17987c82060508f3e91464657ff3766f2f2a23b019daf",
+    "results\\mqa_decoding_worker0.json": "5c9e4075ce9b6cbce00e97c5200d4c7217ea6cca6af9a3c4dd22066aea40276a",
+    "results\\mqa_decoding_worker1.json": "883cb4e9d5badf2544233fd526e318a769d69380695145502cda9bb9afc9e58e",
+    "results\\mqa_decoding_worker2.json": "c4c9a5f270941d47f17bfd523d39d8d0a7b8ff1bed9743e57c6994a56f63ae14",
+    "results\\mqa_training.json": "962abda0464828b25d2cd1bb160f99d7027a194ab518b0b364367da0e113280e",
+    "results\\mqa_training_audit.json": "e8b5df99b46508dcc956fc004d9365cf568c6421c07abb56e356f43b0b423290",
+    "results\\mqa_training_data.json": "ee612c2f4a0f2cc6f7a0782437c382796500e035d26bb6a275aa9ec856c50902",
+    "results\\mqa_training_verification.json": "1deec9a10f5934964e410b427d9b4c31841114a8405b4f690555c57cfd8a892c",
+    "results\\native_attention.json": "f188b94d31ab2de4b5746a8ddf11d8e24d329ccfbe0efd2c9340257c089e476a",
+    "results\\native_attention_audit.json": "c2629ead0149b7c8c161206d5665adf7c1464b70520cabb9183c313afc82c4ce",
+    "results\\native_backward.json": "e0eb98aab4e6b854c0d7bf59adb5232b557d3619a1367bf9089be319a21008a1",
+    "results\\native_backward_audit.json": "3147c7d0d4d12943311666b8cdf14e8e840eb3f4500292eca4ba8d0bf21e571f",
+    "results\\norm_extension.json": "f5b739b22f58b6e44f7112997604d8d8acac42d8b21606114392ee468efa0128",
+    "results\\norm_extension_audit.json": "731536e63fddb0a4fce88e1283e124c90a8fced6a6a00b2a13678ded014b5d73",
+    "results\\norm_extension_inputs.json": "12e5aeba2a74c430a7d99e8014304acbcef85f06645d271f9badec15f4b7a582",
+    "results\\norm_extension_plot_manifest.json": "1b89642d6f5aef109c0e5586edb92439616b10e6bf87890ac53d282859334ce0",
+    "results\\norm_extension_scores.json": "4181ad9d091d20caf5334240fe383441fe3e5fbce04465fed089f221dc1459ec",
+    "results\\norm_placement.json": "de8b63b5430107bcc5000a32d368adfd431a4a9b003e39ce82675d838c8f2bc8",
+    "results\\norm_placement_audit.json": "7167de1c8142bd84d604a38f23bae98816682a18926e883ce6bbc32f3a5e2b2f",
+    "results\\norm_placement_interrupted.json": "712ed0cc10a048094e7c8b6735e1e55acafd94ee3625dee53f8249ecb679a75b",
+    "results\\norm_placement_plot_manifest.json": "5a64e810137baee2209b28809e9afe8c2a766d8333a6345c32173b9b4e71eb86",
+    "results\\norm_placement_splits.json": "ec634427f4db22894161222a2a6c5422e3cc55d0c20218873bba191b211882b8",
+    "results\\norm_placement_test_scores.json": "1ee3a028f4962c1891d47289987f3d728c1a311067e2cdfba504c9365981991f",
+    "results\\optimizer_comparison.json": "1cad9530c73586b3c1c8832f3884dd12cc49b9350ecae659e9e918806c073e91",
+    "results\\output_capacity.json": "4c1cf8618a5939411204c6d689afed08edecb4f73adfd58aa7f48ad46ba54258",
+    "results\\output_capacity_audit.json": "a8c7a6aaca1aeb84ccb4344622d965156d7113ad8f62efb5dff55447911da9e3",
+    "results\\pair_shift_confirmation.json": "0b195a0bda958f6280bf60a91a8af132d4aeafc4107279d001037d862da5b5b1",
+    "results\\pair_shift_confirmation_parents.json": "cb65e0e85495e11adbc7e0db317d734bc88aff1bec1d1abc161328cfa27c9b17",
+    "results\\positional_comparison.json": "81bb0453bba1f72d37d51f24de0bdc16eaab1fa2a54044d665bd1f9a70c2b13c",
+    "results\\positional_comparison_audit.json": "e6811a73c43865ff190e408c632d11f4acf1b9a86f1f735616637b52ac94aa7c",
+    "results\\positional_comparison_inputs.json": "7099c72a941e9f8d427882ccce2de3e3804d75fc734245eb3184af7b26539cc3",
+    "results\\positional_comparison_verification.json": "5f6625c728d7302bd3c2fa83badaaef2890d7d20c491ac9c075d3bdc04695313",
+    "results\\position_distractors.json": "18115bf7e931c3b1aa64d32c8d90567baf8e1720f6513e22772c1a59be218d06",
+    "results\\position_layout.json": "29769b9035bd2a6b9f0f5087c054c15a416877555cb0b6bd269307d4ff7129a4",
+    "results\\position_routing.json": "349746c142c97b7a996082628c159a5def5a934b1012cea9d3edd3fce01c9254",
+    "results\\position_routing_audit.json": "4d60b4a90bf899e3543b149461241648ff4789479b18ff02e439ae3ed3f15c60",
+    "results\\position_routing_details.json": "60e3de0a20d0f0d699014c8a160adf1c4773c50481a35ed06bfeb91f393f4b17",
+    "results\\position_shifts.json": "d0c9ebe1b1e57ec476ef05e8be69a6f6558b537f7876b81dbae2a168471c9682",
+    "results\\position_training.json": "3fa9c07ad79998908535ebb328d89e4ac3ac567ccbc2c61c4bea9954d290ad67",
+    "results\\position_training_audit.json": "3ed4bc059a6182643e030ea048592ca442257265421a7cabcf5c96075fda7521",
+    "results\\position_training_splits.json": "66a9c8edcda04827a431fb80f0ea5eef46c82410dc24c6ca4f1101dee365ccc5",
+    "results\\positive_controls.json": "034a05e37e603d46d05b18576df0cc38c11e9093d1cc142be28351ee423cac68",
+    "results\\qkv_paths.json": "409748cdb5dfc4abe063b1c5a03626721b42de3589f927479b09cd037ab0d38d",
+    "results\\query_exposure.json": "f63a17025a348a5c7d0cef3cfc5a7979325cae38d03443770284ce5a9ea77496",
+    "results\\query_exposure_audit.json": "ebe39973edc9b4cd5a5465bdf65274a223397327e0628245793b8964f363cb6e",
+    "results\\query_exposure_data.json": "fb29f1c8fb6de3f770b41f4e3d5b34cb3a8ad35bcd8c139f6867a57c658b19d3",
+    "results\\query_key.json": "76343e38618b504ec25e000346ac11d88d3563c98d1bc337a66d665bff0ae9eb",
+    "results\\query_key_audit.json": "1f4a5dd35276adc17fa24f9b14800774c2f776bd7f5576990f7666aac39110b0",
+    "results\\query_key_scores.json": "c8474960cacf31d97488f0a193bf3bcc97cba25c140aa7126853e8e127602284",
+    "results\\query_position_paths.json": "9ea144726899241af8d1da92b17decb25a8cbbccb233aee966d26e76723954d3",
+    "results\\query_switch.json": "1c81523e5f8bcc4944d9cf7ecbaea9c09fdb967d9429981ebc506a9953357f4c",
+    "results\\recurrent_composition.json": "0ea2391e961017359b0c1ce12a15df2d5715c064b3a06d38b30de8b4fd047ba0",
+    "results\\recurrent_composition_audit.json": "f9e5631a10fbdb34dd71a8db554389ff2f57ee42df85a8e6240e329793965a4e",
+    "results\\recurrent_composition_data.json": "b438b554240ca973b0ef0ba34999dd6ae86c8692a523d1b72a32d9656ebb5da5",
+    "results\\recurrent_composition_document_verification.json": "4241e78274ed102d26468119f7f9b56ebc29bf1fa31439a284727bd51451a2aa",
+    "results\\recurrent_composition_pretest.json": "a266a6487741bb585fbe49a8a7cc3b5c439bc0bf9b4fb5873bb42629a4166c47",
+    "results\\recurrent_language.json": "ccd73dbac56a28be866e804b02611794efc7c66c1ed5e9d9a2e4cf542f373b99",
+    "results\\recurrent_language_audit.json": "6e18847cd8f70a6d645620fc8fad610a50428b316614073d3db6c0eb38170bbf",
+    "results\\recurrent_language_audit_progress.json": "1b6ed014c5021dd4b4588e14c7f03227f1f9fd4cfb71f7d9957c94f426def851",
+    "results\\recurrent_language_decision_verification.json": "d9e52c89f0583990080694e5d1f704447a642ef4b3d931dda6ab903e38fe4bc7",
+    "results\\recurrent_language_pretest.json": "526f096ebe5d6d3e7f035c304f51ec1e1a21d2cfa23681ff933b0c9412ff4b4b",
+    "results\\recurrent_retrieval.json": "22ecbf097b3db6a037c289cd4449defd9a69050cebe4e62f4364f426f48280b8",
+    "results\\recurrent_retrieval_audit.json": "725955cd93fbd3ca892d7538c35fd8a3099bab227bb73eccf461edc0cf3e49fa",
+    "results\\recurrent_retrieval_pretest.json": "eb7ec71281ac4707bf94c01971fa4e7d70a805f68a3dbd78e249e7a8d87bc411",
+    "results\\recurrent_state.json": "d4b74b860b8adb7575398a4b419f681c83e293463bb7db273f5d2a8aa84e9cb9",
+    "results\\recurrent_state_audit.json": "a327a50e46d929a9cee695486ac7cab1cf0701841928c216d834915e6c29d1e6",
+    "results\\recurrent_state_pretest.json": "ed3add086fa4c19195773aaf0cd29f4662eba87287c53fc1105f0dfe466f4948",
+    "results\\repeated_key.json": "28f0a6c9da8aa9e3d9155d7613f705335013738d09f03f5b715d7098e76958c8",
+    "results\\repeated_key_audit.json": "36102f8f583ad9e4c80986bb5cd8736d61b49fe38f02b5ae6541f8f82b5bf812",
+    "results\\repeated_key_data.json": "2a164e7ae98f8ed0b3f54f6a914b1baecb57590b676216e1ad03c9f546f066e3",
+    "results\\reserved_cycle.json": "64305fd57602286313f4acf07493aad03400e3f37a91ad3b2af5da4dd42ed8cb",
+    "results\\reserved_cycle_audit.json": "4c09886cd2307cf09833350bcb98799ca70a537674ce8c74e8f9e049f5f73364",
+    "results\\reserved_cycle_splits.json": "7b4361ffbb7b0333d5931b1fd641467af23f6e479cd4a77f65bb1d0c5a1d232f",
+    "results\\rmsnorm_math.json": "df153a008b76eb40213b4012a9a8ab9a3468acbe6c6cec4b148c6974166d14d9",
+    "results\\rmsnorm_math_audit.json": "59ade99d2e87fc217ed82393fd9efa48f6319e00c8ecef86495ed442f1eb86f8",
+    "results\\rmsnorm_training.json": "5498eaed8e28f9cce9dde876478be3feae5db599f9b80db3d6d544aa0be61868",
+    "results\\rmsnorm_training_audit.json": "3c7cc7b3f46b05164c40afb198b600361e330d1256774910d48f78c3c0dd261f",
+    "results\\rmsnorm_training_data.json": "e9ef5b06469c10aea24e974bca3d1eac22c1c1ded4464274b1e1bb007f1f0086",
+    "results\\rmsnorm_training_plot_manifest.json": "c8fbaf0fc6f99fb985c01e03702ab157843fbb58bcc558268cbbd9efdbf901c7",
+    "results\\rmsnorm_training_verification.json": "79e7587f049468d96c07cdcb1da2db7823ff753fac9bcca495e1ed2d80a0ac74",
+    "results\\shared_kv.json": "519706d823034f21beed6dd697b188a223c6d8823bd769a8b89fb03b8e92cc91",
+    "results\\shared_kv_audit.json": "02f867efdf9f54ba00a24dba0780e7253b39101669992685a3f5a6c961c7b12c",
+    "results\\skip_confirmation.json": "19050711b5a7007be3eb432007317ab22c990a598826ec142aba0c9e44e37c5b",
+    "results\\sliding_window.json": "7e77d748e42ad4b4499123f9e10933263381059b7e2480849d6e7295b2b92afb",
+    "results\\sliding_window_document_verification.json": "b35b54ff2b0230b7b32a287afc3c26bc33aab4076dc0a741006bfad076a2c666",
+    "results\\state_supervision.json": "fc89b1dd6647f3a61b84397fd9a2412c996a6a9ee44e63cc8c27742b03fc211f",
+    "results\\state_supervision_audit.json": "8b20033165e46c86964df321d74a575e641bb1b12a6c7d989c21444e753780fe",
+    "results\\state_supervision_decision.json": "897f595620717d83fc7a28bc78672f0988bc9fc10dbc6a8d0034354b90c9b2c6",
+    "results\\state_tracking.json": "6e5164c307cac26a8a2d791d5c275feb9425d5d09de769da083f1d4c2f249862",
+    "results\\state_tracking_audit.json": "15a3240421248f4499d8123898915ca11e98fab95d020fefc9e856bab8d45ef7",
+    "results\\state_tracking_data.json": "c52c2837d02135db503a904f1ad8928e140ad5b21a4af69a48a585068df279e5",
+    "results\\state_tracking_fit.json": "0b2bb692427b3a81e5126dcbe3b088bf539d61104cd6bbffc8cbf5d68096d7f4",
+    "results\\strict_retrieval.json": "fd1948c9905c94d31f7bfa65e8d9d3f3fed6c7ecc85a43df15efec205cbfe6b6",
+    "results\\strict_retrieval_inputs.json": "cd53cd2dc538dd854a7d410bf1a2081d8e7a612d4c4d23563928977ed4689955",
+    "results\\subset_confirmation.json": "03d4320ef5c8bcd113ddc9ec98a7261a13b12c47c001fe6ed5f04d2846d0760c",
+    "results\\subset_confirmation_splits.json": "f86a70d3dade305ddf3b60d64f870f500c559fe9d7e9ab83d8a6c763e92515e2",
+    "results\\swiglu_math.json": "0d1888a3ea3c24c03c37cd8075dc501b3e4da0e91254b60f37ea1dad68aa6b23",
+    "results\\swiglu_training.json": "7a3df808995b051d5148b41564d73cbb3a6ef829bf40ef67eb201b5950f9e943",
+    "results\\swiglu_training_audit.json": "3b61c0deb832b178d181da1227cc67fafa2df365215012786a189fb60a549f0f",
+    "results\\swiglu_training_audit_progress.json": "7b9efbf943c808ae074ea3a9e03a47521cebaee598044000bc658ee4cab9956b",
+    "results\\swiglu_training_plot_manifest.json": "fc68e02c84b97ae36de377a5bab9c3938c8cfef85c819268daa9d1001c1e641c",
+    "results\\swiglu_training_verification.json": "0b16cae74cacde93b70f6cd60b8480e321f99ea791f8fc9715b4ccc8f02d0882",
+    "results\\target_distractor_keys.json": "a5c0bc00728d9d29b97c926d3195b41d0a676f4dd1a56b98cfbfc20210e2d7f7",
+    "results\\trained_competition.json": "15f0de07f1c217626cb16852be2b2efc79d17c45b319615302b8c2b7632df596",
+    "results\\trained_competition_audit.json": "0f228bd3c82653a4cd9b5f15c79cfb8d73bea1c71503c80d6ee3610e6696a52d",
+    "results\\trained_recall_trace.json": "ce1a85b61a0cb6698ad74e22e0c4983309c4624b7e107e6e4733a6d6910dc37f",
+    "results\\transformer_walkthrough.json": "db8af2c3ec6d25a2839f5070a2a97ed12df316e496be3ba3787fb02f62ccc1d6",
+    "results\\value_counterfactuals.json": "c688eb232ae81ee2e8be1b22d9934558354970caa053c8721f1c7fc0102e0f2e",
+    "results\\value_counterfactual_inputs.json": "3d511670dc06b1e3af832a2954b784c9289c78727225a069929b55d102f113f2",
+    "results\\weight_tying.json": "adbd5994cc133effc1f2081cf15ab60bf3cceb70e68affe691d501df47ee827f",
+    "results\\weight_tying_audit.json": "1bffb205ceb12f0c8b2b31a1cca88040c6f4637dfc56b64655b1cc7c63f9fdc3",
+    "results\\weight_tying_audit_progress.json": "7eee2ba44b168357ddd17185dafd5555becef561f4abb4fd74f22c6221057a80",
+    "results\\weight_tying_math.json": "b7aab78b606f9a0f17e3dcde43d5d11bf94e53e9404990848ab030f284d5ba6d",
+    "results\\weight_tying_plot_manifest.json": "b44d982420a3e78ce467c6160dc431185be3a97875ba9559c8c873078f7e3107",
+    "results\\weight_tying_verification.json": "211f146d47a438c196570b47033e13364455ca9f979382444f1fa892dbf96dc1",
+    "results\\wikitext2_acquisition.json": "9f0b1ede15fab44b655740d52c4d9b19965c854cd60cdd192abb55b65bc287a8",
+    "results\\wikitext2_baseline_preflight.json": "84f38b9b4a9e1e8c4967ff4244ea3f084d32174e9a545bc7533aefa5ff1654d9",
+    "results\\wikitext2_data_audit.json": "9a3ca4f9c3a4cfe1a098a9baeda4fd2a09ca81a1e25691a80c90d12df4bc3291",
+    "results\\wikitext2_encoding.json": "e917a3c3d8118aebf329063b35c8811915589461e9bb7b4c3bdc955d4d689323",
+    "results\\wikitext2_gpu_verification.json": "c0e003598d16211c69f058f01099939abdd89c3a2e3b95941a802125eb7f51d2",
+    "results\\wikitext2_norm.json": "cfd1aed8624b1ad48b677bd4e84c8accf9aaa8ebadf82ff69f0fea0ec21ba904",
+    "results\\wikitext2_norm_audit.json": "41ad6c6b052de46f4866e5357786e42eeec7eebe683e9bf13b13575c72d9fb91",
+    "results\\wikitext2_norm_audit_progress.json": "1ed1c0d1548a4f898a26bb7328e3755524b0a7a30e0b4c5ac4efd2eac09af322",
+    "results\\wikitext2_norm_plot_manifest.json": "bb016d2ef7247091df81fc49a7547bd093dd14d7463bd372e3936a85ed8ae620",
+    "results\\wikitext2_norm_verification.json": "9247272071bbb79b152d3bedd744743443936eb1e17bb03b3e75bf372bf5a549",
+    "results\\wikitext2_training.json": "49b213f230d9e20d7903eebb01edd1be4e94af243b4e6a13b9049fd66da14668",
+    "results\\wikitext2_training_audit.json": "47cd203ce8bab4965e480a7c0736b929a89a5932886f028358a24808a33036d3",
+    "results\\wikitext2_training_audit_progress.json": "fb891361837c590ddc1b771348a69ab5bcafde7b0cf23272c93b73842c0776c5",
+    "results\\wikitext2_training_plot_manifest.json": "3ccb9d9aa3f92f696cf15bb1a0f239282cddbba93cf6d7c4e1c272b06321d423",
+    "results\\window_retrieval.json": "159e4b563c16a98e1bc62e9bbfe743272347999ffabfdb671bac565ff97e5766",
+    "results\\window_retrieval_audit.json": "c12e4160a0761dd7f9f8cd09597160355a9a1117d0d48aae4cc041bfcac81bce",
+    "results\\window_retrieval_data.json": "50f289ef292860bdcc9422e314fecbdffd6c77cba0d1810f2616b7ca492f836b",
+    "results\\window_retrieval_document_verification.json": "eded0a48b48c15d8a3ca0708bac748304e7e50b50441c6946aae7af0afae468e",
+    "results\\window_retrieval_preflight_issue.json": "7eac7cac85cc41570dbe6cc66be76427a33e9cebda818b0fd462044872efdf7c",
+    "results\\window_retrieval_pretest.json": "66ac06ac237c5a00b581c1728082ec681869981aec25a8375e31ec19825d658d",
+    "results\\window_retrieval_profile.json": "e327ec0a98763828695bb6068fe17a95c59cdb7c114140b5c581af2a5896cad1",
+    "results\\window_retrieval_profile_issue.json": "750073af7e84e7f59db8532256cf3d1fa8e6f01caaf1463b3366a58aff90be7f"
+  },
+  "runs": [
+    {
+      "seed": 2819,
+      "arm": "off",
+      "alpha": 0.0,
+      "status": "trained",
+      "initial_sha256": "8634ed78afd80709c40fa89e26e2e274572b548eb88fd6664c06d76a333b3223",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.10496247353155609,
+          "aux": 1.2596664080206101,
+          "tv": 0.359375,
+          "overflow": 0.359375
+        },
+        {
+          "step": 1000,
+          "ce": 0.013151829532799954,
+          "aux": 1.199519469098224,
+          "tv": 0.2890625,
+          "overflow": 0.2890625
+        },
+        {
+          "step": 1500,
+          "ce": 0.004476642415678878,
+          "aux": 1.1401636538343007,
+          "tv": 0.234375,
+          "overflow": 0.234375
+        },
+        {
+          "step": 2000,
+          "ce": 0.0028332714186610833,
+          "aux": 1.2524527507583252,
+          "tv": 0.3046875,
+          "overflow": 0.3046875
+        },
+        {
+          "step": 2500,
+          "ce": 0.0022555451467071775,
+          "aux": 1.1553741856213624,
+          "tv": 0.25,
+          "overflow": 0.25
+        },
+        {
+          "step": 3000,
+          "ce": 0.0011531704293190007,
+          "aux": 1.181525537960852,
+          "tv": 0.2578125,
+          "overflow": 0.2578125
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.0011938833006651132,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.25,
+          "overflow": 0.25,
+          "assignment_fractions": [
+            0.12109375,
+            0.12890625,
+            0.357421875,
+            0.392578125
+          ],
+          "mean_aux": 1.176925829904855,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0012591219961640698,
+              "overflow": 0.291015625,
+              "assignments": [
+                0.009765625,
+                0.17578125,
+                0.248046875,
+                0.56640625
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.0011286446051661566,
+              "overflow": 0.208984375,
+              "assignments": [
+                0.232421875,
+                0.08203125,
+                0.466796875,
+                0.21875
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.006088773928208037,
+          "accuracy": 0.998046875,
+          "mean_batch_tv": 0.248046875,
+          "overflow": 0.248046875,
+          "assignment_fractions": [
+            0.123046875,
+            0.12890625,
+            0.36328125,
+            0.384765625
+          ],
+          "mean_aux": 1.1846812318904896,
+          "groups": {
+            "0": {
+              "accuracy": 0.99609375,
+              "ce": 0.009855116856605867,
+              "overflow": 0.23828125,
+              "assignments": [
+                0.0234375,
+                0.18359375,
+                0.23046875,
+                0.5625
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.0023224309998102054,
+              "overflow": 0.2578125,
+              "assignments": [
+                0.22265625,
+                0.07421875,
+                0.49609375,
+                0.20703125
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 9.030464100003883,
+      "stream_sha256": "cb79c790fa893b20a881a6292a09c492d29631ab5851b4df50837de75b6c4e77",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2819_off.pt",
+      "checkpoint_sha256": "110e1f16e9188fc6f6c50bf3633ee8abd20fadcf24eb888e5e274361d45166e1"
+    },
+    {
+      "seed": 2819,
+      "arm": "on",
+      "alpha": 0.01,
+      "status": "trained",
+      "initial_sha256": "8634ed78afd80709c40fa89e26e2e274572b548eb88fd6664c06d76a333b3223",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.05471252070659371,
+          "aux": 1.0307834105739215,
+          "tv": 0.125,
+          "overflow": 0.125
+        },
+        {
+          "step": 1000,
+          "ce": 0.0057312139007627706,
+          "aux": 1.0008718932487732,
+          "tv": 0.0234375,
+          "overflow": 0.0234375
+        },
+        {
+          "step": 1500,
+          "ce": 0.006302624679578482,
+          "aux": 1.0065123956747568,
+          "tv": 0.046875,
+          "overflow": 0.046875
+        },
+        {
+          "step": 2000,
+          "ce": 0.00755181486697151,
+          "aux": 1.0128929206317205,
+          "tv": 0.078125,
+          "overflow": 0.078125
+        },
+        {
+          "step": 2500,
+          "ce": 0.004317957781077841,
+          "aux": 1.0066757734129517,
+          "tv": 0.078125,
+          "overflow": 0.078125
+        },
+        {
+          "step": 3000,
+          "ce": 0.002281172164379832,
+          "aux": 1.0058020970019013,
+          "tv": 0.03125,
+          "overflow": 0.03125
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.002998454041005325,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.0712890625,
+          "overflow": 0.0712890625,
+          "assignment_fractions": [
+            0.2490234375,
+            0.2568359375,
+            0.2451171875,
+            0.2490234375
+          ],
+          "mean_aux": 1.0171998759732093,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.003879677982817401,
+              "overflow": 0.080078125,
+              "assignments": [
+                0.021484375,
+                0.513671875,
+                0.0,
+                0.46484375
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.002117230099193248,
+              "overflow": 0.0625,
+              "assignments": [
+                0.4765625,
+                0.0,
+                0.490234375,
+                0.033203125
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.0049957974431109,
+          "accuracy": 0.998046875,
+          "mean_batch_tv": 0.05859375,
+          "overflow": 0.05859375,
+          "assignment_fractions": [
+            0.263671875,
+            0.263671875,
+            0.251953125,
+            0.220703125
+          ],
+          "mean_aux": 1.0170320415661083,
+          "groups": {
+            "0": {
+              "accuracy": 0.99609375,
+              "ce": 0.005313995356805781,
+              "overflow": 0.0546875,
+              "assignments": [
+                0.046875,
+                0.52734375,
+                0.0,
+                0.42578125
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.00467759952941602,
+              "overflow": 0.0625,
+              "assignments": [
+                0.48046875,
+                0.0,
+                0.50390625,
+                0.015625
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 9.225605400002678,
+      "stream_sha256": "cb79c790fa893b20a881a6292a09c492d29631ab5851b4df50837de75b6c4e77",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2819_on.pt",
+      "checkpoint_sha256": "e106073b79baa9aaaf6660d0de9b88515cc90ca967340f6e9071ec0ff070568c"
+    },
+    {
+      "seed": 2833,
+      "arm": "on",
+      "alpha": 0.01,
+      "status": "trained",
+      "initial_sha256": "e424a6a19cb660745448211c9318f154e58b79a9c9a1003b250953925bb6a916",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.011201547163448244,
+          "aux": 1.0661593788387973,
+          "tv": 0.1953125,
+          "overflow": 0.1953125
+        },
+        {
+          "step": 1000,
+          "ce": 0.006404110907560693,
+          "aux": 1.0078660608762426,
+          "tv": 0.078125,
+          "overflow": 0.078125
+        },
+        {
+          "step": 1500,
+          "ce": 0.006551631831229455,
+          "aux": 1.002842993360185,
+          "tv": 0.03125,
+          "overflow": 0.03125
+        },
+        {
+          "step": 2000,
+          "ce": 0.007722057269293413,
+          "aux": 1.012999059887162,
+          "tv": 0.0546875,
+          "overflow": 0.0546875
+        },
+        {
+          "step": 2500,
+          "ce": 0.007952037217517643,
+          "aux": 1.0508169979920365,
+          "tv": 0.1171875,
+          "overflow": 0.1171875
+        },
+        {
+          "step": 3000,
+          "ce": 0.0014761947435885541,
+          "aux": 1.0062000257789165,
+          "tv": 0.0390625,
+          "overflow": 0.0390625
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.0035625616169837155,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.0654296875,
+          "overflow": 0.0654296875,
+          "assignment_fractions": [
+            0.2529296875,
+            0.2490234375,
+            0.2470703125,
+            0.2509765625
+          ],
+          "mean_aux": 1.0148622796719824,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0036652016781359457,
+              "overflow": 0.056640625,
+              "assignments": [
+                0.302734375,
+                0.353515625,
+                0.158203125,
+                0.185546875
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.003459921555831485,
+              "overflow": 0.07421875,
+              "assignments": [
+                0.203125,
+                0.14453125,
+                0.3359375,
+                0.31640625
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.002404178843441748,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.06640625,
+          "overflow": 0.06640625,
+          "assignment_fractions": [
+            0.26953125,
+            0.24609375,
+            0.2421875,
+            0.2421875
+          ],
+          "mean_aux": 1.0216847479723823,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0036524542744787855,
+              "overflow": 0.07421875,
+              "assignments": [
+                0.29296875,
+                0.34765625,
+                0.171875,
+                0.1875
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.0011559034124047109,
+              "overflow": 0.05859375,
+              "assignments": [
+                0.24609375,
+                0.14453125,
+                0.3125,
+                0.296875
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 9.12976570000319,
+      "stream_sha256": "20c90ba522029daf3c505ec3e762f48ba00d7e37f7b46d28c006daf5a6779fe9",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2833_on.pt",
+      "checkpoint_sha256": "630648a241667323eb46e4a83fa8d4c2afba2ec65d9c6a5b1e7326bc078ba241"
+    },
+    {
+      "seed": 2833,
+      "arm": "off",
+      "alpha": 0.0,
+      "status": "trained",
+      "initial_sha256": "e424a6a19cb660745448211c9318f154e58b79a9c9a1003b250953925bb6a916",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.07952855640068428,
+          "aux": 1.2481141373510791,
+          "tv": 0.25,
+          "overflow": 0.25
+        },
+        {
+          "step": 1000,
+          "ce": 0.014604626819927092,
+          "aux": 1.1753863292403701,
+          "tv": 0.25,
+          "overflow": 0.25
+        },
+        {
+          "step": 1500,
+          "ce": 0.007104590994496224,
+          "aux": 1.180014658114521,
+          "tv": 0.25,
+          "overflow": 0.25
+        },
+        {
+          "step": 2000,
+          "ce": 0.0032675870892539286,
+          "aux": 1.1988681733751272,
+          "tv": 0.25,
+          "overflow": 0.25
+        },
+        {
+          "step": 2500,
+          "ce": 0.0007409464750818232,
+          "aux": 1.0237609477628786,
+          "tv": 0.0859375,
+          "overflow": 0.0859375
+        },
+        {
+          "step": 3000,
+          "ce": 0.000675890766883788,
+          "aux": 1.1181112374621198,
+          "tv": 0.2265625,
+          "overflow": 0.2265625
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.0013161432137308669,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.201171875,
+          "overflow": 0.201171875,
+          "assignment_fractions": [
+            0.3603515625,
+            0.1787109375,
+            0.3408203125,
+            0.1201171875
+          ],
+          "mean_aux": 1.1108105728626971,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0011888451020213328,
+              "overflow": 0.228515625,
+              "assignments": [
+                0.6171875,
+                0.189453125,
+                0.103515625,
+                0.08984375
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.001443441325440401,
+              "overflow": 0.173828125,
+              "assignments": [
+                0.103515625,
+                0.16796875,
+                0.578125,
+                0.150390625
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.0014430575282687545,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.197265625,
+          "overflow": 0.197265625,
+          "assignment_fractions": [
+            0.34375,
+            0.18359375,
+            0.353515625,
+            0.119140625
+          ],
+          "mean_aux": 1.1118736594329794,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.000785211911513436,
+              "overflow": 0.19140625,
+              "assignments": [
+                0.625,
+                0.2109375,
+                0.09765625,
+                0.06640625
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.002100903145024073,
+              "overflow": 0.203125,
+              "assignments": [
+                0.0625,
+                0.15625,
+                0.609375,
+                0.171875
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 9.944774800002051,
+      "stream_sha256": "20c90ba522029daf3c505ec3e762f48ba00d7e37f7b46d28c006daf5a6779fe9",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2833_off.pt",
+      "checkpoint_sha256": "3adebdae36fa4de3fe32daddc871e6de9e50611a77df5876ca20cc295ac9e3e9"
+    },
+    {
+      "seed": 2837,
+      "arm": "off",
+      "alpha": 0.0,
+      "status": "trained",
+      "initial_sha256": "3671c9ffcfebb60c9681aa444c7a32bb881c0dd3e1dd4d40d5b57f2b84a60b42",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.08775791706689444,
+          "aux": 1.3622044776227622,
+          "tv": 0.3203125,
+          "overflow": 0.3203125
+        },
+        {
+          "step": 1000,
+          "ce": 0.028931702277435137,
+          "aux": 1.1988686944141487,
+          "tv": 0.2890625,
+          "overflow": 0.2890625
+        },
+        {
+          "step": 1500,
+          "ce": 0.005210940200204712,
+          "aux": 1.1308217775537175,
+          "tv": 0.2109375,
+          "overflow": 0.2109375
+        },
+        {
+          "step": 2000,
+          "ce": 0.0021292362140252217,
+          "aux": 1.1302453175214813,
+          "tv": 0.171875,
+          "overflow": 0.171875
+        },
+        {
+          "step": 2500,
+          "ce": 0.001656311964315455,
+          "aux": 1.1471906225293695,
+          "tv": 0.265625,
+          "overflow": 0.265625
+        },
+        {
+          "step": 3000,
+          "ce": 0.0018837453642627706,
+          "aux": 1.130145443216695,
+          "tv": 0.21875,
+          "overflow": 0.21875
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.0012509096833197139,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.19140625,
+          "overflow": 0.19140625,
+          "assignment_fractions": [
+            0.2080078125,
+            0.408203125,
+            0.2763671875,
+            0.107421875
+          ],
+          "mean_aux": 1.1317183033853702,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0008305579503540507,
+              "overflow": 0.15234375,
+              "assignments": [
+                0.015625,
+                0.23046875,
+                0.5390625,
+                0.21484375
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.001671261416285377,
+              "overflow": 0.23046875,
+              "assignments": [
+                0.400390625,
+                0.5859375,
+                0.013671875,
+                0.0
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.003282610865992177,
+          "accuracy": 0.998046875,
+          "mean_batch_tv": 0.205078125,
+          "overflow": 0.205078125,
+          "assignment_fractions": [
+            0.212890625,
+            0.4140625,
+            0.28515625,
+            0.087890625
+          ],
+          "mean_aux": 1.1495809050373282,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0017629380436089796,
+              "overflow": 0.1484375,
+              "assignments": [
+                0.0234375,
+                0.25,
+                0.55078125,
+                0.17578125
+              ]
+            },
+            "1": {
+              "accuracy": 0.99609375,
+              "ce": 0.004802283688375374,
+              "overflow": 0.26171875,
+              "assignments": [
+                0.40234375,
+                0.578125,
+                0.01953125,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 11.822695399998338,
+      "stream_sha256": "3bbf02f579b3f5a14eb9fcad3af21360ce47a4349ed2f5ebe0260195e56b89f5",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2837_off.pt",
+      "checkpoint_sha256": "8c04a21a1629e2b8489e5a72f382299c6ad5edc50cebff90555da03d9bfa1423"
+    },
+    {
+      "seed": 2837,
+      "arm": "on",
+      "alpha": 0.01,
+      "status": "trained",
+      "initial_sha256": "3671c9ffcfebb60c9681aa444c7a32bb881c0dd3e1dd4d40d5b57f2b84a60b42",
+      "curve": [
+        {
+          "step": 500,
+          "ce": 0.06865055613169574,
+          "aux": 1.0358267907959458,
+          "tv": 0.1328125,
+          "overflow": 0.1328125
+        },
+        {
+          "step": 1000,
+          "ce": 0.014712777408202161,
+          "aux": 1.0172246406955474,
+          "tv": 0.046875,
+          "overflow": 0.046875
+        },
+        {
+          "step": 1500,
+          "ce": 0.022205680151817682,
+          "aux": 1.0204494402368811,
+          "tv": 0.1171875,
+          "overflow": 0.1171875
+        },
+        {
+          "step": 2000,
+          "ce": 0.008724963752984977,
+          "aux": 1.0026194444775376,
+          "tv": 0.09375,
+          "overflow": 0.09375
+        },
+        {
+          "step": 2500,
+          "ce": 0.0023088870595490887,
+          "aux": 1.006199832848309,
+          "tv": 0.0390625,
+          "overflow": 0.0390625
+        },
+        {
+          "step": 3000,
+          "ce": 0.0035167638511781484,
+          "aux": 1.030978994020303,
+          "tv": 0.09375,
+          "overflow": 0.09375
+        }
+      ],
+      "metrics": {
+        "train": {
+          "ce": 0.0021092584584680406,
+          "accuracy": 1.0,
+          "mean_batch_tv": 0.0537109375,
+          "overflow": 0.0537109375,
+          "assignment_fractions": [
+            0.2548828125,
+            0.248046875,
+            0.2578125,
+            0.2392578125
+          ],
+          "mean_aux": 1.0134657967060277,
+          "groups": {
+            "0": {
+              "accuracy": 1.0,
+              "ce": 0.0018421867935824326,
+              "overflow": 0.046875,
+              "assignments": [
+                0.0,
+                0.005859375,
+                0.515625,
+                0.478515625
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.002376330123353649,
+              "overflow": 0.060546875,
+              "assignments": [
+                0.509765625,
+                0.490234375,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "validation": {
+          "ce": 0.017776757369117383,
+          "accuracy": 0.998046875,
+          "mean_batch_tv": 0.07421875,
+          "overflow": 0.07421875,
+          "assignment_fractions": [
+            0.2734375,
+            0.2265625,
+            0.263671875,
+            0.236328125
+          ],
+          "mean_aux": 1.0203159888122206,
+          "groups": {
+            "0": {
+              "accuracy": 0.99609375,
+              "ce": 0.033566816074082,
+              "overflow": 0.09375,
+              "assignments": [
+                0.0,
+                0.0,
+                0.52734375,
+                0.47265625
+              ]
+            },
+            "1": {
+              "accuracy": 1.0,
+              "ce": 0.0019866986641527695,
+              "overflow": 0.0546875,
+              "assignments": [
+                0.546875,
+                0.453125,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "updates": 3000,
+      "examples": 384000,
+      "supervised_targets": 384000,
+      "seconds": 11.143582799995784,
+      "stream_sha256": "3bbf02f579b3f5a14eb9fcad3af21360ce47a4349ed2f5ebe0260195e56b89f5",
+      "checkpoint": "results\\moe_balance_training_checkpoints\\2837_on.pt",
+      "checkpoint_sha256": "11f9a1f4100c0c7eb6946e8e3cc9119f5ab02dd04f8b938dc3759906d7670484"
+    }
+  ],
+  "preflight": {
+    "labels": {
+      "disjoint_examples": 2048,
+      "shifted_label_control": true,
+      "baselines": {
+        "train": {
+          "0": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 512
+          },
+          "1": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 512
+          }
+        },
+        "validation": {
+          "0": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 256
+          },
+          "1": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 256
+          }
+        },
+        "test": {
+          "0": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 256
+          },
+          "1": {
+            "oracle": 1.0,
+            "constant_zero": 0.5,
+            "sign_u": 0.5,
+            "examples": 256
+          }
+        }
+      }
+    },
+    "models": [
+      {
+        "seed": 2819,
+        "output_error": 2.220446049250313e-16,
+        "gradient_error": 1.1102230246251565e-16,
+        "aux_error": 0.0,
+        "omit_gate_effect": 0.27200592230308374
+      },
+      {
+        "seed": 2833,
+        "output_error": 1.1102230246251565e-16,
+        "gradient_error": 5.551115123125783e-17,
+        "aux_error": 0.0,
+        "omit_gate_effect": 0.3520169172153772
+      },
+      {
+        "seed": 2837,
+        "output_error": 1.6653345369377348e-16,
+        "gradient_error": 2.7755575615628914e-17,
+        "aux_error": 0.0,
+        "omit_gate_effect": 0.39315566746244324
+      }
+    ]
+  }
+}

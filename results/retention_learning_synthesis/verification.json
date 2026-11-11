@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "scope": "Documentation synthesis; existing audit bindings and protected files checked. No research audit rerun or new model execution.",
+  "reports": {
+    "full_pool_fitting_confirmation/study": {
+      "report_sha256": "923ff63b4beed32fe75fc83733250ac71ac2600d58df088df6b760addce7f1f4",
+      "audit_sha256": "9bf53c8d427ef7523ca8e78a8a0cb8754cf4d14c015cc77eee4265c5524f9df6"
+    },
+    "shared_readout_recovery": {
+      "report_sha256": "2ce66864b094a894902c530a64aa9968cffdfaaf8463ad51f9bcbc20a599e549",
+      "audit_sha256": "2fe8e293a131d34a64dc6feed1131764108527663f5d8c14a4fd71995063cc29"
+    },
+    "fitting_direction": {
+      "report_sha256": "1b3801e17420feacc8d4f95826cc6e35c895e49b0a67257f08327cfb31ddb252",
+      "audit_sha256": "cf12363299cb1380f85a9c688a09a50bbd5999a703c0aa9581ba5b42950f6a9b"
+    },
+    "fitting_representation": {
+      "report_sha256": "cf968b9e02c6b487b38ec2fd0aa806243b1ccae20b1cd0f9cc46b0ddef3ac0f9",
+      "audit_sha256": "da8903b5c0caf20c96ac503c4c2a9ac9642b755311c9eed68b62e644649cce13"
+    },
+    "decoder_scale_shape": {
+      "report_sha256": "e83bb6f4d615c9083f4bb7a42ece96333b054b474879f859ae462442a80ba94e",
+      "audit_sha256": "0a11bdfc8fa26f1ef27f4e5d699af56010f5bd71cf10850d4a95531b2f8a7b72"
+    },
+    "fitting_transport_training": {
+      "report_sha256": "e358c4fdaaeb5dc02df2749d7ba18699f5033eaac226f328df9c771593327974",
+      "audit_sha256": "39e6947bc8f88c3d57ef08a1fe6e37284defb2dc617eb8f6cf987a74e4d5e810"
+    }
+  },
+  "protected_files_checked": 152,
+  "numeric_checks": {
+    "training_error_table": [
+      [
+        3473,
+        122,
+        0,
+        0
+      ],
+      [
+        3479,
+        176,
+        0,
+        0
+      ],
+      [
+        3481,
+        204,
+        6,
+        24
+      ]
+    ],
+    "native_test_32": [
+      {
+        "seed": 3473,
+        "accuracy_percent": 87.40234375,
+        "maps": {
+          "count": 384,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "seed": 3479,
+        "accuracy_percent": 88.66373697916666,
+        "maps": {
+          "count": 384,
+          "correct": 12,
+          "accuracy": 0.03125
+        }
+      },
+      {
+        "seed": 3481,
+        "accuracy_percent": 87.58951822916666,
+        "maps": {
+          "count": 384,
+          "correct": 6,
+          "accuracy": 0.015625
+        }
+      }
+    ],
+    "primary_scale_contrasts": 12,
+    "direction_benefit": true,
+    "all_seed_transport_benefit": false
+  },
+  "local_links_checked": 509,
+  "document_sha256": {
+    "docs/assessments/retention-learning-causal-account.md": "dc1aca8cf2f7c64797159312401d3e1d2b25df0caf3ab4205d1359d763f30087",
+    "README.md": "7a3d0a4797b31322b1931149860de8feb734ea4406aa850cdbf2dfd1a00d9d5c",
+    "docs/assessments/research-checkpoint.md": "8977b78704e27c3960a6965e2a700d6271a8df58a7795ff0e426dc4e47a768c6",
+    "docs/assessments/learning-mechanism-agenda.md": "185f0261f7006e61ee1988fd83087aba98d9976a438e47ba0e84ef71143eb0a9",
+    "docs/assessments/retention-learning-strategy.md": "a13dfe5579010b2e1178d57a3c3d3659f898a32ef185f50ce73c0d85d3f70cc6",
+    "docs/assessments/research-history.md": "04bc9537dedd43abababf2cf3604b8cf640662ca6b7192bd1e3f41fe22bd59df",
+    "docs/assessments/README.md": "131e2128cc00e464712fb0512a9c8f96b1341c52c02850a04d09ef28f3fdb5ed",
+    "docs/topics/attention/README.md": "272481c29c103d8918eac40de0cbd80a1a58cb86036ca9ed6dfa1b5661a32b65",
+    "docs/guides/README.md": "a9030725411a9d8e513bf0f8754727e3c680e6a09d2e34fed9f399f106d49a52"
+  },
+  "training_updates": 0,
+  "gradient_evaluations": 0,
+  "model_forwards": 0
+}

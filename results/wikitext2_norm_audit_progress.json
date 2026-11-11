@@ -1,0 +1,138 @@
+{
+  "report_sha256": "cfd1aed8624b1ad48b677bd4e84c8accf9aaa8ebadf82ff69f0fea0ec21ba904",
+  "source_sha256": "acc097fa7a9f9d4b5ea6d72f346ef53480bccce198d768ef04e5e6545e298b1d",
+  "records": [
+    {
+      "seed": 1861,
+      "arm": "ln",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.980638359775716,
+      "max_token_loss_error": 1.612596057221083e-05,
+      "mean_loss_error": 6.64925270399408e-09,
+      "fixture_logit_error": 6.392221186146685e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1861,
+      "arm": "ln",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.90736927635482,
+      "max_token_loss_error": 1.6996249328826707e-05,
+      "mean_loss_error": 8.507411664027131e-09,
+      "fixture_logit_error": 1.0272676927769453e-05,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1861,
+      "arm": "rms",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.961237301429997,
+      "max_token_loss_error": 7.2629683369740405e-06,
+      "mean_loss_error": 7.375533961351266e-09,
+      "fixture_logit_error": 6.053822701801437e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1861,
+      "arm": "rms",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.892813105903691,
+      "max_token_loss_error": 6.094365302189431e-06,
+      "mean_loss_error": 8.765733916504814e-09,
+      "fixture_logit_error": 4.204059655066317e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1877,
+      "arm": "rms",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.956445794217646,
+      "max_token_loss_error": 5.266539529813485e-06,
+      "mean_loss_error": 8.98767549273316e-09,
+      "fixture_logit_error": 6.398115400152449e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1877,
+      "arm": "rms",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.878646818040297,
+      "max_token_loss_error": 6.01915078135562e-06,
+      "mean_loss_error": 7.3627877128501495e-09,
+      "fixture_logit_error": 3.525456579112074e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1877,
+      "arm": "ln",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.964907202471833,
+      "max_token_loss_error": 4.669449906735679e-06,
+      "mean_loss_error": 1.1557601986567079e-08,
+      "fixture_logit_error": 4.076069039626873e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1877,
+      "arm": "ln",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.886982626691757,
+      "max_token_loss_error": 5.257039941142239e-06,
+      "mean_loss_error": 1.190803988748712e-08,
+      "fixture_logit_error": 4.4075135345877925e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1901,
+      "arm": "ln",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.994762353624762,
+      "max_token_loss_error": 7.2580250911613575e-06,
+      "mean_loss_error": 1.0441704390018458e-08,
+      "fixture_logit_error": 6.706538629330794e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1901,
+      "arm": "ln",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.9216672282994045,
+      "max_token_loss_error": 1.045238540520188e-05,
+      "mean_loss_error": 1.1444680758643244e-08,
+      "fixture_logit_error": 4.073174963536985e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1901,
+      "arm": "rms",
+      "split": "validation",
+      "targets": 217645,
+      "loss": 5.974343973215753,
+      "max_token_loss_error": 5.049158659176101e-06,
+      "mean_loss_error": 9.52121936848016e-09,
+      "fixture_logit_error": 4.423899162997458e-06,
+      "argmax_differences": 0
+    },
+    {
+      "seed": 1901,
+      "arm": "rms",
+      "split": "test",
+      "targets": 245568,
+      "loss": 5.9040313008923455,
+      "max_token_loss_error": 7.732299919460672e-06,
+      "mean_loss_error": 1.0312462883632634e-08,
+      "fixture_logit_error": 3.919561137877281e-06,
+      "argmax_differences": 0
+    }
+  ]
+}

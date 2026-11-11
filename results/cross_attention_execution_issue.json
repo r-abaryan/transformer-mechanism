@@ -1,0 +1,18 @@
+{
+  "issue": "One-sided large padding perturbation hid a missing mask through near-zero attention weight.",
+  "case": {
+    "seed": 2311,
+    "target_length": 2,
+    "source_length": 5,
+    "bias": false,
+    "padded": true
+  },
+  "correct_padding_output_error": 0.0,
+  "correct_padding_gradient": 0.0,
+  "wrong_mask_output_difference": 1.0627336788360253e-09,
+  "unchanged_detection_threshold": 1e-06,
+  "completed_cases": 13,
+  "remedy": "Test both signs of the same padding perturbation; retain thresholds and all 36 configurations.",
+  "original_report_sha256": "86561db4134bef0bb88b887710db464e584f70e1fba6dace63e0aa9628823103",
+  "original_source_sha256": "5454a43537ef72f6763725a8a9ea557b4736309d129f6aa292f7bfeb932fe4e1"
+}

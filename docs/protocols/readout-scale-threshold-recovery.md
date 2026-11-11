@@ -1,0 +1,7 @@
+# Readout audit threshold recovery
+
+The original audit stopped on one near-zero loss change: seed 3463, test_8, flat answer 1851. Float64 reports an increase 1.000088900581841e-12, but 60-digit arithmetic on the exact saved floating-point logits gives 9.999598936907163846077605405019969594045106426e-13. The original 1e-12 comparison therefore should exclude this answer. This is an evaluation-count defect, not a prediction defect or empirical improvement.
+
+Preserve all executed sources, protocol, preflight, checkpoints, scores and raw report. The separate recovery entry reuses independent scale, state, source-binding and matrix-forward checks. Reconstruct scalar metrics, using 60-digit Decimal exp/log only when absolute CE change lies within 1e-14 of the fixed comparison boundary. The threshold remains 1e-12. Validate against 90-digit arithmetic and intentional wrong-count/scale controls before recovery. Save a correction overlay and independent audit; do not overwrite the raw report.
+
+Only permit corrections to loss-increased/decreased counts justified by these high-precision boundary cases. Verify every other metric within the original 1e-9 tolerance and exact prediction/map/count identities. Publish effective counts with the overlay and raw report hash; report both original audit failure and recovery. No score, scale, model, cohort, pool or scientific criterion changes, no additional training. Decimal resolves arithmetic on saved logits, not uncertainty in the model or true underlying real-number logits.

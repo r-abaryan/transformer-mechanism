@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Documentation navigation and active copy/status synthesis; not historical code revalidation",
+  "markdown_files": 495,
+  "local_links": 3279,
+  "missing_targets": [],
+  "incoming_assessment_anchors_checked": 1,
+  "protected_files_unchanged": 129,
+  "word_counts": {
+    "docs/assessments/copy-generalization-assessment.md": {
+      "before_words": 2651,
+      "after_words": 925
+    },
+    "docs/assessments/research-checkpoint.md": {
+      "before_words": 2319,
+      "after_words": 403
+    },
+    "docs/assessments/research-history.md": {
+      "before_words": 8817,
+      "after_words": 8871
+    },
+    "docs/protocols/README.md": {
+      "before_words": 1061,
+      "after_words": 1099
+    },
+    "docs/guides/README.md": {
+      "before_words": 857,
+      "after_words": 895
+    },
+    "docs/research-plan.md": {
+      "before_words": 697,
+      "after_words": 701
+    }
+  },
+  "changes": [
+    "docs/assessments/copy-generalization-assessment.md",
+    "docs/assessments/research-checkpoint.md",
+    "docs/assessments/research-history.md",
+    "docs/protocols/README.md",
+    "docs/guides/README.md",
+    "docs/research-plan.md"
+  ],
+  "remaining_limits": [
+    "Historical guides/reports may have semantic overlap; exact-file duplication check does not assess that.",
+    "Only active copy/status claims were reviewed substantively, not all 495 documents.",
+    "Local target existence is checked globally; all historical section anchors and external URLs were not audited."
+  ]
+}

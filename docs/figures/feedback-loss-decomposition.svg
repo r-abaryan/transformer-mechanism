@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 405" role="img" aria-labelledby="title desc">
+<title id="title">Contributions to test loss increase at load 32</title>
+<desc id="desc">Persistent errors and newly wrong answers add loss. Rescued and consistently correct answers offset part of it. Bars show each group contribution to the whole test-pool mean, not conditional group means.</desc>
+<rect width="1000" height="405" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="#1f2937">
+<text x="25" y="28" font-size="19">Where the extra test loss comes from</text>
+<text x="25" y="51">Load 32, step 3000 to 12000. Positive bars add loss; negative bars offset it.</text>
+<text x="25" y="83" font-size="16">Seed 3461: net CE +0.5344</text>
+<path d="M240.385,105v215" stroke="#6b7280"/>
+<text x="25" y="135">Correct at both</text>
+<rect data-seed="3461" data-transition="correct_both" x="212.072" y="120" width="28.313" height="24" fill="#0369a1"/>
+<text x="207.072" y="136" text-anchor="end">-0.0594</text>
+<text x="25" y="183">Wrong at both</text>
+<rect data-seed="3461" data-transition="wrong_both" x="240.385" y="168" width="193.732" height="24" fill="#b45309"/>
+<text x="439.117" y="184" text-anchor="start">+0.4062</text>
+<text x="25" y="231">Rescued</text>
+<rect data-seed="3461" data-transition="rescued" x="171.844" y="216" width="68.541" height="24" fill="#0369a1"/>
+<text x="166.844" y="232" text-anchor="end">-0.1437</text>
+<text x="25" y="279">Newly wrong</text>
+<rect data-seed="3461" data-transition="newly_wrong" x="240.385" y="264" width="157.976" height="24" fill="#b45309"/>
+<text x="403.361" y="280" text-anchor="start">+0.3312</text>
+<text x="135.000" y="343">-0.2</text>
+<text x="230.385" y="343">0</text>
+<text x="325.769" y="343">0.2</text>
+<text x="421.154" y="343">0.4</text>
+<text x="155" y="367">Contribution to whole-pool mean CE</text>
+<text x="515" y="83" font-size="16">Seed 3463: net CE +0.4030</text>
+<path d="M730.385,105v215" stroke="#6b7280"/>
+<text x="515" y="135">Correct at both</text>
+<rect data-seed="3463" data-transition="correct_both" x="706.927" y="120" width="23.458" height="24" fill="#0369a1"/>
+<text x="701.927" y="136" text-anchor="end">-0.0492</text>
+<text x="515" y="183">Wrong at both</text>
+<rect data-seed="3463" data-transition="wrong_both" x="730.385" y="168" width="177.126" height="24" fill="#b45309"/>
+<text x="912.511" y="184" text-anchor="start">+0.3714</text>
+<text x="515" y="231">Rescued</text>
+<rect data-seed="3463" data-transition="rescued" x="662.490" y="216" width="67.895" height="24" fill="#0369a1"/>
+<text x="657.490" y="232" text-anchor="end">-0.1424</text>
+<text x="515" y="279">Newly wrong</text>
+<rect data-seed="3463" data-transition="newly_wrong" x="730.385" y="264" width="106.424" height="24" fill="#b45309"/>
+<text x="841.809" y="280" text-anchor="start">+0.2231</text>
+<text x="625.000" y="343">-0.2</text>
+<text x="720.385" y="343">0</text>
+<text x="815.769" y="343">0.2</text>
+<text x="911.154" y="343">0.4</text>
+<text x="645" y="367">Contribution to whole-pool mean CE</text>
+<text x="25" y="393">The four signed contributions sum to the net change; improvements remain visible.</text>
+</g></svg>

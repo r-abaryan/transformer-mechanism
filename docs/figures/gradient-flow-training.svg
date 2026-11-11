@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560" role="img"><title>Activation gradients during training</title><desc>Fixed 128-example validation probe at offset +4. Thin lines are five seeds; thick lines are arithmetic means. RMS activation gradients, logarithmic vertical axis.</desc><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="34" font-family="Arial,sans-serif" font-size="24" fill="#243449" text-anchor="start">Measured gradient flow during training</text>
+<text x="35" y="60" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">Fixed 128-example +4 probe; thin = individual seed, thick = five-seed mean</text>
+<path d="M100 435.0H990" stroke="#dce2e8"/>
+<text x="87" y="440.0" font-family="Arial,sans-serif" font-size="13" fill="#243449" text-anchor="end">1e-6</text>
+<path d="M100 355.0H990" stroke="#dce2e8"/>
+<text x="87" y="360.0" font-family="Arial,sans-serif" font-size="13" fill="#243449" text-anchor="end">1e-5</text>
+<path d="M100 275.0H990" stroke="#dce2e8"/>
+<text x="87" y="280.0" font-family="Arial,sans-serif" font-size="13" fill="#243449" text-anchor="end">1e-4</text>
+<path d="M100 195.0H990" stroke="#dce2e8"/>
+<text x="87" y="200.0" font-family="Arial,sans-serif" font-size="13" fill="#243449" text-anchor="end">1e-3</text>
+<path d="M100 115.0H990" stroke="#dce2e8"/>
+<text x="87" y="120.0" font-family="Arial,sans-serif" font-size="13" fill="#243449" text-anchor="end">1e-2</text>
+<text x="100.0" y="460" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="middle">0</text>
+<text x="248.33333333333331" y="460" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="middle">500</text>
+<text x="545.0" y="460" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="middle">1500</text>
+<text x="990.0" y="460" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="middle">3000</text>
+<text x="540" y="490" font-family="Arial,sans-serif" font-size="16" fill="#243449" text-anchor="middle">Optimizer updates</text>
+<text x="100" y="95" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">RMS of d(mean cross-entropy)/d(activation)</text>
+<text x="35" y="530" font-family="Arial,sans-serif" font-size="14" fill="#243449" text-anchor="start">Smaller gradients can accompany a smaller loss. These curves do not establish vanishing-gradient failure.</text>
+<polyline points="100.00,234.17 248.33,184.88 545.00,187.75 990.00,306.21" stroke="#0072b2" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,233.91 248.33,197.21 545.00,216.10 990.00,304.16" stroke="#0072b2" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,232.88 248.33,170.26 545.00,181.79 990.00,393.83" stroke="#0072b2" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,233.34 248.33,209.77 545.00,234.30 990.00,339.47" stroke="#0072b2" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,234.64 248.33,218.68 545.00,173.55 990.00,324.23" stroke="#0072b2" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,233.78 248.33,191.85 545.00,192.22 990.00,322.59" stroke="#0072b2" fill="none" stroke-width="3"/>
+<circle cx="100.0" cy="233.7849287777527" r="4" fill="#0072b2"><title>Block 1 input, step 0: 0.00032748272</title></circle>
+<circle cx="248.33333333333331" cy="191.85076068840567" r="4" fill="#0072b2"><title>Block 1 input, step 500: 0.0010948774</title></circle>
+<circle cx="545.0" cy="192.22034320885047" r="4" fill="#0072b2"><title>Block 1 input, step 1500: 0.0010832924</title></circle>
+<circle cx="990.0" cy="322.59239216900437" r="4" fill="#0072b2"><title>Block 1 input, step 3000: 2.5415292e-05</title></circle>
+<text x="390" y="82" font-family="Arial,sans-serif" font-size="13" fill="#0072b2" text-anchor="start">Block 1 input</text>
+<polyline points="100.00,236.13 248.33,194.78 545.00,197.35 990.00,322.52" stroke="#d55e00" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,236.13 248.33,204.40 545.00,237.86 990.00,315.46" stroke="#d55e00" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,233.94 248.33,182.07 545.00,196.94 990.00,401.33" stroke="#d55e00" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,235.53 248.33,224.87 545.00,252.93 990.00,357.86" stroke="#d55e00" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,236.83 248.33,228.13 545.00,219.25 990.00,348.86" stroke="#d55e00" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,235.70 248.33,202.50 545.00,214.44 990.00,338.48" stroke="#d55e00" fill="none" stroke-width="3"/>
+<circle cx="100.0" cy="235.69912148742802" r="4" fill="#d55e00"><title>After block 1, step 0: 0.00030992812</title></circle>
+<circle cx="248.33333333333331" cy="202.50202501122533" r="4" fill="#d55e00"><title>After block 1, step 500: 0.00080579522</title></circle>
+<circle cx="545.0" cy="214.43583652962383" r="4" fill="#d55e00"><title>After block 1, step 1500: 0.00057154712</title></circle>
+<circle cx="990.0" cy="338.4757847564294" r="4" fill="#d55e00"><title>After block 1, step 3000: 1.6089876e-05</title></circle>
+<text x="615" y="82" font-family="Arial,sans-serif" font-size="13" fill="#d55e00" text-anchor="start">After block 1</text>
+<polyline points="100.00,225.59 248.33,222.47 545.00,273.10 990.00,404.99" stroke="#009e73" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,228.75 248.33,228.23 545.00,305.52 990.00,377.09" stroke="#009e73" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,227.49 248.33,232.38 545.00,284.73 990.00,429.28" stroke="#009e73" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,227.06 248.33,220.74 545.00,304.19 990.00,396.55" stroke="#009e73" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,224.92 248.33,220.59 545.00,271.10 990.00,392.56" stroke="#009e73" stroke-opacity=".22" fill="none" stroke-width="1.5"/>
+<polyline points="100.00,226.74 248.33,224.58 545.00,284.74 990.00,396.23" stroke="#009e73" fill="none" stroke-width="3"/>
+<circle cx="100.0" cy="226.73652322962772" r="4" fill="#009e73"><title>After final LayerNorm, step 0: 0.00040113768</title></circle>
+<circle cx="248.33333333333331" cy="224.57708515596346" r="4" fill="#009e73"><title>After final LayerNorm, step 500: 0.00042686096</title></circle>
+<circle cx="545.0" cy="284.73693492486484" r="4" fill="#009e73"><title>After final LayerNorm, step 1500: 7.5559367e-05</title></circle>
+<circle cx="990.0" cy="396.228177927133" r="4" fill="#009e73"><title>After final LayerNorm, step 3000: 3.0524445e-06</title></circle>
+<text x="840" y="82" font-family="Arial,sans-serif" font-size="13" fill="#009e73" text-anchor="start">After final LayerNorm</text>
+</svg>

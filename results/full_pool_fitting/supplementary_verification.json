@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "scope": "Saved-artifact arithmetic, lineage, initial optimizer states, all-group fit and exposure verification; no additional model evaluation or training",
+  "report_sha256": "53d0a94c95abcb7c23dd4374ab53cc429ff362482f5a4c6dad31cd4669338407",
+  "csv_sha256": "7e3070308bd1c30af6204633f6683661eebfcc62ec0d6047190e1371dbe1072c",
+  "csv_rows": 336,
+  "protected_files": 31,
+  "runs": [
+    {
+      "seed": 3461,
+      "arm": "lbfgs",
+      "source_and_initial_state_exact": true,
+      "counters_consistent": true,
+      "all_nonempty_groups_fit": true,
+      "exposure_by_load": [
+        {
+          "load": 2,
+          "histories": 97536,
+          "answer_targets": 195072,
+          "input_events": 3121152
+        },
+        {
+          "load": 8,
+          "histories": 97536,
+          "answer_targets": 780288,
+          "input_events": 3121152
+        },
+        {
+          "load": 16,
+          "histories": 97536,
+          "answer_targets": 1560576,
+          "input_events": 3121152
+        },
+        {
+          "load": 32,
+          "histories": 97536,
+          "answer_targets": 3121152,
+          "input_events": 3121152
+        }
+      ],
+      "minimum_training_true_class_margin": 1.6977182436808107
+    },
+    {
+      "seed": 3461,
+      "arm": "adam",
+      "source_and_initial_state_exact": true,
+      "counters_consistent": true,
+      "all_nonempty_groups_fit": true,
+      "exposure_by_load": [
+        {
+          "load": 2,
+          "histories": 97536,
+          "answer_targets": 195072,
+          "input_events": 3121152
+        },
+        {
+          "load": 8,
+          "histories": 97536,
+          "answer_targets": 780288,
+          "input_events": 3121152
+        },
+        {
+          "load": 16,
+          "histories": 97536,
+          "answer_targets": 1560576,
+          "input_events": 3121152
+        },
+        {
+          "load": 32,
+          "histories": 97536,
+          "answer_targets": 3121152,
+          "input_events": 3121152
+        }
+      ],
+      "minimum_training_true_class_margin": -2.730277668851161
+    },
+    {
+      "seed": 3463,
+      "arm": "lbfgs",
+      "source_and_initial_state_exact": true,
+      "counters_consistent": true,
+      "all_nonempty_groups_fit": true,
+      "exposure_by_load": [
+        {
+          "load": 2,
+          "histories": 97536,
+          "answer_targets": 195072,
+          "input_events": 3121152
+        },
+        {
+          "load": 8,
+          "histories": 97536,
+          "answer_targets": 780288,
+          "input_events": 3121152
+        },
+        {
+          "load": 16,
+          "histories": 97536,
+          "answer_targets": 1560576,
+          "input_events": 3121152
+        },
+        {
+          "load": 32,
+          "histories": 97536,
+          "answer_targets": 3121152,
+          "input_events": 3121152
+        }
+      ],
+      "minimum_training_true_class_margin": 0.8560366543249813
+    },
+    {
+      "seed": 3463,
+      "arm": "adam",
+      "source_and_initial_state_exact": true,
+      "counters_consistent": true,
+      "all_nonempty_groups_fit": true,
+      "exposure_by_load": [
+        {
+          "load": 2,
+          "histories": 97536,
+          "answer_targets": 195072,
+          "input_events": 3121152
+        },
+        {
+          "load": 8,
+          "histories": 97536,
+          "answer_targets": 780288,
+          "input_events": 3121152
+        },
+        {
+          "load": 16,
+          "histories": 97536,
+          "answer_targets": 1560576,
+          "input_events": 3121152
+        },
+        {
+          "load": 32,
+          "histories": 97536,
+          "answer_targets": 3121152,
+          "input_events": 3121152
+        }
+      ],
+      "minimum_training_true_class_margin": -1.8937784808777707
+    }
+  ]
+}

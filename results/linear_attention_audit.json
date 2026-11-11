@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "source_sha256": "60ecdcdda708ab3e0dad6e0bff84a0dbd455c215988286427a9f2f99cdd03ace",
+  "audit_sha256": "96673777fcfda78bc13da066cf62be7879acfff6a6c17c229bf1c3a4acf60166",
+  "scalar_float64_reads": [
+    {
+      "q": -2.0,
+      "reads": [
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    },
+    {
+      "q": 0.0,
+      "reads": [
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    },
+    {
+      "q": 1.0,
+      "reads": [
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    },
+    {
+      "q": 2.0,
+      "reads": [
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    }
+  ],
+  "counts_checked": 6,
+  "note": "Main numerical matrix is float64. Its illustrative query_reads field used default float32 scalar tensors; this independent scalar check supplies double-precision reads. Main source/report preserved."
+}

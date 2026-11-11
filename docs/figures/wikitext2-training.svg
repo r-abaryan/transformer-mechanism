@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="790" viewBox="0 0 1100 790" role="img">
+<title>WikiText-2: matched MHA and MQA training</title>
+<desc>Top: validation mean negative log-likelihood by update, with thin lines for paired seeds and thick lines for means. Bottom: final test perplexity by seed and architecture, with the training-count unigram baseline. Lower is better.</desc>
+<rect width="1100" height="790" fill="white"/>
+<text x="30" y="34" font-family="Arial,sans-serif" font-size="24" fill="#243449">WikiText-2: fixed small-model comparison</text>
+<text x="30" y="62" font-family="Arial,sans-serif" font-size="14" fill="#243449">Width16; two blocks; word vocabulary33,278; FP32 RTX4060; three paired seeds; context resets every64 words.</text>
+<text x="30" y="89" font-family="Arial,sans-serif" font-size="14" fill="#0072b2">MHA</text>
+<text x="150" y="89" font-family="Arial,sans-serif" font-size="14" fill="#d55e00">MQA</text>
+<text x="30" y="120" font-family="Arial,sans-serif" font-size="16" fill="#243449">Validation loss in nats per target; PPL = exp(loss); lower is better</text>
+<path d="M90 370.0h920" stroke="#dce2e8"/>
+<text x="40" y="374.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">0.0</text>
+<path d="M90 330.83333333333337h920" stroke="#dce2e8"/>
+<text x="40" y="334.83333333333337" font-family="Arial,sans-serif" font-size="12" fill="#243449">1.8</text>
+<path d="M90 291.6666666666667h920" stroke="#dce2e8"/>
+<text x="40" y="295.6666666666667" font-family="Arial,sans-serif" font-size="12" fill="#243449">3.7</text>
+<path d="M90 252.5h920" stroke="#dce2e8"/>
+<text x="40" y="256.5" font-family="Arial,sans-serif" font-size="12" fill="#243449">5.5</text>
+<path d="M90 213.33333333333334h920" stroke="#dce2e8"/>
+<text x="40" y="217.33333333333334" font-family="Arial,sans-serif" font-size="12" fill="#243449">7.3</text>
+<path d="M90 174.16666666666669h920" stroke="#dce2e8"/>
+<text x="40" y="178.16666666666669" font-family="Arial,sans-serif" font-size="12" fill="#243449">9.2</text>
+<path d="M90 135.0h920" stroke="#dce2e8"/>
+<text x="40" y="139.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">11.0</text>
+<text x="75.0" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">0</text>
+<text x="228.33333333333334" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">1000</text>
+<text x="381.6666666666667" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">2000</text>
+<text x="535.0" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">3000</text>
+<text x="688.3333333333334" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">4000</text>
+<text x="841.6666666666666" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">5000</text>
+<text x="995.0" y="395" font-family="Arial,sans-serif" font-size="12" fill="#243449">6000</text>
+<polyline points="90.000,143.439 243.333,228.780 396.667,234.398 550.000,237.500 703.333,239.567 856.667,241.397 1010.000,242.820" stroke="#0072b2" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,144.186 243.333,228.869 396.667,234.604 550.000,237.860 703.333,240.150 856.667,241.585 1010.000,242.936" stroke="#0072b2" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,144.182 243.333,229.594 396.667,234.823 550.000,237.774 703.333,239.792 856.667,241.347 1010.000,242.813" stroke="#0072b2" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,143.935 243.333,229.081 396.667,234.608 550.000,237.711 703.333,239.836 856.667,241.443 1010.000,242.856" stroke="#0072b2" fill="none" stroke-width="3"/>
+<polyline points="90.000,143.442 243.333,228.155 396.667,233.893 550.000,237.219 703.333,239.389 856.667,240.888 1010.000,242.137" stroke="#d55e00" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,144.168 243.333,228.936 396.667,234.048 550.000,237.034 703.333,239.729 856.667,241.291 1010.000,242.581" stroke="#d55e00" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,144.253 243.333,229.325 396.667,234.462 550.000,237.366 703.333,239.496 856.667,241.065 1010.000,242.494" stroke="#d55e00" stroke-opacity=".3" fill="none" stroke-width="1.4"/>
+<polyline points="90.000,143.954 243.333,228.805 396.667,234.134 550.000,237.206 703.333,239.538 856.667,241.081 1010.000,242.404" stroke="#d55e00" fill="none" stroke-width="3"/>
+<text x="320" y="420" font-family="Arial,sans-serif" font-size="13" fill="#243449">Optimizer updates; thin = seed, thick = arithmetic mean</text>
+<text x="30" y="460" font-family="Arial,sans-serif" font-size="16" fill="#243449">Final test perplexity by paired seed; all test targets audited independently</text>
+<path d="M90 705.0h920" stroke="#dce2e8"/>
+<text x="30" y="709.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">0</text>
+<path d="M90 661.0h920" stroke="#dce2e8"/>
+<text x="30" y="665.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">200</text>
+<path d="M90 617.0h920" stroke="#dce2e8"/>
+<text x="30" y="621.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">400</text>
+<path d="M90 573.0h920" stroke="#dce2e8"/>
+<text x="30" y="577.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">600</text>
+<path d="M90 529.0h920" stroke="#dce2e8"/>
+<text x="30" y="533.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">800</text>
+<path d="M90 485.0h920" stroke="#dce2e8"/>
+<text x="30" y="489.0" font-family="Arial,sans-serif" font-size="12" fill="#243449">1000</text>
+<path d="M90 503.8333153372523h920" stroke="#777" stroke-dasharray="5 4"/>
+<text x="720" y="495.8333153372523" font-family="Arial,sans-serif" font-size="12" fill="#243449">Unigram 914.39</text>
+<rect x="187.33333333333334" y="626.2948169663327" width="48" height="78.70518303366725" fill="#0072b2"/>
+<text x="184.33333333333334" y="616.2948169663327" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">357.75</text>
+<rect x="251.33333333333337" y="623.7436950953605" width="48" height="81.25630490463948" fill="#d55e00"/>
+<text x="248.33333333333337" y="613.7436950953605" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">369.35</text>
+<text x="223.33333333333334" y="731" font-family="Arial,sans-serif" font-size="12" fill="#243449">1723</text>
+<rect x="494.0" y="626.5486869828812" width="48" height="78.45131301711876" fill="#0072b2"/>
+<text x="491.0" y="616.5486869828812" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">356.60</text>
+<rect x="558.0" y="625.4208552794564" width="48" height="79.57914472054358" fill="#d55e00"/>
+<text x="555.0" y="615.4208552794564" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">361.72</text>
+<text x="530.0" y="731" font-family="Arial,sans-serif" font-size="12" fill="#243449">1741</text>
+<rect x="800.6666666666666" y="625.9280259833564" width="48" height="79.0719740166436" fill="#0072b2"/>
+<text x="797.6666666666666" y="615.9280259833564" font-family="Arial,sans-serif" font-size="11" fill="#0072b2">359.42</text>
+<rect x="864.6666666666666" y="624.9588316984778" width="48" height="80.04116830152225" fill="#d55e00"/>
+<text x="861.6666666666666" y="614.9588316984778" font-family="Arial,sans-serif" font-size="11" fill="#d55e00">363.82</text>
+<text x="836.6666666666666" y="731" font-family="Arial,sans-serif" font-size="12" fill="#243449">1753</text>
+<text x="300" y="757" font-family="Arial,sans-serif" font-size="13" fill="#243449">Seed; final checkpoints only; no leaderboard comparison</text>
+<text x="30" y="780" font-family="Arial,sans-serif" font-size="12" fill="#243449">Context, token handling and training budget are fixed by decision0003. Cache payload is separate from model quality.</text>
+</svg>

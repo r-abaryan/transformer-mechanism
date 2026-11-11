@@ -1,0 +1,40 @@
+{
+  "torch": "2.14.0+cpu",
+  "python": "3.14.7 (main, Aug 14 2026, 15:39:58) [MSC v.1944 64 bit (AMD64)]",
+  "device": "cpu",
+  "dtype": "float64",
+  "walkthrough_error": 4.440892098500626e-16,
+  "comparisons": [
+    {
+      "seed": 11,
+      "output_error": 4.440892098500626e-16,
+      "gradient_error": 7.216449660063518e-16,
+      "input_gradcheck": true,
+      "parameter_finite_difference_error": 1.917954017827128e-09
+    },
+    {
+      "seed": 29,
+      "output_error": 1.6653345369377348e-16,
+      "gradient_error": 1.7763568394002505e-15,
+      "input_gradcheck": true,
+      "parameter_finite_difference_error": 2.253818798259033e-09
+    },
+    {
+      "seed": 47,
+      "output_error": 4.440892098500626e-16,
+      "gradient_error": 1.3322676295501878e-15,
+      "input_gradcheck": true,
+      "parameter_finite_difference_error": 1.092429702254094e-09
+    }
+  ],
+  "causal_error": 0.0,
+  "padding_error": 0.0,
+  "padding_control_change": 0.166236151374402,
+  "one_step_loss_before": 1.924997066451995,
+  "one_step_loss_after": 1.923762898165202,
+  "source_sha256": {
+    "verify_decoder.py": "ddbe861b56305b63a4b13c5dfcf8064e39fd52d4616a55e897a557fadf2f6df7",
+    "transformer_walkthrough.py": "3135a225b8d45d3296f204a414b3c421f89adbdabc462a8af5e873dcec95a177",
+    "attention_spikes.py": "3c4247334e219492e7d384b09bd4a38c18e8304911b8a4f250d9bf9fb382a677"
+  }
+}

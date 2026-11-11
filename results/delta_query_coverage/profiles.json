@@ -1,0 +1,46 @@
+[
+  {
+    "device": "cpu",
+    "arm": "fixed",
+    "batch": 64,
+    "events": 32,
+    "dtype": "float64",
+    "loss": 1.4190409984729182,
+    "optimizer_state_allocated": true,
+    "peak_allocated_bytes": null,
+    "peak_reserved_bytes": null
+  },
+  {
+    "device": "cpu",
+    "arm": "resampled",
+    "batch": 64,
+    "events": 32,
+    "dtype": "float64",
+    "loss": 1.8593546371429777,
+    "optimizer_state_allocated": true,
+    "peak_allocated_bytes": null,
+    "peak_reserved_bytes": null
+  },
+  {
+    "device": "cuda",
+    "arm": "fixed",
+    "batch": 64,
+    "events": 32,
+    "dtype": "float64",
+    "loss": 1.4190409984729175,
+    "optimizer_state_allocated": true,
+    "peak_allocated_bytes": 71903232,
+    "peak_reserved_bytes": 73400320
+  },
+  {
+    "device": "cuda",
+    "arm": "resampled",
+    "batch": 64,
+    "events": 32,
+    "dtype": "float64",
+    "loss": 1.8593546371429774,
+    "optimizer_state_allocated": true,
+    "peak_allocated_bytes": 71903232,
+    "peak_reserved_bytes": 73400320
+  }
+]

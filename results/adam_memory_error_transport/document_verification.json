@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "report_sha256": "be8cb2c9d26cdd3698246e92b4cafb9128b44cb3293bcb4ff05923443d79985d",
+  "audit_sha256": "6206c7d2f1272928b0f816835834ef56d58ed8f528ed4a120430a82a5176d177",
+  "csv_rows": 96,
+  "step_table_rows": 16,
+  "block_summary_rows": 6,
+  "transition_table_rows": 2,
+  "reversal_tables_checked": 2,
+  "local_links_checked": 855,
+  "unchanged_locked_files": {
+    "adam_memory_error_transport": 188,
+    "language_context_use": 180
+  },
+  "documents": {
+    "docs/topics/attention/adam-memory-error-transport-guide.md": "53b85274d666605d58854ea162146575e53f0647ca6f5fb68b642348a5b98061",
+    "docs/topics/attention/adam-memory-error-transport-results.md": "55ad7483ff424f6778ceae0afbc0cf146365806e639b6da3cf3a046a530068bf",
+    "docs/protocols/adam-memory-error-transport.md": "57ef0eee747869ae12caa61ab87a66f80ca15d71d7e908ccaa840f37494c39f6",
+    "docs/topics/attention/README.md": "708bd0be32c56baae85e6cd1256942923dd965d72db4742838c932e2394d11b5",
+    "docs/guides/README.md": "d7b6c114dd3587c9f4f67829bd7bfe308c9488b707b7bdbcb19cd6f9c748bd42",
+    "docs/results/README.md": "e53e124f25e11a220b36e749e6f2644f265dab97466202dd30b109a796312e48",
+    "docs/protocols/README.md": "adb87ed96f4bb782f3e099fab2e9e9d1f02598526024cba9e1799765520d0bd3",
+    "docs/reference/sources.md": "6b60d152893a12be361e944ae92e272f87c7cc6039a895dd83c7025dcb19f868",
+    "docs/assessments/research-checkpoint.md": "ffdb3b899f1220abba6a98793f7336b6845d2fc326aacdb2cf797f69ff843230",
+    "docs/assessments/learning-mechanism-agenda.md": "247cfc55ef1adb2e1b27953bf87ffd360b7b72682f704a4e28f07ed8afde2633",
+    "docs/assessments/research-history.md": "548bb93fe5f328d44604d9912f20c7cb025160fd4410dd23f05d91944b2a5bb8",
+    "docs/assessments/failure-register.md": "65f1b05bae704208579cafb014ea18101639b59ecf7068ea02f443cf24cd99f2",
+    "tests/README.md": "5556a0158120f0f17ea99d6b052475dc2970b6d02a7b3ddd4c94c8e03dce94b0"
+  },
+  "mermaid_diagrams": 1,
+  "scope": "CSV equality, every step/summary/reversal/transition table, finite-sign agreement, scoped local links and immutable evidence after scientific audit; no new forwards, gradients or training."
+}

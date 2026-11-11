@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "pyarrow": "25.0.1",
+  "vocabulary": 33278,
+  "vocabulary_path": "data\\wikitext-2-v1\\vocabulary.json",
+  "vocabulary_sha256": "4de2077a523505aa2d918ce1c17ff078eb738ffcdb107625e43eae442ed9d33b",
+  "splits": {
+    "train": {
+      "rows": 36718,
+      "empty_rows": 12951,
+      "words": 2051910,
+      "tokens": 2088628,
+      "mapped_unknown_words": 0,
+      "literal_unknown_words": 54625,
+      "unknown_word_rate": 0.026621537981685355,
+      "eos_tokens": 36718,
+      "targets": 2088627,
+      "complete_blocks": 32634,
+      "tail_targets": 51,
+      "path": "data\\wikitext-2-v1\\train.uint32",
+      "sha256": "67a1ddb9f179db3b69a68d8bae9f64f231f53e27b4b1ac6396503055c3ff8764"
+    },
+    "validation": {
+      "rows": 3760,
+      "empty_rows": 1299,
+      "words": 213886,
+      "tokens": 217646,
+      "mapped_unknown_words": 0,
+      "literal_unknown_words": 11718,
+      "unknown_word_rate": 0.054786194514835004,
+      "eos_tokens": 3760,
+      "targets": 217645,
+      "complete_blocks": 3400,
+      "tail_targets": 45,
+      "path": "data\\wikitext-2-v1\\validation.uint32",
+      "sha256": "653acc7b6567d21f8ba49926238cd76ba0f208e177fc6d73118e61ca19d40dfc"
+    },
+    "test": {
+      "rows": 4358,
+      "empty_rows": 1467,
+      "words": 241211,
+      "tokens": 245569,
+      "mapped_unknown_words": 0,
+      "literal_unknown_words": 15218,
+      "unknown_word_rate": 0.06308999174996165,
+      "eos_tokens": 4358,
+      "targets": 245568,
+      "complete_blocks": 3837,
+      "tail_targets": 0,
+      "path": "data\\wikitext-2-v1\\test.uint32",
+      "sha256": "a9ebf52df4a2ff5d3c4f821a6b1b66444b5f6678f97ef181bfb9930927767f87"
+    }
+  },
+  "acquisition_sha256": "9f0b1ede15fab44b655740d52c4d9b19965c854cd60cdd192abb55b65bc287a8",
+  "source_sha256": "73e3465e0c497be591d55c88a85f56ca5ca51542d07340b6b563db4f84f723c0",
+  "execution_protocol_sha256": "fb411a802b17f0f5f028e5a9f4d9f4358dcb7bc5a300710cdfd1517c130cc1c9"
+}

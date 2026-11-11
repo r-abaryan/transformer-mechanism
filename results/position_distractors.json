@@ -1,0 +1,478 @@
+{
+  "baseline_sha256": "8d6c877e53c6efd05e414ec673a8010d4b1be9aa31f90960e0c78c190bf0aa27",
+  "split_sha256": "37eb7c428bece9afd01946d7918148183c10770f905f803d12f825eb1fdc7950",
+  "protocol_sha256": "a2830b5f534960780f354fa276ba46b610a07ee36821eba9bbd280cca17e8c05",
+  "source_sha256": {
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "train_associative_recall.py": "bd0e38f36f78fece074d3194946363a67dd46e47cc93ed3023eb0392310056c3"
+  },
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "float64",
+  "runs": [
+    {
+      "seed": 137,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_137.pt",
+      "checkpoint_sha256": "af6e053039c97db81947fe86d88435985028f32de7685b43e95ef7606726c78c",
+      "lengths": {
+        "four_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.814453125,
+              "loss": 1.192658733756988,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.8037109375,
+              "loss": 1.1109547009489409,
+              "rescued": 19,
+              "harmed": 30
+            },
+            "tail_reset": {
+              "accuracy": 0.80078125,
+              "loss": 1.1321023329023983,
+              "rescued": 18,
+              "harmed": 32
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9521484375,
+              "loss": 0.2840261781526016,
+              "rescued": 145,
+              "harmed": 4
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.962890625,
+              "loss": 0.22119347143429263,
+              "rescued": 158,
+              "harmed": 6
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0003881014956474703,
+              "rescued": 190,
+              "harmed": 0
+            }
+          }
+        },
+        "six_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.6875,
+              "loss": 1.9687851018087026,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.71484375,
+              "loss": 1.7973977515071007,
+              "rescued": 57,
+              "harmed": 29
+            },
+            "tail_reset": {
+              "accuracy": 0.712890625,
+              "loss": 1.809724166963071,
+              "rescued": 56,
+              "harmed": 30
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9423828125,
+              "loss": 0.2902593945454575,
+              "rescued": 264,
+              "harmed": 3
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.97265625,
+              "loss": 0.1566168146925357,
+              "rescued": 294,
+              "harmed": 2
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0004041776036261081,
+              "rescued": 320,
+              "harmed": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 163,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_163.pt",
+      "checkpoint_sha256": "80635e2cc88088b8d1b75bdf68103f47bd5ba9321601d256e38191b8482cb87f",
+      "lengths": {
+        "four_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.7998046875,
+              "loss": 1.1086465291442835,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.8046875,
+              "loss": 1.1564950498262465,
+              "rescued": 16,
+              "harmed": 11
+            },
+            "tail_reset": {
+              "accuracy": 0.8115234375,
+              "loss": 1.139658295758794,
+              "rescued": 23,
+              "harmed": 11
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9677734375,
+              "loss": 0.16022550617125414,
+              "rescued": 176,
+              "harmed": 4
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.96484375,
+              "loss": 0.19706297438192824,
+              "rescued": 176,
+              "harmed": 7
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0004482703454855863,
+              "rescued": 205,
+              "harmed": 0
+            }
+          }
+        },
+        "six_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.62890625,
+              "loss": 2.1939735479385414,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.6279296875,
+              "loss": 2.2992080365020393,
+              "rescued": 70,
+              "harmed": 71
+            },
+            "tail_reset": {
+              "accuracy": 0.642578125,
+              "loss": 2.198295838147209,
+              "rescued": 72,
+              "harmed": 58
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9248046875,
+              "loss": 0.36925986976501773,
+              "rescued": 312,
+              "harmed": 9
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.93359375,
+              "loss": 0.35144605858221045,
+              "rescued": 322,
+              "harmed": 10
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.00047492565712724163,
+              "rescued": 380,
+              "harmed": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 191,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_191.pt",
+      "checkpoint_sha256": "a862607de3ca155a4411c9f5c5056b6da4faff21889c30f473eda1abd927b42b",
+      "lengths": {
+        "four_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.8046875,
+              "loss": 1.1022334219112333,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.814453125,
+              "loss": 1.0928593781956046,
+              "rescued": 37,
+              "harmed": 27
+            },
+            "tail_reset": {
+              "accuracy": 0.8193359375,
+              "loss": 1.1060324831005643,
+              "rescued": 40,
+              "harmed": 25
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9765625,
+              "loss": 0.08478077817530706,
+              "rescued": 183,
+              "harmed": 7
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.9755859375,
+              "loss": 0.1218029946652056,
+              "rescued": 185,
+              "harmed": 10
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0005493416456578964,
+              "rescued": 200,
+              "harmed": 0
+            }
+          }
+        },
+        "six_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.6435546875,
+              "loss": 2.2450942123536044,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.666015625,
+              "loss": 2.1751883744663703,
+              "rescued": 58,
+              "harmed": 35
+            },
+            "tail_reset": {
+              "accuracy": 0.6728515625,
+              "loss": 2.158918167662945,
+              "rescued": 64,
+              "harmed": 34
+            },
+            "crop_original_positions": {
+              "accuracy": 0.953125,
+              "loss": 0.24058189591203277,
+              "rescued": 325,
+              "harmed": 8
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.962890625,
+              "loss": 0.17481125924328036,
+              "rescued": 335,
+              "harmed": 8
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.00046384682226996746,
+              "rescued": 365,
+              "harmed": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 223,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_223.pt",
+      "checkpoint_sha256": "03776604c2ba56c158bf778e8e441efb8b08d14ea3d3fada4d8c975898b99899",
+      "lengths": {
+        "four_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.7939453125,
+              "loss": 1.3061654832046654,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.810546875,
+              "loss": 1.2881259709429977,
+              "rescued": 43,
+              "harmed": 26
+            },
+            "tail_reset": {
+              "accuracy": 0.8056640625,
+              "loss": 1.2932646118349629,
+              "rescued": 46,
+              "harmed": 34
+            },
+            "crop_original_positions": {
+              "accuracy": 0.935546875,
+              "loss": 0.3843025090464356,
+              "rescued": 157,
+              "harmed": 12
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.9482421875,
+              "loss": 0.3569784542892275,
+              "rescued": 167,
+              "harmed": 9
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0003703167849500033,
+              "rescued": 211,
+              "harmed": 0
+            }
+          }
+        },
+        "six_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.548828125,
+              "loss": 3.2215013960866172,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.6435546875,
+              "loss": 2.328290318588305,
+              "rescued": 164,
+              "harmed": 67
+            },
+            "tail_reset": {
+              "accuracy": 0.6396484375,
+              "loss": 2.3703938788226258,
+              "rescued": 163,
+              "harmed": 70
+            },
+            "crop_original_positions": {
+              "accuracy": 0.7529296875,
+              "loss": 1.5833825021719472,
+              "rescued": 234,
+              "harmed": 25
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.94140625,
+              "loss": 0.4200450755431062,
+              "rescued": 412,
+              "harmed": 10
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0003795319191644197,
+              "rescued": 462,
+              "harmed": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 257,
+      "checkpoint": "results\\depth_confirmation_checkpoints\\deep_257.pt",
+      "checkpoint_sha256": "aceb4ce1fcdfcf982434781dcd98f3213f2007b85059674ee49c496578fe761a",
+      "lengths": {
+        "four_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.80859375,
+              "loss": 1.1604219354620262,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.837890625,
+              "loss": 1.064684676563398,
+              "rescued": 52,
+              "harmed": 22
+            },
+            "tail_reset": {
+              "accuracy": 0.8388671875,
+              "loss": 1.0287600990428236,
+              "rescued": 55,
+              "harmed": 24
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9267578125,
+              "loss": 0.36570078127210986,
+              "rescued": 129,
+              "harmed": 8
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.951171875,
+              "loss": 0.2748872900044705,
+              "rescued": 150,
+              "harmed": 4
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0004202364898761821,
+              "rescued": 196,
+              "harmed": 0
+            }
+          }
+        },
+        "six_pairs": {
+          "sham_max_logit_error": 0.0,
+          "conditions": {
+            "original": {
+              "accuracy": 0.703125,
+              "loss": 1.7908844576028533,
+              "rescued": 0,
+              "harmed": 0
+            },
+            "query_reset": {
+              "accuracy": 0.712890625,
+              "loss": 1.7622817763394247,
+              "rescued": 46,
+              "harmed": 36
+            },
+            "tail_reset": {
+              "accuracy": 0.7138671875,
+              "loss": 1.778384332760775,
+              "rescued": 46,
+              "harmed": 35
+            },
+            "crop_original_positions": {
+              "accuracy": 0.9111328125,
+              "loss": 0.4294780344417775,
+              "rescued": 229,
+              "harmed": 16
+            },
+            "crop_tail_reset": {
+              "accuracy": 0.94921875,
+              "loss": 0.2935481600170443,
+              "rescued": 259,
+              "harmed": 7
+            },
+            "crop_compact": {
+              "accuracy": 1.0,
+              "loss": 0.0004406935853572606,
+              "rescued": 304,
+              "harmed": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "all_seeds_at_least_90": {
+    "four_pairs": {
+      "original": false,
+      "query_reset": false,
+      "tail_reset": false,
+      "crop_original_positions": true,
+      "crop_tail_reset": true,
+      "crop_compact": true
+    },
+    "six_pairs": {
+      "original": false,
+      "query_reset": false,
+      "tail_reset": false,
+      "crop_original_positions": false,
+      "crop_tail_reset": true,
+      "crop_compact": true
+    }
+  }
+}

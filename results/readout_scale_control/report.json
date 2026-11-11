@@ -1,0 +1,4688 @@
+{
+  "status": "complete",
+  "training_updates": 0,
+  "cells_count": 24,
+  "answers": 155904,
+  "scales": {
+    "3461": {
+      "old_norm": 7.9431622820542485,
+      "final_norm": 23.613832940045167,
+      "scale": 0.336377508142016,
+      "temperature": 2.9728503713684913
+    },
+    "3463": {
+      "old_norm": 9.293928254099106,
+      "final_norm": 25.474812301003805,
+      "scale": 0.36482813471928466,
+      "temperature": 2.7410166728765186
+    }
+  },
+  "cells": [
+    {
+      "seed": 3461,
+      "pool": "train_2",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 1.0414831482168337e-10,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1536,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 1.0414831482168337e-10,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1536,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_8",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "old_ce": 0.00021877126131890291,
+          "final_ce": 0.00024259193911238173,
+          "control_ce": 0.0018700744158227265,
+          "ce_removed": -0.0016274824767103448,
+          "excess_removed_fraction": -68.32225727665428,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 6144,
+              "final_ce": 0.00024259193911238173,
+              "final_true_probability": 0.999769164318758,
+              "final_winner_confidence": 0.999769164318758,
+              "control_ce": 0.0018700744158227265,
+              "control_true_probability": 0.9984268496882308,
+              "control_winner_confidence": 0.9984268496882308,
+              "ce_removed_contribution": -0.0016274824767103454,
+              "loss_increased": 5106,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "old_ce": 0.00021877126131890291,
+          "final_ce": 0.00024259193911238173,
+          "control_ce": 0.0018700744158227265,
+          "ce_removed": -0.0016274824767103448,
+          "excess_removed_fraction": -68.32225727665428,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 6144,
+              "final_ce": 0.00024259193911238173,
+              "final_true_probability": 0.999769164318758,
+              "final_winner_confidence": 0.999769164318758,
+              "control_ce": 0.0018700744158227265,
+              "control_true_probability": 0.9984268496882308,
+              "control_winner_confidence": 0.9984268496882308,
+              "ce_removed_contribution": -0.0016274824767103454,
+              "loss_increased": 5106,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_16",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "old_ce": 0.012199741080057258,
+          "final_ce": 0.0014770307330634078,
+          "control_ce": 0.012269771476983113,
+          "ce_removed": -0.010792740743919706,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 12284,
+              "final_ce": 0.0014774781901198489,
+              "final_true_probability": 0.9986078162955262,
+              "final_winner_confidence": 0.9986078162955262,
+              "control_ce": 0.012259388167330776,
+              "control_true_probability": 0.9895580421956003,
+              "control_winner_confidence": 0.9895580421956003,
+              "ce_removed_contribution": -0.010778400240890218,
+              "loss_increased": 12284,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 4,
+              "final_ce": 0.00010289011273418669,
+              "final_true_probability": 0.9998971161257215,
+              "final_winner_confidence": 0.9998971161257215,
+              "control_ce": 0.04415691541931802,
+              "control_true_probability": 0.9568366751075204,
+              "control_winner_confidence": 0.9568366751075204,
+              "ce_removed_contribution": -1.4340503029486924e-05,
+              "loss_increased": 4,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "old_ce": 0.012199741080057258,
+          "final_ce": 0.0014770307330634078,
+          "control_ce": 0.012269771476983113,
+          "ce_removed": -0.010792740743919706,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 12284,
+              "final_ce": 0.0014774781901198489,
+              "final_true_probability": 0.9986078162955262,
+              "final_winner_confidence": 0.9986078162955262,
+              "control_ce": 0.012259388167330776,
+              "control_true_probability": 0.9895580421956003,
+              "control_winner_confidence": 0.9895580421956003,
+              "ce_removed_contribution": -0.010778400240890218,
+              "loss_increased": 12284,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 4,
+              "final_ce": 0.00010289011273418669,
+              "final_true_probability": 0.9998971161257215,
+              "final_winner_confidence": 0.9998971161257215,
+              "control_ce": 0.04415691541931802,
+              "control_true_probability": 0.9568366751075204,
+              "control_winner_confidence": 0.9568366751075204,
+              "ce_removed_contribution": -1.4340503029486924e-05,
+              "loss_increased": 4,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "train_32",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "old_ce": 0.192270919750781,
+          "final_ce": 0.0403549412752113,
+          "control_ce": 0.10533901620371233,
+          "ce_removed": -0.06498407492850103,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 23052,
+              "final_ce": 0.020909989696972334,
+              "final_true_probability": 0.9822715942944548,
+              "final_winner_confidence": 0.9822715942944548,
+              "control_ce": 0.08155315433273161,
+              "control_true_probability": 0.9341447360235096,
+              "control_winner_confidence": 0.9341447360235096,
+              "ce_removed_contribution": -0.056882577766256624,
+              "loss_increased": 23052,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 86,
+              "final_ce": 1.9950266962793155,
+              "final_true_probability": 0.2351985073342324,
+              "final_winner_confidence": 0.6105846970483748,
+              "control_ce": 1.3757687798015932,
+              "control_true_probability": 0.2866199682908036,
+              "control_winner_confidence": 0.42579667286049866,
+              "ce_removed_contribution": 0.002166999544965988,
+              "loss_increased": 16,
+              "loss_decreased": 70
+            },
+            "rescued": {
+              "count": 1278,
+              "final_ce": 0.10276240112190523,
+              "final_true_probability": 0.9128771654111301,
+              "final_winner_confidence": 0.9128771654111301,
+              "control_ce": 0.33268291831974683,
+              "control_true_probability": 0.7440621518940077,
+              "control_winner_confidence": 0.7440621518940077,
+              "ce_removed_contribution": -0.011956315957797914,
+              "loss_increased": 1278,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 160,
+              "final_ce": 1.2927706860698163,
+              "final_true_probability": 0.3540555534796649,
+              "final_winner_confidence": 0.5700597472247422,
+              "control_ce": 1.0335216491795738,
+              "control_true_probability": 0.37943943620637144,
+              "control_winner_confidence": 0.4635614812360709,
+              "ce_removed_contribution": 0.001687819250587515,
+              "loss_increased": 54,
+              "loss_decreased": 106
+            }
+          }
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.989990234375,
+          "old_ce": 0.192270919750781,
+          "final_ce": 0.0403549412752113,
+          "control_ce": 0.10533901620371233,
+          "ce_removed": -0.06498407492850103,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 23052,
+              "final_ce": 0.020909989696972334,
+              "final_true_probability": 0.9822715942944548,
+              "final_winner_confidence": 0.9822715942944548,
+              "control_ce": 0.08155315433273161,
+              "control_true_probability": 0.9341447360235096,
+              "control_winner_confidence": 0.9341447360235096,
+              "ce_removed_contribution": -0.056882577766256624,
+              "loss_increased": 23052,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 86,
+              "final_ce": 1.9950266962793155,
+              "final_true_probability": 0.2351985073342324,
+              "final_winner_confidence": 0.6105846970483748,
+              "control_ce": 1.3757687798015932,
+              "control_true_probability": 0.2866199682908036,
+              "control_winner_confidence": 0.42579667286049866,
+              "ce_removed_contribution": 0.002166999544965988,
+              "loss_increased": 16,
+              "loss_decreased": 70
+            },
+            "rescued": {
+              "count": 1278,
+              "final_ce": 0.10276240112190523,
+              "final_true_probability": 0.9128771654111301,
+              "final_winner_confidence": 0.9128771654111301,
+              "control_ce": 0.33268291831974683,
+              "control_true_probability": 0.7440621518940077,
+              "control_winner_confidence": 0.7440621518940077,
+              "ce_removed_contribution": -0.011956315957797914,
+              "loss_increased": 1278,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 160,
+              "final_ce": 1.2927706860698163,
+              "final_true_probability": 0.3540555534796649,
+              "final_winner_confidence": 0.5700597472247422,
+              "control_ce": 1.0335216491795738,
+              "control_true_probability": 0.37943943620637144,
+              "control_winner_confidence": 0.4635614812360709,
+              "ce_removed_contribution": 0.001687819250587515,
+              "loss_increased": 54,
+              "loss_decreased": 106
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 561,
+        "accuracy": 0.73046875
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "validation_2",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 384,
+          "accuracy": 1.0,
+          "old_ce": 1.4676550651276324e-10,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 384,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 384,
+          "accuracy": 1.0,
+          "old_ce": 1.4676550651276324e-10,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 384,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 192,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "validation_8",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 0.008444208532339638,
+          "final_ce": 2.307688932046451e-07,
+          "control_ce": 0.0003519974504249321,
+          "ce_removed": -0.0003517666815317275,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1524,
+              "final_ce": 1.3601404246350295e-08,
+              "final_true_probability": 0.9999999863986199,
+              "final_winner_confidence": 0.9999999863986199,
+              "control_ce": 6.527273315830724e-05,
+              "control_true_probability": 0.999935145842442,
+              "control_winner_confidence": 0.999935145842442,
+              "ce_removed_contribution": -6.474929478723229e-05,
+              "loss_increased": 1116,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 12,
+              "final_ce": 2.7811039990908085e-05,
+              "final_true_probability": 0.9999721897350952,
+              "final_winner_confidence": 0.9999721897350952,
+              "control_ce": 0.0367660365432863,
+              "control_true_probability": 0.9645532420453803,
+              "control_winner_confidence": 0.9645532420453803,
+              "ce_removed_contribution": -0.00028701738674449524,
+              "loss_increased": 12,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 0.008444208532339638,
+          "final_ce": 2.307688932046451e-07,
+          "control_ce": 0.0003519974504249321,
+          "ce_removed": -0.0003517666815317275,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1524,
+              "final_ce": 1.3601404246350295e-08,
+              "final_true_probability": 0.9999999863986199,
+              "final_winner_confidence": 0.9999999863986199,
+              "control_ce": 6.527273315830724e-05,
+              "control_true_probability": 0.999935145842442,
+              "control_winner_confidence": 0.999935145842442,
+              "ce_removed_contribution": -6.474929478723229e-05,
+              "loss_increased": 1116,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 12,
+              "final_ce": 2.7811039990908085e-05,
+              "final_true_probability": 0.9999721897350952,
+              "final_winner_confidence": 0.9999721897350952,
+              "control_ce": 0.0367660365432863,
+              "control_true_probability": 0.9645532420453803,
+              "control_winner_confidence": 0.9645532420453803,
+              "ce_removed_contribution": -0.00028701738674449524,
+              "loss_increased": 12,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 192,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "validation_16",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 3072,
+          "accuracy": 0.9921875,
+          "old_ce": 0.06639272543686821,
+          "final_ce": 0.10678805249495014,
+          "control_ce": 0.046677800648001845,
+          "ce_removed": 0.0601102518469483,
+          "excess_removed_fraction": 1.4880496390218476,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3000,
+              "final_ce": 0.0014065083898516092,
+              "final_true_probability": 0.9988984385949716,
+              "final_winner_confidence": 0.9988984385949716,
+              "control_ce": 0.006817939580262894,
+              "control_true_probability": 0.993992830620751,
+              "control_winner_confidence": 0.993992830620751,
+              "ce_removed_contribution": -0.005284600771886021,
+              "loss_increased": 3000,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 6,
+              "final_ce": 42.30293595458149,
+              "final_true_probability": 4.375883271325231e-19,
+              "final_winner_confidence": 1.0,
+              "control_ce": 14.22975922883721,
+              "control_true_probability": 6.630865568188972e-07,
+              "control_winner_confidence": 0.999996954660848,
+              "ce_removed_contribution": 0.054830423292469295,
+              "loss_increased": 0,
+              "loss_decreased": 6
+            },
+            "rescued": {
+              "count": 48,
+              "final_ce": 0.01461925033772544,
+              "final_true_probability": 0.9857976958932241,
+              "final_winner_confidence": 0.9857976958932241,
+              "control_ce": 0.17540756459927706,
+              "control_true_probability": 0.8524366203171926,
+              "control_winner_confidence": 0.8524366203171926,
+              "ce_removed_contribution": -0.0025123174103367438,
+              "loss_increased": 48,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 18,
+              "final_ce": 3.850779575068462,
+              "final_true_probability": 0.17396087281509803,
+              "final_winner_confidence": 0.8258858526041466,
+              "control_ce": 1.6190147986713583,
+              "control_true_probability": 0.2692179811892136,
+              "control_winner_confidence": 0.6910577866441484,
+              "ce_removed_contribution": 0.013076746736701778,
+              "loss_increased": 0,
+              "loss_decreased": 18
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 3072,
+          "accuracy": 0.9921875,
+          "old_ce": 0.06639272543686821,
+          "final_ce": 0.10678805249495014,
+          "control_ce": 0.046677800648001845,
+          "ce_removed": 0.0601102518469483,
+          "excess_removed_fraction": 1.4880496390218476,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3000,
+              "final_ce": 0.0014065083898516092,
+              "final_true_probability": 0.9988984385949716,
+              "final_winner_confidence": 0.9988984385949716,
+              "control_ce": 0.006817939580262894,
+              "control_true_probability": 0.993992830620751,
+              "control_winner_confidence": 0.993992830620751,
+              "ce_removed_contribution": -0.005284600771886021,
+              "loss_increased": 3000,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 6,
+              "final_ce": 42.30293595458149,
+              "final_true_probability": 4.375883271325231e-19,
+              "final_winner_confidence": 1.0,
+              "control_ce": 14.22975922883721,
+              "control_true_probability": 6.630865568188972e-07,
+              "control_winner_confidence": 0.999996954660848,
+              "ce_removed_contribution": 0.054830423292469295,
+              "loss_increased": 0,
+              "loss_decreased": 6
+            },
+            "rescued": {
+              "count": 48,
+              "final_ce": 0.01461925033772544,
+              "final_true_probability": 0.9857976958932241,
+              "final_winner_confidence": 0.9857976958932241,
+              "control_ce": 0.17540756459927706,
+              "control_true_probability": 0.8524366203171926,
+              "control_winner_confidence": 0.8524366203171926,
+              "ce_removed_contribution": -0.0025123174103367438,
+              "loss_increased": 48,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 18,
+              "final_ce": 3.850779575068462,
+              "final_true_probability": 0.17396087281509803,
+              "final_winner_confidence": 0.8258858526041466,
+              "control_ce": 1.6190147986713583,
+              "control_true_probability": 0.2692179811892136,
+              "control_winner_confidence": 0.6910577866441484,
+              "ce_removed_contribution": 0.013076746736701778,
+              "loss_increased": 0,
+              "loss_decreased": 18
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 168,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "validation_32",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.87890625,
+          "old_ce": 0.3876687614312426,
+          "final_ce": 0.8698061915151793,
+          "control_ce": 0.3940081668417325,
+          "ce_removed": 0.47579802467344684,
+          "excess_removed_fraction": 0.9868514555914353,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 4951,
+              "final_ce": 0.012300473969792764,
+              "final_true_probability": 0.9893324908361999,
+              "final_winner_confidence": 0.9893324908361999,
+              "control_ce": 0.057567112868589516,
+              "control_true_probability": 0.9514207569337649,
+              "control_winner_confidence": 0.9514207569337649,
+              "ce_removed_contribution": -0.03647707180793339,
+              "loss_increased": 4951,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 353,
+              "final_ce": 8.838775812392132,
+              "final_true_probability": 0.03670499031215638,
+              "final_winner_confidence": 0.8988293388810973,
+              "control_ce": 3.317754806750459,
+              "control_true_probability": 0.11496970572194384,
+              "control_winner_confidence": 0.7082544170778405,
+              "ce_removed_contribution": 0.31720709879419123,
+              "loss_increased": 7,
+              "loss_decreased": 346
+            },
+            "rescued": {
+              "count": 449,
+              "final_ce": 0.07090496172493947,
+              "final_true_probability": 0.9417734653506562,
+              "final_winner_confidence": 0.9417734653506562,
+              "control_ce": 0.21458593091966582,
+              "control_true_probability": 0.8327276853849964,
+              "control_winner_confidence": 0.8327276853849964,
+              "ce_removed_contribution": -0.010500122911528671,
+              "loss_increased": 449,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 391,
+              "final_ce": 5.450806661012524,
+              "final_true_probability": 0.10135340648194212,
+              "final_winner_confidence": 0.8330019754305814,
+              "control_ce": 2.2206006943666896,
+              "control_true_probability": 0.1952689695916393,
+              "control_winner_confidence": 0.6591421922769554,
+              "ce_removed_contribution": 0.20556812059871765,
+              "loss_increased": 11,
+              "loss_decreased": 380
+            }
+          }
+        },
+        "unique": {
+          "count": 6144,
+          "accuracy": 0.87890625,
+          "old_ce": 0.3876687614312426,
+          "final_ce": 0.8698061915151793,
+          "control_ce": 0.3940081668417325,
+          "ce_removed": 0.47579802467344684,
+          "excess_removed_fraction": 0.9868514555914353,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 4951,
+              "final_ce": 0.012300473969792764,
+              "final_true_probability": 0.9893324908361999,
+              "final_winner_confidence": 0.9893324908361999,
+              "control_ce": 0.057567112868589516,
+              "control_true_probability": 0.9514207569337649,
+              "control_winner_confidence": 0.9514207569337649,
+              "ce_removed_contribution": -0.03647707180793339,
+              "loss_increased": 4951,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 353,
+              "final_ce": 8.838775812392132,
+              "final_true_probability": 0.03670499031215638,
+              "final_winner_confidence": 0.8988293388810973,
+              "control_ce": 3.317754806750459,
+              "control_true_probability": 0.11496970572194384,
+              "control_winner_confidence": 0.7082544170778405,
+              "ce_removed_contribution": 0.31720709879419123,
+              "loss_increased": 7,
+              "loss_decreased": 346
+            },
+            "rescued": {
+              "count": 449,
+              "final_ce": 0.07090496172493947,
+              "final_true_probability": 0.9417734653506562,
+              "final_winner_confidence": 0.9417734653506562,
+              "control_ce": 0.21458593091966582,
+              "control_true_probability": 0.8327276853849964,
+              "control_winner_confidence": 0.8327276853849964,
+              "ce_removed_contribution": -0.010500122911528671,
+              "loss_increased": 449,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 391,
+              "final_ce": 5.450806661012524,
+              "final_true_probability": 0.10135340648194212,
+              "final_winner_confidence": 0.8330019754305814,
+              "control_ce": 2.2206006943666896,
+              "control_true_probability": 0.1952689695916393,
+              "control_winner_confidence": 0.6591421922769554,
+              "ce_removed_contribution": 0.20556812059871765,
+              "loss_increased": 11,
+              "loss_decreased": 380
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 18,
+        "accuracy": 0.09375
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "test_2",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 768,
+          "accuracy": 1.0,
+          "old_ce": 1.0472600332621356e-10,
+          "final_ce": 0.0,
+          "control_ce": 2.7755575615628864e-17,
+          "ce_removed": -2.7755575615628864e-17,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 768,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 2.7755575615628864e-17,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": -2.7755575615628864e-17,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 768,
+          "accuracy": 1.0,
+          "old_ce": 1.0472600332621356e-10,
+          "final_ce": 0.0,
+          "control_ce": 2.7755575615628864e-17,
+          "ce_removed": -2.7755575615628864e-17,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 768,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 2.7755575615628864e-17,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": -2.7755575615628864e-17,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 384,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "test_8",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 3072,
+          "accuracy": 0.99609375,
+          "old_ce": 0.0013765957597659598,
+          "final_ce": 0.009747483729906267,
+          "control_ce": 0.004783713375254677,
+          "ce_removed": 0.0049637703546515895,
+          "excess_removed_fraction": 0.5929801440848085,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3060,
+              "final_ce": 1.0500858079880806e-06,
+              "final_true_probability": 0.9999989501990124,
+              "final_winner_confidence": 0.9999989501990124,
+              "control_ce": 0.0001634099379129297,
+              "control_true_probability": 0.999842352291506,
+              "control_winner_confidence": 0.999842352291506,
+              "ce_removed_contribution": -0.00016172563393265668,
+              "loss_increased": 2412,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 12,
+              "final_ce": 2.495088062974967,
+              "final_true_probability": 0.08965285530681748,
+              "final_winner_confidence": 0.9103468951144053,
+              "control_ce": 1.1829610898974006,
+              "control_true_probability": 0.3081181847413959,
+              "control_winner_confidence": 0.6875547302599427,
+              "ce_removed_contribution": 0.005125495988584246,
+              "loss_increased": 0,
+              "loss_decreased": 12
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 3072,
+          "accuracy": 0.99609375,
+          "old_ce": 0.0013765957597659598,
+          "final_ce": 0.009747483729906267,
+          "control_ce": 0.004783713375254677,
+          "ce_removed": 0.0049637703546515895,
+          "excess_removed_fraction": 0.5929801440848085,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3060,
+              "final_ce": 1.0500858079880806e-06,
+              "final_true_probability": 0.9999989501990124,
+              "final_winner_confidence": 0.9999989501990124,
+              "control_ce": 0.0001634099379129297,
+              "control_true_probability": 0.999842352291506,
+              "control_winner_confidence": 0.999842352291506,
+              "ce_removed_contribution": -0.00016172563393265668,
+              "loss_increased": 2412,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 12,
+              "final_ce": 2.495088062974967,
+              "final_true_probability": 0.08965285530681748,
+              "final_winner_confidence": 0.9103468951144053,
+              "control_ce": 1.1829610898974006,
+              "control_true_probability": 0.3081181847413959,
+              "control_winner_confidence": 0.6875547302599427,
+              "ce_removed_contribution": 0.005125495988584246,
+              "loss_increased": 0,
+              "loss_decreased": 12
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 372,
+        "accuracy": 0.96875
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "test_16",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.9879557291666666,
+          "old_ce": 0.07975497914488523,
+          "final_ce": 0.10605080499211618,
+          "control_ce": 0.04769957949953855,
+          "ce_removed": 0.05835122549257763,
+          "excess_removed_fraction": 2.2190299643592386,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 5928,
+              "final_ce": 0.0007483917848027155,
+              "final_true_probability": 0.9993811854949189,
+              "final_winner_confidence": 0.9993811854949189,
+              "control_ce": 0.005440965329978472,
+              "control_true_probability": 0.9950655069889567,
+              "control_winner_confidence": 0.9950655069889567,
+              "ce_removed_contribution": -0.004527600256478171,
+              "loss_increased": 5928,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 15,
+              "final_ce": 2.387332204708137,
+              "final_true_probability": 0.17446099457135997,
+              "final_winner_confidence": 0.8010475057824358,
+              "control_ce": 1.3179858047291166,
+              "control_true_probability": 0.304517487518485,
+              "control_winner_confidence": 0.5570507167853284,
+              "ce_removed_contribution": 0.002610708984323779,
+              "loss_increased": 1,
+              "loss_decreased": 14
+            },
+            "rescued": {
+              "count": 142,
+              "final_ce": 0.053072045652927904,
+              "final_true_probability": 0.9561880820214741,
+              "final_winner_confidence": 0.9561880820214741,
+              "control_ce": 0.13892670619258432,
+              "control_true_probability": 0.8930609867593441,
+              "control_winner_confidence": 0.8930609867593441,
+              "ce_removed_contribution": -0.0019842711257537777,
+              "loss_increased": 142,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 59,
+              "final_ce": 10.233787556235823,
+              "final_true_probability": 0.0458733760963722,
+              "final_winner_confidence": 0.89060805398656,
+              "control_ce": 3.7510982138774347,
+              "control_true_probability": 0.11528338958137749,
+              "control_winner_confidence": 0.7283476985039262,
+              "ce_removed_contribution": 0.06225238789048582,
+              "loss_increased": 0,
+              "loss_decreased": 59
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 0.9879557291666666,
+          "old_ce": 0.07975497914488523,
+          "final_ce": 0.10605080499211618,
+          "control_ce": 0.04769957949953855,
+          "ce_removed": 0.05835122549257763,
+          "excess_removed_fraction": 2.2190299643592386,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 5928,
+              "final_ce": 0.0007483917848027155,
+              "final_true_probability": 0.9993811854949189,
+              "final_winner_confidence": 0.9993811854949189,
+              "control_ce": 0.005440965329978472,
+              "control_true_probability": 0.9950655069889567,
+              "control_winner_confidence": 0.9950655069889567,
+              "ce_removed_contribution": -0.004527600256478171,
+              "loss_increased": 5928,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 15,
+              "final_ce": 2.387332204708137,
+              "final_true_probability": 0.17446099457135997,
+              "final_winner_confidence": 0.8010475057824358,
+              "control_ce": 1.3179858047291166,
+              "control_true_probability": 0.304517487518485,
+              "control_winner_confidence": 0.5570507167853284,
+              "ce_removed_contribution": 0.002610708984323779,
+              "loss_increased": 1,
+              "loss_decreased": 14
+            },
+            "rescued": {
+              "count": 142,
+              "final_ce": 0.053072045652927904,
+              "final_true_probability": 0.9561880820214741,
+              "final_winner_confidence": 0.9561880820214741,
+              "control_ce": 0.13892670619258432,
+              "control_true_probability": 0.8930609867593441,
+              "control_winner_confidence": 0.8930609867593441,
+              "ce_removed_contribution": -0.0019842711257537777,
+              "loss_increased": 142,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 59,
+              "final_ce": 10.233787556235823,
+              "final_true_probability": 0.0458733760963722,
+              "final_winner_confidence": 0.89060805398656,
+              "control_ce": 3.7510982138774347,
+              "control_true_probability": 0.11528338958137749,
+              "control_winner_confidence": 0.7283476985039262,
+              "ce_removed_contribution": 0.06225238789048582,
+              "loss_increased": 0,
+              "loss_decreased": 59
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 311,
+        "accuracy": 0.8098958333333334
+      }
+    },
+    {
+      "seed": 3461,
+      "pool": "test_32",
+      "old_checkpoint": "results/query_feedback_training/3461_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3461_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3461.pt",
+      "groups": {
+        "all": {
+          "count": 12288,
+          "accuracy": 0.8644205729166666,
+          "old_ce": 0.44260056399180026,
+          "final_ce": 0.9769722437187894,
+          "control_ce": 0.4283496049406039,
+          "ce_removed": 0.5486226387781855,
+          "excess_removed_fraction": 1.0266686270845737,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 9735,
+              "final_ce": 0.013035850958395871,
+              "final_true_probability": 0.9890868346819954,
+              "final_winner_confidence": 0.9890868346819954,
+              "control_ce": 0.052501115084505695,
+              "control_true_probability": 0.9559431159557411,
+              "control_winner_confidence": 0.9559431159557411,
+              "ce_removed_contribution": -0.031265815939752535,
+              "loss_increased": 9735,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 848,
+              "final_ce": 8.881242481159381,
+              "final_true_probability": 0.04576517778947389,
+              "final_winner_confidence": 0.891586339525753,
+              "control_ce": 3.327127818414552,
+              "control_true_probability": 0.11670720978551133,
+              "control_winner_confidence": 0.7087065793743618,
+              "ce_removed_contribution": 0.3832917670904636,
+              "loss_increased": 12,
+              "loss_decreased": 836
+            },
+            "rescued": {
+              "count": 887,
+              "final_ce": 0.05332802891499934,
+              "final_true_probability": 0.9544658465510507,
+              "final_winner_confidence": 0.9544658465510507,
+              "control_ce": 0.18702693854270738,
+              "control_true_probability": 0.8507397105349552,
+              "control_winner_confidence": 0.8507397105349552,
+              "ce_removed_contribution": -0.009650954820945398,
+              "loss_increased": 887,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 818,
+              "final_ce": 5.25615566756203,
+              "final_true_probability": 0.08092846852119041,
+              "final_winner_confidence": 0.8710450923141491,
+              "control_ce": 2.1579025741559374,
+              "control_true_probability": 0.18483611496280736,
+              "control_winner_confidence": 0.6645827118095693,
+              "ce_removed_contribution": 0.20624764244842,
+              "loss_increased": 27,
+              "loss_decreased": 791
+            }
+          }
+        },
+        "unique": {
+          "count": 12288,
+          "accuracy": 0.8644205729166666,
+          "old_ce": 0.44260056399180026,
+          "final_ce": 0.9769722437187894,
+          "control_ce": 0.4283496049406039,
+          "ce_removed": 0.5486226387781855,
+          "excess_removed_fraction": 1.0266686270845737,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 9735,
+              "final_ce": 0.013035850958395871,
+              "final_true_probability": 0.9890868346819954,
+              "final_winner_confidence": 0.9890868346819954,
+              "control_ce": 0.052501115084505695,
+              "control_true_probability": 0.9559431159557411,
+              "control_winner_confidence": 0.9559431159557411,
+              "ce_removed_contribution": -0.031265815939752535,
+              "loss_increased": 9735,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 848,
+              "final_ce": 8.881242481159381,
+              "final_true_probability": 0.04576517778947389,
+              "final_winner_confidence": 0.891586339525753,
+              "control_ce": 3.327127818414552,
+              "control_true_probability": 0.11670720978551133,
+              "control_winner_confidence": 0.7087065793743618,
+              "ce_removed_contribution": 0.3832917670904636,
+              "loss_increased": 12,
+              "loss_decreased": 836
+            },
+            "rescued": {
+              "count": 887,
+              "final_ce": 0.05332802891499934,
+              "final_true_probability": 0.9544658465510507,
+              "final_winner_confidence": 0.9544658465510507,
+              "control_ce": 0.18702693854270738,
+              "control_true_probability": 0.8507397105349552,
+              "control_winner_confidence": 0.8507397105349552,
+              "ce_removed_contribution": -0.009650954820945398,
+              "loss_increased": 887,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 818,
+              "final_ce": 5.25615566756203,
+              "final_true_probability": 0.08092846852119041,
+              "final_winner_confidence": 0.8710450923141491,
+              "control_ce": 2.1579025741559374,
+              "control_true_probability": 0.18483611496280736,
+              "control_winner_confidence": 0.6645827118095693,
+              "ce_removed_contribution": 0.20624764244842,
+              "loss_increased": 27,
+              "loss_decreased": 791
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 18,
+        "accuracy": 0.046875
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_2",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 3.986862633976612e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1536,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 3.986862633976612e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1536,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_8",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "old_ce": 0.00018134537662727173,
+          "final_ce": 5.052510341978431e-05,
+          "control_ce": 0.0008889583893651028,
+          "ce_removed": -0.0008384332859453185,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 6144,
+              "final_ce": 5.052510341978431e-05,
+              "final_true_probability": 0.9999500180427395,
+              "final_winner_confidence": 0.9999500180427395,
+              "control_ce": 0.0008889583893651028,
+              "control_true_probability": 0.9992153060246057,
+              "control_winner_confidence": 0.9992153060246057,
+              "ce_removed_contribution": -0.0008384332859453186,
+              "loss_increased": 4701,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 1.0,
+          "old_ce": 0.00018134537662727173,
+          "final_ce": 5.052510341978431e-05,
+          "control_ce": 0.0008889583893651028,
+          "ce_removed": -0.0008384332859453185,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 6144,
+              "final_ce": 5.052510341978431e-05,
+              "final_true_probability": 0.9999500180427395,
+              "final_winner_confidence": 0.9999500180427395,
+              "control_ce": 0.0008889583893651028,
+              "control_true_probability": 0.9992153060246057,
+              "control_winner_confidence": 0.9992153060246057,
+              "ce_removed_contribution": -0.0008384332859453186,
+              "loss_increased": 4701,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_16",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "old_ce": 0.009972088500966666,
+          "final_ce": 0.0016078027207679906,
+          "control_ce": 0.012142158806182418,
+          "ce_removed": -0.010534356085414427,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 12287,
+              "final_ce": 0.0016058234909254502,
+              "final_true_probability": 0.9984752649153256,
+              "final_winner_confidence": 0.9984752649153256,
+              "control_ce": 0.012123896149047486,
+              "control_true_probability": 0.9895085999588084,
+              "control_winner_confidence": 0.9895085999588084,
+              "ce_removed_contribution": -0.01051721669517785,
+              "loss_increased": 12275,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 1,
+              "final_ce": 0.02592659979605734,
+              "final_true_probability": 0.9744066086277583,
+              "final_winner_confidence": 0.9744066086277583,
+              "control_ce": 0.23653542702309518,
+              "control_true_probability": 0.7893579172054486,
+              "control_winner_confidence": 0.7893579172054486,
+              "ce_removed_contribution": -1.7139390236575343e-05,
+              "loss_increased": 1,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 12288,
+          "accuracy": 1.0,
+          "old_ce": 0.009972088500966666,
+          "final_ce": 0.0016078027207679906,
+          "control_ce": 0.012142158806182418,
+          "ce_removed": -0.010534356085414427,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 12287,
+              "final_ce": 0.0016058234909254502,
+              "final_true_probability": 0.9984752649153256,
+              "final_winner_confidence": 0.9984752649153256,
+              "control_ce": 0.012123896149047486,
+              "control_true_probability": 0.9895085999588084,
+              "control_winner_confidence": 0.9895085999588084,
+              "ce_removed_contribution": -0.01051721669517785,
+              "loss_increased": 12275,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 1,
+              "final_ce": 0.02592659979605734,
+              "final_true_probability": 0.9744066086277583,
+              "final_winner_confidence": 0.9744066086277583,
+              "control_ce": 0.23653542702309518,
+              "control_true_probability": 0.7893579172054486,
+              "control_winner_confidence": 0.7893579172054486,
+              "ce_removed_contribution": -1.7139390236575343e-05,
+              "loss_increased": 1,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 768,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "train_32",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "old_ce": 0.17578058945143238,
+          "final_ce": 0.049350832185876194,
+          "control_ce": 0.10891129646116006,
+          "ce_removed": -0.059560464275283866,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 23104,
+              "final_ce": 0.020743107174457057,
+              "final_true_probability": 0.9822249777753691,
+              "final_winner_confidence": 0.9822249777753691,
+              "control_ce": 0.07816274775838583,
+              "control_true_probability": 0.9360729425725705,
+              "control_winner_confidence": 0.9360729425725705,
+              "ce_removed_contribution": -0.05398044336145388,
+              "loss_increased": 23104,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 128,
+              "final_ce": 1.8526694161687352,
+              "final_true_probability": 0.2921645857549092,
+              "final_winner_confidence": 0.628348470246525,
+              "control_ce": 1.264406094049007,
+              "control_true_probability": 0.33055689590053067,
+              "control_winner_confidence": 0.4799839889475611,
+              "ce_removed_contribution": 0.0030638714693735827,
+              "loss_increased": 39,
+              "loss_decreased": 89
+            },
+            "rescued": {
+              "count": 1119,
+              "final_ce": 0.18613304666386118,
+              "final_true_probability": 0.8489106053463957,
+              "final_winner_confidence": 0.8489106053463957,
+              "control_ce": 0.4282321407942599,
+              "control_true_probability": 0.6821800717692943,
+              "control_winner_confidence": 0.6821800717692943,
+              "ce_removed_contribution": -0.011023310804521328,
+              "loss_increased": 1119,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 225,
+              "final_ce": 1.2807677295776845,
+              "final_true_probability": 0.31650793246107656,
+              "final_winner_confidence": 0.62622288416446,
+              "control_ce": 1.0208717868118835,
+              "control_true_probability": 0.37011064116777975,
+              "control_winner_confidence": 0.48927372578203454,
+              "ce_removed_contribution": 0.0023794184213177584,
+              "loss_increased": 62,
+              "loss_decreased": 163
+            }
+          }
+        },
+        "unique": {
+          "count": 24576,
+          "accuracy": 0.9856363932291666,
+          "old_ce": 0.17578058945143238,
+          "final_ce": 0.049350832185876194,
+          "control_ce": 0.10891129646116006,
+          "ce_removed": -0.059560464275283866,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 23104,
+              "final_ce": 0.020743107174457057,
+              "final_true_probability": 0.9822249777753691,
+              "final_winner_confidence": 0.9822249777753691,
+              "control_ce": 0.07816274775838583,
+              "control_true_probability": 0.9360729425725705,
+              "control_winner_confidence": 0.9360729425725705,
+              "ce_removed_contribution": -0.05398044336145388,
+              "loss_increased": 23104,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 128,
+              "final_ce": 1.8526694161687352,
+              "final_true_probability": 0.2921645857549092,
+              "final_winner_confidence": 0.628348470246525,
+              "control_ce": 1.264406094049007,
+              "control_true_probability": 0.33055689590053067,
+              "control_winner_confidence": 0.4799839889475611,
+              "ce_removed_contribution": 0.0030638714693735827,
+              "loss_increased": 39,
+              "loss_decreased": 89
+            },
+            "rescued": {
+              "count": 1119,
+              "final_ce": 0.18613304666386118,
+              "final_true_probability": 0.8489106053463957,
+              "final_winner_confidence": 0.8489106053463957,
+              "control_ce": 0.4282321407942599,
+              "control_true_probability": 0.6821800717692943,
+              "control_winner_confidence": 0.6821800717692943,
+              "ce_removed_contribution": -0.011023310804521328,
+              "loss_increased": 1119,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 225,
+              "final_ce": 1.2807677295776845,
+              "final_true_probability": 0.31650793246107656,
+              "final_winner_confidence": 0.62622288416446,
+              "control_ce": 1.0208717868118835,
+              "control_true_probability": 0.37011064116777975,
+              "control_winner_confidence": 0.48927372578203454,
+              "ce_removed_contribution": 0.0023794184213177584,
+              "loss_increased": 62,
+              "loss_decreased": 163
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 768,
+        "correct": 510,
+        "accuracy": 0.6640625
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "validation_2",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 384,
+          "accuracy": 1.0,
+          "old_ce": 3.294875367906757e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 384,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 384,
+          "accuracy": 1.0,
+          "old_ce": 3.294875367906757e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 384,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 192,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "validation_8",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 0.01221128961245998,
+          "final_ce": 7.435736002586476e-06,
+          "control_ce": 0.00039348063310994,
+          "ce_removed": -0.0003860448971073535,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1530,
+              "final_ce": 7.708145673533074e-11,
+              "final_true_probability": 0.9999999999229184,
+              "final_winner_confidence": 0.9999999999229184,
+              "control_ce": 1.5099465174859021e-05,
+              "control_true_probability": 0.9999849072435414,
+              "control_winner_confidence": 0.9999849072435414,
+              "ce_removed_contribution": -1.5040406108662437e-05,
+              "loss_increased": 1099,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 6,
+              "final_ce": 0.00190352876089067,
+              "final_true_probability": 0.998098293612708,
+              "final_winner_confidence": 0.998098293612708,
+              "control_ce": 0.09688067845655558,
+              "control_true_probability": 0.9076677024996019,
+              "control_winner_confidence": 0.9076677024996019,
+              "ce_removed_contribution": -0.000371004490998691,
+              "loss_increased": 6,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 1536,
+          "accuracy": 1.0,
+          "old_ce": 0.01221128961245998,
+          "final_ce": 7.435736002586476e-06,
+          "control_ce": 0.00039348063310994,
+          "ce_removed": -0.0003860448971073535,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 1530,
+              "final_ce": 7.708145673533074e-11,
+              "final_true_probability": 0.9999999999229184,
+              "final_winner_confidence": 0.9999999999229184,
+              "control_ce": 1.5099465174859021e-05,
+              "control_true_probability": 0.9999849072435414,
+              "control_winner_confidence": 0.9999849072435414,
+              "ce_removed_contribution": -1.5040406108662437e-05,
+              "loss_increased": 1099,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 6,
+              "final_ce": 0.00190352876089067,
+              "final_true_probability": 0.998098293612708,
+              "final_winner_confidence": 0.998098293612708,
+              "control_ce": 0.09688067845655558,
+              "control_true_probability": 0.9076677024996019,
+              "control_winner_confidence": 0.9076677024996019,
+              "ce_removed_contribution": -0.000371004490998691,
+              "loss_increased": 6,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 192,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "validation_16",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 3072,
+          "accuracy": 0.984375,
+          "old_ce": 0.05929097602671254,
+          "final_ce": 0.11665129738283762,
+          "control_ce": 0.05381783090096438,
+          "ce_removed": 0.06283346648187324,
+          "excess_removed_fraction": 1.0954169188099172,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 2991,
+              "final_ce": 0.0010050112241027152,
+              "final_true_probability": 0.9990538521339917,
+              "final_winner_confidence": 0.9990538521339917,
+              "control_ce": 0.00718138089264501,
+              "control_true_probability": 0.9937114861528968,
+              "control_winner_confidence": 0.9937114861528968,
+              "ce_removed_contribution": -0.006013516171422526,
+              "loss_increased": 2991,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 18,
+              "final_ce": 14.246328282626202,
+              "final_true_probability": 0.002027458564845736,
+              "final_winner_confidence": 0.9792898237811847,
+              "control_ce": 5.4290336302133095,
+              "control_true_probability": 0.02930432702149797,
+              "control_winner_confidence": 0.8156743095261283,
+              "ce_removed_contribution": 0.05166383585398177,
+              "loss_increased": 0,
+              "loss_decreased": 18
+            },
+            "rescued": {
+              "count": 33,
+              "final_ce": 1.560578781363723e-06,
+              "final_true_probability": 0.9999984394245892,
+              "final_winner_confidence": 0.9999984394245892,
+              "control_ce": 0.007180663661028977,
+              "control_true_probability": 0.9928501679909532,
+              "control_winner_confidence": 0.9928501679909532,
+              "ce_removed_contribution": -7.711927139133179e-05,
+              "loss_increased": 33,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 30,
+              "final_ce": 3.297094546747155,
+              "final_true_probability": 0.12965961255361405,
+              "final_winner_confidence": 0.8687826302652264,
+              "control_ce": 1.5296433011069268,
+              "control_true_probability": 0.25162682844084044,
+              "control_winner_confidence": 0.6938162764502613,
+              "ce_removed_contribution": 0.017260266070705358,
+              "loss_increased": 0,
+              "loss_decreased": 30
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 3072,
+          "accuracy": 0.984375,
+          "old_ce": 0.05929097602671254,
+          "final_ce": 0.11665129738283762,
+          "control_ce": 0.05381783090096438,
+          "ce_removed": 0.06283346648187324,
+          "excess_removed_fraction": 1.0954169188099172,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 2991,
+              "final_ce": 0.0010050112241027152,
+              "final_true_probability": 0.9990538521339917,
+              "final_winner_confidence": 0.9990538521339917,
+              "control_ce": 0.00718138089264501,
+              "control_true_probability": 0.9937114861528968,
+              "control_winner_confidence": 0.9937114861528968,
+              "ce_removed_contribution": -0.006013516171422526,
+              "loss_increased": 2991,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 18,
+              "final_ce": 14.246328282626202,
+              "final_true_probability": 0.002027458564845736,
+              "final_winner_confidence": 0.9792898237811847,
+              "control_ce": 5.4290336302133095,
+              "control_true_probability": 0.02930432702149797,
+              "control_winner_confidence": 0.8156743095261283,
+              "ce_removed_contribution": 0.05166383585398177,
+              "loss_increased": 0,
+              "loss_decreased": 18
+            },
+            "rescued": {
+              "count": 33,
+              "final_ce": 1.560578781363723e-06,
+              "final_true_probability": 0.9999984394245892,
+              "final_winner_confidence": 0.9999984394245892,
+              "control_ce": 0.007180663661028977,
+              "control_true_probability": 0.9928501679909532,
+              "control_winner_confidence": 0.9928501679909532,
+              "ce_removed_contribution": -7.711927139133179e-05,
+              "loss_increased": 33,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 30,
+              "final_ce": 3.297094546747155,
+              "final_true_probability": 0.12965961255361405,
+              "final_winner_confidence": 0.8687826302652264,
+              "control_ce": 1.5296433011069268,
+              "control_true_probability": 0.25162682844084044,
+              "control_winner_confidence": 0.6938162764502613,
+              "ce_removed_contribution": 0.017260266070705358,
+              "loss_increased": 0,
+              "loss_decreased": 30
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 150,
+        "accuracy": 0.78125
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "validation_32",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.8673502604166666,
+          "old_ce": 0.42898851465714394,
+          "final_ce": 0.8900537226240663,
+          "control_ce": 0.42108587766037625,
+          "ce_removed": 0.4689678449636901,
+          "excess_removed_fraction": 1.0171399551738345,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 4971,
+              "final_ce": 0.01518711583898605,
+              "final_true_probability": 0.9871544050657589,
+              "final_winner_confidence": 0.9871544050657589,
+              "control_ce": 0.059340582143951624,
+              "control_true_probability": 0.9509143337982088,
+              "control_winner_confidence": 0.9509143337982088,
+              "ce_removed_contribution": -0.03572377620474998,
+              "loss_increased": 4971,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 436,
+              "final_ce": 8.053012948239761,
+              "final_true_probability": 0.05658950621063619,
+              "final_winner_confidence": 0.893093552345989,
+              "control_ce": 3.2318642087703924,
+              "control_true_probability": 0.1217257865331159,
+              "control_winner_confidence": 0.7359624879526697,
+              "ce_removed_contribution": 0.342125789454532,
+              "loss_increased": 9,
+              "loss_decreased": 427
+            },
+            "rescued": {
+              "count": 358,
+              "final_ce": 0.08360817543760066,
+              "final_true_probability": 0.9319226480143077,
+              "final_winner_confidence": 0.9319226480143077,
+              "control_ce": 0.23859232974046693,
+              "control_true_probability": 0.8104594068413827,
+              "control_winner_confidence": 0.8104594068413827,
+              "ce_removed_contribution": -0.00903065222012144,
+              "loss_increased": 358,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 379,
+              "final_ce": 4.886410413528938,
+              "final_true_probability": 0.07883050641041768,
+              "final_winner_confidence": 0.889763398449611,
+              "control_ce": 2.104645776878073,
+              "control_true_probability": 0.18788117524974665,
+              "control_winner_confidence": 0.7105467860130162,
+              "ce_removed_contribution": 0.1715964839340296,
+              "loss_increased": 6,
+              "loss_decreased": 373
+            }
+          }
+        },
+        "unique": {
+          "count": 6144,
+          "accuracy": 0.8673502604166666,
+          "old_ce": 0.42898851465714394,
+          "final_ce": 0.8900537226240663,
+          "control_ce": 0.42108587766037625,
+          "ce_removed": 0.4689678449636901,
+          "excess_removed_fraction": 1.0171399551738345,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 4971,
+              "final_ce": 0.01518711583898605,
+              "final_true_probability": 0.9871544050657589,
+              "final_winner_confidence": 0.9871544050657589,
+              "control_ce": 0.059340582143951624,
+              "control_true_probability": 0.9509143337982088,
+              "control_winner_confidence": 0.9509143337982088,
+              "ce_removed_contribution": -0.03572377620474998,
+              "loss_increased": 4971,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 436,
+              "final_ce": 8.053012948239761,
+              "final_true_probability": 0.05658950621063619,
+              "final_winner_confidence": 0.893093552345989,
+              "control_ce": 3.2318642087703924,
+              "control_true_probability": 0.1217257865331159,
+              "control_winner_confidence": 0.7359624879526697,
+              "ce_removed_contribution": 0.342125789454532,
+              "loss_increased": 9,
+              "loss_decreased": 427
+            },
+            "rescued": {
+              "count": 358,
+              "final_ce": 0.08360817543760066,
+              "final_true_probability": 0.9319226480143077,
+              "final_winner_confidence": 0.9319226480143077,
+              "control_ce": 0.23859232974046693,
+              "control_true_probability": 0.8104594068413827,
+              "control_winner_confidence": 0.8104594068413827,
+              "ce_removed_contribution": -0.00903065222012144,
+              "loss_increased": 358,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 379,
+              "final_ce": 4.886410413528938,
+              "final_true_probability": 0.07883050641041768,
+              "final_winner_confidence": 0.889763398449611,
+              "control_ce": 2.104645776878073,
+              "control_true_probability": 0.18788117524974665,
+              "control_winner_confidence": 0.7105467860130162,
+              "ce_removed_contribution": 0.1715964839340296,
+              "loss_increased": 6,
+              "loss_decreased": 373
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 192,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "test_2",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 768,
+          "accuracy": 1.0,
+          "old_ce": 3.429045531311288e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 768,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 768,
+          "accuracy": 1.0,
+          "old_ce": 3.429045531311288e-12,
+          "final_ce": 0.0,
+          "control_ce": 0.0,
+          "ce_removed": 0.0,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 768,
+              "final_ce": 0.0,
+              "final_true_probability": 1.0,
+              "final_winner_confidence": 1.0,
+              "control_ce": 0.0,
+              "control_true_probability": 1.0,
+              "control_winner_confidence": 1.0,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 384,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "test_8",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 3072,
+          "accuracy": 1.0,
+          "old_ce": 0.0002734800166489641,
+          "final_ce": 0.0010730363561552417,
+          "control_ce": 0.0013904274943987215,
+          "ce_removed": -0.0003173911382434798,
+          "excess_removed_fraction": -0.39695906662370706,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3072,
+              "final_ce": 0.0010730363561552417,
+              "final_true_probability": 0.9991750136600176,
+              "final_winner_confidence": 0.9991750136600176,
+              "control_ce": 0.0013904274943987215,
+              "control_true_probability": 0.9989477017956254,
+              "control_winner_confidence": 0.9989477017956254,
+              "ce_removed_contribution": -0.00031739113824347985,
+              "loss_increased": 2244,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 3072,
+          "accuracy": 1.0,
+          "old_ce": 0.0002734800166489641,
+          "final_ce": 0.0010730363561552417,
+          "control_ce": 0.0013904274943987215,
+          "ce_removed": -0.0003173911382434798,
+          "excess_removed_fraction": -0.39695906662370706,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 3072,
+              "final_ce": 0.0010730363561552417,
+              "final_true_probability": 0.9991750136600176,
+              "final_winner_confidence": 0.9991750136600176,
+              "control_ce": 0.0013904274943987215,
+              "control_true_probability": 0.9989477017956254,
+              "control_winner_confidence": 0.9989477017956254,
+              "ce_removed_contribution": -0.00031739113824347985,
+              "loss_increased": 2244,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 384,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "test_16",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 6144,
+          "accuracy": 0.9716796875,
+          "old_ce": 0.1003433170394642,
+          "final_ce": 0.24847497162657828,
+          "control_ce": 0.1069427304048912,
+          "ce_removed": 0.14153224122168706,
+          "excess_removed_fraction": 0.9554489998520471,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 5882,
+              "final_ce": 0.0009481845850949476,
+              "final_true_probability": 0.9991417246763274,
+              "final_winner_confidence": 0.9991417246763274,
+              "control_ce": 0.008153917556901326,
+              "control_true_probability": 0.9926859178080735,
+              "control_winner_confidence": 0.9926859178080735,
+              "ce_removed_contribution": -0.006898457249375833,
+              "loss_increased": 5882,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 96,
+              "final_ce": 11.157343410633777,
+              "final_true_probability": 0.017474259719373147,
+              "final_winner_confidence": 0.9053652726489693,
+              "control_ce": 4.278525726047601,
+              "control_true_probability": 0.06772315649249293,
+              "control_winner_confidence": 0.811314801380351,
+              "ce_removed_contribution": 0.10748152632165897,
+              "loss_increased": 0,
+              "loss_decreased": 96
+            },
+            "rescued": {
+              "count": 88,
+              "final_ce": 0.017325898433985635,
+              "final_true_probability": 0.9843135626595938,
+              "final_winner_confidence": 0.9843135626595938,
+              "control_ce": 0.08569880461115487,
+              "control_true_probability": 0.9247660826122398,
+              "control_winner_confidence": 0.9247660826122398,
+              "ce_removed_contribution": -0.0009792994374334134,
+              "loss_increased": 88,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 78,
+              "final_ce": 5.74901740334789,
+              "final_true_probability": 0.10506943548120486,
+              "final_winner_confidence": 0.8421142448795936,
+              "control_ce": 2.446343949123162,
+              "control_true_probability": 0.1787512772868835,
+              "control_winner_confidence": 0.6885309701705582,
+              "ce_removed_contribution": 0.04192847158683736,
+              "loss_increased": 0,
+              "loss_decreased": 78
+            }
+          }
+        },
+        "unique": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        },
+        "repeat": {
+          "count": 6144,
+          "accuracy": 0.9716796875,
+          "old_ce": 0.1003433170394642,
+          "final_ce": 0.24847497162657828,
+          "control_ce": 0.1069427304048912,
+          "ce_removed": 0.14153224122168706,
+          "excess_removed_fraction": 0.9554489998520471,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 5882,
+              "final_ce": 0.0009481845850949476,
+              "final_true_probability": 0.9991417246763274,
+              "final_winner_confidence": 0.9991417246763274,
+              "control_ce": 0.008153917556901326,
+              "control_true_probability": 0.9926859178080735,
+              "control_winner_confidence": 0.9926859178080735,
+              "ce_removed_contribution": -0.006898457249375833,
+              "loss_increased": 5882,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 96,
+              "final_ce": 11.157343410633777,
+              "final_true_probability": 0.017474259719373147,
+              "final_winner_confidence": 0.9053652726489693,
+              "control_ce": 4.278525726047601,
+              "control_true_probability": 0.06772315649249293,
+              "control_winner_confidence": 0.811314801380351,
+              "ce_removed_contribution": 0.10748152632165897,
+              "loss_increased": 0,
+              "loss_decreased": 96
+            },
+            "rescued": {
+              "count": 88,
+              "final_ce": 0.017325898433985635,
+              "final_true_probability": 0.9843135626595938,
+              "final_winner_confidence": 0.9843135626595938,
+              "control_ce": 0.08569880461115487,
+              "control_true_probability": 0.9247660826122398,
+              "control_winner_confidence": 0.9247660826122398,
+              "ce_removed_contribution": -0.0009792994374334134,
+              "loss_increased": 88,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 78,
+              "final_ce": 5.74901740334789,
+              "final_true_probability": 0.10506943548120486,
+              "final_winner_confidence": 0.8421142448795936,
+              "control_ce": 2.446343949123162,
+              "control_true_probability": 0.1787512772868835,
+              "control_winner_confidence": 0.6885309701705582,
+              "ce_removed_contribution": 0.04192847158683736,
+              "loss_increased": 0,
+              "loss_decreased": 78
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 234,
+        "accuracy": 0.609375
+      }
+    },
+    {
+      "seed": 3463,
+      "pool": "test_32",
+      "old_checkpoint": "results/query_feedback_training/3463_exhaustive_3000.pt",
+      "final_checkpoint": "results/query_feedback_continuation/3463_exhaustive_12000.pt",
+      "controlled_checkpoint": "results/readout_scale_control/controlled_3463.pt",
+      "groups": {
+        "all": {
+          "count": 12288,
+          "accuracy": 0.8697916666666666,
+          "old_ce": 0.4761524943645801,
+          "final_ce": 0.8791488378427305,
+          "control_ce": 0.4170743473410507,
+          "ce_removed": 0.46207449050167976,
+          "excess_removed_fraction": 1.1465972284354797,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 9806,
+              "final_ce": 0.01274068265995104,
+              "final_true_probability": 0.9894377906108407,
+              "final_winner_confidence": 0.9894377906108407,
+              "control_ce": 0.05076365073939015,
+              "control_true_probability": 0.9575557016307282,
+              "control_winner_confidence": 0.9575557016307282,
+              "ce_removed_contribution": -0.030342873127195625,
+              "loss_increased": 9806,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 924,
+              "final_ce": 8.286275130143572,
+              "final_true_probability": 0.05150693476042442,
+              "final_winner_confidence": 0.8829728524329655,
+              "control_ce": 3.3517453141114273,
+              "control_true_probability": 0.11893152873946775,
+              "control_winner_confidence": 0.7088988075446532,
+              "ce_removed_contribution": 0.37105351155710475,
+              "loss_increased": 16,
+              "loss_decreased": 908
+            },
+            "rescued": {
+              "count": 882,
+              "final_ce": 0.06730476297574055,
+              "final_true_probability": 0.9444537569072774,
+              "final_winner_confidence": 0.9444537569072774,
+              "control_ce": 0.205104057637807,
+              "control_true_probability": 0.8355766749286104,
+              "control_winner_confidence": 0.8355766749286104,
+              "ce_removed_contribution": -0.009890867341466686,
+              "loss_increased": 882,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 676,
+              "final_ce": 4.381900538536579,
+              "final_true_probability": 0.11225137065062475,
+              "final_winner_confidence": 0.8298503899236104,
+              "control_ce": 1.9960159347645952,
+              "control_true_probability": 0.20474547627012274,
+              "control_winner_confidence": 0.6444320584745741,
+              "ce_removed_contribution": 0.13125471941323735,
+              "loss_increased": 22,
+              "loss_decreased": 654
+            }
+          }
+        },
+        "unique": {
+          "count": 12288,
+          "accuracy": 0.8697916666666666,
+          "old_ce": 0.4761524943645801,
+          "final_ce": 0.8791488378427305,
+          "control_ce": 0.4170743473410507,
+          "ce_removed": 0.46207449050167976,
+          "excess_removed_fraction": 1.1465972284354797,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 9806,
+              "final_ce": 0.01274068265995104,
+              "final_true_probability": 0.9894377906108407,
+              "final_winner_confidence": 0.9894377906108407,
+              "control_ce": 0.05076365073939015,
+              "control_true_probability": 0.9575557016307282,
+              "control_winner_confidence": 0.9575557016307282,
+              "ce_removed_contribution": -0.030342873127195625,
+              "loss_increased": 9806,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 924,
+              "final_ce": 8.286275130143572,
+              "final_true_probability": 0.05150693476042442,
+              "final_winner_confidence": 0.8829728524329655,
+              "control_ce": 3.3517453141114273,
+              "control_true_probability": 0.11893152873946775,
+              "control_winner_confidence": 0.7088988075446532,
+              "ce_removed_contribution": 0.37105351155710475,
+              "loss_increased": 16,
+              "loss_decreased": 908
+            },
+            "rescued": {
+              "count": 882,
+              "final_ce": 0.06730476297574055,
+              "final_true_probability": 0.9444537569072774,
+              "final_winner_confidence": 0.9444537569072774,
+              "control_ce": 0.205104057637807,
+              "control_true_probability": 0.8355766749286104,
+              "control_winner_confidence": 0.8355766749286104,
+              "ce_removed_contribution": -0.009890867341466686,
+              "loss_increased": 882,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 676,
+              "final_ce": 4.381900538536579,
+              "final_true_probability": 0.11225137065062475,
+              "final_winner_confidence": 0.8298503899236104,
+              "control_ce": 1.9960159347645952,
+              "control_true_probability": 0.20474547627012274,
+              "control_winner_confidence": 0.6444320584745741,
+              "ce_removed_contribution": 0.13125471941323735,
+              "loss_increased": 22,
+              "loss_decreased": 654
+            }
+          }
+        },
+        "repeat": {
+          "count": 0,
+          "accuracy": null,
+          "old_ce": null,
+          "final_ce": null,
+          "control_ce": null,
+          "ce_removed": null,
+          "excess_removed_fraction": null,
+          "prediction_changes": 0,
+          "transitions": {
+            "correct_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "wrong_both": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "rescued": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            },
+            "newly_wrong": {
+              "count": 0,
+              "final_ce": null,
+              "final_true_probability": null,
+              "final_winner_confidence": null,
+              "control_ce": null,
+              "control_true_probability": null,
+              "control_winner_confidence": null,
+              "ce_removed_contribution": 0.0,
+              "loss_increased": 0,
+              "loss_decreased": 0
+            }
+          }
+        }
+      },
+      "complete_maps": {
+        "count": 384,
+        "correct": 6,
+        "accuracy": 0.015625
+      }
+    }
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "max_affine_logit_error": 2.842170943040401e-14,
+  "checkpoint_hashes": {
+    "3461": "06628d9efc488d522b13ae9fed25108de0b72715b47274707b9552f99ba5f83d",
+    "3463": "2f66ea10c304f96d64c67378784821c51d60f652e02f1390d4e26db3ca1cc29a"
+  },
+  "scores_sha256": "e659d26ecba48841e2426371643c8098c6e5169ea265130d0113c9e4ba3f7980",
+  "scales_sha256": "45d9d7df56441904c3c736e42adb3efb3d4249f61f01a31bd177016be9f3567d",
+  "lock_sha256": "e5bab17e639c69f8fa577dc1e7ce368b47574b5e1b3219b63129cd75f38a79c4"
+}

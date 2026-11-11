@@ -1,0 +1,215 @@
+{
+  "timestamp_utc": "2026-09-29T13:52:38.585157+00:00",
+  "python": "3.14.7 (main, Aug 14 2026, 15:39:58) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": "3c4247334e219492e7d384b09bd4a38c18e8304911b8a4f250d9bf9fb382a677",
+  "arithmetic": "Python float (binary64), CPU, standard library",
+  "records": [
+    {
+      "id": "S01",
+      "name": "scaling",
+      "status": "pass",
+      "metrics": {
+        "samples_per_case": 4000,
+        "tolerance": 0.15,
+        "cases": [
+          {
+            "seed": 11,
+            "width": 4,
+            "raw_variance": 3.9229485088741862,
+            "scaled_variance": 0.9807371272185466
+          },
+          {
+            "seed": 11,
+            "width": 32,
+            "raw_variance": 31.749123472757713,
+            "scaled_variance": 0.9921601085236785
+          },
+          {
+            "seed": 11,
+            "width": 128,
+            "raw_variance": 131.45526860827903,
+            "scaled_variance": 1.02699428600218
+          },
+          {
+            "seed": 29,
+            "width": 4,
+            "raw_variance": 3.963717559659162,
+            "scaled_variance": 0.9909293899147905
+          },
+          {
+            "seed": 29,
+            "width": 32,
+            "raw_variance": 33.07236833982447,
+            "scaled_variance": 1.0335115106195147
+          },
+          {
+            "seed": 29,
+            "width": 128,
+            "raw_variance": 129.68194454802557,
+            "scaled_variance": 1.0131401917814498
+          },
+          {
+            "seed": 47,
+            "width": 4,
+            "raw_variance": 4.018004385707544,
+            "scaled_variance": 1.004501096426886
+          },
+          {
+            "seed": 47,
+            "width": 32,
+            "raw_variance": 31.93201691296721,
+            "scaled_variance": 0.9978755285302253
+          },
+          {
+            "seed": 47,
+            "width": 128,
+            "raw_variance": 123.63272343558684,
+            "scaled_variance": 0.9658806518405222
+          }
+        ]
+      }
+    },
+    {
+      "id": "S02",
+      "name": "masking",
+      "status": "pass",
+      "metrics": {
+        "causal_error": 0.0,
+        "unmasked_change": 7.999818750726932,
+        "all_masked_row_rejected": true
+      }
+    },
+    {
+      "id": "S03",
+      "name": "permutation",
+      "status": "pass",
+      "metrics": {
+        "equivariance_error": 0.0,
+        "fixed_position_control_change": 1.714430630488395
+      }
+    },
+    {
+      "id": "S04",
+      "name": "gradient",
+      "status": "pass",
+      "metrics": {
+        "step": 1e-06,
+        "max_gradient_error": 3.923916747083922e-11,
+        "wrong_jacobian_error": 0.3835792630591648,
+        "saturated_diagonal": 1.8718360195176635e-13
+      }
+    },
+    {
+      "id": "S05",
+      "name": "nonunique",
+      "status": "pass",
+      "metrics": {
+        "attention_a": [
+          0.2,
+          0.6,
+          0.2
+        ],
+        "attention_b": [
+          0.4,
+          0.2,
+          0.4
+        ],
+        "values": [
+          [
+            0.0
+          ],
+          [
+            1.0
+          ],
+          [
+            2.0
+          ]
+        ],
+        "output_a": [
+          [
+            1.0
+          ]
+        ],
+        "output_b": [
+          [
+            1.0
+          ]
+        ],
+        "changed_value_difference": 0.19999999999999996
+      }
+    },
+    {
+      "id": "S06",
+      "name": "streaming",
+      "status": "pass",
+      "metrics": {
+        "seed": 83,
+        "cases": [
+          {
+            "length": 1,
+            "score_bound": 1.0,
+            "max_error": 0.0
+          },
+          {
+            "length": 1,
+            "score_bound": 1000.0,
+            "max_error": 0.0
+          },
+          {
+            "length": 7,
+            "score_bound": 1.0,
+            "max_error": 5.551115123125783e-17
+          },
+          {
+            "length": 7,
+            "score_bound": 1000.0,
+            "max_error": 0.0
+          },
+          {
+            "length": 64,
+            "score_bound": 1.0,
+            "max_error": 2.7755575615628914e-17
+          },
+          {
+            "length": 64,
+            "score_bound": 1000.0,
+            "max_error": 0.0
+          }
+        ],
+        "limitation": "Scalar online softmax identity; not a FlashAttention implementation"
+      }
+    },
+    {
+      "id": "S07",
+      "name": "associativity",
+      "status": "pass",
+      "metrics": {
+        "raw_associativity_error": 0.0,
+        "softmax_reordering_difference": 4.3576087660663525
+      }
+    },
+    {
+      "id": "S08",
+      "name": "storage",
+      "status": "pass",
+      "metrics": {
+        "lengths": [
+          16,
+          32,
+          64
+        ],
+        "score_elements": [
+          256,
+          1024,
+          4096
+        ],
+        "doubling_ratios": [
+          4.0,
+          4.0
+        ],
+        "limitation": "Element counts only; no byte allocation or runtime benchmark"
+      }
+    }
+  ]
+}

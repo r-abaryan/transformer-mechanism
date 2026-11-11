@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "report_sha256": "2dc77a42057483ba55fa982592983c40e5900cb13bf4d6392941c148606c0b9c",
+  "audit_sha256": "b76c5715af1d73ccfe7c707d56f2018fbe59e0145a440ff97f4f2e0c135a7c4c",
+  "protected_files_unchanged": 16,
+  "csv_histories_checked": 1536,
+  "numeric_table_rows_checked": 4,
+  "per_seed": [
+    {
+      "seed": 3461,
+      "native_correct": 24330,
+      "native_maps": 561,
+      "oracle_maps": 768,
+      "oracle_ce": 0.6863117681853207,
+      "max_norm_ratio": 2.0027607507222314
+    },
+    {
+      "seed": 3463,
+      "native_correct": 24223,
+      "native_maps": 510,
+      "oracle_maps": 768,
+      "oracle_ce": 0.6808058397454225,
+      "max_norm_ratio": 2.2219713776342305
+    }
+  ],
+  "wrong_answers_recovered": 599,
+  "incomplete_maps_recovered": 465,
+  "local_links_checked": 918,
+  "documentation": {
+    "docs/topics/attention/shared-state-feasibility-guide.md": "1fd1d1bb7f9f54eb396bc4bd4a2fe4dac6278ee2c89f2a050b305441fec9803d",
+    "docs/topics/attention/shared-state-feasibility-results.md": "15a73bbae03af9d30c040d8e9b48348a13ae508d1ae9a76f7f0a917caf3ad0a3",
+    "docs/protocols/shared-state-feasibility.md": "4e9ccae10c04e79f3f3d2f2e8667f20a6678588937333d267ab073eefd588d6e",
+    "docs/assessments/research-checkpoint.md": "9193acaf1b3b691f0b335b25a1bd4a6a2921d9a403671fb41c77d437527ed178",
+    "docs/assessments/learning-mechanism-agenda.md": "4df6ad8726f3b115411e24ca679ed2803588bcb33192d048bcb73d5101e232e9",
+    "docs/assessments/research-history.md": "185e1c4f05d9bc667685a2fed1eadba7674da748e110d36166b23f89f998c387",
+    "docs/assessments/retention-representation-review.md": "c9a483da12811fa4570f1c251946cd0c37e4459917b9dd81b3eb0b9c39cabb53",
+    "docs/assessments/README.md": "fca2280dd23582e1d3a0c97dff7dab46e4db12c01782a43d0e5de4703bd7af01",
+    "docs/topics/attention/README.md": "3461e404eecd06ff9e01293d999acee89299ac58c486dcafbb15546e0cf1ee67",
+    "docs/guides/README.md": "d516a06b61fbe63343ce77a1fea0b2002fa52db80dc5ff068ce831d6c1a4acbe",
+    "docs/results/README.md": "da8a1f3848bcc737273ca76bd4b767e157915f0825ab6a41d3559bc231692f6a",
+    "docs/protocols/README.md": "d119b4763344319f56ec7211d07c6825b895d96ca31a17513a8c2938896975ce",
+    "docs/reference/sources.md": "08671714c08ac6271a3bbfde610932091819ca98318e33a62c45265989a02ddb",
+    "docs/assessments/failure-register.md": "60c3ea21d58ffe6f5d9dc61ccbe5ad1c9e937183910083277a396ab7e7bf1f20",
+    "tests/README.md": "8ec747ea794e0a005d7e977b002f3af0cd7949f4c76b0f5ccc6c6d697eb93fd6"
+  },
+  "scope": "All formal witness outcomes and count/loss/norm tables, bound audit and changed local Markdown links; no broader historical audit rerun.",
+  "successful_solver_calls": 1536
+}

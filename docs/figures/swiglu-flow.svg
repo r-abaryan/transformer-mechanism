@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img">
+  <title>SwiGLU inside one token's feed-forward branch</title>
+  <desc>The normalized token vector branches into a gate projection followed by SiLU and a content projection. The outputs multiply elementwise, then an output projection returns to model width. This diagram covers the FFN branch, not attention or the residual addition.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#45566c"/></marker></defs>
+  <rect width="1000" height="300" fill="white"/>
+  <g font-family="Arial,sans-serif" font-size="17" text-anchor="middle" fill="#243449">
+    <text x="500" y="30" font-size="22">SwiGLU: two learned feature paths for the same token</text>
+    <g fill="#eaf3fb" stroke="#0072b2" stroke-width="1.5">
+      <rect x="30" y="120" width="145" height="58" rx="8"/>
+      <rect x="240" y="64" width="165" height="58" rx="8"/>
+      <rect x="240" y="192" width="165" height="58" rx="8"/>
+      <rect x="460" y="64" width="150" height="58" rx="8"/>
+      <rect x="750" y="120" width="185" height="58" rx="8"/>
+    </g>
+    <circle cx="675" cy="149" r="32" fill="#fff0e6" stroke="#d55e00" stroke-width="1.5"/>
+    <text x="103" y="155">Token vector z</text>
+    <text x="322" y="99">Gate a = z Wg</text>
+    <text x="322" y="227">Content u = z Wu</text>
+    <text x="535" y="99">SiLU(a)</text>
+    <text x="675" y="156" font-size="26">⊙</text>
+    <text x="842" y="155">Project through Wo</text>
+    <text x="530" y="162" font-size="14">gate × content</text>
+    <text x="500" y="285" font-size="15">Output returns to model width, then joins the residual. No cross-token mixing inside this FFN.</text>
+  </g>
+  <g fill="none" stroke="#45566c" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M175 149H205V93H240"/>
+    <path d="M175 149H205V221H240"/>
+    <path d="M405 93H460"/>
+    <path d="M610 93H675V117"/>
+    <path d="M405 221H675V181"/>
+    <path d="M707 149H750"/>
+  </g>
+</svg>

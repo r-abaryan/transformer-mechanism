@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scope": "Independent primary contrast from saved logits and all CSV fields; no optimizer calls or new model evaluations",
+  "pairs": [
+    {
+      "seed": 3473,
+      "lbfgs": {
+        "objective": 0.0004362637973293513,
+        "errors": 0
+      },
+      "negative_gradient": {
+        "objective": 0.008050799024181925,
+        "errors": 122
+      },
+      "lower_objective": true,
+      "no_more_errors": true
+    },
+    {
+      "seed": 3479,
+      "lbfgs": {
+        "objective": 0.0020771284190112217,
+        "errors": 0
+      },
+      "negative_gradient": {
+        "objective": 0.010052057086259945,
+        "errors": 176
+      },
+      "lower_objective": true,
+      "no_more_errors": true
+    },
+    {
+      "seed": 3481,
+      "lbfgs": {
+        "objective": 0.003538103758045606,
+        "errors": 6
+      },
+      "negative_gradient": {
+        "objective": 0.01048684158475735,
+        "errors": 204
+      },
+      "lower_objective": true,
+      "no_more_errors": true
+    }
+  ],
+  "csv_rows": 504,
+  "cells": 168,
+  "csv_sha256": "1b96bd8a5ae5a2bce47cedc4a925972be70221b12fd1f4e5c79d79aece91e8b5",
+  "report_sha256": "1b3801e17420feacc8d4f95826cc6e35c895e49b0a67257f08327cfb31ddb252",
+  "audit_sha256": "cf12363299cb1380f85a9c688a09a50bbd5999a703c0aa9581ba5b42950f6a9b"
+}

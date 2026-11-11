@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "evaluations": 30,
+  "max_logit_error": 1.7275070263167436e-13,
+  "input_checks": {
+    "family_counts": {
+      "train_3": 160,
+      "validation_3": 20,
+      "test_3": 40,
+      "train_4": 800,
+      "validation_4": 100,
+      "test_4": 200,
+      "test_6": 200
+    },
+    "last_pair_heuristic": {
+      "train_3": 0.6666666666666666,
+      "validation_3": 0.6666666666666666,
+      "test_3": 0.6666666666666666,
+      "train_4": 0.5060416666666666,
+      "validation_4": 0.5166666666666667,
+      "test_4": 0.5033333333333333,
+      "test_6": 0.3408333333333333
+    },
+    "first_match_accuracy": 0.0,
+    "excluded_prior_families": 5220,
+    "fresh_four_six_overlap": 0,
+    "three_pair_reused": true,
+    "changed_unique_examples": 115920,
+    "training_context_matching": true
+  },
+  "report_sha256": "f63a17025a348a5c7d0cef3cfc5a7979325cae38d03443770284ce5a9ea77496",
+  "source_sha256": "16ab798fbaded4e6df4aa197157e5a44dfe75ab2775f3f30467021593540481e"
+}

@@ -1,0 +1,463 @@
+{
+  "runs": [
+    {
+      "seed": 3767,
+      "arm": "cross_only",
+      "metrics": {
+        "native": {
+          "all": {
+            "count": 128,
+            "token_loss": 4.078636053980006,
+            "token_accuracy": 0.015625,
+            "exact_accuracy": 0.015625,
+            "correct": 2,
+            "eos": 126,
+            "margin": 4.006736203735212,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 3.943698120786152,
+            "token_accuracy": 0.0,
+            "exact_accuracy": 0.0,
+            "correct": 0,
+            "eos": 10,
+            "margin": 3.8923629027824544,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 4.090071472047281,
+            "token_accuracy": 0.01694915254237288,
+            "exact_accuracy": 0.01694915254237288,
+            "correct": 2,
+            "eos": 116,
+            "margin": 4.016428856358327,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "mapped": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.02885543180230935,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.530821095764809,
+            "rescues": 126,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.026635020411001565,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.608128812420314,
+            "rescues": 10,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.029043602259199844,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.524269594353325,
+            "rescues": 116,
+            "harms": 0
+          }
+        },
+        "wrong_position": {
+          "all": {
+            "count": 128,
+            "token_loss": 5.421459048609425,
+            "token_accuracy": 0.0,
+            "exact_accuracy": 0.0,
+            "correct": 0,
+            "eos": 128,
+            "margin": 5.405124706520758,
+            "rescues": 0,
+            "harms": 2
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 5.766631269646083,
+            "token_accuracy": 0.0,
+            "exact_accuracy": 0.0,
+            "correct": 0,
+            "eos": 10,
+            "margin": 5.756685846955136,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 5.392207165470725,
+            "token_accuracy": 0.0,
+            "exact_accuracy": 0.0,
+            "correct": 0,
+            "eos": 118,
+            "margin": 5.375331389534793,
+            "rescues": 0,
+            "harms": 2
+          }
+        }
+      }
+    },
+    {
+      "seed": 3779,
+      "arm": "cross_only",
+      "metrics": {
+        "native": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.03154287402445835,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.029708802280982,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.03048595359582005,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.2850009330148815,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.03163244355230906,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.008073875947602,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "mapped": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.02699536048706786,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.667512142472783,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.026594971608758927,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.954757182772352,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.0270292917479415,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.643169342447395,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "wrong_position": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.02699536048706786,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.667512142472783,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.026594971608758927,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.954757182772352,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.0270292917479415,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.643169342447395,
+            "rescues": 0,
+            "harms": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 3793,
+      "arm": "cross_only",
+      "metrics": {
+        "native": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.12316889351451099,
+            "token_accuracy": 0.96875,
+            "exact_accuracy": 0.96875,
+            "correct": 124,
+            "eos": 4,
+            "margin": -4.785240278828997,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.08879812361434622,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -4.79634937903442,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.12608167062469444,
+            "token_accuracy": 0.9661016949152542,
+            "exact_accuracy": 0.9661016949152542,
+            "correct": 114,
+            "eos": 4,
+            "margin": -4.784298829659047,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "mapped": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.06594526836763225,
+            "token_accuracy": 0.984375,
+            "exact_accuracy": 0.984375,
+            "correct": 126,
+            "eos": 2,
+            "margin": -5.759863302792344,
+            "rescues": 2,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.041792413905317204,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -5.962485539689944,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.06799212044070978,
+            "token_accuracy": 0.9830508474576272,
+            "exact_accuracy": 0.9830508474576272,
+            "correct": 116,
+            "eos": 2,
+            "margin": -5.742691926784074,
+            "rescues": 2,
+            "harms": 0
+          }
+        },
+        "wrong_position": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.06594526824734151,
+            "token_accuracy": 0.984375,
+            "exact_accuracy": 0.984375,
+            "correct": 126,
+            "eos": 2,
+            "margin": -5.759863304570928,
+            "rescues": 2,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.04179241386852212,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -5.962485541244545,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.06799212031334316,
+            "token_accuracy": 0.9830508474576272,
+            "exact_accuracy": 0.9830508474576272,
+            "correct": 116,
+            "eos": 2,
+            "margin": -5.742691928581639,
+            "rescues": 2,
+            "harms": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 3767,
+      "arm": "both",
+      "metrics": {
+        "native": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.04517725701891289,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -5.79732333676925,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.03458881368744366,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.263422437904575,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.046074582724969615,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -5.757823412944223,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "mapped": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.035715288057059,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.057141796282093,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.029601574292031262,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.514331428654174,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.0362333993930783,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.018396912182764,
+            "rescues": 0,
+            "harms": 0
+          }
+        },
+        "wrong_position": {
+          "all": {
+            "count": 128,
+            "token_loss": 0.035715288057042695,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 128,
+            "eos": 0,
+            "margin": -6.057141796282329,
+            "rescues": 0,
+            "harms": 0
+          },
+          "distinct": {
+            "count": 10,
+            "token_loss": 0.02960157429202621,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 10,
+            "eos": 0,
+            "margin": -6.514331428654392,
+            "rescues": 0,
+            "harms": 0
+          },
+          "repeated": {
+            "count": 118,
+            "token_loss": 0.03623339939306104,
+            "token_accuracy": 1.0,
+            "exact_accuracy": 1.0,
+            "correct": 118,
+            "eos": 0,
+            "margin": -6.018396912183001,
+            "rescues": 0,
+            "harms": 0
+          }
+        }
+      }
+    }
+  ],
+  "recovery": true,
+  "preservation": true,
+  "specificity": true,
+  "supported": true,
+  "training_updates": 0,
+  "plan_sha256": "ddac3ba96dcab12e0b067fe1fbe30b233887a8ad104531bc2d7e0ffd9d0155c5",
+  "evidence_sha256": "f6a202a4a1fa4ab464e8a439a3795472f759d0c8d4be4889f3e25d5e44abb1cd",
+  "audit": {
+    "passed": true,
+    "max_error": 6.350475700855895e-14,
+    "argmax_differences": 0,
+    "protected_files": 89,
+    "long_predictions_per_implementation": 1536,
+    "short_identity_examples": 512
+  }
+}

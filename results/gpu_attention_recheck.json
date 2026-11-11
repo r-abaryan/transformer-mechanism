@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-30T20:58:25.983704+00:00",
+  "torch": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "input_devices": [
+    "cuda:0",
+    "cuda:0",
+    "cuda:0"
+  ],
+  "flash_compiled": false,
+  "n": 4096,
+  "original_report_sha256": "2abbacd23b198b4a1ae37a26130ad9a1084138e1d7574dacefa105648eb8d728",
+  "cells": [
+    {
+      "method": "dense",
+      "output_device": "cuda:0",
+      "event_ms": 2.9460480213165283,
+      "max_error_vs_saved": 0.0,
+      "max_error_vs_reference": 0.00045390304799020065,
+      "status": "passed"
+    },
+    {
+      "method": "tiled",
+      "output_device": "cuda:0",
+      "event_ms": 263.8530578613281,
+      "max_error_vs_saved": 0.0,
+      "max_error_vs_reference": 0.00045390304799020065,
+      "status": "passed"
+    },
+    {
+      "method": "flash",
+      "status": "failed",
+      "error": "No available kernel. Aborting execution."
+    }
+  ]
+}

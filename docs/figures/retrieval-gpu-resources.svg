@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="365" viewBox="0 0 1140 365" role="img" aria-labelledby="title desc">
+<title id="title">Compact reader resource tradeoffs at batch 32</title>
+<desc id="desc">Measured state payload grows with context for softmax and stays fixed for delta. Eager delta prefill is slower; retained-state query is faster. Bars show ranges of nine seed and process medians for timings.</desc>
+<rect width="1140" height="365" fill="#f8fafc"/>
+<text x="30" y="30" fill="#0f172a" font-family="Arial" font-size="19">RTX 4060 laptop, float32, compact saved readers, batch 32</text>
+<text x="45" y="75" fill="#0f172a" font-family="Arial" font-size="17">Persistent state (KiB)</text>
+<path d="M 45 280.0 h 285" stroke="#e2e8f0"/><text x="40" y="284.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0</text>
+<path d="M 45 236.25 h 285" stroke="#e2e8f0"/><text x="40" y="240.25" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">100</text>
+<path d="M 45 192.5 h 285" stroke="#e2e8f0"/><text x="40" y="196.5" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">200</text>
+<path d="M 45 148.75 h 285" stroke="#e2e8f0"/><text x="40" y="152.75" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">300</text>
+<path d="M 45 105.0 h 285" stroke="#e2e8f0"/><text x="40" y="109.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">400</text>
+<circle cx="75" cy="269.5" r="4" fill="#2563eb"/>
+<circle cx="190" cy="238.0" r="4" fill="#2563eb"/>
+<circle cx="305" cy="112.0" r="4" fill="#2563eb"/>
+<polyline points="75,269.5 190,238.0 305,112.0" stroke="#2563eb" fill="none" stroke-width="2"/>
+<circle cx="75" cy="273.0" r="4" fill="#b45309"/>
+<circle cx="190" cy="273.0" r="4" fill="#b45309"/>
+<circle cx="305" cy="273.0" r="4" fill="#b45309"/>
+<polyline points="75,273.0 190,273.0 305,273.0" stroke="#b45309" fill="none" stroke-width="2"/>
+<text x="75" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">8 events</text>
+<text x="190" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">32 events</text>
+<text x="305" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">128 events</text>
+<text x="420" y="75" fill="#0f172a" font-family="Arial" font-size="17">Prefill (ms)</text>
+<path d="M 420 280.0 h 285" stroke="#e2e8f0"/><text x="415" y="284.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0</text>
+<path d="M 420 236.25 h 285" stroke="#e2e8f0"/><text x="415" y="240.25" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">6</text>
+<path d="M 420 192.5 h 285" stroke="#e2e8f0"/><text x="415" y="196.5" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">12</text>
+<path d="M 420 148.75 h 285" stroke="#e2e8f0"/><text x="415" y="152.75" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">18</text>
+<path d="M 420 105.0 h 285" stroke="#e2e8f0"/><text x="415" y="109.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">24</text>
+<circle cx="450" cy="277.78005215678905" r="4" fill="#2563eb"/>
+<path d="M 450 276.6403645733711 V 278.5883333010861 M 446 276.6403645733711 h 8 M 446 278.5883333010861 h 8" stroke="#2563eb" fill="none"/>
+<circle cx="565" cy="277.1106770469002" r="4" fill="#2563eb"/>
+<path d="M 565 276.23786458566127 V 278.5839583738804 M 561 276.23786458566127 h 8 M 561 278.5839583738804 h 8" stroke="#2563eb" fill="none"/>
+<circle cx="680" cy="277.4708854703446" r="4" fill="#2563eb"/>
+<path d="M 680 276.71546878137934 V 278.04947916951886 M 676 276.71546878137934 h 8 M 676 278.04947916951886 h 8" stroke="#2563eb" fill="none"/>
+<polyline points="450,277.78005215678905 565,277.1106770469002 680,277.4708854703446" stroke="#2563eb" fill="none" stroke-width="2"/>
+<circle cx="450" cy="269.08036462429055" r="4" fill="#b45309"/>
+<path d="M 450 266.55270833296527 V 273.3831771007438 M 446 266.55270833296527 h 8 M 446 273.3831771007438 h 8" stroke="#b45309" fill="none"/>
+<circle cx="565" cy="241.40484367970203" r="4" fill="#b45309"/>
+<path d="M 565 233.77119797315876 V 256.1886978376424 M 561 233.77119797315876 h 8 M 561 256.1886978376424 h 8" stroke="#b45309" fill="none"/>
+<circle cx="680" cy="143.87734381120632" r="4" fill="#b45309"/>
+<path d="M 680 123.47890611691886 V 161.64567704795144 M 676 123.47890611691886 h 8 M 676 161.64567704795144 h 8" stroke="#b45309" fill="none"/>
+<polyline points="450,269.08036462429055 565,241.40484367970203 680,143.87734381120632" stroke="#b45309" fill="none" stroke-width="2"/>
+<text x="450" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">8 events</text>
+<text x="565" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">32 events</text>
+<text x="680" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">128 events</text>
+<text x="795" y="75" fill="#0f172a" font-family="Arial" font-size="17">Query (ms)</text>
+<path d="M 795 280.0 h 285" stroke="#e2e8f0"/><text x="790" y="284.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0</text>
+<path d="M 795 236.25 h 285" stroke="#e2e8f0"/><text x="790" y="240.25" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0.25</text>
+<path d="M 795 192.5 h 285" stroke="#e2e8f0"/><text x="790" y="196.5" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0.5</text>
+<path d="M 795 148.75 h 285" stroke="#e2e8f0"/><text x="790" y="152.75" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">0.75</text>
+<path d="M 795 105.0 h 285" stroke="#e2e8f0"/><text x="790" y="109.0" text-anchor="end" font-family="Arial" font-size="11" fill="#475569">1</text>
+<circle cx="825" cy="166.10125110426452" r="4" fill="#2563eb"/>
+<path d="M 825 130.87375025614165 V 208.37249701551627 M 821 130.87375025614165 h 8 M 821 208.37249701551627 h 8" stroke="#2563eb" fill="none"/>
+<circle cx="940" cy="142.16125216742512" r="4" fill="#2563eb"/>
+<path d="M 940 127.15499995218124 V 205.029999576509 M 936 127.15499995218124 h 8 M 936 205.029999576509 h 8" stroke="#2563eb" fill="none"/>
+<circle cx="1055" cy="166.74875094147865" r="4" fill="#2563eb"/>
+<path d="M 1055 132.10749946418218 V 185.85874875250738 M 1051 132.10749946418218 h 8 M 1051 185.85874875250738 h 8" stroke="#2563eb" fill="none"/>
+<polyline points="825,166.10125110426452 940,142.16125216742512 1055,166.74875094147865" stroke="#2563eb" fill="none" stroke-width="2"/>
+<circle cx="825" cy="213.9637488446897" r="4" fill="#b45309"/>
+<path d="M 825 197.01499711780343 V 237.76374926208518 M 821 197.01499711780343 h 8 M 821 237.76374926208518 h 8" stroke="#b45309" fill="none"/>
+<circle cx="940" cy="210.0612496881513" r="4" fill="#b45309"/>
+<path d="M 940 185.71875023306347 V 238.5600002319552 M 936 185.71875023306347 h 8 M 936 238.5600002319552 h 8" stroke="#b45309" fill="none"/>
+<circle cx="1055" cy="197.9162463406101" r="4" fill="#b45309"/>
+<path d="M 1055 180.9937499067746 V 207.91750119067729 M 1051 180.9937499067746 h 8 M 1051 207.91750119067729 h 8" stroke="#b45309" fill="none"/>
+<polyline points="825,213.9637488446897 940,210.0612496881513 1055,197.9162463406101" stroke="#b45309" fill="none" stroke-width="2"/>
+<text x="825" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">8 events</text>
+<text x="940" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">32 events</text>
+<text x="1055" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#475569">128 events</text>
+<path d="M 45 328 h 24" stroke="#2563eb" stroke-width="3"/><text x="78" y="333" font-family="Arial" font-size="13" fill="#0f172a">Softmax</text>
+<path d="M 170 328 h 24" stroke="#b45309" stroke-width="3"/><text x="204" y="333" font-family="Arial" font-size="13" fill="#0f172a">Delta</text>
+<text x="335" y="333" font-family="Arial" font-size="12" fill="#475569">Timing: median of nine medians; whiskers: observed min/max. State: measured tensor payload.</text>
+</svg>

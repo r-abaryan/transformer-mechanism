@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "scope": "CPU float64 nominal-vocabulary model/target preflight; no corpus parsing, GPU training or benchmark quality",
+  "vocabulary_shape_probe": 33278,
+  "seed": 1723,
+  "paired_common_initial_sha256": "1a8bac2834fa729800b0bdb3dd7ac76ef66a5adcb04d68aff5015e3233ad86e6",
+  "retained_kv_initial_sha256": "860185feb3a5bcb5b903839882178f93e5efa210960dd1f6a4f990b92732407f",
+  "checks": [
+    {
+      "group": "mha",
+      "parameters": 1069376,
+      "max_logit_error": 1.1102230246251565e-15,
+      "max_gradient_error": 1.1102230246251565e-16,
+      "loss_identity_error": 1.7763568394002505e-15,
+      "causal_prefix_error": 0.0,
+      "future_change_error": 3.60264096262605,
+      "wrong_target_control_mismatches": 10
+    },
+    {
+      "group": "mqa",
+      "parameters": 1068832,
+      "max_logit_error": 9.992007221626409e-16,
+      "max_gradient_error": 8.326672684688674e-17,
+      "loss_identity_error": 3.552713678800501e-15,
+      "causal_prefix_error": 0.0,
+      "future_change_error": 3.6088908041883814,
+      "wrong_target_control_mismatches": 10
+    }
+  ],
+  "replicated_mqa_mha_error": 1.1102230246251565e-15,
+  "protocol_sha256": "87402f714e8ed7eb90eeaa840b04dfa15ee639cffd3c92761a139fe829b913c7",
+  "sources": {
+    "mqa_training.py": "1261c7f437900a797e7ff019116bed01fd2ccc07417e638bd904b4080719e644",
+    "audit_mqa_training.py": "590be0dd0fc6b10a2f7355d8b6f40a72cb3b0f5cc926b090eb27701b8ed11856",
+    "verify_mqa_training.py": "6b432b7fa6b08c3bb88fe898de27e164422d77c0392c4ed93a76fd59ea150018",
+    "audit_kv_cache_equivalence.py": "a8108573cc4b92d205192dedae760307b0042c47596477131961714f1f7f8eb0",
+    "query_exposure.py": "17333e05e77a91a5c99b283f3d64eea5798bdbf2abd80192473f03e941428be2",
+    "ffn_width.py": "642b05f0341fdd330e482e84752c83e5c0ab6a613f67c08dd184e74e632bed6a",
+    "verify_ffn_width.py": "d8688cccd44d79daefcd1386c905cf0975d25c6b2dcbbb3b8c9e76053c23be95",
+    "audit_ffn_width.py": "7baf57e89b8ca43a77d6688680b2f3ac825432e4d8a185f209ce14c18ab20a14",
+    "audit_gelu_comparison.py": "6a8b40fef74e32f6f64038aeccc63fc36a948df4bd23c466214199c8276e9ad3",
+    "repeated_key.py": "dfcb40dd4bee1ebcccc91033259bdccc8a245e39066f086a0552659c2d7f5559",
+    "audit_repeated_key.py": "d828a61ca98199a7ebe463d8a210d00767f3d1d74016a4113ef2637dcb84ef5a",
+    "audit_positional_comparison.py": "7ee8d56084ce92bc8f1ee0613dc74eb6acae43e7d294c87e2ed9c2882aefa166",
+    "activation_paths.py": "ebb4f33a084873acd0c5544509bb4f62af29181cf75f089504724f0ddbd6b657",
+    "positional_comparison.py": "b4587182a2eec507cc252014f493717c58285798c85469a8a669f670c3e6aa52",
+    "reserved_cycle.py": "7f3b5f0ff6d70d086477604e8a5c7569eecc80d60d9d09d192317d79ac183dd3",
+    "compare_depth.py": "7541ac5ac664b87c9a0786a7a4958379eb8a92928409c71dc2da57bb7089601b",
+    "position_training.py": "6ebca98c29f9e2498cdfccc8a5e196648c523602633093c98367b6abf6b2704e",
+    "position_distractors.py": "8aee57e6c0b7c84c751f00ae30961b955a7735c52062bc5f8f79b415e0fa4390",
+    "verify_wikitext2_baseline.py": "5cb2a0a7ac8e7a962731010286ef5fd1fef929a227b865c43ad3a119e83e5de1"
+  },
+  "fp32_compact_cache_per_sequence64": {
+    "mha": 16384,
+    "mqa": 8192
+  }
+}
